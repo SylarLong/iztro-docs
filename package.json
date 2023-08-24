@@ -1,0 +1,25 @@
+{
+  "name": "astro-docs",
+  "version": "1.0.0",
+  "description": "document of @sylarlong/astro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SylarLong/astro-docs.git"
+  },
+  "author": "SylarLong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SylarLong/astro-docs/issues"
+  },
+  "homepage": "https://github.com/SylarLong/astro-docs#readme",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.4"
+  }
+}
