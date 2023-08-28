@@ -1,6 +1,6 @@
 <div align="center">
 
-# ASTRO
+<h1 class="brand-name text-clip">ASTRO</h1>
 
 A lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information.
 
@@ -14,7 +14,7 @@ A lightweight Open-Source Javascript library of getting The Purple Star Astrolog
 
 ## Overview
 
-Welcome to the @sylarlong/astro development documentation! This page will introduce you to how to integrate, how to retrieve data, and how to quickly obtain all the data on a natal chart in Zi Wei Dou Shu. If you are just a basic user, reading this document will be enough for your daily use.
+Welcome to the `@sylarlong/astro` development documentation! This page will introduce you to how to integrate, how to retrieve data, and how to quickly obtain all the data on a natal chart in Zi Wei Dou Shu. If you are just a basic user, reading this document will be enough for your daily use.
 If you have mastered the content on this page, you can explore further on other pages.
 
 <div class='custom-block'>
@@ -79,7 +79,7 @@ When retrieving a natal chart in Zi Wei Dou Shu, you can obtain it based on eith
 
 <div class='custom-block'>
 
-Using the solar calendar has the following advantages:
+Using the `solar calendar` has the following advantages:
 
 - It can be easily found on a birth certificate.
 - You can use a calendar component for date selection.
@@ -93,30 +93,28 @@ Using the solar calendar has the following advantages:
 ```ts
 import { astro } from '@sylarlong/astro';
 
-// 通过阳历获取星盘信息
+// Get astrolabe by solar calendar.
 const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
 
-// 通过农历获取星盘信息
+// Get astrolabe by lunar calendar.
 const astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女');
 ```
 == CommonJS
 ```js
 var { astro } = require('@sylarlong/astro');
 
-// 通过阳历获取星盘信息
+// Get astrolabe by solar calendar.
 var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
 
-// 通过农历获取星盘信息
+// Get astrolabe by lunar calendar.
 var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 ```
 :::
 
-你会发现以上`astrolabeBySolarDate`和`astrolabeByLunarDate`的返回值是一样的，
-这是因为`astrolabeByLunarDate`方法在内部处理的时候，也是将日期转化为`阳历`以后调用`astrolabeBySolarDate`方法。
-以下是执行结果，因为结果比较长，所以将之折叠起来，如果你想要查看你调用结果是否和这个一样，可以展开查看：
+You will find that the return values of `astrolabeBySolarDate` and `astrolabeByLunarDate` above are the same. This is because the `astrolabeByLunarDate` method internally converts the date to the `solar calendar` and then calls the `astrolabeBySolarDate` method. Here is the execution result. Since the result is quite long, it is folded. If you want to check if your call result is the same as this, you can expand to view it.
 
 <details class='custom-block'>
-<summary>astro.astrolabeBySolarDate 和 astro.astrolabeByLunarDate 方法执行结果</summary>
+<summary>Result of <code>astro.astrolabeBySolarDate</code> and <code>astro.astrolabeByLunarDate</code></summary>
 
 ```ts
 {
@@ -434,65 +432,74 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 
 ##### function definition
 
-- 通过阳历日期获取星盘信息
+- Get astrolabe by solar calendar.
 
-  `astro`.`astrolabeBySolarDate(solarDateStr, timeIndex, gender, fixLeap)`
+  `astro`.`astrolabeBySolarDate(solarDateStr, timeIndex, gender, fixLeap, language)`
 
-  |参数|类型|是否必填|默认值|说明|
-  |--|--|--|--|--|
-  |solarDateStr|`string`|`true`|-|阳历日期【YYYY-M-D】|
-  |timeIndex|`number`|`true`|-|出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号|
-  |gender|`string`|`true`|-|性别【男/女】|
-  |fixLeap|`boolean`|`false`|`true`|是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月|
+  - Parameters
 
-  返回值: [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
+    |Name|Type|Required|Default|Description|
+    |--|--|--|--|--|
+    |solarDateStr|`string`|`true`|-|solar date string【YYYY-M-D】|
+    |timeIndex|`number`|`true`|-|chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）|
+    |gender|`string`|`true`|-|gender【男/女】|
+    |fixLeap|`boolean`|`false`|`true`|whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month|
+    |language|`Language`|`false`|`zh-CN`|the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now|
 
-- 通过农历日期获取星盘信息
+  - Returns: 
+  
+    [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
 
-  `astro`.`astrolabeByLunarDate(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap)`
+- Get astrolabe by lunar calendar.
 
-  |参数|类型|是否必填|默认值|说明|
-  |--|--|--|--|--|
-  |lunarDateStr|`string`|`true`|-|农历日期【YYYY-M-D】，例如`2000年七月十七`则传入`2000-7-17`|
-  |timeIndex|`number`|`true`|-|出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号|
-  |gender|`string`|`true`|-|性别【男/女】|
-  |isLeapMonth|`boolean`|`false`|`false`|是否闰月，当实际月份没有闰月时该参数不生效|
-  |fixLeap|`boolean`|`false`|`true`|是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月|
+  `astro`.`astrolabeByLunarDate(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
 
-  返回值: [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
+  - Parameters
+
+    |Name|Type|Required|Default|Description|
+    |--|--|--|--|--|
+    |lunarDateStr|`string`|`true`|-|lunar date【YYYY-M-D】. e.g. pass `2000-7-17` if it's `2000年七月十七`|
+    |timeIndex|`number`|`true`|-|chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）|
+    |gender|`string`|`true`|-| gender【男/女】|
+    |isLeapMonth|`boolean`|`false`|`false`|whether the date is a leap month. This parameter does not take effect when there is no leap month in the actual month|
+    |fixLeap|`boolean`|`false`|`true`|whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month|
+    |language|`Language`|`false`|`zh-CN`|the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now|
+
+  - Returns:
+    
+    [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
 
 ## Get horoscope data
 
-紫微斗数的运限分为`大限`、`流年`、`流月`、`流日`、`流时`、`流分`、`流秒`，由于`流分`、`流秒`使用场景不多，所以我们暂时不提供。
-`大限`、`流年`、`流月`、`流日`、`流时`已经能满足绝大部分需求和使用场景了，使用`@syalrlong/astro`能够很轻松的获取到这些数据。
+The `horoscope` in Zi Wei Dou Shu is divided into "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`), "流时" (`Hourly horoscope`), "流分" (`Minute horoscope`), and "流秒" (`Second horoscope`). However, since `Minute horoscope` and `Second horoscope` are not commonly used, we do not currently provide them. "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`) are already sufficient to meet the majority of needs and scenarios. By using "@syalrlong/astro," you can easily obtain this data.
 
 :::tabs
 == ES6 Module
 ```ts
 import { astro } from '@sylarlong/astro';
 
-// 通过阳历获取星盘信息
+// Get astrolabe by solar calendar.
 const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
 
-// 获取运限数据
+// Get horoscope data of the `astrolabe` instance
 astrolabe.horoscope(new Date());
 ```
 == CommonJS
 ```js
 var { astro } = require('@sylarlong/astro');
 
-// 通过阳历获取星盘信息
+// Get astrolabe by solar calendar.
 var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
 
-// 获取运限数据
+// Get horoscope data of the `astrolabe` instance
 astrolabe.horoscope(new Date());
 ```
 :::
 
-调用`astrolabe`.`horoscope()`方法以后你会获得如下数据
+You'll get the result below by invoking `astrolabe`.`horoscope()`
 
 <details class='custom-block'>
-<summary>horoscope方法返回数据</summary>
+<summary>Result of <code>horoscope()</code></summary>
 
 ```ts
 {
@@ -544,28 +551,35 @@ astrolabe.horoscope(new Date());
 
 </details>
 
+> Tips: Only `Decadal horoscope` and `Yearly horoscope` include horosope stars. The values of the result above will be different by different parameters. But the data structure is fixed.
+
 ##### function definition
 
-- 获取当前星盘的运限信息
+- Get horoscope data of the `astrolabe` instance
 
   `astrolabe`.`horoscope(date, timeIndex)`
 
-  |参数|类型|是否必填|默认值|说明|
-  |--|--|--|--|--|
-  |date|`string` \| `Date`|`false`| `new Date()` |阳历日期字符串或日期对象，若时间字符串或日期对象中包含了小时的信息，`timeIndex`可以省略|
-  |timeIndex|`number`|`false`| `0` |时辰序号，若不传该参数则会尝试从`date`里获取小时信息转化为时辰序号|
+  - Parameters
 
-  返回值: [`Horoscope`](./type-definition.html#horoscope) 
+    |Name|Type|Required|Default|Description|
+    |--|--|--|--|--|
+    |date|`string` \| `Date`|`false`| `new Date()` |solar calendar string or a `Date` instance. `timeIndex` can be omit if the `hour` data is included in `date`|
+    |timeIndex|`number`|`false`| `0` | chinese hour index【0～12】|
+
+  - Returns
+    
+    [`Horoscope`](./type-definition.html#horoscope) 
+
 ## Get horoscope star
 
-上面的`horoscope()`方法内已经包含了`大限`和`流年`的流耀，所以一般情况下无需在单独调用获取流耀的方法，但也有例外的情况需要自行获取流耀，那就需要调用下列方法自行获取。
+The `horoscope()` method above already includes the `horoscope star` of the `Decadal horoscope` and `Yearly horoscope`. So in general, there is no need to separately call a method to obtain the `horoscope star`. However, there are exceptional cases where you need to obtain the flow on your own, in which case you need to call the following methods to obtain it.
 
 :::tabs
 == ES6 Module
 ```ts
 import { star } from '@sylarlong/astro';
 
-// 通过天干地支获取流耀
+// Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
 const horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 ```
 == CommonJS
@@ -573,15 +587,15 @@ const horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 ```js
 var { star } = require('@sylarlong/astro');
 
-// 通过天干地支获取流耀
+// Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
 var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 ```
 :::
 
-调用`star`.`getHoroscopeStar()`方法以后你会获得如下数据
+You'll get the result below by invoking `star`.`getHoroscopeStar()`
 
 <details class='custom-block'>
-<summary>getHoroscopeStar方法返回数据</summary>
+<summary>Result of <code>getHoroscopeStar()</code></summary>
 
 ```ts
 [
@@ -610,23 +624,27 @@ var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 
 ##### function definition
 
-- 通过`天干`、`地支`获取流耀
+- Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
 
   `star`.`getHoroscopeStar(heavenlyStem, earthlyBranch, scope)`
 
-  |参数|类型|是否必填|默认值|说明|
-  |--|--|--|--|--|
-  |heavenlyStem|`HeavenlyStemName`|`true`| - |天干|
-  |earthlyBranch|`EarthlyBranchName`|`true`| - |地支|
-  |scope|`'decadal'` \| `'yearly'`|`true`| - |限定是大限还是流年的流耀，其中大限流耀会在星耀前面加上`运`，流年流耀会在星耀前面加上`流`，`年解`比较特殊，只会出现在流年的流耀里|
+  - Parameters
 
-  返回值：[`Star[][]`](./type-definition.html#star)
+  |Name|Type|Required|Default|Description|
+  |--|--|--|--|--|
+  |heavenlyStem|`HeavenlyStemName`|`true`| - |heavenly stem name|
+  |earthlyBranch|`EarthlyBranchName`|`true`| - |earthly branch name|
+  |scope|`'decadal'` \| `'yearly'`|`true`| - | to specific the scope of the horo  |
+
+  - Returns
+
+    [`Star[][]`](./type-definition.html#star)
 
 ## ☕ Summary
 
-如果您觉得本程序对您有用的话，可以给我带杯咖啡吗？👍 [Paypal Me](https://PayPal.Me/sylarlong)
+Buy me a coffee if it's useful for you. 👍 [Paypal Me](https://PayPal.Me/sylarlong)
 
-以上数据可以生成如下星盘，其中`palaces`数据用于填充12宫，其他数据用于填充中宫。图片中流耀的显示和实际上有偏差，那是因为图片是古早以前的一个版本生成的，请以实际返回数据为准。
+The above data can generate the following natal chart. The `palaces` data is used to fill the 12 palaces, while the other data is used to fill the central palace. Please keep in mind that the display of the flowing `Star names` in the image may differ from the actual returned data. This is because the image was generated from an earlier version. Please refer to the actual returned data for accuracy.
 
 ![demo](https://github.com/SylarLong/astro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
 

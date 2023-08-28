@@ -15,6 +15,19 @@
   --vp-custom-block-tip-bg:  rgba(100, 108, 255, .16);
 }
 
+.brand-name {
+  font-size: 40px !important;
+  font-weight: 900 !important;
+  text-shadow: 5px 11px 4px rgba(0,0,0,0.1);
+}
+
+header .container a.title, .text-clip {
+  background: var(--vp-home-hero-name-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: var(--vp-home-hero-name-color);
+}
+
 .badges img {
   display: inline;
 }
