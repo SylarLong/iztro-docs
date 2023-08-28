@@ -437,7 +437,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 
 - 通过阳历日期获取星盘信息
 
-  `astro`.`astrolabeBySolarDate(solarDateStr, timeIndex, gender, fixLeap)`
+  `astro`.`astrolabeBySolarDate(solarDateStr, timeIndex, gender, fixLeap, language)`
 
   - 参数
 
@@ -447,6 +447,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
     |timeIndex|`number`|`true`|-|出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号|
     |gender|`string`|`true`|-|性别【男/女】|
     |fixLeap|`boolean`|`false`|`true`|是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月|
+    |language|`Language`|`false`|`zh-CN`|返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP`|
 
   - 返回值
   
@@ -454,7 +455,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 
 - 通过农历日期获取星盘信息
 
-  `astro`.`astrolabeByLunarDate(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap)`
+  `astro`.`astrolabeByLunarDate(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
 
   - 参数
 
@@ -465,6 +466,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
     |gender|`string`|`true`|-|性别【男/女】|
     |isLeapMonth|`boolean`|`false`|`false`|是否闰月，当实际月份没有闰月时该参数不生效|
     |fixLeap|`boolean`|`false`|`true`|是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月|
+    |language|`Language`|`false`|`zh-CN`|返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP`|
 
   - 返回值
   
