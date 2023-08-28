@@ -1,6 +1,6 @@
 <div align="center">
 
-# ASTRO
+<h1 class="brand-name text-clip">ASTRO</h1>
 
 一套轻量级获取紫微斗数排盘信息的Javascript开源库。
 
