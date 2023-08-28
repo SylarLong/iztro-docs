@@ -448,7 +448,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
 
   - Returns: 
   
-    [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
+    `FunctionalAstrolabe`
 
 - Get astrolabe by lunar calendar.
 
@@ -467,7 +467,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
 
   - Returns:
     
-    [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
+    `FunctionalAstrolabe`
 
 ## Get horoscope data
 
@@ -568,7 +568,7 @@ You'll get the result below by invoking `astrolabe`.`horoscope()`
 
   - Returns
     
-    [`Horoscope`](./type-definition.html#horoscope) 
+    `Horoscope`
 
 ## Get horoscope star
 
@@ -638,7 +638,7 @@ You'll get the result below by invoking `star`.`getHoroscopeStar()`
 
   - Returns
 
-    [`Star[][]`](./type-definition.html#star)
+    `Star[][]`
 
 ## ☕ Summary
 
