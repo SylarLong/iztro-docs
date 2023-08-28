@@ -11,7 +11,7 @@ hero:
       text: 查看示例
       link: https://a.14star.cn
     - theme: brand
-      text: 开始使用
+      text: 开发文档
       link: /quick-start.md
 
 features:

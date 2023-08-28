@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/SylarLong/astro-docs#readme",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.4"
+    "vitepress": "^1.0.0-rc.4",
+    "vitepress-plugin-tabs": "^0.3.0"
   }
 }

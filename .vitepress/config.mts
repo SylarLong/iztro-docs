@@ -1,4 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+
+const version = 'v1.0.0';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,6 +9,12 @@ export default defineConfig({
   description: "document of @sylarlong/astro",
   outDir: "../astro/docs/",
   
+  markdown: {
+    config(md) {
+      md.use(tabsMarkdownPlugin)
+    }
+  },
+
   locales: {
     root: {
       label: '简体中文',
@@ -14,11 +23,11 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: '主页', link: '/' },
-          { text: '文档', link: '/markdown-examples' },
+          { text: '文档', link: '/quick-start.md' },
           { text: '示例', link: 'https://a.14star.cn' },
           { text: '讨论', link: 'https://github.com/SylarLong/astro/discussions' },
           { 
-            text: 'v0.2.1',
+            text: version,
             items: [
               { text: '更改日志', link: 'https://github.com/SylarLong/astro/blob/main/CHANGELOG.md' },
               { text: 'NPM地址', link: 'https://www.npmjs.com/package/@sylarlong/astro' },
@@ -55,7 +64,7 @@ export default defineConfig({
           { text: 'Demo', link: 'https://a.14star.cn' },
           { text: 'Discussions', link: 'https://github.com/SylarLong/astro/discussions'},
           { 
-            text: 'v0.2.1',
+            text: version,
             items: [
               { text: 'Changlog', link: 'https://github.com/SylarLong/astro/blob/main/CHANGELOG.md' },
               { text: 'NPM Package', link: 'https://www.npmjs.com/package/@sylarlong/astro' },
