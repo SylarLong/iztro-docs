@@ -1,6 +1,6 @@
 <div align="center">
 
-# IZTRO
+<h1 class="brand-name text-clip">ISTRO</h1>
 
 一套轻量级获取紫微斗数排盘信息的Javascript开源库。
 
@@ -80,7 +80,7 @@ var astroObj = require('iztro');
 
 <div class='custom-block'>
 
-使用阳历有如下便利性：
+使用`阳历`有如下便利性：
 
 - 可以很方便的在出生证上查到
 - 可以使用日历组件进行日期选择
@@ -117,7 +117,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 以下是执行结果，因为结果比较长，所以将之折叠起来，如果你想要查看你调用结果是否和这个一样，可以展开查看：
 
 <details class='custom-block'>
-<summary>astro.astrolabeBySolarDate 和 astro.astrolabeByLunarDate 方法执行结果</summary>
+<summary><code>astro.astrolabeBySolarDate</code> 和 <code>astro.astrolabeByLunarDate</code> 方法执行结果</summary>
 
 ```ts
 {
@@ -437,30 +437,40 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 
 - 通过阳历日期获取星盘信息
 
-  `astro`.`astrolabeBySolarDate(solarDateStr, timeIndex, gender, fixLeap)`
+  `astro`.`astrolabeBySolarDate(solarDateStr, timeIndex, gender, fixLeap, language)`
 
-  |参数|类型|是否必填|默认值|说明|
-  |--|--|--|--|--|
-  |solarDateStr|`string`|`true`|-|阳历日期【YYYY-M-D】|
-  |timeIndex|`number`|`true`|-|出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号|
-  |gender|`string`|`true`|-|性别【男/女】|
-  |fixLeap|`boolean`|`false`|`true`|是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月|
+  - 参数
 
-  返回值: [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
+    |参数|类型|是否必填|默认值|说明|
+    |--|--|--|--|--|
+    |solarDateStr|`string`|`true`|-|阳历日期【YYYY-M-D】|
+    |timeIndex|`number`|`true`|-|出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号|
+    |gender|`string`|`true`|-|性别【男/女】|
+    |fixLeap|`boolean`|`false`|`true`|是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月|
+    |language|`Language`|`false`|`zh-CN`|返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP`|
+
+  - 返回值
+  
+    [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
 
 - 通过农历日期获取星盘信息
 
-  `astro`.`astrolabeByLunarDate(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap)`
+  `astro`.`astrolabeByLunarDate(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
 
-  |参数|类型|是否必填|默认值|说明|
-  |--|--|--|--|--|
-  |lunarDateStr|`string`|`true`|-|农历日期【YYYY-M-D】，例如`2000年七月十七`则传入`2000-7-17`|
-  |timeIndex|`number`|`true`|-|出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号|
-  |gender|`string`|`true`|-|性别【男/女】|
-  |isLeapMonth|`boolean`|`false`|`false`|是否闰月，当实际月份没有闰月时该参数不生效|
-  |fixLeap|`boolean`|`false`|`true`|是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月|
+  - 参数
 
-  返回值: [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
+    |参数|类型|是否必填|默认值|说明|
+    |--|--|--|--|--|
+    |lunarDateStr|`string`|`true`|-|农历日期【YYYY-M-D】，例如`2000年七月十七`则传入`2000-7-17`|
+    |timeIndex|`number`|`true`|-|出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号|
+    |gender|`string`|`true`|-|性别【男/女】|
+    |isLeapMonth|`boolean`|`false`|`false`|是否闰月，当实际月份没有闰月时该参数不生效|
+    |fixLeap|`boolean`|`false`|`true`|是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月|
+    |language|`Language`|`false`|`zh-CN`|返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP`|
+
+  - 返回值
+  
+    [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
 
 ## 获取运限
 
@@ -493,7 +503,7 @@ astrolabe.horoscope(new Date());
 调用`astrolabe`.`horoscope()`方法以后你会获得如下数据
 
 <details class='custom-block'>
-<summary>horoscope方法返回数据</summary>
+<summary><code>horoscope()</code> 方法返回数据</summary>
 
 ```ts
 {
@@ -545,18 +555,24 @@ astrolabe.horoscope(new Date());
 
 </details>
 
+> Tips: 只有 `大限` 和 `流年` 有流耀。上面的运限数据和你调用的会因为传入的时间参数不同而不同，但是结构上是一致的。
+
 ##### 方法定义
 
 - 获取当前星盘的运限信息
 
   `astrolabe`.`horoscope(date, timeIndex)`
 
-  |参数|类型|是否必填|默认值|说明|
-  |--|--|--|--|--|
-  |date|`string` \| `Date`|`false`| `new Date()` |阳历日期字符串或日期对象，若时间字符串或日期对象中包含了小时的信息，`timeIndex`可以省略|
-  |timeIndex|`number`|`false`| `0` |时辰序号，若不传该参数则会尝试从`date`里获取小时信息转化为时辰序号|
+  - 参数
 
-  返回值: [`Horoscope`](./type-definition.html#horoscope) 
+    |参数|类型|是否必填|默认值|说明|
+    |--|--|--|--|--|
+    |date|`string` \| `Date`|`false`| `new Date()` |阳历日期字符串或日期对象，若时间字符串或日期对象中包含了小时的信息，`timeIndex`可以省略|
+    |timeIndex|`number`|`false`| `0` |时辰序号，若不传该参数则会尝试从`date`里获取小时信息转化为时辰序号|
+
+  - 返回值
+  
+    [`Horoscope`](./type-definition.html#horoscope) 
 ## 获取流耀
 
 上面的`horoscope()`方法内已经包含了`大限`和`流年`的流耀，所以一般情况下无需在单独调用获取流耀的方法，但也有例外的情况需要自行获取流耀，那就需要调用下列方法自行获取。
@@ -582,7 +598,7 @@ var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 调用`star`.`getHoroscopeStar()`方法以后你会获得如下数据
 
 <details class='custom-block'>
-<summary>getHoroscopeStar方法返回数据</summary>
+<summary><code>getHoroscopeStar()</code> 方法返回数据</summary>
 
 ```ts
 [
@@ -615,13 +631,17 @@ var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 
   `star`.`getHoroscopeStar(heavenlyStem, earthlyBranch, scope)`
 
-  |参数|类型|是否必填|默认值|说明|
-  |--|--|--|--|--|
-  |heavenlyStem|`HeavenlyStemName`|`true`| - |天干|
-  |earthlyBranch|`EarthlyBranchName`|`true`| - |地支|
-  |scope|`'decadal'` \| `'yearly'`|`true`| - |限定是大限还是流年的流耀，其中大限流耀会在星耀前面加上`运`，流年流耀会在星耀前面加上`流`，`年解`比较特殊，只会出现在流年的流耀里|
+  - 参数
 
-  返回值：[`Star[][]`](./type-definition.html#star)
+    |参数|类型|是否必填|默认值|说明|
+    |--|--|--|--|--|
+    |heavenlyStem|`HeavenlyStemName`|`true`| - |天干|
+    |earthlyBranch|`EarthlyBranchName`|`true`| - |地支|
+    |scope|`'decadal'` \| `'yearly'`|`true`| - |限定是大限还是流年的流耀，其中大限流耀会在星耀前面加上`运`，流年流耀会在星耀前面加上`流`，`年解`比较特殊，只会出现在流年的流耀里|
+
+  - 返回值
+  
+    [`Star[][]`](./type-definition.html#star)
 
 ## ☕ 总结
 
