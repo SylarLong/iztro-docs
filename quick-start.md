@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1 class="brand-name text-clip">ISTRO</h1>
+<h1 class="brand-name text-clip">IZTRO</h1>
 
 一套轻量级获取紫微斗数排盘信息的Javascript开源库。
 
