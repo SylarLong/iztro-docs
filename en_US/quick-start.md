@@ -14,7 +14,7 @@ A lightweight Open-Source Javascript library of getting The Purple Star Astrolog
 
 ## Overview
 
-Welcome to the `@sylarlong/astro` development documentation! This page will introduce you to how to integrate, how to retrieve data, and how to quickly obtain all the data on a natal chart in Zi Wei Dou Shu. If you are just a basic user, reading this document will be enough for your daily use.
+Welcome to the `iztro` development documentation! This page will introduce you to how to integrate, how to retrieve data, and how to quickly obtain all the data on a natal chart in Zi Wei Dou Shu. If you are just a basic user, reading this document will be enough for your daily use.
 If you have mastered the content on this page, you can explore further on other pages.
 
 <div class='custom-block'>
@@ -42,7 +42,7 @@ You can install `iztro` using any package management tool you are familiar with.
   ```
 == pnpm
   ```sh
-  pnpm add -D vitepress-plugin-tabs
+  pnpm add -S iztro
   ```
 :::
 
