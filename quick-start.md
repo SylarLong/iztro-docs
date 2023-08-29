@@ -8,7 +8,7 @@
 
 <div align="center" class="badges">
 
-[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SylarLong/astro/Codecov.yaml)](https://github.com/SylarLong/astro/actions) [![npm](https://img.shields.io/npm/v/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub top language](https://img.shields.io/github/languages/top/SylarLong/astro)](https://github.com/search?q=repo%3ASylarLong%2Fastro++language%3ATypeScript&type=code) [![Codecov](https://img.shields.io/codecov/c/github/sylarlong/astro)](https://app.codecov.io/gh/SylarLong/astro/tree/main/src%2Fstar) [![npm](https://img.shields.io/npm/dw/%40sylarlong/astro)](https://www.npmjs.com/package/iztro) [![Maintenance](https://img.shields.io/maintenance/yes/2023)](https://github.com/SylarLong/astro) [![GitHub](https://img.shields.io/github/license/sylarlong/astro)](https://www.npmjs.com/package/iztro) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SylarLong/astro)](https://www.npmjs.com/package/iztro) [![npm bundle size](https://img.shields.io/bundlephobia/min/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub issues](https://img.shields.io/github/issues/SylarLong/astro)](https://github.com/SylarLong/astro/issues) [![GitHub package.json dynamic](https://img.shields.io/github/package-json/author/sylarlong/astro)](https://github.com/SylarLong)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SylarLong/iztro/Codecov.yaml)](https://github.com/SylarLong/iztro/actions) [![npm](https://img.shields.io/npm/v/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub top language](https://img.shields.io/github/languages/top/SylarLong/iztro)](https://github.com/search?q=repo%3ASylarLong%2Fastro++language%3ATypeScript&type=code) [![Codecov](https://img.shields.io/codecov/c/github/sylarlong/iztro)](https://app.codecov.io/gh/SylarLong/iztro/tree/main/src%2Fstar) [![npm](https://img.shields.io/npm/dw/%40sylarlong/iztro)](https://www.npmjs.com/package/iztro) [![Maintenance](https://img.shields.io/maintenance/yes/2023)](https://github.com/SylarLong/iztro) [![GitHub](https://img.shields.io/github/license/sylarlong/iztro)](https://www.npmjs.com/package/iztro) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SylarLong/iztro)](https://www.npmjs.com/package/iztro) [![npm bundle size](https://img.shields.io/bundlephobia/min/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub issues](https://img.shields.io/github/issues/SylarLong/iztro)](https://github.com/SylarLong/iztro/issues) [![GitHub package.json dynamic](https://img.shields.io/github/package-json/author/sylarlong/iztro)](https://github.com/SylarLong)
 
 </div>
 
@@ -475,7 +475,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 ## 获取运限
 
 紫微斗数的运限分为`大限`、`流年`、`流月`、`流日`、`流时`、`流分`、`流秒`，由于`流分`、`流秒`使用场景不多，所以我们暂时不提供。
-`大限`、`流年`、`流月`、`流日`、`流时`已经能满足绝大部分需求和使用场景了，使用`@syalrlong/astro`能够很轻松的获取到这些数据。
+`大限`、`流年`、`流月`、`流日`、`流时`已经能满足绝大部分需求和使用场景了，使用`iztro`能够很轻松的获取到这些数据。
 
 :::tabs
 == ES6 Module
@@ -649,7 +649,7 @@ var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 
 以上数据可以生成如下星盘，其中`palaces`数据用于填充12宫，其他数据用于填充中宫。图片中流耀的显示和实际上有偏差，那是因为图片是古早以前的一个版本生成的，请以实际返回数据为准。
 
-![demo](https://github.com/SylarLong/astro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
+![demo](https://github.com/SylarLong/iztro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
 
 ## 📜 版权
 

@@ -8,7 +8,7 @@ A lightweight Open-Source Javascript library of getting The Purple Star Astrolog
 
 <div align="center" class="badges">
 
-[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SylarLong/astro/Codecov.yaml)](https://github.com/SylarLong/astro/actions) [![npm](https://img.shields.io/npm/v/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub top language](https://img.shields.io/github/languages/top/SylarLong/astro)](https://github.com/search?q=repo%3ASylarLong%2Fastro++language%3ATypeScript&type=code) [![Codecov](https://img.shields.io/codecov/c/github/sylarlong/astro)](https://app.codecov.io/gh/SylarLong/astro/tree/main/src%2Fstar) [![npm](https://img.shields.io/npm/dw/%40sylarlong/astro)](https://www.npmjs.com/package/iztro) [![Maintenance](https://img.shields.io/maintenance/yes/2023)](https://github.com/SylarLong/astro) [![GitHub](https://img.shields.io/github/license/sylarlong/astro)](https://www.npmjs.com/package/iztro) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SylarLong/astro)](https://www.npmjs.com/package/iztro) [![npm bundle size](https://img.shields.io/bundlephobia/min/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub issues](https://img.shields.io/github/issues/SylarLong/astro)](https://github.com/SylarLong/astro/issues) [![GitHub package.json dynamic](https://img.shields.io/github/package-json/author/sylarlong/astro)](https://github.com/SylarLong)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SylarLong/iztro/Codecov.yaml)](https://github.com/SylarLong/iztro/actions) [![npm](https://img.shields.io/npm/v/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub top language](https://img.shields.io/github/languages/top/SylarLong/iztro)](https://github.com/search?q=repo%3ASylarLong%2Fastro++language%3ATypeScript&type=code) [![Codecov](https://img.shields.io/codecov/c/github/sylarlong/iztro)](https://app.codecov.io/gh/SylarLong/iztro/tree/main/src%2Fstar) [![npm](https://img.shields.io/npm/dw/%40sylarlong/iztro)](https://www.npmjs.com/package/iztro) [![Maintenance](https://img.shields.io/maintenance/yes/2023)](https://github.com/SylarLong/iztro) [![GitHub](https://img.shields.io/github/license/sylarlong/iztro)](https://www.npmjs.com/package/iztro) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SylarLong/iztro)](https://www.npmjs.com/package/iztro) [![npm bundle size](https://img.shields.io/bundlephobia/min/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub issues](https://img.shields.io/github/issues/SylarLong/iztro)](https://github.com/SylarLong/iztro/issues) [![GitHub package.json dynamic](https://img.shields.io/github/package-json/author/sylarlong/iztro)](https://github.com/SylarLong)
 
 </div>
 
@@ -471,7 +471,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
 
 ## Get horoscope data
 
-The `horoscope` in Zi Wei Dou Shu is divided into "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`), "流时" (`Hourly horoscope`), "流分" (`Minute horoscope`), and "流秒" (`Second horoscope`). However, since `Minute horoscope` and `Second horoscope` are not commonly used, we do not currently provide them. "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`) are already sufficient to meet the majority of needs and scenarios. By using "@syalrlong/astro," you can easily obtain this data.
+The `horoscope` in Zi Wei Dou Shu is divided into "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`), "流时" (`Hourly horoscope`), "流分" (`Minute horoscope`), and "流秒" (`Second horoscope`). However, since `Minute horoscope` and `Second horoscope` are not commonly used, we do not currently provide them. "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`) are already sufficient to meet the majority of needs and scenarios. By using `iztro` you can easily obtain this data.
 
 :::tabs
 == ES6 Module
@@ -646,7 +646,7 @@ Buy me a coffee if it's useful for you. 👍 [Paypal Me](https://PayPal.Me/sylar
 
 The above data can generate the following natal chart. The `palaces` data is used to fill the 12 palaces, while the other data is used to fill the central palace. Please keep in mind that the display of the flowing `Star names` in the image may differ from the actual returned data. This is because the image was generated from an earlier version. Please refer to the actual returned data for accuracy.
 
-![demo](https://github.com/SylarLong/astro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
+![demo](https://github.com/SylarLong/iztro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
 
 ## 📜 License
 
