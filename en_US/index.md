@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Astro Docs"
+  name: "IZTRO Docs"
   text: "It's NOT only a document."
-  tagline: Doucument of @sylarlong/astro the lightweight astrolabe generator of The Purple Star Astrology (Zi Wei Dou Shu).
+  tagline: Doucument of iztro the lightweight astrolabe generator of The Purple Star Astrology (Zi Wei Dou Shu).
   actions:
     - theme: alt
       text: How it looks

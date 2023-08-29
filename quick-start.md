@@ -1,6 +1,6 @@
 <div align="center">
 
-# ASTRO
+# IZTRO
 
 一套轻量级获取紫微斗数排盘信息的Javascript开源库。
 
@@ -8,19 +8,19 @@
 
 <div align="center" class="badges">
 
-[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SylarLong/astro/Codecov.yaml)](https://github.com/SylarLong/astro/actions) [![npm](https://img.shields.io/npm/v/%40sylarlong%2Fastro)](https://www.npmjs.com/package/@sylarlong/astro) [![GitHub top language](https://img.shields.io/github/languages/top/SylarLong/astro)](https://github.com/search?q=repo%3ASylarLong%2Fastro++language%3ATypeScript&type=code) [![Codecov](https://img.shields.io/codecov/c/github/sylarlong/astro)](https://app.codecov.io/gh/SylarLong/astro/tree/main/src%2Fstar) [![npm](https://img.shields.io/npm/dw/%40sylarlong/astro)](https://www.npmjs.com/package/@sylarlong/astro) [![Maintenance](https://img.shields.io/maintenance/yes/2023)](https://github.com/SylarLong/astro) [![GitHub](https://img.shields.io/github/license/sylarlong/astro)](https://www.npmjs.com/package/@sylarlong/astro) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SylarLong/astro)](https://www.npmjs.com/package/@sylarlong/astro) [![npm bundle size](https://img.shields.io/bundlephobia/min/%40sylarlong%2Fastro)](https://www.npmjs.com/package/@sylarlong/astro) [![GitHub issues](https://img.shields.io/github/issues/SylarLong/astro)](https://github.com/SylarLong/astro/issues) [![GitHub package.json dynamic](https://img.shields.io/github/package-json/author/sylarlong/astro)](https://github.com/SylarLong)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SylarLong/astro/Codecov.yaml)](https://github.com/SylarLong/astro/actions) [![npm](https://img.shields.io/npm/v/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub top language](https://img.shields.io/github/languages/top/SylarLong/astro)](https://github.com/search?q=repo%3ASylarLong%2Fastro++language%3ATypeScript&type=code) [![Codecov](https://img.shields.io/codecov/c/github/sylarlong/astro)](https://app.codecov.io/gh/SylarLong/astro/tree/main/src%2Fstar) [![npm](https://img.shields.io/npm/dw/%40sylarlong/astro)](https://www.npmjs.com/package/iztro) [![Maintenance](https://img.shields.io/maintenance/yes/2023)](https://github.com/SylarLong/astro) [![GitHub](https://img.shields.io/github/license/sylarlong/astro)](https://www.npmjs.com/package/iztro) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SylarLong/astro)](https://www.npmjs.com/package/iztro) [![npm bundle size](https://img.shields.io/bundlephobia/min/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub issues](https://img.shields.io/github/issues/SylarLong/astro)](https://github.com/SylarLong/astro/issues) [![GitHub package.json dynamic](https://img.shields.io/github/package-json/author/sylarlong/astro)](https://github.com/SylarLong)
 
 </div>
 
 ## 概览
 
-欢迎使用 `@sylarlong/astro` 开发文档！本页将向你介绍如何集成、如何获取数据、以及如何快速得到紫微斗数里一张星盘上的所有数据。如果你只是基础使用者，阅读完本篇文档将足够你日常使用。
+欢迎使用 `iztro` 开发文档！本页将向你介绍如何集成、如何获取数据、以及如何快速得到紫微斗数里一张星盘上的所有数据。如果你只是基础使用者，阅读完本篇文档将足够你日常使用。
 如果你已经掌握了本页内容，可以到其他页面进行更深入的探索。
 
 <div class='custom-block'>
 
  你将获取到以下信息：
- - 如何将`@sylarlong/astro`安装和集成到你的代码里
+ - 如何将`iztro`安装和集成到你的代码里
  - 如何获取到一张星盘
  - 如何基于星盘开始分析宫位
  - 如何基于宫位开始分析星耀
@@ -34,11 +34,11 @@
 :::tabs
 == npm
   ```sh
-  npm install @sylarlong/astro -S
+  npm install iztro -S
   ```
 == yarn
   ```sh
-  yarn add @sylarlong/astro
+  yarn add iztro
   ```
 == pnpm
   ```sh
@@ -46,11 +46,11 @@
   ```
 :::
 
-安装顺利的话，会在你的`package.json`依赖列表中找到`@sylarlong/astro`
+安装顺利的话，会在你的`package.json`依赖列表中找到`iztro`
 
 ```json
 "dependencies": {
-  "@sylarlong/astro": "^1.0.0"
+  "iztro": "^1.0.0"
 }
 ```
 
@@ -60,22 +60,22 @@
 
 #### 引入代码
 
-你可以根据下列方式将`@sylarlong/astro`引入你的代码
+你可以根据下列方式将`iztro`引入你的代码
 
 :::tabs
 == ES6 Module
 ```ts
-import { astro } from '@sylarlong/astro';
+import { astro } from 'iztro';
 ```
 == CommonJS
 ```js
-var astroObj = require('@sylarlong/astro');
+var astroObj = require('iztro');
 ```
 :::
 
 #### 获取星盘数据
 
-在获取紫微斗数星盘的时候，可以根据`农历`或者`阳历`日期来获取，`@sylarlong/astro`提供了这两种获取方式，你可以根据你的需求使用，但我们更推荐你使用`阳历`的方式来使用。
+在获取紫微斗数星盘的时候，可以根据`农历`或者`阳历`日期来获取，`iztro`提供了这两种获取方式，你可以根据你的需求使用，但我们更推荐你使用`阳历`的方式来使用。
 放心，阳历和农历在程序内部获取到的数据是统一的。
 
 <div class='custom-block'>
@@ -92,7 +92,7 @@ var astroObj = require('@sylarlong/astro');
 :::tabs
 == ES6 Module
 ```ts
-import { astro } from '@sylarlong/astro';
+import { astro } from 'iztro';
 
 // 通过阳历获取星盘信息
 const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
@@ -102,7 +102,7 @@ const astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女');
 ```
 == CommonJS
 ```js
-var { astro } = require('@sylarlong/astro');
+var { astro } = require('iztro');
 
 // 通过阳历获取星盘信息
 var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
@@ -470,7 +470,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 :::tabs
 == ES6 Module
 ```ts
-import { astro } from '@sylarlong/astro';
+import { astro } from 'iztro';
 
 // 通过阳历获取星盘信息
 const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
@@ -480,7 +480,7 @@ astrolabe.horoscope(new Date());
 ```
 == CommonJS
 ```js
-var { astro } = require('@sylarlong/astro');
+var { astro } = require('iztro');
 
 // 通过阳历获取星盘信息
 var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
@@ -564,7 +564,7 @@ astrolabe.horoscope(new Date());
 :::tabs
 == ES6 Module
 ```ts
-import { star } from '@sylarlong/astro';
+import { star } from 'iztro';
 
 // 通过天干地支获取流耀
 const horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
@@ -572,7 +572,7 @@ const horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 == CommonJS
 
 ```js
-var { star } = require('@sylarlong/astro');
+var { star } = require('iztro');
 
 // 通过天干地支获取流耀
 var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
