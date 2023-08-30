@@ -42,7 +42,7 @@
   ```
 == pnpm
   ```sh
-  pnpm add -D vitepress-plugin-tabs
+  pnpm add -S iztro
   ```
 :::
 
@@ -50,7 +50,7 @@
 
 ```json
 "dependencies": {
-  "iztro": "^1.0.0"
+  "iztro": "^1.1.0"
 }
 ```
 
