@@ -94,20 +94,20 @@ Using the `solar calendar` has the following advantages:
 import { astro } from 'iztro';
 
 // Get astrolabe by solar calendar.
-const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
+const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
 
 // Get astrolabe by lunar calendar.
-const astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女');
+const astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, 'male');
 ```
 == CommonJS
 ```js
 var { astro } = require('iztro');
 
 // Get astrolabe by solar calendar.
-var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
+var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
 
 // Get astrolabe by lunar calendar.
-var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
+var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, 'male', false);
 ```
 :::
 
@@ -442,7 +442,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
     |--|--|--|--|--|
     |solarDateStr|`string`|`true`|-|solar date string【YYYY-M-D】|
     |timeIndex|`number`|`true`|-|chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）|
-    |gender|`string`|`true`|-|gender【男/女】|
+    |gender|`string`|`true`|-|gender【male/female】|
     |fixLeap|`boolean`|`false`|`true`|whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month|
     |language|`Language`|`false`|`zh-CN`|the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now|
 
@@ -460,7 +460,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
     |--|--|--|--|--|
     |lunarDateStr|`string`|`true`|-|lunar date【YYYY-M-D】. e.g. pass `2000-7-17` if it's `2000年七月十七`|
     |timeIndex|`number`|`true`|-|chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）|
-    |gender|`string`|`true`|-| gender【男/女】|
+    |gender|`string`|`true`|-| gender【male/female】|
     |isLeapMonth|`boolean`|`false`|`false`|whether the date is a leap month. This parameter does not take effect when there is no leap month in the actual month|
     |fixLeap|`boolean`|`false`|`true`|whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month|
     |language|`Language`|`false`|`zh-CN`|the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now|
@@ -479,7 +479,7 @@ The `horoscope` in Zi Wei Dou Shu is divided into "大限" (`Decadal horoscope`)
 import { astro } from 'iztro';
 
 // Get astrolabe by solar calendar.
-const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
+const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
 
 // Get horoscope data of the `astrolabe` instance
 astrolabe.horoscope(new Date());
@@ -489,7 +489,7 @@ astrolabe.horoscope(new Date());
 var { astro } = require('iztro');
 
 // Get astrolabe by solar calendar.
-var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
+var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
 
 // Get horoscope data of the `astrolabe` instance
 astrolabe.horoscope(new Date());
@@ -539,7 +539,7 @@ You'll get the result below by invoking `astrolabe`.`horoscope()`
     palaceNames: ["子女", "夫妻", "兄弟", "命宫", "父母", "福德", "田宅", "官禄", "仆役", "迁移", "疾厄", "财帛"]
     mutagen: ["贪狼", "太阴", "右弼", "天机"]
   }, 
-  timely: {
+  hourly: {
     index: 3
     heavenlyStem: "壬"
     earthlyBranch: "子"

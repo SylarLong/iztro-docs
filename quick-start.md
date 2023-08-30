@@ -543,7 +543,7 @@ astrolabe.horoscope(new Date());
     palaceNames: ["子女", "夫妻", "兄弟", "命宫", "父母", "福德", "田宅", "官禄", "仆役", "迁移", "疾厄", "财帛"]
     mutagen: ["贪狼", "太阴", "右弼", "天机"]
   }, 
-  timely: {
+  hourly: {
     index: 3
     heavenlyStem: "壬"
     earthlyBranch: "子"
