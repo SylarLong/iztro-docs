@@ -1,7 +1,7 @@
 {
-  "name": "astro-docs",
+  "name": "iztro-docs",
   "version": "1.0.0",
-  "description": "document of @sylarlong/astro",
+  "description": "document of iztro",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,12 +1,12 @@
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
-const version = 'v1.0.0';
+const version = 'v1.1.0';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Astro Docs",
-  description: "document of @sylarlong/astro",
+  title: "iztro Docs",
+  description: "document of iztro",
   outDir: "../astro/docs/",
   
   markdown: {
@@ -30,14 +30,14 @@ export default defineConfig({
             text: version,
             items: [
               { text: '更改日志', link: 'https://github.com/SylarLong/astro/blob/main/CHANGELOG.md' },
-              { text: 'NPM地址', link: 'https://www.npmjs.com/package/@sylarlong/astro' },
+              { text: 'NPM地址', link: 'https://www.npmjs.com/package/iztro' },
             ]
           }
         ],
     
         sidebar: [
           {
-            text: '@sylarlong/astro',
+            text: 'iztro',
             items: [
               { text: '快速开始', link: '/quick-start.md' },
             ]
@@ -67,14 +67,14 @@ export default defineConfig({
             text: version,
             items: [
               { text: 'Changlog', link: 'https://github.com/SylarLong/astro/blob/main/CHANGELOG.md' },
-              { text: 'NPM Package', link: 'https://www.npmjs.com/package/@sylarlong/astro' },
+              { text: 'NPM Package', link: 'https://www.npmjs.com/package/iztro' },
             ]
           }
         ],
     
         sidebar: [
           {
-            text: '@sylarlong/astro',
+            text: 'iztro',
             items: [
               { text: 'Quick Start', link: '/en_US/quick-start.md' },
             ]

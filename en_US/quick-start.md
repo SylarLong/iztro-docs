@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1 class="brand-name text-clip">ASTRO</h1>
+<h1 class="brand-name text-clip">IZTRO</h1>
 
 A lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information.
 
@@ -8,19 +8,19 @@ A lightweight Open-Source Javascript library of getting The Purple Star Astrolog
 
 <div align="center" class="badges">
 
-[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SylarLong/astro/Codecov.yaml)](https://github.com/SylarLong/astro/actions) [![npm](https://img.shields.io/npm/v/%40sylarlong%2Fastro)](https://www.npmjs.com/package/@sylarlong/astro) [![GitHub top language](https://img.shields.io/github/languages/top/SylarLong/astro)](https://github.com/search?q=repo%3ASylarLong%2Fastro++language%3ATypeScript&type=code) [![Codecov](https://img.shields.io/codecov/c/github/sylarlong/astro)](https://app.codecov.io/gh/SylarLong/astro/tree/main/src%2Fstar) [![npm](https://img.shields.io/npm/dw/%40sylarlong/astro)](https://www.npmjs.com/package/@sylarlong/astro) [![Maintenance](https://img.shields.io/maintenance/yes/2023)](https://github.com/SylarLong/astro) [![GitHub](https://img.shields.io/github/license/sylarlong/astro)](https://www.npmjs.com/package/@sylarlong/astro) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SylarLong/astro)](https://www.npmjs.com/package/@sylarlong/astro) [![npm bundle size](https://img.shields.io/bundlephobia/min/%40sylarlong%2Fastro)](https://www.npmjs.com/package/@sylarlong/astro) [![GitHub issues](https://img.shields.io/github/issues/SylarLong/astro)](https://github.com/SylarLong/astro/issues) [![GitHub package.json dynamic](https://img.shields.io/github/package-json/author/sylarlong/astro)](https://github.com/SylarLong)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SylarLong/iztro/Codecov.yaml)](https://github.com/SylarLong/iztro/actions) [![npm](https://img.shields.io/npm/v/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub top language](https://img.shields.io/github/languages/top/SylarLong/iztro)](https://github.com/search?q=repo%3ASylarLong%2Fastro++language%3ATypeScript&type=code) [![Codecov](https://img.shields.io/codecov/c/github/sylarlong/iztro)](https://app.codecov.io/gh/SylarLong/iztro/tree/main/src%2Fstar) [![npm](https://img.shields.io/npm/dw/%40sylarlong/iztro)](https://www.npmjs.com/package/iztro) [![Maintenance](https://img.shields.io/maintenance/yes/2023)](https://github.com/SylarLong/iztro) [![GitHub](https://img.shields.io/github/license/sylarlong/iztro)](https://www.npmjs.com/package/iztro) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SylarLong/iztro)](https://www.npmjs.com/package/iztro) [![npm bundle size](https://img.shields.io/bundlephobia/min/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro) [![GitHub issues](https://img.shields.io/github/issues/SylarLong/iztro)](https://github.com/SylarLong/iztro/issues) [![GitHub package.json dynamic](https://img.shields.io/github/package-json/author/sylarlong/iztro)](https://github.com/SylarLong)
 
 </div>
 
 ## Overview
 
-Welcome to the `@sylarlong/astro` development documentation! This page will introduce you to how to integrate, how to retrieve data, and how to quickly obtain all the data on a natal chart in Zi Wei Dou Shu. If you are just a basic user, reading this document will be enough for your daily use.
+Welcome to the `iztro` development documentation! This page will introduce you to how to integrate, how to retrieve data, and how to quickly obtain all the data on a natal chart in Zi Wei Dou Shu. If you are just a basic user, reading this document will be enough for your daily use.
 If you have mastered the content on this page, you can explore further on other pages.
 
 <div class='custom-block'>
 
 You will obtain the following information:
-- How to install and integrate @sylarlong/astro into your code
+- How to install and integrate iztro into your code
 - How to retrieve a natal chart information
 - How to analyze palace positions based on the natal chart information
 - How to analyze star brilliance based on palace positions
@@ -29,28 +29,28 @@ You will obtain the following information:
 
 ## Install
 
-You can install `@sylarlong/astro` using any package management tool you are familiar with.
+You can install `iztro` using any package management tool you are familiar with.
 
 :::tabs
 == npm
   ```sh
-  npm install @sylarlong/astro -S
+  npm install iztro -S
   ```
 == yarn
   ```sh
-  yarn add @sylarlong/astro
+  yarn add iztro
   ```
 == pnpm
   ```sh
-  pnpm add -D vitepress-plugin-tabs
+  pnpm add -S iztro
   ```
 :::
 
-If the installation is successful, you will find `@sylarlong/astro` in the dependencies list of your `package.json`.
+If the installation is successful, you will find `iztro` in the dependencies list of your `package.json`.
 
 ```json
 "dependencies": {
-  "@sylarlong/astro": "^1.0.0"
+  "iztro": "^1.0.0"
 }
 ```
 
@@ -60,22 +60,22 @@ If the installation is successful, you will find `@sylarlong/astro` in the depen
 
 #### Import code
 
-You can import `@sylarlong/astro` into your code using the following methods.
+You can import `iztro` into your code using the following methods.
 
 :::tabs
 == ES6 Module
 ```ts
-import { astro } from '@sylarlong/astro';
+import { astro } from 'iztro';
 ```
 == CommonJS
 ```js
-var astroObj = require('@sylarlong/astro');
+var astroObj = require('iztro');
 ```
 :::
 
 #### Get astrolabe data
 
-When retrieving a natal chart in Zi Wei Dou Shu, you can obtain it based on either the `lunar calendar` or the `solar calendar`. `@sylarlong/astro` provides both options, and you can choose according to your needs. However, we recommend using the `solar calendar` method. Rest assured, the data obtained internally by the program is consistent for both the `lunar` and `solar` calendars.
+When retrieving a natal chart in Zi Wei Dou Shu, you can obtain it based on either the `lunar calendar` or the `solar calendar`. `iztro` provides both options, and you can choose according to your needs. However, we recommend using the `solar calendar` method. Rest assured, the data obtained internally by the program is consistent for both the `lunar` and `solar` calendars.
 
 <div class='custom-block'>
 
@@ -91,23 +91,23 @@ Using the `solar calendar` has the following advantages:
 :::tabs
 == ES6 Module
 ```ts
-import { astro } from '@sylarlong/astro';
+import { astro } from 'iztro';
 
 // Get astrolabe by solar calendar.
-const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
+const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
 
 // Get astrolabe by lunar calendar.
-const astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女');
+const astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, 'male');
 ```
 == CommonJS
 ```js
-var { astro } = require('@sylarlong/astro');
+var { astro } = require('iztro');
 
 // Get astrolabe by solar calendar.
-var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
+var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
 
 // Get astrolabe by lunar calendar.
-var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
+var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, 'male', false);
 ```
 :::
 
@@ -442,7 +442,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
     |--|--|--|--|--|
     |solarDateStr|`string`|`true`|-|solar date string【YYYY-M-D】|
     |timeIndex|`number`|`true`|-|chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）|
-    |gender|`string`|`true`|-|gender【男/女】|
+    |gender|`string`|`true`|-|gender【male/female】|
     |fixLeap|`boolean`|`false`|`true`|whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month|
     |language|`Language`|`false`|`zh-CN`|the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now|
 
@@ -460,7 +460,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
     |--|--|--|--|--|
     |lunarDateStr|`string`|`true`|-|lunar date【YYYY-M-D】. e.g. pass `2000-7-17` if it's `2000年七月十七`|
     |timeIndex|`number`|`true`|-|chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）|
-    |gender|`string`|`true`|-| gender【男/女】|
+    |gender|`string`|`true`|-| gender【male/female】|
     |isLeapMonth|`boolean`|`false`|`false`|whether the date is a leap month. This parameter does not take effect when there is no leap month in the actual month|
     |fixLeap|`boolean`|`false`|`true`|whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month|
     |language|`Language`|`false`|`zh-CN`|the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now|
@@ -471,25 +471,25 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
 
 ## Get horoscope data
 
-The `horoscope` in Zi Wei Dou Shu is divided into "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`), "流时" (`Hourly horoscope`), "流分" (`Minute horoscope`), and "流秒" (`Second horoscope`). However, since `Minute horoscope` and `Second horoscope` are not commonly used, we do not currently provide them. "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`) are already sufficient to meet the majority of needs and scenarios. By using "@syalrlong/astro," you can easily obtain this data.
+The `horoscope` in Zi Wei Dou Shu is divided into "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`), "流时" (`Hourly horoscope`), "流分" (`Minute horoscope`), and "流秒" (`Second horoscope`). However, since `Minute horoscope` and `Second horoscope` are not commonly used, we do not currently provide them. "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`) are already sufficient to meet the majority of needs and scenarios. By using `iztro` you can easily obtain this data.
 
 :::tabs
 == ES6 Module
 ```ts
-import { astro } from '@sylarlong/astro';
+import { astro } from 'iztro';
 
 // Get astrolabe by solar calendar.
-const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
+const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
 
 // Get horoscope data of the `astrolabe` instance
 astrolabe.horoscope(new Date());
 ```
 == CommonJS
 ```js
-var { astro } = require('@sylarlong/astro');
+var { astro } = require('iztro');
 
 // Get astrolabe by solar calendar.
-var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女');
+var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
 
 // Get horoscope data of the `astrolabe` instance
 astrolabe.horoscope(new Date());
@@ -539,7 +539,7 @@ You'll get the result below by invoking `astrolabe`.`horoscope()`
     palaceNames: ["子女", "夫妻", "兄弟", "命宫", "父母", "福德", "田宅", "官禄", "仆役", "迁移", "疾厄", "财帛"]
     mutagen: ["贪狼", "太阴", "右弼", "天机"]
   }, 
-  timely: {
+  hourly: {
     index: 3
     heavenlyStem: "壬"
     earthlyBranch: "子"
@@ -577,7 +577,7 @@ The `horoscope()` method above already includes the `horoscope star` of the `Dec
 :::tabs
 == ES6 Module
 ```ts
-import { star } from '@sylarlong/astro';
+import { star } from 'iztro';
 
 // Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
 const horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
@@ -585,7 +585,7 @@ const horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 == CommonJS
 
 ```js
-var { star } = require('@sylarlong/astro');
+var { star } = require('iztro');
 
 // Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
 var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
@@ -646,7 +646,7 @@ Buy me a coffee if it's useful for you. 👍 [Paypal Me](https://PayPal.Me/sylar
 
 The above data can generate the following natal chart. The `palaces` data is used to fill the 12 palaces, while the other data is used to fill the central palace. Please keep in mind that the display of the flowing `Star names` in the image may differ from the actual returned data. This is because the image was generated from an earlier version. Please refer to the actual returned data for accuracy.
 
-![demo](https://github.com/SylarLong/astro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
+![demo](https://github.com/SylarLong/iztro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
 
 ## 📜 License
 

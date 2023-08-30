@@ -1,2 +1,2 @@
-# astro-docs
-document of @sylarlong/astro
+# iztro-docs
+document of iztro
