@@ -37,3 +37,17 @@ header .container a.title, .text-clip {
 table tr th:not(:last-child), table tr td:not(:last-child) {
   white-space: nowrap;
 }
+
+.astrolabe tr, .astrolabe tr:nth-child(2n) {
+  background-color: transparent;
+}
+.astrolabe td {
+  width: 100px;
+  height: 100px;
+  background-color: var(--vp-plugin-tabs-tab-bg);
+  text-align: center;
+}
+
+.astrolabe td.center-palace {
+  background-color: transparent;
+}

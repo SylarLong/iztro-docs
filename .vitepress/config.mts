@@ -41,6 +41,7 @@ export default defineConfig({
             items: [
               { text: '快速开始', link: '/quick-start.md' },
               { text: '类型定义', link: '/type-definition.md' },
+              { text: '星盘', link: '/posts/astrolabe.md' },
             ]
           }
         ],

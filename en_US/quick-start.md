@@ -70,7 +70,7 @@ import { astro } from 'iztro';
 ```
 == CommonJS
 ```js
-var astroObj = require('iztro');
+var iztro = require('iztro');
 ```
 :::
 

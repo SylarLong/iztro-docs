@@ -5,6 +5,7 @@ import './custom.css'
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
+    DefaultTheme.enhanceApp({ app });
     enhanceAppWithTabs(app);
   }
 }

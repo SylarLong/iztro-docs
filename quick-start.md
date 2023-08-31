@@ -70,7 +70,7 @@ import { astro } from 'iztro';
 ```
 == CommonJS
 ```js
-var astroObj = require('iztro');
+var iztro = require('iztro');
 ```
 :::
 
@@ -445,7 +445,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 
   - 返回值
   
-    [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
+    [`FunctionalAstrolabe`](./posts/astrolabe.md#functionalastrolabe)
 
 - 通过农历日期获取星盘信息
 
@@ -464,7 +464,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 
   - 返回值
   
-    [`FunctionalAstrolabe`](./type-definition.html#functionalastrolabe)
+    [`FunctionalAstrolabe`](./posts/astrolabe.md#functionalastrolabe)
 
 ## 获取运限
 
