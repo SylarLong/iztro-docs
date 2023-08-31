@@ -24,7 +24,7 @@ import { Palace } from "iztro/lib/data/types";
 
 ## 国际化类型
 
-`iztro` 为了支持国际化输入输出，对需要进行参数输入输出的数据进行了多语言定义，在输入的时候，你可以输入 **任意语言** 的值，比如在需要传 `HeavenlyStemName` 的地方，你可以传入 `甲`，也可以传入 `갑` 或者 `jia`。
+`iztro` 为了支持国际化输入输出，对需要进行参数输入输出的数据进行了多语言定义，在输入的时候，你可以输入 **任意语言** 的值，比如在需要传 [`HeavenlyStemName`](/type-definition.html#heavenlystemname) 的地方，你可以传入 `甲`，也可以传入 `갑` 或者 `jia`。
 
 比如在调用`getHoroscopeStar()`方法的时候，你可以以中文的干支作为参数：
 
@@ -937,7 +937,7 @@ const horoscopeStar = getHoroscopeStar('甲','zi','decadal');
 export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
 ```
 
-定义了支持的`语言`，目前支持的语言有：
+定义了支持的 `语言`，目前支持的语言有：
 
 - `zh-CN`：简体中文
 - `zh-TW`：繁體中文
@@ -953,7 +953,7 @@ export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
 export type Scope = 'origin' | 'decadal' | 'yearly';
 ```
 
-定义了星耀的`作用范围`，用于区分本命星耀和流耀：
+定义了星耀的 `作用范围`，用于区分本命星耀和流耀：
 
 - `origin`：本命星耀
 - `decadal`：大限星耀
@@ -975,7 +975,7 @@ export type StarType =
   | 'tianma';
 ```
 
-定义了星耀`类型`，其中`桃花星`和`解神星`（包含`年解`）虽然是杂耀，但是在解盘中有着特殊的意义，所以单独归类，`禄存`和`天马`二辅星也是比较特殊，所以单独归类：
+定义了星耀 `类型`，其中 `桃花星` 和 `解神星`（包含 `年解`）虽然是杂耀，但是在解盘中有着特殊的意义，所以单独归类，`禄存` 和 `天马` 二辅星也是比较特殊，所以单独归类：
 
 - `major`：主星
 - `soft`：吉星
@@ -1001,15 +1001,15 @@ export type HoroscopeItem = {
 };
 ```
 
-定义了`运限对象`
+定义了 `运限对象`
 
-|取值|解释|类型|
+|属性|解释|类型|
 |--|--|--|
 |`index`|所在宫位的索引|`number`|
-|`heavenlyStem`|运限天干|`HeavenlyStemName`|
-|`earthlyBranch`|运限地支|`EarthlyBranchName`|
-|`palaceNames`|运限的十二宫|`PalaceName[]`|
-|`mutagen`|四化星|`StarName[]`|
+|`heavenlyStem`|运限天干|[`HeavenlyStemName`](/type-definition.html#heavenlystemname)|
+|`earthlyBranch`|运限地支|[`EarthlyBranchName`](/type-definition.html#earthlybranchname)|
+|`palaceNames`|运限的十二宫|[`PalaceName[]`](/type-definition.html#palacename)|
+|`mutagen`|四化星|[`StarName[]`](/type-definition.html#starname)|
 |`stars`|流耀|`Star[][]`|
 
 ---
@@ -1024,13 +1024,13 @@ export type Decadal = {
 };
 ```
 
-定义了星盘的`大限`，此类型主要用在[Palace](/type-definition.html#palace)内。
+定义了星盘的 `大限`，此类型主要用在 [Palace](/type-definition.html#palace) 内。
 
-|取值|解释|类型|
+|属性|解释|类型|
 |--|--|--|
 |`range`|大限起止年龄 [`起始年龄`, `截止年龄`]|`[number, number]`|
-|`heavenlyStem`|大限天干|`HeavenlyStemName`|
-|`earthlyBranch`|大限地支|`EarthlyBranchName`|
+|`heavenlyStem`|大限天干|[`HeavenlyStemName`](/type-definition.html#heavenlystemname)|
+|`earthlyBranch`|大限地支|[`EarthlyBranchName`](/type-definition.html#earthlybranchname)|
 
 ---
 
@@ -1038,7 +1038,7 @@ export type Decadal = {
 
 ## 星耀
 
-### Star
+#### `Star`
 
 ## 宫位
 
@@ -1046,4 +1046,4 @@ export type Decadal = {
 
 ## 运限
 
-### Horoscope
+#### `Horoscope`
