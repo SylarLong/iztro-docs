@@ -467,192 +467,207 @@ var iztro = require('iztro');
 
 #### FunctionalAstrolabe 
 
-- `IFunctionalAstrolabe` <Badge type="tip" text="extends" /> [Astrolabe](../type-definition.md#astrolabe)
+---
 
-  该类所有属性都是继承自 [Astrolabe](../type-definition.md#astrolabe)，然后在接口内定义了一些方法用于对星盘的分析。[`astrolabeBySolarDate()`](./astrolabe.md#astrolabebysolardate) 和 [`astrolabeByLunarDate()`](./astrolabe.md#astrolabeByLunarDate) 方法会返回一个该类的实例。
+<Badge type="tip" text="implements" /> `IFunctionalAstrolabe` <Badge type="tip" text="extends" /> [`Astrolabe`](../type-definition.md#astrolabe)
 
-  - 属性
+该类所有属性都是继承自 [Astrolabe](../type-definition.md#astrolabe)，然后在接口内定义了一些方法用于对星盘的分析。[`astrolabeBySolarDate()`](./astrolabe.md#astrolabebysolardate) 和 [`astrolabeByLunarDate()`](./astrolabe.md#astrolabeByLunarDate) 方法会返回一个该类的实例。
 
-    参考 [Astrolabe](../type-definition.md#astrolabe)
+- 接口定义
 
-  - 方法
+  ```ts
+  interface IFunctionalAstrolabe extends Astrolabe {
+    horoscope: (date?: string | Date, timeIndex?: number) => Horoscope;
+    palace: (indexOrName: number | PalaceName) => IFunctionalPalace | undefined;
+    surroundedPalaces: (indexOrName: number | PalaceName) => SurroundedPalaces;
+    isSurrounded: (indexOrName: number | PalaceName, stars: StarName[]) => boolean;
+    isSurroundedOneOf: (indexOrName: number | PalaceName, stars: StarName[]) => boolean;
+    notSurrounded: (indexOrName: number | PalaceName, stars: StarName[]) => boolean;
+  }
+  ```
 
-    ##### horoscope() <Badge type="warning" text="^0.2.0" />
+- 属性
 
-    - 用途
+  参考 [Astrolabe](../type-definition.md#astrolabe)
 
-      获取运限数据。如果只是想获取调用时的运限数据，可以不传任何参数，该方法会获取系统当前时间进行计算。
+- 方法
 
-      :::warning 注意
-      - 当 `date` 为 `YYYY-M-D` 格式的字符串而没有传 `timeIndex` 参数时，会取 `date` 当日 `早子时` 的时间点作为 `流时` 的时间
-      - 当 `date` 为 `YYYY-M-D HH` 格式时间或是一个 `Date` 实例而没有传 `timeIndex` 参数时，会将 `date` 里的小时转化为时辰作为 `流时` 的时间
-      - 当传入 `timeIndex` 参数时，会优先使用该参数
-      :::
+  ##### horoscope() <Badge type="warning" text="^0.2.0" />
 
-    - 定义
+  - 用途
 
-      ```ts
-      type horoscope = (date?: string | Date, timeIndex?: number) => Horoscope;
-      ```
+    获取运限数据。如果只是想获取调用时的运限数据，可以不传任何参数，该方法会获取系统当前时间进行计算。
 
-    - 参数
+    :::warning 注意
+    - 当 `date` 为 `YYYY-M-D` 格式的字符串而没有传 `timeIndex` 参数时，会取 `date` 当日 `早子时` 的时间点作为 `流时` 的时间
+    - 当 `date` 为 `YYYY-M-D HH` 格式时间或是一个 `Date` 实例而没有传 `timeIndex` 参数时，会将 `date` 里的小时转化为时辰作为 `流时` 的时间
+    - 当传入 `timeIndex` 参数时，会优先使用该参数
+    :::
 
-      |参数|类型|是否必填|默认值|说明|
-      |--|--|--|--|--|
-      |date|`string` \| `Date`|`false`|`new Date()`|阳历日期【YYYY-M-D】|
-      |timeIndex|`number`|`false`|`0`|时辰索引【0~12】|
+  - 定义
 
-    - 返回值
+    ```ts
+    type horoscope = (date?: string | Date, timeIndex?: number) => Horoscope;
+    ```
 
-      [Horoscope](../type-definition.md#horoscope)
+  - 参数
 
-    - 示例
+    |参数|类型|是否必填|默认值|说明|
+    |--|--|--|--|--|
+    |date|`string` \| `Date`|`false`|`new Date()`|阳历日期【YYYY-M-D】|
+    |timeIndex|`number`|`false`|`0`|时辰索引【0~12】|
 
-      :::tabs
-      == 不传参数
-      ```ts
-      import { astro } from 'iztro';
+  - 返回值
 
-      const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女', true, 'zh-CN');
-      const horoscope = astrolabe.horoscope();
-      ```
-      == 传入date字符串
-      ```ts
-      import { astro } from 'iztro';
+    [Horoscope](../type-definition.md#horoscope)
 
-      const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女', true, 'zh-CN');
-      const horoscope = astrolabe.horoscope('2023-8-31');
-      ```
-      == 传入Date对象
-      ```ts
-      import { astro } from 'iztro';
+  - 示例
 
-      const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女', true, 'zh-CN');
-      const horoscope = astrolabe.horoscope(new Date(1693494208392));
-      ```
-      == 传入date和timeIndex
-      ```ts
-      import { astro } from 'iztro';
+    :::tabs
+    == 不传参数
+    ```ts
+    import { astro } from 'iztro';
 
-      const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女', true, 'zh-CN');
-      const horoscope = astrolabe.horoscope(new Date(1693494208392), 3);
-      ```
-      :::
+    const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女', true, 'zh-CN');
+    const horoscope = astrolabe.horoscope();
+    ```
+    == 传入date字符串
+    ```ts
+    import { astro } from 'iztro';
 
-    ---
+    const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女', true, 'zh-CN');
+    const horoscope = astrolabe.horoscope('2023-8-31');
+    ```
+    == 传入Date对象
+    ```ts
+    import { astro } from 'iztro';
 
-    ##### palace() <Badge type="warning" text="^1.0.0" />
+    const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女', true, 'zh-CN');
+    const horoscope = astrolabe.horoscope(new Date(1693494208392));
+    ```
+    == 传入date和timeIndex
+    ```ts
+    import { astro } from 'iztro';
 
-    - 用途
+    const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, '女', true, 'zh-CN');
+    const horoscope = astrolabe.horoscope(new Date(1693494208392), 3);
+    ```
+    :::
 
-      获取星盘的指定 `宫位`
+  ---
 
-    - 定义
+  ##### palace() <Badge type="warning" text="^1.0.0" />
 
-      ```ts
-      type palace = (
-        indexOrName: number | PalaceName
-      ) => IFunctionalPalace | undefined;
-      ```
+  - 用途
 
-    - 参数
-    - 返回值
+    获取星盘的指定 `宫位`
 
-      [IFunctionalPalace](./palace.md#functionalpalace)
+  - 定义
 
-    - 示例
+    ```ts
+    type palace = (
+      indexOrName: number | PalaceName
+    ) => IFunctionalPalace | undefined;
+    ```
 
-    ---
+  - 参数
+  - 返回值
 
-    ##### isSurrounded() <Badge type="warning" text="^1.0.0" />
+    [IFunctionalPalace](./palace.md#functionalpalace)
 
-    - 用途
+  - 示例
 
-      判断某一个宫位 `三方四正` 是否包含目标 `星耀`，必须要**全部**包含才会返回 `true`
+  ---
 
-    - 定义
+  ##### isSurrounded() <Badge type="warning" text="^1.0.0" />
 
-      ```ts
-      type isSurrounded = (
-        indexOrName: number | PalaceName, 
-        stars: StarName[]
-      ) => boolean;
-      ```
+  - 用途
 
-    - 参数
-    - 返回值
+    判断某一个宫位 `三方四正` 是否包含目标 `星耀`，必须要**全部**包含才会返回 `true`
 
-      `boolean`
+  - 定义
 
-    - 示例
+    ```ts
+    type isSurrounded = (
+      indexOrName: number | PalaceName, 
+      stars: StarName[]
+    ) => boolean;
+    ```
 
-    ---
+  - 参数
+  - 返回值
 
-    ##### surroundedPalaces() <Badge type="warning" text="^1.1.0" />
+    `boolean`
 
-    - 用途
+  - 示例
 
-      获取 `三方四正` 宫位，所谓三方四正就是传入的 `目标宫`，以及其 `对宫`，`财帛位` 和 `官禄位`，总共四个宫位。`宫` 和 `位` 是两个概念，如果你对宫位和三方四正的概念不清楚，可以点击 [宫位](./palace.md) 查看详细信息。
+  ---
 
-    - 定义
+  ##### surroundedPalaces() <Badge type="warning" text="^1.1.0" />
 
-      ```ts
-      type surroundedPalaces = (
-        indexOrName: number | PalaceName
-      ) => SurroundedPalaces;
-      ```
+  - 用途
 
-    - 参数
-    - 返回值
+    获取 `三方四正` 宫位，所谓三方四正就是传入的 `目标宫`，以及其 `对宫`，`财帛位` 和 `官禄位`，总共四个宫位。`宫` 和 `位` 是两个概念，如果你对宫位和三方四正的概念不清楚，可以点击 [宫位](./palace.md) 查看详细信息。
 
-      [`SurroundedPalaces`](../type-definition.md#surroundedpalaces)
+  - 定义
 
-    - 示例
+    ```ts
+    type surroundedPalaces = (
+      indexOrName: number | PalaceName
+    ) => SurroundedPalaces;
+    ```
 
-    ---
+  - 参数
+  - 返回值
 
-    ##### isSurroundedOneOf() <Badge type="warning" text="^1.1.0" />
+    [`SurroundedPalaces`](../type-definition.md#surroundedpalaces)
 
-    - 用途
+  - 示例
 
-      判断指定宫位 `三方四正` 内是否有传入星耀的 `其中一个`，只要命中 `一个` 就会返回 `true`
+  ---
 
-    - 定义
+  ##### isSurroundedOneOf() <Badge type="warning" text="^1.1.0" />
 
-      ```ts
-      type isSurroundedOneOf = (
-        indexOrName: number | PalaceName, 
-        stars: StarName[]
-      ) => boolean;
-      ```
+  - 用途
 
-    - 参数
-    - 返回值
+    判断指定宫位 `三方四正` 内是否有传入星耀的 `其中一个`，只要命中 `一个` 就会返回 `true`
 
-      `boolean`
-      
-    - 示例
+  - 定义
 
-    ---
+    ```ts
+    type isSurroundedOneOf = (
+      indexOrName: number | PalaceName, 
+      stars: StarName[]
+    ) => boolean;
+    ```
 
-    ##### notSurrounded() <Badge type="warning" text="^1.1.0" />
+  - 参数
+  - 返回值
 
-    - 用途
+    `boolean`
+    
+  - 示例
 
-      判断指定宫位 `三方四正` 是否 `不含` 目标星耀，必须要全部都 `不在` 三方四正内含才会返回 `true`
+  ---
 
-    - 定义
+  ##### notSurrounded() <Badge type="warning" text="^1.1.0" />
 
-      ```ts
-      type notSurrounded = (
-        indexOrName: number | PalaceName, 
-        stars: StarName[]
-      ) => boolean;
-      ```
+  - 用途
 
-    - 参数
-    - 返回值
+    判断指定宫位 `三方四正` 是否 `不含` 目标星耀，必须要全部都 `不在` 三方四正内含才会返回 `true`
 
-      `boolean`
-      
-    - 示例
+  - 定义
+
+    ```ts
+    type notSurrounded = (
+      indexOrName: number | PalaceName, 
+      stars: StarName[]
+    ) => boolean;
+    ```
+
+  - 参数
+  - 返回值
+
+    `boolean`
+    
+  - 示例
