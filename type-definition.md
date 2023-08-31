@@ -1191,8 +1191,8 @@ export type Astrolabe = {
     lunarDate: LunarDate;
     chineseDate: HeavenlyStemAndEarthlyBranchDate;
   };
-  time: ChineseTime;
-  timeRange: TimeRange;
+  time: string;
+  timeRange: string;
   sign: string;
   zodiac: string;
   earthlyBranchOfSoulPalace: EarthlyBranchName;
@@ -1212,8 +1212,8 @@ export type Astrolabe = {
 |`lunarDate`|农历日期|`string`|
 |`chineseDate`|干支纪年日期|`string`|
 |`rawDates`|原始日期数据，用于今后内部方法使用|{ lunarDate: `LunarDate`, chineseDate: `HeavenlyStemAndEarthlyBranchDate` }|
-|`time`|时辰|[`ChineseTime`](/type-definition.html#chinesetime)|
-|`timeRange`|时辰对应的时间段|[`TimeRange`](/type-definition.html#timerange)|
+|`time`|时辰|`string`|
+|`timeRange`|时辰对应的时间段|`string`|
 |`sign`|星座|`string`|
 |`zodiac`|生肖|`string`|
 |`earthlyBranchOfSoulPalace`|命宫地支|[`EarthlyBranchName`](/type-definition.html#earthlybranchname)|
