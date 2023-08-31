@@ -986,7 +986,117 @@ export type StarType =
 - `lucun`：禄存
 - `tianma`：天马
 
-## 星盘
+## 星耀
+
+#### `Star`
+
+```ts
+export type Star = {
+  name: StarName;
+  type: StarType;
+  scope: Scope;
+  brightness?: Brightness;
+  mutagen?: Mutagen;
+};
+```
+
+定义了 `星耀` 对象
+
+|属性|解释|类型|
+|--|--|--|
+|`name`|星耀名字|[`StarName`](/type-definition.html#starname)|
+|`type`|星耀类型|[`StarType`](/type-definition.html#startype)|
+|`scope`|作用范围|[`Scope`](/type-definition.html#scope)|
+|`brightness`|星耀亮度|[`Brightness`](/type-definition.html#brightness)|
+|`mutagen`|四化|[`Mutagen`](/type-definition.html#mutagen)|
+
+## 宫位
+
+#### `SoulAndBody`
+
+```ts
+export type SoulAndBody = {
+  soulIndex: number;
+  bodyIndex: number;
+  heavenlyStemOfSoul: HeavenlyStemName;
+  earthlyBranchOfSoul: EarthlyBranchName;
+};
+```
+
+定义了 `命宫` 和 `身宫` 位置信息
+
+|属性|解释|类型|
+|--|--|--|
+|`soulIndex`|命宫索引|`number`|
+|`bodyIndex`|身宫索引|`number`|
+|`heavenlyStemOfSoul`|命宫天干|[`HeavenlyStemName`](/type-definition.html#heavenlystemname)|
+|`earthlyBranchOfSoul`|命宫地支|[`EarthlyBranchName`](/type-definition.html#earthlybranchname)|
+
+---
+
+#### `Palace`
+
+```ts
+export type Palace = {
+  name: PalaceName;
+  isBodyPalace: boolean;
+  isOriginalPalace: boolean;
+  heavenlyStem: HeavenlyStemName;
+  earthlyBranch: EarthlyBranchName;
+  majorStars: Star[];
+  minorStars: Star[];
+  adjectiveStars: Star[];
+  changsheng12: StarName;
+  boshi12: StarName;
+  jiangqian12: StarName;
+  suiqian12: StarName;
+  decadal: Decadal;
+  ages: number[];
+};
+```
+
+定义了 `宫位` 对象
+
+|属性|解释|类型|
+|--|--|--|
+|`name`|宫位名称|[`PalaceName`](/type-definition.html#palacename)|
+|`isBodyPalace`|是否身宫|`boolean`
+|`isOriginalPalace`|是否来因宫|`boolean`
+|`heavenlyStem`|宫位天干|[`HeavenlyStemName`](/type-definition.html#heavenlystemname)|
+|`earthlyBranch`|宫位地支|[`EarthlyBranchName`](/type-definition.html#earthlybranchname)|
+|`majorStars`|主星|[`Star[]`](/type-definition.html#star)|
+|`minorStars`|辅星|[`Star[]`](/type-definition.html#star)|
+|`adjectiveStars`|杂耀|[`Star[]`](/type-definition.html#star)|
+|`changsheng12`|长生12神|[`StarName`](/type-definition.html#starname)|
+|`boshi12`|博士12神|[`StarName`](/type-definition.html#starname)|
+|`jiangqian12`|流年将前12神|[`StarName`](/type-definition.html#starname)|
+|`suiqian12`|流年岁前12神|[`StarName`](/type-definition.html#starname)|
+|`decadal`|大限|[`Decadal`](/type-definition.html#decadal)
+|`ages`|小限|`number[]`|
+
+---
+
+#### `SurroundedPalaces`
+
+```ts
+export type SurroundedPalaces = {
+  target: IFunctionalPalace;
+  opposite: IFunctionalPalace;
+  wealth: IFunctionalPalace;
+  career: IFunctionalPalace;
+};
+```
+
+定义了 `三方四正` 对象
+
+|属性|解释|类型|
+|--|--|--|
+|`target`|本宫|`IFunctionalPalace`
+|`opposite`|对宫|`IFunctionalPalace`
+|`wealth`|财帛位|`IFunctionalPalace`
+|`career`|官禄位|`IFunctionalPalace`
+
+## 运限
 
 #### `HoroscopeItem`
 
@@ -1001,7 +1111,7 @@ export type HoroscopeItem = {
 };
 ```
 
-定义了 `运限对象`
+定义了 `运限` 对象
 
 |属性|解释|类型|
 |--|--|--|
@@ -1010,7 +1120,7 @@ export type HoroscopeItem = {
 |`earthlyBranch`|运限地支|[`EarthlyBranchName`](/type-definition.html#earthlybranchname)|
 |`palaceNames`|运限的十二宫|[`PalaceName[]`](/type-definition.html#palacename)|
 |`mutagen`|四化星|[`StarName[]`](/type-definition.html#starname)|
-|`stars`|流耀|`Star[][]`|
+|`stars`|流耀|[`Star[][]`](/type-definition.html#star)|
 
 ---
 
@@ -1034,16 +1144,81 @@ export type Decadal = {
 
 ---
 
+#### `Horoscope`
+
+```ts
+export type Horoscope = {
+  lunarDate: string;
+  solarDate: string;
+  decadal: HoroscopeItem;
+  age: {
+    index: number;
+    nominalAge: number;
+  };
+  yearly: HoroscopeItem;
+  monthly: HoroscopeItem;
+  daily: HoroscopeItem;
+  hourly: HoroscopeItem;
+};
+```
+
+定义了 `运限` 对象，包含 `大限`，`流年`，`流月`，`流日`，`流时`
+
+|属性|解释|类型|
+|--|--|--|
+|`lunarDate`|农历日期|`string`|
+|`solarDate`|阳历日期|`string`|
+|`decadal`|大限|[`HoroscopeItem`](/type-definition.html#horoscopeitem)|
+|`age`|小限|{ index: `number`, nominalAge: `number` }|
+|`yearly`|流年|[`HoroscopeItem`](/type-definition.html#horoscopeitem)|
+|`monthly`|流月|[`HoroscopeItem`](/type-definition.html#horoscopeitem)|
+|`daily`|流日|[`HoroscopeItem`](/type-definition.html#horoscopeitem)|
+|`hourly`|流时|[`HoroscopeItem`](/type-definition.html#horoscopeitem)|
+
+## 星盘
+
 #### `Astrolabe`
 
-## 星耀
+```ts
+export type Astrolabe = {
+  /** 阳历日期 */
+  solarDate: string;
+  /** 农历日期 */
+  lunarDate: string;
+  /** 干支纪年日期 */
+  chineseDate: string;
+  rawDates: {
+    lunarDate: LunarDate;
+    chineseDate: HeavenlyStemAndEarthlyBranchDate;
+  };
+  time: ChineseTime;
+  timeRange: TimeRange;
+  sign: string;
+  zodiac: string;
+  earthlyBranchOfSoulPalace: EarthlyBranchName;
+  earthlyBranchOfBodyPalace: EarthlyBranchName;
+  soul: StarName;
+  body: StarName;
+  fiveElementsClass: FiveElementsClassName;
+  palaces: IFunctionalPalace[];
+};
+```
 
-#### `Star`
+定义了 `星盘` 对象
 
-## 宫位
-
-#### `Palace`
-
-## 运限
-
-#### `Horoscope`
+|属性|解释|类型|
+|--|--|--|
+|`solarDate`|阳历日期|`string`|
+|`lunarDate`|农历日期|`string`|
+|`chineseDate`|干支纪年日期|`string`|
+|`rawDates`|原始日期数据，用于今后内部方法使用|{ lunarDate: `LunarDate`, chineseDate: `HeavenlyStemAndEarthlyBranchDate` }|
+|`time`|时辰|[`ChineseTime`](/type-definition.html#chinesetime)|
+|`timeRange`|时辰对应的时间段|[`TimeRange`](/type-definition.html#timerange)|
+|`sign`|星座|`string`|
+|`zodiac`|生肖|`string`|
+|`earthlyBranchOfSoulPalace`|命宫地支|[`EarthlyBranchName`](/type-definition.html#earthlybranchname)|
+|`earthlyBranchOfBodyPalace`|身宫地支|[`EarthlyBranchName`](/type-definition.html#earthlybranchname)|
+|`soul`|命主|[`StarName`](/type-definition.html#starname)|
+|`body`|身主|[`StarName`](/type-definition.html#starname)|
+|`fiveElementsClass`|五行局|[`FiveElementsClassName`](/type-definition.html#fiveelementsclassName)|
+|`palaces`|十二宫数据|`IFunctionalPalace[]`|

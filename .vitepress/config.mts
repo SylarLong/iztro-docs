@@ -40,6 +40,7 @@ export default defineConfig({
             text: 'iztro',
             items: [
               { text: '快速开始', link: '/quick-start.md' },
+              { text: '类型定义', link: '/type-definition.md' },
             ]
           }
         ],
