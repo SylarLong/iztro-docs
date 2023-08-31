@@ -17,17 +17,14 @@ A lightweight Open-Source Javascript library of getting The Purple Star Astrolog
 Welcome to the `iztro` development documentation! This page will introduce you to how to integrate, how to retrieve data, and how to quickly obtain all the data on a natal chart in Zi Wei Dou Shu. If you are just a basic user, reading this document will be enough for your daily use.
 If you have mastered the content on this page, you can explore further on other pages.
 
-<div class='custom-block'>
-
-You will obtain the following information:
+::: info You will obtain the following information:
 - How to install and integrate iztro into your code
 - How to retrieve a natal chart information
 - How to analyze palace positions based on the natal chart information
 - How to analyze star brilliance based on palace positions
+:::
 
-</div>
-
-## Install
+## Installation
 
 You can install `iztro` using any package management tool you are familiar with.
 
@@ -81,16 +78,12 @@ var astroObj = require('iztro');
 
 When retrieving a natal chart in Zi Wei Dou Shu, you can obtain it based on either the `lunar calendar` or the `solar calendar`. `iztro` provides both options, and you can choose according to your needs. However, we recommend using the `solar calendar` method. Rest assured, the data obtained internally by the program is consistent for both the `lunar` and `solar` calendars.
 
-<div class='custom-block'>
-
-Using the `solar calendar` has the following advantages:
-
+::: info Using the `solar calendar` has the following advantages:
 - It can be easily found on a birth certificate.
 - You can use a calendar component for date selection.
 - Many people nowadays cannot remember lunar calendar dates.
 - It can avoid a series of issues caused by overlooking leap months.
-
-</div>
+:::
 
 :::tabs
 == ES6 Module
@@ -117,9 +110,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, 'male', false);
 
 You will find that the return values of `astrolabeBySolarDate` and `astrolabeByLunarDate` above are the same. This is because the `astrolabeByLunarDate` method internally converts the date to the `solar calendar` and then calls the `astrolabeBySolarDate` method. Here is the execution result. Since the result is quite long, it is folded. If you want to check if your call result is the same as this, you can expand to view it.
 
-<details class='custom-block'>
-<summary>Result of <code>astro.astrolabeBySolarDate</code> and <code>astro.astrolabeByLunarDate</code></summary>
-
+::: details Result of `astro.astrolabeBySolarDate` and `astro.astrolabeByLunarDate`
 ```ts
 {
   // 阳历日期
@@ -431,8 +422,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
   ],
 }
 ```
-
-</details>
+:::
 
 ##### function definition
 
@@ -502,9 +492,7 @@ astrolabe.horoscope(new Date());
 
 You'll get the result below by invoking `astrolabe`.`horoscope()`
 
-<details class='custom-block'>
-<summary>Result of <code>horoscope()</code></summary>
-
+::: details Result of `horoscope()`
 ```ts
 {
   solarDate: "2023-8-28"
@@ -552,8 +540,7 @@ You'll get the result below by invoking `astrolabe`.`horoscope()`
   }
 }
 ```
-
-</details>
+:::
 
 > Tips: Only `Decadal horoscope` and `Yearly horoscope` include horosope stars. The values of the result above will be different by different parameters. But the data structure is fixed.
 
@@ -598,9 +585,7 @@ var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 
 You'll get the result below by invoking `star`.`getHoroscopeStar()`
 
-<details class='custom-block'>
-<summary>Result of <code>getHoroscopeStar()</code></summary>
-
+::: details Result of `getHoroscopeStar()`
 ```ts
 [
   [{ name: '运马', type: 'tianma', scope: 'decadal' }],
@@ -623,8 +608,7 @@ You'll get the result below by invoking `star`.`getHoroscopeStar()`
   [{ name: '运魁', type: 'soft', scope: 'decadal' }],
 ];
 ```
-
-</details>
+:::
 
 ##### function definition
 

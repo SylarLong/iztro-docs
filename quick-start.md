@@ -17,15 +17,12 @@
 欢迎使用 `iztro` 开发文档！本页将向你介绍如何集成、如何获取数据、以及如何快速得到紫微斗数里一张星盘上的所有数据。如果你只是基础使用者，阅读完本篇文档将足够你日常使用。
 如果你已经掌握了本页内容，可以到其他页面进行更深入的探索。
 
-<div class='custom-block'>
-
- 你将获取到以下信息：
- - 如何将`iztro`安装和集成到你的代码里
+::: info 你将获取到以下信息：
+ - 如何将 `iztro` 安装和集成到你的代码里
  - 如何获取到一张星盘
  - 如何基于星盘开始分析宫位
  - 如何基于宫位开始分析星耀
-
-</div>
+:::
 
 ## 安装
 
@@ -82,16 +79,12 @@ var astroObj = require('iztro');
 在获取紫微斗数星盘的时候，可以根据`农历`或者`阳历`日期来获取，`iztro`提供了这两种获取方式，你可以根据你的需求使用，但我们更推荐你使用`阳历`的方式来使用。
 放心，阳历和农历在程序内部获取到的数据是统一的。
 
-<div class='custom-block'>
-
-使用`阳历`有如下便利性：
-
+::: info 使用 `阳历` 有如下便利性：
 - 可以很方便的在出生证上查到
 - 可以使用日历组件进行日期选择
 - 现在很多人都无法记住农历日期
 - 可以避免因为忽略了闰月而带来的一系列问题
-
-</div>
+:::
 
 :::tabs
 == ES6 Module
@@ -120,9 +113,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
 这是因为`astrolabeByLunarDate`方法在内部处理的时候，也是将日期转化为`阳历`以后调用`astrolabeBySolarDate`方法。
 以下是执行结果，因为结果比较长，所以将之折叠起来，如果你想要查看你调用结果是否和这个一样，可以展开查看：
 
-<details class='custom-block'>
-<summary><code>astro.astrolabeBySolarDate</code> 和 <code>astro.astrolabeByLunarDate</code> 方法执行结果</summary>
-
+::: details `astro.astrolabeBySolarDate()` 和 `astro.astrolabeByLunarDate()` 方法执行结果
 ```ts
 {
   // 阳历日期
@@ -434,8 +425,7 @@ var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, '女', false);
   ],
 }
 ```
-
-</details>
+:::
 
 ##### 方法定义
 
@@ -506,9 +496,7 @@ astrolabe.horoscope(new Date());
 
 调用`astrolabe`.`horoscope()`方法以后你会获得如下数据
 
-<details class='custom-block'>
-<summary><code>horoscope()</code> 方法返回数据</summary>
-
+::: details `horoscope()` 方法返回数据
 ```ts
 {
   solarDate: "2023-8-28"
@@ -556,8 +544,7 @@ astrolabe.horoscope(new Date());
   }
 }
 ```
-
-</details>
+:::
 
 > Tips: 只有 `大限` 和 `流年` 有流耀。上面的运限数据和你调用的会因为传入的时间参数不同而不同，但是结构上是一致的。
 
@@ -601,9 +588,7 @@ var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
 
 调用`star`.`getHoroscopeStar()`方法以后你会获得如下数据
 
-<details class='custom-block'>
-<summary><code>getHoroscopeStar()</code> 方法返回数据</summary>
-
+::: details `getHoroscopeStar()` 方法返回数据
 ```ts
 [
   [{ name: '运马', type: 'tianma', scope: 'decadal' }],
@@ -626,8 +611,7 @@ var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
   [{ name: '运魁', type: 'soft', scope: 'decadal' }],
 ];
 ```
-
-</details>
+:::
 
 ##### 方法定义
 

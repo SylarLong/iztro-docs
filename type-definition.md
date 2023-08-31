@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 类型定义
 
 本页介绍了 `iztro` 中的类型定义，除了 [国际化类型](/type-definition.html#国际化类型) 被定义在了 [i18n](https://github.com/SylarLong/iztro/blob/main/src/i18n/index.ts) 文件夹内，其他类型都定义在 [types](https://github.com/SylarLong/iztro/tree/main/src/data/types) 文件夹内。
@@ -14,13 +18,9 @@ import { HeavenlyStemName } from "iztro/lib/i18n";
 import { Palace } from "iztro/lib/data/types";
 ```
 
-<div class='custom-block'>
-<p class='custom-block-title'>提示</p>
-
+::: tip 提示
 如果你发现 `翻译` 和 `类型定义` 中有不对或者不恰当的地方，可以在 [这里](https://github.com/SylarLong/iztro/issues) 创建Issue指出，非常感谢。
-
-</div>
-
+:::
 
 ## 国际化类型
 
@@ -54,9 +54,7 @@ const horoscopeStar = getHoroscopeStar('甲','zi','decadal');
 
 此时 `horoscopeStar` 的输出结果会是 `韩文` 的。
 
-<details class='custom-block'>
-<summary><code>horoscopeStar</code> 输出结果</summary>
-
+::: details `horoscopeStar` 输出结果
 ```json
 [
     [
@@ -129,8 +127,7 @@ const horoscopeStar = getHoroscopeStar('甲','zi','decadal');
     ]
 ]
 ```
-
-</details>
+:::
 
 ---
 
@@ -947,7 +944,7 @@ export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
 
 ---
 
-##### `Scope`
+#### `Scope`
 
 ```ts
 export type Scope = 'origin' | 'decadal' | 'yearly';

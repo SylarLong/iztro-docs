@@ -11,8 +11,6 @@
     #bd34fe 50%,
     #47caff 50%
   );
-  --vp-custom-block-tip-border: transparent;
-  --vp-custom-block-tip-bg:  rgba(100, 108, 255, .16);
 }
 
 .brand-name {
@@ -30,16 +28,6 @@ header .container a.title, .text-clip {
 
 .badges img {
   display: inline;
-}
-
-.custom-block {
-  border-color: var(--vp-custom-block-tip-border);
-  background-color: var(--vp-custom-block-tip-bg);
-}
-
-.vp-doc summary {
-  margin: 0 0 6px;
-  cursor: pointer;
 }
 
 .VPDoc.has-aside .content-container {
