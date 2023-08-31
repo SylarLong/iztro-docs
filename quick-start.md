@@ -44,6 +44,10 @@
   ```sh
   pnpm add -S iztro
   ```
+== bun
+  ```sh
+  bun add -S iztro
+  ```
 :::
 
 安装顺利的话，会在你的`package.json`依赖列表中找到`iztro`

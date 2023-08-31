@@ -44,6 +44,10 @@ You can install `iztro` using any package management tool you are familiar with.
   ```sh
   pnpm add -S iztro
   ```
+== bun
+  ```sh
+  bun add -S iztro
+  ```
 :::
 
 If the installation is successful, you will find `iztro` in the dependencies list of your `package.json`.

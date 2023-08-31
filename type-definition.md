@@ -14,6 +14,14 @@ import { HeavenlyStemName } from "iztro/lib/i18n";
 import { Palace } from "iztro/lib/data/types";
 ```
 
+<div class='custom-block'>
+<p class='custom-block-title'>提示</p>
+
+如果你发现 `翻译` 和 `类型定义` 中有不对或者不恰当的地方，可以在 [这里](https://github.com/SylarLong/iztro/issues) 创建Issue指出，非常感谢。
+
+</div>
+
+
 ## 国际化类型
 
 `iztro` 为了支持国际化输入输出，对需要进行参数输入输出的数据进行了多语言定义，在输入的时候，你可以输入 **任意语言** 的值，比如在需要传 `HeavenlyStemName` 的地方，你可以传入 `甲`，也可以传入 `갑` 或者 `jia`。
@@ -124,7 +132,7 @@ const horoscopeStar = getHoroscopeStar('甲','zi','decadal');
 
 </details>
 
-如果你发现翻译中有不对的地方，可以在 [这里](https://github.com/SylarLong/iztro/issues) 创建Issue指出，非常感谢。
+---
 
 #### `HeavenlyStemName`
 
