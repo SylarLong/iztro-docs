@@ -1,4 +1,5 @@
 ---
+description: "一套轻量级获取紫微斗数排盘信息的 Javascript 开源库。"
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 

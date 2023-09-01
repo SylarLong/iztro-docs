@@ -1,5 +1,6 @@
 ---
 outline: deep
+description: "iztro类型定义，iztro的astro对象使用方法以及示例代码。紫微斗数信息国际化内容的输出定义。"
 ---
 
 # 类型定义

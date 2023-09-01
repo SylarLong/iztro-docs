@@ -1,4 +1,5 @@
 ---
+descript: "A lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information."
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
