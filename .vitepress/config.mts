@@ -59,6 +59,7 @@ export default defineConfig({
               { text: "类型定义", link: "/type-definition.md" },
               { text: "星盘", link: "/posts/astrolabe.md" },
               { text: "宫位", link: "/posts/palace.md" },
+              { text: "星耀", link: "/posts/star.md" },
             ],
           },
           {

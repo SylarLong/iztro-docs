@@ -5,6 +5,8 @@ description: "iztro紫微斗数星盘介绍，iztro的astro对象使用方法以
 
 # 星盘
 
+### 概述
+
 紫微斗数星盘又叫紫微斗数命盘，是由 `十二个宫位` 和一个 `中宫` 构成，宫位的 `地支` 是固定的，并且是由 `寅` 开始，而不是由 `子` 开始。这是因为农历的正月是寅月，这就是所谓的 `正月建寅`。在 `iztro` 里面，`寅宫` 的索引是 `0`，`卯宫` 的索引是 `1`，如此按照顺时针的方向排列。如下面表格所示：
 
 <table class="astrolabe">
@@ -35,6 +37,10 @@ description: "iztro紫微斗数星盘介绍，iztro的astro对象使用方法以
 
 在安装好 `iztro` 依赖以后你可以用如下代码将 `星盘(astro)` 对象引入你的代码。如果你还不知道如何安装 `iztro`，请点击 [传送门](/quick-start.md#安装) 跳转到相关说明文档。
 
+### `astro` 的静态方法
+
+要使用该对象的静态方法，请先将该对象 `import` 到你的代码里
+
 :::tabs
 == ES6 Module
 
@@ -45,15 +51,9 @@ import { astro } from "iztro";
 == CommonJS
 
 ```js
-var iztro = require("iztro");
+var { astro } = require("iztro");
 ```
 
-:::
-
-### 静态方法
-
-::: warning 开发建议
-我们推荐你直接调用 `静态方法` 来获取数据，而不是手动去创建一个 `FunctionalAstrolabe` 类的实例。
 :::
 
 ---
@@ -482,7 +482,7 @@ var iztro = require("iztro");
 ### 功能类定义
 
 ::: warning 开发建议
-功能类一般不直接使用，而是调用 `静态方法` 返回一个该类的实例。
+我们推荐你直接调用 [astro 的静态方法](./astrolabe.md#astro-的静态方法) 来获取数据，而不是手动去创建一个 `FunctionalAstrolabe` 类的实例。
 :::
 
 #### FunctionalAstrolabe
