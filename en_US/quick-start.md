@@ -18,11 +18,12 @@ Welcome to the `iztro` development documentation! This page will introduce you t
 If you have mastered the content on this page, you can explore further on other pages.
 
 ::: info You will obtain the following information:
+
 - How to install and integrate iztro into your code
 - How to retrieve a natal chart information
 - How to analyze palace positions based on the natal chart information
 - How to analyze star brilliance based on palace positions
-:::
+  :::
 
 ## Installation
 
@@ -30,21 +31,29 @@ You can install `iztro` using any package management tool you are familiar with.
 
 :::tabs
 == npm
-  ```sh
-  npm install iztro -S
-  ```
+
+```sh
+npm install iztro -S
+```
+
 == yarn
-  ```sh
-  yarn add iztro
-  ```
+
+```sh
+yarn add iztro
+```
+
 == pnpm
-  ```sh
-  pnpm add -S iztro
-  ```
+
+```sh
+pnpm add -S iztro
+```
+
 == bun
-  ```sh
-  bun add -S iztro
-  ```
+
+```sh
+bun add -S iztro
+```
+
 :::
 
 If the installation is successful, you will find `iztro` in the dependencies list of your `package.json`.
@@ -65,13 +74,17 @@ You can import `iztro` into your code using the following methods.
 
 :::tabs
 == ES6 Module
+
 ```ts
-import { astro } from 'iztro';
+import { astro } from "iztro";
 ```
+
 == CommonJS
+
 ```js
-var iztro = require('iztro');
+var iztro = require("iztro");
 ```
+
 :::
 
 #### Get astrolabe data
@@ -79,38 +92,44 @@ var iztro = require('iztro');
 When retrieving a natal chart in Zi Wei Dou Shu, you can obtain it based on either the `lunar calendar` or the `solar calendar`. `iztro` provides both options, and you can choose according to your needs. However, we recommend using the `solar calendar` method. Rest assured, the data obtained internally by the program is consistent for both the `lunar` and `solar` calendars.
 
 ::: info Using the `solar calendar` has the following advantages:
+
 - It can be easily found on a birth certificate.
 - You can use a calendar component for date selection.
 - Many people nowadays cannot remember lunar calendar dates.
 - It can avoid a series of issues caused by overlooking leap months.
-:::
+  :::
 
 :::tabs
 == ES6 Module
+
 ```ts
-import { astro } from 'iztro';
+import { astro } from "iztro";
 
 // Get astrolabe by solar calendar.
-const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
+const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "male");
 
 // Get astrolabe by lunar calendar.
-const astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, 'male');
+const astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "male");
 ```
+
 == CommonJS
+
 ```js
-var { astro } = require('iztro');
+var { astro } = require("iztro");
 
 // Get astrolabe by solar calendar.
-var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
+var astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "male");
 
 // Get astrolabe by lunar calendar.
-var astrolabe = astro.astrolabeByLunarDate('2000-7-17', 2, 'male', false);
+var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "male", false);
 ```
+
 :::
 
 You will find that the return values of `astrolabeBySolarDate` and `astrolabeByLunarDate` above are the same. This is because the `astrolabeByLunarDate` method internally converts the date to the `solar calendar` and then calls the `astrolabeBySolarDate` method. Here is the execution result. Since the result is quite long, it is folded. If you want to check if your call result is the same as this, you can expand to view it.
 
 ::: details Result of `astro.astrolabeBySolarDate` and `astro.astrolabeByLunarDate`
+
 ```ts
 {
   // 阳历日期
@@ -422,6 +441,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
   ],
 }
 ```
+
 :::
 
 ##### function definition
@@ -432,16 +452,16 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
 
   - Parameters
 
-    |Name|Type|Required|Default|Description|
-    |--|--|--|--|--|
-    |solarDateStr|`string`|`true`|-|solar date string【YYYY-M-D】|
-    |timeIndex|`number`|`true`|-|chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）|
-    |gender|`string`|`true`|-|gender【male/female】|
-    |fixLeap|`boolean`|`false`|`true`|whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month|
-    |language|`Language`|`false`|`zh-CN`|the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now|
+    | Name         | Type       | Required | Default | Description                                                                                                                                                   |
+    | ------------ | ---------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | solarDateStr | `string`   | `true`   | -       | solar date string【YYYY-M-D】                                                                                                                                 |
+    | timeIndex    | `number`   | `true`   | -       | chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）                                                                                 |
+    | gender       | `string`   | `true`   | -       | gender【male/female】                                                                                                                                         |
+    | fixLeap      | `boolean`  | `false`  | `true`  | whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month |
+    | language     | `Language` | `false`  | `zh-CN` | the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now                                        |
 
-  - Returns: 
-  
+  - Returns:
+
     `FunctionalAstrolabe`
 
 - Get astrolabe by lunar calendar.
@@ -450,17 +470,17 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
 
   - Parameters
 
-    |Name|Type|Required|Default|Description|
-    |--|--|--|--|--|
-    |lunarDateStr|`string`|`true`|-|lunar date【YYYY-M-D】. e.g. pass `2000-7-17` if it's `2000年七月十七`|
-    |timeIndex|`number`|`true`|-|chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）|
-    |gender|`string`|`true`|-| gender【male/female】|
-    |isLeapMonth|`boolean`|`false`|`false`|whether the date is a leap month. This parameter does not take effect when there is no leap month in the actual month|
-    |fixLeap|`boolean`|`false`|`true`|whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month|
-    |language|`Language`|`false`|`zh-CN`|the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now|
+    | Name         | Type       | Required | Default | Description                                                                                                                                                   |
+    | ------------ | ---------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | lunarDateStr | `string`   | `true`   | -       | lunar date【YYYY-M-D】. e.g. pass `2000-7-17` if it's `2000年七月十七`                                                                                        |
+    | timeIndex    | `number`   | `true`   | -       | chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）                                                                                 |
+    | gender       | `string`   | `true`   | -       | gender【male/female】                                                                                                                                         |
+    | isLeapMonth  | `boolean`  | `false`  | `false` | whether the date is a leap month. This parameter does not take effect when there is no leap month in the actual month                                         |
+    | fixLeap      | `boolean`  | `false`  | `true`  | whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month |
+    | language     | `Language` | `false`  | `zh-CN` | the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now                                        |
 
   - Returns:
-    
+
     `FunctionalAstrolabe`
 
 ## Get horoscope data
@@ -469,30 +489,35 @@ The `horoscope` in Zi Wei Dou Shu is divided into "大限" (`Decadal horoscope`)
 
 :::tabs
 == ES6 Module
+
 ```ts
-import { astro } from 'iztro';
+import { astro } from "iztro";
 
 // Get astrolabe by solar calendar.
-const astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
+const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "male");
 
 // Get horoscope data of the `astrolabe` instance
 astrolabe.horoscope(new Date());
 ```
+
 == CommonJS
+
 ```js
-var { astro } = require('iztro');
+var { astro } = require("iztro");
 
 // Get astrolabe by solar calendar.
-var astrolabe = astro.astrolabeBySolarDate('2000-8-16', 2, 'male');
+var astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "male");
 
 // Get horoscope data of the `astrolabe` instance
 astrolabe.horoscope(new Date());
 ```
+
 :::
 
 You'll get the result below by invoking `astrolabe`.`horoscope()`
 
 ::: details Result of `horoscope()`
+
 ```ts
 {
   solarDate: "2023-8-28"
@@ -508,7 +533,7 @@ You'll get the result below by invoking `astrolabe`.`horoscope()`
       index: 10
       nominalAge: 23
     }
-  }, 
+  },
   yearly: {
     index: 1
     heavenlyStem: "癸"
@@ -530,7 +555,7 @@ You'll get the result below by invoking `astrolabe`.`horoscope()`
     earthlyBranch: "午"
     palaceNames: ["子女", "夫妻", "兄弟", "命宫", "父母", "福德", "田宅", "官禄", "仆役", "迁移", "疾厄", "财帛"]
     mutagen: ["贪狼", "太阴", "右弼", "天机"]
-  }, 
+  },
   hourly: {
     index: 3
     heavenlyStem: "壬"
@@ -540,6 +565,7 @@ You'll get the result below by invoking `astrolabe`.`horoscope()`
   }
 }
 ```
+
 :::
 
 > Tips: Only `Decadal horoscope` and `Yearly horoscope` include horosope stars. The values of the result above will be different by different parameters. But the data structure is fixed.
@@ -552,13 +578,13 @@ You'll get the result below by invoking `astrolabe`.`horoscope()`
 
   - Parameters
 
-    |Name|Type|Required|Default|Description|
-    |--|--|--|--|--|
-    |date|`string` \| `Date`|`false`| `new Date()` |solar calendar string or a `Date` instance. `timeIndex` can be omit if the `hour` data is included in `date`|
-    |timeIndex|`number`|`false`| `0` | chinese hour index【0～12】|
+    | Name      | Type               | Required | Default      | Description                                                                                                  |
+    | --------- | ------------------ | -------- | ------------ | ------------------------------------------------------------------------------------------------------------ |
+    | date      | `string` \| `Date` | `false`  | `new Date()` | solar calendar string or a `Date` instance. `timeIndex` can be omit if the `hour` data is included in `date` |
+    | timeIndex | `number`           | `false`  | `0`          | chinese hour index【0 ～ 12】                                                                                |
 
   - Returns
-    
+
     `Horoscope`
 
 ## Get horoscope star
@@ -567,47 +593,52 @@ The `horoscope()` method above already includes the `horoscope star` of the `Dec
 
 :::tabs
 == ES6 Module
+
 ```ts
-import { star } from 'iztro';
+import { star } from "iztro";
 
 // Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
-const horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
+const horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```
+
 == CommonJS
 
 ```js
-var { star } = require('iztro');
+var { star } = require("iztro");
 
 // Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
-var horoscopeStars = star.getHoroscopeStar('庚', '辰', 'decadal');
+var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```
+
 :::
 
 You'll get the result below by invoking `star`.`getHoroscopeStar()`
 
 ::: details Result of `getHoroscopeStar()`
+
 ```ts
 [
-  [{ name: '运马', type: 'tianma', scope: 'decadal' }],
-  [{ name: '运曲', type: 'soft', scope: 'decadal' }],
+  [{ name: "运马", type: "tianma", scope: "decadal" }],
+  [{ name: "运曲", type: "soft", scope: "decadal" }],
   [],
-  [{ name: '运喜', type: 'flower', scope: 'decadal' }],
-  [],
-  [
-    { name: '运钺', type: 'soft', scope: 'decadal' },
-    { name: '运陀', type: 'tough', scope: 'decadal' },
-  ],
-  [{ name: '运禄', type: 'lucun', scope: 'decadal' }],
-  [{ name: '运羊', type: 'tough', scope: 'decadal' }],
+  [{ name: "运喜", type: "flower", scope: "decadal" }],
   [],
   [
-    { name: '运昌', type: 'soft', scope: 'decadal' },
-    { name: '运鸾', type: 'flower', scope: 'decadal' },
+    { name: "运钺", type: "soft", scope: "decadal" },
+    { name: "运陀", type: "tough", scope: "decadal" },
+  ],
+  [{ name: "运禄", type: "lucun", scope: "decadal" }],
+  [{ name: "运羊", type: "tough", scope: "decadal" }],
+  [],
+  [
+    { name: "运昌", type: "soft", scope: "decadal" },
+    { name: "运鸾", type: "flower", scope: "decadal" },
   ],
   [],
-  [{ name: '运魁', type: 'soft', scope: 'decadal' }],
+  [{ name: "运魁", type: "soft", scope: "decadal" }],
 ];
 ```
+
 :::
 
 ##### function definition
@@ -618,11 +649,11 @@ You'll get the result below by invoking `star`.`getHoroscopeStar()`
 
   - Parameters
 
-  |Name|Type|Required|Default|Description|
-  |--|--|--|--|--|
-  |heavenlyStem|`HeavenlyStemName`|`true`| - |heavenly stem name|
-  |earthlyBranch|`EarthlyBranchName`|`true`| - |earthly branch name|
-  |scope|`'decadal'` \| `'yearly'`|`true`| - | to specific the scope of the horo  |
+  | Name          | Type                      | Required | Default | Description                       |
+  | ------------- | ------------------------- | -------- | ------- | --------------------------------- |
+  | heavenlyStem  | `HeavenlyStemName`        | `true`   | -       | heavenly stem name                |
+  | earthlyBranch | `EarthlyBranchName`       | `true`   | -       | earthly branch name               |
+  | scope         | `'decadal'` \| `'yearly'` | `true`   | -       | to specific the scope of the horo |
 
   - Returns
 

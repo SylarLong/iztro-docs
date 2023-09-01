@@ -22,4 +22,3 @@ features:
   - title: Localization support
     details: We'll provide Simplified Chinese, Traditional Chinese, Japanese, Korean and English output.
 ---
-
