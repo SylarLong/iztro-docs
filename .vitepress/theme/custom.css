@@ -11,6 +11,22 @@
     #bd34fe 50%,
     #47caff 50%
   );
+  --vp-home-hero-image-filter: blur(72px);
+}
+
+.container .main .name .clip {
+  position: relative;
+}
+
+.container .main .name .clip .star {
+  position: absolute;
+  top: 0;
+  right: -70px;
+}
+
+.VPNavBarMenuLink::after {
+  display: none !important;
+  --icon: none !important;
 }
 
 .brand-name {

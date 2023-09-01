@@ -36,6 +36,10 @@ export default defineConfig({
             link: "https://github.com/SylarLong/astro/discussions",
           },
           {
+            text: '<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />',
+            link: 'https://github.com/SylarLong/astro'
+          },
+          {
             text: version,
             items: [
               {
@@ -44,7 +48,7 @@ export default defineConfig({
               },
               { text: "NPM地址", link: "https://www.npmjs.com/package/iztro" },
             ],
-          },
+          }
         ],
 
         sidebar: [
@@ -101,6 +105,10 @@ export default defineConfig({
             link: "https://github.com/SylarLong/astro/discussions",
           },
           {
+            text: '<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />',
+            link: 'https://github.com/SylarLong/astro'
+          },
+          {
             text: version,
             items: [
               {
@@ -112,7 +120,7 @@ export default defineConfig({
                 link: "https://www.npmjs.com/package/iztro",
               },
             ],
-          },
+          }
         ],
 
         sidebar: [

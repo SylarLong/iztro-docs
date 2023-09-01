@@ -4,8 +4,8 @@ description: "一套轻量级获取紫微斗数排盘信息的 Javascript 开源
 layout: home
 
 hero:
-  name: "IZTRO Docs"
-  text: "这，不仅仅是文档"
+  name: IZTRO Docs<a class="star" href="https://github.com/SylarLong/iztro" target="_blank"><img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" /></a>
+  text: 这，不仅仅是文档
   tagline: 轻量级紫微斗数排盘工具库iztro的文档以及紫微斗数相关知识科普。
   actions:
     - theme: alt
