@@ -35,6 +35,7 @@ export default defineConfig({
             text: "讨论",
             link: "https://github.com/SylarLong/astro/discussions",
           },
+          { text: "关于作者", link: "/about.md" },
           {
             text: '<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />',
             link: 'https://github.com/SylarLong/astro'
