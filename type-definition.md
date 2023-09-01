@@ -5,6 +5,8 @@ description: "iztro类型定义，iztro的astro对象使用方法以及示例代
 
 # 类型定义
 
+## 概述
+
 本页介绍了 `iztro` 中的类型定义，除了 [国际化类型](/type-definition.html#国际化类型) 被定义在了 [i18n](https://github.com/SylarLong/iztro/blob/main/src/i18n/index.ts) 文件夹内，其他类型都定义在 [types](https://github.com/SylarLong/iztro/tree/main/src/data/types) 文件夹内。
 
 你可以使用如下代码引入 `国际化类型`:
