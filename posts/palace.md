@@ -193,13 +193,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果你想查看 `命宫` 是有 `天魁星` 或 `天钺星`
+    如果你想查看 `命宫` 是否有 `天魁星` 或 `天钺星`
     ```ts
     const palace = astrolabe.palace("命宫");
-    const result = palace.notHave(["天魁", "天钺"]);
+    const result = palace.hasOneOf(["天魁", "天钺"]);
     ```
 
     当然你也可以使用 `链式调用` 来简化代码
     ```ts
-    const result = astrolabe.palace("命宫").notHave(["天魁", "天钺"]);
+    const result = astrolabe.palace("命宫").hasOneOf(["天魁", "天钺"]);
     ```
