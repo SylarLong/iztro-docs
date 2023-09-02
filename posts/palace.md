@@ -73,7 +73,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     const palace = astrolabe.palace("命宫");
     ```
 
-#### FunctionalAstrolabe
+#### FunctionalPalace
 
 ***
 
@@ -88,6 +88,8 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     has: (stars: StarName[]) => boolean;
     notHave: (stars: StarName[]) => boolean;
     hasOneOf: (stars: StarName[]) => boolean;
+    hasMutagen: (mutagen: Mutagen): boolean;
+    notHaveMutagen: (mutagen: Mutagen): boolean;
   }
   ```
 
@@ -137,7 +139,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判断某个宫位内是否有传入的 `星耀`，要所有星耀 `都不在` 宫位内才会返回 `true`
+    判断某个宫位内是否没有传入的 `星耀`，要所有星耀 `都不在` 宫位内才会返回 `true`
 
   - 定义
 
@@ -202,4 +204,283 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     当然你也可以使用 `链式调用` 来简化代码
     ```ts
     const result = astrolabe.palace("命宫").hasOneOf(["天魁", "天钺"]);
+    ```
+
+  ***
+
+  ##### hasMutagen() <Badge type="warning" text="^1.2.0" />
+
+  - 用途
+
+    判断宫位内是否有生年四化
+
+  - 定义
+
+    ```ts
+    type hasMutagen = (mutagen: Mutagen) => boolean;
+    ```
+
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true`   | -      | 四化名称【禄｜权｜科｜忌】|
+
+  - 返回值
+
+    `boolean`
+
+  - 示例
+
+    如果你想查看 `命宫` 是否有 `化禄`
+    ```ts
+    const palace = astrolabe.palace("命宫");
+    const result = palace.hasMutagen("禄");
+    ```
+
+    当然你也可以使用 `链式调用` 来简化代码
+    ```ts
+    const result = astrolabe.palace("命宫").hasMutagen("禄");
+    ```
+
+  ***
+  ##### notHaveMutagen() <Badge type="warning" text="^1.2.0" />
+
+  - 用途
+
+    判断宫位内是否没有生年四化
+
+  - 定义
+
+    ```ts
+    type notHaveMutagen = (mutagen: Mutagen) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true`   | -      | 四化名称【禄｜权｜科｜忌】|
+
+  - 返回值
+
+    `boolean`
+
+  - 示例
+
+    如果你想查看 `命宫` 是不是没有 `化忌`
+    ```ts
+    const palace = astrolabe.palace("命宫");
+    const result = palace.notHaveMutagen("忌");
+    ```
+
+    当然你也可以使用 `链式调用` 来简化代码
+    ```ts
+    const result = astrolabe.palace("命宫").notHaveMutagen("忌");
+    ```
+#### FunctionalSurpalaces <Badge type="warning" text="^1.2.0" />
+
+***
+
+<Badge type="tip" text="implements" /> `IFunctionalSurpalaces` <Badge type="tip" text="extends" /> [`SurroundedPalaces`](../type-definition.md#surroundedpalaces)
+
+该类所有属性都是继承自 [SurroundedPalaces](../type-definition.md#surroundedpalaces)，然后在接口内定义了一些方法用于对星耀进行分析。
+
+- 接口定义
+
+  ```ts
+  interface FunctionalSurpalaces extends SurroundedPalaces {
+    have: (stars: StarName[]) => boolean;
+    notHave: (stars: StarName[]) => boolean;
+    haveOneOf: (stars: StarName[]) => boolean;
+    haveMutagen: (mutagen: Mutagen) => boolean;
+    notHaveMutagen: (mutagen: Mutagen): boolean;
+  }
+  ```
+
+- 属性
+
+  参考 [SurroundedPalaces](../type-definition.md#surroundedpalaces)
+
+- 方法
+  
+  ##### have()
+
+  - 用途
+
+    判断某个宫三方四正内是否有传入的 `星耀`，要 `所有` 星耀 `都在` 三方四正内才会返回 `true`
+
+  - 定义
+
+    ```ts
+    type have = (stars: StarName[]) => boolean;
+    ```
+
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星耀名称，可以包含主星、辅星、杂耀 |
+
+  - 返回值
+
+    `boolean`
+
+  - 示例
+
+    如果你想查看 `命宫` 三方四正是否有 `紫微星` 和 `右弼星`
+    ```ts
+    const palaces = astrolabe.surroundedPalaces("命宫");
+    const result = palaces.have(["紫微", "右弼"]);
+    ```
+
+    当然你也可以使用 `链式调用` 来简化代码
+    ```ts
+    const result = astrolabe.surroundedPalaces("命宫").have(["紫微", "右弼"]);
+    ```
+
+  ***
+  ##### notHave()
+
+  - 用途
+
+    判断某个宫三方四正内是否没有传入的 `星耀`，要所有星耀 `都不在` 三方四正内才会返回 `true`
+
+  - 定义
+
+    ```ts
+    type notHave = (stars: StarName[]) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星耀名称，可以包含主星、辅星、杂耀 |
+
+  - 返回值
+
+    `boolean`
+
+  - 示例
+
+    如果你想查看 `命宫` 三方四正是否没有 `地空星` 和 `地劫星`
+
+    ```ts
+    const palaces = astrolabe.surroundedPalaces("命宫");
+    const result = palaces.notHave(["地空", "地劫"]);
+    ```
+
+    当然你也可以使用 `链式调用` 来简化代码
+    ```ts
+    const result = astrolabe.surroundedPalaces("命宫").notHave(["地空", "地劫"]);
+    ```
+
+  ***
+  ##### haveOneOf()
+
+  - 用途
+
+    判断某个宫位的三方四正内是否有传入 `星耀` 的其中一个，只要 `命中一个` 就会返回 `true`
+
+  - 定义
+
+    ```ts
+    type haveOneOf = (stars: StarName[]) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星耀名称，可以包含主星、辅星、杂耀 |
+
+  - 返回值
+
+    `boolean`
+
+  - 示例
+
+    如果你想查看 `命宫` 三方四正是否有 `天魁星` 或 `天钺星`
+    ```ts
+    const palaces = astrolabe.surroundedPalaces("命宫");
+    const result = palaces.haveOneOf(["天魁", "天钺"]);
+    ```
+
+    当然你也可以使用 `链式调用` 来简化代码
+    ```ts
+    const result = astrolabe.surroundedPalaces("命宫").haveOneOf(["天魁", "天钺"]);
+    ```
+
+  ***
+
+  ##### haveMutagen()
+
+  - 用途
+
+    判断宫位三方四正内是否有生年四化
+
+  - 定义
+
+    ```ts
+    type haveMutagen = (mutagen: Mutagen) => boolean;
+    ```
+
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true`   | -      | 四化名称【禄｜权｜科｜忌】|
+
+  - 返回值
+
+    `boolean`
+
+  - 示例
+
+    如果你想查看 `命宫` 三方四正是否有 `化禄`
+    ```ts
+    const palaces = astrolabe.surroundedPalaces("命宫");
+    const result = palaces.haveMutagen("禄");
+    ```
+
+    当然你也可以使用 `链式调用` 来简化代码
+    ```ts
+    const result = astrolabe.surroundedPalaces("命宫").haveMutagen("禄");
+    ```
+
+  ***
+  ##### notHaveMutagen()
+
+  - 用途
+
+    判断宫位三方四正内是否没有生年四化
+
+  - 定义
+
+    ```ts
+    type notHaveMutagen = (mutagen: Mutagen) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true`   | -      | 四化名称【禄｜权｜科｜忌】|
+
+  - 返回值
+
+    `boolean`
+
+  - 示例
+
+    如果你想查看 `命宫` 三方四正是不是没有 `化忌`
+    ```ts
+    const palace = astrolabe.surroundedPalaces("命宫");
+    const result = palace.notHaveMutagen("忌");
+    ```
+
+    当然你也可以使用 `链式调用` 来简化代码
+    ```ts
+    const result = astrolabe.surroundedPalaces("命宫").notHaveMutagen("忌");
     ```

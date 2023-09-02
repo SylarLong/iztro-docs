@@ -512,6 +512,14 @@ var { astro } = require("iztro");
       indexOrName: number | PalaceName,
       stars: StarName[]
     ) => boolean;
+    hasMutagenInSurroundedPalace: (
+      indexOrName: number | PalaceName, 
+      mutagen: Mutagen
+    ) => boolean;
+    hasMutagenInOppositePalace: (
+      indexOrName: number | PalaceName,
+      mutagen: Mutagen
+    ) => boolean;
   }
   ```
 
@@ -664,7 +672,57 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### isSurrounded() <Badge type="warning" text="^1.0.0" />
+  ##### surroundedPalaces() <Badge type="warning" text="^1.1.0" />
+
+  - 用途
+
+    获取 `三方四正` 宫位，所谓三方四正就是传入的 `目标宫`，以及其 `对宫`，`财帛位` 和 `官禄位`，总共四个宫位。`宫` 和 `位` 是两个概念，如果你对宫位和三方四正的概念不清楚，可以点击 [宫位](./palace.md) 查看详细信息。
+
+  - 定义
+
+    ```ts
+    type surroundedPalaces = (
+      indexOrName: number | PalaceName
+    ) => SurroundedPalaces;
+    ```
+
+  - 参数
+
+    | 参数        | 类型                                                         | 是否必填 | 默认值 | 说明                 |
+    | ----------- | ------------------------------------------------------------ | -------- | ------ | -------------------- |
+    | indexOrName | `number` \| [`PalaceName`](../type-definition.md#palacename) | `true`   | -      | 宫位索引或者宫位名称 |
+
+  - 返回值
+
+    [`SurroundedPalaces`](../type-definition.md#surroundedpalaces)
+
+  - 示例
+
+    ```ts
+    import { astro } from "iztro";
+
+    const astrolabe = astro.astrolabeBySolarDate(
+      "2000-8-16",
+      2,
+      "女",
+      true,
+      "zh-CN"
+    );
+
+    // 获取 `寅宫` 三方四正
+    const surroundedPalaces = astrolabe.surroundedPalaces(0);
+
+    // 获取 `命宫` 三方四正
+    const surroundedPalacesOfSoul = astrolabe.surroundedPalaces("命宫");
+    ```
+
+  ***
+
+  ##### isSurrounded() <Badge type="warning" text="^1.0.0" /> <Badge type="danger" text="deprecated" />
+
+  :::danger 注意
+  该方法已经在 `v1.2.0` 废弃，请使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [have()](palace.md#have) 方法代替
+  :::
 
   - 用途
 
@@ -712,53 +770,11 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### surroundedPalaces() <Badge type="warning" text="^1.1.0" />
+  ##### isSurroundedOneOf() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
 
-  - 用途
-
-    获取 `三方四正` 宫位，所谓三方四正就是传入的 `目标宫`，以及其 `对宫`，`财帛位` 和 `官禄位`，总共四个宫位。`宫` 和 `位` 是两个概念，如果你对宫位和三方四正的概念不清楚，可以点击 [宫位](./palace.md) 查看详细信息。
-
-  - 定义
-
-    ```ts
-    type surroundedPalaces = (
-      indexOrName: number | PalaceName
-    ) => SurroundedPalaces;
-    ```
-
-  - 参数
-
-    | 参数        | 类型                                                         | 是否必填 | 默认值 | 说明                 |
-    | ----------- | ------------------------------------------------------------ | -------- | ------ | -------------------- |
-    | indexOrName | `number` \| [`PalaceName`](../type-definition.md#palacename) | `true`   | -      | 宫位索引或者宫位名称 |
-
-  - 返回值
-
-    [`SurroundedPalaces`](../type-definition.md#surroundedpalaces)
-
-  - 示例
-
-    ```ts
-    import { astro } from "iztro";
-
-    const astrolabe = astro.astrolabeBySolarDate(
-      "2000-8-16",
-      2,
-      "女",
-      true,
-      "zh-CN"
-    );
-
-    // 获取 `寅宫` 三方四正
-    const surroundedPalaces = astrolabe.surroundedPalaces(0);
-
-    // 获取 `命宫` 三方四正
-    const surroundedPalacesOfSoul = astrolabe.surroundedPalaces("命宫");
-    ```
-
-  ***
-
-  ##### isSurroundedOneOf() <Badge type="warning" text="^1.1.0" />
+  :::danger 注意
+  该方法已经在 `v1.2.0` 废弃，请使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [haveOneOf()](palace.md#haveoneof) 方法代替
+  :::
 
   - 用途
 
@@ -810,7 +826,11 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### notSurrounded() <Badge type="warning" text="^1.1.0" />
+  ##### notSurrounded() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
+ 
+  :::danger 注意
+  该方法已经在 `v1.2.0` 废弃，请使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [notHave()](palace.md#nothave-1) 方法代替
+  :::
 
   - 用途
 
