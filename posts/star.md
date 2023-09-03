@@ -21,7 +21,7 @@ description: "iztro紫微斗数星耀介绍，iztro的star对象使用方法以�
 
 ---
 
-<Badge type="tip" text="implements" /> `IFunctionalStar` <Badge type="tip" text="extends" /> [`Star`](../type-definition.md#star)
+<Badge type="tip" text="implements" /> `IFunctionalStar` <Badge type="tip" text="extends" /> [`Star`](/type-definition.md#star)
 
 - 接口定义
 
@@ -39,7 +39,7 @@ description: "iztro紫微斗数星耀介绍，iztro的star对象使用方法以�
 
 - 属性
   
-  参考 [Star](../type-definition.md#star)
+  参考 [Star](/type-definition.md#star)
 
 - 方法
 
