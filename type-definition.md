@@ -1093,10 +1093,10 @@ export type SurroundedPalaces = {
 
 | 属性       | 解释   | 类型                |
 | ---------- | ------ | ------------------- |
-| `target`   | 本宫   | `IFunctionalPalace` |
-| `opposite` | 对宫   | `IFunctionalPalace` |
-| `wealth`   | 财帛位 | `IFunctionalPalace` |
-| `career`   | 官禄位 | `IFunctionalPalace` |
+| `target`   | 本宫   | [`IFunctionalPalace`](./posts/palace.md#functionalpalace) |
+| `opposite` | 对宫   | [`IFunctionalPalace`](./posts/palace.md#functionalpalace) |
+| `wealth`   | 财帛位 | [`IFunctionalPalace`](./posts/palace.md#functionalpalace) |
+| `career`   | 官禄位 | [`IFunctionalPalace`](./posts/palace.md#functionalpalace) |
 
 ## 运限
 
@@ -1223,4 +1223,4 @@ export type Astrolabe = {
 | `soul`                      | 命主                               | [`StarName`](/type-definition.html#starname)                                |
 | `body`                      | 身主                               | [`StarName`](/type-definition.html#starname)                                |
 | `fiveElementsClass`         | 五行局                             | [`FiveElementsClassName`](/type-definition.html#fiveelementsclassName)      |
-| `palaces`                   | 十二宫数据                         | `IFunctionalPalace[]`                                                       |
+| `palaces`                   | 十二宫数据                         | [`IFunctionalPalace[]`](./posts/palace.md#functionalpalace)                 |

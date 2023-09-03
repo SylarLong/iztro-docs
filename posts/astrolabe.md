@@ -82,7 +82,7 @@ var { astro } = require("iztro");
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | solarDateStr | `string`                                     | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
   | timeIndex    | `number`                                     | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
-  | gender       | `string`                                     | `true`   | -       | 性别【男/女】                                                                     |
+  | gender       | [`GenderName`](/type-definition.md#gendername)| `true`   | -       | 性别【男/女】                                                                     |
   | fixLeap      | `boolean`                                    | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
   | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
 
@@ -95,13 +95,7 @@ var { astro } = require("iztro");
   ```ts
   import { astro } from "iztro";
 
-  const astrolabe = astro.astrolabeBySolarDate(
-    "2000-8-16",
-    2,
-    "女",
-    true,
-    "zh-CN"
-  );
+  const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
   ```
 
 - 示例返回值
@@ -449,10 +443,10 @@ var { astro } = require("iztro");
   | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | lunarDateStr | `string`   | `true`   | -       | 农历日期【YYYY-M-D】，例如 `2000年七月十七` 则传入 `2000-7-17`                    |
   | timeIndex    | `number`   | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
-  | gender       | `string`   | `true`   | -       | 性别【男/女】                                                                     |
+  | gender       | [`GenderName`](/type-definition.md#gendername)   | `true`   | -       | 性别【男/女】                                                                     |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | `Language` | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
 
 - 返回值
 
@@ -463,14 +457,7 @@ var { astro } = require("iztro");
   ```ts
   import { astro } from "iztro";
 
-  const astrolabe = astro.astrolabeBySolarDate(
-    "2000-8-16",
-    2,
-    "女",
-    false,
-    true,
-    "zh-CN"
-  );
+  const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", false, true, "zh-CN");
   ```
 
 - 示例返回值
@@ -557,7 +544,7 @@ var { astro } = require("iztro");
 
   - 返回值
 
-    [Horoscope](../type-definition.md#horoscope)
+    [`Horoscope`](../type-definition.md#horoscope)
 
   - 示例
 
@@ -567,13 +554,7 @@ var { astro } = require("iztro");
     ```ts
     import { astro } from "iztro";
 
-    const astrolabe = astro.astrolabeBySolarDate(
-      "2000-8-16",
-      2,
-      "女",
-      true,
-      "zh-CN"
-    );
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
     const horoscope = astrolabe.horoscope();
     ```
 
@@ -597,13 +578,7 @@ var { astro } = require("iztro");
     ```ts
     import { astro } from "iztro";
 
-    const astrolabe = astro.astrolabeBySolarDate(
-      "2000-8-16",
-      2,
-      "女",
-      true,
-      "zh-CN"
-    );
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
     const horoscope = astrolabe.horoscope(new Date(1693494208392));
     ```
 
@@ -612,13 +587,7 @@ var { astro } = require("iztro");
     ```ts
     import { astro } from "iztro";
 
-    const astrolabe = astro.astrolabeBySolarDate(
-      "2000-8-16",
-      2,
-      "女",
-      true,
-      "zh-CN"
-    );
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
     const horoscope = astrolabe.horoscope(new Date(1693494208392), 3);
     ```
 
@@ -626,6 +595,40 @@ var { astro } = require("iztro");
 
   ***
 
+  ##### star() <Badge type="warning" text="^1.2.0" />
+
+  - 用途
+
+    通过星耀名称获取到当前星耀的对象实例
+
+  - 定义
+
+    ```ts
+    type star = (starName: StarName) => IFunctionalStar;
+    ```
+
+  - 参数
+
+    | 参数        | 类型                                                         | 是否必填 | 默认值 | 说明                 |
+    | ----------- | ------------------------------------------------------------ | -------- | ------ | -------------------- |
+    | starName | [`StarName`](../type-definition.md#starname) | `true`   | -      | 星耀名称 |
+
+  - 返回值
+
+    [`FunctionalStar`](./star.md#functionalstar)
+
+  - 示例
+
+    ```ts
+    import { astro } from "iztro";
+
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
+
+    // 获取 `紫微星` 所在宫位
+    const star = astrolabe.star("紫微");
+    ```
+
+  ***
   ##### palace() <Badge type="warning" text="^1.0.0" />
 
   - 用途
@@ -648,20 +651,14 @@ var { astro } = require("iztro");
 
   - 返回值
 
-    [IFunctionalPalace](./palace.md#functionalpalace)
+    [`FunctionalPalace`](./palace.md#functionalpalace)
 
   - 示例
 
     ```ts
     import { astro } from "iztro";
 
-    const astrolabe = astro.astrolabeBySolarDate(
-      "2000-8-16",
-      2,
-      "女",
-      true,
-      "zh-CN"
-    );
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
     // 获取 `寅宫`
     const palace = astrolabe.palace(0);
@@ -683,7 +680,7 @@ var { astro } = require("iztro");
     ```ts
     type surroundedPalaces = (
       indexOrName: number | PalaceName
-    ) => SurroundedPalaces;
+    ) => IFunctionalSurpalaces;
     ```
 
   - 参数
@@ -694,20 +691,14 @@ var { astro } = require("iztro");
 
   - 返回值
 
-    [`SurroundedPalaces`](../type-definition.md#surroundedpalaces)
+    [`FunctionalSurpalaces`](./palace.md#functionalsurpalaces)
 
   - 示例
 
     ```ts
     import { astro } from "iztro";
 
-    const astrolabe = astro.astrolabeBySolarDate(
-      "2000-8-16",
-      2,
-      "女",
-      true,
-      "zh-CN"
-    );
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
     // 获取 `寅宫` 三方四正
     const surroundedPalaces = astrolabe.surroundedPalaces(0);
@@ -753,13 +744,7 @@ var { astro } = require("iztro");
     ```ts
     import { astro } from "iztro";
 
-    const astrolabe = astro.astrolabeBySolarDate(
-      "2000-8-16",
-      2,
-      "女",
-      true,
-      "zh-CN"
-    );
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
     // 判断 `寅宫` 三方四正是否含有 `天府` 星、`红鸾` 星和 `禄存` 星
     const palace = astrolabe.isSurrounded(0, ["天府", "红鸾", "禄存"]);
@@ -805,23 +790,13 @@ var { astro } = require("iztro");
     ```ts
     import { astro } from "iztro";
 
-    const astrolabe = astro.astrolabeBySolarDate(
-      "2000-8-16",
-      2,
-      "女",
-      true,
-      "zh-CN"
-    );
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
     // 判断 `寅宫` 三方四正是否含有 `天府` 星、`红鸾` 星和 `禄存` 星中的一颗
     const palace = astrolabe.isSurroundedOneOf(0, ["天府", "红鸾", "禄存"]);
 
     // 判断 `命宫` 三方四正是否含有 `天府` 星、`红鸾` 星和 `禄存` 星中的一颗
-    const soulPalace = astrolabe.isSurroundedOneOf("命宫", [
-      "天府",
-      "红鸾",
-      "禄存",
-    ]);
+    const soulPalace = astrolabe.isSurroundedOneOf("命宫", ["天府", "红鸾", "禄存"]);
     ```
 
   ***
@@ -861,21 +836,11 @@ var { astro } = require("iztro");
     ```ts
     import { astro } from "iztro";
 
-    const astrolabe = astro.astrolabeBySolarDate(
-      "2000-8-16",
-      2,
-      "女",
-      true,
-      "zh-CN"
-    );
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
     // 判断 `寅宫` 三方四正是否不含有 `天府` 星、`红鸾` 星和 `禄存` 星
     const palace = astrolabe.notSurrounded(0, ["天府", "红鸾", "禄存"]);
 
     // 判断 `命宫` 三方四正是否不含有 `天府` 星、`红鸾` 星和 `禄存` 星
-    const soulPalace = astrolabe.notSurrounded("命宫", [
-      "天府",
-      "红鸾",
-      "禄存",
-    ]);
+    const soulPalace = astrolabe.notSurrounded("命宫", ["天府", "红鸾", "禄存"]);
     ```

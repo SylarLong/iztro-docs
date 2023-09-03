@@ -75,6 +75,7 @@ export default defineConfig({
                   { text: "14主星", link: "/learn/major-star.md" },
                   { text: "14辅星", link: "/learn/minor-star.md" },
                   { text: "37杂耀", link: "/learn/adj-star.md" },
+                  { text: "48神煞", link: "/learn/dec-star.md" },
                 ],
               },
               { text: "四化", link: "/learn/mutagen.md" },
