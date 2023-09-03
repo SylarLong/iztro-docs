@@ -8,7 +8,7 @@ export default defineConfig({
   title: "iztro Docs",
   description: "iztro is a lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information.",
   outDir: "../astro/docs/",
-
+  ignoreDeadLinks: true,
   markdown: {
     config(md) {
       md.use(tabsMarkdownPlugin);
