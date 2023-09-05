@@ -466,6 +466,240 @@ var { astro } = require("iztro");
 
 ---
 
+#### getMajorStarBySolarDate <Badge type="warning" text="^1.2.1" />
+
+- 用途
+
+  通过阳历获取命宫主星
+
+- 定义
+
+  ```ts
+  type getMajorStarBySolarDate = (
+    solarDateStr: string,
+    timeIndex: number,
+    fixLeap: boolean = true,
+    language?: Language,
+  ) => string;
+  ```
+
+- 参数
+
+  | 参数         | 类型                                         | 是否必填 | 默认值  | 说明                                                                              |
+  | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
+  | solarDateStr | `string`                                     | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
+  | timeIndex    | `number`                                     | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
+  | fixLeap      | `boolean`                                    | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+
+- 示例
+
+  ```ts
+  import { astro } from 'isztro';
+
+  const result = getMajorStarBySolarDate('2023-4-7', 0);
+  ```
+
+- 示例返回值
+
+  ```ts
+  贪狼
+  ```
+
+
+---
+
+#### getMajorStarByLunarDate <Badge type="warning" text="^1.2.1" />
+
+- 用途
+
+  通过农历获取命宫主星
+
+- 定义
+
+  ```ts
+  type getMajorStarByLunarDate = (
+    lunarDateStr: string,
+    timeIndex: number,
+    isLeapMonth: boolean = false,
+    fixLeap: boolean = true,
+    language?: Language,
+  ) =>
+  ```
+
+- 参数
+
+  | 参数         | 类型       | 是否必填 | 默认值  | 说明                                                                              |
+  | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
+  | lunarDateStr | `string`   | `true`   | -       | 农历日期【YYYY-M-D】，例如 `2000年七月十七` 则传入 `2000-7-17`                    |
+  | timeIndex    | `number`   | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
+  | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
+  | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+
+- 示例
+
+  ```ts
+  import { astro } from 'isztro';
+
+  const result = getMajorStarByLunarDate('2023-2-17', 0, true, false);
+  ```
+
+- 示例返回值
+
+  ```ts
+  紫微,贪狼
+  ```
+
+---
+
+#### getSignBySolarDate <Badge type="warning" text="^1.2.1" />
+
+- 用途
+
+  通过阳历获取星座
+
+- 定义
+
+  ```ts
+  type getSignBySolarDate = (
+    solarDateStr: string, 
+    language?: Language
+  ) => string;
+  ```
+
+- 参数
+
+  | 参数         | 类型                                         | 是否必填 | 默认值  | 说明                                                                              |
+  | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
+  | solarDateStr | `string`                                     | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+
+- 示例
+
+  ```ts
+  import { astro } from 'isztro';
+
+  const result = getSignBySolarDate('2023-9-5');
+  ```
+
+- 示例返回值
+
+  ```ts
+  处女座
+  ```
+
+---
+
+#### getSignByLunarDate <Badge type="warning" text="^1.2.1" />
+
+- 用途
+
+  通过农历获取星座
+
+- 定义
+
+  ```ts
+  type getSignByLunarDate = (
+    lunarDateStr: string, 
+    isLeapMonth?: boolean, 
+    language?: Language
+  ) => string;
+  ``` 
+
+- 参数
+
+  | 参数         | 类型       | 是否必填 | 默认值  | 说明                                                                              |
+  | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
+  | lunarDateStr | `string`   | `true`   | -       | 农历日期【YYYY-M-D】，例如 `2000年七月十七` 则传入 `2000-7-17`                    |
+  | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+
+- 示例
+
+  ```ts
+  import { astro } from 'isztro';
+
+  const result = getSignByLunarDate('2023-7-21');
+  ```
+
+- 示例返回值
+
+  ```ts
+  处女座
+  ```
+---
+
+#### getZodiacBySolarDate <Badge type="warning" text="^1.2.1" />
+
+- 用途
+
+  通过公历获取十二生肖
+
+- 定义
+
+  ```ts
+  type getZodiacBySolarDate = (solarDateStr: string, language?: Language) => string;
+  ```
+
+- 参数
+
+  | 参数         | 类型                                         | 是否必填 | 默认值  | 说明                                                                              |
+  | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
+  | solarDateStr | `string`                                     | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+
+- 示例
+
+  ```ts
+  import { astro } from 'isztro';
+
+  const result = getZodiacBySolarDate('2023-2-20');
+  ```
+
+- 示例返回值
+
+  ```ts
+  兔
+  ```
+
+---
+
+#### getZodiacByLunarYear <Badge type="warning" text="^1.2.1" />
+
+- 用途
+
+  通过农历年份获取十二生肖
+
+- 定义
+
+  ```ts
+  type getZodiacByLunarYear = (year: number, language?: Language) => string;
+  ```
+
+- 参数
+
+  | 参数         | 类型                                         | 是否必填 | 默认值  | 说明                                                                              |
+  | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
+  | year | `number`                                     | `true`   | -       | 农历年份                                                             |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  
+- 示例
+
+  ```ts
+  import { astro } from 'isztro';
+
+  const result = getZodiacByLunarYear(2023);
+  ```
+
+- 示例返回值
+
+  ```ts
+  兔
+  ```
+
+---
+
 ### 功能类定义
 
 ::: warning 开发建议
