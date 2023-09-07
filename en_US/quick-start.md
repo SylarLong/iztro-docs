@@ -6,29 +6,6 @@ A lightweight Open-Source Javascript library of getting The Purple Star Astrolog
 
 </div>
 
-<div align="center" class="badges">
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/b57f0e6e2e8875ce39ae/maintainability)](https://codeclimate.com/github/SylarLong/iztro/maintainability)
-[![Codecov](https://github.com/SylarLong/iztro/actions/workflows/Codecov.yaml/badge.svg)](https://github.com/SylarLong/iztro/actions/workflows/Codecov.yaml)
-[![npm](https://img.shields.io/npm/v/iztro)](https://www.npmjs.com/package/iztro)
-[![GitHub top language](https://img.shields.io/github/languages/top/SylarLong/iztro)](https://github.com/search?q=repo%3ASylarLong%2Fiztro++language%3ATypeScript&type=code)
-[![Codecov](https://img.shields.io/codecov/c/github/sylarlong/iztro)](https://app.codecov.io/gh/SylarLong/iztro/tree/main/src%2Fstar)
-[![npm](https://img.shields.io/npm/dw/iztro)](https://www.npmjs.com/package/iztro)
-[![GitHub](https://img.shields.io/github/license/sylarlong/iztro)](https://www.npmjs.com/package/iztro)
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SylarLong/iztro)](https://www.npmjs.com/package/iztro)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/%40sylarlong%2Fastro)](https://www.npmjs.com/package/iztro)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSylarLong%2Fiztro.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSylarLong%2Fiztro?ref=badge_shield)
-[![Socket Badge](https://socket.dev/api/badge/npm/package/iztro)](https://socket.dev/npm/package/iztro)
-[![Package Quality](https://packagequality.com/shield/iztro.svg)](https://packagequality.com/#?package=iztro)
-
-</div>
-
-<div align="center">
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSylarLong%2Fiztro.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FSylarLong%2Fiztro?ref=badge_large)
-
-</div>
-
 ## Overview
 
 Welcome to the `iztro` development documentation! This page will introduce you to how to integrate, how to retrieve data, and how to quickly obtain all the data on a natal chart in Zi Wei Dou Shu. If you are just a basic user, reading this document will be enough for your daily use.
