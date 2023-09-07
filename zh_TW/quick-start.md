@@ -1,13 +1,13 @@
 ---
-title: 'iztro 开发文档'
-description: 'iztro入门文档，快速上手使用iztro获取紫微斗数排盘数据。'
+title: 'iztro 開發文檔'
+description: 'iztro入門文檔，快速上手使用iztro獲取紫微鬥數排盤數據。'
 ---
 
 <div align="center">
 
 <h1 class="brand-name text-clip">IZTRO</h1>
 
-一套轻量级获取紫微斗数排盘信息的 Javascript 开源库。
+壹套輕量級獲取紫微鬥數排盤信息的 Javascript 開源庫。
 
 </div>
 
@@ -36,20 +36,20 @@ description: 'iztro入门文档，快速上手使用iztro获取紫微斗数排�
 
 ## 概述
 
-欢迎使用 `iztro` 开发文档！本页将向你介绍如何集成、如何获取数据、以及如何快速得到紫微斗数里一张星盘上的所有数据。如果你只是基础使用者，阅读完本篇文档将足够你日常使用。
-如果你已经掌握了本页内容，可以到其他页面进行更深入的探索。如果你对紫微斗数感兴趣，但是有没有相关基础，可以点击 [传送门](/learn/basis.md) 进行扫盲学习。
+歡迎使用 `iztro` 開發文檔！本頁將向妳介紹如何集成、如何獲取數據、以及如何快速得到紫微鬥數裏壹張星盤上的所有數據。如果妳隻是基礎使用者，閱讀完本篇文檔將足夠妳日常使用。
+如果妳已經掌握了本頁內容，可以到其他頁面進行更深入的探索。如果妳對紫微鬥數感興趣，但是有沒有相關基礎，可以點擊 [傳送門](/learn/basis.md) 進行掃盲學習。
 
-::: info 你将获取到以下信息：
+::: info 妳將獲取到以下信息：
 
-- 如何将 `iztro` 安装和集成到你的代码里
-- 如何获取到一张星盘
-- 如何基于星盘开始分析宫位
-- 如何基于宫位开始分析星耀
+- 如何將 `iztro` 安裝和集成到妳的代碼裏
+- 如何獲取到壹張星盤
+- 如何基於星盤開始分析宮位
+- 如何基於宮位開始分析星耀
   :::
 
-## 安装
+## 安裝
 
-你可以使用任意一种你熟悉的包管理工具进行安装
+妳可以使用任意壹種妳熟悉的包管理工具進行安裝
 
 :::tabs
 == npm
@@ -78,7 +78,7 @@ bun add -S iztro
 
 :::
 
-安装顺利的话，会在你的`package.json`依赖列表中找到`iztro`
+安裝順利的話，會在妳的`package.json`依賴列表中找到`iztro`
 
 ```json
 "dependencies": {
@@ -86,13 +86,13 @@ bun add -S iztro
 }
 ```
 
-> 版本号可能会有所不同
+> 版本號可能會有所不同
 
-## 开始使用
+## 開始使用
 
-#### 引入代码
+#### 引入代碼
 
-你可以根据下列方式将`iztro`引入你的代码
+妳可以根據下列方式將`iztro`引入妳的代碼
 
 :::tabs
 == ES6 Module
@@ -109,17 +109,17 @@ var iztro = require("iztro");
 
 :::
 
-#### 获取星盘数据
+#### 獲取星盤數據
 
-在获取紫微斗数星盘的时候，可以根据`农历`或者`阳历`日期来获取，`iztro`提供了这两种获取方式，你可以根据你的需求使用，但我们更推荐你使用`阳历`的方式来使用。
-放心，阳历和农历在程序内部获取到的数据是统一的。
+在獲取紫微鬥數星盤的時候，可以根據`農歷`或者`陽歷`日期來獲取，`iztro`提供了這兩種獲取方式，妳可以根據妳的需求使用，但我們更推薦妳使用`陽歷`的方式來使用。
+放心，陽歷和農歷在程序內部獲取到的數據是統壹的。
 
-::: info 使用 `阳历` 有如下便利性：
+::: info 使用 `陽歷` 有如下便利性：
 
-- 可以很方便的在出生证上查到
-- 可以使用日历组件进行日期选择
-- 现在很多人都无法记住农历日期
-- 可以避免因为忽略了闰月而带来的一系列问题
+- 可以很方便的在出生證上查到
+- 可以使用日歷組件進行日期選擇
+- 現在很多人都無法記住農歷日期
+- 可以避免因為忽略了閏月而帶來的壹係列問題
   :::
 
 :::tabs
@@ -128,10 +128,10 @@ var iztro = require("iztro");
 ```ts
 import { astro } from "iztro";
 
-// 通过阳历获取星盘信息
+// 通過陽歷獲取星盤信息
 const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
 
-// 通过农历获取星盘信息
+// 通過農歷獲取星盤信息
 const astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女");
 ```
 
@@ -140,85 +140,85 @@ const astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女");
 ```js
 var { astro } = require("iztro");
 
-// 通过阳历获取星盘信息
+// 通過陽歷獲取星盤信息
 var astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
 
-// 通过农历获取星盘信息
+// 通過農歷獲取星盤信息
 var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
 ```
 
 :::
 
-你会发现以上`astrolabeBySolarDate`和`astrolabeByLunarDate`的返回值是一样的，
-这是因为`astrolabeByLunarDate`方法在内部处理的时候，也是将日期转化为`阳历`以后调用`astrolabeBySolarDate`方法。
-以下是执行结果，因为结果比较长，所以将之折叠起来，如果你想要查看你调用结果是否和这个一样，可以展开查看：
+妳會發現以上`astrolabeBySolarDate`和`astrolabeByLunarDate`的返回值是壹樣的，
+這是因為`astrolabeByLunarDate`方法在內部處理的時候，也是將日期轉化為`陽歷`以後調用`astrolabeBySolarDate`方法。
+以下是執行結果，因為結果比較長，所以將之折疊起來，如果妳想要查看妳調用結果是否和這個壹樣，可以展開查看：
 
-::: details `astro.astrolabeBySolarDate()` 和 `astro.astrolabeByLunarDate()` 方法执行结果
+::: details `astro.astrolabeBySolarDate()` 和 `astro.astrolabeByLunarDate()` 方法執行結果
 
 ```ts
 {
-  // 阳历日期
+  // 陽歷日期
   solarDate: '2000-8-16',
-   // 农历日期
+   // 農歷日期
   lunarDate: '二〇〇〇年七月十七',
   // 四柱
   chineseDate: '庚辰 甲申 丙午 庚寅',
-  // 时辰
-  time: '寅时',
-  // 时辰对应的时间段
+  // 時辰
+  time: '寅時',
+  // 時辰對應的時間段
   timeRange: '03:00~05:00',
   // 星座
-  sign: '狮子座',
+  sign: '獅子座',
   // 生肖
-  zodiac: '龙',
-  // 命宫地支
+  zodiac: '龍',
+  // 命宮地支
   earthlyBranchOfSoulPalace: '午',
-  // 身宫地支
+  // 身宮地支
   earthlyBranchOfBodyPalace: '戌',
   // 命主
-  soul: '破军',
+  soul: '破軍',
   // 身主
   body: '文昌',
   // 五行局
   fiveElementsClass: '木三局',
-  // 十二宫数据
+  // 十二宮數據
   palaces: [
     {
-      // 宫名
-      name: '财帛',
-      // 是否身宫
+      // 宮名
+      name: '財帛',
+      // 是否身宮
       isBodyPalace: false,
-      // 是否来因宫
+      // 是否來因宮
       isOriginalPalace: false,
-      // 宫位天干
+      // 宮位天幹
       heavenlyStem: '戊',
-      // 宫位地支
+      // 宮位地支
       earthlyBranch: '寅',
-      // 主星（含天马禄存）
+      // 主星（含天馬祿存）
       majorStars: [
         { name: '武曲', type: 'major', scope: 'origin', brightness: '得' },
-        { name: '天相', type: 'major', scope: 'origin', brightness: '庙' },
-        { name: '天马', type: 'tianma', scope: 'origin', brightness: '' },
+        { name: '天相', type: 'major', scope: 'origin', brightness: '廟' },
+        { name: '天馬', type: 'tianma', scope: 'origin', brightness: '' },
       ],
-      // 辅星（含六吉六煞）
+      // 輔星（含六吉六煞）
       minorStars: [],
-      // 杂耀
+      // 雜耀
       adjectiveStars: [
         { name: '月解', type: 'helper', scope: 'origin' },
-        { name: '三台', type: 'adjective', scope: 'origin' },
-        { name: '天寿', type: 'adjective', scope: 'origin' },
+        { name: '三臺', type: 'adjective', scope: 'origin' },
+        { name: '天壽', type: 'adjective', scope: 'origin' },
         { name: '天巫', type: 'adjective', scope: 'origin' },
-        { name: '天厨', type: 'adjective', scope: 'origin' },
-        { name: '阴煞', type: 'adjective', scope: 'origin' },
+        { name: '天廚', type: 'adjective', scope: 'origin' },
+        { name: '陰煞', type: 'adjective', scope: 'origin' },
         { name: '天哭', type: 'adjective', scope: 'origin' },
       ],
-      // 长生12神
-      changsheng12: '绝',
+      // 長生12神
+      changsheng12: '絕',
       // 博士12神
       boshi12: '蜚廉',
-      // 流年将前12神
-      jiangqian12: '岁驿',
-      // 流年岁前12神
+      // 流年將前12神
+      jiangqian12: '歲驛',
+      // 流年歲前12神
       suiqian12: '吊客',
       // 大限
       stage: { range: [44, 53], heavenlyStem: '戊' },
@@ -232,13 +232,13 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       heavenlyStem: '己',
       earthlyBranch: '卯',
       majorStars: [
-        { name: '太阳', type: 'major', scope: 'origin', brightness: '庙' },
-        { name: '天梁', type: 'major', scope: 'origin', brightness: '庙' },
+        { name: '太陽', type: 'major', scope: 'origin', brightness: '廟' },
+        { name: '天梁', type: 'major', scope: 'origin', brightness: '廟' },
       ],
       minorStars: [],
       adjectiveStars: [{ name: '天刑', type: 'adjective', scope: 'origin' }],
       changsheng12: '墓',
-      boshi12: '奏书',
+      boshi12: '奏書',
       jiangqian12: '息神',
       suiqian12: '病符',
       stage: { range: [34, 43], heavenlyStem: '己' },
@@ -250,19 +250,19 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       isOriginalPalace: true,
       heavenlyStem: '庚',
       earthlyBranch: '辰',
-      majorStars: [{ name: '七杀', type: 'major', scope: 'origin', brightness: '庙' }],
+      majorStars: [{ name: '七殺', type: 'major', scope: 'origin', brightness: '廟' }],
       minorStars: [
         { name: '右弼', type: 'soft', scope: 'origin', brightness: '' },
         { name: '火星', type: 'tough', scope: 'origin', brightness: '陷' },
       ],
       adjectiveStars: [
-        { name: '封诰', type: 'adjective', scope: 'origin' },
-        { name: '华盖', type: 'adjective', scope: 'origin' },
+        { name: '封誥', type: 'adjective', scope: 'origin' },
+        { name: '華蓋', type: 'adjective', scope: 'origin' },
       ],
       changsheng12: '死',
-      boshi12: '将军',
-      jiangqian12: '华盖',
-      suiqian12: '岁建',
+      boshi12: '將軍',
+      jiangqian12: '華蓋',
+      suiqian12: '歲建',
       stage: { range: [24, 33], heavenlyStem: '庚' },
       ages: [7, 19, 31, 43, 55, 67, 79],
     },
@@ -272,7 +272,7 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       isOriginalPalace: false,
       heavenlyStem: '辛',
       earthlyBranch: '巳',
-      majorStars: [{ name: '天机', type: 'major', scope: 'origin', brightness: '平' }],
+      majorStars: [{ name: '天機', type: 'major', scope: 'origin', brightness: '平' }],
       minorStars: [],
       adjectiveStars: [
         { name: '天喜', type: 'flower', scope: 'origin' },
@@ -282,29 +282,29 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       changsheng12: '病',
       boshi12: '小耗',
       jiangqian12: '劫煞',
-      suiqian12: '晦气',
+      suiqian12: '晦氣',
       stage: { range: [14, 23], heavenlyStem: '辛' },
       ages: [6, 18, 30, 42, 54, 66, 78],
     },
     {
-      name: '命宫',
+      name: '命宮',
       isBodyPalace: false,
       isOriginalPalace: false,
       heavenlyStem: '壬',
       earthlyBranch: '午',
-      majorStars: [{ name: '紫微', type: 'major', scope: 'origin', brightness: '庙' }],
+      majorStars: [{ name: '紫微', type: 'major', scope: 'origin', brightness: '廟' }],
       minorStars: [{ name: '文曲', type: 'soft', scope: 'origin', brightness: '陷' }],
       adjectiveStars: [
         { name: '年解', type: 'helper', scope: 'origin' },
-        { name: '凤阁', type: 'adjective', scope: 'origin' },
+        { name: '鳳閣', type: 'adjective', scope: 'origin' },
         { name: '天福', type: 'adjective', scope: 'origin' },
         { name: '截路', type: 'adjective', scope: 'origin' },
         { name: '蜚廉', type: 'adjective', scope: 'origin' },
       ],
       changsheng12: '衰',
-      boshi12: '青龙',
-      jiangqian12: '灾煞',
-      suiqian12: '丧门',
+      boshi12: '青龍',
+      jiangqian12: '災煞',
+      suiqian12: '喪門',
       stage: { range: [4, 13], heavenlyStem: '壬' },
       ages: [5, 17, 29, 41, 53, 65, 77],
     },
@@ -316,8 +316,8 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       earthlyBranch: '未',
       majorStars: [],
       minorStars: [
-        { name: '天钺', type: 'soft', scope: 'origin', brightness: '' },
-        { name: '陀罗', type: 'tough', scope: 'origin', brightness: '庙' },
+        { name: '天鉞', type: 'soft', scope: 'origin', brightness: '' },
+        { name: '陀羅', type: 'tough', scope: 'origin', brightness: '廟' },
       ],
       adjectiveStars: [
         { name: '天姚', type: 'flower', scope: 'origin' },
@@ -326,7 +326,7 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       changsheng12: '帝旺',
       boshi12: '力士',
       jiangqian12: '天煞',
-      suiqian12: '贯索',
+      suiqian12: '貫索',
       stage: { range: [114, 123], heavenlyStem: '癸' },
       ages: [4, 16, 28, 40, 52, 64, 76],
     },
@@ -337,16 +337,16 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       heavenlyStem: '甲',
       earthlyBranch: '申',
       majorStars: [
-        { name: '破军', type: 'major', scope: 'origin', brightness: '得' },
-        { name: '禄存', type: 'lucun', scope: 'origin', brightness: '' },
+        { name: '破軍', type: 'major', scope: 'origin', brightness: '得' },
+        { name: '祿存', type: 'lucun', scope: 'origin', brightness: '' },
       ],
       minorStars: [{ name: '文昌', type: 'soft', scope: 'origin', brightness: '得' }],
       adjectiveStars: [
-        { name: '龙池', type: 'adjective', scope: 'origin' },
-        { name: '台辅', type: 'adjective', scope: 'origin' },
+        { name: '龍池', type: 'adjective', scope: 'origin' },
+        { name: '臺輔', type: 'adjective', scope: 'origin' },
         { name: '旬空', type: 'adjective', scope: 'origin' },
       ],
-      changsheng12: '临官',
+      changsheng12: '臨官',
       boshi12: '博士',
       jiangqian12: '指背',
       suiqian12: '官符',
@@ -365,31 +365,31 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
         { name: '擎羊', type: 'tough', scope: 'origin', brightness: '陷' },
       ],
       adjectiveStars: [
-        { name: '咸池', type: 'flower', scope: 'origin' },
-        { name: '天贵', type: 'adjective', scope: 'origin' },
+        { name: '鹹池', type: 'flower', scope: 'origin' },
+        { name: '天貴', type: 'adjective', scope: 'origin' },
         { name: '月德', type: 'adjective', scope: 'origin' },
       ],
-      changsheng12: '冠带',
+      changsheng12: '冠帶',
       boshi12: '官府',
-      jiangqian12: '咸池',
+      jiangqian12: '鹹池',
       suiqian12: '小耗',
       stage: { range: [94, 103], heavenlyStem: '乙' },
       ages: [2, 14, 26, 38, 50, 62, 74],
     },
     {
-      name: '官禄',
+      name: '官祿',
       isBodyPalace: true,
       isOriginalPalace: false,
       heavenlyStem: '丙',
       earthlyBranch: '戌',
       majorStars: [
-        { name: '廉贞', type: 'major', scope: 'origin', brightness: '利' },
-        { name: '天府', type: 'major', scope: 'origin', brightness: '庙' },
+        { name: '廉貞', type: 'major', scope: 'origin', brightness: '利' },
+        { name: '天府', type: 'major', scope: 'origin', brightness: '廟' },
       ],
-      minorStars: [{ name: '左辅', type: 'soft', scope: 'origin', brightness: '' }],
+      minorStars: [{ name: '左輔', type: 'soft', scope: 'origin', brightness: '' }],
       adjectiveStars: [
         { name: '天才', type: 'adjective', scope: 'origin' },
-        { name: '天虚', type: 'adjective', scope: 'origin' },
+        { name: '天虛', type: 'adjective', scope: 'origin' },
       ],
       changsheng12: '沐浴',
       boshi12: '伏兵',
@@ -404,34 +404,34 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       isOriginalPalace: false,
       heavenlyStem: '丁',
       earthlyBranch: '亥',
-      majorStars: [{ name: '太阴', type: 'major', scope: 'origin', brightness: '庙' }],
+      majorStars: [{ name: '太陰', type: 'major', scope: 'origin', brightness: '廟' }],
       minorStars: [],
       adjectiveStars: [
-        { name: '红鸾', type: 'flower', scope: 'origin' },
+        { name: '紅鸞', type: 'flower', scope: 'origin' },
         { name: '恩光', type: 'adjective', scope: 'origin' },
         { name: '天官', type: 'adjective', scope: 'origin' },
         { name: '天月', type: 'adjective', scope: 'origin' },
-        { name: '天伤', type: 'adjective', scope: 'origin' },
+        { name: '天傷', type: 'adjective', scope: 'origin' },
       ],
-      changsheng12: '长生',
+      changsheng12: '長生',
       boshi12: '大耗',
       jiangqian12: '亡神',
-      suiqian12: '龙德',
+      suiqian12: '龍德',
       stage: { range: [74, 83], heavenlyStem: '丁' },
       ages: [12, 24, 36, 48, 60, 72, 84],
     },
     {
-      name: '迁移',
+      name: '遷移',
       isBodyPalace: false,
       isOriginalPalace: false,
       heavenlyStem: '戊',
       earthlyBranch: '子',
-      majorStars: [{ name: '贪狼', type: 'major', scope: 'origin', brightness: '旺' }],
-      minorStars: [{ name: '铃星', type: 'tough', scope: 'origin', brightness: '陷' }],
+      majorStars: [{ name: '貪狼', type: 'major', scope: 'origin', brightness: '旺' }],
+      minorStars: [{ name: '鈴星', type: 'tough', scope: 'origin', brightness: '陷' }],
       adjectiveStars: [{ name: ' 八座', type: 'adjective', scope: 'origin' }],
-      changsheng12: '养',
+      changsheng12: '養',
       boshi12: '病符',
-      jiangqian12: '将星',
+      jiangqian12: '將星',
       suiqian12: '白虎',
       stage: { range: [64, 73], heavenlyStem: '戊' },
       ages: [11, 23, 35, 47, 59, 71, 83],
@@ -441,10 +441,10 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       isBodyPalace: false,
       isOriginalPalace: false,
       heavenlyStem: '己',
-      earthlyBranch: '丑',
+      earthlyBranch: '醜',
       majorStars: [
         { name: '天同', type: 'major', scope: 'origin', brightness: '不' },
-        { name: '巨门', type: 'major', scope: 'origin', brightness: '不' },
+        { name: '巨門', type: 'major', scope: 'origin', brightness: '不' },
       ],
       minorStars: [
         { name: '天魁', type: 'soft', scope: 'origin', brightness: '' },
@@ -469,49 +469,49 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
 
 :::
 
-##### 方法定义
+##### 方法定義
 
-- 通过阳历日期获取星盘信息
+- 通過陽歷日期獲取星盤信息
 
   `astro`.`astrolabeBySolarDate(solarDateStr, timeIndex, gender, fixLeap, language)`
 
-  - 参数
+  - 參數
 
-    | 参数         | 类型       | 是否必填 | 默认值  | 说明                                                                              |
+    | 參數         | 類型       | 是否必填 | 默認值  | 說明                                                                              |
     | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
-    | solarDateStr | `string`   | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
-    | timeIndex    | `number`   | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
-    | gender       | `string`   | `true`   | -       | 性别【男/女】                                                                     |
-    | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-    | language     | `Language` | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+    | solarDateStr | `string`   | `true`   | -       | 陽歷日期【YYYY-M-D】                                                              |
+    | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
+    | gender       | `string`   | `true`   | -       | 性別【男/女】                                                                     |
+    | fixLeap      | `boolean`  | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
+    | language     | `Language` | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
 
   - 返回值
 
     [`FunctionalAstrolabe`](./posts/astrolabe.md#functionalastrolabe)
 
-- 通过农历日期获取星盘信息
+- 通過農歷日期獲取星盤信息
 
   `astro`.`astrolabeByLunarDate(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
 
-  - 参数
+  - 參數
 
-    | 参数         | 类型       | 是否必填 | 默认值  | 说明                                                                              |
+    | 參數         | 類型       | 是否必填 | 默認值  | 說明                                                                              |
     | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
-    | lunarDateStr | `string`   | `true`   | -       | 农历日期【YYYY-M-D】，例如`2000年七月十七`则传入`2000-7-17`                       |
-    | timeIndex    | `number`   | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
-    | gender       | `string`   | `true`   | -       | 性别【男/女】                                                                     |
-    | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
-    | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-    | language     | `Language` | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+    | lunarDateStr | `string`   | `true`   | -       | 農歷日期【YYYY-M-D】，例如`2000年七月十七`則傳入`2000-7-17`                       |
+    | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
+    | gender       | `string`   | `true`   | -       | 性別【男/女】                                                                     |
+    | isLeapMonth  | `boolean`  | `false`  | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效                                        |
+    | fixLeap      | `boolean`  | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
+    | language     | `Language` | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
 
   - 返回值
 
     [`FunctionalAstrolabe`](./posts/astrolabe.md#functionalastrolabe)
 
-## 获取运限
+## 獲取運限
 
-紫微斗数的运限分为 `大限`、`流年`、`流月`、`流日`、`流时`、`流分`、`流秒`，由于 `流分`、`流秒` 使用场景不多，所以我们暂时不提供。
-`大限`、`流年`、`流月`、`流日`、`流时` 已经能满足绝大部分需求和使用场景了，使用 `iztro` 能够很轻松的获取到这些数据。
+紫微鬥數的運限分為 `大限`、`流年`、`流月`、`流日`、`流時`、`流分`、`流秒`，由於 `流分`、`流秒` 使用場景不多，所以我們暫時不提供。
+`大限`、`流年`、`流月`、`流日`、`流時` 已經能滿足絕大部分需求和使用場景了，使用 `iztro` 能夠很輕松的獲取到這些數據。
 
 :::tabs
 == ES6 Module
@@ -519,10 +519,10 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
 ```ts
 import { astro } from "iztro";
 
-// 通过阳历获取星盘信息
+// 通過陽歷獲取星盤信息
 const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
 
-// 获取运限数据
+// 獲取運限數據
 astrolabe.horoscope(new Date());
 ```
 
@@ -531,18 +531,18 @@ astrolabe.horoscope(new Date());
 ```js
 var { astro } = require("iztro");
 
-// 通过阳历获取星盘信息
+// 通過陽歷獲取星盤信息
 var astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
 
-// 获取运限数据
+// 獲取運限數據
 astrolabe.horoscope(new Date());
 ```
 
 :::
 
-调用 `astrolabe`.`horoscope()` 方法以后你会获得如下数据
+調用 `astrolabe`.`horoscope()` 方法以後妳會獲得如下數據
 
-::: details `horoscope()` 方法返回数据
+::: details `horoscope()` 方法返回數據
 
 ```ts
 {
@@ -552,9 +552,9 @@ astrolabe.horoscope(new Date());
     index: 2
     heavenlyStem: "庚"
     earthlyBranch: "辰"
-    palaceNames: ["夫妻", "兄弟", "命宫", "父母", "福德", "田宅", "官禄", "仆役", "迁移", "疾厄", "财帛", "子女"]
-    mutagen: ["太阳", "武曲", "太阴", "天同"]
-    stars: [{name: "运马", type: "tianma", scope: "decadal"}], …]
+    palaceNames: ["夫妻", "兄弟", "命宮", "父母", "福德", "田宅", "官祿", "仆役", "遷移", "疾厄", "財帛", "子女"]
+    mutagen: ["太陽", "武曲", "太陰", "天同"]
+    stars: [{name: "運馬", type: "tianma", scope: "decadal"}], …]
     age: {
       index: 10
       nominalAge: 23
@@ -564,58 +564,58 @@ astrolabe.horoscope(new Date());
     index: 1
     heavenlyStem: "癸"
     earthlyBranch: "卯"
-    palaceNames: ["兄弟", "命宫", "父母", "福德", "田宅", "官禄", "仆役", "迁移", "疾厄", "财帛", "子女", "夫妻"]
-    mutagen: ["破军", "巨门", "太阴", "贪狼"]
+    palaceNames: ["兄弟", "命宮", "父母", "福德", "田宅", "官祿", "仆役", "遷移", "疾厄", "財帛", "子女", "夫妻"]
+    mutagen: ["破軍", "巨門", "太陰", "貪狼"]
     stars: [[], [{name: "流魁", type: "soft", scope: "yearly"}, …], [], …]
   },
   monthly: {
   index: 3
     heavenlyStem: "庚"
     earthlyBranch: "申"
-    palaceNames: ["子女", "夫妻", "兄弟", "命宫", "父母", "福德", "田宅", "官禄", "仆役", "迁移", "疾厄", "财帛"]
-    mutagen: ["太阳", "武曲", "太阴", "天同"]
+    palaceNames: ["子女", "夫妻", "兄弟", "命宮", "父母", "福德", "田宅", "官祿", "仆役", "遷移", "疾厄", "財帛"]
+    mutagen: ["太陽", "武曲", "太陰", "天同"]
   },
   daily: {
     index: 3
     heavenlyStem: "戊"
     earthlyBranch: "午"
-    palaceNames: ["子女", "夫妻", "兄弟", "命宫", "父母", "福德", "田宅", "官禄", "仆役", "迁移", "疾厄", "财帛"]
-    mutagen: ["贪狼", "太阴", "右弼", "天机"]
+    palaceNames: ["子女", "夫妻", "兄弟", "命宮", "父母", "福德", "田宅", "官祿", "仆役", "遷移", "疾厄", "財帛"]
+    mutagen: ["貪狼", "太陰", "右弼", "天機"]
   },
   hourly: {
     index: 3
     heavenlyStem: "壬"
     earthlyBranch: "子"
-    palaceNames: ["子女", "夫妻", "兄弟", "命宫", "父母", "福德", "田宅", "官禄", "仆役", "迁移", "疾厄", "财帛"]
-    mutagen: ["天梁", "紫微", "左辅", "武曲"]
+    palaceNames: ["子女", "夫妻", "兄弟", "命宮", "父母", "福德", "田宅", "官祿", "仆役", "遷移", "疾厄", "財帛"]
+    mutagen: ["天梁", "紫微", "左輔", "武曲"]
   }
 }
 ```
 
 :::
 
-> Tips: 只有 `大限` 和 `流年` 有流耀。上面的运限数据和你调用的会因为传入的时间参数不同而不同，但是结构上是一致的。
+> Tips: 隻有 `大限` 和 `流年` 有流耀。上面的運限數據和妳調用的會因為傳入的時間參數不同而不同，但是結構上是壹致的。
 
-##### 方法定义
+##### 方法定義
 
-- 获取当前星盘的运限信息
+- 獲取當前星盤的運限信息
 
   `astrolabe`.`horoscope(date, timeIndex)`
 
-  - 参数
+  - 參數
 
-    | 参数      | 类型               | 是否必填 | 默认值       | 说明                                                                                    |
+    | 參數      | 類型               | 是否必填 | 默認值       | 說明                                                                                    |
     | --------- | ------------------ | -------- | ------------ | --------------------------------------------------------------------------------------- |
-    | date      | `string` \| `Date` | `false`  | `new Date()` | 阳历日期字符串或日期对象，若时间字符串或日期对象中包含了小时的信息，`timeIndex`可以省略 |
-    | timeIndex | `number`           | `false`  | `0`          | 时辰序号，若不传该参数则会尝试从`date`里获取小时信息转化为时辰序号                      |
+    | date      | `string` \| `Date` | `false`  | `new Date()` | 陽歷日期字符串或日期對象，若時間字符串或日期對象中包含了小時的信息，`timeIndex`可以省略 |
+    | timeIndex | `number`           | `false`  | `0`          | 時辰序號，若不傳該參數則會嘗試從`date`裏獲取小時信息轉化為時辰序號                      |
 
   - 返回值
 
     [`Horoscope`](./type-definition.html#horoscope)
 
-## 获取流耀
+## 獲取流耀
 
-上面的`horoscope()`方法内已经包含了`大限`和`流年`的流耀，所以一般情况下无需在单独调用获取流耀的方法，但也有例外的情况需要自行获取流耀，那就需要调用下列方法自行获取。
+上面的`horoscope()`方法內已經包含了`大限`和`流年`的流耀，所以壹般情況下無需在單獨調用獲取流耀的方法，但也有例外的情況需要自行獲取流耀，那就需要調用下列方法自行獲取。
 
 :::tabs
 == ES6 Module
@@ -623,7 +623,7 @@ astrolabe.horoscope(new Date());
 ```ts
 import { star } from "iztro";
 
-// 通过天干地支获取流耀
+// 通過天幹地支獲取流耀
 const horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```
 
@@ -632,71 +632,71 @@ const horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```js
 var { star } = require("iztro");
 
-// 通过天干地支获取流耀
+// 通過天幹地支獲取流耀
 var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```
 
 :::
 
-调用 `star`.`getHoroscopeStar()` 方法以后你会获得如下数据
+調用 `star`.`getHoroscopeStar()` 方法以後妳會獲得如下數據
 
-::: details `getHoroscopeStar()` 方法返回数据
+::: details `getHoroscopeStar()` 方法返回數據
 
 ```ts
 [
-  [{ name: "运马", type: "tianma", scope: "decadal" }],
-  [{ name: "运曲", type: "soft", scope: "decadal" }],
+  [{ name: "運馬", type: "tianma", scope: "decadal" }],
+  [{ name: "運曲", type: "soft", scope: "decadal" }],
   [],
-  [{ name: "运喜", type: "flower", scope: "decadal" }],
-  [],
-  [
-    { name: "运钺", type: "soft", scope: "decadal" },
-    { name: "运陀", type: "tough", scope: "decadal" },
-  ],
-  [{ name: "运禄", type: "lucun", scope: "decadal" }],
-  [{ name: "运羊", type: "tough", scope: "decadal" }],
+  [{ name: "運喜", type: "flower", scope: "decadal" }],
   [],
   [
-    { name: "运昌", type: "soft", scope: "decadal" },
-    { name: "运鸾", type: "flower", scope: "decadal" },
+    { name: "運鉞", type: "soft", scope: "decadal" },
+    { name: "運陀", type: "tough", scope: "decadal" },
+  ],
+  [{ name: "運祿", type: "lucun", scope: "decadal" }],
+  [{ name: "運羊", type: "tough", scope: "decadal" }],
+  [],
+  [
+    { name: "運昌", type: "soft", scope: "decadal" },
+    { name: "運鸞", type: "flower", scope: "decadal" },
   ],
   [],
-  [{ name: "运魁", type: "soft", scope: "decadal" }],
+  [{ name: "運魁", type: "soft", scope: "decadal" }],
 ];
 ```
 
 :::
 
-##### 方法定义
+##### 方法定義
 
-- 通过 `天干`、`地支` 获取流耀
+- 通過 `天幹`、`地支` 獲取流耀
 
   `star`.`getHoroscopeStar(heavenlyStem, earthlyBranch, scope)`
 
-  - 参数
+  - 參數
 
-    | 参数          | 类型                      | 是否必填 | 默认值 | 说明                                                                                                                             |
+    | 參數          | 類型                      | 是否必填 | 默認值 | 說明                                                                                                                             |
     | ------------- | ------------------------- | -------- | ------ | -------------------------------------------------------------------------------------------------------------------------------- |
-    | heavenlyStem  | `HeavenlyStemName`        | `true`   | -      | 天干                                                                                                                             |
+    | heavenlyStem  | `HeavenlyStemName`        | `true`   | -      | 天幹                                                                                                                             |
     | earthlyBranch | `EarthlyBranchName`       | `true`   | -      | 地支                                                                                                                             |
-    | scope         | `'decadal'` \| `'yearly'` | `true`   | -      | 限定是大限还是流年的流耀，其中大限流耀会在星耀前面加上`运`，流年流耀会在星耀前面加上`流`，`年解`比较特殊，只会出现在流年的流耀里 |
+    | scope         | `'decadal'` \| `'yearly'` | `true`   | -      | 限定是大限還是流年的流耀，其中大限流耀會在星耀前面加上`運`，流年流耀會在星耀前面加上`流`，`年解`比較特殊，隻會出現在流年的流耀裏 |
 
   - 返回值
 
     [`Star[][]`](./type-definition.html#star)
 
-## ☕ 总结
+## ☕ 總結
 
-如果您觉得本程序对您有用的话，可以给我带杯咖啡吗？👍 [Paypal Me](https://PayPal.Me/sylarlong)
+如果您覺得本程序對您有用的話，可以給我帶杯咖啡嗎？👍 [Paypal Me](https://PayPal.Me/sylarlong)
 
-以上数据可以生成如下星盘，其中 `palaces` 数据用于填充 12 宫，其他数据用于填充中宫。图片中流耀的显示和实际上有偏差，那是因为图片是古早以前的一个版本生成的，请以实际返回数据为准。
+以上數據可以生成如下星盤，其中 `palaces` 數據用於填充 12 宮，其他數據用於填充中宮。圖片中流耀的顯示和實際上有偏差，那是因為圖片是古早以前的壹個版本生成的，請以實際返回數據為準。
 
 ![demo](https://github.com/SylarLong/iztro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
 
-## 📜 版权
+## 📜 版權
 
 MIT License
 
 Copyright &copy; 2023 Sylar Long
 
-请合理使用本开源代码，禁止用于非法目的。
+請合理使用本開源代碼，禁止用於非法目的。

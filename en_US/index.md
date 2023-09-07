@@ -13,7 +13,7 @@ hero:
       link: https://a.14star.cn
     - theme: brand
       text: Get started
-      link: /en_US/quick-start.md
+      link: ./quick-start.md
 
 features:
   - title: Easy-to-use code

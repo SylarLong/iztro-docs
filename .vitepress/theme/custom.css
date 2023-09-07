@@ -43,7 +43,8 @@ header .container a.title, .text-clip {
 }
 
 .badges img {
-  display: inline;
+  display: inline-block;
+  margin:0 2px;
 }
 
 .VPDoc.has-aside .content-container {
