@@ -1105,6 +1105,7 @@ export type SurroundedPalaces = {
 ```ts
 export type HoroscopeItem = {
   index: number;
+  name: string;
   heavenlyStem: HeavenlyStemName;
   earthlyBranch: EarthlyBranchName;
   palaceNames: PalaceName[];
@@ -1118,6 +1119,7 @@ export type HoroscopeItem = {
 | 屬性            | 解釋           | 類型                                                           |
 | --------------- | -------------- | -------------------------------------------------------------- |
 | `index`         | 所在宮位的索引 | `number`                                                       |
+| `name` <Badge type="warning" text="^1.2.3" />        | 運限的名称 | `string`                                                       |
 | `heavenlyStem`  | 運限天幹       | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
 | `earthlyBranch` | 運限地支       | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
 | `palaceNames`   | 運限的十二宮   | [`PalaceName[]`](./type-definition.html#palacename)             |
