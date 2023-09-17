@@ -5,9 +5,9 @@ description: "iztro紫微斗数宫位介绍，iztro的palace对象使用方法�
 
 # 宫位
 
-### 概述
+## 概述
 
-紫微斗数中一共有 `十二` 个宫位，叫做 `十二人事宫`，囊括了与人有关的其他人和事物，这十二宫按顺序分别是 `命宫`、`兄弟宫`、`夫妻宫`、`子女宫`、`财帛宫`、`疾厄宫`、`迁移宫`、`仆役宫`、`官禄宫`、`田宅宫`、`福德宫`、`父母宫`。除了这展示在 [星盘](./astrolabe.md) 里的十二宫以外，紫微斗数还有三个隐藏宫位，它们分别是 `身宫`、`来因宫`、`暗合宫`。每一个宫位有着它特殊的意义，但本页不详细展开来叙述。如果你对紫微斗数的宫位没有概念，或者想深入研究，可以点击 [传送门](../learn/palace.md) 查看详细资料。与宫位地支顺时针排列相反，宫位名称是按逆时针排列的。如下面表格所示：
+紫微斗数中一共有 `十二` 个宫位，叫做 `十二人事宫`，囊括了与人有关的其他人和事物，这十二宫按顺序分别是 `命宫`、`兄弟宫`、`夫妻宫`、`子女宫`、`财帛宫`、`疾厄宫`、`迁移宫`、`仆役宫`、`官禄宫`、`田宅宫`、`福德宫`、`父母宫`。除了这展示在 [星盘](./astrolabe.md) 里的十二宫以外，紫微斗数还有三个隐藏宫位，它们分别是 `身宫`、`来因宫`、`暗合宫`。每一个宫位有着它特殊的意义，但本页不详细展开来叙述。如果你对紫微斗数的宫位没有概念，或者想深入研究，可以点击 [宫位系统](../learn/palace.md) 查看详细资料。与宫位地支顺时针排列相反，宫位名称是按逆时针排列的。如下面表格所示：
 
 <table class="astrolabe">
     <tr>
@@ -35,8 +35,8 @@ description: "iztro紫微斗数宫位介绍，iztro的palace对象使用方法�
 
 > 以上表格只是一个例子，`命宫` 的位置会根据你的 `出生日期` 和 `出生时间` 的不同而不同，它可能出现在上述任何一个宫位，但这个顺序是不会变的。
 
-宫位其实是 `宫` 和 `位` 两个概念组成的，通过 `出生日期` 和 `出生时间` 计算出来的，叫 `宫`，所以你星盘中的 `财帛宫` 位置在本命盘中是固定的，如果你不知道什么叫 `本命盘`，我们强烈建议你点击 [传送门](/learn/basis.md) 学习。`位` 则是一个 `相对` 位置，比如 `夫妻宫` 的 `财帛位` 是 `迁移宫`。这听起来有些绕，好消息是，你不需要记忆这些烧脑的信息，只需要有这么一个概念就可以了。
-### 功能类定义
+宫位其实是 `宫` 和 `位` 两个概念组成的，通过 `出生日期` 和 `出生时间` 计算出来的，叫 `宫`，所以你星盘中的 `财帛宫` 位置在本命盘中是固定的，如果你不知道什么叫 `本命盘`，我们强烈建议你点击 [基础知识扫盲](/learn/basis.md) 学习。`位` 则是一个 `相对` 位置，比如 `夫妻宫` 的 `财帛位` 是 `迁移宫`。这听起来有些绕，好消息是，你不需要记忆这些烧脑的信息，只需要有这么一个概念就可以了。
+## 功能类定义
 
 :::warning 开发建议
 
@@ -73,7 +73,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     const palace = astrolabe.palace("命宫");
     ```
 
-#### FunctionalPalace
+### FunctionalPalace
 
 ***
 
@@ -99,7 +99,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 - 方法
   
-  ##### has() <Badge type="warning" text="^1.0.0" />
+  ### has() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -135,7 +135,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### notHave() <Badge type="warning" text="^1.0.0" />
+  ### notHave() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -171,7 +171,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### hasOneOf() <Badge type="warning" text="^1.0.0" />
+  ### hasOneOf() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -208,7 +208,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   ***
 
-  ##### hasMutagen() <Badge type="warning" text="^1.2.0" />
+  ### hasMutagen() <Badge type="warning" text="^1.2.0" />
 
   - 用途
 
@@ -244,7 +244,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### notHaveMutagen() <Badge type="warning" text="^1.2.0" />
+  ### notHaveMutagen() <Badge type="warning" text="^1.2.0" />
 
   - 用途
 
@@ -278,7 +278,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```ts
     const result = astrolabe.palace("命宫").notHaveMutagen("忌");
     ```
-#### FunctionalSurpalaces <Badge type="warning" text="^1.2.0" />
+### FunctionalSurpalaces <Badge type="warning" text="^1.2.0" />
 
 ***
 
@@ -304,7 +304,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 - 方法
   
-  ##### have()
+  ### have()
 
   - 用途
 
@@ -340,7 +340,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### notHave()
+  ### notHave()
 
   - 用途
 
@@ -377,7 +377,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### haveOneOf()
+  ### haveOneOf()
 
   - 用途
 
@@ -414,7 +414,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   ***
 
-  ##### haveMutagen()
+  ### haveMutagen()
 
   - 用途
 
@@ -450,7 +450,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### notHaveMutagen()
+  ### notHaveMutagen()
 
   - 用途
 

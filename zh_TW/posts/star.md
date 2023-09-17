@@ -5,7 +5,7 @@ description: "iztro紫微鬥數星耀介紹，iztro的star對象使用方法以�
 
 # 星耀
 
-### 概述
+## 概述
 
 星耀是紫微鬥數裏的重要組成部分，人的個性主要收到星耀的影響。不同的星耀組合形成了不同的個性，如果妳對星耀部分感興趣，我們強烈建議妳點擊 [傳送門](/learn/star.md) 進行相關知識學習。本篇主要關註的是開發層面。
 
@@ -13,11 +13,11 @@ description: "iztro紫微鬥數星耀介紹，iztro的star對象使用方法以�
 在 `iztro` 裏，`主星`、`輔星`、`雜耀` 都被統歸到星耀係統裏，但是 `48神煞` 沒有被歸類到星耀，如果妳還不知道 `48神煞` 是什麽，歡迎點擊 [傳送門](/learn/dec-star.md) 進行學習。
 :::
 
-### 功能類定義
+## 功能類定義
 
 與 [FunctionalAstrolabe](./astrolabe.md#functionalastrolabe) 和 [FunctionalPalace](./palace.md#functionalpalace) 壹樣，我們並不建議妳手動去創建壹個 `FunctionalStar` 對象，而是使用其他對象返回的實例。
 
-#### FunctionalStar <Badge type="warning" text="^1.2.0" />
+### FunctionalStar <Badge type="warning" text="^1.2.0" />
 
 ---
 
@@ -47,7 +47,7 @@ description: "iztro紫微鬥數星耀介紹，iztro的star對象使用方法以�
   為了使 `FunctionalStar` 類使用起來更順暢，所以引入了 `setPalace()` 和 `setAstrolabe()` 兩個方法，但實際使用過程中請不要手動去調用這兩個方法，以免造成數據錯誤。
   :::
 
-  ##### palace()
+  ### palace()
 
   - 用途
 
@@ -81,7 +81,7 @@ description: "iztro紫微鬥數星耀介紹，iztro的star對象使用方法以�
 
   ***
 
-  ##### surroundedPalaces()
+  ### surroundedPalaces()
 
   - 用途
 
@@ -115,7 +115,7 @@ description: "iztro紫微鬥數星耀介紹，iztro的star對象使用方法以�
 
   ***
 
-  ##### oppositePalace()
+  ### oppositePalace()
 
   - 用途
 
@@ -149,7 +149,7 @@ description: "iztro紫微鬥數星耀介紹，iztro的star對象使用方法以�
 
   ***
 
-  ##### withBrightness()
+  ### withBrightness()
 
   - 用途
 
@@ -186,7 +186,7 @@ description: "iztro紫微鬥數星耀介紹，iztro的star對象使用方法以�
 
   ***
 
-  ##### withMutagen()
+  ### withMutagen()
 
   - 用途
 

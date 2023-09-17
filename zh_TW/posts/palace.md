@@ -5,7 +5,7 @@ description: "iztro紫微鬥數宮位介紹，iztro的palace對象使用方法�
 
 # 宮位
 
-### 概述
+## 概述
 
 紫微鬥數中壹共有 `十二` 個宮位，叫做 `十二人事宮`，囊括了與人有關的其他人和事物，這十二宮按順序分別是 `命宮`、`兄弟宮`、`夫妻宮`、`子女宮`、`財帛宮`、`疾厄宮`、`遷移宮`、`仆役宮`、`官祿宮`、`田宅宮`、`福德宮`、`父母宮`。除了這展示在 [星盤](./astrolabe.md) 裏的十二宮以外，紫微鬥數還有三個隱藏宮位，它們分別是 `身宮`、`來因宮`、`暗合宮`。每壹個宮位有著它特殊的意義，但本頁不詳細展開來敘述。如果妳對紫微鬥數的宮位沒有概念，或者想深入研究，可以點擊 [傳送門](../learn/palace.md) 查看詳細資料。與宮位地支順時針排列相反，宮位名稱是按逆時針排列的。如下面表格所示：
 
@@ -36,7 +36,7 @@ description: "iztro紫微鬥數宮位介紹，iztro的palace對象使用方法�
 > 以上表格隻是壹個例子，`命宮` 的位置會根據妳的 `出生日期` 和 `出生時間` 的不同而不同，它可能出現在上述任何壹個宮位，但這個順序是不會變的。
 
 宮位其實是 `宮` 和 `位` 兩個概念組成的，通過 `出生日期` 和 `出生時間` 計算出來的，叫 `宮`，所以妳星盤中的 `財帛宮` 位置在本命盤中是固定的，如果妳不知道什麽叫 `本命盤`，我們強烈建議妳點擊 [傳送門](/learn/basis.md) 學習。`位` 則是壹個 `相對` 位置，比如 `夫妻宮` 的 `財帛位` 是 `遷移宮`。這聽起來有些繞，好消息是，妳不需要記憶這些燒腦的信息，隻需要有這麽壹個概念就可以了。
-### 功能類定義
+## 功能類定義
 
 :::warning 開發建議
 
@@ -73,7 +73,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     const palace = astrolabe.palace("命宮");
     ```
 
-#### FunctionalPalace
+### FunctionalPalace
 
 ***
 
@@ -99,7 +99,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 - 方法
   
-  ##### has() <Badge type="warning" text="^1.0.0" />
+  ### has() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -135,7 +135,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### notHave() <Badge type="warning" text="^1.0.0" />
+  ### notHave() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -171,7 +171,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### hasOneOf() <Badge type="warning" text="^1.0.0" />
+  ### hasOneOf() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -208,7 +208,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   ***
 
-  ##### hasMutagen() <Badge type="warning" text="^1.2.0" />
+  ### hasMutagen() <Badge type="warning" text="^1.2.0" />
 
   - 用途
 
@@ -244,7 +244,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### notHaveMutagen() <Badge type="warning" text="^1.2.0" />
+  ### notHaveMutagen() <Badge type="warning" text="^1.2.0" />
 
   - 用途
 
@@ -278,7 +278,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```ts
     const result = astrolabe.palace("命宮").notHaveMutagen("忌");
     ```
-#### FunctionalSurpalaces <Badge type="warning" text="^1.2.0" />
+### FunctionalSurpalaces <Badge type="warning" text="^1.2.0" />
 
 ***
 
@@ -304,7 +304,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 - 方法
   
-  ##### have()
+  ### have()
 
   - 用途
 
@@ -340,7 +340,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### notHave()
+  ### notHave()
 
   - 用途
 
@@ -377,7 +377,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### haveOneOf()
+  ### haveOneOf()
 
   - 用途
 
@@ -414,7 +414,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   ***
 
-  ##### haveMutagen()
+  ### haveMutagen()
 
   - 用途
 
@@ -450,7 +450,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ##### notHaveMutagen()
+  ### notHaveMutagen()
 
   - 用途
 

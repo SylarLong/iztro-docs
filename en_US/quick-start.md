@@ -62,7 +62,7 @@ If the installation is successful, you will find `iztro` in the dependencies lis
 
 ## Quick start
 
-#### Import code
+### Import code
 
 You can import `iztro` into your code using the following methods.
 
@@ -81,7 +81,7 @@ var iztro = require("iztro");
 
 :::
 
-#### Get astrolabe data
+### Get astrolabe data
 
 When retrieving a natal chart in Zi Wei Dou Shu, you can obtain it based on either the `lunar calendar` or the `solar calendar`. `iztro` provides both options, and you can choose according to your needs. However, we recommend using the `solar calendar` method. Rest assured, the data obtained internally by the program is consistent for both the `lunar` and `solar` calendars.
 
@@ -438,7 +438,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
 
 :::
 
-##### function definition
+### function definition
 
 - Get astrolabe by solar calendar.
 
@@ -564,7 +564,7 @@ You'll get the result below by invoking `astrolabe`.`horoscope()`
 
 > Tips: Only `Decadal horoscope` and `Yearly horoscope` include horosope stars. The values of the result above will be different by different parameters. But the data structure is fixed.
 
-##### function definition
+### function definition
 
 - Get horoscope data of the `astrolabe` instance
 
@@ -635,7 +635,7 @@ You'll get the result below by invoking `star`.`getHoroscopeStar()`
 
 :::
 
-##### function definition
+### function definition
 
 - Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
 

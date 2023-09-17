@@ -5,7 +5,7 @@ description: "iztro紫微鬥數星盤介紹，iztro的astro對象使用方法以
 
 # 星盤
 
-### 概述
+## 概述
 
 紫微鬥數星盤又叫紫微鬥數命盤，是由 `十二個宮位` 和壹個 `中宮` 構成，宮位的 `地支` 是固定的，並且是由 `寅` 開始，而不是由 `子` 開始。這是因為農歷的正月是寅月，這就是所謂的 `正月建寅`。在 `iztro` 裏面，`寅宮` 的索引是 `0`，`卯宮` 的索引是 `1`，如此按照順時針的方向排列。如下面表格所示：
 
@@ -37,7 +37,7 @@ description: "iztro紫微鬥數星盤介紹，iztro的astro對象使用方法以
 
 在安裝好 `iztro` 依賴以後妳可以用如下代碼將 `星盤(astro)` 對象引入妳的代碼。如果妳還不知道如何安裝 `iztro`，請點擊 [傳送門](/quick-start.md#安裝) 跳轉到相關說明文檔。
 
-### `astro` 的靜態方法
+## `astro` 的靜態方法
 
 要使用該對象的靜態方法，請先將該對象 `import` 到妳的代碼裏
 
@@ -58,7 +58,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### astrolabeBySolarDate
+### astrolabeBySolarDate
 
 - 用途
 
@@ -418,7 +418,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### astrolabeByLunarDate
+### astrolabeByLunarDate
 
 - 用途
 
@@ -466,7 +466,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### getMajorStarBySolarDate <Badge type="warning" text="^1.2.1" />
+### getMajorStarBySolarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -509,7 +509,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### getMajorStarByLunarDate <Badge type="warning" text="^1.2.1" />
+### getMajorStarByLunarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -553,7 +553,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### getSignBySolarDate <Badge type="warning" text="^1.2.1" />
+### getSignBySolarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -591,7 +591,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### getSignByLunarDate <Badge type="warning" text="^1.2.1" />
+### getSignByLunarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -630,7 +630,7 @@ var { astro } = require("iztro");
   ```
 ---
 
-#### getZodiacBySolarDate <Badge type="warning" text="^1.2.1" />
+### getZodiacBySolarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -665,7 +665,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### getZodiacByLunarYear <Badge type="warning" text="^1.2.1" />
+### getZodiacByLunarYear <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -700,13 +700,13 @@ var { astro } = require("iztro");
 
 ---
 
-### 功能類定義
+## 功能類定義
 
 ::: warning 開發建議
 我們推薦妳直接調用 [astro 的靜態方法](./astrolabe.md#astro-的靜態方法) 來獲取數據，而不是手動去創建壹個 `FunctionalAstrolabe` 類的實例。
 :::
 
-#### FunctionalAstrolabe
+### FunctionalAstrolabe
 
 ---
 
@@ -750,7 +750,7 @@ var { astro } = require("iztro");
 
 - 方法
 
-  ##### horoscope() <Badge type="warning" text="^0.2.0" />
+  ### horoscope() <Badge type="warning" text="^0.2.0" />
 
   - 用途
 
@@ -829,7 +829,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### star() <Badge type="warning" text="^1.2.0" />
+  ### star() <Badge type="warning" text="^1.2.0" />
 
   - 用途
 
@@ -863,7 +863,7 @@ var { astro } = require("iztro");
     ```
 
   ***
-  ##### palace() <Badge type="warning" text="^1.0.0" />
+  ### palace() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -903,7 +903,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### surroundedPalaces() <Badge type="warning" text="^1.1.0" />
+  ### surroundedPalaces() <Badge type="warning" text="^1.1.0" />
 
   - 用途
 
@@ -943,7 +943,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### isSurrounded() <Badge type="warning" text="^1.0.0" /> <Badge type="danger" text="deprecated" />
+  ### isSurrounded() <Badge type="warning" text="^1.0.0" /> <Badge type="danger" text="deprecated" />
 
   :::danger 註意
   該方法已經在 `v1.2.0` 廢棄，請使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [have()](palace.md#have) 方法代替
@@ -989,7 +989,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### isSurroundedOneOf() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
+  ### isSurroundedOneOf() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
 
   :::danger 註意
   該方法已經在 `v1.2.0` 廢棄，請使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [haveOneOf()](palace.md#haveoneof) 方法代替
@@ -1035,7 +1035,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### notSurrounded() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
+  ### notSurrounded() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
  
   :::danger 註意
   該方法已經在 `v1.2.0` 廢棄，請使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [notHave()](palace.md#nothave-1) 方法代替
