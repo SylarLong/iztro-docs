@@ -1,4 +1,5 @@
 ---
+title: "iztro document"
 descript: "A lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information."
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
@@ -10,7 +11,7 @@ hero:
   actions:
     - theme: alt
       text: How it looks
-      link: https://a.14star.cn
+      link: https://demo.iztro.com
     - theme: brand
       text: Get started
       link: ./quick-start.md

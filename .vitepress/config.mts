@@ -30,7 +30,7 @@ export default defineConfig({
         nav: [
           { text: "主页", link: "/" },
           { text: "文档", link: "/quick-start.md" },
-          { text: "示例", link: "https://a.14star.cn" },
+          { text: "示例", link: "https://demo.iztro.com" },
           {
             text: "讨论",
             link: "https://github.com/SylarLong/iztro/discussions",
@@ -101,7 +101,7 @@ export default defineConfig({
         nav: [
           { text: "主頁", link: "/zh_TW/" },
           { text: "文檔", link: "/zh_TW/quick-start.md" },
-          { text: "示例", link: "https://a.14star.cn" },
+          { text: "示例", link: "https://demo.iztro.com" },
           {
             text: "討論",
             link: "https://github.com/SylarLong/iztro/discussions",
@@ -138,6 +138,7 @@ export default defineConfig({
             text: "紫微鬥數",
             items: [
               { text: "基礎掃盲", link: "/zh_TW/learn/basis.md" },
+              { text: "星盤介紹", link: "/zh_TW/learn/astrolabe.md" },
               { text: "宮位知識", link: "/zh_TW/learn/palace.md" },
               {
                 text: "星耀知識",
@@ -172,7 +173,7 @@ export default defineConfig({
         nav: [
           { text: "Home", link: "/en_US/" },
           { text: "Docs", link: "/en_US/quick-start.md" },
-          { text: "Demo", link: "https://a.14star.cn" },
+          { text: "Demo", link: "https://demo.iztro.com" },
           {
             text: "Discussions",
             link: "https://github.com/SylarLong/iztro/discussions",
