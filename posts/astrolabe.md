@@ -5,7 +5,7 @@ description: "iztro紫微斗数星盘介绍，iztro的astro对象使用方法以
 
 # 星盘
 
-### 概述
+## 概述
 
 紫微斗数星盘又叫紫微斗数命盘，是由 `十二个宫位` 和一个 `中宫` 构成，宫位的 `地支` 是固定的，并且是由 `寅` 开始，而不是由 `子` 开始。这是因为农历的正月是寅月，这就是所谓的 `正月建寅`。在 `iztro` 里面，`寅宫` 的索引是 `0`，`卯宫` 的索引是 `1`，如此按照顺时针的方向排列。如下面表格所示：
 
@@ -33,11 +33,11 @@ description: "iztro紫微斗数星盘介绍，iztro的astro对象使用方法以
     </tr>
 </table>
 
-`中宫` 通常可以用来展示任何你想展示的信息，一般不会对整个星盘产生影响。周围的 `十二宫` 用于存放星耀，四化，运限，宫位名称等信息。关于 `宫位` 的详细信息，可以进入 [宫位传送门](./palace.md) 查看详细介绍，本页面主要关注星盘的信息。紫微斗数星盘是由宫位和星耀组成的，如果你还没有建立起它们的概念，我们强烈推荐你进入 [传送门](/learn/basis.md) 开始学习有趣的紫微斗数知识。
+`中宫` 通常可以用来展示任何你想展示的信息，一般不会对整个星盘产生影响。周围的 `十二宫` 用于存放星耀，四化，运限，宫位名称等信息。关于 `宫位` 的详细信息，可以进入 [宫位传送门](./palace.md) 查看详细介绍，本页面主要关注星盘的信息。紫微斗数星盘是由宫位和星耀组成的，如果你还没有建立起它们的概念，我们强烈推荐你进入 [基础知识扫盲](/learn/basis.md) 开始学习有趣的紫微斗数知识。
 
-在安装好 `iztro` 依赖以后你可以用如下代码将 `星盘(astro)` 对象引入你的代码。如果你还不知道如何安装 `iztro`，请点击 [传送门](/quick-start.md#安装) 跳转到相关说明文档。
+在安装好 `iztro` 依赖以后你可以用如下代码将 `星盘(astro)` 对象引入你的代码。如果你还不知道如何安装 `iztro`，请点击 [安装iztro](/quick-start.md#安装) 跳转到相关说明文档。
 
-### `astro` 的静态方法
+## `astro` 的静态方法
 
 要使用该对象的静态方法，请先将该对象 `import` 到你的代码里
 
@@ -58,7 +58,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### astrolabeBySolarDate
+### astrolabeBySolarDate
 
 - 用途
 
@@ -418,7 +418,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### astrolabeByLunarDate
+### astrolabeByLunarDate
 
 - 用途
 
@@ -466,7 +466,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### getMajorStarBySolarDate <Badge type="warning" text="^1.2.1" />
+### getMajorStarBySolarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -509,7 +509,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### getMajorStarByLunarDate <Badge type="warning" text="^1.2.1" />
+### getMajorStarByLunarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -553,7 +553,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### getSignBySolarDate <Badge type="warning" text="^1.2.1" />
+### getSignBySolarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -591,7 +591,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### getSignByLunarDate <Badge type="warning" text="^1.2.1" />
+### getSignByLunarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -630,7 +630,7 @@ var { astro } = require("iztro");
   ```
 ---
 
-#### getZodiacBySolarDate <Badge type="warning" text="^1.2.1" />
+### getZodiacBySolarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -665,7 +665,7 @@ var { astro } = require("iztro");
 
 ---
 
-#### getZodiacByLunarYear <Badge type="warning" text="^1.2.1" />
+### getZodiacByLunarYear <Badge type="warning" text="^1.2.1" />
 
 - 用途
 
@@ -700,13 +700,13 @@ var { astro } = require("iztro");
 
 ---
 
-### 功能类定义
+## 功能类定义
 
 ::: warning 开发建议
 我们推荐你直接调用 [astro 的静态方法](./astrolabe.md#astro-的静态方法) 来获取数据，而不是手动去创建一个 `FunctionalAstrolabe` 类的实例。
 :::
 
-#### FunctionalAstrolabe
+### FunctionalAstrolabe
 
 ---
 
@@ -750,7 +750,7 @@ var { astro } = require("iztro");
 
 - 方法
 
-  ##### horoscope() <Badge type="warning" text="^0.2.0" />
+  ### horoscope() <Badge type="warning" text="^0.2.0" />
 
   - 用途
 
@@ -829,7 +829,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### star() <Badge type="warning" text="^1.2.0" />
+  ### star() <Badge type="warning" text="^1.2.0" />
 
   - 用途
 
@@ -863,7 +863,7 @@ var { astro } = require("iztro");
     ```
 
   ***
-  ##### palace() <Badge type="warning" text="^1.0.0" />
+  ### palace() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -903,7 +903,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### surroundedPalaces() <Badge type="warning" text="^1.1.0" />
+  ### surroundedPalaces() <Badge type="warning" text="^1.1.0" />
 
   - 用途
 
@@ -943,7 +943,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### isSurrounded() <Badge type="warning" text="^1.0.0" /> <Badge type="danger" text="deprecated" />
+  ### isSurrounded() <Badge type="warning" text="^1.0.0" /> <Badge type="danger" text="deprecated" />
 
   :::danger 注意
   该方法已经在 `v1.2.0` 废弃，请使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [have()](palace.md#have) 方法代替
@@ -989,7 +989,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### isSurroundedOneOf() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
+  ### isSurroundedOneOf() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
 
   :::danger 注意
   该方法已经在 `v1.2.0` 废弃，请使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [haveOneOf()](palace.md#haveoneof) 方法代替
@@ -1035,7 +1035,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ##### notSurrounded() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
+  ### notSurrounded() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
  
   :::danger 注意
   该方法已经在 `v1.2.0` 废弃，请使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [notHave()](palace.md#nothave-1) 方法代替

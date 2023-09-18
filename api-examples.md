@@ -17,13 +17,13 @@ const { theme, page, frontmatter } = useData()
 
 ## Results
 
-### Theme Data
+## Theme Data
 <pre>{{ theme }}</pre>
 
-### Page Data
+## Page Data
 <pre>{{ page }}</pre>
 
-### Page Frontmatter
+## Page Frontmatter
 <pre>{{ frontmatter }}</pre>
 ```
 
@@ -35,13 +35,13 @@ const { site, theme, page, frontmatter } = useData()
 
 ## Results
 
-### Theme Data
+## Theme Data
 <pre>{{ theme }}</pre>
 
-### Page Data
+## Page Data
 <pre>{{ page }}</pre>
 
-### Page Frontmatter
+## Page Frontmatter
 <pre>{{ frontmatter }}</pre>
 
 ## More

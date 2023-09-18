@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 
-const version = "v1.2.3";
+const version = "v1.2.4";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -67,6 +67,7 @@ export default defineConfig({
             text: "紫微斗数",
             items: [
               { text: "基础扫盲", link: "/learn/basis.md" },
+              { text: "星盘介绍", link: "/learn/astrolabe.md" },
               { text: "宫位知识", link: "/learn/palace.md" },
               {
                 text: "星耀知识",

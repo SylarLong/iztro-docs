@@ -136,7 +136,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ---
 
-#### `HeavenlyStemName`
+### `HeavenlyStemName`
 
 定義了`十天幹`
 
@@ -155,7 +155,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ---
 
-#### `EarthlyBranchName`
+### `EarthlyBranchName`
 
 定義了 `十二地支`，地支中的 `午` 英文和天幹中的 `戊` 相同，為了解決國際化時的沖突，固將地支中的 `午` 翻譯成了 `woo`。
 
@@ -174,7 +174,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ---
 
-#### `PalaceName`
+### `PalaceName`
 
 定義了紫微鬥數宮位的 `名稱`。
 
@@ -193,7 +193,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ---
 
-#### `Brightness`
+### `Brightness`
 
 定義了星耀的 `亮度`
 
@@ -212,7 +212,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ---
 
-#### `Mutagen`
+### `Mutagen`
 
 定義了紫微鬥數中 `四化星` 的名稱
 
@@ -231,7 +231,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ---
 
-#### `StarName`
+### `StarName`
 
 定義了紫微鬥數中 `星耀` 的名稱，包括 `流耀`
 
@@ -895,7 +895,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ---
 
-#### `FiveElementsClassName`
+### `FiveElementsClassName`
 
 定義了紫微鬥數中 `五行局` 的名稱
 
@@ -914,7 +914,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ---
 
-#### `GenderName`
+### `GenderName`
 
 定義 `性別` 的名稱
 
@@ -933,7 +933,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ## 通用
 
-#### `Language`
+### `Language`
 
 ```ts
 export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
@@ -949,7 +949,7 @@ export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
 
 ---
 
-#### `Scope`
+### `Scope`
 
 ```ts
 export type Scope = "origin" | "decadal" | "yearly";
@@ -963,7 +963,7 @@ export type Scope = "origin" | "decadal" | "yearly";
 
 ---
 
-#### `StarType`
+### `StarType`
 
 ```ts
 export type StarType =
@@ -990,7 +990,7 @@ export type StarType =
 
 ## 星耀
 
-#### `Star`
+### `Star`
 
 ```ts
 export type Star = {
@@ -1014,7 +1014,7 @@ export type Star = {
 
 ## 宮位
 
-#### `SoulAndBody`
+### `SoulAndBody`
 
 ```ts
 export type SoulAndBody = {
@@ -1036,7 +1036,7 @@ export type SoulAndBody = {
 
 ---
 
-#### `Palace`
+### `Palace`
 
 ```ts
 export type Palace = {
@@ -1078,7 +1078,7 @@ export type Palace = {
 
 ---
 
-#### `SurroundedPalaces`
+### `SurroundedPalaces`
 
 ```ts
 export type SurroundedPalaces = {
@@ -1100,7 +1100,7 @@ export type SurroundedPalaces = {
 
 ## 運限
 
-#### `HoroscopeItem`
+### `HoroscopeItem`
 
 ```ts
 export type HoroscopeItem = {
@@ -1128,7 +1128,7 @@ export type HoroscopeItem = {
 
 ---
 
-#### `Decadal`
+### `Decadal`
 
 ```ts
 export type Decadal = {
@@ -1148,7 +1148,7 @@ export type Decadal = {
 
 ---
 
-#### `Horoscope`
+### `Horoscope`
 
 ```ts
 export type Horoscope = {
@@ -1181,7 +1181,7 @@ export type Horoscope = {
 
 ## 星盤
 
-#### `Astrolabe`
+### `Astrolabe`
 
 ```ts
 export type Astrolabe = {
