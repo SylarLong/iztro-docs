@@ -1,4 +1,5 @@
 ---
+title: "iztro開發文檔"
 description: "壹套輕量級獲取紫微鬥數排盤信息的 Javascript 開源庫。"
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
@@ -10,7 +11,7 @@ hero:
   actions:
     - theme: alt
       text: 查看示例
-      link: https://a.14star.cn
+      link: https://demo.iztro.com
     - theme: brand
       text: 開發文檔
       link: ./quick-start.md

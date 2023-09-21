@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: alt
       text: How it looks
-      link: https://a.14star.cn
+      link: https://demo.iztro.com
     - theme: brand
       text: Get started
       link: /en_US/quick-start.md
