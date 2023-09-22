@@ -5,7 +5,7 @@ description: "iztro類型定義，iztro的astro對象使用方法以及示例代
 
 # 類型定義
 
-## 概述
+## 前言
 
 本頁介紹了 `iztro` 中的類型定義，除了 [國際化類型](./type-definition.html#國際化類型) 被定義在了 [i18n](https://github.com/SylarLong/iztro/blob/main/src/i18n/index.ts) 文件夾內，其他類型都定義在 [types](https://github.com/SylarLong/iztro/tree/main/src/data/types) 文件夾內。
 
