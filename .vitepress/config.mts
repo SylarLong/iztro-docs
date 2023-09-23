@@ -5,7 +5,7 @@ const version = "v1.2.4";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "iztro Docs",
+  title: "紫微研习社 ziwei.pro",
   description: "iztro is a lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information.",
   outDir: "../astro/docs/",
   ignoreDeadLinks: true,
@@ -215,6 +215,18 @@ export default defineConfig({
 
   head: [
     [
+      'meta',
+      {
+        keyword: '紫微研习社,紫微斗数,ziweidoushu,iztro,紫微斗数排盘,紫微斗数学习,紫微斗数入门'
+      }
+    ],
+    [
+      'meta',
+      {
+        author: 'SylarLong'
+      }
+    ],
+    [
       'script',
       {
         async: 'true',
@@ -226,9 +238,8 @@ export default defineConfig({
       {},
       "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-WR6P6S20P2');",
     ],
-   
   ],
   sitemap: {
-    hostname: 'https://docs.iztro.com'
+    hostname: 'https://ziwei.pro'
   }
 });
