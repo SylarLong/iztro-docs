@@ -10,7 +10,7 @@ hero:
   tagline: Doucument of iztro the lightweight astrolabe generator of The Purple Star Astrology (Zi Wei Dou Shu).
   actions:
     - theme: alt
-      text: How it looks
+      text: Demo
       link: https://demo.iztro.com
     - theme: brand
       text: Get started
