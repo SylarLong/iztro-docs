@@ -9,7 +9,7 @@ hero:
   text: 這，不僅僅是文檔
   tagline: 輕量級紫微鬥數排盤工具庫iztro的文檔以及紫微鬥數相關知識科普。
   image:
-    src: /.vitepress/public/home_img.png
+    src: /home_img.png
     alt: ziwei.pro
   actions:
     - theme: alt

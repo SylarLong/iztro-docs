@@ -6,7 +6,8 @@ const version = "v1.2.4";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "紫微研习社 ziwei.pro",
-  description: "iztro is a lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information.",
+  description:
+    "iztro is a lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information.",
   outDir: "../astro/docs/",
   ignoreDeadLinks: true,
   markdown: {
@@ -14,7 +15,7 @@ export default defineConfig({
       md.use(tabsMarkdownPlugin);
     },
   },
-  
+
   themeConfig: {
     search: {
       provider: "local",
@@ -38,7 +39,7 @@ export default defineConfig({
           { text: "关于作者", link: "/about.md" },
           {
             text: '<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />',
-            link: 'https://github.com/SylarLong/iztro'
+            link: "https://github.com/SylarLong/iztro",
           },
           {
             text: version,
@@ -49,7 +50,7 @@ export default defineConfig({
               },
               { text: "NPM地址", link: "https://www.npmjs.com/package/iztro" },
             ],
-          }
+          },
         ],
 
         sidebar: [
@@ -109,7 +110,7 @@ export default defineConfig({
           { text: "關於作者", link: "/zh_TW/about.md" },
           {
             text: '<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />',
-            link: 'https://github.com/SylarLong/iztro'
+            link: "https://github.com/SylarLong/iztro",
           },
           {
             text: version,
@@ -120,7 +121,7 @@ export default defineConfig({
               },
               { text: "NPM地址", link: "https://www.npmjs.com/package/iztro" },
             ],
-          }
+          },
         ],
 
         sidebar: [
@@ -180,7 +181,7 @@ export default defineConfig({
           },
           {
             text: '<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />',
-            link: 'https://github.com/SylarLong/iztro'
+            link: "https://github.com/SylarLong/iztro",
           },
           {
             text: version,
@@ -194,7 +195,7 @@ export default defineConfig({
                 link: "https://www.npmjs.com/package/iztro",
               },
             ],
-          }
+          },
         ],
 
         sidebar: [
@@ -215,31 +216,32 @@ export default defineConfig({
 
   head: [
     [
-      'meta',
+      "meta",
       {
-        keyword: '紫微研习社,紫微斗数,ziweidoushu,iztro,紫微斗数排盘,紫微斗数学习,紫微斗数入门'
-      }
+        keyword:
+          "紫微研习社,紫微斗数,ziweidoushu,iztro,紫微斗数排盘,紫微斗数学习,紫微斗数入门",
+      },
     ],
     [
-      'meta',
+      "meta",
       {
-        author: 'SylarLong'
-      }
+        author: "SylarLong",
+      },
     ],
     [
-      'script',
+      "script",
       {
-        async: 'true',
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-WR6P6S20P2'
-      }
+        async: "true",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-WR6P6S20P2",
+      },
     ],
     [
-      'script',
+      "script",
       {},
       "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-WR6P6S20P2');",
     ],
   ],
   sitemap: {
-    hostname: 'https://ziwei.pro'
-  }
+    hostname: "https://ziwei.pro",
+  },
 });

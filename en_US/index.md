@@ -9,7 +9,7 @@ hero:
   text: "not only a document."
   tagline: Doucument of iztro. From an ancient eastern astrology. Master your life!
   image:
-    src: /.vitepress/public/home_img.png
+    src: /home_img.png
     alt: ziwei.pro
   actions:
     - theme: alt
