@@ -240,6 +240,11 @@ export default defineConfig({
       {},
       "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-WR6P6S20P2');",
     ],
+    [
+      "script",
+      {},
+      "var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = 'https://hm.baidu.com/hm.js?e6306139059dd0191562066be8272318';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);})();",
+    ]
   ],
   sitemap: {
     hostname: "https://ziwei.pro",
