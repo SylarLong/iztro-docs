@@ -6,8 +6,11 @@ layout: home
 
 hero:
   name: ziwei.pro<a class="star" href="https://github.com/SylarLong/iztro" target="_blank"><img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" /></a>
-  text: "It's NOT only a document."
-  tagline: Doucument of iztro the lightweight astrolabe generator of The Purple Star Astrology (Zi Wei Dou Shu).
+  text: "not only a document."
+  tagline: Doucument of iztro. From an ancient eastern astrology. Master your life!
+  image:
+    src: /.vitepress/public/home_img.png
+    alt: ziwei.pro
   actions:
     - theme: alt
       text: Demo

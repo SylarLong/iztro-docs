@@ -32,10 +32,11 @@
 .brand-name {
   font-size: 40px !important;
   font-weight: 900 !important;
-  text-shadow: 5px 11px 4px rgba(0,0,0,0.1);
+  text-shadow: 5px 11px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .container a.title, .text-clip {
+header .container a.title,
+.text-clip {
   background: var(--vp-home-hero-name-background);
   -webkit-background-clip: text;
   background-clip: text;
@@ -44,18 +45,20 @@ header .container a.title, .text-clip {
 
 .badges img {
   display: inline-block;
-  margin:0 2px;
+  margin: 0 2px;
 }
 
 .VPDoc.has-aside .content-container {
   max-width: unset !important;
 }
 
-table tr th:not(:last-child), table tr td:not(:last-child) {
+table tr th:not(:last-child),
+table tr td:not(:last-child) {
   white-space: nowrap;
 }
 
-.astrolabe tr, .astrolabe tr:nth-child(2n) {
+.astrolabe tr,
+.astrolabe tr:nth-child(2n) {
   background-color: transparent;
 }
 .astrolabe td {
@@ -67,4 +70,16 @@ table tr th:not(:last-child), table tr td:not(:last-child) {
 
 .astrolabe td.center-palace {
   background-color: transparent;
+}
+
+.VPNavBar {
+  border-bottom: 0 none;
+  box-shadow: 0 0 15px var(--docsearch-container-background);
+}
+
+@media (min-width: 960px) {
+  .image-src {
+    max-width: 440px;
+    max-height: 440px;
+  }
 }
