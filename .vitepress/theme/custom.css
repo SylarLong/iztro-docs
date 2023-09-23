@@ -77,9 +77,13 @@ table tr td:not(:last-child) {
   box-shadow: 0 0 15px var(--docsearch-container-background);
 }
 
+.image-src {
+  transform: translate(-50%, -46%) !important;
+}
+
 @media (min-width: 960px) {
   .image-src {
-    max-width: 440px;
-    max-height: 440px;
+    max-width: 480px !important;
+    max-height: 480px !important;
   }
 }
