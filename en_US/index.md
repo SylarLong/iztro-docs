@@ -13,10 +13,10 @@ hero:
     alt: ziwei.pro
   actions:
     - theme: alt
-      text: Demo
+      text: Astrolabe
       link: https://demo.iztro.com
     - theme: brand
-      text: Get started
+      text: Document
       link: ./quick-start.md
 
 features:

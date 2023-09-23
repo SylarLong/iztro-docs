@@ -13,8 +13,11 @@ hero:
     alt: ziwei.pro
   actions:
     - theme: alt
-      text: 查看示例
+      text: 紫微斗数排盘
       link: https://demo.iztro.com
+    - theme: alt
+      text: 学习紫微斗数
+      link: /learn/basis.md
     - theme: brand
       text: 开发文档
       link: /quick-start.md
