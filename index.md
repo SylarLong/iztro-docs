@@ -1,6 +1,6 @@
 ---
-title: "iztro开发文档"
-description: "一套轻量级获取紫微斗数排盘信息的 Javascript 开源库。"
+title: "紫微研习社"
+description: "一套轻量级获取紫微斗数排盘信息的 Javascript 开源库，加上紫微斗数学习和知识科普，打造一个适合大家的学习和使用紫微斗数的专业平台。"
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 

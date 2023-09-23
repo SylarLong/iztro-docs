@@ -251,6 +251,13 @@ export default defineConfig({
         name: "baidu-site-verification",
         content: "codeva-2sffyRoOZZ"
       }
+    ],
+    [
+      "meta",
+      {
+        name: "msvalidate.01",
+        content: "12373B57E08DD59CE573232894C0822B"
+      }
     ]
   ],
   sitemap: {
