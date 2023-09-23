@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: alt
       text: Astrolabe
-      link: https://demo.iztro.com
+      link: https://a.ziwei.pro
     - theme: brand
       text: Document
       link: ./quick-start.md

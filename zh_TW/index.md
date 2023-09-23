@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: alt
       text: 查看示例
-      link: https://demo.iztro.com
+      link: https://a.ziwei.pro
     - theme: brand
       text: 開發文檔
       link: ./quick-start.md
