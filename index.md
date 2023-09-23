@@ -9,7 +9,7 @@ hero:
   text: 这，不仅仅是文档
   tagline: 轻量级紫微斗数排盘工具库iztro的文档以及紫微斗数相关知识科普。
   image:
-    src: /home_img.png
+    src: /static/home_img.png
     alt: ziwei.pro
   actions:
     - theme: alt
