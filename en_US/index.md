@@ -5,7 +5,7 @@ descript: "A lightweight Open-Source Javascript library of getting The Purple St
 layout: home
 
 hero:
-  name: IZTRO Docs<a class="star" href="https://github.com/SylarLong/iztro" target="_blank"><img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" /></a>
+  name: ziwei.pro<a class="star" href="https://github.com/SylarLong/iztro" target="_blank"><img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" /></a>
   text: "It's NOT only a document."
   tagline: Doucument of iztro the lightweight astrolabe generator of The Purple Star Astrology (Zi Wei Dou Shu).
   actions:

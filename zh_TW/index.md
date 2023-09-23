@@ -5,7 +5,7 @@ description: "壹套輕量級獲取紫微鬥數排盤信息的 Javascript 開源
 layout: home
 
 hero:
-  name: IZTRO Docs<a class="star" href="https://github.com/SylarLong/iztro" target="_blank"><img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" /></a>
+  name: 紫微研習社<a class="star" href="https://github.com/SylarLong/iztro" target="_blank"><img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" /></a>
   text: 這，不僅僅是文檔
   tagline: 輕量級紫微鬥數排盤工具庫iztro的文檔以及紫微鬥數相關知識科普。
   actions:
