@@ -250,7 +250,7 @@ export default defineConfig({
       "meta",
       {
         name: "baidu-site-verification",
-        content: "codeva-2sffyRoOZZ"
+        content: "codeva-f4WginZgsF"
       }
     ],
     [
