@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: alt
       text: How it looks
-      link: https://a.ziwei.pro
+      link: https://ziwei.pub
     - theme: brand
       text: Get started
       link: /en_US/quick-start.md

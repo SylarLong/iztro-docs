@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 
-const version = "v1.2.4";
+const version = "v1.2.6";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -32,7 +32,7 @@ export default defineConfig({
           { text: "主页", link: "/" },
           { text: "文档", link: "/quick-start.md" },
           { text: "学习", link: "/learn/basis.md" },
-          { text: "排盘", link: "https://a.ziwei.pro" },
+          { text: "排盘", link: "https://ziwei.pub" },
           {
             text: "讨论",
             link: "https://github.com/SylarLong/iztro/discussions",
@@ -103,7 +103,7 @@ export default defineConfig({
         nav: [
           { text: "主頁", link: "/zh_TW/" },
           { text: "文檔", link: "/zh_TW/quick-start.md" },
-          { text: "排盤", link: "https://a.ziwei.pro" },
+          { text: "排盤", link: "https://ziwei.pub" },
           {
             text: "討論",
             link: "https://github.com/SylarLong/iztro/discussions",
@@ -175,7 +175,7 @@ export default defineConfig({
         nav: [
           { text: "Home", link: "/en_US/" },
           { text: "Docs", link: "/en_US/quick-start.md" },
-          { text: "Astrolabe", link: "https://a.ziwei.pro" },
+          { text: "Astrolabe", link: "https://ziwei.pub" },
           {
             text: "Discussions",
             link: "https://github.com/SylarLong/iztro/discussions",

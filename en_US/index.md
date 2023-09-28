@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: alt
       text: Astrolabe
-      link: https://a.ziwei.pro
+      link: https://ziwei.pub
     - theme: brand
       text: Document
       link: ./quick-start.md

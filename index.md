@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: alt
       text: 紫微斗数排盘
-      link: https://a.ziwei.pro
+      link: https://ziwei.pub
     - theme: alt
       text: 学习紫微斗数
       link: /learn/basis.md
