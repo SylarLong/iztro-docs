@@ -82,8 +82,19 @@ export default defineConfig({
                 ],
               },
               { text: "四化", link: "/learn/mutagen.md" },
+              { text: "格局", link: "/learn/pattern.md" },
               { text: "运限", link: "/learn/horoscope.md" },
               { text: "安星诀", link: "/learn/setup.md" },
+              {
+                text: "紫微斗数全书",
+                link: "/learn/ancientBook.md",
+                items: [
+                  { text: "卷一", link: "/learn/ancientBook-1.md" },
+                  { text: "卷二", link: "/learn/ancientBook-2.md" },
+                  { text: "卷三", link: "/learn/ancientBook-3.md" },
+                ],
+              },
+              { text: "诸星问答论", link: "/learn/ancientBook-qa.md" },
             ],
           },
         ],
@@ -250,23 +261,23 @@ export default defineConfig({
       "meta",
       {
         name: "baidu-site-verification",
-        content: "codeva-f4WginZgsF"
-      }
+        content: "codeva-f4WginZgsF",
+      },
     ],
     [
       "meta",
       {
         name: "msvalidate.01",
-        content: "12373B57E08DD59CE573232894C0822B"
-      }
+        content: "12373B57E08DD59CE573232894C0822B",
+      },
     ],
     [
       "link",
       {
         rel: "apple-touch-icon",
         sizes: "180x180",
-        href: "/static/apple-touch-icon.png"
-      }
+        href: "/static/apple-touch-icon.png",
+      },
     ],
     [
       "link",
@@ -274,8 +285,8 @@ export default defineConfig({
         rel: "icon",
         sizes: "32x32",
         type: "image/png",
-        href: "/static/favicon-32x32.png"
-      }
+        href: "/static/favicon-32x32.png",
+      },
     ],
     [
       "link",
@@ -283,24 +294,24 @@ export default defineConfig({
         rel: "icon",
         sizes: "16x16",
         type: "image/png",
-        href: "/static/favicon-16x16.png"
-      }
+        href: "/static/favicon-16x16.png",
+      },
     ],
     [
       "link",
       {
         rel: "manifest",
-        href: "/static/site.webmanifest"
-      }
+        href: "/static/site.webmanifest",
+      },
     ],
     [
       "link",
       {
         rel: "icon",
         type: "image/svg+xml",
-        href: "/static/favicon.ico"
-      }
-    ]
+        href: "/static/favicon.ico",
+      },
+    ],
   ],
   sitemap: {
     hostname: "https://ziwei.pro",
