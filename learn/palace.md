@@ -381,3 +381,27 @@ description: "紫微斗数宫位介绍，紫微斗数十二宫详细解释。"
 - 三合宫
 
     地支与 `目标宫位` 形成 [`地支三合局`](./basis.md#地支三合局) 的两个宫位。比如 `申宫` 的三合宫是 `子宫` 和 `辰宫`.
+
+<table class="astrolabe">
+    <tr>
+        <td>巳 <code>目标宫</code></td>
+        <td style="background: transparent;">午</td>
+        <td style="background: transparent;">未</td>
+        <td style="background: transparent;">申</td>
+    </tr>
+    <tr>
+        <td style="background: transparent;">辰</td>
+        <td style="background: transparent;" class="center-palace" rowspan="2" colspan="2"></td>
+        <td>酉 <code>三合位</code></td>
+    </tr>
+    <tr>
+        <td style="background: transparent;">卯</td>
+        <td style="background: transparent;">戌</td>
+    </tr>
+    <tr>
+        <td style="background: transparent;">寅</td>
+        <td>丑 <code>三合位</code></td>
+        <td style="background: transparent;">子</td>
+        <td>亥 <code>四正位</code></td>
+    </tr>
+</table>
