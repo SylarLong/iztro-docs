@@ -81,6 +81,11 @@ table tr td:not(:last-child) {
   transform: translate(-50%, -46%) !important;
 }
 
+.VPSidebar {
+  padding-top: 0;
+  margin-top: var(--vp-nav-height);
+}
+
 @media (min-width: 960px) {
   .image-src {
     max-width: 480px !important;
