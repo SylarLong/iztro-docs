@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
+import abbr from "markdown-it-abbr";
 
 const version = "v1.2.6";
 
@@ -13,6 +14,7 @@ export default defineConfig({
   markdown: {
     config(md) {
       md.use(tabsMarkdownPlugin);
+      md.use(abbr);
     },
   },
 

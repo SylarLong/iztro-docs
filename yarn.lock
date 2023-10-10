@@ -532,6 +532,11 @@ mark.js@8.11.1:
   resolved "https://registry.npmjs.org/mark.js/-/mark.js-8.11.1.tgz"
   integrity sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==
 
+markdown-it-abbr@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/markdown-it-abbr/-/markdown-it-abbr-1.0.4.tgz#d66b5364521cbb3dd8aa59dadfba2fb6865c8fd8"
+  integrity sha512-ZeA4Z4SaBbYysZap5iZcxKmlPL6bYA8grqhzJIHB1ikn7njnzaP8uwbtuXc4YXD5LicI4/2Xmc0VwmSiFV04gg==
+
 minisearch@^6.1.0:
   version "6.1.0"
   resolved "https://registry.npmjs.org/minisearch/-/minisearch-6.1.0.tgz"
