@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import abbr from "markdown-it-abbr";
 
-const version = "v1.2.6";
+const version = "v1.3.4";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -65,6 +65,7 @@ export default defineConfig({
               { text: "星盘", link: "/posts/astrolabe.md" },
               { text: "宫位", link: "/posts/palace.md" },
               { text: "星耀", link: "/posts/star.md" },
+              { text: "运限", link: "/posts/horoscope.md" },
             ],
           },
           {

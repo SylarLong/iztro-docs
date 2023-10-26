@@ -1159,7 +1159,12 @@ export type Horoscope = {
     index: number;
     nominalAge: number;
   };
-  yearly: HoroscopeItem;
+  yearly: HoroscopeItem & { 
+    yearlyDecStar: { 
+      jiangqian12: StarName[]; 
+      suiqian12: StarName[] 
+      } 
+    };
   monthly: HoroscopeItem;
   daily: HoroscopeItem;
   hourly: HoroscopeItem;
@@ -1174,7 +1179,7 @@ export type Horoscope = {
 | `solarDate` | 阳历日期 | `string`                                               |
 | `decadal`   | 大限     | [`HoroscopeItem`](/type-definition.html#horoscopeitem) |
 | `age`       | 小限     | { index: `number`, nominalAge: `number` }              |
-| `yearly`    | 流年     | [`HoroscopeItem`](/type-definition.html#horoscopeitem) |
+| `yearly`    | 流年     | [`HoroscopeItem`](/type-definition.html#horoscopeitem)  & { yearlyDecStar: { jiangqian12: [`StarName[]`](/type-definition.md#starname); suiqian12: [`StarName[]`](/type-definition.md#starname) } }|
 | `monthly`   | 流月     | [`HoroscopeItem`](/type-definition.html#horoscopeitem) |
 | `daily`     | 流日     | [`HoroscopeItem`](/type-definition.html#horoscopeitem) |
 | `hourly`    | 流时     | [`HoroscopeItem`](/type-definition.html#horoscopeitem) |

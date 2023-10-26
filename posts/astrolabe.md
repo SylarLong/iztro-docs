@@ -766,7 +766,7 @@ var { astro } = require("iztro");
   - 定义
 
     ```ts
-    type horoscope = (date?: string | Date, timeIndex?: number) => Horoscope;
+    type horoscope = (date?: string | Date, timeIndex?: number) => FunctionalHoroscope;
     ```
 
   - 参数
@@ -778,7 +778,11 @@ var { astro } = require("iztro");
 
   - 返回值
 
-    [`Horoscope`](../type-definition.md#horoscope)
+    [`FunctionalHoroscope`](./horoscope.md#functionalhoroscope)
+
+    :::danger 注意
+    返回值已经在 `v1.3.4` 从 `Horoscope` 改为 `FunctionalHoroscope`，但使用上是向后兼容的。
+    :::
 
   - 示例
 
