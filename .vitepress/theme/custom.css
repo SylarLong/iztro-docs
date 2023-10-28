@@ -86,6 +86,16 @@ table tr td:not(:last-child) {
   margin-top: var(--vp-nav-height);
 }
 
+.star-card tr:nth-child(2n) {
+  background-color: transparent;
+}
+
+.star-card tr td:nth-child(2n - 1) {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
 @media (min-width: 960px) {
   .image-src {
     max-width: 480px !important;
