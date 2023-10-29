@@ -96,6 +96,20 @@ table tr td:not(:last-child) {
   white-space: nowrap;
 }
 
+.my-tech-stack {
+  display: flex;
+  gap: 10px;
+}
+
+.my-tech-stack img {
+  width: 30px;
+}
+
+.curtain {
+  height: 0px !important;
+  bottom: 1px !important;
+}
+
 @media (min-width: 960px) {
   .image-src {
     max-width: 480px !important;
