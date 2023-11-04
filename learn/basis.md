@@ -1,6 +1,6 @@
 ---
 outline: deep
-description: "紫微斗数基础知识，紫微斗数入门"
+description: "紫微斗数基础知识，紫微斗数入门，紫微斗数科普"
 ---
 
 # 紫微斗数基础
