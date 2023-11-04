@@ -119,7 +119,7 @@ description: "紫微斗数基础知识，紫微斗数宫位介绍，紫微斗数
 |敏捷|4|
 |智力|5|
 
-这些属性创建角色的时候就已经决定好了，而 `身宫` 就是在升级过程中将获得的属性点加在哪个属性上，有的人喜欢加 `敏捷`，有的人喜欢加 `力量`，有的人喜欢加 `智力`。比如命宫同样是 `紫微星` 的人，会因身宫主星不同而呈现出不同的性格趋势，可能会更加霸道成为一个“暴君”，也可能会跟加开明，成为一个“明君”。`身宫` 只会出现在下面6个宫位当中
+这些属性创建角色的时候就已经决定好了，而 `身宫` 就是在升级过程中将获得的属性点加在哪个属性上，有的人喜欢加 `敏捷`，有的人喜欢加 `力量`，有的人喜欢加 `智力`。比如命宫同样是 `紫微星` 的人，会因身宫主星不同而呈现出不同的性格趋势，可能会更加霸道成为一个“暴君”，也可能会更加开明，成为一个“明君”。`身宫` 只会出现在下面6个宫位当中
 
 - 身宫在命宫
 
@@ -382,26 +382,26 @@ description: "紫微斗数基础知识，紫微斗数宫位介绍，紫微斗数
 
     地支与 `目标宫位` 形成 [`地支三合局`](./basis.md#地支三合局) 的两个宫位。比如 `申宫` 的三合宫是 `子宫` 和 `辰宫`.
 
-<table class="astrolabe">
-    <tr>
-        <td>巳 <code>目标宫</code></td>
-        <td style="background: transparent;">午</td>
-        <td style="background: transparent;">未</td>
-        <td style="background: transparent;">申</td>
-    </tr>
-    <tr>
-        <td style="background: transparent;">辰</td>
-        <td style="background: transparent;" class="center-palace" rowspan="2" colspan="2"></td>
-        <td>酉 <code>三合位</code></td>
-    </tr>
-    <tr>
-        <td style="background: transparent;">卯</td>
-        <td style="background: transparent;">戌</td>
-    </tr>
-    <tr>
-        <td style="background: transparent;">寅</td>
-        <td>丑 <code>三合位</code></td>
-        <td style="background: transparent;">子</td>
-        <td>亥 <code>四正位</code></td>
-    </tr>
-</table>
+    <table class="astrolabe">
+        <tr>
+            <td>巳 <code>目标宫</code></td>
+            <td style="background: transparent;">午</td>
+            <td style="background: transparent;">未</td>
+            <td style="background: transparent;">申</td>
+        </tr>
+        <tr>
+            <td style="background: transparent;">辰</td>
+            <td style="background: transparent;" class="center-palace" rowspan="2" colspan="2"></td>
+            <td>酉 <code>三合位</code></td>
+        </tr>
+        <tr>
+            <td style="background: transparent;">卯</td>
+            <td style="background: transparent;">戌</td>
+        </tr>
+        <tr>
+            <td style="background: transparent;">寅</td>
+            <td>丑 <code>三合位</code></td>
+            <td style="background: transparent;">子</td>
+            <td>亥 <code>四正位</code></td>
+        </tr>
+    </table>
