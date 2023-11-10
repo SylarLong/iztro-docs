@@ -1,6 +1,6 @@
 ---
 outline: deep
-description: "iztro紫微斗数星盘介绍，iztro的astro对象使用方法以及示例代码。"
+description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫微斗数星盘介绍，iztro的astro对象使用方法以及示例代码。"
 ---
 
 # 星盘
@@ -58,7 +58,11 @@ var { astro } = require("iztro");
 
 ---
 
-### astrolabeBySolarDate
+### astrolabeBySolarDate <Badge type="danger" text="deprecated" />
+
+本方法在 `v2.0.5` 版本被废弃了，请使用 [`bySolar`](#bysolar) 方法代替，所有参数和返回值均不变。
+
+### bySolar <Badge type="warning" text="^2.0.5" />
 
 - 用途
 
@@ -67,7 +71,7 @@ var { astro } = require("iztro");
 - 定义
 
   ```ts
-  export type astrolabeBySolarDate = (
+  export type bySolar = (
     solarDateStr: string,
     timeIndex: number,
     gender: GenderName,
@@ -95,7 +99,7 @@ var { astro } = require("iztro");
   ```ts
   import { astro } from "iztro";
 
-  const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
+  const astrolabe = astro.bySolar("2000-8-16", 2, "女", true, "zh-CN");
   ```
 
 - 示例返回值
@@ -418,7 +422,11 @@ var { astro } = require("iztro");
 
 ---
 
-### astrolabeByLunarDate
+### astrolabeByLunarDate <Badge type="danger" text="deprecated" />
+
+本方法在 `v2.0.5` 版本被废弃了，请使用 [`byLunar`](#bylunar) 方法代替，所有参数和返回值均不变。
+
+### byLunar <Badge type="warning" text="^2.0.5" />
 
 - 用途
 
@@ -427,7 +435,7 @@ var { astro } = require("iztro");
 - 定义
 
   ```ts
-  export type astrolabeByLunarDate = (
+  export type byLunar = (
     lunarDateStr: string,
     timeIndex: number,
     gender: GenderName,
@@ -457,12 +465,12 @@ var { astro } = require("iztro");
   ```ts
   import { astro } from "iztro";
 
-  const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", false, true, "zh-CN");
+  const astrolabe = astro.byLunar("2000-8-16", 2, "女", false, true, "zh-CN");
   ```
 
 - 示例返回值
 
-  参考 [astrolabeBySolarDate](./astrolabe.md#astrolabebysolardate) 的示例返回值
+  参考 [bySolar](./astrolabe.md#bysolar) 的示例返回值
 
 ---
 

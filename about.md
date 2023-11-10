@@ -1,6 +1,6 @@
 ---
 title: '关于作者'
-description: 'iztro入门文档，快速上手使用iztro获取紫微斗数排盘数据。'
+description: '紫微研习社，iztro官方文档，iztro开发文档，快速上手使用iztro获取紫微斗数排盘数据。'
 ---
 
 <h1 class="brand-name text-clip" style="line-height: 60px;">关于作者</h1>

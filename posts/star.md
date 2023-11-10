@@ -1,6 +1,6 @@
 ---
 outline: deep
-description: "iztro紫微斗数星耀介绍，iztro的star对象使用方法以及示例代码。"
+description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫微斗数星耀介绍，iztro的star对象使用方法以及示例代码。"
 ---
 
 # 星耀
