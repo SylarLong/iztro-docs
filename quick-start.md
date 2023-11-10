@@ -108,6 +108,25 @@ import { astro } from "iztro";
 var iztro = require("iztro");
 ```
 
+== HTML
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>iztro-紫微斗数开源库</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js"></script>
+    <script>
+      // 获取一张星盘数据
+      var astrolabe = iztro.asto.bySolar('2000-8-16', 2, '男', true, 'zh-CN');
+    </script>
+  </body>
+</html>
+```
+
 :::
 
 ### 获取星盘数据
