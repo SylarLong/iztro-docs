@@ -149,10 +149,10 @@ var iztro = require("iztro");
 import { astro } from "iztro";
 
 // 通过阳历获取星盘信息
-const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
+const astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
 // 通过农历获取星盘信息
-const astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女");
+const astrolabe = astro.byLunar("2000-7-17", 2, "女");
 ```
 
 == CommonJS
@@ -161,19 +161,19 @@ const astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女");
 var { astro } = require("iztro");
 
 // 通过阳历获取星盘信息
-var astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
+var astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
 // 通过农历获取星盘信息
-var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
+var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
 ```
 
 :::
 
-你会发现以上`astrolabeBySolarDate`和`astrolabeByLunarDate`的返回值是一样的，
-这是因为`astrolabeByLunarDate`方法在内部处理的时候，也是将日期转化为`阳历`以后调用`astrolabeBySolarDate`方法。
+你会发现以上`bySolar`和`byLunar`的返回值是一样的，
+这是因为`byLunar`方法在内部处理的时候，也是将日期转化为`阳历`以后调用`bySolar`方法。
 以下是执行结果，因为结果比较长，所以将之折叠起来，如果你想要查看你调用结果是否和这个一样，可以展开查看：
 
-::: details `astro.astrolabeBySolarDate()` 和 `astro.astrolabeByLunarDate()` 方法执行结果
+::: details `astro.bySolar()` 和 `astro.byLunar()` 方法执行结果
 
 ```ts
 {
@@ -493,7 +493,7 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
 
 - 通过阳历日期获取星盘信息
 
-  `astro`.`astrolabeBySolarDate(solarDateStr, timeIndex, gender, fixLeap, language)`
+  `astro`.`bySolar(solarDateStr, timeIndex, gender, fixLeap, language)`
 
   - 参数
 
@@ -511,7 +511,7 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
 
 - 通过农历日期获取星盘信息
 
-  `astro`.`astrolabeByLunarDate(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
+  `astro`.`byLunar(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
 
   - 参数
 
@@ -540,7 +540,7 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
 import { astro } from "iztro";
 
 // 通过阳历获取星盘信息
-const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
+const astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
 // 获取运限数据
 astrolabe.horoscope(new Date());
@@ -552,7 +552,7 @@ astrolabe.horoscope(new Date());
 var { astro } = require("iztro");
 
 // 通过阳历获取星盘信息
-var astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
+var astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
 // 获取运限数据
 astrolabe.horoscope(new Date());
