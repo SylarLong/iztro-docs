@@ -148,6 +148,7 @@ export default defineConfig({
               { text: "星盤", link: "/zh_TW/posts/astrolabe.md" },
               { text: "宮位", link: "/zh_TW/posts/palace.md" },
               { text: "星耀", link: "/zh_TW/posts/star.md" },
+              { text: "運限", link: "/zh_TW/posts/horoscope.md" },
             ],
           },
           {
