@@ -326,7 +326,7 @@ description: "紫微研习社，紫微斗数，紫微斗数基础知识，紫微
     </tr>
     <tr>
         <td style="background: transparent;">寅</td>
-        <td>丑 <code>四旺地</code></td>
+        <td>丑 <code>四墓库</code></td>
         <td style="background: transparent;">子</td>
         <td style="background: transparent;">亥</td>
     </tr>
