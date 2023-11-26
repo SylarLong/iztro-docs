@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import abbr from "markdown-it-abbr";
 
-const version = "v2.0.6";
+const version = "v2.0.7";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
