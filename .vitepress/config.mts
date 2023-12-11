@@ -32,8 +32,8 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: "主页", link: "/" },
-          { text: "文档", link: "/quick-start.md" },
-          { text: "学习", link: "/learn/basis.md" },
+          { text: "开发", link: "/quick-start.md" },
+          { text: "新手村", link: "/learn/basis.md" },
           { text: "排盘", link: "https://ziwei.pub" },
           {
             text: "讨论",
@@ -116,7 +116,8 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: "主頁", link: "/zh_TW/" },
-          { text: "文檔", link: "/zh_TW/quick-start.md" },
+          { text: "開發", link: "/zh_TW/quick-start.md" },
+          { text: "新手村", link: "/zh_TW/learn/basis.md" },
           { text: "排盤", link: "https://ziwei.pub" },
           {
             text: "討論",

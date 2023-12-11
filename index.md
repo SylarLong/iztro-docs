@@ -16,7 +16,7 @@ hero:
       text: 紫微斗数排盘
       link: https://ziwei.pub
     - theme: alt
-      text: 学习紫微斗数
+      text: 紫微新手村
       link: /learn/basis.md
     - theme: brand
       text: 开发文档
@@ -28,5 +28,7 @@ features:
   - title: 完善的文档
     details: 除了开发文档以外，还将提供紫微斗数基础知识的文档，这将使你在集成代码的时候如虎添翼。
   - title: 国际化支持
-    details: 拟定支持简体中文、繁体中文、日文、韩文、英文等多国语言输出。
+    details: 支持简体中文、繁体中文、日文、韩文、英文、越南语等多国语言输入输出。
+  - title: AI小助手
+    details: 精心训练的GPTs助手，专业解答iztro技术相关问题。<a href="https://chat.openai.com/g/g-zddtmckHc-iztroxiao-zhu-shou" target="_blank">【点击此处】</a>体验(需魔法且开通GPT+)。
 ---

@@ -1,6 +1,6 @@
 ---
-title: "iztro開發文檔"
-description: "壹套輕量級獲取紫微鬥數排盤信息的 Javascript 開源庫。"
+title: "紫微研習社"
+description: "一套輕量級獲取紫微鬥數排盤信息的 Javascript 開源庫，加上紫微鬥數學習和知識科普，打造一個適合大家的學習和使用紫微鬥數的專業平臺。"
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
@@ -13,17 +13,22 @@ hero:
     alt: ziwei.pro
   actions:
     - theme: alt
-      text: 查看示例
+      text: 紫微鬥數排盤
       link: https://ziwei.pub
+    - theme: alt
+      text: 紫微新手村
+      link: ./learn/basis.md
     - theme: brand
       text: 開發文檔
       link: ./quick-start.md
 
 features:
   - title: 易用的代碼
-    details: 簡單的輸入，完善的輸出以及合理的數據設計。讓妳可以更專註在數據分析和界面設計上。
+    details: 簡單的輸入，完善的輸出以及合理的數據設計。讓你可以更專註在數據分析和界面設計上。
   - title: 完善的文檔
-    details: 除了開發文檔以外，還將提供紫微鬥數基礎知識的文檔，這將使妳在集成代碼的時候如虎添翼。
+    details: 除了開發文檔以外，還將提供紫微鬥數基礎知識的文檔，這將使你在集成代碼的時候如虎添翼。
   - title: 國際化支持
-    details: 擬定支持簡體中文、繁體中文、日文、韓文、英文等多國語言輸出。
+    details: 支持簡體中文、繁體中文、日文、韓文、英文、越南語等多國語言輸入輸出。
+  - title: AI小助手
+    details: 精心訓練的GPTs助手，專業解答iztro技術相關問題。<a href="https://chat.openai.com/g/g-zddtmckHc-iztroxiao-zhu-shou" target="_blank">【點擊此處】</a>體驗(需魔法且開通GPT+)。
 ---
