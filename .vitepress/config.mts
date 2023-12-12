@@ -171,6 +171,16 @@ export default defineConfig({
               { text: "四化", link: "/zh_TW/learn/mutagen.md" },
               { text: "運限", link: "/zh_TW/learn/horoscope.md" },
               { text: "安星訣", link: "/zh_TW/learn/setup.md" },
+              {
+                text: "紫微鬥數全書",
+                link: "/zh_TW/learn/ancientBook.md",
+                items: [
+                  { text: "卷一", link: "/zh_TW/learn/ancientBook-1.md" },
+                  { text: "卷二", link: "/zh_TW/learn/ancientBook-2.md" },
+                  { text: "卷三", link: "/zh_TW/learn/ancientBook-3.md" },
+                ],
+              },
+              { text: "諸星問答論", link: "/zh_TW/learn/ancientBook-qa.md" },
             ],
           },
         ],
