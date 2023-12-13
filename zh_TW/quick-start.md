@@ -418,7 +418,7 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       isBodyPalace: false,
       isOriginalPalace: false,
       heavenlyStem: '己',
-      earthlyBranch: '醜',
+      earthlyBranch: '丑',
       majorStars: [
         { name: '天同', type: 'major', scope: 'origin', brightness: '不' },
         { name: '巨門', type: 'major', scope: 'origin', brightness: '不' },

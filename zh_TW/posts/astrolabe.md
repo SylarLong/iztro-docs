@@ -27,7 +27,7 @@ description: "iztro紫微鬥數星盤介紹，iztro的astro對象使用方法以
     </tr>
     <tr>
         <td>寅 <code>0</code></td>
-        <td>醜 <code>11</code></td>
+        <td>丑 <code>11</code></td>
         <td>子 <code>10</code></td>
         <td>亥 <code>9</code></td>
     </tr>
@@ -388,7 +388,7 @@ var { astro } = require("iztro");
         isBodyPalace: false,
         isOriginalPalace: false,
         heavenlyStem: '己',
-        earthlyBranch: '醜',
+        earthlyBranch: '丑',
         majorStars: [
           { name: '天同', type: 'major', scope: 'origin', brightness: '不' },
           { name: '巨門', type: 'major', scope: 'origin', brightness: '不' },

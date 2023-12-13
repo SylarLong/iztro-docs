@@ -27,7 +27,7 @@ description: "iztro紫微鬥數宮位介紹，iztro的palace對象使用方法�
     </tr>
     <tr>
         <td>寅 <code>命宮</code></td>
-        <td>醜 <code>兄弟</code></td>
+        <td>丑 <code>兄弟</code></td>
         <td>子 <code>夫妻</code></td>
         <td>亥 <code>子女</code></td>
     </tr>
