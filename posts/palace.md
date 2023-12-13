@@ -90,6 +90,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     hasOneOf: (stars: StarName[]) => boolean;
     hasMutagen: (mutagen: Mutagen): boolean;
     notHaveMutagen: (mutagen: Mutagen): boolean;
+    isEmpty: (excludeStars?: StarName[]) => boolean;
   }
   ```
 
@@ -278,6 +279,28 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```ts
     const result = astrolabe.palace("命宫").notHaveMutagen("忌");
     ```
+
+  ### isEmpty() <Badge type="warning" text="^2.0.6" />
+
+  - 用途
+
+    判断一个宫位是否为空宫（没有主星），有些派别在宫位内有某些星耀的情况下，是不会将该宫位判断为空宫的。所以加入一个参数来传入星耀。
+
+  - 定义
+
+    ```ts
+    type isEmpty = (excludeStars?: StarName[]) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | excludeStars | [`StarName[]`](../type-definition.md#starname) | `false`   | -      | 星耀名称数组|
+
+  - 返回值
+
+    `boolean`
 ### FunctionalSurpalaces <Badge type="warning" text="^1.2.0" />
 
 ***
@@ -295,7 +318,6 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     haveOneOf: (stars: StarName[]) => boolean;
     haveMutagen: (mutagen: Mutagen) => boolean;
     notHaveMutagen: (mutagen: Mutagen): boolean;
-    isEmpty: (excludeStars?: StarName[]) => boolean;
   }
   ```
 
@@ -485,24 +507,3 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```ts
     const result = astrolabe.surroundedPalaces("命宫").notHaveMutagen("忌");
     ```
-  ### isEmpty() <Badge type="warning" text="^2.0.6" />
-
-  - 用途
-
-    判断一个宫位是否为空宫（没有主星），有些派别在宫位内有某些星耀的情况下，是不会将该宫位判断为空宫的。所以加入一个参数来传入星耀。
-
-  - 定义
-
-    ```ts
-    type isEmpty = (excludeStars?: StarName[]) => boolean;
-    ```
-    
-  - 参数
-
-    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
-    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | excludeStars | [`StarName[]`](../type-definition.md#starname) | `false`   | -      | 星耀名称数组|
-
-  - 返回值
-
-    `boolean`

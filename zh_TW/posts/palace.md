@@ -1,13 +1,13 @@
 ---
 outline: deep
-description: "iztro紫微鬥數宮位介紹，iztro的palace對象使用方法以及示例代碼。"
+description: "紫微研習社，iztro官方文檔，iztro開發文檔，iztro紫微鬥數宮位介紹，iztro的palace對象使用方法以及示例代碼。"
 ---
 
 # 宮位
 
 ## 前言
 
-紫微鬥數中壹共有 `十二` 個宮位，叫做 `十二人事宮`，囊括了與人有關的其他人和事物，這十二宮按順序分別是 `命宮`、`兄弟宮`、`夫妻宮`、`子女宮`、`財帛宮`、`疾厄宮`、`遷移宮`、`仆役宮`、`官祿宮`、`田宅宮`、`福德宮`、`父母宮`。除了這展示在 [星盤](./astrolabe.md) 裏的十二宮以外，紫微鬥數還有三個隱藏宮位，它們分別是 `身宮`、`來因宮`、`暗合宮`。每壹個宮位有著它特殊的意義，但本頁不詳細展開來敘述。如果妳對紫微鬥數的宮位沒有概念，或者想深入研究，可以點擊 [傳送門](../learn/palace.md) 查看詳細資料。與宮位地支順時針排列相反，宮位名稱是按逆時針排列的。如下面表格所示：
+紫微鬥數中一共有 `十二` 個宮位，叫做 `十二人事宮`，囊括了與人有關的其他人和事物，這十二宮按順序分別是 `命宮`、`兄弟宮`、`夫妻宮`、`子女宮`、`財帛宮`、`疾厄宮`、`遷移宮`、`仆役宮`、`官祿宮`、`田宅宮`、`福德宮`、`父母宮`。除了這展示在 [星盤](./astrolabe.md) 裏的十二宮以外，紫微鬥數還有三個隱藏宮位，它們分別是 `身宮`、`來因宮`、`暗合宮`。每一個宮位有著它特殊的意義，但本頁不詳細展開來敘述。如果你對紫微鬥數的宮位沒有概念，或者想深入研究，可以點擊 [宮位系統](../learn/palace.md) 查看詳細資料。與宮位地支順時針排列相反，宮位名稱是按逆時針排列的。如下面表格所示：
 
 <table class="astrolabe">
     <tr>
@@ -33,14 +33,14 @@ description: "iztro紫微鬥數宮位介紹，iztro的palace對象使用方法�
     </tr>
 </table>
 
-> 以上表格隻是壹個例子，`命宮` 的位置會根據妳的 `出生日期` 和 `出生時間` 的不同而不同，它可能出現在上述任何壹個宮位，但這個順序是不會變的。
+> 以上表格只是一個例子，`命宮` 的位置會根據你的 `出生日期` 和 `出生時間` 的不同而不同，它可能出現在上述任何一個宮位，但這個順序是不會變的。
 
-宮位其實是 `宮` 和 `位` 兩個概念組成的，通過 `出生日期` 和 `出生時間` 計算出來的，叫 `宮`，所以妳星盤中的 `財帛宮` 位置在本命盤中是固定的，如果妳不知道什麽叫 `本命盤`，我們強烈建議妳點擊 [傳送門](/learn/basis.md) 學習。`位` 則是壹個 `相對` 位置，比如 `夫妻宮` 的 `財帛位` 是 `遷移宮`。這聽起來有些繞，好消息是，妳不需要記憶這些燒腦的信息，隻需要有這麽壹個概念就可以了。
+宮位其實是 `宮` 和 `位` 兩個概念組成的，通過 `出生日期` 和 `出生時間` 計算出來的，叫 `宮`，所以你星盤中的 `財帛宮` 位置在本命盤中是固定的，如果你不知道什麽叫 `本命盤`，我們強烈建議你點擊 [基礎知識掃盲](/learn/basis.md) 學習。`位` 則是一個 `相對` 位置，比如 `夫妻宮` 的 `財帛位` 是 `遷移宮`。這聽起來有些繞，好消息是，你不需要記憶這些燒腦的信息，只需要有這麽一個概念就可以了。
 ## 功能類定義
 
 :::warning 開發建議
 
-因為宮位是基於星盤而存在的，所以我們並不推薦妳手動 `new` 壹個宮位對象，而是使用星盤靜態方法返回的對象使用。星盤的 `palaces` 屬性包含了十二宮的數據，為了和地支的順序保持壹致，它是從 `寅宮` 開始按照地支順序順時針排列的。
+因為宮位是基於星盤而存在的，所以我們並不推薦你手動 `new` 一個宮位對象，而是使用星盤靜態方法返回的對象使用。星盤的 `palaces` 屬性包含了十二宮的數據，為了和地支的順序保持一致，它是從 `寅宮` 開始按照地支順序順時針排列的。
 
 :::
 
@@ -50,7 +50,7 @@ import { astro } from "iztro";
 const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 ```
 
-妳可以有幾種方式從上述 `astrolabe` 變量裏獲取到目標宮位，請根據實際需求使用：
+你可以有幾種方式從上述 `astrolabe` 變量裏獲取到目標宮位，請根據實際需求使用：
 
 1. 通過 `palaces` 的下標獲取
 
@@ -79,7 +79,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 <Badge type="tip" text="implements" /> `IFuncionalPalace` <Badge type="tip" text="extends" /> [`Palace`](../type-definition.md#palace)
 
-該類所有屬性都是繼承自 [Palace](../type-definition.md#palace)，然後在接口內定義了壹些方法用於對星耀進行分析。
+該類所有屬性都是繼承自 [Palace](../type-definition.md#palace)，然後在接口內定義了一些方法用於對星耀進行分析。
 
 - 接口定義
 
@@ -90,6 +90,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     hasOneOf: (stars: StarName[]) => boolean;
     hasMutagen: (mutagen: Mutagen): boolean;
     notHaveMutagen: (mutagen: Mutagen): boolean;
+    isEmpty: (excludeStars?: StarName[]) => boolean;
   }
   ```
 
@@ -123,13 +124,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果妳想查看 `命宮` 是否有 `紫微星` 和 `右弼星`
+    如果你想查看 `命宮` 是否有 `紫微星` 和 `右弼星`
     ```ts
     const palace = astrolabe.palace("命宮");
     const result = palace.has(["紫微", "右弼"]);
     ```
 
-    當然妳也可以使用 `鏈式調用` 來簡化代碼
+    當然你也可以使用 `鏈式調用` 來簡化代碼
     ```ts
     const result = astrolabe.palace("命宮").has(["紫微", "右弼"]);
     ```
@@ -159,13 +160,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果妳想查看 `命宮` 是沒有 `地空星` 和 `地劫星`
+    如果你想查看 `命宮` 是沒有 `地空星` 和 `地劫星`
     ```ts
     const palace = astrolabe.palace("命宮");
     const result = palace.notHave(["地空", "地劫"]);
     ```
 
-    當然妳也可以使用 `鏈式調用` 來簡化代碼
+    當然你也可以使用 `鏈式調用` 來簡化代碼
     ```ts
     const result = astrolabe.palace("命宮").notHave(["地空", "地劫"]);
     ```
@@ -175,7 +176,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判斷某個宮位內是否有傳入 `星耀` 的其中壹個，隻要 `命中壹個` 就會返回 `true`
+    判斷某個宮位內是否有傳入 `星耀` 的其中一個，只要 `命中一個` 就會返回 `true`
 
   - 定義
 
@@ -195,13 +196,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果妳想查看 `命宮` 是否有 `天魁星` 或 `天鉞星`
+    如果你想查看 `命宮` 是否有 `天魁星` 或 `天鉞星`
     ```ts
     const palace = astrolabe.palace("命宮");
     const result = palace.hasOneOf(["天魁", "天鉞"]);
     ```
 
-    當然妳也可以使用 `鏈式調用` 來簡化代碼
+    當然你也可以使用 `鏈式調用` 來簡化代碼
     ```ts
     const result = astrolabe.palace("命宮").hasOneOf(["天魁", "天鉞"]);
     ```
@@ -232,13 +233,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果妳想查看 `命宮` 是否有 `化祿`
+    如果你想查看 `命宮` 是否有 `化祿`
     ```ts
     const palace = astrolabe.palace("命宮");
     const result = palace.hasMutagen("祿");
     ```
 
-    當然妳也可以使用 `鏈式調用` 來簡化代碼
+    當然你也可以使用 `鏈式調用` 來簡化代碼
     ```ts
     const result = astrolabe.palace("命宮").hasMutagen("祿");
     ```
@@ -268,23 +269,45 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果妳想查看 `命宮` 是不是沒有 `化忌`
+    如果你想查看 `命宮` 是不是沒有 `化忌`
     ```ts
     const palace = astrolabe.palace("命宮");
     const result = palace.notHaveMutagen("忌");
     ```
 
-    當然妳也可以使用 `鏈式調用` 來簡化代碼
+    當然你也可以使用 `鏈式調用` 來簡化代碼
     ```ts
     const result = astrolabe.palace("命宮").notHaveMutagen("忌");
     ```
+
+  ### isEmpty() <Badge type="warning" text="^2.0.6" />
+
+  - 用途
+
+    判斷一個宮位是否為空宮（沒有主星），有些派別在宮位內有某些星耀的情況下，是不會將該宮位判斷為空宮的。所以加入一個參數來傳入星耀。
+
+  - 定義
+
+    ```ts
+    type isEmpty = (excludeStars?: StarName[]) => boolean;
+    ```
+    
+  - 參數
+
+    | 參數        | 類型                                      | 是否必填 | 默認值 | 說明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | excludeStars | [`StarName[]`](../type-definition.md#starname) | `false`   | -      | 星耀名稱數組|
+
+  - 返回值
+
+    `boolean`
 ### FunctionalSurpalaces <Badge type="warning" text="^1.2.0" />
 
 ***
 
 <Badge type="tip" text="implements" /> `IFunctionalSurpalaces` <Badge type="tip" text="extends" /> [`SurroundedPalaces`](../type-definition.md#surroundedpalaces)
 
-該類所有屬性都是繼承自 [SurroundedPalaces](../type-definition.md#surroundedpalaces)，然後在接口內定義了壹些方法用於對星耀進行分析。
+該類所有屬性都是繼承自 [SurroundedPalaces](../type-definition.md#surroundedpalaces)，然後在接口內定義了一些方法用於對星耀進行分析。
 
 - 接口定義
 
@@ -328,13 +351,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果妳想查看 `命宮` 三方四正是否有 `紫微星` 和 `右弼星`
+    如果你想查看 `命宮` 三方四正是否有 `紫微星` 和 `右弼星`
     ```ts
     const palaces = astrolabe.surroundedPalaces("命宮");
     const result = palaces.have(["紫微", "右弼"]);
     ```
 
-    當然妳也可以使用 `鏈式調用` 來簡化代碼
+    當然你也可以使用 `鏈式調用` 來簡化代碼
     ```ts
     const result = astrolabe.surroundedPalaces("命宮").have(["紫微", "右弼"]);
     ```
@@ -364,14 +387,14 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果妳想查看 `命宮` 三方四正是否沒有 `地空星` 和 `地劫星`
+    如果你想查看 `命宮` 三方四正是否沒有 `地空星` 和 `地劫星`
 
     ```ts
     const palaces = astrolabe.surroundedPalaces("命宮");
     const result = palaces.notHave(["地空", "地劫"]);
     ```
 
-    當然妳也可以使用 `鏈式調用` 來簡化代碼
+    當然你也可以使用 `鏈式調用` 來簡化代碼
     ```ts
     const result = astrolabe.surroundedPalaces("命宮").notHave(["地空", "地劫"]);
     ```
@@ -381,7 +404,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判斷某個宮位的三方四正內是否有傳入 `星耀` 的其中壹個，隻要 `命中壹個` 就會返回 `true`
+    判斷某個宮位的三方四正內是否有傳入 `星耀` 的其中一個，只要 `命中一個` 就會返回 `true`
 
   - 定義
 
@@ -401,13 +424,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果妳想查看 `命宮` 三方四正是否有 `天魁星` 或 `天鉞星`
+    如果你想查看 `命宮` 三方四正是否有 `天魁星` 或 `天鉞星`
     ```ts
     const palaces = astrolabe.surroundedPalaces("命宮");
     const result = palaces.haveOneOf(["天魁", "天鉞"]);
     ```
 
-    當然妳也可以使用 `鏈式調用` 來簡化代碼
+    當然你也可以使用 `鏈式調用` 來簡化代碼
     ```ts
     const result = astrolabe.surroundedPalaces("命宮").haveOneOf(["天魁", "天鉞"]);
     ```
@@ -438,13 +461,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果妳想查看 `命宮` 三方四正是否有 `化祿`
+    如果你想查看 `命宮` 三方四正是否有 `化祿`
     ```ts
     const palaces = astrolabe.surroundedPalaces("命宮");
     const result = palaces.haveMutagen("祿");
     ```
 
-    當然妳也可以使用 `鏈式調用` 來簡化代碼
+    當然你也可以使用 `鏈式調用` 來簡化代碼
     ```ts
     const result = astrolabe.surroundedPalaces("命宮").haveMutagen("祿");
     ```
@@ -474,13 +497,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果妳想查看 `命宮` 三方四正是不是沒有 `化忌`
+    如果你想查看 `命宮` 三方四正是不是沒有 `化忌`
     ```ts
     const palace = astrolabe.surroundedPalaces("命宮");
     const result = palace.notHaveMutagen("忌");
     ```
 
-    當然妳也可以使用 `鏈式調用` 來簡化代碼
+    當然你也可以使用 `鏈式調用` 來簡化代碼
     ```ts
     const result = astrolabe.surroundedPalaces("命宮").notHaveMutagen("忌");
     ```
