@@ -116,3 +116,10 @@ table tr td:not(:last-child) {
     max-height: 480px !important;
   }
 }
+
+@media (max-width: 960px) {
+  .star-card tr {
+    display: grid;
+    grid-template-columns: 100px auto;
+  }
+}

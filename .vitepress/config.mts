@@ -169,6 +169,7 @@ export default defineConfig({
                 ],
               },
               { text: "四化", link: "/zh_TW/learn/mutagen.md" },
+              { text: "格局", link: "/zh_TW/learn/pattern.md" },
               { text: "運限", link: "/zh_TW/learn/horoscope.md" },
               { text: "安星訣", link: "/zh_TW/learn/setup.md" },
               {
