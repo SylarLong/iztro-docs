@@ -1,32 +1,34 @@
 ---
-title: 'iztro 開發文檔'
-description: 'iztro入門文檔，快速上手使用iztro獲取紫微鬥數排盤數據。'
+title: 'iztro官方文檔'
+description: '紫微研習社，iztro官方文檔，iztro開發文檔，快速上手使用iztro獲取紫微鬥數排盤數據。'
 ---
 
 <div align="center">
 
 <h1 class="brand-name text-clip">IZTRO</h1>
 
-壹套輕量級獲取紫微鬥數排盤信息的 Javascript 開源庫。
+一套輕量級獲取紫微鬥數排盤信息的 Javascript 開源庫。
 
 </div>
 
 ## 前言
 
-歡迎使用 `iztro` 開發文檔！本頁將向妳介紹如何集成、如何獲取數據、以及如何快速得到紫微鬥數裏壹張星盤上的所有數據。如果妳隻是基礎使用者，閱讀完本篇文檔將足夠妳日常使用。
-如果妳已經掌握了本頁內容，可以到其他頁面進行更深入的探索。如果妳對紫微鬥數感興趣，但是有沒有相關基礎，可以點擊 [紫微鬥數基礎](/learn/basis.md) 進行掃盲學習。
+歡迎使用 `iztro` 開發文檔！本頁將向你介紹如何集成、如何獲取數據、以及如何快速得到紫微鬥數裏一張星盤上的所有數據。如果你只是基礎使用者，閱讀完本篇文檔將足夠你日常使用。
+如果你已經掌握了本頁內容，可以到其他頁面進行更深入的探索。如果你對紫微鬥數感興趣，但是有沒有相關基礎，可以點擊 [基礎知識掃盲](/learn/basis.md) 進行掃盲學習。
 
-::: info 妳將獲取到以下信息：
+::: info 你將獲取到以下信息：
 
-- 如何將 `iztro` 安裝和集成到妳的代碼裏
-- 如何獲取到壹張星盤
+- 如何將 `iztro` 安裝和集成到你的代碼裏
+- 如何獲取到一張星盤
 - 如何基於星盤開始分析宮位
 - 如何基於宮位開始分析星耀
   :::
 
 ## 安裝
 
-妳可以使用任意壹種妳熟悉的包管理工具進行安裝
+### 使用包管理安裝
+
+你可以使用任意一種你熟悉的包管理工具進行安裝
 
 :::tabs
 == npm
@@ -55,7 +57,7 @@ bun add -S iztro
 
 :::
 
-安裝順利的話，會在妳的`package.json`依賴列表中找到`iztro`
+安裝順利的話，會在你的`package.json`依賴列表中找到`iztro`
 
 ```json
 "dependencies": {
@@ -65,11 +67,33 @@ bun add -S iztro
 
 > 版本號可能會有所不同
 
+### 純JS庫使用 <Badge type="warning" text="^2.0.4" />
+
+在 `v2.0.4` 版本以後，編譯了 `umd` 的純Javascript庫。可以下載 [release](https://github.com/SylarLong/iztro/releases) 資源文件中的 `🗜️iztro-min-js.tar.gz` 壓縮包，裏面包含了一個 `iztro` 壓縮混淆過的js文件和對應的sourcemap文件。
+
+當然，我們更推薦你直接使用 `CDN` 加速鏈接，你可以在下面列表中選擇一個，在沒有指定版本號的時候，會自動指向最新版本的代碼庫
+
+- jsdelivr
+
+  - https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js
+  - https://cdn.jsdelivr.net/npm/iztro@2.0.5/dist/iztro.min.js
+
+- unpkg
+
+  - https://unpkg.com/iztro/dist/iztro.min.js
+  - https://unpkg.com/iztro@2.0.5/dist/iztro.min.js
+
+你也可以使用如下規則來指定版本：
+
+- `iztro@2`
+- `iztro@^2.0.5`
+- `iztro@2.0.5`
+
 ## 開始使用
 
 ### 引入代碼
 
-妳可以根據下列方式將`iztro`引入妳的代碼
+你可以根據下列方式將`iztro`引入你的代碼
 
 :::tabs
 == ES6 Module
@@ -84,19 +108,38 @@ import { astro } from "iztro";
 var iztro = require("iztro");
 ```
 
+== HTML
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>iztro-紫微鬥數開源庫</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js"></script>
+    <script>
+      // 獲取一張星盤數據
+      var astrolabe = iztro.astro.bySolar('2000-8-16', 2, '男', true, 'zh-CN');
+    </script>
+  </body>
+</html>
+```
+
 :::
 
 ### 獲取星盤數據
 
-在獲取紫微鬥數星盤的時候，可以根據`農歷`或者`陽歷`日期來獲取，`iztro`提供了這兩種獲取方式，妳可以根據妳的需求使用，但我們更推薦妳使用`陽歷`的方式來使用。
-放心，陽歷和農歷在程序內部獲取到的數據是統壹的。
+在獲取紫微鬥數星盤的時候，可以根據`農歷`或者`陽歷`日期來獲取，`iztro`提供了這兩種獲取方式，你可以根據你的需求使用，但我們更推薦你使用`陽歷`的方式來使用。
+放心，陽歷和農歷在程序內部獲取到的數據是統一的。
 
 ::: info 使用 `陽歷` 有如下便利性：
 
 - 可以很方便的在出生證上查到
 - 可以使用日歷組件進行日期選擇
 - 現在很多人都無法記住農歷日期
-- 可以避免因為忽略了閏月而帶來的壹係列問題
+- 可以避免因為忽略了閏月而帶來的一系列問題
   :::
 
 :::tabs
@@ -106,10 +149,10 @@ var iztro = require("iztro");
 import { astro } from "iztro";
 
 // 通過陽歷獲取星盤信息
-const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
+const astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
 // 通過農歷獲取星盤信息
-const astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女");
+const astrolabe = astro.byLunar("2000-7-17", 2, "女");
 ```
 
 == CommonJS
@@ -118,19 +161,19 @@ const astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女");
 var { astro } = require("iztro");
 
 // 通過陽歷獲取星盤信息
-var astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
+var astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
 // 通過農歷獲取星盤信息
-var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
+var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
 ```
 
 :::
 
-妳會發現以上`astrolabeBySolarDate`和`astrolabeByLunarDate`的返回值是壹樣的，
-這是因為`astrolabeByLunarDate`方法在內部處理的時候，也是將日期轉化為`陽歷`以後調用`astrolabeBySolarDate`方法。
-以下是執行結果，因為結果比較長，所以將之折疊起來，如果妳想要查看妳調用結果是否和這個壹樣，可以展開查看：
+你會發現以上`bySolar`和`byLunar`的返回值是一樣的，
+這是因為`byLunar`方法在內部處理的時候，也是將日期轉化為`陽歷`以後調用`bySolar`方法。
+以下是執行結果，因為結果比較長，所以將之折疊起來，如果你想要查看你調用結果是否和這個一樣，可以展開查看：
 
-::: details `astro.astrolabeBySolarDate()` 和 `astro.astrolabeByLunarDate()` 方法執行結果
+::: details `astro.bySolar()` 和 `astro.byLunar()` 方法執行結果
 
 ```ts
 {
@@ -418,7 +461,7 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
       isBodyPalace: false,
       isOriginalPalace: false,
       heavenlyStem: '己',
-      earthlyBranch: '丑',
+      earthlyBranch: '醜',
       majorStars: [
         { name: '天同', type: 'major', scope: 'origin', brightness: '不' },
         { name: '巨門', type: 'major', scope: 'origin', brightness: '不' },
@@ -450,14 +493,14 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
 
 - 通過陽歷日期獲取星盤信息
 
-  `astro`.`astrolabeBySolarDate(solarDateStr, timeIndex, gender, fixLeap, language)`
+  `astro`.`bySolar(solarDateStr, timeIndex, gender, fixLeap, language)`
 
   - 參數
 
     | 參數         | 類型       | 是否必填 | 默認值  | 說明                                                                              |
     | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
     | solarDateStr | `string`   | `true`   | -       | 陽歷日期【YYYY-M-D】                                                              |
-    | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
+    | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）一直到晚子時（12）的序號                   |
     | gender       | `string`   | `true`   | -       | 性別【男/女】                                                                     |
     | fixLeap      | `boolean`  | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
     | language     | `Language` | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
@@ -468,14 +511,14 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
 
 - 通過農歷日期獲取星盤信息
 
-  `astro`.`astrolabeByLunarDate(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
+  `astro`.`byLunar(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
 
   - 參數
 
     | 參數         | 類型       | 是否必填 | 默認值  | 說明                                                                              |
     | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
     | lunarDateStr | `string`   | `true`   | -       | 農歷日期【YYYY-M-D】，例如`2000年七月十七`則傳入`2000-7-17`                       |
-    | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
+    | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）一直到晚子時（12）的序號                   |
     | gender       | `string`   | `true`   | -       | 性別【男/女】                                                                     |
     | isLeapMonth  | `boolean`  | `false`  | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效                                        |
     | fixLeap      | `boolean`  | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
@@ -497,7 +540,7 @@ var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "女", false);
 import { astro } from "iztro";
 
 // 通過陽歷獲取星盤信息
-const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
+const astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
 // 獲取運限數據
 astrolabe.horoscope(new Date());
@@ -509,7 +552,7 @@ astrolabe.horoscope(new Date());
 var { astro } = require("iztro");
 
 // 通過陽歷獲取星盤信息
-var astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女");
+var astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
 // 獲取運限數據
 astrolabe.horoscope(new Date());
@@ -517,7 +560,7 @@ astrolabe.horoscope(new Date());
 
 :::
 
-調用 `astrolabe`.`horoscope()` 方法以後妳會獲得如下數據
+調用 `astrolabe`.`horoscope()` 方法以後你會獲得如下數據
 
 ::: details `horoscope()` 方法返回數據
 
@@ -571,7 +614,7 @@ astrolabe.horoscope(new Date());
 
 :::
 
-> Tips: 隻有 `大限` 和 `流年` 有流耀。上面的運限數據和妳調用的會因為傳入的時間參數不同而不同，但是結構上是壹致的。
+> Tips: 只有 `大限` 和 `流年` 有流耀。上面的運限數據和你調用的會因為傳入的時間參數不同而不同，但是結構上是一致的。
 
 ### 方法定義
 
@@ -592,7 +635,7 @@ astrolabe.horoscope(new Date());
 
 ## 獲取流耀
 
-上面的`horoscope()`方法內已經包含了`大限`和`流年`的流耀，所以壹般情況下無需在單獨調用獲取流耀的方法，但也有例外的情況需要自行獲取流耀，那就需要調用下列方法自行獲取。
+上面的`horoscope()`方法內已經包含了`大限`和`流年`的流耀，所以一般情況下無需在單獨調用獲取流耀的方法，但也有例外的情況需要自行獲取流耀，那就需要調用下列方法自行獲取。
 
 :::tabs
 == ES6 Module
@@ -615,7 +658,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 
 :::
 
-調用 `star`.`getHoroscopeStar()` 方法以後妳會獲得如下數據
+調用 `star`.`getHoroscopeStar()` 方法以後你會獲得如下數據
 
 ::: details `getHoroscopeStar()` 方法返回數據
 
@@ -656,7 +699,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
     | ------------- | ------------------------- | -------- | ------ | -------------------------------------------------------------------------------------------------------------------------------- |
     | heavenlyStem  | `HeavenlyStemName`        | `true`   | -      | 天幹                                                                                                                             |
     | earthlyBranch | `EarthlyBranchName`       | `true`   | -      | 地支                                                                                                                             |
-    | scope         | `'decadal'` \| `'yearly'` | `true`   | -      | 限定是大限還是流年的流耀，其中大限流耀會在星耀前面加上`運`，流年流耀會在星耀前面加上`流`，`年解`比較特殊，隻會出現在流年的流耀裏 |
+    | scope         | `'decadal'` \| `'yearly'` | `true`   | -      | 限定是大限還是流年的流耀，其中大限流耀會在星耀前面加上`運`，流年流耀會在星耀前面加上`流`，`年解`比較特殊，只會出現在流年的流耀裏 |
 
   - 返回值
 
@@ -666,7 +709,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 
 如果您覺得本程序對您有用的話，可以給我帶杯咖啡嗎？👍 [Paypal Me](https://PayPal.Me/sylarlong)
 
-以上數據可以生成如下星盤，其中 `palaces` 數據用於填充 12 宮，其他數據用於填充中宮。圖片中流耀的顯示和實際上有偏差，那是因為圖片是古早以前的壹個版本生成的，請以實際返回數據為準。
+以上數據可以生成如下星盤，其中 `palaces` 數據用於填充 12 宮，其他數據用於填充中宮。圖片中流耀的顯示和實際上有偏差，那是因為圖片是古早以前的一個版本生成的，請以實際返回數據為準。
 
 ![demo](https://github.com/SylarLong/iztro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
 
