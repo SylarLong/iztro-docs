@@ -91,6 +91,14 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     hasMutagen: (mutagen: Mutagen): boolean;
     notHaveMutagen: (mutagen: Mutagen): boolean;
     isEmpty: (excludeStars?: StarName[]) => boolean;
+    astrolabe: () => IFunctionalAstrolabe | undefined;
+    fliesTo: (to: number | PalaceName, withMutagens: Mutagen | Mutagen[]) => boolean;
+    fliesOneOfTo: (to: number | PalaceName, withMutagens: Mutagen[]) => boolean;
+    notFlyTo: (to: number | PalaceName, withMutagens: Mutagen | Mutagen[]) => boolean;
+    selfMutaged: (withMutagens: Mutagen | Mutagen[]) => boolean;
+    selfMutagedOneOf: (withMutagens?: Mutagen[]) => boolean;
+    notSelfMutaged: (withMutagens?: Mutagen | Mutagen[]) => boolean;
+    mutagedPlaces: () => (IFunctionalPalace | undefined)[];
   }
   ```
 
@@ -100,7 +108,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 - 方法
   
-  ### has() <Badge type="warning" text="^1.0.0" />
+  #### has() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -136,7 +144,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ### notHave() <Badge type="warning" text="^1.0.0" />
+  #### notHave() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -172,7 +180,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ### hasOneOf() <Badge type="warning" text="^1.0.0" />
+  #### hasOneOf() <Badge type="warning" text="^1.0.0" />
 
   - 用途
 
@@ -208,8 +216,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-
-  ### hasMutagen() <Badge type="warning" text="^1.2.0" />
+  #### hasMutagen() <Badge type="warning" text="^1.2.0" />
 
   - 用途
 
@@ -245,7 +252,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ### notHaveMutagen() <Badge type="warning" text="^1.2.0" />
+  #### notHaveMutagen() <Badge type="warning" text="^1.2.0" />
 
   - 用途
 
@@ -279,8 +286,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```ts
     const result = astrolabe.palace("命宫").notHaveMutagen("忌");
     ```
-
-  ### isEmpty() <Badge type="warning" text="^2.0.6" />
+  #### isEmpty() <Badge type="warning" text="^2.0.6" />
 
   - 用途
 
@@ -301,6 +307,188 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
   - 返回值
 
     `boolean`
+  #### astrolabe() <Badge type="warning" text="^2.1.0" />
+
+  - 用途
+
+    获取当前宫位所在的星盘对象。
+
+  - 定义
+
+    ```ts
+    type astrolabe = () => IFunctionalAstrolabe | undefined;
+    ```
+    
+  - 参数
+
+    无
+
+  - 返回值
+
+  [`IFunctionalAstrolabe`](./astrolabe.md#functionalastrolabe) | `undefined`;
+  #### fliesTo() <Badge type="warning" text="^2.1.0" />
+
+  - 用途
+
+    判断是否从源宫位飞化到目标宫位，四化可传入一个数组或者一个字符串，传入四化全部飞化到目标宫位即返回 `true`
+
+  - 定义
+
+    ```ts
+    type fliesTo = (
+      to: number | PalaceName, 
+      withMutagens: Mutagen | Mutagen[]
+    ) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | to | `number` \| [`PalaceName`](../type-definition.md#palacename) | `true`   | -      | 目标宫位索引或名称|
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true`   | -      | 四化（禄、权、科、忌）|
+
+  - 返回值
+
+    `boolean`
+  #### fliesOneOfTo() <Badge type="warning" text="^2.1.0" />
+
+  - 用途
+
+    判断是否从源宫位飞化其中一颗四化星到目标宫位，传入四化只要有一颗飞化到目标宫位即返回 `true`
+
+  - 定义
+
+    ```ts
+    type fliesOneOfTo = (
+      to: number | PalaceName, 
+      withMutagens: Mutagen | Mutagen[]
+    ) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | to | `number` \| [`PalaceName`](../type-definition.md#palacename) | `true`   | -      | 目标宫位索引或名称|
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true`   | -      | 四化（禄、权、科、忌）|
+
+  - 返回值
+
+    `boolean`
+  #### notFlyTo() <Badge type="warning" text="^2.1.0" />
+
+  - 用途
+
+    判断是否没有从源宫位飞化到目标宫位，四化可传入一个数组或者一个字符串，传入四化全部没有飞化到目标宫位才返回 `true`
+
+  - 定义
+
+    ```ts
+    type notFlyTo = (
+      to: number | PalaceName, 
+      withMutagens: Mutagen | Mutagen[]
+    ) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | to | `number` \| [`PalaceName`](../type-definition.md#palacename) | `true`   | -      | 目标宫位索引或名称|
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true`   | -      | 四化（禄、权、科、忌）|
+
+  - 返回值
+
+    `boolean`
+  #### selfMutaged() <Badge type="warning" text="^2.1.0" />
+
+  - 用途
+
+    判断宫位是否有自化，传入四化数组时需要全部满足才返回 `true`
+
+  - 定义
+
+    ```ts
+    type selfMutaged = (
+      withMutagens: Mutagen | Mutagen[]
+    ) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true`   | -      | 四化（禄、权、科、忌）|
+
+  - 返回值
+
+    `boolean`
+  #### selfMutagedOneOf() <Badge type="warning" text="^2.1.0" />
+
+  - 用途
+
+    判断宫位是否有自化，若不传入参数则会判断所有四化，满足一颗即返回 `true`
+
+  - 定义
+
+    ```ts
+    type selfMutagedOneOf = (
+      withMutagens: Mutagen | Mutagen[]
+    ) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true`   | -      | 四化（禄、权、科、忌）|
+
+  - 返回值
+
+    `boolean`
+  #### notSelfMutaged() <Badge type="warning" text="^2.1.0" />
+
+  - 用途
+
+    判断宫位是否有自化，如果传入参数，则只判断传入的四化是否有自化，否则将会判断所有四化
+
+  - 定义
+
+    ```ts
+    type notSelfMutaged = (
+      withMutagens: Mutagen | Mutagen[]
+    ) => boolean;
+    ```
+    
+  - 参数
+
+    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
+    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true`   | -      | 四化（禄、权、科、忌）|
+
+  - 返回值
+
+    `boolean`
+  #### mutagedPlaces() <Badge type="warning" text="^2.1.0" />
+
+  - 用途
+
+    获取当前宫位产生四化的4个宫位数组，下标分别对【禄，权，科，忌】
+
+  - 定义
+
+    ```ts
+    type mutagedPlaces = () => (IFunctionalPalace | undefined)[];
+    ```
+    
+  - 参数
+
+    无
+
+  - 返回值
+
+    ([`IFunctionalPalace`](#functionalpalace) | `undefined`)[]
 ### FunctionalSurpalaces <Badge type="warning" text="^1.2.0" />
 
 ***
@@ -327,7 +515,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 - 方法
   
-  ### have()
+  #### have()
 
   - 用途
 
@@ -363,7 +551,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ### notHave()
+  #### notHave()
 
   - 用途
 
@@ -400,44 +588,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ### haveOneOf()
-
-  - 用途
-
-    判断某个宫位的三方四正内是否有传入 `星耀` 的其中一个，只要 `命中一个` 就会返回 `true`
-
-  - 定义
-
-    ```ts
-    type haveOneOf = (stars: StarName[]) => boolean;
-    ```
-    
-  - 参数
-
-    | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
-    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星耀名称，可以包含主星、辅星、杂耀 |
-
-  - 返回值
-
-    `boolean`
-
-  - 示例
-
-    如果你想查看 `命宫` 三方四正是否有 `天魁星` 或 `天钺星`
-    ```ts
-    const palaces = astrolabe.surroundedPalaces("命宫");
-    const result = palaces.haveOneOf(["天魁", "天钺"]);
-    ```
-
-    当然你也可以使用 `链式调用` 来简化代码
-    ```ts
-    const result = astrolabe.surroundedPalaces("命宫").haveOneOf(["天魁", "天钺"]);
-    ```
-
-  ***
-
-  ### haveMutagen()
+  #### haveMutagen()
 
   - 用途
 
@@ -473,7 +624,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
-  ### notHaveMutagen()
+  #### notHaveMutagen()
 
   - 用途
 
