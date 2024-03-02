@@ -76,7 +76,7 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
 
     const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
-    const palace = astrolabe.star("紫微星").palece();
+    const palace = astrolabe.star("紫微星").palace();
     ```
 
   ***

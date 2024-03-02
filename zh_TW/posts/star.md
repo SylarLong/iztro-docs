@@ -76,7 +76,7 @@ description: "iztro紫微鬥數星耀介紹，iztro的star對象使用方法以�
 
     const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
-    const palace = astrolabe.star("紫微星").palece();
+    const palace = astrolabe.star("紫微星").palace();
     ```
 
   ***
