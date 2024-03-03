@@ -1,5 +1,4 @@
 ---
-outline: deep
 description: "iztro类型定义，iztro的astro对象使用方法以及示例代码。紫微斗数信息国际化内容的输出定义。"
 ---
 
@@ -1230,3 +1229,44 @@ export type Astrolabe = {
 | `body`                      | 身主                               | [`StarName`](#starname)                                |
 | `fiveElementsClass`         | 五行局                             | [`FiveElementsClassName`](#fiveelementsclassName)      |
 | `palaces`                   | 十二宫数据                         | [`IFunctionalPalace[]`](./posts/palace.md#functionalpalace)                 |
+
+## 配置和插件 <Badge type="warning" text="^2.3.0" />
+
+### `ConfigMutagens`
+
+定义了全局配置中的 `四化` 参数。
+
+```ts
+type ConfigMutagens = Partial<Record<HeavenlyStemName, StarName[]>>;
+```
+
+### `ConfigBrightness`
+
+定义了全局配置中的 `亮度` 参数。
+
+```ts
+type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
+```
+
+### `Config`
+
+定义了全局参数对象。
+
+```ts
+type Config = {
+  mutagens?: ConfigMutagens;
+  brightness?: ConfigBrightness;
+};
+```
+
+### `Plugin`
+
+定义了插件类型。实际上，插件就是一个函数。
+
+```ts
+type Plugin = () => void;
+```
+
+:::tip 提示
+插件方法会隐式的接受一个 `this` 参数，该参数类型为 `T extends FunctionalAstrolabe`。详细创建插件方法见 [插件](./posts/config-n-plugin.md#插件)
+:::

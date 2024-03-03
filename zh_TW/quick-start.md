@@ -210,7 +210,7 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
       isBodyPalace: false,
       // 是否來因宮
       isOriginalPalace: false,
-      // 宮位天幹
+      // 宮位天干
       heavenlyStem: '戊',
       // 宮位地支
       earthlyBranch: '寅',
@@ -643,7 +643,7 @@ astrolabe.horoscope(new Date());
 ```ts
 import { star } from "iztro";
 
-// 通過天幹地支獲取流耀
+// 通過天干地支獲取流耀
 const horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```
 
@@ -652,7 +652,7 @@ const horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```js
 var { star } = require("iztro");
 
-// 通過天幹地支獲取流耀
+// 通過天干地支獲取流耀
 var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```
 
@@ -689,7 +689,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 
 ### 方法定義
 
-- 通過 `天幹`、`地支` 獲取流耀
+- 通過 `天干`、`地支` 獲取流耀
 
   `star`.`getHoroscopeStar(heavenlyStem, earthlyBranch, scope)`
 
@@ -697,7 +697,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 
     | 參數          | 類型                      | 是否必填 | 默認值 | 說明                                                                                                                             |
     | ------------- | ------------------------- | -------- | ------ | -------------------------------------------------------------------------------------------------------------------------------- |
-    | heavenlyStem  | `HeavenlyStemName`        | `true`   | -      | 天幹                                                                                                                             |
+    | heavenlyStem  | `HeavenlyStemName`        | `true`   | -      | 天干                                                                                                                             |
     | earthlyBranch | `EarthlyBranchName`       | `true`   | -      | 地支                                                                                                                             |
     | scope         | `'decadal'` \| `'yearly'` | `true`   | -      | 限定是大限還是流年的流耀，其中大限流耀會在星耀前面加上`運`，流年流耀會在星耀前面加上`流`，`年解`比較特殊，只會出現在流年的流耀裏 |
 

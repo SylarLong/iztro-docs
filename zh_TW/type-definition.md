@@ -138,7 +138,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ### `HeavenlyStemName`
 
-定義了`十天幹`
+定義了`十天干`
 
 :::tabs
 == 簡體中文
@@ -157,7 +157,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ### `EarthlyBranchName`
 
-定義了 `十二地支`，地支中的 `午` 英文和天幹中的 `戊` 相同，為了解決國際化時的沖突，固將地支中的 `午` 翻譯成了 `woo`。
+定義了 `十二地支`，地支中的 `午` 英文和天干中的 `戊` 相同，為了解決國際化時的沖突，固將地支中的 `午` 翻譯成了 `woo`。
 
 :::tabs
 == 簡體中文
@@ -1031,7 +1031,7 @@ export type SoulAndBody = {
 | --------------------- | -------- | -------------------------------------------------------------- |
 | `soulIndex`           | 命宮索引 | `number`                                                       |
 | `bodyIndex`           | 身宮索引 | `number`                                                       |
-| `heavenlyStemOfSoul`  | 命宮天幹 | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
+| `heavenlyStemOfSoul`  | 命宮天干 | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
 | `earthlyBranchOfSoul` | 命宮地支 | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
 
 ---
@@ -1064,7 +1064,7 @@ export type Palace = {
 | `name`             | 宮位名稱       | [`PalaceName`](./type-definition.html#palacename)               |
 | `isBodyPalace`     | 是否身宮       | `boolean`                                                      |
 | `isOriginalPalace` | 是否來因宮     | `boolean`                                                      |
-| `heavenlyStem`     | 宮位天幹       | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
+| `heavenlyStem`     | 宮位天干       | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
 | `earthlyBranch`    | 宮位地支       | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
 | `majorStars`       | 主星           | [`Star[]`](./type-definition.html#star)                         |
 | `minorStars`       | 輔星           | [`Star[]`](./type-definition.html#star)                         |
@@ -1120,7 +1120,7 @@ export type HoroscopeItem = {
 | --------------- | -------------- | -------------------------------------------------------------- |
 | `index`         | 所在宮位的索引 | `number`                                                       |
 | `name` <Badge type="warning" text="^1.2.3" />        | 運限的名称 | `string`                                                       |
-| `heavenlyStem`  | 運限天幹       | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
+| `heavenlyStem`  | 運限天干       | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
 | `earthlyBranch` | 運限地支       | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
 | `palaceNames`   | 運限的十二宮   | [`PalaceName[]`](./type-definition.html#palacename)             |
 | `mutagen`       | 四化星         | [`StarName[]`](./type-definition.html#starname)                 |
@@ -1143,7 +1143,7 @@ export type Decadal = {
 | 屬性            | 解釋                                  | 類型                                                           |
 | --------------- | ------------------------------------- | -------------------------------------------------------------- |
 | `range`         | 大限起止年齡 [`起始年齡`, `截止年齡`] | `[number, number]`                                             |
-| `heavenlyStem`  | 大限天幹                              | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
+| `heavenlyStem`  | 大限天干                              | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
 | `earthlyBranch` | 大限地支                              | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
 
 ---

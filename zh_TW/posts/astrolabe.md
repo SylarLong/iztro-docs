@@ -137,7 +137,7 @@ var { astro } = require("iztro");
         isBodyPalace: false,
         // 是否來因宮
         isOriginalPalace: false,
-        // 宮位天幹
+        // 宮位天干
         heavenlyStem: '戊',
         // 宮位地支
         earthlyBranch: '寅',

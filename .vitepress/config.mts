@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import abbr from "markdown-it-abbr";
 
-const version = "v2.2.3";
+const version = "v2.3.0";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -58,7 +58,7 @@ export default defineConfig({
 
         sidebar: [
           {
-            text: "iztro",
+            text: 'iztro开发文档',
             items: [
               { text: "快速开始", link: "/quick-start.md" },
               { text: "类型定义", link: "/type-definition.md" },
@@ -66,10 +66,11 @@ export default defineConfig({
               { text: "宫位", link: "/posts/palace.md" },
               { text: "星耀", link: "/posts/star.md" },
               { text: "运限", link: "/posts/horoscope.md" },
+              { text: "配置和插件", link: "/posts/config-n-plugin.md" },
             ],
           },
           {
-            text: "紫微斗数",
+            text: "紫微斗数知识",
             items: [
               { text: "基础扫盲", link: "/learn/basis.md" },
               { text: "星盘介绍", link: "/learn/astrolabe.md" },
@@ -142,7 +143,7 @@ export default defineConfig({
 
         sidebar: [
           {
-            text: "iztro",
+            text: "iztro開發文檔",
             items: [
               { text: "快速開始", link: "/zh_TW/quick-start.md" },
               { text: "類型定義", link: "/zh_TW/type-definition.md" },
@@ -150,10 +151,11 @@ export default defineConfig({
               { text: "宮位", link: "/zh_TW/posts/palace.md" },
               { text: "星耀", link: "/zh_TW/posts/star.md" },
               { text: "運限", link: "/zh_TW/posts/horoscope.md" },
+              { text: "配置和插件", link: "/zh_TW/posts/config-n-plugin.md" },
             ],
           },
           {
-            text: "紫微鬥數",
+            text: "紫微鬥數知識",
             items: [
               { text: "基礎掃盲", link: "/zh_TW/learn/basis.md" },
               { text: "星盤介紹", link: "/zh_TW/learn/astrolabe.md" },
