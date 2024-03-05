@@ -211,7 +211,7 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
   
   - 示例
 
-    判断 `紫微星` 是否处于 `化权` 或者 `华科` 的状态
+    判断 `紫微星` 是否处于 `化权` 或者 `化科` 的状态
 
     ```ts
     import { astro } from "iztro";

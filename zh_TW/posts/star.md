@@ -211,7 +211,7 @@ description: "iztro紫微鬥數星耀介紹，iztro的star對象使用方法以�
   
   - 示例
 
-    判斷 `紫微星` 是否處於 `化權` 或者 `華科` 的狀態
+    判斷 `紫微星` 是否處於 `化權` 或者 `化科` 的狀態
 
     ```ts
     import { astro } from "iztro";

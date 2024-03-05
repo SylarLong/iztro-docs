@@ -66,10 +66,24 @@ table tr td:not(:last-child) {
   height: 100px;
   background-color: var(--vp-plugin-tabs-tab-bg);
   text-align: center;
+  padding: 5px;
 }
 
 .astrolabe td.center-palace {
   background-color: transparent;
+}
+
+.astrolabe .pattern {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.astrolabe .pattern :last-child {
+  display: flex;
+  justify-content: space-between;
 }
 
 .VPNavBar {
