@@ -15,7 +15,7 @@
     <a style="cursor: pointer" @click="show = true">点击此处打赏站长</a>
   </div>
   <div
-    v-show="show"
+    v-if="show"
     @click="show = !show"
     style="
       position: fixed;
