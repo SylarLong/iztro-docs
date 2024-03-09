@@ -3,6 +3,10 @@ outline: deep
 description: "紫微研習社，紫微鬥數基礎知識，紫微鬥數星耀，紫微鬥數有哪些星耀，十四主星，吉星，煞星，四化星"
 ---
 
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 紫微鬥數星耀系統
 
 ## 前言
@@ -12,6 +16,8 @@ description: "紫微研習社，紫微鬥數基礎知識，紫微鬥數星耀，
 117顆星裏面，又分為 [`14主星`](./major-star.md)，[`14輔星`](./minor-star.md)，[`37雜耀`](./adj-star.md)，[`48神煞`](./dec-star.md) 和 [`四化星`](./mutagen.md)，其中四化星雖然只有4顆，但卻是紫微鬥數系統裏最復雜的設定，所以我們單獨列了一章來介紹。本章我們主要介紹除了四化星以外的星耀。
 
 >*本系列文章為原創文章，轉載請標註出處。*
+
+<Donate />
 
 ## 十四主星
 

@@ -2,6 +2,10 @@
 description: "紫微研習社，紫微鬥數，紫微鬥數基礎知識，紫微鬥數入門，三十七雜耀特質。"
 ---
 
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 三十七雜耀
 
 ## 前言
@@ -16,6 +20,7 @@ description: "紫微研習社，紫微鬥數，紫微鬥數基礎知識，紫微
 因為雜耀很多特質都是類似的，所以根據他們的性質進行了歸類，方便大家理解記憶。
 :::
 
+<Donate />
 
 ## 交際類
 

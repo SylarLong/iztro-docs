@@ -2,6 +2,11 @@
 outline: deep
 description: "紫微研習社，紫微鬥數安星訣，紫微鬥數星盤是怎麽生成的，如何排出紫微鬥數命盤"
 ---
+
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 紫微鬥數安星訣
 
 ## 前言
@@ -11,6 +16,8 @@ description: "紫微研習社，紫微鬥數安星訣，紫微鬥數星盤是怎
 :::tip 提示
 本篇內容需要你有一定的基礎知識，如果你是一個萌新，我強烈推薦你先到 [基礎知識掃盲](./basis.md) 那邊進行學習之後再來閱讀本文。
 :::
+
+<Donate />
 
 ## 安星訣
 

@@ -2,6 +2,11 @@
 outline: deep
 description: "紫微研习社，紫微斗数安星诀，紫微斗数星盘是怎么生成的，如何排出紫微斗数命盘"
 ---
+
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 紫微斗数安星诀
 
 ## 前言
@@ -11,6 +16,8 @@ description: "紫微研习社，紫微斗数安星诀，紫微斗数星盘是怎
 :::tip 提示
 本篇内容需要你有一定的基础知识，如果你是一个萌新，我强烈推荐你先到 [基础知识扫盲](./basis.md) 那边进行学习之后再来阅读本文。
 :::
+
+<Donate />
 
 ## 安星诀
 

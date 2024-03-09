@@ -3,6 +3,10 @@ outline: deep
 description: "紫微研习社，紫微斗数，紫微斗数基础知识，紫微斗数入门，紫微斗数科普，什么是紫微斗数"
 ---
 
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 紫微斗数基础
 
 ## 前言
@@ -14,6 +18,8 @@ description: "紫微研习社，紫微斗数，紫微斗数基础知识，紫微
 :::tip 提示
 本站内容以逻辑推理为主，玄学爱好者请酌情阅读。
 :::
+
+<Donate />
 
 ## 紫微斗数能干嘛？
 

@@ -2,6 +2,10 @@
 description: "紫微研习社，紫微斗数，紫微斗数基础知识，紫微斗数入门，三十七杂耀特质。"
 ---
 
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 三十七杂耀
 
 ## 前言
@@ -16,6 +20,7 @@ description: "紫微研习社，紫微斗数，紫微斗数基础知识，紫微
 因为杂耀很多特质都是类似的，所以根据他们的性质进行了归类，方便大家理解记忆。
 :::
 
+<Donate />
 
 ## 交际类
 

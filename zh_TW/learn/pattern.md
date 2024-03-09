@@ -1,3 +1,7 @@
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 紫微鬥數格局
 
 ## 前言
@@ -18,6 +22,8 @@
 如果你發現你的星盤上有不錯的格局，一定要珍惜，發揮好它的效應。而看到不太好的格局的時候，也不要擔心，你不去做一些違背常理的事情，就不用擔心不好格局給你帶來的負面影響。格局給你帶來的，只是一個和別人不一樣的系數，而最終的結果，是需要用你的行動去乘以這個系數來得出結論的。任何格局，都經不起躺平，因為你躺平以後，行動就是0，0乘以任何數還是0。另外，在看格局的時候，也不需要太在乎它存在於哪個宮位內，只要有這個組合，大限又能走到，就一定能享受到它所帶來的益處。
 :::
 
+<Donate />
+
 ## 君臣慶會	
 
 這個格局的成格條件非常嚴格，在命宮三方四正不能有煞忌。總共有3種條件可以形成君臣慶會格局。以下是君臣慶會格的基本形式：
@@ -33,7 +39,7 @@
       </tr>
       <tr>
           <td><div class="pattern"><div>太陽</div><div><code>辰</code> <code>子女</code></div></div></td>
-          <td class="center-palace" rowspan="2" colspan="2">中宮</td>
+          <td class="center-palace" rowspan="2" colspan="2">君臣慶會</td>
           <td><div class="pattern"><div>天府</div><div><code>酉</code> <code>福德</code></div></div></td>
       </tr>
       <tr>
@@ -42,7 +48,7 @@
       </tr>
       <tr>
           <td><div class="pattern"><div>天同 天梁</div><div><code>寅</code> <code>疾厄</code></div></div></td>
-          <td><div class="pattern"><div>天相</div><div><code>丑</code> <code>遷移</code></div></div></td>
+          <td><div class="pattern"><div>天相</div><div><code>醜</code> <code>遷移</code></div></div></td>
           <td><div class="pattern"><div>巨門</div><div><code>子</code> <code>仆役</code></div></div></td>
           <td><div class="pattern"><div>廉貞 貪狼</div><div><code>亥</code> <code>官祿</code></div></div></td>
       </tr>
@@ -59,7 +65,7 @@
       </tr>
       <tr>
           <td><div class="pattern"><div>破軍<br/>文曲</div><div><code>辰</code> <code>遷移</code></div></div></td>
-          <td class="center-palace" rowspan="2" colspan="2">中宮</td>
+          <td class="center-palace" rowspan="2" colspan="2">君臣慶會</td>
           <td><div class="pattern"><div>天機 巨門</div><div><code>酉</code> <code>兄弟</code></div></div></td>
       </tr>
       <tr>
@@ -68,7 +74,7 @@
       </tr>
       <tr>
           <td><div class="pattern"><div>廉貞</div><div><code>寅</code> <code>官祿</code></div></div></td>
-          <td><div class="pattern"><div></div><div><code>丑</code> <code>田宅</code></div></div></td>
+          <td><div class="pattern"><div></div><div><code>醜</code> <code>田宅</code></div></div></td>
           <td><div class="pattern"><div>七殺</div><div><code>子</code> <code>福德</code></div></div></td>
           <td><div class="pattern"><div>天梁</div><div><code>亥</code> <code>父母</code></div></div></td>
       </tr>
@@ -85,7 +91,7 @@
       </tr>
       <tr>
           <td><div class="pattern"><div>天機 天梁</div><div><code>辰</code> <code>仆役</code></div></div></td>
-          <td class="center-palace" rowspan="2" colspan="2">中宮</td>
+          <td class="center-palace" rowspan="2" colspan="2">君臣慶會</td>
           <td><div class="pattern"><div>廉貞 破軍</div><div><code>酉</code> <code>夫妻</code></div></div></td>
       </tr>
       <tr>
@@ -94,7 +100,7 @@
       </tr>
       <tr>
           <td><div class="pattern"><div>太陽 巨門</div><div><code>寅</code> <code>田宅</code></div></div></td>
-          <td><div class="pattern"><div>武曲 貪狼</div><div><code>丑</code> <code>福德</code></div></div></td>
+          <td><div class="pattern"><div>武曲 貪狼</div><div><code>醜</code> <code>福德</code></div></div></td>
           <td><div class="pattern"><div>天同 太陰</div><div><code>子</code> <code>父母</code></div></div></td>
           <td><div class="pattern"><div>天府</div><div><code>亥</code> <code>命宮</code></div></div></td>
       </tr>
@@ -115,7 +121,77 @@
 這個格局要求在命宮三方四正內沒有煞星，雖然要求比較嚴格，但是在大基數下面任然不是一個小數目。所以在古書中的 `材善經邦` 放到現在，應該解讀為比較容易成為企業管理層。這個格局的人一般都會有比較清晰的職業規劃，也有善於發現問題和解決問題的能力，所以就算你不知道這個格局，按照前面學習的星耀特質來解釋，也很容易得出相類似的結論。
 
 ## 紫府同宮
+
+紫府同宮的詳細介紹見 [紫微天府](major-star.md#紫微天府)。這兩顆星只會在寅宮和申宮同宮。
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>巨門</div><div><code>巳</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 天相</div><div><code>午</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>未</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>七殺</div><div><code>申</code> <code>遷移</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>貪狼</div><div><code>辰</code> <code>福德</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">紫府同宮</td>
+      <td><div class="pattern"><div>天同</div><div><code>酉</code> <code>疾厄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太陰</div><div><code>卯</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>武曲</div><div><code>戌</code> <code>財帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>寅</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>天機</div><div><code>醜</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>子</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>太陽</div><div><code>亥</code> <code>子女</code></div></div></td>
+  </tr>
+</table>
+
+以下是《紫微鬥數全書》中對紫府同宮格局的描述：
+
+> 紫府同宮終身福厚。  
+
+福厚不厚其實是不一定的，但是紫府同宮格的人一定無法接受平凡的人生。這個格局對自己人生會有比較明確的目標和要求，從而為之努力。這句古語的意思並非是說躺著就可以衣食無憂，而是當這個格局去追求自己目標的時候，會比一般的人更加的有章法。
+
+當然，這個格局也有需要去克服的地方，那就是需要避免眼高手低的情況。做自己能力匹配的事情，買自己能力匹配的東西，避免為了面子和排場而當了別人的韭菜。隨著自己閱歷和認知的加深，這個格局散發出來的人格魅力是非常強的。
+
 ## 金輿扶駕	
+
+這個也是個非常討喜的格局，其中 `金輿` 是豪車的意思，`駕` 當然就是擺駕回宮的那個駕了。你想想一下，一號人物坐著黃金打造的勞斯萊斯幻影，是個什麽感覺。當然，這只是個比喻，大家聽個樂呵就行了。這個格局在古籍中的描述應該是有問題的，在《紫微鬥數全書》中對金輿扶駕格局的描述是：
+
+> 金輿扶駕 紫微守命前後有日月來夾是也。 
+
+然而，如果你熟悉 [安星訣](setup.md)，這種情況是無法成立的，因為太陽星永遠居於紫微星的 `子女位`。所以，筆者大膽猜測，這個格局原來的表述應該是：`帝星守命前後有日月來夾是也`。因為日月永遠夾不了紫微，同時天府星也是一顆帝星。只有這樣，才能在醜宮和未宮形成這個格局。
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>武曲 破軍</div><div><code>巳</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>太陽</div><div><code>午</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>未</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>天機 太陰</div><div><code>申</code> <code>父母</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同</div><div><code>辰</code> <code>子女</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">金輿扶駕</td>
+      <td><div class="pattern"><div>紫微 貪狼</div><div><code>酉</code> <code>福德</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>卯</code> <code>財務</code></div></div></td>
+      <td><div class="pattern"><div>巨門</div><div><code>戌</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>寅</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 七殺</div><div><code>醜</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>亥</code> <code>官祿</code></div></div></td>
+  </tr>
+</table>
+
+這個格局的特性就是：成長環境好，助力多。從個性特征來看，金輿扶駕格局處事比較有手腕，個性包容寬厚，張弛有度。這些特點集於一身自然會讓這個格局的人充滿人格魅力，有什麽好事兒自然也比較容易想到他們。
+
+同時，這個格局是少數不多不怕煞星的格局。究其原因，其實是因為 [天府星](major-star.md#天府星) 的解厄製煞效果。熟悉我風格的讀者應該都知道，煞星並非是「不好」的代表，在某些時候反而是需要煞星的。
+
 ## 紫府夾命	
 ## 極向離明	
 ## 紫府加會	

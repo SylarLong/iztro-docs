@@ -3,6 +3,10 @@ outline: deep
 description: "紫微研习社，紫微斗数基础知识，紫微斗数星耀，紫微斗数有哪些星耀，十四主星，吉星，煞星，四化星"
 ---
 
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 紫微斗数星耀系统
 
 ## 前言
@@ -12,6 +16,8 @@ description: "紫微研习社，紫微斗数基础知识，紫微斗数星耀，
 117颗星里面，又分为 [`14主星`](./major-star.md)，[`14辅星`](./minor-star.md)，[`37杂耀`](./adj-star.md)，[`48神煞`](./dec-star.md) 和 [`四化星`](./mutagen.md)，其中四化星虽然只有4颗，但却是紫微斗数系统里最复杂的设定，所以我们单独列了一章来介绍。本章我们主要介绍除了四化星以外的星耀。
 
 >*本系列文章为原创文章，转载请标注出处。*
+
+<Donate />
 
 ## 十四主星
 

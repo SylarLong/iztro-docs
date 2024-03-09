@@ -3,6 +3,10 @@ outline: deep
 description: "紫微研习社，紫微斗数，紫微斗数基础知识，紫微斗数入门，六吉星，六煞星，禄存，天马。"
 ---
 
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 十四辅星
 
 ## 前言
@@ -18,6 +22,8 @@ description: "紫微研习社，紫微斗数，紫微斗数基础知识，紫微
 :::danger 注意
 十四辅星中的部分星耀会产生 [四化](./mutagen.md)，星耀的特质会受到四化星的影响，比如说文昌星擅长文学，记忆力强的这些特点在他 [化忌](./mutagen.md#化忌) 的时候，反而会表现出不如平均水平的特点。
 :::
+
+<Donate />
 
 ## 六吉星
 

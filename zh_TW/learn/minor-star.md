@@ -3,6 +3,10 @@ outline: deep
 description: "紫微研習社，紫微鬥數，紫微鬥數基礎知識，紫微鬥數入門，六吉星，六煞星，祿存，天馬。"
 ---
 
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 十四輔星
 
 ## 前言
@@ -18,6 +22,8 @@ description: "紫微研習社，紫微鬥數，紫微鬥數基礎知識，紫微
 :::danger 註意
 十四輔星中的部分星耀會產生 [四化](./mutagen.md)，星耀的特質會受到四化星的影響，比如說文昌星擅長文學，記憶力強的這些特點在他 [化忌](./mutagen.md#化忌) 的時候，反而會表現出不如平均水平的特點。
 :::
+
+<Donate />
 
 ## 六吉星
 

@@ -3,6 +3,10 @@ outline: deep
 description: "紫微研習社，紫微鬥數，紫微鬥數基礎知識，紫微鬥數入門，紫微鬥數科普，什麽是紫微鬥數"
 ---
 
+<script setup>
+import Donate from '/components/donate.vue'
+</script>
+
 # 紫微鬥數基礎
 
 ## 前言
@@ -14,6 +18,8 @@ description: "紫微研習社，紫微鬥數，紫微鬥數基礎知識，紫微
 :::tip 提示
 本站內容以邏輯推理為主，玄學愛好者請酌情閱讀。
 :::
+
+<Donate />
 
 ## 紫微鬥數能幹嘛？
 
