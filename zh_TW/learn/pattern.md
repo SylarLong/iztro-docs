@@ -193,9 +193,114 @@ import Donate from '/components/donate.vue'
 同時，這個格局是少數不多不怕煞星的格局。究其原因，其實是因為 [天府星](major-star.md#天府星) 的解厄製煞效果。熟悉我風格的讀者應該都知道，煞星並非是「不好」的代表，在某些時候反而是需要煞星的。
 
 ## 紫府夾命	
+
+這個格局的成格條件是命宮是天機太陰，其實命宮已經形成了 [機月同梁格](#機月同梁)。本節只分享紫府夾命格的一些特質。這個格局最大的幫助就是提供一個良好的成長環境，在《紫微鬥數全書》中對它的描述是：
+
+>紫府夾命為貴格
+
+此格局只會在寅宮和申宮形成，此處只列出在寅宮的情況，在申宮是寅宮的鏡像布局。
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天相</div><div><code>巳</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>午</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 七殺</div><div><code>未</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>申</code> <code>遷移</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>巨門</div><div><code>辰</code> <code>福德</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">紫府夾命</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>父母</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 貪狼</div><div><code>卯</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>天同</div><div><code>戌</code> <code>財帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天機 太陰</div><div><code>寅</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>醜</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>太陽</div><div><code>子</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>武曲 破軍</div><div><code>亥</code> <code>子女</code></div></div></td>
+  </tr>
+</table>
+
+之所以將這個格局定為「貴」格，是因為這個格局是比較容易收到上司提攜的，讀者也可以理解為比較容易有靠山。但是，由於本格是機月同梁，所以個性是極度風險厭惡型的個性，喜歡在自己熟悉的環境裏呆著，不喜歡挑戰自己，可以在一個崗位上一直幹到退休。所以也比較適合進入公家機關工作，但是總所周知，現如今想進入相關企業是多麽的難！這就要求沒有進入公家機關的那部分朋友需要創新求變，挑戰變化和未知。
+
 ## 極向離明	
-## 紫府加會	
+
+當紫微星在午宮並且三方四正無煞的時候，就形成了極向離明格。所謂「極」，指的就是紫微星，而午宮是八卦中 `離卦` 所在的位置。在《紫微鬥數全書》中對極向離明格的描述是這樣的：
+
+>紫微居午無殺湊位至三公  
+>紫微居午無刑忌甲丁己命至公卿 加刑忌平常刑乃擎羊也。  
+>紫微居子午科權祿照最為奇 科權祿三方照是也為仰面朝鬥格。 
+
+極向離明格在星盤中的布局是這樣的：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天機</div><div><code>巳</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>紫微</div><div><code>午</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>未</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>申</code> <code>福德</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>七殺</div><div><code>辰</code> <code>夫妻</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">極向離明</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太陽 天梁</div><div><code>卯</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 天府</div><div><code>戌</code> <code>官祿</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>財帛</code></div></div></td>
+      <td><div class="pattern"><div>天同 巨門</div><div><code>醜</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>子</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>仆役</code></div></div></td>
+  </tr>
+</table>
+
+午宮被認為是一個「過旺」的宮位，通常比較強勢的一些星耀在午宮的時候會表現出過於強勢的特征，比如說午宮的太陽星，會過於鋒芒畢露，午宮的天梁，會過於的清高。在午宮的紫微，當然也會表現出過於霸道的感覺，但是由於個人能力也比較容易突出，所以那種規劃性和管理能力往往會讓紫微的能力得到充分發揮。
+
+那麽，為什麽要強調三方無煞呢？因為煞星本來就具有「過於...」的特性。霸道總裁範兒固然是有魄力的，但是只霸道，不總裁就有點討人嫌了。
+
 ## 極居卯酉	
+
+這個格局說的其實就是 [紫微星](major-star.md#紫微星) 和 [貪狼星](major-star.md#貪狼星) 在 `卯宮` 或者 `酉宮` 同宮。所以關於紫貪的一些特性，可以參考 [紫微貪狼](major-star.md#紫微貪狼)。在《紫微鬥數全書》中是這樣描述這個格局的：
+
+>極居卯酉多為脫俗僧人  
+>極居卯酉劫空臨，為僧為道福興隆，樂享山林有師號，福壽雙全到古齡。
+
+極向離明格在星盤中的布局是這樣的：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天相</div><div><code>巳</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>午</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 七殺</div><div><code>未</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>申</code> <code>仆役</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>巨門</div><div><code>辰</code> <code>父母</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">極居卯酉</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>遷移</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 貪狼</div><div><code>卯</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>天同</div><div><code>戌</code> <code>疾厄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天機 太陰</div><div><code>寅</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>醜</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>太陽</div><div><code>子</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>武曲 破軍</div><div><code>亥</code> <code>財帛</code></div></div></td>
+  </tr>
+</table>
+
+我們從古籍中可以發現，這個格局對神秘事物是充滿好奇心和探索欲望的。而在成長期，如果這種探索欲望沒有得到滿足，就會變得比較叛逆和貪玩，很容易沈迷在自己喜歡的事情上面。隨著年齡和認知的提高，接觸到的人事物越來越多，就比較容易激發他們比較高層次的思考，比如生命的意義，人生的態度之類的。
+
+在探尋這些比較深層次的題材時，就很容易產生兩種情況，第一種就是該滿足的欲望都滿足了，該玩的也玩過了，看透了人生百態，產生一種看破紅塵的感覺。另一種就是欲望無法得到滿足，在長期的求而不得中而產生了一種對現實的無奈，進而而產生了一種逃避的心態。
+
 ## 機月同梁
 ## 善蔭朝綱	
 ## 巨機同臨	

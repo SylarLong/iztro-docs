@@ -193,9 +193,114 @@ import Donate from '/components/donate.vue'
 同时，这个格局是少数不多不怕煞星的格局。究其原因，其实是因为 [天府星](major-star.md#天府星) 的解厄制煞效果。熟悉我风格的读者应该都知道，煞星并非是“不好”的代表，在某些时候反而是需要煞星的。
 
 ## 紫府夹命	
+
+这个格局的成格条件是命宫是天机太阴，其实命宫已经形成了 [机月同梁格](#机月同梁)。本节只分享紫府夹命格的一些特质。这个格局最大的帮助就是提供一个良好的成长环境，在《紫微斗数全书》中对它的描述是：
+
+>紫府夹命为贵格
+
+此格局只会在寅宫和申宫形成，此处只列出在寅宫的情况，在申宫是寅宫的镜像布局。
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天相</div><div><code>巳</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>午</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 七杀</div><div><code>未</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>申</code> <code>迁移</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>巨门</div><div><code>辰</code> <code>福德</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">紫府夹命</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>父母</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 贪狼</div><div><code>卯</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>天同</div><div><code>戌</code> <code>财帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天机 太阴</div><div><code>寅</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>丑</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>太阳</div><div><code>子</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>武曲 破军</div><div><code>亥</code> <code>子女</code></div></div></td>
+  </tr>
+</table>
+
+之所以将这个格局定为“贵”格，是因为这个格局是比较容易收到上司提携的，读者也可以理解为比较容易有靠山。但是，由于本格是机月同梁，所以个性是极度风险厌恶型的个性，喜欢在自己熟悉的环境里呆着，不喜欢挑战自己，可以在一个岗位上一直干到退休。所以也比较适合进入公家机关工作，但是总所周知，现如今想进入相关企业是多么的难！这就要求没有进入公家机关的那部分朋友需要创新求变，挑战变化和未知。
+
 ## 极向离明	
-## 紫府加会	
+
+当紫微星在午宫并且三方四正无煞的时候，就形成了极向离明格。所谓“极”，指的就是 [紫微星](major-star.md#紫微星)，而午宫是八卦中 `离卦` 所在的位置。在《紫微斗数全书》中对极向离明格的描述是这样的：
+
+>紫微居午无杀凑位至三公  
+>紫微居午无刑忌甲丁己命至公卿 加刑忌平常刑乃擎羊也。  
+>紫微居子午科权禄照最为奇 科权禄三方照是也为仰面朝斗格。 
+
+极向离明格在星盘中的布局是这样的：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天机</div><div><code>巳</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>紫微</div><div><code>午</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>未</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>破军</div><div><code>申</code> <code>福德</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>七杀</div><div><code>辰</code> <code>夫妻</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">极向离明</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太阳 天梁</div><div><code>卯</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 天府</div><div><code>戌</code> <code>官禄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>财帛</code></div></div></td>
+      <td><div class="pattern"><div>天同 巨门</div><div><code>丑</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>贪狼</div><div><code>子</code> <code>迁移</code></div></div></td>
+      <td><div class="pattern"><div>太阴</div><div><code>亥</code> <code>仆役</code></div></div></td>
+  </tr>
+</table>
+
+午宫被认为是一个“过旺”的宫位，通常比较强势的一些星耀在午宫的时候会表现出过于强势的特征，比如说午宫的 [太阳星](major-star.md#太阳星)，会过于锋芒毕露，午宫的 [天梁星](major-star.md#天梁星)，会过于的清高。在午宫的紫微，当然也会表现出过于霸道的感觉，但是由于个人能力也比较容易突出，所以那种规划性和管理能力往往会让紫微的能力得到充分发挥。
+
+那么，为什么要强调三方无煞呢？因为煞星本来就具有“过于...”的特性。霸道总裁范儿固然是有魄力的，但是只霸道，不总裁就有点讨人嫌了。
+
 ## 极居卯酉	
+
+这个格局说的其实就是 [紫微星](major-star.md#紫微星) 和 [贪狼星](major-star.md#贪狼星) 在 `卯宫` 或者 `酉宫` 同宫。所以关于紫贪的一些特性，可以参考 [紫微贪狼](major-star.md#紫微贪狼)。在《紫微斗数全书》中是这样描述这个格局的：
+
+>极居卯酉多为脱俗僧人  
+>极居卯酉劫空临，为僧为道福兴隆，乐享山林有师号，福寿双全到古龄。
+
+极向离明格在星盘中的布局是这样的：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天相</div><div><code>巳</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>午</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 七杀</div><div><code>未</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>申</code> <code>仆役</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>巨门</div><div><code>辰</code> <code>父母</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">极居卯酉</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>迁移</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 贪狼</div><div><code>卯</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>天同</div><div><code>戌</code> <code>疾厄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天机 太阴</div><div><code>寅</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>丑</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>太阳</div><div><code>子</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>武曲 破军</div><div><code>亥</code> <code>财帛</code></div></div></td>
+  </tr>
+</table>
+
+我们从古籍中可以发现，这个格局对神秘事物是充满好奇心和探索欲望的。而在成长期，如果这种探索欲望没有得到满足，就会变得比较叛逆和贪玩，很容易沉迷在自己喜欢的事情上面。随着年龄和认知的提高，接触到的人事物越来越多，就比较容易激发他们比较高层次的思考，比如生命的意义，人生的态度之类的。
+
+在探寻这些比较深层次的题材时，就很容易产生两种情况，第一种就是该满足的欲望都满足了，该玩的也玩过了，看透了人生百态，产生一种看破红尘的感觉。另一种就是欲望无法得到满足，在长期的求而不得中而产生了一种对现实的无奈，进而而产生了一种逃避的心态。
+
 ## 机月同梁
 ## 善荫朝纲	
 ## 巨机同临	
