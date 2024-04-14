@@ -194,7 +194,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ### `Brightness`
 
-定义了星耀的 `亮度`
+定义了星曜的 `亮度`
 
 :::tabs
 == 简体中文
@@ -232,7 +232,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ### `StarName`
 
-定义了紫微斗数中 `星耀` 的名称，包括 `流耀`
+定义了紫微斗数中 `星曜` 的名称，包括 `流耀`
 
 :::tabs
 == 简体中文
@@ -954,11 +954,11 @@ export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
 export type Scope = "origin" | "decadal" | "yearly";
 ```
 
-定义了星耀的 `作用范围`，用于区分本命星耀和流耀：
+定义了星曜的 `作用范围`，用于区分本命星曜和流耀：
 
-- `origin`：本命星耀
-- `decadal`：大限星耀
-- `yearly`：流年星耀
+- `origin`：本命星曜
+- `decadal`：大限星曜
+- `yearly`：流年星曜
 
 ---
 
@@ -976,7 +976,7 @@ export type StarType =
   | "tianma";
 ```
 
-定义了星耀 `类型`，其中 `桃花星` 和 `解神星`（包含 `年解`）虽然是杂耀，但是在解盘中有着特殊的意义，所以单独归类，`禄存` 和 `天马` 二辅星也是比较特殊，所以单独归类：
+定义了星曜 `类型`，其中 `桃花星` 和 `解神星`（包含 `年解`）虽然是杂耀，但是在解盘中有着特殊的意义，所以单独归类，`禄存` 和 `天马` 二辅星也是比较特殊，所以单独归类：
 
 - `major`：主星
 - `soft`：吉星
@@ -987,7 +987,7 @@ export type StarType =
 - `lucun`：禄存
 - `tianma`：天马
 
-## 星耀
+## 星曜
 
 ### `Star`
 
@@ -1001,14 +1001,14 @@ export type Star = {
 };
 ```
 
-定义了 `星耀` 对象
+定义了 `星曜` 对象
 
 | 属性         | 解释     | 类型                                             |
 | ------------ | -------- | ------------------------------------------------ |
-| `name`       | 星耀名字 | [`StarName`](#starname)     |
-| `type`       | 星耀类型 | [`StarType`](#startype)     |
+| `name`       | 星曜名字 | [`StarName`](#starname)     |
+| `type`       | 星曜类型 | [`StarType`](#startype)     |
 | `scope`      | 作用范围 | [`Scope`](#scope)           |
-| `brightness` | 星耀亮度 | [`Brightness`](#brightness) |
+| `brightness` | 星曜亮度 | [`Brightness`](#brightness) |
 | `mutagen`    | 四化     | [`Mutagen`](#mutagen)       |
 
 ## 宫位
@@ -1256,8 +1256,15 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 type Config = {
   mutagens?: ConfigMutagens;
   brightness?: ConfigBrightness;
+  yearDivide?: 'normal' | 'exact';
 };
 ```
+
+其中当 `yearDivide` 为 `normal` 时，会以正月初一为分界，为 `exact` 时会以立春为分界。
+
+:::warning 注意
+该配置只会影响本命盘的计算，运限相关的年分界均以立春为界。
+:::
 
 ### `Plugin`
 

@@ -79,7 +79,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 <Badge type="tip" text="implements" /> `IFuncionalPalace` <Badge type="tip" text="extends" /> [`Palace`](../type-definition.md#palace)
 
-该类所有属性都是继承自 [Palace](../type-definition.md#palace)，然后在接口内定义了一些方法用于对星耀进行分析。
+该类所有属性都是继承自 [Palace](../type-definition.md#palace)，然后在接口内定义了一些方法用于对星曜进行分析。
 
 - 接口定义
 
@@ -112,7 +112,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判断某个宫位内是否有传入的 `星耀`，要 `所有` 星耀 `都在` 宫位内才会返回 `true`
+    判断某个宫位内是否有传入的 `星曜`，要 `所有` 星曜 `都在` 宫位内才会返回 `true`
 
   - 定义
 
@@ -124,7 +124,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星耀名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂耀 |
 
   - 返回值
 
@@ -148,7 +148,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判断某个宫位内是否没有传入的 `星耀`，要所有星耀 `都不在` 宫位内才会返回 `true`
+    判断某个宫位内是否没有传入的 `星曜`，要所有星曜 `都不在` 宫位内才会返回 `true`
 
   - 定义
 
@@ -160,7 +160,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星耀名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂耀 |
 
   - 返回值
 
@@ -184,7 +184,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判断某个宫位内是否有传入 `星耀` 的其中一个，只要 `命中一个` 就会返回 `true`
+    判断某个宫位内是否有传入 `星曜` 的其中一个，只要 `命中一个` 就会返回 `true`
 
   - 定义
 
@@ -196,7 +196,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星耀名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂耀 |
 
   - 返回值
 
@@ -290,7 +290,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判断一个宫位是否为空宫（没有主星），有些派别在宫位内有某些星耀的情况下，是不会将该宫位判断为空宫的。所以加入一个参数来传入星耀。
+    判断一个宫位是否为空宫（没有主星），有些派别在宫位内有某些星曜的情况下，是不会将该宫位判断为空宫的。所以加入一个参数来传入星曜。
 
   - 定义
 
@@ -302,7 +302,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | excludeStars | [`StarName[]`](../type-definition.md#starname) | `false`   | -      | 星耀名称数组|
+    | excludeStars | [`StarName[]`](../type-definition.md#starname) | `false`   | -      | 星曜名称数组|
 
   - 返回值
 
@@ -495,7 +495,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 <Badge type="tip" text="implements" /> `IFunctionalSurpalaces` <Badge type="tip" text="extends" /> [`SurroundedPalaces`](../type-definition.md#surroundedpalaces)
 
-该类所有属性都是继承自 [SurroundedPalaces](../type-definition.md#surroundedpalaces)，然后在接口内定义了一些方法用于对星耀进行分析。
+该类所有属性都是继承自 [SurroundedPalaces](../type-definition.md#surroundedpalaces)，然后在接口内定义了一些方法用于对星曜进行分析。
 
 - 接口定义
 
@@ -519,7 +519,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判断某个宫三方四正内是否有传入的 `星耀`，要 `所有` 星耀 `都在` 三方四正内才会返回 `true`
+    判断某个宫三方四正内是否有传入的 `星曜`，要 `所有` 星曜 `都在` 三方四正内才会返回 `true`
 
   - 定义
 
@@ -531,7 +531,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星耀名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂耀 |
 
   - 返回值
 
@@ -555,7 +555,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判断某个宫三方四正内是否没有传入的 `星耀`，要所有星耀 `都不在` 三方四正内才会返回 `true`
+    判断某个宫三方四正内是否没有传入的 `星曜`，要所有星曜 `都不在` 三方四正内才会返回 `true`
 
   - 定义
 
@@ -567,7 +567,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星耀名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂耀 |
 
   - 返回值
 

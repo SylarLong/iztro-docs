@@ -195,7 +195,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ### `Brightness`
 
-定義了星耀的 `亮度`
+定義了星曜的 `亮度`
 
 :::tabs
 == 簡體中文
@@ -233,7 +233,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ### `StarName`
 
-定義了紫微鬥數中 `星耀` 的名稱，包括 `流耀`
+定義了紫微鬥數中 `星曜` 的名稱，包括 `流耀`
 
 :::tabs
 == 簡體中文
@@ -955,11 +955,11 @@ export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
 export type Scope = "origin" | "decadal" | "yearly";
 ```
 
-定義了星耀的 `作用範圍`，用於區分本命星耀和流耀：
+定義了星曜的 `作用範圍`，用於區分本命星曜和流耀：
 
-- `origin`：本命星耀
-- `decadal`：大限星耀
-- `yearly`：流年星耀
+- `origin`：本命星曜
+- `decadal`：大限星曜
+- `yearly`：流年星曜
 
 ---
 
@@ -977,7 +977,7 @@ export type StarType =
   | "tianma";
 ```
 
-定義了星耀 `類型`，其中 `桃花星` 和 `解神星`（包含 `年解`）雖然是雜耀，但是在解盤中有著特殊的意義，所以單獨歸類，`祿存` 和 `天馬` 二輔星也是比較特殊，所以單獨歸類：
+定義了星曜 `類型`，其中 `桃花星` 和 `解神星`（包含 `年解`）雖然是雜耀，但是在解盤中有著特殊的意義，所以單獨歸類，`祿存` 和 `天馬` 二輔星也是比較特殊，所以單獨歸類：
 
 - `major`：主星
 - `soft`：吉星
@@ -988,7 +988,7 @@ export type StarType =
 - `lucun`：祿存
 - `tianma`：天馬
 
-## 星耀
+## 星曜
 
 ### `Star`
 
@@ -1002,14 +1002,14 @@ export type Star = {
 };
 ```
 
-定義了 `星耀` 對象
+定義了 `星曜` 對象
 
 | 屬性         | 解釋     | 類型                                             |
 | ------------ | -------- | ------------------------------------------------ |
-| `name`       | 星耀名字 | [`StarName`](./type-definition.html#starname)     |
-| `type`       | 星耀類型 | [`StarType`](./type-definition.html#startype)     |
+| `name`       | 星曜名字 | [`StarName`](./type-definition.html#starname)     |
+| `type`       | 星曜類型 | [`StarType`](./type-definition.html#startype)     |
 | `scope`      | 作用範圍 | [`Scope`](./type-definition.html#scope)           |
-| `brightness` | 星耀亮度 | [`Brightness`](./type-definition.html#brightness) |
+| `brightness` | 星曜亮度 | [`Brightness`](./type-definition.html#brightness) |
 | `mutagen`    | 四化     | [`Mutagen`](./type-definition.html#mutagen)       |
 
 ## 宮位
@@ -1226,3 +1226,51 @@ export type Astrolabe = {
 | `body`                      | 身主                               | [`StarName`](./type-definition.html#starname)                                |
 | `fiveElementsClass`         | 五行局                             | [`FiveElementsClassName`](./type-definition.html#fiveelementsclassName)      |
 | `palaces`                   | 十二宮數據                         | [`IFunctionalPalace[]`](./posts/palace.md#functionalpalace)                 |
+
+## 配置和插件 <Badge type="warning" text="^2.3.0" />
+
+### `ConfigMutagens`
+
+定義了全局配置中的 `四化` 參數。
+
+```ts
+type ConfigMutagens = Partial<Record<HeavenlyStemName, StarName[]>>;
+```
+
+### `ConfigBrightness`
+
+定義了全局配置中的 `亮度` 參數。
+
+```ts
+type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
+```
+
+### `Config`
+
+定義了全局參數對象。
+
+```ts
+type Config = {
+  mutagens?: ConfigMutagens;
+  brightness?: ConfigBrightness;
+  yearDivide?: 'normal' | 'exact';
+};
+```
+
+其中當 `yearDivide` 為 `normal` 時，會以正月初一為分界，為 `exact` 時會以立春為分界。
+
+:::warning 註意
+該配置只會影響本命盤的計算，運限相關的年分界均以立春為界。
+:::
+
+### `Plugin`
+
+定義了插件類型。實際上，插件就是一個函數。
+
+```ts
+type Plugin = () => void;
+```
+
+:::tip 提示
+插件方法會隱式的接受一個 `this` 參數，該參數類型為 `T extends FunctionalAstrolabe`。詳細創建插件方法見 [插件](./posts/config-n-plugin.md#插件)
+:::

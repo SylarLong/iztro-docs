@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import abbr from "markdown-it-abbr";
 
-const version = "v2.3.0";
+const version = "v2.4.1";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -64,7 +64,7 @@ export default defineConfig({
               { text: "类型定义", link: "/type-definition.md" },
               { text: "星盘", link: "/posts/astrolabe.md" },
               { text: "宫位", link: "/posts/palace.md" },
-              { text: "星耀", link: "/posts/star.md" },
+              { text: "星曜", link: "/posts/star.md" },
               { text: "运限", link: "/posts/horoscope.md" },
               { text: "配置和插件", link: "/posts/config-n-plugin.md" },
             ],
@@ -76,7 +76,7 @@ export default defineConfig({
               { text: "星盘介绍", link: "/learn/astrolabe.md" },
               { text: "宫位知识", link: "/learn/palace.md" },
               {
-                text: "星耀知识",
+                text: "星曜知识",
                 link: "/learn/star.md",
                 items: [
                   { text: "14主星", link: "/learn/major-star.md" },
@@ -149,7 +149,7 @@ export default defineConfig({
               { text: "類型定義", link: "/zh_TW/type-definition.md" },
               { text: "星盤", link: "/zh_TW/posts/astrolabe.md" },
               { text: "宮位", link: "/zh_TW/posts/palace.md" },
-              { text: "星耀", link: "/zh_TW/posts/star.md" },
+              { text: "星曜", link: "/zh_TW/posts/star.md" },
               { text: "運限", link: "/zh_TW/posts/horoscope.md" },
               { text: "配置和插件", link: "/zh_TW/posts/config-n-plugin.md" },
             ],
@@ -161,7 +161,7 @@ export default defineConfig({
               { text: "星盤介紹", link: "/zh_TW/learn/astrolabe.md" },
               { text: "宮位知識", link: "/zh_TW/learn/palace.md" },
               {
-                text: "星耀知識",
+                text: "星曜知識",
                 link: "/zh_TW/learn/star.md",
                 items: [
                   { text: "14主星", link: "/zh_TW/learn/major-star.md" },

@@ -33,7 +33,7 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
 
 <Badge type="tip" text="implements" /> `IFunctionalHoroscope` <Badge type="tip" text="extends" /> [`Horoscope`](../type-definition.md#horoscope)
 
-该类所有属性都是继承自 [Horoscope](../type-definition.md#horoscope)，然后在接口内定义了一些方法用于对星耀进行分析。
+该类所有属性都是继承自 [Horoscope](../type-definition.md#horoscope)，然后在接口内定义了一些方法用于对星曜进行分析。
 
 - 接口定义
 
