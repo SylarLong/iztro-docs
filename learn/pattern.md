@@ -184,7 +184,7 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div></div><div><code>寅</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>廉贞 七杀</div><div><code>丑</code> <code>迁移</code></div></div></td>
       <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>仆役</code></div></div></td>
-      <td><div class="pattern"><div>天梁</div><div><code>亥</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>亥</code> <code>官禄</code></div></div></td>
   </tr>
 </table>
 
@@ -406,10 +406,173 @@ import Donate from '/components/donate.vue'
 详细信息参考 [太阳天梁](major-star.md#太阳天梁)，此处不在赘述。
 
 ## 日月并明	
+
+当太阳星和太阴星都同时处于庙或者旺的亮度时，就构成了日月并明格，古人对太阳星和太阴星都有着比较深的执念，看到晴空万里或者月明星稀就会觉得是吉兆。而看到日食或者月食就会觉得是凶兆。所以古人对这个格局的评价比较的高的，被定为了富贵格局之一。
+
+在《紫微斗数全书》中对日月并明的描述是这样的：
+
+>日月并明 佐九重于尧殿
+
+这句话的断句应该是 `佐九` `重于` `尧殿`。其中 `佐九` 来自于中医药的组方原则，代表着一种剂量。根据黄帝内经《素问·至真要大论》岐伯回答黄帝药物制剂的论述：“君一臣二，制之小也；君二臣三佐五，制之中也；君一臣三佐九，制之大也”。这里的佐九，表示大剂量。`重于尧殿` 指的是比皇帝的宫殿更加的重要。可以说偏爱之情溢于言表。
+
+但是实际上，光凭借一个日月并明格局就想躺赢，在当今社会是几乎不可能的。这个格局带来的效果，更多的是规律的生活，阳光的心态和积极的处事态度。以下是日月并明的基本布局：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>太阳</div><div><code>巳</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>破军</div><div><code>午</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>天机</div><div><code>未</code> <code>迁移</code></div></div></td>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>疾厄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>田宅</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月并明</td>
+      <td><div class="pattern"><div>太阴</div><div><code>酉</code> <code>财帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>贪狼</div><div><code>戌</code> <code>子女</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>七杀</div><div><code>寅</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>丑</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 天相</div><div><code>子</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>巨门</div><div><code>亥</code> <code>夫妻</code></div></div></td>
+  </tr>
+</table>
+
+除了上面的格局，理论上讲任何太阳星和太阴星庙旺出现在命宫三方四正的，都应该算日月并明格。但是不同的组合，其实个性和为人处事上是差别很大的，所以并不能够以一个格局名字定高低。而且，按照传统的成格条件，当然是煞星越少越好，吉星越多越好，相信绝大多数的星耀组合，在这种情况下都不会太差。比如如下布局，也是日月并明格：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>太阳</div><div><code>巳</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>破军</div><div><code>午</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>天机</div><div><code>未</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>兄弟</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月并明</td>
+      <td><div class="pattern"><div>太阴</div><div><code>酉</code> <code>官禄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>贪狼</div><div><code>戌</code> <code>仆役</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>七杀</div><div><code>寅</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>丑</code> <code>财帛</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 天相</div><div><code>子</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>巨门</div><div><code>亥</code> <code>迁移</code></div></div></td>
+  </tr>
+</table>
+
 ## 日月反背	
+
+当太阳星和太阴星均落陷的时候，就叫做日月反背，它刚好和日月并明相反。很多资料包括《紫微斗数全书》里都记载了 `日月最嫌反背` 的说法，但是却没有解释为什么。在传统文化思想中，所有辛苦的、奔波的，都是不好的。最好能够饭来张口，衣来伸手，生下来就继承家业。
+
+很多老师在解释这个格局的时候对它的评价也非常的差，甚至还有不少侮辱人格的措辞，这明显是不对的。日月反背固然有辛劳奔波的意思在里面，但是如果劳有所得，又何尝不是一件好事呢？和日月并明的规律生活相反，日月反背通常容易出现昼夜颠倒或者披星戴月的工作模式。
+
+在个性上面，日月反背的格局会比日月并明的低调、内敛很多。也正因为这种特性，日月反背的人常常会因为不太会表现自己而很少收到上司的提拔，领导的青睐。然而，这个格局心思是非常细腻的，自我防护意识也比较强。有非常多的名人都是日月反背的格局，甚至也有日月反背的人通过自己的努力爬上过金字塔的顶端。
+
+和日月并明一样，只要太阳星和太阴星在命宫三方四正落陷，就构成日月反背格局：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>巨门</div><div><code>巳</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 天相</div><div><code>午</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>未</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>七杀</div><div><code>申</code> <code>父母</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>贪狼</div><div><code>辰</code> <code>子女</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月并明</td>
+      <td><div class="pattern"><div>天同</div><div><code>酉</code> <code>财帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太阴</div><div><code>卯</code> <code>财帛</code></div></div></td>
+      <td><div class="pattern"><div>武曲</div><div><code>戌</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>寅</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>天机</div><div><code>丑</code> <code>迁移</code></div></div></td>
+      <td><div class="pattern"><div>破军</div><div><code>子</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>太阳</div><div><code>亥</code> <code>官禄</code></div></div></td>
+  </tr>
+</table>
+
 ## 日月照璧	
+
+当太阳星和太阴星同时出现在田宅宫，并且田宅宫居 `土` 的宫位（四墓库）时，就形成了日月照壁格。这个格局在古书中也被列为了一个大富格局。但是大家不要开心得太早，容我细说这个所谓的大富格局。
+
+>日月照璧 日月临田宅宫是也，喜居墓库。
+
+日月只会在 `丑宫` 和 `未宫` 这两个宫位同宫，而满足日月同宫，并且是田宅宫的情况下，命宫必然是处于天罗地网位的 [破军星](major-star.md#破军星)。天罗地网位有个特殊的buff，那就是天罗位缺天时（外部环境），地网位缺地利（内在因素）。
+
+破军星确实有冲破天罗地网的那种魄力，然而在克服重重困难以后，是否一定能取得好的结果，这是说不准的。当然，破军星这种敢于破斧成舟，放手一博的个性，加上环境和内心的磨砺，确实是更加容易比其他星耀更加容易有大收获。但是这是存在幸存者偏差的，大部分人的努力，可能不一定能换回来一个好的结果。
+
+以下是日月照壁的星耀分布，在镜像位置上还有一个，此处就不列出来了：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天梁</div><div><code>巳</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>七杀</div><div><code>午</code> <code>财帛</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>未</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>廉贞</div><div><code>申</code> <code>夫妻</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 天相</div><div><code>辰</code> <code>迁移</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月照璧</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>兄弟</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天机 巨门</div><div><code>卯</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>破军</div><div><code>戌</code> <code>命宫</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>贪狼</div><div><code>寅</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>太阳 太阴</div><div><code>丑</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天同</div><div><code>亥</code> <code>父母</code></div></div></td>
+  </tr>
+</table>
+
 ## 金灿光辉	
-## 日丽中天	
+
+又叫 `日丽中天` 格。它指的是太阳星在午宫，当然，少不了各种吉星和三吉化。太阳升到午宫的时候，是它最耀眼，光芒最强的时刻。此时的太阳星颇有些霸道总裁的风范。它是紫微斗数里比较有名的富贵格局。在《紫微斗数全书》中是这样描述这个格局的：
+
+>太阳居午，谓之日丽中天，有专权之贵，敌国之富。  
+>金灿光辉 太阳单守，命在午宫是也。  
+>太阳居午庚辛丁己人富贵双全  
+
+这个格局对权利的需求比财富高，所以才在古书上被定为贵格。然而，追求权利，强势，霸道并不一定能和成功挂钩，但是反过来说成功的人怎么做大家都觉得有他的魅力。这个格局在三合逢煞忌的时候为破格，反而会容易因为德不配位或者过于的强势而不得人心。金灿光辉格的布局是这个样子的：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>武曲 破军</div><div><code>巳</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>太阳</div><div><code>午</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>未</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>天机 太阴</div><div><code>申</code> <code>福德</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同</div><div><code>辰</code> <code>夫妻</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">金灿光辉</td>
+      <td><div class="pattern"><div>紫微 贪狼</div><div><code>酉</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>卯</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>巨门</div><div><code>戌</code> <code>官禄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>寅</code> <code>财帛</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 七杀</div><div><code>丑</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>迁移</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>亥</code> <code>仆役</code></div></div></td>
+  </tr>
+</table>
+
+笔者多次建议大家不要以格局来定高低，任何星耀，任何组合，任何格局都是有两面性的，我们应该站在中立的角度去分析它们的特点。就比如同样是交通工具，车、船、飞机、火车各有各的特点，我们不能说谁比谁要优越。
+
 ## 日月藏辉	
 ## 丹墀桂墀	
 ## 日月夹命	

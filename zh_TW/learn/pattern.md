@@ -48,7 +48,7 @@ import Donate from '/components/donate.vue'
       </tr>
       <tr>
           <td><div class="pattern"><div>天同 天梁</div><div><code>寅</code> <code>疾厄</code></div></div></td>
-          <td><div class="pattern"><div>天相</div><div><code>醜</code> <code>遷移</code></div></div></td>
+          <td><div class="pattern"><div>天相</div><div><code>丑</code> <code>遷移</code></div></div></td>
           <td><div class="pattern"><div>巨門</div><div><code>子</code> <code>仆役</code></div></div></td>
           <td><div class="pattern"><div>廉貞 貪狼</div><div><code>亥</code> <code>官祿</code></div></div></td>
       </tr>
@@ -74,7 +74,7 @@ import Donate from '/components/donate.vue'
       </tr>
       <tr>
           <td><div class="pattern"><div>廉貞</div><div><code>寅</code> <code>官祿</code></div></div></td>
-          <td><div class="pattern"><div></div><div><code>醜</code> <code>田宅</code></div></div></td>
+          <td><div class="pattern"><div></div><div><code>丑</code> <code>田宅</code></div></div></td>
           <td><div class="pattern"><div>七殺</div><div><code>子</code> <code>福德</code></div></div></td>
           <td><div class="pattern"><div>天梁</div><div><code>亥</code> <code>父母</code></div></div></td>
       </tr>
@@ -100,7 +100,7 @@ import Donate from '/components/donate.vue'
       </tr>
       <tr>
           <td><div class="pattern"><div>太陽 巨門</div><div><code>寅</code> <code>田宅</code></div></div></td>
-          <td><div class="pattern"><div>武曲 貪狼</div><div><code>醜</code> <code>福德</code></div></div></td>
+          <td><div class="pattern"><div>武曲 貪狼</div><div><code>丑</code> <code>福德</code></div></div></td>
           <td><div class="pattern"><div>天同 太陰</div><div><code>子</code> <code>父母</code></div></div></td>
           <td><div class="pattern"><div>天府</div><div><code>亥</code> <code>命宮</code></div></div></td>
       </tr>
@@ -142,7 +142,7 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>紫微 天府</div><div><code>寅</code> <code>命宮</code></div></div></td>
-      <td><div class="pattern"><div>天機</div><div><code>醜</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>天機</div><div><code>丑</code> <code>兄弟</code></div></div></td>
       <td><div class="pattern"><div>破軍</div><div><code>子</code> <code>夫妻</code></div></div></td>
       <td><div class="pattern"><div>太陽</div><div><code>亥</code> <code>子女</code></div></div></td>
   </tr>
@@ -162,7 +162,7 @@ import Donate from '/components/donate.vue'
 
 > 金輿扶駕 紫微守命前後有日月來夾是也。 
 
-然而，如果你熟悉 [安星訣](setup.md)，這種情況是無法成立的，因為太陽星永遠居於紫微星的 `子女位`。所以，筆者大膽猜測，這個格局原來的表述應該是：`帝星守命前後有日月來夾是也`。因為日月永遠夾不了紫微，同時天府星也是一顆帝星。只有這樣，才能在醜宮和未宮形成這個格局。
+然而，如果你熟悉 [安星訣](setup.md)，這種情況是無法成立的，因為太陽星永遠居於紫微星的 `子女位`。所以，筆者大膽猜測，這個格局原來的表述應該是：`帝星守命前後有日月來夾是也`。因為日月永遠夾不了紫微，同時天府星也是一顆帝星。只有這樣，才能在丑宮和未宮形成這個格局。
 
 <table class="astrolabe">
   <tr>
@@ -182,8 +182,8 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div></div><div><code>寅</code> <code>疾厄</code></div></div></td>
-      <td><div class="pattern"><div>廉貞 七殺</div><div><code>醜</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 七殺</div><div><code>丑</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>子</code> <code>仆役</code></div></div></td>
       <td><div class="pattern"><div>天梁</div><div><code>亥</code> <code>官祿</code></div></div></td>
   </tr>
 </table>
@@ -218,7 +218,7 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>天機 太陰</div><div><code>寅</code> <code>命宮</code></div></div></td>
-      <td><div class="pattern"><div>天府</div><div><code>醜</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>丑</code> <code>兄弟</code></div></div></td>
       <td><div class="pattern"><div>太陽</div><div><code>子</code> <code>夫妻</code></div></div></td>
       <td><div class="pattern"><div>武曲 破軍</div><div><code>亥</code> <code>子女</code></div></div></td>
   </tr>
@@ -254,7 +254,7 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>財帛</code></div></div></td>
-      <td><div class="pattern"><div>天同 巨門</div><div><code>醜</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>天同 巨門</div><div><code>丑</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>貪狼</div><div><code>子</code> <code>遷移</code></div></div></td>
       <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>仆役</code></div></div></td>
   </tr>
@@ -291,7 +291,7 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>天機 太陰</div><div><code>寅</code> <code>兄弟</code></div></div></td>
-      <td><div class="pattern"><div>天府</div><div><code>醜</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>丑</code> <code>夫妻</code></div></div></td>
       <td><div class="pattern"><div>太陽</div><div><code>子</code> <code>子女</code></div></div></td>
       <td><div class="pattern"><div>武曲 破軍</div><div><code>亥</code> <code>財帛</code></div></div></td>
   </tr>
@@ -371,10 +371,10 @@ import Donate from '/components/donate.vue'
 
 ## 日月同宮	
 
-也叫 `日月同臨`，它指太陽星和太陰星同宮的時候形成的格局，而這兩顆星只有在醜宮和未宮才會同宮。在《紫微鬥數全書》中對日月同宮是這樣描述的：
+也叫 `日月同臨`，它指太陽星和太陰星同宮的時候形成的格局，而這兩顆星只有在丑宮和未宮才會同宮。在《紫微鬥數全書》中對日月同宮是這樣描述的：
 
 >日月同臨官居侯伯。
->日月同未命安醜侯伯之材。
+>日月同未命安丑侯伯之材。
 
 詳細信息參考 [太陽太陰](major-star.md#太陽太陰)，此處不在贅述。
 
@@ -406,10 +406,173 @@ import Donate from '/components/donate.vue'
 詳細信息參考 [太陽天梁](major-star.md#太陽天梁)，此處不在贅述。
 	
 ## 日月並明	
+
+當太陽星和太陰星都同時處於廟或者旺的亮度時，就構成了日月並明格，古人對太陽星和太陰星都有著比較深的執念，看到晴空萬裏或者月明星稀就會覺得是吉兆。而看到日食或者月食就會覺得是兇兆。所以古人對這個格局的評價比較的高的，被定為了富貴格局之一。
+
+在《紫微鬥數全書》中對日月並明的描述是這樣的：
+
+>日月並明 佐九重於堯殿
+
+這句話的斷句應該是 `佐九` `重於` `堯殿`。其中 `佐九` 來自於中醫藥的組方原則，代表著一種劑量。根據黃帝內經《素問·至真要大論》岐伯回答黃帝藥物製劑的論述：「君一臣二，製之小也；君二臣三佐五，製之中也；君一臣三佐九，製之大也」。這裏的佐九，表示大劑量。`重於堯殿` 指的是比皇帝的宮殿更加的重要。可以說偏愛之情溢於言表。
+
+但是實際上，光憑借一個日月並明格局就想躺贏，在當今社會是幾乎不可能的。這個格局帶來的效果，更多的是規律的生活，陽光的心態和積極的處事態度。以下是日月並明的基本布局：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>太陽</div><div><code>巳</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>天機</div><div><code>未</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>疾厄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>田宅</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月並明</td>
+      <td><div class="pattern"><div>太陰</div><div><code>酉</code> <code>財帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>戌</code> <code>子女</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>七殺</div><div><code>寅</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>丑</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 天相</div><div><code>子</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>巨門</div><div><code>亥</code> <code>夫妻</code></div></div></td>
+  </tr>
+</table>
+
+除了上面的格局，理論上講任何太陽星和太陰星廟旺出現在命宮三方四正的，都應該算日月並明格。但是不同的組合，其實個性和為人處事上是差別很大的，所以並不能夠以一個格局名字定高低。而且，按照傳統的成格條件，當然是煞星越少越好，吉星越多越好，相信絕大多數的星耀組合，在這種情況下都不會太差。比如如下布局，也是日月並明格：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>太陽</div><div><code>巳</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>天機</div><div><code>未</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>兄弟</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月並明</td>
+      <td><div class="pattern"><div>太陰</div><div><code>酉</code> <code>官祿</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>戌</code> <code>仆役</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>七殺</div><div><code>寅</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>丑</code> <code>財帛</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 天相</div><div><code>子</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>巨門</div><div><code>亥</code> <code>遷移</code></div></div></td>
+  </tr>
+</table>
+
 ## 日月反背	
+
+當太陽星和太陰星均落陷的時候，就叫做日月反背，它剛好和日月並明相反。很多資料包括《紫微鬥數全書》裏都記載了 `日月最嫌反背` 的說法，但是卻沒有解釋為什麽。在傳統文化思想中，所有辛苦的、奔波的，都是不好的。最好能夠飯來張口，衣來伸手，生下來就繼承家業。
+
+很多老師在解釋這個格局的時候對它的評價也非常的差，甚至還有不少侮辱人格的措辭，這明顯是不對的。日月反背固然有辛勞奔波的意思在裏面，但是如果勞有所得，又何嘗不是一件好事呢？和日月並明的規律生活相反，日月反背通常容易出現晝夜顛倒或者披星戴月的工作模式。
+
+在個性上面，日月反背的格局會比日月並明的低調、內斂很多。也正因為這種特性，日月反背的人常常會因為不太會表現自己而很少收到上司的提拔，領導的青睞。然而，這個格局心思是非常細膩的，自我防護意識也比較強。有非常多的名人都是日月反背的格局，甚至也有日月反背的人通過自己的努力爬上過金字塔的頂端。
+
+和日月並明一樣，只要太陽星和太陰星在命宮三方四正落陷，就構成日月反背格局：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>巨門</div><div><code>巳</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 天相</div><div><code>午</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>未</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>七殺</div><div><code>申</code> <code>父母</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>貪狼</div><div><code>辰</code> <code>子女</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月並明</td>
+      <td><div class="pattern"><div>天同</div><div><code>酉</code> <code>財帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太陰</div><div><code>卯</code> <code>財帛</code></div></div></td>
+      <td><div class="pattern"><div>武曲</div><div><code>戌</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>寅</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>天機</div><div><code>丑</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>子</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>太陽</div><div><code>亥</code> <code>官祿</code></div></div></td>
+  </tr>
+</table>
+
 ## 日月照璧	
+
+當太陽星和太陰星同時出現在田宅宮，並且田宅宮居 `土` 的宮位（四墓庫）時，就形成了日月照壁格。這個格局在古書中也被列為了一個大富格局。但是大家不要開心得太早，容我細說這個所謂的大富格局。
+
+>日月照璧 日月臨田宅宮是也，喜居墓庫。
+
+日月只會在 `丑宮` 和 `未宮` 這兩個宮位同宮，而滿足日月同宮，並且是田宅宮的情況下，命宮必然是處於天羅地網位的 [破軍星](major-star.md#破軍星)。天羅地網位有個特殊的buff，那就是天羅位缺天時（外部環境），地網位缺地利（內在因素）。
+
+破軍星確實有沖破天羅地網的那種魄力，然而在克服重重困難以後，是否一定能取得好的結果，這是說不準的。當然，破軍星這種敢於破斧成舟，放手一博的個性，加上環境和內心的磨礪，確實是更加容易比其他星耀更加容易有大收獲。但是這是存在幸存者偏差的，大部分人的努力，可能不一定能換回來一個好的結果。
+
+以下是日月照壁的星耀分布，在鏡像位置上還有一個，此處就不列出來了：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天梁</div><div><code>巳</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>七殺</div><div><code>午</code> <code>財帛</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>未</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>廉貞</div><div><code>申</code> <code>夫妻</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 天相</div><div><code>辰</code> <code>遷移</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月照璧</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>兄弟</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天機 巨門</div><div><code>卯</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>戌</code> <code>命宮</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>貪狼</div><div><code>寅</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>太陽 太陰</div><div><code>丑</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天同</div><div><code>亥</code> <code>父母</code></div></div></td>
+  </tr>
+</table>
+
 ## 金燦光輝	
-## 日麗中天	
+
+又叫 `日麗中天` 格。它指的是太陽星在午宮，當然，少不了各種吉星和三吉化。太陽升到午宮的時候，是它最耀眼，光芒最強的時刻。此時的太陽星頗有些霸道總裁的風範。它是紫微鬥數裏比較有名的富貴格局。在《紫微鬥數全書》中是這樣描述這個格局的：
+
+>太陽居午，謂之日麗中天，有專權之貴，敵國之富。  
+>金燦光輝 太陽單守，命在午宮是也。  
+>太陽居午庚辛丁己人富貴雙全  
+
+這個格局對權利的需求比財富高，所以才在古書上被定為貴格。然而，追求權利，強勢，霸道並不一定能和成功掛鉤，但是反過來說成功的人怎麽做大家都覺得有他的魅力。這個格局在三合逢煞忌的時候為破格，反而會容易因為德不配位或者過於的強勢而不得人心。金燦光輝格的布局是這個樣子的：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>武曲 破軍</div><div><code>巳</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>太陽</div><div><code>午</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>未</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>天機 太陰</div><div><code>申</code> <code>福德</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同</div><div><code>辰</code> <code>夫妻</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">金燦光輝</td>
+      <td><div class="pattern"><div>紫微 貪狼</div><div><code>酉</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>卯</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>巨門</div><div><code>戌</code> <code>官祿</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>寅</code> <code>財帛</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 七殺</div><div><code>丑</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>亥</code> <code>仆役</code></div></div></td>
+  </tr>
+</table>
+
+筆者多次建議大家不要以格局來定高低，任何星耀，任何組合，任何格局都是有兩面性的，我們應該站在中立的角度去分析它們的特點。就比如同樣是交通工具，車、船、飛機、火車各有各的特點，我們不能說誰比誰要優越。
+
 ## 日月藏輝	
 ## 丹墀桂墀	
 ## 日月夾命	
