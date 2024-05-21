@@ -441,7 +441,7 @@ import Donate from '/components/donate.vue'
   </tr>
 </table>
 
-除了上面的格局，理论上讲任何太阳星和太阴星庙旺出现在命宫三方四正的，都应该算日月并明格。但是不同的组合，其实个性和为人处事上是差别很大的，所以并不能够以一个格局名字定高低。而且，按照传统的成格条件，当然是煞星越少越好，吉星越多越好，相信绝大多数的星耀组合，在这种情况下都不会太差。比如如下布局，也是日月并明格：
+除了上面的格局，理论上讲任何太阳星和太阴星庙旺出现在命宫三方四正的，都应该算日月并明格。但是不同的组合，其实个性和为人处事上是差别很大的，所以并不能够以一个格局名字定高低。而且，按照传统的成格条件，当然是煞星越少越好，吉星越多越好，相信绝大多数的星耀组合，在这种情况下都不会太差。比如如下布局，也是日月并明格，不过它有另外一个名字，叫做 [丹墀桂墀格](#丹墀桂墀)：
 
 <table class="astrolabe">
   <tr>
@@ -452,7 +452,7 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>兄弟</code></div></div></td>
-      <td class="center-palace" rowspan="2" colspan="2">日月并明</td>
+      <td class="center-palace" rowspan="2" colspan="2">丹墀桂墀</td>
       <td><div class="pattern"><div>太阴</div><div><code>酉</code> <code>官禄</code></div></div></td>
   </tr>
   <tr>
@@ -486,7 +486,7 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>贪狼</div><div><code>辰</code> <code>子女</code></div></div></td>
-      <td class="center-palace" rowspan="2" colspan="2">日月并明</td>
+      <td class="center-palace" rowspan="2" colspan="2">日月反背</td>
       <td><div class="pattern"><div>天同</div><div><code>酉</code> <code>财帛</code></div></div></td>
   </tr>
   <tr>
@@ -574,7 +574,55 @@ import Donate from '/components/donate.vue'
 笔者多次建议大家不要以格局来定高低，任何星耀，任何组合，任何格局都是有两面性的，我们应该站在中立的角度去分析它们的特点。就比如同样是交通工具，车、船、飞机、火车各有各的特点，我们不能说谁比谁要优越。
 
 ## 日月藏辉	
+
+这个格局的前提是日月反背，它相当于是一个加强版的日月反背格，成格条件是在日月反背的情况下三方四正内出现了巨门星。另外，也有资料说当太阳在酉戌亥子宫坐命并且是晚上出生的人，或者太阴星在卯辰巳午宫坐命并且是白天生人，也构成日月藏辉格。但是在《紫微斗数全书》中，只有前者符合条件：
+
+>日月藏辉 日月反背又逢巨暗是也。  
+>日月最嫌反背乃为失辉，命身定要精求恐差分数。  
+>日月陷宫逢恶杀劳碌奔波   
+
+当然，对于这种“不好”的格局，当然是需要煞忌多，吉星少。这个格局会比日月反背更加辛劳一些，所以被古人定为贫贱格。但是！在当今社会，这中老观念应该被破除了。日月藏辉格的人懂得收敛，能吃苦耐劳，可以凭借自身一步一个脚印的积累自身的成就。这样成长起来的人，根基更加牢靠。
+
+所以这个格局的特点就是，有可能会比别人更加容易进入昼夜颠倒，或者一些风险比较高的行业。它并不能决定一个人最后的成就高低，财富的多寡。木秀于林，风必摧之。而日月藏辉低调的行事风格，恰好能规避这种被打出头鸟的风险。
+
+但是这个格局的短板也比较明显，就是自信心不足，至少表面上看起来不足。但是，谁又知道他们是不是在扮猪吃老虎呢？以下是日月藏辉格的布局：
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>巨门</div><div><code>巳</code> <code>迁移</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 天相</div><div><code>午</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>未</code> <code>财帛</code></div></div></td>
+      <td><div class="pattern"><div>七杀</div><div><code>申</code> <code>子女</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>贪狼</div><div><code>辰</code> <code>仆役</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月藏辉</td>
+      <td><div class="pattern"><div>天同</div><div><code>酉</code> <code>夫妻</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太阴</div><div><code>卯</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>武曲</div><div><code>戌</code> <code>兄弟</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>寅</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>天机</div><div><code>丑</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>破军</div><div><code>子</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>太阳</div><div><code>亥</code> <code>命宫</code></div></div></td>
+  </tr>
+</table>
+
+希望大家不要看到别人说自己格局“不好”，“辛劳”，“贫贱”就失去斗志，失去信心。熟悉自己星盘的特点和优劣，发挥自己的长项，规避自己的短板，才是我们学习紫微斗数最大的收获。笔者多次强调，一个格局是远远不足以决定一个人的人生的，所以希望大家辩证的看待自己的星盘。
+
 ## 丹墀桂墀	
+
+它是日月并明的一种特殊形式，其实在 [日月并明格](#日月并明) 中已经有介绍了。太阳坐命宫而入庙的时候，被称之为 `丹墀`，它的本意是古代宫殿前涂成红色的台阶或台阶上的空地。而天阴坐命而入庙的时候，被称之为 `桂墀`。所以这个格局是在日月并明格中，命宫是太阴或者太阳的那一个细分类别。
+
+其实区别是，当命宫是太阳的时候，比较追求名声和权利。而当命宫是太阴的时候，更加追求利益。在《紫微斗数全书》中对这个格局仅有一句描述：
+
+>丹墀桂墀早遂青云之志，合禄拱禄定为巨擘之臣。
+
+其他的特性参照 [日月并明格](#日月并明) 就好，此处不在赘述。
+
 ## 日月夹命	
 ## 日月夹财	
 ## 月朗天门	
