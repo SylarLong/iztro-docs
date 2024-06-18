@@ -624,9 +624,173 @@ import Donate from '/components/donate.vue'
 其他的特性參照 [日月並明格](#日月並明) 就好，此處不在贅述。
 
 ## 日月夾命	
+
+這個格局的構成就是字面意思，它是指 [太陽星](major-star.md#太陽星) 和 [太陰星](major-star.md#太陰星) 在命宮前後宮位（也就是兄弟宮和父母宮）。你可以想象一下，在你成長的道路上，不管白天還是夜晚，都有光亮伴隨著你，為你指引方向的那個感覺。
+
+太陽和太陰只有當命宮在 `丑宮` 和 `未宮` 的時候才會產生夾著命宮的情況，而此時只有兩種星耀組合能夠滿足，也就是命宮主星是 [天府星](major-star.md#天府星) 或者 [武曲貪狼](major-star.md#武曲貪狼) 的時候能夠產生日月夾命的格局。當然，需要成格是需要命宮沒有 [空亡星](adj-star.md#空亡星) 並且有吉星同度。
+
+>日月夾命 不坐空亡遇逢本宮有吉星是也。  
+>日月夾命夾財加吉曜不權則富 加羊陀沖守，宜僧。 
+
+就其布局而言，當命宮是天府星的時候，命宮適合在 `未宮`，而當命宮是武曲貪狼的時候，命宮適合在 `丑宮`。至於原因大家可以自行去思考。
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>紫微 七殺</div><div><code>巳</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>午</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>未</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>申</code> <code>疾厄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天機 天梁</div><div><code>辰</code> <code>田宅</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月夾命</td>
+      <td><div class="pattern"><div>廉貞 破軍</div><div><code>酉</code> <code>財帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天相</div><div><code>卯</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>戌</code> <code>子女</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太陽 巨門</div><div><code>寅</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>武曲 貪狼</div><div><code>丑</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>天同 太陰</div><div><code>子</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>亥</code> <code>夫妻</code></div></div></td>
+  </tr>
+</table>
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>武曲 破軍</div><div><code>巳</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>太陽</div><div><code>午</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>未</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>天機 太陰</div><div><code>申</code> <code>父母</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同</div><div><code>辰</code> <code>子女</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">日月夾命</td>
+      <td><div class="pattern"><div>紫微 貪狼</div><div><code>酉</code> <code>福德</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>卯</code> <code>財帛</code></div></div></td>
+      <td><div class="pattern"><div>巨門</div><div><code>戌</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>寅</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 七殺</div><div><code>丑</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>亥</code> <code>官祿</code></div></div></td>
+  </tr>
+</table>
+
+不難看出，古人對這個格局的定義是一個非富則貴的格局。但在現實情況當中，大家會發現很多富貴格局的人並不富貴，反而很多在古人看起來不怎麽樣的組合卻積累了巨大的財富或地位。所以這也是筆者不推薦大家以格局論英雄的原因。
+
+大家有可能在其他地方學習的時候會看到 `日月夾遷` 的格局，其實就是這個格局把命宮和遷移宮互換一下位置。實際上，除了這些，在古人看來，日月夾著任何宮位都是吉祥的象征。
+
 ## 日月夾財	
+
+在日月夾命中其實已經對這個格局有一些介紹了。從古至今，人類對財和權的追求是遠遠高於其他追求的，所以富貴是人類這個群體永恒不變的話題。
+
+>日月夾財，不權則富。  
+>日月夾財 武守命日月來夾是也，財帛宮亦然。  
+>日月夾命 不坐空亡遇逢本宮有吉星是也。  
+>日月夾命夾財加吉曜不權則富 加羊陀沖守，宜僧。  
+>日月夾財加吉曜不貴則富 如財帛宮在未天府星守，日在午月在申夾財是也，余仿此。   
+
+其效應和日月夾命大同小異，只是更偏向於財。就星耀分布而言，也和日月夾命是一樣的，只是把命宮換成財帛宮即可，此處不再贅述。
+
 ## 月朗天門	
+
+又叫 `月落亥宮`，它是指 [太陰星](major-star.md#太陰星) 在 `亥宮` 而剛好是命宮的情況。亥宮被稱為 `天門`。當月亮處於最亮的時候，能把天空照得跟白天一樣明亮。此時的太陰星給人的感覺更像太陽星。所以才有廟旺的太陰像太陽的說法。
+
+既然它像太陽星，自然就會有太陽星那種對權利向往的心態。但與此同時，它又沒有太陽那種刺眼的光芒，所以會缺少一種咄咄逼人的壓迫感。這樣在保有太陰星細膩的同時又兼具了太陽的活潑和熱情，會容易給人留下機敏可靠的印象而被委以重任。
+
+>月朗天門進爵封侯。   
+>月落亥宮 月在亥守命是也，又名月朗天門。  
+>月朗天門於亥地登雲職掌大權 子生人夜時生合局。不貴則大富。 
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天機</div><div><code>巳</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div>紫微</div><div><code>午</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>未</code> <code>財帛</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>申</code> <code>子女</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>七殺</div><div><code>辰</code> <code>仆役</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">月朗天門</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>夫妻</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太陽 天梁</div><div><code>卯</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 天府</div><div><code>戌</code> <code>兄弟</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>天同 巨門</div><div><code>丑</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>子</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>命宮</code></div></div></td>
+  </tr>
+</table>
+
 ## 月生滄海	
+
+又叫 `水澄桂萼`，它是指 [太陰星](major-star.md#太陰星) 和 [天同星](major-star.md#天同星) 同宮與 `子宮` 守命宮或田宅宮的格局。具體的特質可以參考 [天同太陰](major-star.md#天同太陰)。熟悉天同太陰的人都知道，這個組合最大的特點就是柔。
+
+當然，大家不要認為天同太陰在命宮的柔就是軟弱，就是好欺負。這裏的柔，是指他們處理問題的方式，不會硬剛。還有他們表述問題的方式，也不是很直接，而是娓娓道來那種類型。這並不代表說這個組合的人就好欺負。有時候軟刀子拉人，才是真的防不勝防。
+
+別忘了天同太陰在子宮守 `田宅宮` 的時候，也能構成這個格局。而此時，命宮是 [廉貞破軍](major-star.md#廉貞破軍) 的組合。不難看出，兩種情況一文一武，一剛一柔。其實，在《紫微鬥數全書》中，需要太陰星在子宮守田宅這一組才能算是月生滄海格。
+
+>月生滄海 月在子宮守田宅是也。  
+>太陰居子，號曰水澄桂萼，得清要之職，忠諫之材。 
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>紫微 七殺</div><div><code>巳</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>午</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>未</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>申</code> <code>財帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天機 天梁</div><div><code>辰</code> <code>官祿</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">水澄桂萼</td>
+      <td><div class="pattern"><div>廉貞 破軍</div><div><code>酉</code> <code>子女</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天相</div><div><code>卯</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>戌</code> <code>夫妻</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太陽 巨門</div><div><code>寅</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>武曲 貪狼</div><div><code>丑</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>天同 太陰</div><div><code>子</code> <code>命宮</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>亥</code> <code>兄弟</code></div></div></td>
+  </tr>
+</table>
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>紫微 七殺</div><div><code>巳</code> <code>財帛</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>午</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>未</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>申</code> <code>兄弟</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天機 天梁</div><div><code>辰</code> <code>疾厄</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">月生滄海</td>
+      <td><div class="pattern"><div>廉貞 破軍</div><div><code>酉</code> <code>命宮</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天相</div><div><code>卯</code> <code>遷移</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>戌</code> <code>父母</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太陽 巨門</div><div><code>寅</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>武曲 貪狼</div><div><code>丑</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>天同 太陰</div><div><code>子</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>亥</code> <code>福德</code></div></div></td>
+  </tr>
+</table>
+
 ## 明珠出海	
 ## 貪武同行
 ## 鈴昌陀武
