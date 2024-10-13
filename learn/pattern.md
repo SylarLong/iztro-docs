@@ -792,7 +792,55 @@ import Donate from '/components/donate.vue'
 </table>
 
 ## 明珠出海	
-## 贪武同行
+
+
+这个格局是指命宫在 `未宫` 并且为 `空宫`，迁移宫是 [天同星](major-star.md#天同星) 和 [巨门星](major-star.md#巨门星)。只有这一种组合才符合，因为这个情况下，才能让财帛宫的 [太阳星](major-star.md#太阳星) 和官禄宫的 [太阴星](major-star.md#太阴星) 都处于庙的状态。
+
+我们不难注意到，首先这个格局命宫是空宫。在前面的知识中提到过，空宫本身有一种迷茫和缺少主心骨的感觉，再加上这个格局的父母通常都会比较强势，所以从小成成长压力其实是比较大的。就个性而言，可以参考 [天同巨门](major-star.md#天同巨门)。
+
+首先这个格局代表的是一颗 `明珠`，其次是需要 `出海`。也就是这个格局在离开自己成长的环境，反而会容易获得更多的资源和机会。太阳星和太阴星会在三方照耀着他们前进的道路。所以通常这个格局的人们很容易按着父母铺设好的道路来走自己的人生路。
+
+也正因为这样，会容易把自己的理想抱负埋藏在心中而给自己的人生留下遗憾。但是现在社会越来越开明，父母也越来越开明，一旦你们心中有自己的想法，就积极的和父母沟通，告诉他们你自己能行，毕竟你是一颗耀眼的明珠。所以大胆的追求自己的梦想吧，明珠们。
+
+>明珠出海 命宫在未宫,太阳星坐卯宫,太阴星坐亥宫  
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天机</div><div><code>巳</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>紫微</div><div><code>午</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>未</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>破军</div><div><code>申</code> <code>父母</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>七杀</div><div><code>辰</code> <code>子女</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">明珠出海</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>福德</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太阳 天梁</div><div><code>卯</code> <code>财帛</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 天府</div><div><code>戌</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>天同 巨门</div><div><code>丑</code> <code>迁移</code></div></div></td>
+      <td><div class="pattern"><div>贪狼</div><div><code>子</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>太阴</div><div><code>亥</code> <code>官禄</code></div></div></td>
+  </tr>
+</table>
+
+## 武贪同行
+
+这个格局是指 [武曲星](major-star.md#武曲星) 和 [贪狼星](major-star.md#贪狼星)
+
+>贪武同行威镇边夷。   
+>先贫后富武贪同身命之宫，先富后贫只为运限逢劫杀。  
+>贪武先贫而后富 利己损人。  
+>贪狼武曲同守身无吉命反不长 命无吉曜，身有贪武，孤贫。 
+>权星若遇武贪临，作事求谋尽得成，士子名高添福禄，庶人得此积金银。  
+>贪武申宫为下格 化忌方论。  
+>贪武四生四墓宫破军忌杀百工通  
+>贪武破军无吉曜迷恋酒以忘身 或作手艺。  
+
 ## 铃昌陀武
 ## 刑囚夹印	
 ## 生不逢时	
