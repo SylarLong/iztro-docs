@@ -1251,17 +1251,18 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 
 ```ts
 type Config = {
-  mutagens?: ConfigMutagens;
-  brightness?: ConfigBrightness;
-  yearDivide?: 'normal' | 'exact';
+ // 星耀四化配置
+ mutagens?: ConfigMutagens;
+ // 星耀亮度配置
+ brightness?: ConfigBrightness;
+ // 年分割點配置
+ yearDivide?: 'normal' | 'exact';
+ // 運限分割點配置（^v2.4.3）
+ horoscopeDivide?: 'normal' | 'exact'
 };
 ```
 
-其中當 `yearDivide` 為 `normal` 時，會以正月初一為分界，為 `exact` 時會以立春為分界。
-
-:::warning 註意
-該配置只會影響本命盤的計算，運限相關的年分界均以立春為界。
-:::
+其中當 `yearDivide` 和 `horoscopeDivide` 為 `normal` 時，會以正月初一為分界，為 `exact` 時會以立春為分界。
 
 ### `Plugin`
 
