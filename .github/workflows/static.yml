@@ -46,6 +46,8 @@ jobs:
         run: find . -type l
       - name: Check size
         run: du -sh .
+      - name: Check list
+        run: ls -l
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
