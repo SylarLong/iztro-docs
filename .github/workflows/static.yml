@@ -36,8 +36,6 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Clean folder
-        run: rm -rf *
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
@@ -52,3 +50,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          name: github-pages
+          path: docs
