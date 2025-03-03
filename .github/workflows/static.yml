@@ -42,8 +42,10 @@ jobs:
         with:
           name: github-pages
           path: docs
-      - name: check status
-        run: find . -type l && du -sh .
+      - name: Check hard link
+        run: find . -type l
+      - name: Check size
+        run: du -sh .
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
