@@ -1261,7 +1261,10 @@ type Config = {
   // 年分割点配置
   yearDivide?: 'normal' | 'exact';
   // 运限分割点配置（^v2.4.3）
-  horoscopeDivide?: 'normal' | 'exact'
+  horoscopeDivide?: 'normal' | 'exact';
+  // 小限分割点配置，normal为以自然年分界，birthday为生日分界（^v2.4.5）
+  // 默认为 normal
+  ageDivide?: 'normal' | 'birthday';
 };
 ```
 

@@ -19,6 +19,16 @@ If you have mastered the content on this page, you can explore further on other 
 - How to analyze star brilliance based on palace positions
   :::
 
+## Products
+
+| | Link | Language | Author |
+|--|--|--|--|
+|<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />|https://github.com/sylarlong/iztro|Typescript| [SylarLong](https://github.com/SylarLong) |
+|<img src="https://img.shields.io/github/stars/sylarlong/react-iztro.svg?style=social&label=Star" alt="react-iztro" />|https://github.com/sylarlong/react-iztro|React| [SylarLong](https://github.com/SylarLong) |
+|<img src="https://img.shields.io/github/stars/sylarlong/iztro-hook.svg?style=social&label=Star" alt="iztro-hook" />|https://github.com/sylarlong/iztro-hook|React| [SylarLong](https://github.com/SylarLong) |
+|<img src="https://img.shields.io/github/stars/x-haose/py-iztro.svg?style=social&label=Star" alt="py-iztro" />|https://github.com/x-haose/py-iztro|Python| [昊色居士](https://github.com/x-haose) |
+|<img src="https://img.shields.io/github/stars/EdwinXiang/dart_iztro.svg?style=social&label=Star" alt="py-iztro" />|https://github.com/EdwinXiang/dart_iztro|Dart| [EdwinXiang](https://github.com/EdwinXiang) |
+
 ## Installation
 
 You can install `iztro` using any package management tool you are familiar with.

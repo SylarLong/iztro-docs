@@ -29,6 +29,4 @@ features:
     details: 除了開發文檔以外，還將提供紫微鬥數基礎知識的文檔，這將使你在集成代碼的時候如虎添翼。
   - title: 國際化支持
     details: 支持簡體中文、繁體中文、日文、韓文、英文、越南語等多國語言輸入輸出。
-  - title: AI小助手
-    details: 精心訓練的GPTs助手，專業解答iztro技術相關問題。<a href="https://chat.openai.com/g/g-zddtmckHc-iztroxiao-zhu-shou" target="_blank">【點擊此處】</a>體驗(需魔法且開通GPT+)。
 ---

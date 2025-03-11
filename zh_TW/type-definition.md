@@ -1,5 +1,4 @@
 ---
-outline: deep
 description: "iztro類型定義，iztro的astro對象使用方法以及示例代碼。紫微鬥數信息國際化內容的輸出定義。"
 ---
 
@@ -1258,7 +1257,10 @@ type Config = {
  // 年分割點配置
  yearDivide?: 'normal' | 'exact';
  // 運限分割點配置（^v2.4.3）
- horoscopeDivide?: 'normal' | 'exact'
+ horoscopeDivide?: 'normal' | 'exact';
+ // 小限分割點配置，normal為以自然年分界，birthday為生日分界（^v2.4.5）
+ // 預設為 normal
+ ageDivide?: 'normal' | 'birthday';
 };
 ```
 

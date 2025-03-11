@@ -24,6 +24,16 @@ description: '紫微研习社，iztro官方文档，iztro开发文档，快速�
 - 如何基于宫位开始分析星曜
   :::
 
+## 产品
+
+|  | 链接 | 语言 | 作者 |
+|--|--|--|--|
+|<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />|https://github.com/sylarlong/iztro|Typescript| [SylarLong](https://github.com/SylarLong) |
+|<img src="https://img.shields.io/github/stars/sylarlong/react-iztro.svg?style=social&label=Star" alt="react-iztro" />|https://github.com/sylarlong/react-iztro|React| [SylarLong](https://github.com/SylarLong) |
+|<img src="https://img.shields.io/github/stars/sylarlong/iztro-hook.svg?style=social&label=Star" alt="iztro-hook" />|https://github.com/sylarlong/iztro-hook|React| [SylarLong](https://github.com/SylarLong) |
+|<img src="https://img.shields.io/github/stars/x-haose/py-iztro.svg?style=social&label=Star" alt="py-iztro" />|https://github.com/x-haose/py-iztro|Python| [昊色居士](https://github.com/x-haose) |
+|<img src="https://img.shields.io/github/stars/EdwinXiang/dart_iztro.svg?style=social&label=Star" alt="py-iztro" />|https://github.com/EdwinXiang/dart_iztro|Dart| [EdwinXiang](https://github.com/EdwinXiang) |
+
 ## 安装
 
 ### 使用包管理安装
