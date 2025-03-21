@@ -271,7 +271,7 @@ import Donate from '/components/donate.vue'
 >极居卯酉多为脱俗僧人  
 >极居卯酉劫空临，为僧为道福兴隆，乐享山林有师号，福寿双全到古龄。
 
-极向离明格在星盘中的布局是这样的：
+极居卯酉格在星盘中的布局是这样的：
 
 <table class="astrolabe">
   <tr>
