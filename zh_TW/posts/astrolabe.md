@@ -466,6 +466,70 @@ var { astro } = require("iztro");
 
 ---
 
+### withOptions <Badge type="warning" text="^2.4.1" />
+
+- 用途
+
+  獲取星盤資訊。其實它內部實作是呼叫了 `bySolar` 和 `byLunar` 方法，只是為了方便大家呼叫加了一個殼。
+
+- 定義
+
+  ```ts
+  type Option = {
+    type: 'solar' | 'lunar';
+    dateStr: string;
+    timeIndex: number;
+    gender: GenderName;
+    isLeapMonth?: boolean;
+    fixLeap?: boolean;
+    language?: Language;
+    config?: Config;
+  };
+
+  export type withOptions = (
+    option: Option
+  ) => FunctionalAstrolabe;
+  ```
+
+- 參數
+
+  | 參數 | 類型 | 是否必填 | 預設值 | 說明 |
+  | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
+  | type | `solar` \| `lunar` | `false` | `solar` | 日期類型
+  | dateStr | `string` | `true` | - | 出生日期，格式為 YYYY-M-D
+  | timeIndex | `number` | `true` | - | 出生時辰序號【0~12】，對應從早子時（0）一直到晚子時（12）的序號 | |
+  | gender | [`GenderName`](/type-definition.md#gendername) | `true` | - | 性別【男/女】 |
+  | isLeapMonth | `boolean` | `false` | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效 |
+  | fixLeap | `boolean` | `false` | `true` | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 傳回資料將會國際化為指定語言。目前支援 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | config | [`Config`](../type-definition.md#config) | `false` | - | 自訂亮度、四化以及時間分割點配置 |
+
+- 傳回值
+
+  [`FunctionalAstrolabe`](./astrolabe.md#functionalastrolabe)
+
+- 示例
+
+  ```ts
+  import { astro } from "iztro";
+
+  const astrolabe = astro.withOptions({
+    type: 'solar',
+    dateStr: '1999-12-29',
+    timeIndex: 2,
+    gender: 'female',
+    isLeapMonth: false,
+    fixLeap: true,
+    language: 'zh-CN'
+  })
+  ```
+
+- 示例返回值
+
+ 參考 [bySolar](./astrolabe.md#bysolar) 的示例返回值
+
+---
+
 ### getMajorStarBySolarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途

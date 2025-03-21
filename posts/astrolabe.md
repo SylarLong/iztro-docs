@@ -474,6 +474,70 @@ var { astro } = require("iztro");
 
 ---
 
+### withOptions <Badge type="warning" text="^2.4.1" />
+
+- 用途
+
+  获取星盘信息。其实它内部实现是调用了 `bySolar` 和 `byLunar` 方法，只是为了方便大家调用加了一个壳。
+
+- 定义
+
+  ```ts
+  type Option = {
+    type: 'solar' | 'lunar';
+    dateStr: string;
+    timeIndex: number;
+    gender: GenderName;
+    isLeapMonth?: boolean;
+    fixLeap?: boolean;
+    language?: Language;
+    config?: Config;
+  };
+
+  export type withOptions = (
+    option: Option
+  ) => FunctionalAstrolabe;
+  ```
+
+- 参数
+
+  | 参数         | 类型       | 是否必填 | 默认值  | 说明                                                                              |
+  | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
+  | type | `solar` \| `lunar`   | `false`   | `solar`       | 日期类型
+  | dateStr    | `string`   | `true`   | -       | 出生日期，格式为 YYYY-M-D
+  | timeIndex    | `number`   | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |                 |
+  | gender       | [`GenderName`](/type-definition.md#gendername)   | `true`   | -       | 性别【男/女】                                                                     |
+  | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
+  | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | config     | [`Config`](../type-definition.md#config) | `false`  | - | 自定义亮度、四化以及时间分割点配置 |
+
+- 返回值
+
+  [`FunctionalAstrolabe`](./astrolabe.md#functionalastrolabe)
+
+- 示例
+
+  ```ts
+  import { astro } from "iztro";
+
+  const astrolabe = astro.withOptions({
+      type: 'solar',
+      dateStr: '1999-12-29',
+      timeIndex: 2,
+      gender: 'female',
+      isLeapMonth: false,
+      fixLeap: true,
+      language: 'zh-CN'
+    })
+  ```
+
+- 示例返回值
+
+  参考 [bySolar](./astrolabe.md#bysolar) 的示例返回值
+
+---
+
 ### getMajorStarBySolarDate <Badge type="warning" text="^1.2.1" />
 
 - 用途
