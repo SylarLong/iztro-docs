@@ -792,14 +792,336 @@ import Donate from '/components/donate.vue'
 </table>
 
 ## 明珠出海	
-## 貪武同行
+
+這個模式是指命宮在 `未宮` 並且為 `空宮`，遷移宮是 [天同星](major-star.md#天同星) 和 [巨門星](major-star.md#巨門星)。只有這一種組合才符合，因為這個情況下，才能讓財帛宮的 [太陽星](major-star.md#太陽星) 和官祿宮的 [太陰星](major-star.md#太陰星) 都處於廟的狀態。
+
+我們不難注意到，首先這個格局命宮是空宮。在前面的知識中提到過，空宮本身有一種迷茫和缺少主心骨的感覺，再加上這個格局的父母通常都會比較強勢，所以從小成成長壓力其實是比較大的。就個性而言，可以參考 [天同巨門](major-star.md#天同巨門)。
+
+首先這個格局代表的是一顆 `明珠`，其次是需要 `出海`。也就是這個格局在離開自己成長的環境，反而會容易獲得更多的資源和機會。太陽星和太陰星會在三方照耀著他們前進的道路。所以通常這個格局的人很容易按著父母鋪設好的道路走自己的人生路。
+
+也因為這樣，會容易把自己的理想抱負埋藏在心中而給自己的人生留下遺憾。但是現在社會越來越開明，父母也越來越開明，一旦你們心中有自己的想法，就積極的和父母溝通，告訴他們你自己能行，畢竟你是一顆耀眼的明珠。所以大膽的追求自己的夢想吧，明珠們。
+
+>明珠出海 命宮在未宮,太陽星坐卯宮,太陰星​​坐亥宮
+
+<table class="astrolabe">
+ <tr>
+ <td><div class="pattern"><div>天機</div><div><code>巳</code> <code>夫妻</code></div></div></td>
+ <td><div class="pattern"><div>紫微</div><div><code>午餐</code> <code>兄弟</code></div></div></td>
+ <td><div class="pattern"><div></div><div><code>未</code> <code>命宮</code></div></div></td>
+ <td><div class="pattern"><div>破軍</div><div><code>申</code> <code>父母</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>七殺</div><div><code>辰</code> <code>子女</code></div></div></td>
+ <td class="center-palace" rowspan="2" colspan="2">明珠出海</td>
+ <td><div class="pattern"><div></div><div><code>酉</code> <code>福德</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>太陽 天梁</div><div><code>卯</code> <code>財帛</code></div></div></td>
+ <td><div class="pattern"><div>廉貞 天府</div><div><code>戌</code> <code>田宅</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>疾厄</code></div></div></td>
+ <td><div class="pattern"><div>天同 巨門</div><div><code>丑</code> <code>遷移</code></div></div></td>
+ <td><div class="pattern"><div>貪狼</div><div><code>子</code> <code>僕役</code></div></div></td>
+ <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>官祿</code></div></div></td>
+ </tr>
+</table>
+
+## 武貪同行
+
+
+這個模式是指 [武曲星](major-star.md#武曲星) 和 [貪狼星](major-star.md#貪狼星) 在 `丑宮` 或 `未宮` 同宮的組合。這是一個讓人又愛又恨的組合，喜歡這個組合的人把它吹捧上天，不喜歡的人又會把它貶低得一文不值。那究竟是什麼原因導致這個狀況的出現呢？且看我細細道來。
+
+
+如果單論個人能力，武貪可以說是所有組合中先天條件最好的那一組，因為這個組合愛好廣泛，學習能力強，動手能力強，敢想敢做。但他有個致命的缺點，就是剛愎自用。當然，這些只是說武曲貪狼這個組合下容易出現的特質，並不是說武曲貪狼的人都是這個樣子。
+
+
+這個組合一定要從小經歷一些磨礪，才會更容易厚積薄發。稍微了解過這個組合的讀者，一定都聽過 `武貪不發少年人` 這個說法，有些人解釋成武貪在年少時不會發跡，也有些人解釋為武貪不能過早發跡。其實這兩種說法都沒有錯，只是如果你沒有去深究其中的緣由，就很容易斷章取義。
+
+
+如果武貪從小的生活環境很好，一直都順風順水，會讓他們缺少磨礪，更加容易養成剛愎自用，目中無人的個性。因為武貪本性剛直，如果在心智尚未成熟之前自己的需求過於容易滿足，很可能會讓他們出現下列其中的一些情況：
+
+
+- 過度自信，聽不進別人的意見，
+- 缺乏同理心，難以體諒他人
+- 追求享樂，忽視責任
+- 抗壓能力弱，遇到挫折容易一蹶不振
+- 人際關係緊張，難以融入團隊
+
+
+武貪是個充滿好奇心而又會去付出實際行動滿足自己好奇心的一個組合，而且在他們強大的動手能力和學習能力下，只要是他們感興趣的，幾乎都能很快摸清楚門道。如果能夠適當的聽勸，這將是一個很容易出成就的組合。
+
+
+>貪武同行威鎮邊夷。  
+>先貧後富武貪同身命之宮，先富後貧只為運限逢劫殺。  
+>貪武先貧而後富 利己損人。  
+>貪狼武曲同守身無吉命反不長 命無吉曜，身有貪武，孤貧。  
+>權星若遇武貪臨，作事求謀盡得成，士子名高添福祿，庶人得此積金銀。  
+>貪武申宮為下格 化忌方論。  
+>貪武四生四墓宮破軍忌殺百工通  
+>貪武破軍無吉曜迷戀酒忘身 或作手藝。  
+
+
+<table class="astrolabe">
+ <tr>
+ <td><div class="pattern"><div>天府</div><div><code>巳</code> <code>夫妻</code></div></div></td>
+ <td><div class="pattern"><div>天同 太陰</div><div><code>午餐</code> <code>兄弟</code></div></div></td>
+ <td><div class="pattern"><div>武曲 貪狼</div><div><code>未</code> <code>命宮</code></div></div></td>
+ <td><div class="pattern"><div>太陽 巨門</div><div><code>申</code> <code>父母</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div></div><div><code>辰</code> <code>子女</code></div></div></td>
+ <td class="center-palace" rowspan="2" colspan="2">武貪同行</td>
+ <td><div class="pattern"><div>天相</div><div><code>酉</code> <code>福德</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>廉貞 破軍</div><div><code>卯</code> <code>財帛</code></div></div></td>
+ <td><div class="pattern"><div>天機 天梁</div><div><code>戌</code> <code>田宅</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div></div><div><code>寅</code> <code>疾厄</code></div></div></td>
+ <td><div class="pattern"><div></div><div><code>丑</code> <code>遷移</code></div></div></td>
+ <td><div class="pattern"><div></div><div><code>子</code> <code>僕役</code></div></div></td>
+ <td><div class="pattern"><div>紫微 七殺</div><div><code>亥</code> <code>官祿</code></div></div></td>
+ </tr>
+</table>
+
+
 ## 鈴昌陀武
-## 刑囚夾印	
-## 生不逢時	
-## 雄宿朝元	
+
+
+這個模式是指 [武曲星](major-star.md#武曲星)、[文昌星](minor-star.md#文昌星)、[鈴星](minor-star.md#鈴星) 和 [陀羅星](minor-star.md#陀羅星)在命宮三方四正裡同時出現的的一種組合。這自古以來都被認為是個「惡格」。在紫微鬥數全書一文裡，對它的描述只有一句話：
+
+
+>鈴昌陀武限至投河  
+
+
+我不知道大家看到這句話有沒有菊花一緊的感覺，反正我看到的時候腦子裡是充滿了問號的。單從這沒頭沒尾的話，就給別人下定論的話，是非常武斷的。現在我們來將它剖析開來，分析陳摶老祖得出這個結論的原因和理論依據是什麼。
+
+
+從星耀特性上來說，本來文昌武曲應該是能文能武，兼具文人墨客的氣節和武者的豪氣。但是多了鈴星和陀羅的牽制，使這個組合變成了文不成武不就的感覺。換一個角度來理解，也是那種懷才不遇的感覺。細想一下，武曲的剛烈，文昌的清高，陀羅的鑽牛角尖和鈴星的反覆混在一起，是個什麼感覺？
+
+
+那麼問題來了，如果你運限遇到鈴昌陀武格，怎麼破呢？其實大可不必驚慌。真遇到了的話，遇到困難一定要勇於求助身邊的人，不要自己去硬扛那些超過自身負荷的事情。當然，如果你能克服當時的性格弱點，不要去反覆的鑽牛角尖，也是能很好的解決這種情況的。當然，不管有沒有這個格局，都要做到日常注意交通安全，不要去危險水域游泳。
+
+
+## 刑囚夾印
+
+
+這個格局是指 [天刑星](adj-star.md#天刑星)，[廉貞星](major-star.md#廉貞星) 和 [天相星](major-star.md#天相星) 同宮的情況。這個格局在後來的演變當中，出現了一些變體，例如把天刑星換成 [擎羊星](minor-star.md#擎羊星) 也成立，因為擎羊星化氣為 `刑`。另外，也衍生出像 `刑囚夾忌`、`刑忌夾印` 這樣的一些組合。這裡面的 `刑`，可以是 `天刑`，也可以是 `擎羊`，而 `忌` 除了是 `化忌`，也可以是 `陀羅`。
+
+
+>刑囚夾印，刑杖惟司。  
+>刑囚夾印 天刑廉貞同臨身命主武勇之人。  
+
+
+從古籍可以看出，這個格局的人比較容易和律法、官司訴訟等扯上關係。很多人以為這個格局遇到就會有容易有官非，甚至是容易身陷囹圄。這都有點言過其實了。天相星本身情商非常之高，很懂人情世故，但是被刑囚夾住以後，本身的特質無法很好的發揮出來，所以無法表現出天相星的圓滑和精明。但是在律法界，就需要剛正不阿的人。
+
+
+在運限走到這個格局的時候，如果不是從事與律法相關行業的人一定不要去試探那些很刑的事情。因為在這個運勢的影響下，橫越馬路都有可能被抓來教育一番。如果事先看到自己的運限有​​這個格局，趕緊自己反省一下有沒有做一些可刑可不刑的事情，如果沒有的話，就安心的過吧。
+
+
+不過如果你是企業老闆，看到這個運勢建議好好清理一下公司的狀況，像是稅務、人事、合約等等。話分兩頭說，如果你本身是以律政產業為主的，走到這個運勢下面可能就會特別的忙碌了。所以不要以簡單的好壞來劃分一個格局，我麼應該去了解這個格局的本質，水能載舟，亦能覆舟。
+
+
+## 生不逢時
+
+
+在紫微鬥數全書中，這個格局的成局條件只有一個，那就是 [廉貞星](major-star.md#廉貞星) 和 [空亡星](adj-star.md#空亡星) 在命宮的時候。但是也有一些資料說空亡星和破軍星同宮也算，這個各位就自行研究了。
+
+
+>生不逢時 命坐空亡逢廉貞是也。
+
+
+這個格局能找到的資料不多，古書上面也很少提及這個格局。從星耀組合上來分析，也不難知道為什麼它叫這個名字。空亡之星也可以理解為「空忙」之星，加之廉貞星反反覆復的特點，就會給人一種老是在一頓猛如虎的操作後，得到的回報卻達不到自己的預期目標，從而產生挫敗感。
+
+
+那為什麼是廉貞星呢？這是因為別的星耀更容易在多次嘗試未果後選擇放棄，而廉貞更加的容易產生「我不甘心」的心態。如果有讀者是這個格局，歡迎 [添加筆者微信](/about.md) 來講出你的故事。
+
+
+## 雄宿朝元
+
+
+當 [廉貞星](major-star.md#廉貞星) 在 `寅宮` 或 `申宮` 坐命的時候，就滿足了雄宿朝元的前提條件。不過在紫微鬥數全書中，指的是廉貞星在 `申宮` 或 `未宮`的時候。但是當廉貞在未宮的時候，是 [廉貞七殺](major-star.md#廉貞七殺)。所以筆者也比較疑惑，還請有研究的老師來指正。
+
+
+ >廉貞申未宮無殺富貴聲揚播遠名 雄宿朝元格，加殺平常。
+
+
+對於一些評價比較好的格局，老生常談的一個條件就是無煞會吉。這個格局的人自我意識非常強，可以說全身上下反骨佔一半，主打一個不聽勸和愛面子。 `雄宿` 指的就是廉貞星，乍聽這個名號，有沒有聽到「雄霸」的感覺？
+
+
+一般來說，自我意識太強又不太聽勸又很在意麵子的人，撞到南牆也會把南牆給撞格窟窿繼續朝著自己認定的方向走下去。 「我不要你覺得，我要我覺得」就是他們的人生信條。特別警告：這個格局異常護犢！所以，不要得罪被他的人。如果你實在想像不出雄宿朝元人的特徵，回想一下《大話西遊》裡的紫霞仙子吧，筆者嚴重懷疑紫霞仙子是比著雄宿朝元格來設計的人物性格。
+
+
+<table class="astrolabe">
+ <tr>
+ <td><div class="pattern"><div>天梁</div><div><code>巳</code> <code>子女</code></div></div></td>
+ <td><div class="pattern"><div>七殺</div><div><code>午餐</code> <code>夫妻</code></div></div></td>
+ <td><div class="pattern"><div></div><div><code>未</code> <code>兄弟</code></div></div></td>
+ <td><div class="pattern"><div>廉貞</div><div><code>申</code> <code>命宮</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>紫微 天相</div><div><code>辰</code> <code>財帛</code></div></div></td>
+ <td class="center-palace" rowspan="2" colspan="2">雄宿朝元</td>
+ <td><div class="pattern"><div></div><div><code>酉</code> <code>父母</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>天機 巨門</div><div><code>卯</code> <code>疾厄</code></div></div></td>
+ <td><div class="pattern"><div>破軍</div><div><code>戌</code> <code>福德</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>貪狼</div><div><code>寅</code> <code>遷移</code></div></div></td>
+ <td><div class="pattern"><div>太陽 太陰</div><div><code>丑</code> <code>僕役</code></div></div></td>
+ <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>官祿</code></div></div></td>
+ <td><div class="pattern"><div>天同</div><div><code>亥</code> <code>田宅</code></div></div></td>
+ </tr>
+</table>
+
+
 ## 府相朝垣
-## 火貪
-## 鈴貪
+
+
+這個格局指的是 [天府星](major-star.md#天府星) 在官祿宮，[天相星](major-star.md) 在財帛宮來會照命宮的情況。這個組合形成的條件算是比較廣泛了，所以有不只一組組合。不過這個組合更像是遊戲裡面那種 `輔助` 技能，它依附在哪個格局上，就給哪個格局疊了一個buff。
+
+
+>府相朝垣命必榮  
+>府相朝垣 命無主星，天府居官祿、天相居財帛  
+>府相朝垣千錺食祿 命寅申，府相在財帛宮，祿官朝者，上格別宮次之。  
+
+
+不難看出，這是個備受歡迎的格局，畢竟誰不想食祿千鍬呢？但是得到這個格局一定會食祿千鉺麼？我看也未必。不過府相都是穩定性非常高的星耀，所以也造就了命主比較容易形成一個四平八穩的個性。那為什麼說命宮在寅申的時候要優越一點呢？這是因為命宮在寅申的時候，本格是 [雄宿朝元格](#雄宿朝元)。
+
+
+<table class="astrolabe">
+ <tr>
+ <td><div class="pattern"><div>太陽</div><div><code>巳</code> <code>父母</code></div></div></td>
+ <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>福德</code></div></div></td>
+ <td><div class="pattern"><div>天機</div><div><code>未</code> <code>田宅</code></div></div></td>
+ <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>官祿</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>命宮</code></div></div></td>
+ <td class="center-palace" rowspan="2" colspan="2">府相朝垣</td>
+ <td><div class="pattern"><div>太陰</div><div><code>酉</code> <code>僕役</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>兄弟</code></div></div></td>
+ <td><div class="pattern"><div>貪狼</div><div><code>戌</code> <code>遷移</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>七殺</div><div><code>寅</code> <code>夫妻</code></div></div></td>
+ <td><div class="pattern"><div>天梁</div><div><code>丑</code> <code>子女</code></div></div></td>
+ <td><div class="pattern"><div>廉貞 天相</div><div><code>子</code> <code>財帛</code></div></div></td>
+ <td><div class="pattern"><div>巨門</div><div><code>亥</code> <code>疾厄</code></div></div></td>
+ </tr>
+</table>
+
+
+這中組合下府相朝垣沒有依附於其他格局，之所以會被列入“平常”，是因為此時命宮武曲落宮於 `天羅地網` 位。
+
+
+<table class="astrolabe">
+ <tr>
+ <td><div class="pattern"><div>天梁</div><div><code>巳</code> <code>子女</code></div></div></td>
+ <td><div class="pattern"><div>七殺</div><div><code>午餐</code> <code>夫妻</code></div></div></td>
+ <td><div class="pattern"><div></div><div><code>未</code> <code>兄弟</code></div></div></td>
+ <td><div class="pattern"><div>廉貞</div><div><code>申</code> <code>命宮</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>紫微 天相</div><div><code>辰</code> <code>財帛</code></div></div></td>
+ <td class="center-palace" rowspan="2" colspan="2">府相朝垣</td>
+ <td><div class="pattern"><div></div><div><code>酉</code> <code>父母</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>天機 巨門</div><div><code>卯</code> <code>疾厄</code></div></div></td>
+ <td><div class="pattern"><div>破軍</div><div><code>戌</code> <code>福德</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>貪狼</div><div><code>寅</code> <code>遷移</code></div></div></td>
+ <td><div class="pattern"><div>太陽 太陰</div><div><code>丑</code> <code>僕役</code></div></div></td>
+ <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>官祿</code></div></div></td>
+ <td><div class="pattern"><div>天同</div><div><code>亥</code> <code>田宅</code></div></div></td>
+ </tr>
+</table>
+
+
+此時，府相朝垣是 [雄宿朝元格](#雄宿朝元) 的小掛件兒。
+
+
+<table class="astrolabe">
+ <tr>
+ <td><div class="pattern"><div>天相</div><div><code>巳</code> <code>財帛</code></div></div></td>
+ <td><div class="pattern"><div>天樑</div><div><code>午餐</code> <code>子女</code></div></div></td>
+ <td><div class="pattern"><div>廉貞 七殺</div><div><code>未</code> <code>夫妻</code></div></div></td>
+ <td><div class="pattern"><div></div><div><code>申</code> <code>兄弟</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>巨門</div><div><code>辰</code> <code>疾厄</code></div></div></td>
+ <td class="center-palace" rowspan="2" colspan="2">府相朝垣</td>
+ <td><div class="pattern"><div></div><div><code>酉</code> <code>命宮</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>紫微 貪狼</div><div><code>卯</code> <code>遷移</code></div></div></td>
+ <td><div class="pattern"><div>天同</div><div><code>戌</code> <code>父母</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>天機 太陰</div><div><code>寅</code> <code>僕役</code></div></div></td>
+ <td><div class="pattern"><div>天府</div><div><code>丑</code> <code>官祿</code></div></div></td>
+ <td><div class="pattern"><div>太陽</div><div><code>子</code> <code>田宅</code></div></div></td>
+ <td><div class="pattern"><div>武曲 破軍</div><div><code>亥</code> <code>福德</code></div></div></td>
+ </tr>
+</table>
+
+
+此時，府相朝垣是 [極居卯酉格](#極居卯酉) 的小掛件兒，只不過這個時候是藉宮安星的。
+
+
+<table class="astrolabe">
+ <tr>
+ <td><div class="pattern"><div>天機</div><div><code>巳</code> <code>兄弟</code></div></div></td>
+ <td><div class="pattern"><div>紫微</div><div><code>午</code> <code>命宮</code></div></div></td>
+ <td><div class="pattern"><div></div><div><code>未</code> <code>夫妻</code></div></div></td>
+ <td><div class="pattern"><div>破軍</div><div><code>申</code> <code>福德</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>七殺</div><div><code>辰</code> <code>夫妻</code></div></div></td>
+ <td class="center-palace" rowspan="2" colspan="2">府相朝垣</td>
+ <td><div class="pattern"><div></div><div><code>酉</code> <code>田宅</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>太陽 天梁</div><div><code>卯</code> <code>子女</code></div></div></td>
+ <td><div class="pattern"><div>廉貞 天府</div><div><code>戌</code> <code>官祿</code></div></div></td>
+ </tr>
+ <tr>
+ <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>財帛</code></div></div></td>
+ <td><div class="pattern"><div>天同 巨門</div><div><code>丑</code> <code>疾厄</code></div></div></td>
+ <td><div class="pattern"><div>貪狼</div><div><code>子</code> <code>遷移</code></div></div></td>
+ <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>僕役</code></div></div></td>
+ </tr>
+</table>
+
+
+此時，府相朝垣是 [極向離明格](#極向離明) 的小掛件兒。
+
+
+## 火貪、鈴貪
+
+
+在紫微鬥數全書中，並沒有鈴貪格的描述，應該是後人總結的一個模式。但是對於火貪的描述確實是不少。這個格局的賭性是非常強的，擅長梭哈，信奉 `搏一搏單車變摩托車`，但是大多數情況可能是 `搏一搏寶馬變奧拓`。
+
+
+>貪狼火星居廟旺名鎮諸邦  
+>貪狼居卯酉，遇火作公卿  
+>貪狼卯酉宮利益，與紫微同度，見火星貴，乙辛己生人宜之，財官格  
+>貪狼丑未宮入廟，與武曲同度，見火星，戊己庚生人貴格  
+>貪狼四墓宮中福氣濃，提兵指日立邊功，火星拱會誠為貴，名震諸夷定有封  
+>貪狼主限四墓臨，更喜人生四墓生，若見火星多橫發，自然富貴冠鄉鄰  
+>文曲與貪狼火星同垣三合者，將相之命  
+
+
+很多人都把目光集中在了火貪格局的橫發上面，夢想著能夠一夜致富。但大家仔細閱讀上面的描述，其實比起財，這個格局的官運其實是更強的。所以不要只想著怎麼搞錢，也可以把重心放在自己的事業上，以事業來帶財，更加的穩定，也不容易出現橫發橫破的現象。
+
 ## 石中隱玉
 ## 梁馬飄蕩
 ## 陽梁昌祿
@@ -828,7 +1150,6 @@ import Donate from '/components/donate.vue'
 ## 文星朝命	
 ## 昌曲夾命	
 ## 文星暗拱	
-## 科權祿拱	
 ## 權祿生逢	
 ## 科明暗祿	
 ## 科權祿夾	
