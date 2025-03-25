@@ -76,7 +76,7 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
 
     const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
-    const palace = astrolabe.star("紫微星").palace();
+    const palace = astrolabe.star("紫微").palace();
     ```
 
   ***
@@ -110,7 +110,7 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
 
     const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
-    const palaces = astrolabe.star("紫微星").surroundedPalaces();
+    const palaces = astrolabe.star("紫微").surroundedPalaces();
     ```
 
   ***
@@ -144,7 +144,7 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
 
     const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
-    const palace = astrolabe.star("紫微星").oppositePalace();
+    const palace = astrolabe.star("紫微").oppositePalace();
     ```
 
   ***
@@ -181,7 +181,7 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
 
     const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
-    const result = astrolabe.star("紫微星").withBrightness(["庙", "旺"]);
+    const result = astrolabe.star("紫微").withBrightness(["庙", "旺"]);
     ```
 
   ***
@@ -218,5 +218,5 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
 
     const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
 
-    const result = astrolabe.star("紫微星").withMutagen(["权", "科"]);
+    const result = astrolabe.star("紫微").withMutagen(["权", "科"]);
     ```
