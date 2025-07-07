@@ -1077,19 +1077,325 @@ import Donate from '/components/donate.vue'
 很多人都把目光集中在了火贪格局的横发上面，梦想着能够一夜暴富。但是大家仔细阅读上面的描述，其实比起财，这个格局的官运其实是更强的。所以不要只想着怎么搞钱，也可以把重心放在自己的事业上，以事业来带财，更加的稳定，也不容易出现横发横破的现象。
 
 ## 石中隐玉
+
+笔者一直认为，石中隐玉这个格局是所有格局里面名字取得最文艺的一个格局。当巨门在 `子宫` 或者 `午宫` 的时候，就构成了这个格局。当命宫在子宫的时候，日月并明，所以整体偏开朗积极一些，当命宫在午宫的时候日月反背，偏消极被动一些。
+
+通常情况下，这个格局会给人一种比较婉约的感觉，思维活跃，第六感强，表达欲也是非常强烈，动嘴就能解决的事情，就懒得动手。笔者觉得，这个格局最大的弊端就是抗压能力差了点，遇到自己掌控不了的局面就容易慌神。
+
+如果你是这个格局的人，就应该具备作为一块美玉应有的觉悟，那就是需要接受雕琢。如果从小就能经历一些挫折和失败的磨砺，这个格局很容易成为那个人群中光彩照人的焦点。但是如果从小过于的顺遂，就可能会因为太容易轻信他人，对社会的一些险恶缺乏一定的认知而让自己陷入难以自拔的境地。
+
+这个格局的人通常个性都比较随和，也很会为他人考虑，共情能力非常的强，所以深受周围人的喜爱，但同时也很容易被人当成软柿子来捏。
+
+>子午巨门石中隐玉，[明禄暗禄](#明禄暗禄)锦上添花  
+>身命居子午宫为石中隐玉格，更会科权禄，终身福厚，会羊陀火铃化忌，若不夭折，男盗女娼  
+>巨门子午科权禄石中隐玉福兴隆 富而子贵，辛癸人上格，丁己人次之，丙戊主男  
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div></div><div><code>巳</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>天机</div><div><code>午</code> <code>迁移</code></div></div></td>
+      <td><div class="pattern"><div>紫微 破军</div><div><code>未</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>申</code> <code>财帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>太阳</div><div><code>辰</code> <code>官禄</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">石中隐玉</td>
+      <td><div class="pattern"><div>天府</div><div><code>酉</code> <code>子女</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲 七杀</div><div><code>卯</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>太阴</div><div><code>戌</code> <code>夫妻</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同 天梁</div><div><code>寅</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>丑</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>巨门</div><div><code>子</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 贪狼</div><div><code>亥</code> <code>兄弟</code></div></div></td>
+  </tr>
+</table>
+
 ## 梁马飘荡
+
+这个格局是指 [天梁星](./major-star.md#天梁星) 和 [天马星](./minor-star.md#天马) 同宫的情况。在《紫微斗数全书》中对这个格局的评价并不是很好，其实在不同时期，对这些断语的解释应该要不同才对，作为一个研究紫微斗数的人士，我们应该尽量中性的去理解和分析，而不是一味的跟着古书断语来生搬硬套。
+
+>天梁天马陷飘荡无疑  
+>天梁遇马女命贱而且淫  
+>天梁天马为人飘荡风流  
+
+如果你已经熟悉了天梁星的特性，就不难分析出为什么会有这些断语。其实这个格局是一个充满侠义色彩，豪气干云的个性。如果用金庸先生作品里面的一个角色来类比一下的话，那一定是令狐冲无疑。
+
+当今社会已经是个多元化的社会，社会形态和人们的生活方式已经与以前不可同日而语了。所以大家千万不犯那种用前朝的剑来斩本朝的官的低级错误。不可否认，梁马飘荡这个格局的人确实是个好动分子。他们不喜欢一成不变的生活方式，更不喜欢日复一日重复的工作模式。
+
+四处奔走对于其他人来说，可能是一种劳苦，但是对于梁马飘荡的人来说，这恰恰是他们最舒适的生活。随心而行，随遇而安是他们最贴切的性格标签。只要没有影响到其他人，大可不必太在意他人的眼光。人生短短数十载，也不是每个人都必须要以赚更多的钱为目标。
+
 ## 阳梁昌禄
+
+这个格局是指 [太阳星](./major-star.md#太阳星)、[天梁星](./major-star.md#天梁星)、[文昌星](./minor-star.md#文昌星) 和 [禄存星](./minor-star.md#禄存) 在三方四正中集齐的形式，传说中的“状元”之格。
+
+>天梁太阳昌禄会胪传第一名   
+>天梁星宿寿星逢，机日文昌左右同，子午寅申为入庙，官资清显至三公。  
+
+个性上的话，这个格局基本延续了 [太阳天梁](./major-star.md#太阳天梁) 的特征。在生活中，阳梁昌禄格局的人并不在少数，但是也没有见他们都是状元吧？甚至学渣都大有人在。实际上，这个格局的人在自己感兴趣的领域是非常具有钻研精神的。假如说他们感兴趣的领域恰好是学习的话，在天赋和努力的加持下，成为状元的机会自然就比一般人大得多。
+
+所以，不要看到这个格局，就断言对方是个学霸，或者高学历。而是要去看对方的兴趣和特长。他们有可能是一名优秀的学者，也有可能是一名出色的外科医生。值得一提的是，这个格局通常都比较看中名声，也有一定的官瘾，所以一般不会在基层待太久。
+
+正所谓，三百六十行，行行出状元。所以大家不要把这个状元格限制在了读书上面。这是一个相当不错的格局，假如你的小孩有幸得到这个格局，那么你要做的不是给他安排一条道路出来让他走，而是从旁协助，观察他的特长和兴趣所在，重点培养。这样才能最大程度的发挥出这个格局的优势。
+
 ## 杀破狼
+
+如果说紫微斗数里哪个格局的知名度最高，那一定是杀破狼格了。它指的是 [七杀星](./major-star.md#七杀星)、[破军星](./major-star.md#破军星) 和 [贪狼星](./major-star.md#贪狼星) 的组合。这三颗星因为永远在三方会见，所以只要任何一颗星落到命宫，就会构成杀破狼格。光听这个名字，就应该能猜到古书上对它不会有啥好评价了。
+
+>武贞羊杀破狼，居陷地则丧命夭折， 若与同梁武曲会旺宫，聪明果决，如羊陀火铃冲破，只宜空门。  
+>紫微入限本为祥，只恐三方杀破狼，常庶逢之多不利，官员降谪有惊伤。  
+>七杀破军宜出外，机月同梁作吏人。   
+>七杀破军专依羊铃之虐。  
+>七杀破军宜出外，机月同梁作吏人。   
+>火陀相会不为良，七杀破军寿不长，只可偏房方富足，聪明得宠过时光。    
+>七杀破军宜出外诸般手艺不能精  
+>七杀破军同身心不得静守，加羊陀火铃在外招是非。  
+>破军贪狼逢禄马男多浪荡女多淫   
+
+不管你有没有接触过紫微斗数，都应该听说过这三颗星的大名，有一部电影名字就叫《杀破狼》。看过仙剑奇侠传一的读者应该多里面阿桑唱的那首插曲很熟悉，那首歌的名字也叫《杀破狼》。在这些作品里面，贪狼、破军和七杀分别代表了 `贪` `嗔` `痴`。
+
+为什么说杀破狼宜出外呢，除了他们本身好动以外，更多的原因大概是因为他们的不服管，在家尽给父母添堵了。毕竟谁受得了天天有个反骨仔在身边转呢？虽然说反骨仔有点言过其实，但杀破狼确实是不喜欢一层不变的生活。他们追求新奇，有一股不服输，不怕苦的精神。
+
+杀破狼的占比是非常高的，所以不要对古文偏听偏信。要知道，以前紫微斗数服务于统治阶级，对于这种有着自己想法还不服管的家伙，自然是颇为头疼的。在很多资料中都有提及杀破狼的人生跌宕起伏，大起大落，也是缘于他们敢于为了内心的目标去奋斗的决心。
+
+现在短视频上流行一句话叫做“没有撤退可言”用在他们身上那是再贴切不过了，一旦他们决定去做一件事情，就会有着一往无前精神，甚至自己断掉后路，破釜沉舟。所以对于杀破狼来说守成比奋斗困难。杀破狼格还有个特点就是站着喜欢找东西靠，坐着也喜欢斜靠着，颇有点“站不直”的味道。在命宫或身宫形成这个格局都有这个特点。
+
 ## 七杀朝斗
+
+笔者多次说不能对古籍偏听偏信还有个原因就是，书里面常常会有自相矛盾的地方。比如说这个七杀朝斗格，就是杀破狼的一种特殊形式。它指的是七杀在 `子`、`午`、`寅`、`申` 坐命的杀破狼格局。
+
+>七杀朝斗爵禄荣昌，紫府同宫终身福厚。  
+>朝斗仰斗爵禄荣昌，文桂文华九重贵显。   
+>七杀朝斗 寅申子午一生爵禄荣昌  
+>紫微居子午科权禄照最为奇 科权禄三方照是也为仰面朝斗格。
+
+当七杀在 `寅宫` 或者 `申宫` 的时候，迁移宫是紫微天府，当七杀在 `子宫` 或者 `午宫` 的时候，迁移宫是武曲天府。其中当七杀在 `寅宫` 和 `子宫` 的时候，这个格局叫做 `七杀仰斗`。但是也有一说是在 `子午` 为仰斗，在 `寅申` 为朝斗。此处笔者认为名字不是那么重要，都叫七杀朝斗也不是不行。
+
+这个格局倔强中带着自信，自尊心和自信心一样强，不达目的誓不罢休。如果具备与之匹配的能力，那这个格局无疑是充满人格魅力的。反之，假如空有一腔理想抱负，但是却没有去实现它的能力，那就很容易成为软饭硬吃的代表。
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>太阳</div><div><code>巳</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>破军</div><div><code>午</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>天机</div><div><code>未</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>迁移</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>福德</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">七杀朝斗</td>
+      <td><div class="pattern"><div>太阴</div><div><code>酉</code> <code>疾厄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>贪狼</div><div><code>戌</code> <code>财帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>七杀</div><div><code>寅</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>丑</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 天相</div><div><code>子</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>巨门</div><div><code>亥</code> <code>子女</code></div></div></td>
+  </tr>
+</table>
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天梁</div><div><code>巳</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>七杀</div><div><code>午</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>未</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>廉贞</div><div><code>申</code> <code>福德</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>紫微 天相</div><div><code>辰</code> <code>夫妻</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">七杀朝斗</td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天机 巨门</div><div><code>卯</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>破军</div><div><code>戌</code> <code>官禄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>贪狼</div><div><code>寅</code> <code>财帛</code></div></div></td>
+      <td><div class="pattern"><div>太阳 太阴</div><div><code>丑</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>迁移</code></div></div></td>
+      <td><div class="pattern"><div>天同</div><div><code>亥</code> <code>仆役</code></div></div></td>
+  </tr>
+</table>
+
 ## 禄衰马困
+
+这个格局成格条件是比较复杂的，它属于杂局中的一个格局。在紫微斗数全书中对它的描述只有一句话。
+
+>禄衰马困 限逢七杀禄马空亡是也。 
+
+从描述中我们可以看到这个格局是在运限中生效。它代表了在三方四正当中 [禄存星](./minor-star.md#禄存) 和 [天马星](./minor-star.md#天马) 都处于一种不太好的状态。大家也可以把它当作是 [禄马交驰](#禄马交驰) 的反义词。
+
+通常是三方四正内禄存和空曜（天空，地空，截空，旬空）或者耗曜（大耗，小耗，地劫）同宫的同时天马也和煞忌（化忌，擎羊，陀罗，天刑，阴煞）同宫。大家都知道，禄存是财星，它是生财的本钱，而本钱需要流动起来，才会有机会越来越多。这个格局指的是投入了成本，也付出了辛苦，却收获不到相应的回报。
+
+实际上，财星和空曜同宫的时候，一般金钱都不是他考虑的首要条件，或者说对金钱不是很敏感。人生并不是只有赚钱一件事情，也不应该只为了赚钱而活着。假如在运限上遇到这个格局，可以在投资的时候谨慎一些，特别是面对天上掉馅饼的时候，多问几个为什么。
+
 ## 英星入庙
-## 大水朝东
+
+英星指的是 [破军星](./major-star.md#破军星)，`庙` 指的是 [亮度](./star.md#星曜的亮度)。这个格局也是杀破狼格的一个特殊形式，它是指破军星在 `子宫` 和 `午宫` 的情况。
+
+>子午破军加官进禄  
+>破军在子午宫，多有金银宝贝蓄积  
+>破军在子午宫守祖业荣昌，但见有进退，加羊陀火铃退祖田少  
+>破军子午宫无杀官资清显至三公 甲癸生人合格，丁巳生人次之，丙戌生人主困。   
+
+笔者翻遍《紫微斗数全书》，也没有找到这个格局的名字，想来应该是之后的前辈取的名字。破军是一颗非常富有创造力的星耀，而且别人不敢说的他敢说，别人不敢做的他敢做。所以成败的上限和下限都比较大。
+
+其实，星耀之间的个性差异并没有非常大，特别是现代社会，再特立独行的人都会被磨平棱角，学会隐藏自己的锋芒。所以任何的特质，都是相对的。其实从生活中的一些小事，更能看出不同星耀之间的差异。比如说，天同星和破军星在打麻将的时候，风格差异是非常大的。
+
+对于破军星来说，但凡给他看到一丝丝做大牌的苗头，他们是绝对不会轻易放过的。而反观天同星，能赢他们就很开心了。当然，这只是这两颗星单方面的对比，实际上在不同的星耀组合和四化影响下就算同一颗星也会有不同的表现的。
+
+英星入庙格在商界比较容易有成就，政届的话要看实际的社会体制。不同的体制、不同的岗位对英星入庙的成就影响很大。小时候成长环境中没有经历些逆境，对英星入庙来说并不一定是好事。
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>太阳</div><div><code>巳</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>破军</div><div><code>午</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>天机</div><div><code>未</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>福德</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>夫妻</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">英星入庙</td>
+      <td><div class="pattern"><div>太阴</div><div><code>酉</code> <code>田宅</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>贪狼</div><div><code>戌</code> <code>官禄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>七杀</div><div><code>寅</code> <code>财帛</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>丑</code> <code>疾厄</code></div></div></td>
+      <td><div class="pattern"><div>廉贞 天相</div><div><code>子</code> <code>迁移</code></div></div></td>
+      <td><div class="pattern"><div>巨门</div><div><code>亥</code> <code>仆役</code></div></div></td>
+  </tr>
+</table>
+
+## 众水朝东
+
+又称为 `大水朝东`，指的是 [破军星](./major-star.md#破军星) 和 [文曲星](./minor-star.md#文曲星) 在寅宫或者卯宫的情况。因为破军和文曲五行都是水，寅和卯在方位上为东方。
+
+>文耗居寅卯，谓之众水朝东。 
+
+古籍中对这个格局并没有太多描述，现在公开的资料里面，对众水朝东格局的评价褒贬不一，有说富贵格的，有说一生辛劳的。其实，这两种说法都是没有错的。`文星` 指的是文曲，耗星指的就是破军。按照上面的表述，这个格局有两种表现形式。
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>太阴</div><div><code>巳</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>贪狼</div><div><code>午</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>天同 巨门</div><div><code>未</code> <code>仆役</code></div></div></td>
+      <td><div class="pattern"><div>武曲 天相</div><div><code>申</code> <code>迁移</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>廉贞 天府</div><div><code>辰</code> <code>福德</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">众水朝东</td>
+      <td><div class="pattern"><div>太阳 天梁</div><div><code>酉</code> <code>疾厄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>卯</code> <code>父母</code></div></div></td>
+      <td><div class="pattern"><div>七杀</div><div><code>戌</code> <code>财帛</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>破军 文曲</div><div><code>寅</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>丑</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div>紫微</div><div><code>子</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div>天机</div><div><code>亥</code> <code>子女</code></div></div></td>
+  </tr>
+</table>
+
+<table class="astrolabe">
+  <tr>
+      <td><div class="pattern"><div>天府</div><div><code>巳</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天同 太阴</div><div><code>午</code> <code>田宅</code></div></div></td>
+      <td><div class="pattern"><div>武曲 贪狼</div><div><code>未</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>太阳 巨门</div><div><code>申</code> <code>仆役</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>辰</code> <code>父母</code></div></div></td>
+      <td class="center-palace" rowspan="2" colspan="2">众水朝东</td>
+      <td><div class="pattern"><div>天相</div><div><code>酉</code> <code>迁移</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div>廉贞 破军 文曲</div><div><code>卯</code> <code>命宫</code></div></div></td>
+      <td><div class="pattern"><div>天机 天梁</div><div><code>戌</code> <code>疾厄</code></div></div></td>
+  </tr>
+  <tr>
+      <td><div class="pattern"><div></div><div><code>寅</code> <code>兄弟</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>丑</code> <code>夫妻</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>子</code> <code>子女</code></div></div></td>
+      <td><div class="pattern"><div>紫微 七杀</div><div><code>亥</code> <code>财帛</code></div></div></td>
+  </tr>
+</table>
+
+我们都知道，廉破的脾气不是太好，说话做事不太顾及别人的感受，很容易在个性上吃亏。在寅宫那一组会好一些，但是也更加好动一些。这两个格局高概率与 [禄马交驰格](#禄马交驰) 重合，所以很多这个格局的人活跃在商界。不过廉破那一组更容易从事专业技术相关的工作，而在寅宫独坐这一组更容易从事一些对外贸易，进出口之类的生意。
+
+值得注意的是，众水朝东归大海，所以这个格局也要特别注意守成，不要浪过头给别人做了嫁衣。另外，很多资料上说这个格局要注意水厄。其实我要说的是，任何格局都要注意交通安全，注意水火安全，注意身体健康。所以大可不必因为看到这个格局而感到焦虑不安。
+
 ## 三奇加会
-## 禄合鸳鸯	
-## 明禄暗禄	
-## 禄马佩印	
-## 两重华盖	
+
+三奇指的是 `化禄`、`化权`、`化科` 这三吉化。三奇加会指的就是在命宫三方四正内集齐这三吉化。但是，笔者并没有在《紫微斗数全书》中找到这个格局的描述，所以这应该是后人总结归纳的一个格局。
+
+它由于组合众多，无法一一列举出每一种情况，并且依附的星耀也不同，所以三奇加会需要结合具体情况来分析。在众多组合中，以命宫化科、财帛宫化禄、官禄宫化权这一组最受人们喜爱，读者应该能看透个中缘由。
+
+在生活中，三奇加会又有什么实际表现呢？其实这个格局主要是给命主提供了更多的机会，至于这个机会能否抓得住，还得要靠自己的。如果做一个类比的化，就类似于：请你吃饭的人多了20%，拿到offer的概率多了20%，利润提高20%之类的（这里的20%是我随便写的一个数据，不会真有人去以这个为标准吧？）。
+
 ## 禄马交驰	
+
+说到财格，那禄马交驰必定是榜上有名的一个格局。它指的是禄存星和天马星同宫的情况，也有资料说在三方四正遇到都算。但是按照希夷先生的说法，需要同宫才算。禄存星已经是非常有名的财星了，不过它只是“本钱”。钱当然需要流通起来，才会增值，而天马刚好就代表了流通。
+
+>武曲禄马交驰发财远郡 
+>禄马最喜交驰 忌见杀羊火截路空亡，多主劳苦。 
+>天马如与禄存同宫，谓之禄马交驰，又曰折鞭马。
+
+如果严格按照同宫才算的话，禄马交驰只能发生在 [四马地](./palace.md#四生地)。通常禄马交驰的宫位都会容易有“停不下来”、忙忙碌碌的感觉。是否忙有所获，当然是要结合其他的星耀组合情况而定啦。不过既然抽到了这个组合，机会肯定会比一般人多的，好好抓住时机冲一把，事半功倍，岂不爽哉？
+
+## 禄合鸳鸯	
+
+这个格局指 `化禄` 和 `禄存` 同宫或者对拱。其实可以完全可以直译它的意思。禄存是本钱，而化禄是变多，合起来就是让本钱变多，那就是利润。所以它是一个与财有关的格局。在《紫微斗数全书》中对它的描述只有一句话。
+
+>合禄鸳鸯一世荣。  
+
+那么我们反推一下，是否说明禄合鸳鸯的人对理财、经营等比较敏感，直觉比较强呢？就算本命盘没有抽到这个格局，在运限当中也是会碰到的。所以大家如果遇到鸳鸯禄一定要把握机会。不过也要同时参考其他的星耀组合，把他作为一个参考而不是一个决策的参数。
+
+说到这儿此处插一个硬广：
+
+<Donate />
+
+## 明禄暗禄	
+
+这里的明是指“本宫”，而暗是指目标宫位的 [暗合宫](./palace.md#暗合宫)，两个禄是指禄存和化禄，大家可以把它理解为禄合鸳鸯的一个特殊表现形式。只是另一颗禄“藏”起来了。
+
+>明禄暗禄锦上添花。  
+>明禄暗禄位至公卿。  
+>明禄暗禄 命宫中有化禄（或禄存）坐守，而暗合宫中有禄存（或化禄）是也  
+
+想想，明里暗里都有钱到账，是不是很爽？能否位至公卿不好说，但是肯定是锦上添花的。至少来说，这个格局是笔者这种中奖绝缘体羡慕不来的。
+
+## 禄马佩印	
+
+这个格局是 [禄马交驰格](#禄马交驰) 的一个特殊表现形式，它指的是 [禄存星](./minor-star.md#禄存)、[天马星](./minor-star.md#天马) 和 [天相星](./major-star.md#天相星) 同宫的情况。
+
+>禄马佩印 马前有禄印星同宫是也。 
+>天相禄马交驰，不落空亡，更坐生乡，可为贵论。   
+
+如果禄马交驰为财格的话，那禄马佩印就是在财的基础上加了 `权`。所以这是一个不可多得的富贵格。不过大家要分清楚富贵格和富贵的概念，有富贵格和能富贵是两个概念。
+
+## 两重华盖	
+
+这个格局是 [禄合鸳鸯格](#禄合鸳鸯) 的一个特殊表现形式。就是当化禄、禄存同宫再遇到空劫两颗星之一。在公开资料中，也有说只要是 `空曜`，都算。其实也是有道理的。只不过可能在表现上会有些许的不同。
+
+>两重华盖 谓禄存化禄坐命遇空劫是也。 
+
+[地劫星](./minor-star.md#地劫星) 意味着得到后又失去，[地空星](./minor-star.md#地空星) 叫做空中楼，水中花。两大财星和她们在一起，自然是元子袖中过，半点不沾身了。其实这只是夸张的说法，`华盖` 两个字已经指明了，这个格局不能太过看重金钱，否则将会生活在无尽的纠结和痛苦之中。
+
+同时也再次印证了 `不能过于依赖格局` 这个观点。因为格局之间的断语是会互相矛盾的，一张盘里同时满足多个格局是大概率事件，而不同格局之间的断语有时候截然想反。把格局的特质作为一个下判断的参考依据，就会更加准确一些。
+
 ## 风云际会	
 ## 羊陀夹命	
 ## 马头带箭
