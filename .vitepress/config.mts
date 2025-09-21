@@ -22,6 +22,9 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    footer: {
+      message: '© 2025 ziwei.pro All rights reserved.<br/>友情链接：<a href="https://ziweiai.com.cn/" target="_blank">紫微AI</a> | <a href="https://ziwei.pub" target="_blank">紫微派</a>',
+    },
   },
 
   locales: {
