@@ -237,7 +237,14 @@ export default defineConfig({
         sidebar: [
           {
             text: "iztro",
-            items: [{ text: "Quick Start", link: "/en_US/quick-start.md" }],
+            items: [
+              { text: "Quick Start", link: "/en_US/quick-start.md" },
+              { text: "Astrolabes", link: "/en_US/posts/astrolabe.md" },
+              { text: "Palaces", link: "/en_US/posts/palace.md" },
+              { text: "Stars", link: "/en_US/posts/star.md" },
+              { text: "Horoscopes and Cycles", link: "/en_US/posts/horoscope.md" },
+              { text: "Configuration and Plugins", link: "/en_US/posts/config-n-plugin.md" },
+            ],
           },
         ],
 

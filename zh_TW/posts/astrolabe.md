@@ -98,324 +98,6 @@ var { astro } = require("iztro");
   const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
   ```
 
-- 示例返回值
-
-  ::: details 返回值
-
-  ```ts
-  {
-    // 陽歷日期
-    solarDate: '2000-8-16',
-    // 農歷日期
-    lunarDate: '二〇〇〇年七月十七',
-    // 四柱
-    chineseDate: '庚辰 甲申 丙午 庚寅',
-    // 時辰
-    time: '寅時',
-    // 時辰對應的時間段
-    timeRange: '03:00~05:00',
-    // 星座
-    sign: '獅子座',
-    // 生肖
-    zodiac: '龍',
-    // 命宮地支
-    earthlyBranchOfSoulPalace: '午',
-    // 身宮地支
-    earthlyBranchOfBodyPalace: '戌',
-    // 命主
-    soul: '破軍',
-    // 身主
-    body: '文昌',
-    // 五行局
-    fiveElementsClass: '木三局',
-    // 十二宮數據
-    palaces: [
-      {
-        // 宮名
-        name: '財帛',
-        // 是否身宮
-        isBodyPalace: false,
-        // 是否來因宮
-        isOriginalPalace: false,
-        // 宮位天干
-        heavenlyStem: '戊',
-        // 宮位地支
-        earthlyBranch: '寅',
-        // 主星（含天馬祿存）
-        majorStars: [
-          { name: '武曲', type: 'major', scope: 'origin', brightness: '得' },
-          { name: '天相', type: 'major', scope: 'origin', brightness: '廟' },
-          { name: '天馬', type: 'tianma', scope: 'origin', brightness: '' },
-        ],
-        // 輔星（含六吉六煞）
-        minorStars: [],
-        // 雜耀
-        adjectiveStars: [
-          { name: '月解', type: 'helper', scope: 'origin' },
-          { name: '三臺', type: 'adjective', scope: 'origin' },
-          { name: '天壽', type: 'adjective', scope: 'origin' },
-          { name: '天巫', type: 'adjective', scope: 'origin' },
-          { name: '天廚', type: 'adjective', scope: 'origin' },
-          { name: '陰煞', type: 'adjective', scope: 'origin' },
-          { name: '天哭', type: 'adjective', scope: 'origin' },
-        ],
-        // 長生12神
-        changsheng12: '絕',
-        // 博士12神
-        boshi12: '蜚廉',
-        // 流年將前12神
-        jiangqian12: '歲驛',
-        // 流年歲前12神
-        suiqian12: '吊客',
-        // 大限
-        stage: { range: [44, 53], heavenlyStem: '戊' },
-        // 小限
-        ages: [9, 21, 33, 45, 57, 69, 81],
-      },
-      {
-        name: '子女',
-        isBodyPalace: false,
-        isOriginalPalace: false,
-        heavenlyStem: '己',
-        earthlyBranch: '卯',
-        majorStars: [
-          { name: '太陽', type: 'major', scope: 'origin', brightness: '廟' },
-          { name: '天梁', type: 'major', scope: 'origin', brightness: '廟' },
-        ],
-        minorStars: [],
-        adjectiveStars: [{ name: '天刑', type: 'adjective', scope: 'origin' }],
-        changsheng12: '墓',
-        boshi12: '奏書',
-        jiangqian12: '息神',
-        suiqian12: '病符',
-        stage: { range: [34, 43], heavenlyStem: '己' },
-        ages: [8, 20, 32, 44, 56, 68, 80],
-      },
-      {
-        name: '夫妻',
-        isBodyPalace: false,
-        isOriginalPalace: true,
-        heavenlyStem: '庚',
-        earthlyBranch: '辰',
-        majorStars: [{ name: '七殺', type: 'major', scope: 'origin', brightness: '廟' }],
-        minorStars: [
-          { name: '右弼', type: 'soft', scope: 'origin', brightness: '' },
-          { name: '火星', type: 'tough', scope: 'origin', brightness: '陷' },
-        ],
-        adjectiveStars: [
-          { name: '封誥', type: 'adjective', scope: 'origin' },
-          { name: '華蓋', type: 'adjective', scope: 'origin' },
-        ],
-        changsheng12: '死',
-        boshi12: '將軍',
-        jiangqian12: '華蓋',
-        suiqian12: '歲建',
-        stage: { range: [24, 33], heavenlyStem: '庚' },
-        ages: [7, 19, 31, 43, 55, 67, 79],
-      },
-      {
-        name: '兄弟',
-        isBodyPalace: false,
-        isOriginalPalace: false,
-        heavenlyStem: '辛',
-        earthlyBranch: '巳',
-        majorStars: [{ name: '天機', type: 'major', scope: 'origin', brightness: '平' }],
-        minorStars: [],
-        adjectiveStars: [
-          { name: '天喜', type: 'flower', scope: 'origin' },
-          { name: '天空', type: 'adjective', scope: 'origin' },
-          { name: '孤辰', type: 'adjective', scope: 'origin' },
-        ],
-        changsheng12: '病',
-        boshi12: '小耗',
-        jiangqian12: '劫煞',
-        suiqian12: '晦氣',
-        stage: { range: [14, 23], heavenlyStem: '辛' },
-        ages: [6, 18, 30, 42, 54, 66, 78],
-      },
-      {
-        name: '命宮',
-        isBodyPalace: false,
-        isOriginalPalace: false,
-        heavenlyStem: '壬',
-        earthlyBranch: '午',
-        majorStars: [{ name: '紫微', type: 'major', scope: 'origin', brightness: '廟' }],
-        minorStars: [{ name: '文曲', type: 'soft', scope: 'origin', brightness: '陷' }],
-        adjectiveStars: [
-          { name: '年解', type: 'helper', scope: 'origin' },
-          { name: '鳳閣', type: 'adjective', scope: 'origin' },
-          { name: '天福', type: 'adjective', scope: 'origin' },
-          { name: '截路', type: 'adjective', scope: 'origin' },
-          { name: '蜚廉', type: 'adjective', scope: 'origin' },
-        ],
-        changsheng12: '衰',
-        boshi12: '青龍',
-        jiangqian12: '災煞',
-        suiqian12: '喪門',
-        stage: { range: [4, 13], heavenlyStem: '壬' },
-        ages: [5, 17, 29, 41, 53, 65, 77],
-      },
-      {
-        name: '父母',
-        isBodyPalace: false,
-        isOriginalPalace: false,
-        heavenlyStem: '癸',
-        earthlyBranch: '未',
-        majorStars: [],
-        minorStars: [
-          { name: '天鉞', type: 'soft', scope: 'origin', brightness: '' },
-          { name: '陀羅', type: 'tough', scope: 'origin', brightness: '廟' },
-        ],
-        adjectiveStars: [
-          { name: '天姚', type: 'flower', scope: 'origin' },
-          { name: '空亡', type: 'adjective', scope: 'origin' },
-        ],
-        changsheng12: '帝旺',
-        boshi12: '力士',
-        jiangqian12: '天煞',
-        suiqian12: '貫索',
-        stage: { range: [114, 123], heavenlyStem: '癸' },
-        ages: [4, 16, 28, 40, 52, 64, 76],
-      },
-      {
-        name: '福德',
-        isBodyPalace: false,
-        isOriginalPalace: false,
-        heavenlyStem: '甲',
-        earthlyBranch: '申',
-        majorStars: [
-          { name: '破軍', type: 'major', scope: 'origin', brightness: '得' },
-          { name: '祿存', type: 'lucun', scope: 'origin', brightness: '' },
-        ],
-        minorStars: [{ name: '文昌', type: 'soft', scope: 'origin', brightness: '得' }],
-        adjectiveStars: [
-          { name: '龍池', type: 'adjective', scope: 'origin' },
-          { name: '臺輔', type: 'adjective', scope: 'origin' },
-          { name: '旬空', type: 'adjective', scope: 'origin' },
-        ],
-        changsheng12: '臨官',
-        boshi12: '博士',
-        jiangqian12: '指背',
-        suiqian12: '官符',
-        stage: { range: [104, 113], heavenlyStem: '甲' },
-        ages: [3, 15, 27, 39, 51, 63, 75],
-      },
-      {
-        name: '田宅',
-        isBodyPalace: false,
-        isOriginalPalace: false,
-        heavenlyStem: '乙',
-        earthlyBranch: '酉',
-        majorStars: [],
-        minorStars: [
-          { name: '地空', type: 'tough', scope: 'origin', brightness: '' },
-          { name: '擎羊', type: 'tough', scope: 'origin', brightness: '陷' },
-        ],
-        adjectiveStars: [
-          { name: '鹹池', type: 'flower', scope: 'origin' },
-          { name: '天貴', type: 'adjective', scope: 'origin' },
-          { name: '月德', type: 'adjective', scope: 'origin' },
-        ],
-        changsheng12: '冠帶',
-        boshi12: '官府',
-        jiangqian12: '鹹池',
-        suiqian12: '小耗',
-        stage: { range: [94, 103], heavenlyStem: '乙' },
-        ages: [2, 14, 26, 38, 50, 62, 74],
-      },
-      {
-        name: '官祿',
-        isBodyPalace: true,
-        isOriginalPalace: false,
-        heavenlyStem: '丙',
-        earthlyBranch: '戌',
-        majorStars: [
-          { name: '廉貞', type: 'major', scope: 'origin', brightness: '利' },
-          { name: '天府', type: 'major', scope: 'origin', brightness: '廟' },
-        ],
-        minorStars: [{ name: '左輔', type: 'soft', scope: 'origin', brightness: '' }],
-        adjectiveStars: [
-          { name: '天才', type: 'adjective', scope: 'origin' },
-          { name: '天虛', type: 'adjective', scope: 'origin' },
-        ],
-        changsheng12: '沐浴',
-        boshi12: '伏兵',
-        jiangqian12: '月煞',
-        suiqian12: '大耗',
-        stage: { range: [84, 93], heavenlyStem: '丙' },
-        ages: [1, 13, 25, 37, 49, 61, 73],
-      },
-      {
-        name: '仆役',
-        isBodyPalace: false,
-        isOriginalPalace: false,
-        heavenlyStem: '丁',
-        earthlyBranch: '亥',
-        majorStars: [{ name: '太陰', type: 'major', scope: 'origin', brightness: '廟' }],
-        minorStars: [],
-        adjectiveStars: [
-          { name: '紅鸞', type: 'flower', scope: 'origin' },
-          { name: '恩光', type: 'adjective', scope: 'origin' },
-          { name: '天官', type: 'adjective', scope: 'origin' },
-          { name: '天月', type: 'adjective', scope: 'origin' },
-          { name: '天傷', type: 'adjective', scope: 'origin' },
-        ],
-        changsheng12: '長生',
-        boshi12: '大耗',
-        jiangqian12: '亡神',
-        suiqian12: '龍德',
-        stage: { range: [74, 83], heavenlyStem: '丁' },
-        ages: [12, 24, 36, 48, 60, 72, 84],
-      },
-      {
-        name: '遷移',
-        isBodyPalace: false,
-        isOriginalPalace: false,
-        heavenlyStem: '戊',
-        earthlyBranch: '子',
-        majorStars: [{ name: '貪狼', type: 'major', scope: 'origin', brightness: '旺' }],
-        minorStars: [{ name: '鈴星', type: 'tough', scope: 'origin', brightness: '陷' }],
-        adjectiveStars: [{ name: ' 八座', type: 'adjective', scope: 'origin' }],
-        changsheng12: '養',
-        boshi12: '病符',
-        jiangqian12: '將星',
-        suiqian12: '白虎',
-        stage: { range: [64, 73], heavenlyStem: '戊' },
-        ages: [11, 23, 35, 47, 59, 71, 83],
-      },
-      {
-        name: '疾厄',
-        isBodyPalace: false,
-        isOriginalPalace: false,
-        heavenlyStem: '己',
-        earthlyBranch: '丑',
-        majorStars: [
-          { name: '天同', type: 'major', scope: 'origin', brightness: '不' },
-          { name: '巨門', type: 'major', scope: 'origin', brightness: '不' },
-        ],
-        minorStars: [
-          { name: '天魁', type: 'soft', scope: 'origin', brightness: '' },
-          { name: '地劫', type: 'tough', scope: 'origin', brightness: '' },
-        ],
-        adjectiveStars: [
-          { name: '天德', type: 'adjective', scope: 'origin' },
-          { name: '寡宿', type: 'adjective', scope: 'origin' },
-          { name: '破碎', type: 'adjective', scope: 'origin' },
-          { name: '天使', type: 'adjective', scope: 'origin' },
-        ],
-        changsheng12: '胎',
-        boshi12: '喜神',
-        jiangqian12: '攀鞍',
-        suiqian12: '天德',
-        stage: { range: [54, 63], heavenlyStem: '己' },
-        ages: [10, 22, 34, 46, 58, 70, 82],
-      },
-    ],
-  }
-  ```
-
-  :::
-
 ---
 
 ### astrolabeByLunarDate
@@ -460,10 +142,6 @@ var { astro } = require("iztro");
   const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", false, true, "zh-CN");
   ```
 
-- 示例返回值
-
-  參考 [astrolabeBySolarDate](./astrolabe.md#astrolabebysolardate) 的示例返回值
-
 ---
 
 ### withOptions <Badge type="warning" text="^2.4.1" />
@@ -484,6 +162,7 @@ var { astro } = require("iztro");
     fixLeap?: boolean;
     language?: Language;
     config?: Config;
+    astroType?: AstroType;
   };
 
   export type withOptions = (
@@ -503,6 +182,7 @@ var { astro } = require("iztro");
   | fixLeap | `boolean` | `false` | `true` | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月 |
   | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 傳回資料將會國際化為指定語言。目前支援 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
   | config | [`Config`](../type-definition.md#config) | `false` | - | 自訂亮度、四化以及時間分割點配置 |
+  | astroType <Badge type="warning" text="^2.5.0" /> | [`AstroType`](../type-definition.md#astrotype) | `false` | `heaven` | 星盤類型；僅在 `config.algorithm` 為 `zhongzhou` 時用於選擇天盤、地盤或人盤 |
 
 - 傳回值
 
@@ -520,13 +200,15 @@ var { astro } = require("iztro");
     gender: 'female',
     isLeapMonth: false,
     fixLeap: true,
-    language: 'zh-CN'
+    language: 'zh-CN',
+    config: { algorithm: 'zhongzhou' },
+    astroType: 'earth'
   })
   ```
 
-- 示例返回值
-
- 參考 [bySolar](./astrolabe.md#bysolar) 的示例返回值
+  :::tip 提示
+  `astroType` 可取 `heaven`、`earth` 或 `human`。預設的 `heaven` 為天盤；`earth` 以身宮為命宮，`human` 以福德宮為命宮。詳見 [`AstroType`](../type-definition.md#astrotype)。
+  :::
 
 ---
 
@@ -563,13 +245,6 @@ var { astro } = require("iztro");
 
   const result = getMajorStarBySolarDate('2023-4-7', 0);
   ```
-
-- 示例返回值
-
-  ```ts
-  貪狼
-  ```
-
 
 ---
 
@@ -609,12 +284,6 @@ var { astro } = require("iztro");
   const result = getMajorStarByLunarDate('2023-2-17', 0, true, false);
   ```
 
-- 示例返回值
-
-  ```ts
-  紫微,貪狼
-  ```
-
 ---
 
 ### getSignBySolarDate <Badge type="warning" text="^1.2.1" />
@@ -645,12 +314,6 @@ var { astro } = require("iztro");
   import { astro } from 'isztro';
 
   const result = getSignBySolarDate('2023-9-5');
-  ```
-
-- 示例返回值
-
-  ```ts
-  處女座
   ```
 
 ---
@@ -687,11 +350,7 @@ var { astro } = require("iztro");
   const result = getSignByLunarDate('2023-7-21');
   ```
 
-- 示例返回值
 
-  ```ts
-  處女座
-  ```
 ---
 
 ### getZodiacBySolarDate <Badge type="warning" text="^1.2.1" />
@@ -719,12 +378,6 @@ var { astro } = require("iztro");
   import { astro } from 'isztro';
 
   const result = getZodiacBySolarDate('2023-2-20');
-  ```
-
-- 示例返回值
-
-  ```ts
-  兔
   ```
 
 ---
@@ -756,12 +409,6 @@ var { astro } = require("iztro");
   const result = getZodiacByLunarYear(2023);
   ```
 
-- 示例返回值
-
-  ```ts
-  兔
-  ```
-
 ---
 
 ## 功能類定義
@@ -782,6 +429,7 @@ var { astro } = require("iztro");
 
   ```ts
   interface IFunctionalAstrolabe extends Astrolabe {
+    use(plugin: Plugin): void;
     horoscope: (date?: string | Date, timeIndex?: number) => Horoscope;
     palace: (indexOrName: number | PalaceName) => IFunctionalPalace | undefined;
     surroundedPalaces: (indexOrName: number | PalaceName) => SurroundedPalaces;
@@ -813,6 +461,48 @@ var { astro } = require("iztro");
   參考 [Astrolabe](../type-definition.md#astrolabe)
 
 - 方法
+
+  ### use() <Badge type="warning" text="^2.3.0" />
+
+  - 用途
+
+    為目前星盤實例套用一個插件。與 [`astro.loadPlugin()`](./config-n-plugin.md#插件) 不同，`use()` 只影響目前實例。
+
+  - 定義
+
+    ```ts
+    type use = (plugin: Plugin) => void;
+    ```
+
+  - 參數
+
+    | 參數 | 類型 | 是否必填 | 預設值 | 說明 |
+    | --- | --- | --- | --- | --- |
+    | plugin | [`Plugin`](../type-definition.md#plugin) | `true` | - | 要套用到目前星盤的插件函數 |
+
+  - 傳回值
+
+    `void`
+
+  - 示例
+
+    ```ts
+    import { astro, FunctionalAstrolabe } from "iztro";
+
+    interface IAstrolabe extends FunctionalAstrolabe {
+      soulPalaceName: () => string;
+    }
+
+    function soulPalacePlugin(this: IAstrolabe) {
+      this.soulPalaceName = () => this.palace("命宮")?.name ?? "";
+    }
+
+    const astrolabe = astro.bySolar<IAstrolabe>("2000-8-16", 2, "女");
+    astrolabe.use(soulPalacePlugin);
+    const name = astrolabe.soulPalaceName();
+    ```
+
+  ***
 
   ### horoscope() <Badge type="warning" text="^0.2.0" />
 

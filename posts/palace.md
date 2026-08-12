@@ -588,6 +588,37 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     ```
 
   ***
+  #### haveOneOf()
+
+  - 用途
+
+    判断某个宫的三方四正内是否包含传入星曜中的任意一颗；只要命中一颗便返回 `true`。
+
+  - 定义
+
+    ```ts
+    type haveOneOf = (stars: StarName[]) => boolean;
+    ```
+
+  - 参数
+
+    | 参数 | 类型 | 是否必填 | 默认值 | 说明 |
+    | --- | --- | --- | --- | --- |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true` | - | 星曜名称，可以包含主星、辅星、杂耀 |
+
+  - 返回值
+
+    `boolean`
+
+  - 示例
+
+    判断 `命宫` 三方四正内是否有 `天魁` 或 `天钺`：
+
+    ```ts
+    const result = astrolabe.surroundedPalaces("命宫").haveOneOf(["天魁", "天钺"]);
+    ```
+
+  ***
   #### haveMutagen()
 
   - 用途

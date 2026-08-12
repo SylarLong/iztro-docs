@@ -28,6 +28,58 @@ astro.config({
 
 上述代码执行之后调用排盘方法时，将会把新的配置合并到默认配置中进行应用。换言之，在数据与默认配置相同的情况下，你并不需要重复在配置文件中设置。关于默认的四化表，请参考 [十天干四化表](../learn/mutagen.md#十天干四化表)。关于默认星曜亮度，请参考 [星曜亮度表](../learn/star.md#星曜亮度表)。
 
+除 `mutagens` 和 `brightness` 外，还可以通过以下选项调整排盘规则：
+
+| 配置项 | 可选值 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `yearDivide` <Badge type="warning" text="^2.4.0" /> | `normal` \| `exact` | `normal` | 年干支分界；`normal` 以农历正月初一为界，`exact` 以立春为界 |
+| `horoscopeDivide` <Badge type="warning" text="^2.4.3" /> | `normal` \| `exact` | `normal` | 运限使用的年、月干支分界 |
+| `ageDivide` <Badge type="warning" text="^2.4.5" /> | `normal` \| `birthday` | `normal` | 小限虚岁分界；`normal` 只看自然年，`birthday` 以农历生日为界 |
+| `dayDivide` <Badge type="warning" text="^2.5.2" /> | `forward` \| `current` | `forward` | 晚子时归属；`forward` 归入次日，`current` 归入当日 |
+| `algorithm` <Badge type="warning" text="^2.5.0" /> | `default` \| `zhongzhou` | `default` | 安星规则；`default` 为通行版本，`zhongzhou` 为中州派版本 |
+
+:::warning 注意
+`config()` 是全局配置。它会影响之后所有排盘与运限计算；使用 `withOptions({ config })` 传入的配置同样会写入全局配置。
+:::
+
+### getConfig() <Badge type="warning" text="^2.3.0" />
+
+- 用途
+
+  获取当前已生效的全局配置。返回的 `mutagens` 和 `brightness` 使用库内部的规范化键名，适合用于调试或确认配置状态。
+
+- 定义
+
+  ```ts
+  type getConfig = () => {
+    mutagens: Partial<Record<HeavenlyStemKey, StarKey[]>>;
+    brightness: Partial<Record<StarKey, BrightnessKey[]>>;
+    yearDivide: 'normal' | 'exact';
+    ageDivide: 'normal' | 'birthday';
+    dayDivide: 'current' | 'forward';
+    horoscopeDivide: 'normal' | 'exact';
+    algorithm: 'default' | 'zhongzhou';
+  };
+  ```
+
+- 参数
+
+  无
+
+- 返回值
+
+  当前生效的配置对象
+
+- 示例
+
+  ```ts
+  import { astro } from 'iztro';
+
+  astro.config({ algorithm: 'zhongzhou', ageDivide: 'birthday' });
+
+  const currentConfig = astro.getConfig();
+  ```
+
 ## 插件
 
 iztro的插件就是一个函数，这个函数会挂载到星盘对象上。你可以根据自己的需求扩展功能。假如你是在typescript环境下开发，你需要将插件方法申明到接口中，而该接口需要继承自 `FunctionalAstrolabe`。
@@ -73,7 +125,7 @@ export function myTestPlugin2(this: IAstrolabe): void {
 }
 ```
 
-挂载插件的方法也非常简单，只需要在引入 `astro` 以后执行 `loadPlugin()` 或者`loadPlugins()` 方法即可。
+挂载插件的方法也非常简单，只需要在引入 `astro` 以后执行 `loadPlugin()` 或者`loadPlugins()` 方法即可。两种方式注册的插件会应用到**后续新创建**的星盘实例。
 
 ```ts
 import {astro} from iztro;
@@ -84,6 +136,15 @@ astro.loadPlugins([myTestPlugin， myTestPlugin2]);
 // 逐个加载插件
 astro.loadPlugin(myTestPlugin);
 astro.loadPlugin(myTestPlugin2);
+```
+
+如果只想为一个已经创建的星盘应用插件，可以调用该星盘实例的 `use()` 方法：
+
+```ts
+const astrolabe = astro.bySolar<IAstrolabe>('2023-10-18', 4, 'female');
+
+astrolabe.use(myTestPlugin);
+astrolabe.myNewFunc();
 ```
 
 :::tip 提示

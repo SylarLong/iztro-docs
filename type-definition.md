@@ -1265,10 +1265,32 @@ type Config = {
   // 小限分割点配置，normal为以自然年分界，birthday为生日分界（^v2.4.5）
   // 默认为 normal
   ageDivide?: 'normal' | 'birthday';
+  // 晚子时配置，current 时晚子时算当日，forward 时晚子时算次日（^v2.5.2）
+  // 默认为 forward
+  dayDivide?: 'current' | 'forward';
+  // 安星方法，default 为通行版本，zhongzhou 为中州派版本（^v2.5.0）
+  // 默认为 default
+  algorithm?: 'default' | 'zhongzhou';
 };
 ```
 
 其中当 `yearDivide` 和 `horoscopeDivide` 为 `normal` 时，会以正月初一为分界，为 `exact` 时会以立春为分界。
+
+`dayDivide` 仅影响晚子时（`timeIndex` 为 `12`）的日期归属：`forward` 将其归入次日，`current` 将其归入当日。
+
+### `AstroType` <Badge type="warning" text="^2.5.0" />
+
+定义中州派星盘类型。
+
+```ts
+type AstroType = 'heaven' | 'earth' | 'human';
+```
+
+| 值 | 说明 |
+| --- | --- |
+| `heaven` | 天盘，默认值 |
+| `earth` | 地盘，以身宫干支起五行局，并以身宫为命宫 |
+| `human` | 人盘，以福德宫干支起五行局，并以福德宫为命宫 |
 
 ### `Plugin`
 
