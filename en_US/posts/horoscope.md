@@ -38,6 +38,7 @@ All properties are inherited from `Horoscope`; the interface adds the following 
 
   ```ts
   interface IFunctionalHoroscope extends Horoscope {
+    toJSON: () => Horoscope;
     agePalace: () => FunctionalPalace | undefined;
     palace: (palaceName: PalaceName, scope: Scope) => FunctionalPalace | undefined;
     surroundPalaces: (palaceName: PalaceName, scope: Scope) => FunctionalSurpalaces | undefined;
@@ -53,6 +54,34 @@ All properties are inherited from `Horoscope`; the interface adds the following 
   See [`Horoscope`](../type-definition.md#horoscope).
 
 - Methods
+
+  ### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - Purpose
+
+    Converts the functional horoscope into a plain JSON object. Analysis methods and runtime references such as the associated astrolabe are excluded; circular references are safely omitted.
+
+  - Definition
+
+    ```ts
+    type toJSON = () => Horoscope;
+    ```
+
+  - Parameters
+
+    None
+
+  - Return value
+
+    [`Horoscope`](../type-definition.md#horoscope)
+
+  - Example
+
+    ```ts
+    const data = astrolabe.horoscope("2023-8-19").toJSON();
+    ```
+
+  ***
 
   ### agePalace() <Badge type="warning" text="v1.3.0" />
 

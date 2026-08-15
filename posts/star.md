@@ -27,6 +27,7 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
 
   ```ts
   interface IFunctionalStar extends Star {
+    toJSON: () => Star;
     palace: () => IFunctionalPalace | undefined;
     setPalace: (p: IFunctionalPalace) => void;
     setAstrolabe: (a: IFunctionalAstrolabe) => void;
@@ -42,6 +43,34 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
   参考 [Star](/type-definition.md#star)
 
 - 方法
+
+  ### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - 用途
+
+    将功能星曜转换为普通 JSON 对象。返回结果不包含分析方法、关联宫位和关联星盘等运行时引用；循环引用会被安全忽略。
+
+  - 定义
+
+    ```ts
+    type toJSON = () => Star;
+    ```
+
+  - 参数
+
+    无
+
+  - 返回值
+
+    [`Star`](../type-definition.md#star)
+
+  - 示例
+
+    ```ts
+    const data = astrolabe.star("紫微").toJSON();
+    ```
+
+  ***
 
   :::danger ❗️注意
   为了使 `FunctionalStar` 类使用起来更顺畅，所以引入了 `setPalace()` 和 `setAstrolabe()` 两个方法，但实际使用过程中请不要手动去调用这两个方法，以免造成数据错误。

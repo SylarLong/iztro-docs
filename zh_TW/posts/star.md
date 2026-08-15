@@ -27,6 +27,7 @@ description: "iztro紫微鬥數星曜介紹，iztro的star對象使用方法以�
 
   ```ts
   interface IFunctionalStar extends Star {
+    toJSON: () => Star;
     palace: () => IFunctionalPalace | undefined;
     setPalace: (p: IFunctionalPalace) => void;
     setAstrolabe: (a: IFunctionalAstrolabe) => void;
@@ -42,6 +43,34 @@ description: "iztro紫微鬥數星曜介紹，iztro的star對象使用方法以�
   參考 [Star](/type-definition.md#star)
 
 - 方法
+
+  ### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - 用途
+
+    將功能星曜轉換為普通 JSON 對象。返回結果不包含分析方法、關聯宮位和關聯星盤等運行時引用；循環引用會被安全忽略。
+
+  - 定義
+
+    ```ts
+    type toJSON = () => Star;
+    ```
+
+  - 參數
+
+    無
+
+  - 返回值
+
+    [`Star`](../type-definition.md#star)
+
+  - 示例
+
+    ```ts
+    const data = astrolabe.star("紫微").toJSON();
+    ```
+
+  ***
 
   :::danger ❗️註意
   為了使 `FunctionalStar` 類使用起來更順暢，所以引入了 `setPalace()` 和 `setAstrolabe()` 兩個方法，但實際使用過程中請不要手動去調用這兩個方法，以免造成數據錯誤。

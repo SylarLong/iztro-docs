@@ -39,6 +39,7 @@ All properties are inherited from `Palace`; the interface adds analytical method
 
   ```ts
   interface IFunctionalPalace extends Palace {
+    toJSON: () => Palace;
     has: (stars: StarName[]) => boolean;
     notHave: (stars: StarName[]) => boolean;
     hasOneOf: (stars: StarName[]) => boolean;
@@ -61,6 +62,34 @@ All properties are inherited from `Palace`; the interface adds analytical method
   See [`Palace`](../type-definition.md#palace).
 
 - Methods
+
+  #### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - Purpose
+
+    Converts the functional palace into a plain JSON object. Analysis methods and runtime references such as the associated astrolabe are excluded; circular references are safely omitted.
+
+  - Definition
+
+    ```ts
+    type toJSON = () => Palace;
+    ```
+
+  - Parameters
+
+    None
+
+  - Return value
+
+    [`Palace`](../type-definition.md#palace)
+
+  - Example
+
+    ```ts
+    const data = astrolabe.palace("命宫")?.toJSON();
+    ```
+
+  ***
 
   #### has() <Badge type="warning" text="^1.0.0" />
 
@@ -236,6 +265,7 @@ This class represents the target palace, opposite palace (對宮), Wealth positi
 
   ```ts
   interface FunctionalSurpalaces extends SurroundedPalaces {
+    toJSON: () => SurroundedPalaces;
     have: (stars: StarName[]) => boolean;
     notHave: (stars: StarName[]) => boolean;
     haveOneOf: (stars: StarName[]) => boolean;
@@ -245,6 +275,34 @@ This class represents the target palace, opposite palace (對宮), Wealth positi
   ```
 
 - Methods
+
+  #### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - Purpose
+
+    Converts the functional surrounded palaces into a plain JSON object. Analysis methods and runtime references are excluded; circular references are safely omitted.
+
+  - Definition
+
+    ```ts
+    type toJSON = () => SurroundedPalaces;
+    ```
+
+  - Parameters
+
+    None
+
+  - Return value
+
+    [`SurroundedPalaces`](../type-definition.md#surroundedpalaces)
+
+  - Example
+
+    ```ts
+    const data = astrolabe.surroundedPalaces("命宫").toJSON();
+    ```
+
+  ***
 
   #### have()
 

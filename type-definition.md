@@ -1147,6 +1147,72 @@ export type Decadal = {
 
 ---
 
+### `DecadalHoroscope`
+
+```ts
+export type DecadalHoroscope = HoroscopeItem & {
+  palaceName: PalaceName;
+  ageRange: [number, number];
+  yearRange: [number, number];
+};
+```
+
+定义了 `decadalList()` 返回的大限列表项。
+
+| 属性 | 解释 | 类型 |
+| --- | --- | --- |
+| `palaceName` | 大限所在的本命宫位 | [`PalaceName`](#palacename) |
+| `ageRange` | 大限起止虚岁 | `[number, number]` |
+| `yearRange` | 大限起止年份 | `[number, number]` |
+
+该类型同时包含 [`HoroscopeItem`](#horoscopeitem) 的全部属性。
+
+---
+
+### `YearlyHoroscope`
+
+```ts
+export type YearlyHoroscope = HoroscopeItem & {
+  age: number;
+  year: number;
+};
+```
+
+定义了 `yearlyList()` 返回的流年列表项。
+
+| 属性 | 解释 | 类型 |
+| --- | --- | --- |
+| `age` | 流年对应的虚岁 | `number` |
+| `year` | 流年年份 | `number` |
+
+该类型同时包含 [`HoroscopeItem`](#horoscopeitem) 的全部属性。
+
+---
+
+### `MonthlyHoroscope`
+
+```ts
+export type MonthlyHoroscope = YearlyHoroscope & {
+  month: number;
+  isLeapMonth: boolean;
+  part: 'normal' | 'first' | 'second';
+  dayRange: [number, number];
+};
+```
+
+定义了 `monthlyList()` 返回的流月列表项。
+
+| 属性 | 解释 | 类型 |
+| --- | --- | --- |
+| `month` | 农历月份，正月为 `1` | `number` |
+| `isLeapMonth` | 是否为闰月 | `boolean` |
+| `part` | 普通月份、闰月前半段或闰月后半段 | `'normal'` \| `'first'` \| `'second'` |
+| `dayRange` | 该项对应的农历日期范围 | `[number, number]` |
+
+该类型同时包含 [`YearlyHoroscope`](#yearlyhoroscope) 和 [`HoroscopeItem`](#horoscopeitem) 的全部属性。
+
+---
+
 ### `Horoscope`
 
 ```ts

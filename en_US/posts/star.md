@@ -25,6 +25,7 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   ```ts
   interface IFunctionalStar extends Star {
+    toJSON: () => Star;
     palace: () => IFunctionalPalace | undefined;
     setPalace: (p: IFunctionalPalace) => void;
     setAstrolabe: (a: IFunctionalAstrolabe) => void;
@@ -40,6 +41,34 @@ All properties of this class are inherited from `Star`; the interface adds metho
   See [`Star`](../type-definition.md#star).
 
 - Methods
+
+  ### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - Purpose
+
+    Converts the functional star into a plain JSON object. Analysis methods and runtime palace or astrolabe references are excluded; circular references are safely omitted.
+
+  - Definition
+
+    ```ts
+    type toJSON = () => Star;
+    ```
+
+  - Parameters
+
+    None
+
+  - Return value
+
+    [`Star`](../type-definition.md#star)
+
+  - Example
+
+    ```ts
+    const data = astrolabe.star("紫微").toJSON();
+    ```
+
+  ***
 
   :::danger
   `setPalace()` and `setAstrolabe()` were added to make `FunctionalStar` work smoothly. Do not call them manually, otherwise data may become inconsistent.

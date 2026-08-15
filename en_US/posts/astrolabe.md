@@ -309,8 +309,12 @@ All properties are inherited from `Astrolabe`; this interface adds analytical me
 
   ```ts
   interface IFunctionalAstrolabe extends Astrolabe {
+    toJSON: () => Astrolabe;
     use(plugin: Plugin): void;
     horoscope: (date?: string | Date, timeIndex?: number) => Horoscope;
+    decadalList: () => DecadalHoroscope[];
+    yearlyList: (indexOrName: number | PalaceName) => YearlyHoroscope[];
+    monthlyList: (year: number, fixLeap?: boolean) => MonthlyHoroscope[];
     star: (starName: StarName) => IFunctionalStar;
     palace: (indexOrName: number | PalaceName) => IFunctionalPalace | undefined;
     surroundedPalaces: (indexOrName: number | PalaceName) => SurroundedPalaces;
@@ -325,6 +329,37 @@ All properties are inherited from `Astrolabe`; this interface adds analytical me
   See [`Astrolabe`](../type-definition.md#astrolabe).
 
 - Methods
+
+  ### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - Purpose
+
+    Converts the functional astrolabe into a plain JSON object. Analysis methods, plugin functions, and runtime references are excluded; circular references are safely omitted.
+
+  - Definition
+
+    ```ts
+    type toJSON = () => Astrolabe;
+    ```
+
+  - Parameters
+
+    None
+
+  - Return value
+
+    [`Astrolabe`](../type-definition.md#astrolabe)
+
+  - Example
+
+    ```ts
+    import { astro } from "iztro";
+
+    const astrolabe = astro.bySolar("2000-8-16", 2, "female");
+    const data = astrolabe.toJSON();
+    ```
+
+  ***
 
   ### use() <Badge type="warning" text="^2.3.0" />
 
@@ -348,6 +383,53 @@ All properties are inherited from `Astrolabe`; this interface adds analytical me
 
   - Return value: [`FunctionalHoroscope`](./horoscope.md#functionalhoroscope)
   - Example: `const horoscope = astrolabe.horoscope('2023-8-31');`
+
+  ***
+
+  ### decadalList()
+
+  - Purpose: Returns the decadal cycles in chronological order. Array index `0` is the first decadal cycle. Each item includes its natal palace, age and year ranges, stem and branch, mutagens, cycle stars, and palace-name layout.
+  - Definition: `type decadalList = () => DecadalHoroscope[];`
+  - Return value: [`DecadalHoroscope[]`](../type-definition.md#decadalhoroscope)
+  - Example: `const firstDecadal = astrolabe.decadalList()[0];`
+
+  ***
+
+  ### yearlyList()
+
+  - Purpose: Returns every yearly cycle in a decadal cycle selected by its ordinal index or natal palace name.
+  - Definition: `type yearlyList = (indexOrName: number | PalaceName) => YearlyHoroscope[];`
+  - Parameters: `indexOrName` — decadal ordinal (`0` is the first) or [`PalaceName`](../type-definition.md#palacename), required.
+  - Return value: [`YearlyHoroscope[]`](../type-definition.md#yearlyhoroscope)
+  - Example
+
+    ```ts
+    const firstDecadalYearlies = astrolabe.yearlyList(0);
+    const lifePalaceYearlies = astrolabe.yearlyList("命宮");
+    ```
+
+  ***
+
+  ### monthlyList()
+
+  - Purpose: Returns the monthly cycles for a specified year. Each item includes age, year, lunar month, stem and branch, mutagens, cycle stars, and palace-name layout.
+  - Definition: `type monthlyList = (year: number, fixLeap?: boolean) => MonthlyHoroscope[];`
+  - Parameters
+
+    | Parameter | Type | Required | Default | Description |
+    | --- | --- | --- | --- | --- |
+    | year | `number` | `true` | - | Cycle year; a `year` returned by `yearlyList()` can be used directly |
+    | fixLeap | `boolean` | `false` | `true` | Whether to split a leap month into its first and second halves |
+
+  - Return value: [`MonthlyHoroscope[]`](../type-definition.md#monthlyhoroscope)
+  - Leap-month behavior: 12 items in a regular year; 13 items with a leap month when `fixLeap=false`; 14 items when `fixLeap=true`, because the leap month is split into days 1–15 and 16–month end.
+  - Example
+
+    ```ts
+    const year = astrolabe.yearlyList(0)[0].year;
+    const adjusted = astrolabe.monthlyList(year);
+    const unadjusted = astrolabe.monthlyList(year, false);
+    ```
 
   ***
 

@@ -1147,6 +1147,72 @@ export type Decadal = {
 
 ---
 
+### `DecadalHoroscope`
+
+```ts
+export type DecadalHoroscope = HoroscopeItem & {
+  palaceName: PalaceName;
+  ageRange: [number, number];
+  yearRange: [number, number];
+};
+```
+
+定義了 `decadalList()` 返回的大限列表項。
+
+| 屬性 | 解釋 | 類型 |
+| --- | --- | --- |
+| `palaceName` | 大限所在的本命宮位 | [`PalaceName`](./type-definition.html#palacename) |
+| `ageRange` | 大限起止虛歲 | `[number, number]` |
+| `yearRange` | 大限起止年份 | `[number, number]` |
+
+該類型同時包含 [`HoroscopeItem`](./type-definition.html#horoscopeitem) 的全部屬性。
+
+---
+
+### `YearlyHoroscope`
+
+```ts
+export type YearlyHoroscope = HoroscopeItem & {
+  age: number;
+  year: number;
+};
+```
+
+定義了 `yearlyList()` 返回的流年列表項。
+
+| 屬性 | 解釋 | 類型 |
+| --- | --- | --- |
+| `age` | 流年對應的虛歲 | `number` |
+| `year` | 流年年份 | `number` |
+
+該類型同時包含 [`HoroscopeItem`](./type-definition.html#horoscopeitem) 的全部屬性。
+
+---
+
+### `MonthlyHoroscope`
+
+```ts
+export type MonthlyHoroscope = YearlyHoroscope & {
+  month: number;
+  isLeapMonth: boolean;
+  part: 'normal' | 'first' | 'second';
+  dayRange: [number, number];
+};
+```
+
+定義了 `monthlyList()` 返回的流月列表項。
+
+| 屬性 | 解釋 | 類型 |
+| --- | --- | --- |
+| `month` | 農曆月份，正月為 `1` | `number` |
+| `isLeapMonth` | 是否為閏月 | `boolean` |
+| `part` | 普通月份、閏月前半段或閏月後半段 | `'normal'` \| `'first'` \| `'second'` |
+| `dayRange` | 該項對應的農曆日期範圍 | `[number, number]` |
+
+該類型同時包含 [`YearlyHoroscope`](./type-definition.html#yearlyhoroscope) 和 [`HoroscopeItem`](./type-definition.html#horoscopeitem) 的全部屬性。
+
+---
+
 ### `Horoscope`
 
 ```ts

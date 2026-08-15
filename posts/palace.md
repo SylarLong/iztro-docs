@@ -85,6 +85,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   ```ts
   interface IFunctionalPalace extends Palace {
+    toJSON: () => Palace;
     has: (stars: StarName[]) => boolean;
     notHave: (stars: StarName[]) => boolean;
     hasOneOf: (stars: StarName[]) => boolean;
@@ -107,6 +108,34 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
   参考 [Palace](../type-definition.md#palace)
 
 - 方法
+
+  #### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - 用途
+
+    将功能宫位转换为普通 JSON 对象。返回结果不包含分析方法和关联星盘等运行时引用；循环引用会被安全忽略。
+
+  - 定义
+
+    ```ts
+    type toJSON = () => Palace;
+    ```
+
+  - 参数
+
+    无
+
+  - 返回值
+
+    [`Palace`](../type-definition.md#palace)
+
+  - 示例
+
+    ```ts
+    const data = astrolabe.palace("命宫")?.toJSON();
+    ```
+
+  ***
   
   #### has() <Badge type="warning" text="^1.0.0" />
 
@@ -501,6 +530,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   ```ts
   interface FunctionalSurpalaces extends SurroundedPalaces {
+    toJSON: () => SurroundedPalaces;
     have: (stars: StarName[]) => boolean;
     notHave: (stars: StarName[]) => boolean;
     haveOneOf: (stars: StarName[]) => boolean;
@@ -514,6 +544,34 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
   参考 [SurroundedPalaces](../type-definition.md#surroundedpalaces)
 
 - 方法
+
+  #### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - 用途
+
+    将功能三方四正转换为普通 JSON 对象。返回结果不包含分析方法和运行时引用；循环引用会被安全忽略。
+
+  - 定义
+
+    ```ts
+    type toJSON = () => SurroundedPalaces;
+    ```
+
+  - 参数
+
+    无
+
+  - 返回值
+
+    [`SurroundedPalaces`](../type-definition.md#surroundedpalaces)
+
+  - 示例
+
+    ```ts
+    const data = astrolabe.surroundedPalaces("命宫").toJSON();
+    ```
+
+  ***
   
   #### have()
 

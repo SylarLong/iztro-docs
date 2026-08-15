@@ -43,6 +43,7 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
 
   ```ts
   interface IFunctionalHoroscope extends Horoscope {
+    toJSON: () => Horoscope;
     agePalace: () => FunctionalPalace | undefined;
     palace: (palaceName: PalaceName, scope: Scope) => FunctionalPalace | undefined;
     surroundPalaces: (palaceName: PalaceName, scope: Scope) => FunctionalSurpalaces | undefined;
@@ -58,6 +59,37 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
   參考 [Horoscope](../type-definition.md#horoscope)
 
 - 方法
+
+  ### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - 用途
+
+    將功能運限轉換為普通 JSON 對象。返回結果不包含分析方法和關聯星盤等運行時引用；循環引用會被安全忽略。
+
+  - 定義
+
+    ```ts
+    type toJSON = () => Horoscope;
+    ```
+
+  - 參數
+
+    無
+
+  - 返回值
+
+    [`Horoscope`](../type-definition.md#horoscope)
+
+  - 示例
+
+    ```ts
+    import { astro } from "iztro";
+
+    const astrolabe = astro.bySolar("2000-8-16", 2, "女");
+    const data = astrolabe.horoscope("2023-8-19").toJSON();
+    ```
+
+  ***
   
   ### agePalace() <Badge type="warning" text="v1.3.0" />
 

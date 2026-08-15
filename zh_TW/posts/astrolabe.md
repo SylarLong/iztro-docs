@@ -429,8 +429,12 @@ var { astro } = require("iztro");
 
   ```ts
   interface IFunctionalAstrolabe extends Astrolabe {
+    toJSON: () => Astrolabe;
     use(plugin: Plugin): void;
     horoscope: (date?: string | Date, timeIndex?: number) => Horoscope;
+    decadalList: () => DecadalHoroscope[];
+    yearlyList: (indexOrName: number | PalaceName) => YearlyHoroscope[];
+    monthlyList: (year: number, fixLeap?: boolean) => MonthlyHoroscope[];
     palace: (indexOrName: number | PalaceName) => IFunctionalPalace | undefined;
     surroundedPalaces: (indexOrName: number | PalaceName) => SurroundedPalaces;
     isSurrounded: (
@@ -461,6 +465,37 @@ var { astro } = require("iztro");
   參考 [Astrolabe](../type-definition.md#astrolabe)
 
 - 方法
+
+  ### toJSON() <Badge type="warning" text="^2.6.0" />
+
+  - 用途
+
+    將功能星盤轉換為普通 JSON 對象。返回結果不包含分析方法、插件函數和運行時引用；循環引用會被安全忽略。
+
+  - 定義
+
+    ```ts
+    type toJSON = () => Astrolabe;
+    ```
+
+  - 參數
+
+    無
+
+  - 返回值
+
+    [`Astrolabe`](../type-definition.md#astrolabe)
+
+  - 示例
+
+    ```ts
+    import { astro } from "iztro";
+
+    const astrolabe = astro.bySolar("2000-8-16", 2, "女");
+    const data = astrolabe.toJSON();
+    ```
+
+  ***
 
   ### use() <Badge type="warning" text="^2.3.0" />
 
@@ -580,6 +615,102 @@ var { astro } = require("iztro");
     ```
 
     :::
+
+  ***
+
+  ### decadalList()
+
+  - 用途
+
+    獲取按起運先後排列的大限列表。數組索引 `0` 表示第一個大限。每一項包含大限所在宮位、起止虛歲、起止年份、干支、四化、流耀和大限十二宮。
+
+  - 定義
+
+    ```ts
+    type decadalList = () => DecadalHoroscope[];
+    ```
+
+  - 返回值
+
+    [`DecadalHoroscope[]`](../type-definition.md#decadalhoroscope)
+
+  - 示例
+
+    ```ts
+    const decadals = astrolabe.decadalList();
+    const firstDecadal = decadals[0];
+    ```
+
+  ***
+
+  ### yearlyList()
+
+  - 用途
+
+    根據大限序號或本命宮位名稱，獲取該大限內的流年列表。每一項包含虛歲、年份、流年干支、四化、流耀和流年十二宮。
+
+  - 定義
+
+    ```ts
+    type yearlyList = (
+      indexOrName: number | PalaceName
+    ) => YearlyHoroscope[];
+    ```
+
+  - 參數
+
+    | 參數 | 類型 | 是否必填 | 預設值 | 說明 |
+    | --- | --- | --- | --- | --- |
+    | indexOrName | `number` \| [`PalaceName`](../type-definition.md#palacename) | `true` | - | 大限序號（`0` 為第一個大限）或本命宮位名稱 |
+
+  - 返回值
+
+    [`YearlyHoroscope[]`](../type-definition.md#yearlyhoroscope)
+
+  - 示例
+
+    ```ts
+    const firstDecadalYearlies = astrolabe.yearlyList(0);
+    const soulPalaceYearlies = astrolabe.yearlyList("命宮");
+    ```
+
+  ***
+
+  ### monthlyList()
+
+  - 用途
+
+    獲取指定年份的流月列表。每一項包含虛歲、年份、月份、流月干支、四化、流耀和流月十二宮。
+
+    閏月規則：無閏月時返回 12 項；有閏月且 `fixLeap=false` 時返回 13 項；有閏月且 `fixLeap=true` 時將閏月按初一至十五、十六至月底拆分，返回 14 項。
+
+  - 定義
+
+    ```ts
+    type monthlyList = (
+      year: number,
+      fixLeap?: boolean
+    ) => MonthlyHoroscope[];
+    ```
+
+  - 參數
+
+    | 參數 | 類型 | 是否必填 | 預設值 | 說明 |
+    | --- | --- | --- | --- | --- |
+    | year | `number` | `true` | - | 流年年份，可直接使用 `yearlyList()` 返回項的 `year` |
+    | fixLeap | `boolean` | `false` | `true` | 是否將閏月前後半月分開計算 |
+
+  - 返回值
+
+    [`MonthlyHoroscope[]`](../type-definition.md#monthlyhoroscope)
+
+  - 示例
+
+    ```ts
+    const year = astrolabe.yearlyList(0)[0].year;
+    const adjusted = astrolabe.monthlyList(year);
+    const unadjusted = astrolabe.monthlyList(year, false);
+    ```
 
   ***
 
