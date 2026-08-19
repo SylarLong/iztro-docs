@@ -70,6 +70,22 @@ If the installation is successful, you will find `iztro` in the dependencies lis
 
 > The version might be different.
 
+### Plain JavaScript bundle <Badge type="warning" text="^2.0.4" />
+
+The release archive `🗜️iztro-min-js.tar.gz` contains a minified UMD bundle and its sourcemap, so iztro can be loaded directly with a `<script>` tag.
+
+Since `v2.6.0`, each release includes both a versioned bundle such as `iztro-v2.6.0.min.js` and the backward-compatible `iztro.min.js`. Prefer the versioned bundle in production so the URL always resolves to the same code.
+
+- jsDelivr
+
+  - https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js
+  - https://cdn.jsdelivr.net/npm/iztro@2.6.0/dist/iztro-v2.6.0.min.js
+
+- unpkg
+
+  - https://unpkg.com/iztro/dist/iztro.min.js
+  - https://unpkg.com/iztro@2.6.0/dist/iztro-v2.6.0.min.js
+
 ## Quick start
 
 ### Import code
@@ -87,6 +103,15 @@ import { astro } from "iztro";
 
 ```js
 var iztro = require("iztro");
+```
+
+== HTML
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/iztro@2.6.0/dist/iztro-v2.6.0.min.js"></script>
+<script>
+  const astrolabe = iztro.astro.bySolar("2000-8-16", 2, "male", true, "en-US");
+</script>
 ```
 
 :::

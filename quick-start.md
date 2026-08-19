@@ -79,25 +79,27 @@ bun add -S iztro
 
 ### 纯JS库使用 <Badge type="warning" text="^2.0.4" />
 
-在 `v2.0.4` 版本以后，编译了 `umd` 的纯Javascript库。可以下载 [release](https://github.com/SylarLong/iztro/releases) 资源文件中的 `🗜️iztro-min-js.tar.gz` 压缩包，里面包含了一个 `iztro` 压缩混淆过的js文件和对应的sourcemap文件。
+在 `v2.0.4` 版本以后，提供了 `umd` 格式的纯 JavaScript 库。可以下载 [release](https://github.com/SylarLong/iztro/releases) 资源文件中的 `🗜️iztro-min-js.tar.gz` 压缩包，其中包含压缩后的 JavaScript 文件及对应的 sourcemap。
+
+从 `v2.6.0` 开始，每次发布会同时生成带版本号的文件（例如 `iztro-v2.6.0.min.js`）和兼容旧引用方式的 `iztro.min.js`。生产环境建议使用带版本号的文件，以避免新版本发布后 CDN 地址指向不同内容。
 
 当然，我们更推荐你直接使用 `CDN` 加速链接，你可以在下面列表中选择一个，在没有指定版本号的时候，会自动指向最新版本的代码库
 
 - jsdelivr
 
   - https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js
-  - https://cdn.jsdelivr.net/npm/iztro@2.0.5/dist/iztro.min.js
+  - https://cdn.jsdelivr.net/npm/iztro@2.6.0/dist/iztro-v2.6.0.min.js
 
 - unpkg
 
   - https://unpkg.com/iztro/dist/iztro.min.js
-  - https://unpkg.com/iztro@2.0.5/dist/iztro.min.js
+  - https://unpkg.com/iztro@2.6.0/dist/iztro-v2.6.0.min.js
 
 你也可以使用如下规则来指定版本：
 
 - `iztro@2`
-- `iztro@^2.0.5`
-- `iztro@2.0.5`
+- `iztro@^2.6.0`
+- `iztro@2.6.0`
 
 ## 开始使用
 
@@ -128,7 +130,7 @@ var iztro = require("iztro");
     <title>iztro-紫微斗数开源库</title>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iztro@2.6.0/dist/iztro-v2.6.0.min.js"></script>
     <script>
       // 获取一张星盘数据
       var astrolabe = iztro.astro.bySolar('2000-8-16', 2, '男', true, 'zh-CN');

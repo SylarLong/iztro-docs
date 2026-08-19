@@ -386,7 +386,7 @@ All properties are inherited from `Astrolabe`; this interface adds analytical me
 
   ***
 
-  ### decadalList()
+  ### decadalList() <Badge type="warning" text="^2.6.0" />
 
   - Purpose: Returns the decadal cycles in chronological order. Array index `0` is the first decadal cycle. Each item includes its natal palace, age and year ranges, stem and branch, mutagens, cycle stars, and palace-name layout.
   - Definition: `type decadalList = () => DecadalHoroscope[];`
@@ -395,7 +395,7 @@ All properties are inherited from `Astrolabe`; this interface adds analytical me
 
   ***
 
-  ### yearlyList()
+  ### yearlyList() <Badge type="warning" text="^2.6.0" />
 
   - Purpose: Returns every yearly cycle in a decadal cycle selected by its ordinal index or natal palace name.
   - Definition: `type yearlyList = (indexOrName: number | PalaceName) => YearlyHoroscope[];`
@@ -410,7 +410,7 @@ All properties are inherited from `Astrolabe`; this interface adds analytical me
 
   ***
 
-  ### monthlyList()
+  ### monthlyList() <Badge type="warning" text="^2.6.0" />
 
   - Purpose: Returns the monthly cycles for a specified year. Each item includes age, year, lunar month, stem and branch, mutagens, cycle stars, and palace-name layout.
   - Definition: `type monthlyList = (year: number, fixLeap?: boolean) => MonthlyHoroscope[];`

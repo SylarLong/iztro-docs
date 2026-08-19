@@ -618,7 +618,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ### decadalList()
+  ### decadalList() <Badge type="warning" text="^2.6.0" />
 
   - 用途
 
@@ -643,7 +643,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ### yearlyList()
+  ### yearlyList() <Badge type="warning" text="^2.6.0" />
 
   - 用途
 
@@ -676,7 +676,7 @@ var { astro } = require("iztro");
 
   ***
 
-  ### monthlyList()
+  ### monthlyList() <Badge type="warning" text="^2.6.0" />
 
   - 用途
 
