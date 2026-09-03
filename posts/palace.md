@@ -153,7 +153,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂曜 |
 
   - 返回值
 
@@ -189,7 +189,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂曜 |
 
   - 返回值
 
@@ -225,7 +225,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂曜 |
 
   - 返回值
 
@@ -589,7 +589,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂曜 |
 
   - 返回值
 
@@ -625,7 +625,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 星曜名称，可以包含主星、辅星、杂曜 |
 
   - 返回值
 
@@ -662,7 +662,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数 | 类型 | 是否必填 | 默认值 | 说明 |
     | --- | --- | --- | --- | --- |
-    | stars | [`StarName[]`](../type-definition.md#starname) | `true` | - | 星曜名称，可以包含主星、辅星、杂耀 |
+    | stars | [`StarName[]`](../type-definition.md#starname) | `true` | - | 星曜名称，可以包含主星、辅星、杂曜 |
 
   - 返回值
 

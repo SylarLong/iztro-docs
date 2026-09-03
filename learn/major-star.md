@@ -16,7 +16,7 @@ import Donate from '/components/donate.vue'
 
 本篇只是粗略介绍各个星曜以及组合的情况，由于篇幅的关系无法把星曜的每个特点都介绍到。各位读者可以根据这些基本特质自己思考总结，可以得出更多的结论，然后再用自己的结论去星盘里反复验证，就会对星曜特性越来越熟悉。也许，你会发现更多有趣的特性也说不一定。另外，因为每个人理解和表达能力不一样，笔者对星曜的描述也不一定是百分之百准确，如果读者有疑问或者质疑，欢迎联系笔者进行交流，当然你也可以在 [讨论组](https://github.com/SylarLong/iztro/discussions) 里发帖讨论。
 
-另外，星曜中的某些特质是需要在特定辅星和杂耀的光环叠加下展现出来的，比如紫府的哲学修养，需要在 [`空耀`](./basis.md#星曜) 的加持下，才会更加容易激发出来，否则还是会以对权利的追求，享受周围人的追捧为主要特质。
+另外，星曜中的某些特质是需要在特定辅星和杂曜的光环叠加下展现出来的，比如紫府的哲学修养，需要在 [`空曜`](./basis.md#星曜) 的加持下，才会更加容易激发出来，否则还是会以对权利的追求，享受周围人的追捧为主要特质。
 
 >*本系列文章为原创文章，转载请标注出处。*
 
@@ -50,7 +50,7 @@ import Donate from '/components/donate.vue'
     <td>紫光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>官禄主</td>
     <td>职务</td>
     <td>众星枢纽，长五行，孕万物</td>
@@ -136,7 +136,7 @@ import Donate from '/components/donate.vue'
     <td>蓝光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>兄弟主</td>
     <td>职务</td>
     <td>掌管智慧，精神</td>
@@ -207,7 +207,7 @@ import Donate from '/components/donate.vue'
     <td>橘红光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>官禄主</td>
     <td>职务</td>
     <td>执掌光明，博爱，付出</td>
@@ -274,7 +274,7 @@ import Donate from '/components/donate.vue'
     <td>乳白光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>财帛主</td>
     <td>职务</td>
     <td>执掌财富，勇武之将</td>
@@ -363,7 +363,7 @@ import Donate from '/components/donate.vue'
     <td>白光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>福德主</td>
     <td>职务</td>
     <td>享受</td>
@@ -436,7 +436,7 @@ import Donate from '/components/donate.vue'
     <td>赤光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>官禄主(行政)</td>
     <td>职务</td>
     <td>邪恶</td>
@@ -527,7 +527,7 @@ import Donate from '/components/donate.vue'
     <td>黄绿光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>田宅主、财帛主</td>
     <td>职务</td>
     <td>贤能，包容，慈悲</td>
@@ -580,7 +580,7 @@ import Donate from '/components/donate.vue'
     <td>绿白光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>田宅主</td>
     <td>职务</td>
     <td>干净，美丽</td>
@@ -633,7 +633,7 @@ import Donate from '/components/donate.vue'
     <td>赤蓝光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>子女主</td>
     <td>职务</td>
     <td>欲望，物质</td>
@@ -686,7 +686,7 @@ import Donate from '/components/donate.vue'
     <td>灰光（影子）</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>疾厄主</td>
     <td>职务</td>
     <td>是非，疑惑，挑剔，口舌</td>
@@ -741,7 +741,7 @@ import Donate from '/components/donate.vue'
     <td>绿白光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>官禄主</td>
     <td>职务</td>
     <td>辅佐，慈爱，服务，文凭</td>
@@ -794,7 +794,7 @@ import Donate from '/components/donate.vue'
     <td>正黄光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>父母主</td>
     <td>职务</td>
     <td>统帅、庇荫</td>
@@ -847,7 +847,7 @@ import Donate from '/components/donate.vue'
     <td>黑光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>迁移主</td>
     <td>职务</td>
     <td>威猛，肃杀，变动</td>
@@ -904,7 +904,7 @@ import Donate from '/components/donate.vue'
     <td>黑光</td>
   </tr>
   <tr>
-    <td>职业</td>
+    <td>主司</td>
     <td>迁移主</td>
     <td>职务</td>
     <td>破损消耗</td>

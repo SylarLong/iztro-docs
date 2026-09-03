@@ -7,7 +7,7 @@ description: "紫微研習社，iztro官方文檔，iztro開發文檔，iztro紫
 
 ## 前言
 
-紫微鬥數的運限分為 `大限`、`小限`、`流年`、`流月`、`流日`、`流時`、`流分`、`流秒` 等等，如果你還不知道運限的概念或不知道能為你做什麼，請閱讀 [紫微鬥數運限](/learn/horoscope.md)。在 `iztro` 中，僅提供 `大限`、`小限`、`流年`、`流月`、`流日`、`流時`。其中，`大限`、`流年`、`流月`、`流日` 和 `流時` 都會提供 `流耀` 與 `四化`；`流月`、`流日`、`流時` 的流耀從 `v2.4.4` 起提供。`小限` 比較特殊，它既沒有流耀，也不產生四化，`小限` 的四化是以該宮位的 `宮幹` 來起四化的。
+紫微鬥數的運限分為 `大限`、`小限`、`流年`、`流月`、`流日`、`流時`、`流分`、`流秒` 等等，如果你還不知道運限的概念或不知道能為你做什麼，請閱讀 [紫微鬥數運限](/learn/horoscope.md)。在 `iztro` 中，僅提供 `大限`、`小限`、`流年`、`流月`、`流日`、`流時`。其中，`大限`、`流年`、`流月`、`流日` 和 `流時` 都會提供 `流曜` 與 `四化`；`流月`、`流日`、`流時` 的流曜從 `v2.4.4` 起提供。`小限` 比較特殊，它既沒有流曜，也不產生四化，`小限` 的四化是以該宮位的 `宮幹` 來起四化的。
 
 :::tip 提示
 運限的年、月干支分界由全局配置的 [`horoscopeDivide`](./config-n-plugin.md#配置) 控制；小限虛歲分界由 `ageDivide` 控制。
@@ -213,7 +213,7 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
 
   - 用途
 
-    判斷在指定運限的宮位內是否包含流耀，需要全部**包含**才返回true
+    判斷在指定運限的宮位內是否包含流曜，需要全部**包含**才返回true
 
   - 定義
 
@@ -231,7 +231,7 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
     | palaceName | [`PalaceName`](../type-definition.md#palacename) | `true`   | -      | 宮位名稱 |
     | scope | [`Scope`](../type-definition.md#scope) | `true`   | -      | 運限名稱 |
-    | horoscopeStar | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 流耀數組 |
+    | horoscopeStar | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 流曜數組 |
 
   - 返回值
 
@@ -257,7 +257,7 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
 
   - 用途
 
-    判斷指定運限宮位內是否不含流耀，需要全部**不包含**才返回true
+    判斷指定運限宮位內是否不含流曜，需要全部**不包含**才返回true
 
   - 定義
 
@@ -275,7 +275,7 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
     | palaceName | [`PalaceName`](../type-definition.md#palacename) | `true`   | -      | 宮位名稱 |
     | scope | [`Scope`](../type-definition.md#scope) | `true`   | -      | 運限名稱 |
-    | horoscopeStar | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 流耀數組 |
+    | horoscopeStar | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 流曜數組 |
 
   - 返回值
 
@@ -299,7 +299,7 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
 
   - 用途
 
-    判斷指定運限宮位內是否含有指定流耀，只要包含**其中一顆**就返回true
+    判斷指定運限宮位內是否含有指定流曜，只要包含**其中一顆**就返回true
 
   - 定義
 
@@ -313,7 +313,7 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
     | palaceName | [`PalaceName`](../type-definition.md#palacename) | `true`   | -      | 宮位名稱 |
     | scope | [`Scope`](../type-definition.md#scope) | `true`   | -      | 運限名稱 |
-    | horoscopeStar | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 流耀數組 |
+    | horoscopeStar | [`StarName[]`](../type-definition.md#starname) | `true`   | -      | 流曜數組 |
 
   - 返回值
 

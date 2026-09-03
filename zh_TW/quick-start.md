@@ -234,7 +234,7 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
       ],
       // 輔星（含六吉六煞）
       minorStars: [],
-      // 雜耀
+      // 雜曜
       adjectiveStars: [
         { name: '月解', type: 'helper', scope: 'origin' },
         { name: '三臺', type: 'adjective', scope: 'origin' },
@@ -645,9 +645,9 @@ astrolabe.horoscope(new Date());
 
     [`Horoscope`](./type-definition.html#horoscope)
 
-## 獲取流耀
+## 獲取流曜
 
-上面的`horoscope()`方法內已經包含了`大限`和`流年`的流耀，所以一般情況下無需在單獨調用獲取流耀的方法，但也有例外的情況需要自行獲取流耀，那就需要調用下列方法自行獲取。
+上面的`horoscope()`方法內已經包含了`大限`和`流年`的流曜，所以一般情況下無需在單獨調用獲取流曜的方法，但也有例外的情況需要自行獲取流曜，那就需要調用下列方法自行獲取。
 
 :::tabs
 == ES6 Module
@@ -655,7 +655,7 @@ astrolabe.horoscope(new Date());
 ```ts
 import { star } from "iztro";
 
-// 通過天干地支獲取流耀
+// 通過天干地支獲取流曜
 const horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```
 
@@ -664,7 +664,7 @@ const horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```js
 var { star } = require("iztro");
 
-// 通過天干地支獲取流耀
+// 通過天干地支獲取流曜
 var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```
 
@@ -701,7 +701,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 
 ### 方法定義
 
-- 通過 `天干`、`地支` 獲取流耀
+- 通過 `天干`、`地支` 獲取流曜
 
   `star`.`getHoroscopeStar(heavenlyStem, earthlyBranch, scope)`
 
@@ -711,7 +711,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
     | ------------- | ------------------------- | -------- | ------ | -------------------------------------------------------------------------------------------------------------------------------- |
     | heavenlyStem  | `HeavenlyStemName`        | `true`   | -      | 天干                                                                                                                             |
     | earthlyBranch | `EarthlyBranchName`       | `true`   | -      | 地支                                                                                                                             |
-    | scope         | `'decadal'` \| `'yearly'` | `true`   | -      | 限定是大限還是流年的流耀，其中大限流耀會在星曜前面加上`運`，流年流耀會在星曜前面加上`流`，`年解`比較特殊，只會出現在流年的流耀裏 |
+    | scope         | `'decadal'` \| `'yearly'` | `true`   | -      | 限定是大限還是流年的流曜，其中大限流曜會在星曜前面加上`運`，流年流曜會在星曜前面加上`流`，`年解`比較特殊，只會出現在流年的流曜裏 |
 
   - 返回值
 
@@ -721,7 +721,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 
 如果您覺得本程序對您有用的話，可以給我帶杯咖啡嗎？👍 [Paypal Me](https://PayPal.Me/sylarlong)
 
-以上數據可以生成如下星盤，其中 `palaces` 數據用於填充 12 宮，其他數據用於填充中宮。圖片中流耀的顯示和實際上有偏差，那是因為圖片是古早以前的一個版本生成的，請以實際返回數據為準。
+以上數據可以生成如下星盤，其中 `palaces` 數據用於填充 12 宮，其他數據用於填充中宮。圖片中流曜的顯示和實際上有偏差，那是因為圖片是古早以前的一個版本生成的，請以實際返回數據為準。
 
 ![demo](https://github.com/SylarLong/iztro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
 

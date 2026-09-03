@@ -206,7 +206,7 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
       ],
       // 辅星（含六吉六煞）
       minorStars: [],
-      // 杂耀
+      // 杂曜
       adjectiveStars: [
         { name: '月解', type: 'helper', scope: 'origin' },
         { name: '三台', type: 'adjective', scope: 'origin' },

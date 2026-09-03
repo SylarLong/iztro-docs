@@ -232,7 +232,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ### `StarName`
 
-定义了紫微斗数中 `星曜` 的名称，包括 `流耀`
+定义了紫微斗数中 `星曜` 的名称，包括 `流曜`
 
 :::tabs
 == 简体中文
@@ -954,7 +954,7 @@ export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
 export type Scope = "origin" | "decadal" | "yearly";
 ```
 
-定义了星曜的 `作用范围`，用于区分本命星曜和流耀：
+定义了星曜的 `作用范围`，用于区分本命星曜和流曜：
 
 - `origin`：本命星曜
 - `decadal`：大限星曜
@@ -976,12 +976,12 @@ export type StarType =
   | "tianma";
 ```
 
-定义了星曜 `类型`，其中 `桃花星` 和 `解神星`（包含 `年解`）虽然是杂耀，但是在解盘中有着特殊的意义，所以单独归类，`禄存` 和 `天马` 二辅星也是比较特殊，所以单独归类：
+定义了星曜 `类型`，其中 `桃花星` 和 `解神星`（包含 `年解`）虽然是杂曜，但是在解盘中有着特殊的意义，所以单独归类，`禄存` 和 `天马` 二辅星也是比较特殊，所以单独归类：
 
 - `major`：主星
 - `soft`：吉星
 - `tough`：煞星
-- `adjective`：杂耀
+- `adjective`：杂曜
 - `flower`：桃花
 - `helper`：解神
 - `lucun`：禄存
@@ -1067,7 +1067,7 @@ export type Palace = {
 | `earthlyBranch`    | 宫位地支       | [`EarthlyBranchName`](#earthlybranchname) |
 | `majorStars`       | 主星           | [`Star[]`](#star)                         |
 | `minorStars`       | 辅星           | [`Star[]`](#star)                         |
-| `adjectiveStars`   | 杂耀           | [`Star[]`](#star)                         |
+| `adjectiveStars`   | 杂曜           | [`Star[]`](#star)                         |
 | `changsheng12`     | 长生 12 神     | [`StarName`](#starname)                   |
 | `boshi12`          | 博士 12 神     | [`StarName`](#starname)                   |
 | `jiangqian12`      | 流年将前 12 神 | [`StarName`](#starname)                   |
@@ -1123,7 +1123,7 @@ export type HoroscopeItem = {
 | `earthlyBranch` | 运限地支       | [`EarthlyBranchName`](#earthlybranchname) |
 | `palaceNames`   | 运限的十二宫   | [`PalaceName[]`](#palacename)             |
 | `mutagen`       | 四化星         | [`StarName[]`](#starname)                 |
-| `stars`         | 流耀           | [`Star[][]`](#star)                       |
+| `stars`         | 流曜           | [`Star[][]`](#star)                       |
 
 ---
 
@@ -1320,9 +1320,9 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 
 ```ts
 type Config = {
-  // 星耀四化配置
+  // 星曜四化配置
   mutagens?: ConfigMutagens;
-  // 星耀亮度配置
+  // 星曜亮度配置
   brightness?: ConfigBrightness;
   // 年分割点配置
   yearDivide?: 'normal' | 'exact';

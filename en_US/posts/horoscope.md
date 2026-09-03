@@ -7,7 +7,7 @@ description: "Zi Wei Academy, iztro official documentation, FunctionalHoroscope 
 
 ## Introduction
 
-Zi Wei Dou Shu cycles include the Major Cycle (大限), Minor Cycle (小限), Annual Cycle (流年), Monthly Cycle (流月), Daily Cycle (流日), and Hourly Cycle (流時). `iztro` provides these six. Major, annual, monthly, daily, and hourly cycles contain moving stars (流耀) and Four Transformations (四化); moving stars for monthly, daily, and hourly cycles are available from `v2.4.4`. The Minor Cycle is special: it has neither moving stars nor cycle transformations; its transformations are derived from the palace stem.
+Zi Wei Dou Shu cycles include the Major Cycle (大限), Minor Cycle (小限), Annual Cycle (流年), Monthly Cycle (流月), Daily Cycle (流日), and Hourly Cycle (流時). `iztro` provides these six. Major, annual, monthly, daily, and hourly cycles contain moving stars (流曜) and Four Transformations (四化); moving stars for monthly, daily, and hourly cycles are available from `v2.4.4`. The Minor Cycle is special: it has neither moving stars nor cycle transformations; its transformations are derived from the palace stem.
 
 :::tip
 The global `horoscopeDivide` configuration controls the year and month stem-branch boundary for cycles; `ageDivide` controls the Minor Cycle nominal-age boundary.

@@ -232,7 +232,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ### `StarName`
 
-定義了紫微鬥數中 `星曜` 的名稱，包括 `流耀`
+定義了紫微鬥數中 `星曜` 的名稱，包括 `流曜`
 
 :::tabs
 == 簡體中文
@@ -954,7 +954,7 @@ export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
 export type Scope = "origin" | "decadal" | "yearly";
 ```
 
-定義了星曜的 `作用範圍`，用於區分本命星曜和流耀：
+定義了星曜的 `作用範圍`，用於區分本命星曜和流曜：
 
 - `origin`：本命星曜
 - `decadal`：大限星曜
@@ -976,12 +976,12 @@ export type StarType =
   | "tianma";
 ```
 
-定義了星曜 `類型`，其中 `桃花星` 和 `解神星`（包含 `年解`）雖然是雜耀，但是在解盤中有著特殊的意義，所以單獨歸類，`祿存` 和 `天馬` 二輔星也是比較特殊，所以單獨歸類：
+定義了星曜 `類型`，其中 `桃花星` 和 `解神星`（包含 `年解`）雖然是雜曜，但是在解盤中有著特殊的意義，所以單獨歸類，`祿存` 和 `天馬` 二輔星也是比較特殊，所以單獨歸類：
 
 - `major`：主星
 - `soft`：吉星
 - `tough`：煞星
-- `adjective`：雜耀
+- `adjective`：雜曜
 - `flower`：桃花
 - `helper`：解神
 - `lucun`：祿存
@@ -1067,7 +1067,7 @@ export type Palace = {
 | `earthlyBranch`    | 宮位地支       | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
 | `majorStars`       | 主星           | [`Star[]`](./type-definition.html#star)                         |
 | `minorStars`       | 輔星           | [`Star[]`](./type-definition.html#star)                         |
-| `adjectiveStars`   | 雜耀           | [`Star[]`](./type-definition.html#star)                         |
+| `adjectiveStars`   | 雜曜           | [`Star[]`](./type-definition.html#star)                         |
 | `changsheng12`     | 長生 12 神     | [`StarName`](./type-definition.html#starname)                   |
 | `boshi12`          | 博士 12 神     | [`StarName`](./type-definition.html#starname)                   |
 | `jiangqian12`      | 流年將前 12 神 | [`StarName`](./type-definition.html#starname)                   |
@@ -1123,7 +1123,7 @@ export type HoroscopeItem = {
 | `earthlyBranch` | 運限地支       | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
 | `palaceNames`   | 運限的十二宮   | [`PalaceName[]`](./type-definition.html#palacename)             |
 | `mutagen`       | 四化星         | [`StarName[]`](./type-definition.html#starname)                 |
-| `stars`         | 流耀           | [`Star[][]`](./type-definition.html#star)                       |
+| `stars`         | 流曜           | [`Star[][]`](./type-definition.html#star)                       |
 
 ---
 
@@ -1316,9 +1316,9 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 
 ```ts
 type Config = {
- // 星耀四化配置
+ // 星曜四化配置
  mutagens?: ConfigMutagens;
- // 星耀亮度配置
+ // 星曜亮度配置
  brightness?: ConfigBrightness;
  // 年分割點配置
  yearDivide?: 'normal' | 'exact';

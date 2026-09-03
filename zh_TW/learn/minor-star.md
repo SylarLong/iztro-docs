@@ -47,7 +47,7 @@ import Donate from '/components/donate.vue'
     <td>黃光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>行善令</td>
@@ -82,7 +82,7 @@ import Donate from '/components/donate.vue'
     <td>米黃光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>司製令</td>
@@ -119,7 +119,7 @@ import Donate from '/components/donate.vue'
     <td>赤光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>助力，成就</td>
@@ -154,7 +154,7 @@ import Donate from '/components/donate.vue'
     <td>紫光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>助力，成就</td>
@@ -189,7 +189,7 @@ import Donate from '/components/donate.vue'
     <td>青白光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>正途功名，科甲</td>
@@ -213,7 +213,7 @@ import Donate from '/components/donate.vue'
     <td>五行</td>
     <td>癸水 🌊</td>
     <td>鬥分</td>
-    <td>南鬥之星</td>
+    <td>北鬥第四星</td>
   </tr>
   <tr>
     <td>化氣</td>
@@ -224,7 +224,7 @@ import Donate from '/components/donate.vue'
     <td>米黃光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>異途功名，優雅，口才，才華</td>
@@ -233,7 +233,7 @@ import Donate from '/components/donate.vue'
   </tr> 
 </table>
 
-文曲星是紫微鬥數裏第一文藝之星，他代表了藝術修養與浪漫。他被稱作是「異途功名」，實際上筆者覺得叫「藝途功名」也挺貼切的。異途，是和正途相對的，和文昌星中舉的例子類似，當你給你媽媽說：「媽媽，我要學yyy，以後想從事yyy的工作。」的時候，假如你媽媽轉頭給你爸爸說：「把我40米的刀拿過來！」那這個yyy多半就是一個異途功名。
+文曲星為北鬥第四星，是紫微鬥數裏第一文藝之星，他代表了藝術修養與浪漫。他被稱作是「異途功名」，實際上筆者覺得叫「藝途功名」也挺貼切的。異途，是和正途相對的，和文昌星中舉的例子類似，當你給你媽媽說：「媽媽，我要學yyy，以後想從事yyy的工作。」的時候，假如你媽媽轉頭給你爸爸說：「把我40米的刀拿過來！」那這個yyy多半就是一個異途功名。
 
 不過以上例子只是用來區分文昌星和文曲星所代表的不同科甲類型，現在的家長已經開明很多了。文曲星通常比較善於變通，內心多愁善感。也因為文曲星會增加一些表達能力，所以他也在紫微鬥數裏引申出了口舌是非的意象。
 
@@ -261,7 +261,7 @@ import Donate from '/components/donate.vue'
     <td>-</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>-</td>
@@ -296,7 +296,7 @@ import Donate from '/components/donate.vue'
     <td>-</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>-</td>
@@ -333,7 +333,7 @@ import Donate from '/components/donate.vue'
     <td>赤光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>暴躁破壞</td>
@@ -368,7 +368,7 @@ import Donate from '/components/donate.vue'
     <td>暗紅光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>剛強驚嚇</td>
@@ -405,7 +405,7 @@ import Donate from '/components/donate.vue'
     <td>暗紅光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>是非，殘忍</td>
@@ -440,7 +440,7 @@ import Donate from '/components/donate.vue'
     <td>紅白光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>-</td>
     <td>職務</td>
     <td>粗暴，殘忍</td>
@@ -477,7 +477,7 @@ import Donate from '/components/donate.vue'
     <td>-</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>遷移主</td>
     <td>職務</td>
     <td>變動，變遷</td>
@@ -512,7 +512,7 @@ import Donate from '/components/donate.vue'
     <td>綠光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>財帛主</td>
     <td>職務</td>
     <td>人壽，貴爵</td>

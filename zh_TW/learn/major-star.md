@@ -16,7 +16,7 @@ import Donate from '/components/donate.vue'
 
 本篇只是粗略介紹各個星曜以及組合的情況，由於篇幅的關系無法把星曜的每個特點都介紹到。各位讀者可以根據這些基本特質自己思考總結，可以得出更多的結論，然後再用自己的結論去星盤裏反復驗證，就會對星曜特性越來越熟悉。也許，你會發現更多有趣的特性也說不一定。另外，因為每個人理解和表達能力不一樣，筆者對星曜的描述也不一定是百分之百準確，如果讀者有疑問或者質疑，歡迎聯系筆者進行交流，當然你也可以在 [討論組](https://github.com/SylarLong/iztro/discussions) 裏發帖討論。
 
-另外，星曜中的某些特質是需要在特定輔星和雜耀的光環疊加下展現出來的，比如紫府的哲學修養，需要在 [`空耀`](./basis.md#星曜) 的加持下，才會更加容易激發出來，否則還是會以對權利的追求，享受周圍人的追捧為主要特質。
+另外，星曜中的某些特質是需要在特定輔星和雜曜的光環疊加下展現出來的，比如紫府的哲學修養，需要在 [`空曜`](./basis.md#星曜) 的加持下，才會更加容易激發出來，否則還是會以對權利的追求，享受周圍人的追捧為主要特質。
 
 >*本系列文章為原創文章，轉載請標註出處。*
 
@@ -50,7 +50,7 @@ import Donate from '/components/donate.vue'
     <td>紫光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>官祿主</td>
     <td>職務</td>
     <td>眾星樞紐，長五行，孕萬物</td>
@@ -136,7 +136,7 @@ import Donate from '/components/donate.vue'
     <td>藍光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>兄弟主</td>
     <td>職務</td>
     <td>掌管智慧，精神</td>
@@ -207,7 +207,7 @@ import Donate from '/components/donate.vue'
     <td>橘紅光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>官祿主</td>
     <td>職務</td>
     <td>執掌光明，博愛，付出</td>
@@ -274,7 +274,7 @@ import Donate from '/components/donate.vue'
     <td>乳白光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>財帛主</td>
     <td>職務</td>
     <td>執掌財富，勇武之將</td>
@@ -363,7 +363,7 @@ import Donate from '/components/donate.vue'
     <td>白光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>福德主</td>
     <td>職務</td>
     <td>享受</td>
@@ -436,7 +436,7 @@ import Donate from '/components/donate.vue'
     <td>赤光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>官祿主(行政)</td>
     <td>職務</td>
     <td>邪惡</td>
@@ -527,7 +527,7 @@ import Donate from '/components/donate.vue'
     <td>黃綠光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>田宅主、財帛主</td>
     <td>職務</td>
     <td>賢能，包容，慈悲</td>
@@ -580,7 +580,7 @@ import Donate from '/components/donate.vue'
     <td>綠白光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>田宅主</td>
     <td>職務</td>
     <td>幹凈，美麗</td>
@@ -633,7 +633,7 @@ import Donate from '/components/donate.vue'
     <td>赤藍光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>子女主</td>
     <td>職務</td>
     <td>欲望，物質</td>
@@ -686,7 +686,7 @@ import Donate from '/components/donate.vue'
     <td>灰光（影子）</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>疾厄主</td>
     <td>職務</td>
     <td>是非，疑惑，挑剔，口舌</td>
@@ -741,7 +741,7 @@ import Donate from '/components/donate.vue'
     <td>綠白光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>官祿主</td>
     <td>職務</td>
     <td>輔佐，慈愛，服務，文憑</td>
@@ -794,7 +794,7 @@ import Donate from '/components/donate.vue'
     <td>正黃光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>父母主</td>
     <td>職務</td>
     <td>統帥、庇蔭</td>
@@ -847,7 +847,7 @@ import Donate from '/components/donate.vue'
     <td>黑光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>遷移主</td>
     <td>職務</td>
     <td>威猛，肅殺，變動</td>
@@ -904,7 +904,7 @@ import Donate from '/components/donate.vue'
     <td>黑光</td>
   </tr>
   <tr>
-    <td>職業</td>
+    <td>主司</td>
     <td>遷移主</td>
     <td>職務</td>
     <td>破損消耗</td>

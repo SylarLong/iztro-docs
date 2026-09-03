@@ -7,7 +7,7 @@ description: "Zi Wei Academy, iztro official documentation, FunctionalStar API a
 
 ## Introduction
 
-Stars are an important part of Zi Wei Dou Shu (紫微斗數); different star combinations form different character patterns. This page focuses on development usage. In `iztro`, major stars (主星), auxiliary stars (輔星), and miscellaneous stars (雜耀) are all grouped under the star system. The Forty-Eight Deities and Sha (四十八神煞) are not included.
+Stars are an important part of Zi Wei Dou Shu (紫微斗數); different star combinations form different character patterns. This page focuses on development usage. In `iztro`, major stars (主星), auxiliary stars (輔星), and miscellaneous stars (雜曜) are all grouped under the star system. The Forty-Eight Deities and Sha (四十八神煞) are not included.
 
 ## Functional class definition
 

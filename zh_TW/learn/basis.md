@@ -101,7 +101,7 @@ import Donate from '/components/donate.vue'
 
 - 排盤
 
-  根據出身日期、時辰及性別將星盤排出來的過程。
+  根據出生日期、時辰及性別將星盤排出來的過程。
 
 - 解盤
 
@@ -187,7 +187,7 @@ import Donate from '/components/donate.vue'
 
 紫微鬥數裏宮位中的重要組成部分，詳細介紹可以查看 [星曜系統](./star.md)。
 
-- 流耀
+- 流曜
 
   根據 `大限` 和 `流年` 而變化的星曜。
 
@@ -203,7 +203,7 @@ import Donate from '/components/donate.vue'
 
   指星曜在某個宮位內。比如 `貪狼` 坐 `夫妻宮`，指的是貪狼星在夫妻宮裏面。
 
-- 空星、空耀
+- 空星、空曜
 
   指 `地空`、`天空`、`旬空`、`空亡`
 
