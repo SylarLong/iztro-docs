@@ -234,6 +234,8 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 定义了紫微斗数中 `星曜` 的名称，包括 `流曜`
 
+<Badge type="warning" text="^2.6.1" /> 武曲和岁破的英文名分别为 `warrior` 和 `breaker`。
+
 :::tabs
 == 简体中文
 `紫微`
@@ -501,7 +503,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 `emperor`
 | `advisor`
 | `sun`
-| `general`
+| `warrior`
 | `fortunate`
 | `judge`
 | `empress`
@@ -584,6 +586,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `happiness`
 | `illness`
 | `wastrel`
+| `breaker`
 | `ambush`
 | `government`
 | `initial`
@@ -890,6 +893,13 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `流陀`
 | `流馬`
 | `年解`
+:::
+
+:::tip 同名星曜别名 ^2.6.1
+韩文或越南语星曜名称出现重名时，可以传入带汉字的限定别名进行准确反查。限定别名只用于输入，翻译输出仍使用原名称。
+
+- 韩文：`천상(天相)`、`천상(天傷)`、`천월(天鉞)`、`천월(天月)`、`겁살(劫殺)`、`겁살(劫煞)`、`비렴(蜚廉)`、`비렴(飛廉)`、`관부(官府)`、`관부(官符)`
+- 越南语：`Kiếp Sát(劫殺)`、`Kiếp Sát(劫煞)`、`Phi Liêm(蜚廉)`、`Phi Liêm(飛廉)`
 :::
 
 ---

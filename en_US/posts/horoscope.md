@@ -49,6 +49,8 @@ All properties are inherited from `Horoscope`; the interface adds the following 
   }
   ```
 
+  <Badge type="warning" text="^2.6.1" /> `palaceName` accepts a palace name in any configured language, independently of the astrolabe's output language. For example, an astrolabe displayed in Chinese may use the English palace name `"soul"`.
+
 - Properties
 
   See [`Horoscope`](../type-definition.md#horoscope).

@@ -54,6 +54,8 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
   }
   ```
 
+  <Badge type="warning" text="^2.6.1" /> `palaceName` 支援任一已配置語言的宮位名稱，不要求與星盤的輸出語言一致。例如，中文星盤也可以傳入英文宮位名 `"soul"`。
+
 - 屬性
 
   參考 [Horoscope](../type-definition.md#horoscope)
