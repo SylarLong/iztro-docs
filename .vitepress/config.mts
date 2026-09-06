@@ -39,6 +39,7 @@ export default defineConfig({
           { text: "新手村", link: "/learn/basis.md" },
           { text: "排盘", link: "https://ziwei.pub" },
           { text: "解盘", link: "https://app.ziwei.pro/register?ref=TPgWxvwH" },
+          { text: "AI 模型", link: "/ai/overview" },
           {
             text: "讨论",
             link: "https://github.com/SylarLong/iztro/discussions",
@@ -125,6 +126,7 @@ export default defineConfig({
           { text: "新手村", link: "/zh_TW/learn/basis.md" },
           { text: "排盤", link: "https://ziwei.pub" },
           { text: "解盤", link: "https://app.ziwei.pro/register?ref=TPgWxvwH" },
+          { text: "AI 模型", link: "/zh_TW/ai/overview" },
           {
             text: "討論",
             link: "https://github.com/SylarLong/iztro/discussions",
@@ -211,6 +213,7 @@ export default defineConfig({
           { text: "Docs", link: "/en_US/quick-start.md" },
           { text: "Astrolabe", link: "https://ziwei.pub" },
           { text: "Decipher", link: "https://app.ziwei.pro/register?ref=TPgWxvwH" },
+          { text: "AI Models", link: "/en_US/ai/overview" },
           {
             text: "Discussions",
             link: "https://github.com/SylarLong/iztro/discussions",
