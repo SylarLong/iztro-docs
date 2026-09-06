@@ -4,8 +4,8 @@
 
 - `iztro-ziwei-v3`：本命、合盤與中長期運勢分析。
 - `iztro-qimen-v3`：一件當下具體事情的決斷、發展與應期。
-- `iztro-ziwei-v3-fast`：低延遲紫微模型，只開放快速紫微工具 `get_ziwei`。
-- `iztro-qimen-v3-fast`：低延遲奇門模型，只開放 `qigua`、`yingqi`。
+- `iztro-ziwei-v3-fast`：`iztro-ziwei-v3` 的聚焦低延遲版本，對外回應與使用者可見計算活動保持一致。
+- `iztro-qimen-v3-fast`：`iztro-qimen-v3` 的聚焦低延遲版本，對外回應與使用者可見計算活動保持一致。
 
 有兩種接入方式，兩者都可以選擇上述公開模型。依你要做的事情選擇即可。
 

@@ -4,8 +4,8 @@ Beyond the open-source **iztro** chart library, we offer four public hosted Ziwe
 
 - `iztro-ziwei-v3`: natal, compatibility, and longer-term fortune-cycle analysis.
 - `iztro-qimen-v3`: decisions, development, and timing for one concrete current matter.
-- `iztro-ziwei-v3-fast`: a lower-latency Ziwei model that exposes only the fast `get_ziwei` tool.
-- `iztro-qimen-v3-fast`: a lower-latency Qimen model that exposes only `qigua` and `yingqi`.
+- `iztro-ziwei-v3-fast`: a focused, lower-latency variant of `iztro-ziwei-v3` with the same public response and user-visible calculation activity.
+- `iztro-qimen-v3-fast`: a focused, lower-latency variant of `iztro-qimen-v3` with the same public response and user-visible calculation activity.
 
 There are two integration paths, and both let you select any public model above. Pick the one that matches what you are building.
 
