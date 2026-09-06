@@ -4,8 +4,8 @@
 
 - `iztro-ziwei-v3`：本命、合盤與中長期運勢分析。
 - `iztro-qimen-v3`：一件當下具體事情的決斷、發展與應期。
-- `iztro-ziwei-v3-fast`：`iztro-ziwei-v3` 的聚焦低延遲版本，對外回應與使用者可見計算活動保持一致。
-- `iztro-qimen-v3-fast`：`iztro-qimen-v3` 的聚焦低延遲版本，對外回應與使用者可見計算活動保持一致。
+- `iztro-ziwei-v3-fast`：紫微請求回應更快、消耗更少 Token、調用成本更低；回應結構和使用者可見資訊與 `iztro-ziwei-v3` 一致。
+- `iztro-qimen-v3-fast`：奇門請求回應更快、消耗更少 Token、調用成本更低；回應結構和使用者可見資訊與 `iztro-qimen-v3` 一致。
 
 有兩種接入方式，兩者都可以選擇上述公開模型。依你要做的事情選擇即可。
 
