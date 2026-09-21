@@ -21,8 +21,13 @@ hero:
     - theme: brand
       text: 開發文檔
       link: ./quick-start.md
+    - theme: alt
+      text: 紫微 AI
+      link: ./ai/overview
 
 features:
+  - title: 紫微 AI · iztro-ziwei-v3
+    details: 不止排盤——用 iztro-ziwei-v3 模型解讀命盤、回答問題。可直接呼叫 iztro-chat-api，或用 openai-iztro-agents SDK 建立你自己的智能體。
   - title: 易用的代碼
     details: 簡單的輸入，完善的輸出以及合理的數據設計。讓你可以更專註在數據分析和界面設計上。
   - title: 完善的文檔

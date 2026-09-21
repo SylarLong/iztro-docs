@@ -18,8 +18,13 @@ hero:
     - theme: brand
       text: Document
       link: ./quick-start.md
+    - theme: alt
+      text: Ziwei AI
+      link: ./ai/overview
 
 features:
+  - title: Ziwei AI · iztro-ziwei-v3
+    details: Beyond charts — interpret charts and answer questions with the iztro-ziwei-v3 model. Call the iztro-chat-api directly, or build your own agent with the openai-iztro-agents SDK.
   - title: Easy-to-use code
     details: Simple input, reasonable output data design. You can more focus on the data analyze and UI desgin.
   - title: Rich documentation
