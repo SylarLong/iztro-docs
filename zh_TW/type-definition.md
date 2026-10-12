@@ -1322,7 +1322,7 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 
 ### `Config`
 
-定義了全局參數對象。
+定義排盤配置物件，可透過 `astro.config()` 設定後續排盤的預設值，亦可透過 `withOptions({ config })` 僅覆蓋當前星盤；既有星盤保留產生時的配置（^2.6.2）。
 
 ```ts
 type Config = {

@@ -1326,7 +1326,7 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 
 ### `Config`
 
-定义了全局参数对象。
+定义排盘配置对象，可通过 `astro.config()` 设置后续排盘的默认值，也可通过 `withOptions({ config })` 仅覆盖当前星盘；已有星盘保留生成时的配置（^2.6.2）。
 
 ```ts
 type Config = {

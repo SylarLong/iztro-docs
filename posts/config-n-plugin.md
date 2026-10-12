@@ -39,7 +39,7 @@ astro.config({
 | `algorithm` <Badge type="warning" text="^2.5.0" /> | `default` \| `zhongzhou` | `default` | 安星规则；`default` 为通行版本，`zhongzhou` 为中州派版本 |
 
 :::warning 注意
-`config()` 是全局配置。它会影响之后所有排盘与运限计算；使用 `withOptions({ config })` 传入的配置同样会写入全局配置。
+从 `v2.6.2` 开始，`astro.config()` 仅设置后续新建星盘的默认配置；`withOptions({ config })` 仅覆盖当前星盘，不再写入全局默认配置。已有星盘及其运限、四化分析保留生成时的配置和语言。旧代码若依赖单次排盘修改全局配置，请改为显式调用 `astro.config()`。
 :::
 
 ### getConfig() <Badge type="warning" text="^2.3.0" />
@@ -47,6 +47,8 @@ astro.config({
 - 用途
 
   获取当前已生效的全局配置。返回的 `mutagens` 和 `brightness` 使用库内部的规范化键名，适合用于调试或确认配置状态。
+
+  <Badge type="warning" text="^2.6.2" /> 返回值是独立深拷贝，修改对象或其中的四化、亮度数组不会改变库的配置。
 
 - 定义
 
@@ -79,6 +81,27 @@ astro.config({
 
   const currentConfig = astro.getConfig();
   ```
+
+### resetConfig() <Badge type="warning" text="^2.6.2" />
+
+恢复默认配置，并清除全部自定义四化、亮度表；已有星盘不受影响。
+
+```ts
+type resetConfig = () => void;
+```
+
+默认分界规则为 `yearDivide: 'normal'`、`horoscopeDivide: 'normal'`、`ageDivide: 'normal'`、`dayDivide: 'forward'`，安星方法为 `algorithm: 'default'`。本方法无参数、无返回值，不重置已加载的插件。
+
+```ts
+const chart = astro.withOptions({
+  dateStr: '2000-8-16',
+  timeIndex: 3,
+  gender: '男',
+  config: { ageDivide: 'birthday' },
+});
+astro.resetConfig();
+chart.horoscope('2026-3-1'); // 仍使用该星盘生成时的生日分界配置
+```
 
 ## 插件
 

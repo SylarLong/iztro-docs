@@ -28,6 +28,16 @@ var { astro } = require("iztro");
 
 ## Static methods of `astro`
 
+### Chart configuration and input validation <Badge type="warning" text="^2.6.2" />
+
+Charts returned by `bySolar`, `byLunar`, and `withOptions` retain the configuration and language used when created. Later global configuration changes or charts created in other languages do not change existing horoscope queries or transformation analysis.
+
+`withOptions.type` is optional and defaults to `solar`. Its `config` overrides only the current chart. Chart and date helper calls default to `zh-CN` when `language` is omitted; an explicit language does not change other calls. Supported languages are `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, and `vi-VN`.
+
+Dates must exist in the underlying solar or lunar calendar and use years 1–9999. Strings accept hyphens, slashes, or dots, with optional ` HH:mm` or ` HH:mm:ss`; historical solar dates follow the underlying Julian/Gregorian transition. Hour indices must be integers from 0 to 12. Invalid genders, languages, date types, chart types, and non-boolean leap-month options throw errors. Lunar dates are checked against the actual month length; the leap-month flag remains ignored for non-leap months.
+
+See [Configuration and Plugins](./config-n-plugin.md) for configuration scope, the independent copy returned by `getConfig()`, and `resetConfig()`.
+
 ### astrolabeBySolarDate <Badge type="danger" text="deprecated" />
 
 This method was deprecated in `v2.0.5`. Use [`bySolar`](#bysolar) instead; parameters and return value are unchanged.
@@ -58,7 +68,7 @@ This method was deprecated in `v2.0.5`. Use [`bySolar`](#bysolar) instead; param
   | timeIndex | `number` | `true` | - | Birth hour index, `0–12`, from early Rat hour (`0`) to late Rat hour (`12`) |
   | gender | [`GenderName`](../type-definition.md#gendername) | `true` | - | Gender: male or female |
   | fixLeap | `boolean` | `false` | `true` | Whether to adjust leap months; with `true`, the first half belongs to the preceding month and the second half to the following month |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Output language; supports `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, and `ja-JP` |
+  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Output language; supports `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN` |
 
 - Return value
 
@@ -132,7 +142,7 @@ This method was deprecated in `v2.0.5`. Use [`byLunar`](#bylunar) instead; param
 
   ```ts
   type Option = {
-    type: 'solar' | 'lunar';
+    type?: 'solar' | 'lunar';
     dateStr: string;
     timeIndex: number;
     gender: GenderName;
@@ -157,7 +167,7 @@ This method was deprecated in `v2.0.5`. Use [`byLunar`](#bylunar) instead; param
   | isLeapMonth | `boolean` | `false` | `false` | Whether it is a leap month; applies only to lunar dates |
   | fixLeap | `boolean` | `false` | `true` | Whether to adjust leap-month placement |
   | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Output language |
-  | config | [`Config`](../type-definition.md#config) | `false` | - | Custom brightness, transformations, and time-boundary configuration |
+  | config | [`Config`](../type-definition.md#config) | `false` | - | Chart-local brightness, transformations, and time-boundary overrides (^2.6.2) |
   | astroType <Badge type="warning" text="^2.5.0" /> | [`AstroType`](../type-definition.md#astrotype) | `false` | `heaven` | Chart type; when `config.algorithm` is `zhongzhou`, selects Heaven, Earth, or Human Chart |
 
 - Return value

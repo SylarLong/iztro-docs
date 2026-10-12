@@ -58,6 +58,16 @@ var { astro } = require("iztro");
 
 ---
 
+### 排盤配置與輸入校驗 <Badge type="warning" text="^2.6.2" />
+
+`bySolar`、`byLunar` 和 `withOptions` 回傳的星盤保存產生時的配置與語言。後續修改全局預設配置或建立其他語言的星盤，不會改變既有星盤的運限和四化分析結果。
+
+`withOptions` 的 `type` 可省略，預設為陽曆；`config` 僅覆蓋當前星盤。排盤及日期輔助方法省略 `language` 時預設為 `zh-CN`，指定語言不會修改其他呼叫的語言。支援 `zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR`、`vi-VN`。
+
+日期年份範圍為 1～9999，必須是實際存在的陽曆或農曆日期。字串支援連字號、斜線或點號分隔，可附加 ` HH:mm` 或 ` HH:mm:ss`；歷史陽曆日期沿用底層曆法的儒略曆/格里曆切換規則。時辰必須為 0～12 的整數；未知性別、語言、日期類型或星盤類型，以及非布林的閏月選項會拋出錯誤。農曆日期按實際月份天數校驗，非閏月時仍忽略 `isLeapMonth: true`。
+
+配置作用範圍、`getConfig()` 的獨立副本及 `resetConfig()` 詳見[配置和插件](./config-n-plugin.md)。
+
 ### astrolabeBySolarDate
 
 - 用途
@@ -84,7 +94,7 @@ var { astro } = require("iztro");
   | timeIndex    | `number`                                     | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
   | gender       | [`GenderName`](/type-definition.md#gendername)| `true`   | -       | 性別【男/女】                                                                     |
   | fixLeap      | `boolean`                                    | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
 
 - 返回值
 
@@ -128,7 +138,7 @@ var { astro } = require("iztro");
   | gender       | [`GenderName`](/type-definition.md#gendername)   | `true`   | -       | 性別【男/女】                                                                     |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
 
 - 返回值
 
@@ -154,7 +164,7 @@ var { astro } = require("iztro");
 
   ```ts
   type Option = {
-    type: 'solar' | 'lunar';
+    type?: 'solar' | 'lunar';
     dateStr: string;
     timeIndex: number;
     gender: GenderName;
@@ -180,8 +190,8 @@ var { astro } = require("iztro");
   | gender | [`GenderName`](/type-definition.md#gendername) | `true` | - | 性別【男/女】 |
   | isLeapMonth | `boolean` | `false` | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效 |
   | fixLeap | `boolean` | `false` | `true` | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 傳回資料將會國際化為指定語言。目前支援 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
-  | config | [`Config`](../type-definition.md#config) | `false` | - | 自訂亮度、四化以及時間分割點配置 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 傳回資料將會國際化為指定語言。目前支援 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | config | [`Config`](../type-definition.md#config) | `false` | - | 僅覆蓋當前星盤的亮度、四化及時間分界配置（^2.6.2） |
   | astroType <Badge type="warning" text="^2.5.0" /> | [`AstroType`](../type-definition.md#astrotype) | `false` | `heaven` | 星盤類型；僅在 `config.algorithm` 為 `zhongzhou` 時用於選擇天盤、地盤或人盤 |
 
 - 傳回值
@@ -236,7 +246,7 @@ var { astro } = require("iztro");
   | solarDateStr | `string`                                     | `true`   | -       | 陽歷日期【YYYY-M-D】                                                              |
   | timeIndex    | `number`                                     | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
   | fixLeap      | `boolean`                                    | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
 
 - 示例
 
@@ -274,7 +284,7 @@ var { astro } = require("iztro");
   | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
 
 - 示例
 
@@ -306,7 +316,7 @@ var { astro } = require("iztro");
   | 參數         | 類型                                         | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | solarDateStr | `string`                                     | `true`   | -       | 陽歷日期【YYYY-M-D】                                                              |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
 
 - 示例
 
@@ -340,7 +350,7 @@ var { astro } = require("iztro");
   | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | lunarDateStr | `string`   | `true`   | -       | 農歷日期【YYYY-M-D】，例如 `2000年七月十七` 則傳入 `2000-7-17`                    |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效                                        |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
 
 - 示例
 
@@ -370,7 +380,7 @@ var { astro } = require("iztro");
   | 參數         | 類型                                         | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | solarDateStr | `string`                                     | `true`   | -       | 陽歷日期【YYYY-M-D】                                                              |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
 
 - 示例
 
@@ -399,7 +409,7 @@ var { astro } = require("iztro");
   | 參數         | 類型                                         | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | year | `number`                                     | `true`   | -       | 農歷年份                                                             |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
   
 - 示例
 

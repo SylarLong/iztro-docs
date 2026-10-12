@@ -5,6 +5,8 @@ description: "Zi Wei Academy, iztro official documentation, FunctionalHoroscope 
 
 # Horoscopes and Cycles
 
+<Badge type="warning" text="^2.6.2" /> Horoscope queries use their chart’s saved configuration and language. Changing global defaults or creating another chart does not change existing query results. `horoscope()` accepts valid `Date` objects or date strings and uses the current time when no date is supplied. Explicit hour indices must be integers from 0 to 12; invalid dates and indices throw errors.
+
 ## Introduction
 
 Zi Wei Dou Shu cycles include the Major Cycle (大限), Minor Cycle (小限), Annual Cycle (流年), Monthly Cycle (流月), Daily Cycle (流日), and Hourly Cycle (流時). `iztro` provides these six. Major, annual, monthly, daily, and hourly cycles contain moving stars (流曜) and Four Transformations (四化); moving stars for monthly, daily, and hourly cycles are available from `v2.4.4`. The Minor Cycle is special: it has neither moving stars nor cycle transformations; its transformations are derived from the palace stem.

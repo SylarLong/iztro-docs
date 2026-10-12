@@ -88,18 +88,18 @@ bun add -S iztro
 - jsdelivr
 
   - https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js
-  - https://cdn.jsdelivr.net/npm/iztro@2.6.0/dist/iztro-v2.6.0.min.js
+  - https://cdn.jsdelivr.net/npm/iztro@2.6.2/dist/iztro-v2.6.2.min.js
 
 - unpkg
 
   - https://unpkg.com/iztro/dist/iztro.min.js
-  - https://unpkg.com/iztro@2.6.0/dist/iztro-v2.6.0.min.js
+  - https://unpkg.com/iztro@2.6.2/dist/iztro-v2.6.2.min.js
 
 你也可以使用如下規則來指定版本：
 
 - `iztro@2`
-- `iztro@^2.6.0`
-- `iztro@2.6.0`
+- `iztro@^2.6.2`
+- `iztro@2.6.2`
 
 ## 開始使用
 
@@ -130,7 +130,7 @@ var iztro = require("iztro");
     <title>iztro-紫微鬥數開源庫</title>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/iztro@2.6.0/dist/iztro-v2.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iztro@2.6.2/dist/iztro-v2.6.2.min.js"></script>
     <script>
       // 獲取一張星盤數據
       var astrolabe = iztro.astro.bySolar('2000-8-16', 2, '男', true, 'zh-CN');

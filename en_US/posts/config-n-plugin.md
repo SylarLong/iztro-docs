@@ -39,7 +39,7 @@ Besides `mutagens` and `brightness`, the following options adjust calculation ru
 | `algorithm` <Badge type="warning" text="^2.5.0" /> | `default` \| `zhongzhou` | `default` | Star-placement lineage: `default` is the common approach; `zhongzhou` is the Zhongzhou school (中州派). |
 
 :::warning
-`config()` is global. It affects all chart and horoscope calculations made afterwards; configuration passed through `withOptions({ config })` also updates the global configuration.
+Since `v2.6.2`, `astro.config()` sets defaults only for future charts. `withOptions({ config })` overrides only the current chart and no longer changes global defaults. Existing charts retain their configuration and language for horoscope queries and transformation analysis. If older code relied on `withOptions({ config })` to change global defaults, call `astro.config()` explicitly.
 :::
 
 ### getConfig() <Badge type="warning" text="^2.3.0" />
@@ -47,6 +47,8 @@ Besides `mutagens` and `brightness`, the following options adjust calculation ru
 - Purpose
 
   Gets the currently active global configuration. The returned `mutagens` and `brightness` use normalized internal keys, so this method is useful for debugging or confirming configuration state.
+
+  <Badge type="warning" text="^2.6.2" /> The returned configuration is a deep copy. Changing its fields or nested transformation and brightness arrays does not change library configuration.
 
 - Definition
 
@@ -79,6 +81,27 @@ Besides `mutagens` and `brightness`, the following options adjust calculation ru
 
   const currentConfig = astro.getConfig();
   ```
+
+### resetConfig() <Badge type="warning" text="^2.6.2" />
+
+Restores factory defaults and clears all custom transformation and brightness tables. Existing charts are unaffected.
+
+```ts
+type resetConfig = () => void;
+```
+
+Defaults are `yearDivide: 'normal'`, `horoscopeDivide: 'normal'`, `ageDivide: 'normal'`, `dayDivide: 'forward'`, and `algorithm: 'default'`. This method takes no arguments, returns nothing, and does not remove loaded plugins.
+
+```ts
+const chart = astro.withOptions({
+  dateStr: '2000-8-16',
+  timeIndex: 3,
+  gender: 'male',
+  config: { ageDivide: 'birthday' },
+});
+astro.resetConfig();
+chart.horoscope('2026-3-1'); // Still uses the chart's saved birthday boundary.
+```
 
 ## Plugins
 
