@@ -35,7 +35,9 @@ const text = computed(() => messages[lang.value.toLowerCase().replace('_', '-')]
         <img :src="alipayCode" :alt="text.alipay" width="300" />
         <img :src="wechatCode" :alt="text.wechat" width="300" />
       </div>
-      <a class="donate-link" href="https://paypal.me/sylarlong" target="_blank" rel="noopener noreferrer">{{ text.paypal }}</a>
+      <a class="donate-link donate-paypal" href="https://paypal.me/sylarlong" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/badge/Paypal_Me-8A2BE2?logo=paypal&link=https%3A%2F%2Fwww.paypal.com%2Fsylarlong" :alt="text.paypal" />
+      </a>
     </section>
   </div>
 </template>
@@ -50,6 +52,7 @@ const text = computed(() => messages[lang.value.toLowerCase().replace('_', '-')]
   border-bottom: 1px dashed var(--vp-custom-block-danger-border);
 }
 .donate-link { color: var(--vp-c-brand-1, var(--vp-c-brand)); cursor: pointer; text-decoration: underline; }
+.donate-paypal { display: inline-flex; }
 .donate-overlay {
   position: fixed;
   inset: 0;
