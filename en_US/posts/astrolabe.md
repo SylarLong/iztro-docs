@@ -35,7 +35,7 @@ A Zi Wei Dou Shu（紫微斗數） chart, also called a natal chart（命盤）,
 
 The `central palace` can display whatever information you choose and generally does not affect the chart’s interpretation. The surrounding `twelve palaces`（十二宮） hold stars（星曜）, the four transformations（四化）, fortune periods（運限）, palace names, and other data. See [palaces](./palace.md) for more on `palaces`（宮位）; this page focuses on the chart. A chart consists of palaces and stars. If these concepts are new to you, start with [the basics](/en_US/learn/basis.md).
 
-After installing `iztro`, use the following code to import the `astrolabe (astro)` object. For `iztro` installation instructions, see [Install iztro](/en_US/quick-start.md#安装).
+After installing `iztro`, use the following code to import the `chart module (astro)` object. For `iztro` installation instructions, see [Install iztro](/en_US/quick-start.md#安装).
 
 ## `astro` static methods   {#astro-的静态方法}
 

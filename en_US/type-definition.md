@@ -54,7 +54,7 @@ setLanguage("ko-KR");
 const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 ```
 
-At this time, the output result of `horoscopeStar` will be `Korean`.
+The output of `horoscopeStar` will then be in `Korean`.
 
 ::: details `horoscopeStar` output result
 
@@ -1583,7 +1583,7 @@ export type Horoscope = {
 };
 ```
 
-Defines a `horoscope periods`（運限） object containing `decadal`（大限）, `yearly`（流年）, `monthly`（流月）, `daily`（流日）, and `hourly`（流時） data.
+Defines a `horoscope-period`（運限） object containing `decadal`（大限）, `yearly`（流年）, `monthly`（流月）, `daily`（流日）, and `hourly`（流時） data.
 
 | Properties | Meaning | Type |
 | --- | --- | --- |
@@ -1623,7 +1623,7 @@ export type Astrolabe = {
 };
 ```
 
-Defines an `astrolabe`（星盤） object.
+Defines a `chart`（星盤） object.
 
 | Properties | Meaning | Type |
 | --- | --- | --- |

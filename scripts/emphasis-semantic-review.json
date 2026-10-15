@@ -124,7 +124,7 @@
       "source": "不在",
       "targets": {
         "en_US": "absent",
-        "ko_KR": "없음",
+        "ko_KR": "없는",
         "ja_JP": "存在しない",
         "vi_VN": "không có mặt"
       },
@@ -164,7 +164,7 @@
       "source": "都在",
       "targets": {
         "en_US": "present",
-        "ko_KR": "모두 존재함",
+        "ko_KR": "모두 있어야",
         "ja_JP": "すべて存在する",
         "vi_VN": "đều có mặt"
       },
@@ -173,9 +173,9 @@
     {
       "source": "都不在",
       "targets": {
-        "en_US": "none of them present",
-        "ko_KR": "모두 없음",
-        "ja_JP": "すべて不在",
+        "en_US": "none of the specified stars are present",
+        "ko_KR": "하나도 없어야",
+        "ja_JP": "一つも存在しない",
         "vi_VN": "không có sao nào"
       },
       "gloss": false
@@ -183,9 +183,9 @@
     {
       "source": "命中一个",
       "targets": {
-        "en_US": "at least one match",
-        "ko_KR": "하나 이상 일치",
-        "ja_JP": "一つでも一致する",
+        "en_US": "at least one specified star is present",
+        "ko_KR": "하나라도 있으면",
+        "ja_JP": "一つでも存在する",
         "vi_VN": "khớp ít nhất một sao"
       },
       "gloss": false
@@ -234,7 +234,7 @@
       "source": "虚岁",
       "targets": {
         "en_US": "nominal age",
-        "ko_KR": "허세",
+        "ko_KR": "세는나이",
         "ja_JP": "数え年",
         "vi_VN": "tuổi mụ"
       },
@@ -313,20 +313,20 @@
     {
       "source": "有面子",
       "targets": {
-        "en_US": "feel respected",
-        "ko_KR": "체면이 서다",
-        "ja_JP": "面目が立つ",
-        "vi_VN": "cảm thấy được coi trọng"
+        "en_US": "a sense of being respected",
+        "ko_KR": "체면이 서는 느낌",
+        "ja_JP": "面目が立つ感覚",
+        "vi_VN": "cảm giác được coi trọng"
       },
       "gloss": false
     },
     {
       "source": "纠结",
       "targets": {
-        "en_US": "feel torn",
-        "ko_KR": "고민에 빠지다",
-        "ja_JP": "思い悩む",
-        "vi_VN": "phân vân"
+        "en_US": "inner conflict",
+        "ko_KR": "내적 갈등",
+        "ja_JP": "葛藤",
+        "vi_VN": "sự giằng xé nội tâm"
       },
       "gloss": false
     },
@@ -484,7 +484,7 @@
       "source": "为情所困",
       "targets": {
         "en_US": "become trapped by relationship worries",
-        "ko_KR": "사랑 때문에 괴로워하다",
+        "ko_KR": "사랑으로 인한 괴로움",
         "ja_JP": "情にとらわれる",
         "vi_VN": "bị tình cảm trói buộc"
       },
@@ -514,7 +514,7 @@
       "source": "有情饮水饱",
       "targets": {
         "en_US": "feel content with love even when money is scarce",
-        "ko_KR": "사랑이 있으면 물질적 부족도 감수하다",
+        "ko_KR": "사랑이 있으면 물질적 부족도 감수할 수 있다",
         "ja_JP": "愛があれば物質的な不足も受け入れられる",
         "vi_VN": "cảm thấy đủ đầy nhờ tình yêu dù thiếu thốn vật chất"
       },
@@ -713,10 +713,10 @@
     {
       "source": "帝星守命前后有日月来夹是也",
       "targets": {
-        "en_US": "the emperor guards the soul palace, flanked by the sun and moon",
-        "ko_KR": "자미가 명궁에 있고 태양과 태음이 양옆에서 협한다",
-        "ja_JP": "紫微が命宮を守り、太陽と太陰が両隣から挟む",
-        "vi_VN": "Tử Vi thủ Mệnh, Thái Dương và Thái Âm giáp hai bên"
+        "en_US": "A sovereign star in the soul palace, flanked by sun and moon",
+        "ko_KR": "제성이 명궁을 지키고 태양과 태음이 양옆에서 끼운다",
+        "ja_JP": "帝星が命宮を守り、太陽と太陰が両隣から挟む",
+        "vi_VN": "Đế tinh thủ Mệnh, Thái Dương và Thái Âm giáp hai bên"
       },
       "gloss": false
     },
@@ -844,10 +844,10 @@
     {
       "source": "月落亥宫",
       "targets": {
-        "en_US": "moon in the hai palace",
-        "ko_KR": "태음이 해궁에 있다",
-        "ja_JP": "太陰が亥の宮にある",
-        "vi_VN": "Thái Âm ở cung Hợi"
+        "en_US": "Moon in the Hai Palace",
+        "ko_KR": "월락해궁",
+        "ja_JP": "月落亥宮",
+        "vi_VN": "Nguyệt Lạc Hợi Cung"
       },
       "gloss": true,
       "note": "Pattern alias introduced by 也叫, reviewed in the full paragraph; retain Traditional Chinese name in non-Japanese locales."
@@ -886,7 +886,7 @@
       "source": "雄宿",
       "targets": {
         "en_US": "martial star",
-        "ko_KR": "웅수",
+        "ko_KR": "웅숙",
         "ja_JP": "雄宿",
         "vi_VN": "Hùng Tú"
       },
@@ -917,8 +917,8 @@
       "targets": {
         "en_US": "delusion",
         "ko_KR": "어리석음",
-        "ja_JP": "無知",
-        "vi_VN": "Si"
+        "ja_JP": "無明",
+        "vi_VN": "si"
       },
       "gloss": false
     },
@@ -1046,7 +1046,7 @@
       "source": "定基调",
       "targets": {
         "en_US": "set the overall character",
-        "ko_KR": "전체 성향을 정하다",
+        "ko_KR": "전체 성향을 정하는 것",
         "ja_JP": "全体の傾向を定める",
         "vi_VN": "định hình tính chất chung"
       },

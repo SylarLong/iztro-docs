@@ -144,7 +144,7 @@ var iztro = require("iztro");
 
 You can create a Zi Wei Dou Shu（紫微斗數） chart（星盤） from either a `lunar calendar` date or a `Gregorian calendar` date. `iztro` supports both, but we recommend using the `Gregorian calendar` method. Both methods produce the same chart when given equivalent dates.
 
-::: info Using `阳历` has the following conveniences:
+::: info Advantages of using a `Gregorian calendar` date:
 
 - Gregorian birth dates are easy to check against a birth certificate.
 - A calendar date picker makes entering the date straightforward.

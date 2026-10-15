@@ -1,6 +1,6 @@
 ---
 outline: deep
-description: "紫微研习社，iztro官方文檔，iztro開發文檔，iztro紫微斗數星曜介紹，iztro的star對象使用方法以及示例代碼。"
+description: "說明如何調整 iztro 的排盤設定，以及透過外掛擴充星盤功能。"
 ---
 
 # 配置和插件 <Badge type="warning" text="^2.3.0" />
@@ -13,7 +13,7 @@ description: "紫微研习社，iztro官方文檔，iztro開發文檔，iztro紫
 
 ## 配置
 
-關於配置的定義請參考 [配置定義](../type-definition.md#config)。全局配置十分簡單，只需要在調用排盤方法之前調用 `astro.config()` 方法即可，具體代碼如下：
+可用的設定項目請參考 [設定定義](../type-definition.md#config)。若要設定全域預設值，請在呼叫排盤方法之前呼叫 `astro.config()`，範例如下：
 
 ```ts
 import { astro } from 'iztro';
@@ -26,7 +26,7 @@ astro.config({
 });
 ```
 
-上述代碼執行之後調用排盤方法時，將會把新的配置合並到默認配置中進行應用。換言之，在數據與默認配置相同的情況下，你並不需要重復在配置文件中設置。關於默認的四化表，請參考 [十天干四化表](../learn/mutagen.md#十天干四化表)。關於默認星曜亮度，請參考 [星曜亮度表](../learn/star.md#星曜亮度表)。
+執行上述程式碼後再呼叫排盤方法，指定的設定會與預設設定合併後套用。只需指定與預設值不同的項目。預設四化表請參考 [十天干四化表](../learn/mutagen.md#十天干四化表)，預設星曜亮度請參考 [星曜亮度表](../learn/star.md#星曜亮度表)。
 
 除 `mutagens` 和 `brightness` 外，還可以透過以下選項調整排盤規則：
 
@@ -105,9 +105,9 @@ chart.horoscope('2026-3-1'); // 仍使用該星盤產生時的生日分界配置
 
 ## 插件
 
-iztro的插件就是一個函數，這個函數會掛載到星盤對象上。你可以根據自己的需求擴展功能。假如你是在typescript環境下開發，你需要將插件方法聲明到接口中，而該接口需要繼承自 `FunctionalAstrolabe`。
+iztro 的外掛是為星盤物件新增功能的函式，可依需求擴充功能。若使用 TypeScript 開發，請在繼承 `FunctionalAstrolabe` 的介面中宣告外掛方法。
 
-接口聲明如下：
+介面宣告如下：
 
 ```ts
 export interface IAstrolabe extends FunctionalAstrolabe {
@@ -116,7 +116,7 @@ export interface IAstrolabe extends FunctionalAstrolabe {
 }
 ```
 
-上述 `myNewFunc` 和 `majorStar` 方法可以根據你自己的需求進行定義。上述接口內的方法你可以在一個插件方法內實現，也可以在多個插件方法內實現。實現方法如下：
+`myNewFunc` 和 `majorStar` 可依需求定義。介面中的方法可在同一個外掛函式中實作，也可分別在多個外掛函式中實作，範例如下：
 
 ```ts
 // 創建一個插件函數

@@ -95,7 +95,7 @@ Gender and the Yin–Yang property of the birth year affect the direction of som
 
   In Zi Wei Dou Shu（紫微斗數）, forward progression means moving `clockwise`; reverse progression means moving `counterclockwise`. Thus `Yang-year men and Yin-year women progress clockwise`（陽男陰女順行） calls for a `clockwise` arrangement, while `Yin-year men and Yang-year women progress counterclockwise`（陰男陽女逆行或逆部） calls for a `counterclockwise` arrangement.
 
-### `astrolabe`（星盤）   {#星盘}
+### `chart`（星盤）   {#星盘}
 
 See [Introduction to charts（星盤介紹）](./astrolabe.md) for more detail.
 

@@ -11,7 +11,7 @@ import Donate from '/components/donate.vue'
 
 ## Introduction   {#前言}
 
-In Zi Wei Dou Shu（紫微斗數）, an `astrolabe`（星盤）, also called a `natal chart`（命盤）, is a chart calculated from a person’s birth date and time. It shows the distribution of [`palaces`（宮位）](./palace.md) and [`stars`（星曜）](./star.md). There are three chart layers: the `natal chart`（本命盤）, `decadal chart`（大限盤）, and `annual chart`（流年盤）. To examine fortune over time, these three layers are overlaid and analyzed together. If you are new to Zi Wei Dou Shu, first read [Basic concepts](./basis.md) to become familiar with the terminology used here.
+In Zi Wei Dou Shu（紫微斗數）, a `chart`（星盤）, also called a `natal chart`（命盤）, is a chart calculated from a person’s birth date and time. It shows the distribution of [`palaces`（宮位）](./palace.md) and [`stars`（星曜）](./star.md). There are three chart layers: the `natal chart`（本命盤）, `decadal chart`（大限盤）, and `annual chart`（流年盤）. To examine fortune over time, these three layers are overlaid and analyzed together. If you are new to Zi Wei Dou Shu, first read [Basic concepts](./basis.md) to become familiar with the terminology used here.
 
 >*This series of articles is original. Please indicate the source when reprinting.*
 

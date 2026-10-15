@@ -8275,10 +8275,10 @@
       "神煞": "symbolic stars",
       "48神煞": "48 symbolic stars",
       "星曜": "stars",
-      "星盘": "astrolabe",
+      "星盘": "chart",
       "命盘": "natal chart",
       "本命盘": "natal chart",
-      "星盘(astro)": "astrolabe (astro)",
+      "星盘(astro)": "chart module (astro)",
       "阴": "Yin",
       "阳": "Yang",
       "木": "Wood",
@@ -8402,8 +8402,8 @@
       "十二人事宫": "twelve palaces of human affairs",
       "所有": "all specified stars",
       "都在": "present",
-      "都不在": "none of them present",
-      "命中一个": "at least one match",
+      "都不在": "none of the specified stars are present",
+      "命中一个": "at least one specified star is present",
       "链式调用": "method chaining",
       "大限盘": "decadal chart",
       "流年盘": "annual chart",
@@ -8816,9 +8816,9 @@
       "流年夫妻宫": "유년 부처궁",
       "十二人事宫": "십이 인사궁",
       "所有": "지정한 모든 별",
-      "都在": "모두 존재함",
-      "都不在": "모두 없음",
-      "命中一个": "하나 이상 일치",
+      "都在": "모두 있어야",
+      "都不在": "하나도 없어야",
+      "命中一个": "하나라도 있으면",
       "链式调用": "메서드 체이닝",
       "解盘": "명반 해석",
       "虚岁": "세는나이",
@@ -9225,8 +9225,8 @@
       "十二人事宫": "十二人事宮",
       "所有": "すべての指定星曜",
       "都在": "すべて存在する",
-      "都不在": "すべて不在",
-      "命中一个": "一つでも一致する",
+      "都不在": "一つも存在しない",
+      "命中一个": "一つでも存在する",
       "链式调用": "メソッドチェーン",
       "大限盘": "大限盤",
       "流年盘": "流年盤",
@@ -10590,7 +10590,7 @@
       "宫位": "palaces",
       "命盘": "natal chart",
       "本命盘": "natal chart",
-      "星盘": "astrolabe",
+      "星盘": "chart",
       "中天星系": "Central star system",
       "北斗": "Northern Dipper",
       "南斗": "Southern Dipper",
@@ -11547,7 +11547,7 @@
       "sourcePrefix": "紫微斗数的 `星盘` 又叫",
       "phrase": "星盘",
       "values": {
-        "en_US": "astrolabe",
+        "en_US": "chart",
         "ko_KR": "성반",
         "ja_JP": "星盤",
         "vi_VN": "tinh bàn"
@@ -11566,6 +11566,9 @@
       ],
       "增加": [
         "증가"
+      ],
+      "定基调": [
+        "전체 성향을 정하는 것"
       ]
     },
     "ja_JP": {
@@ -11594,6 +11597,9 @@
       ],
       "流": [
         "annual prefix"
+      ],
+      "运限": [
+        "horoscope-period"
       ]
     },
     "vi_VN": {

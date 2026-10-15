@@ -141,7 +141,7 @@ Lớp này kế thừa các thuộc tính từ [Palace](../type-definition.md#pa
 
   - Mục đích
 
-    Kiểm tra `sao`（星曜） đầu vào trong một cung. `tất cả sao được chỉ định` phải `đều có mặt` thì mới trả về `true`.
+    Kiểm tra các `sao`（星曜） được chỉ định trong một cung. Chỉ khi `tất cả sao được chỉ định` `đều có mặt` trong cung đó thì phương thức mới trả về `true`.
 
   - Định nghĩa
 
@@ -577,7 +577,7 @@ Lớp này kế thừa các thuộc tính từ [SurroundedPalaces](../type-defin
 
   - Mục đích
 
-    Kiểm tra `sao`（星曜） đầu vào trong phạm vi tam phương tứ chính（三方四正） của cung. `tất cả sao được chỉ định` phải `đều có mặt` trong phạm vi này thì mới trả về `true`.
+    Kiểm tra các `sao`（星曜） được chỉ định trong phạm vi tam phương tứ chính（三方四正） của cung. Chỉ khi `tất cả sao được chỉ định` `đều có mặt` trong phạm vi này thì phương thức mới trả về `true`.
 
   - Định nghĩa
 

@@ -64,11 +64,11 @@ Từ `v2.6.2`, `astro.config()` chỉ đặt cấu hình mặc định cho các 
   };
   ```
 
-- thông số
+- Tham số
 
   Không có
 
-- giá trị trả về
+- Giá trị trả về
 
   Đối tượng cấu hình hiện có hiệu lực
 

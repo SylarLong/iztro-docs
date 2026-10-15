@@ -141,7 +141,7 @@ This class inherits its properties from [Palace](../type-definition.md#palace) a
 
   - Purpose
 
-    Checks the supplied `stars`（星曜） in a palace. `all specified stars` must be `present` for the method to return `true`.
+    Checks the supplied `stars`（星曜） in a palace. Only when `all specified stars` are `present` in the palace does the method return `true`.
 
   - Definition
 
@@ -177,7 +177,7 @@ This class inherits its properties from [Palace](../type-definition.md#palace) a
 
   - Purpose
 
-    Checks the supplied `stars`（星曜） against the palace. The condition is `none of them present`: only then does the method return `true`.
+    Checks the supplied `stars`（星曜） against the palace. If `none of the specified stars are present` in the palace, the method returns `true`.
 
   - Definition
 
@@ -213,7 +213,7 @@ This class inherits its properties from [Palace](../type-definition.md#palace) a
 
   - Purpose
 
-    Checks the supplied `stars`（星曜） in the palace. `at least one match` is enough to return `true`.
+    Checks the supplied `stars`（星曜） in the palace. If `at least one specified star is present` in the palace, the method returns `true`.
 
   - Definition
 
@@ -577,7 +577,7 @@ This class inherits its properties from [SurroundedPalaces](../type-definition.m
 
   - Purpose
 
-    Checks the supplied `stars`（星曜） across the palace and its trine and opposite palaces（三方四正）. `all specified stars` must be `present` somewhere within that group for the method to return `true`.
+    Checks the supplied `stars`（星曜） across the palace and its trine and opposite palaces（三方四正）. Only when `all specified stars` are `present` somewhere within that group does the method return `true`.
 
   - Definition
 
@@ -613,7 +613,7 @@ This class inherits its properties from [SurroundedPalaces](../type-definition.m
 
   - Purpose
 
-    Checks the supplied `stars`（星曜） across the palace and its trine and opposite palaces（三方四正）. The condition is `none of them present` anywhere in that group; only then does the method return `true`.
+    Checks the supplied `stars`（星曜） across the palace and its trine and opposite palaces（三方四正）. If `none of the specified stars are present` anywhere in that group, the method returns `true`.
 
   - Definition
 

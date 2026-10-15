@@ -144,7 +144,7 @@ var iztro = require("iztro");
 
 Bạn có thể lập lá số Tử Vi Đẩu Số（紫微斗數） từ ngày `âm lịch` hoặc `lịch Gregory`. `iztro` hỗ trợ cả hai cách, nhưng chúng tôi khuyên dùng `lịch Gregory`. Khi nhập hai ngày tương ứng với nhau, cả hai cách đều trả về cùng dữ liệu lá số.
 
-::: info Sử dụng `阳历` có những tiện ích sau:
+::: info Ưu điểm khi dùng ngày `dương lịch`:
 
 - Ngày dương lịch có thể dễ dàng đối chiếu với giấy khai sinh.
 - Có thể dùng công cụ chọn ngày dạng lịch để nhập ngày sinh.
@@ -503,7 +503,7 @@ Hai lời gọi `bySolar` và `byLunar` ở trên trả về cùng một kết q
 
   `astro`.`bySolar(solarDateStr, timeIndex, gender, fixLeap, language)`
 
-  - thông số
+  - Tham số
 
     | Tham số | Kiểu | Bắt buộc? | Giá trị mặc định | Mô tả |
     | --- | --- | --- | --- | --- |
@@ -521,7 +521,7 @@ Hai lời gọi `bySolar` và `byLunar` ở trên trả về cùng một kết q
 
   `astro`.`byLunar(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
 
-  - thông số
+  - Tham số
 
     | Tham số | Kiểu | Bắt buộc? | Giá trị mặc định | Mô tả |
     | --- | --- | --- | --- | --- |
@@ -629,7 +629,7 @@ Sau khi gọi phương thức `astrolabe`.`horoscope()`, bạn sẽ nhận đư�
 
   `astrolabe`.`horoscope(date, timeIndex)`
 
-  - thông số
+  - Tham số
 
     | Tham số | Kiểu | Bắt buộc? | Giá trị mặc định | Mô tả |
     | --- | --- | --- | --- | --- |
@@ -700,7 +700,7 @@ Sau khi gọi phương thức `star`.`getHoroscopeStar()`, bạn sẽ nhận đ�
 
   `star`.`getHoroscopeStar(heavenlyStem, earthlyBranch, scope)`
 
-  - thông số
+  - Tham số
 
     | Tham số | Kiểu | Bắt buộc? | Giá trị mặc định | Mô tả |
     | --- | --- | --- | --- | --- |

@@ -805,7 +805,7 @@ See [judge（廉貞） + minister（天相）](#廉贞天相)
 
 ### sage（天梁） characteristics   {#天梁星特性}
 
-Sage（天梁） may bring a bull to mind: it can be as stubborn as [`warrior`（武曲）](#武曲星), but unlike warrior（武曲） it enjoys dealing with people. Its friendships have the generous, loyal spirit of a loyal, generous martial-arts hero such as Qiao Feng（喬峰）. Once it treats you as a close friend, excessive formality can make it uncomfortable.
+Sage（天梁） may bring a bull to mind: it can be as stubborn as [`warrior`（武曲）](#武曲星), but unlike warrior（武曲） it enjoys dealing with people. Its friendships have the generous, loyal spirit of a martial-arts hero such as Qiao Feng（喬峰）. Once it treats you as a close friend, excessive formality can make it uncomfortable.
 
 People represented by sage（天梁） naturally seem steady and mature. With `protection`（蔭） as its symbolic nature, it likes protecting the vulnerable, yet is less deferential toward people more powerful than itself. This can make it seem morally aloof. Fortunate（天同） avoids competition out of fear, empress（天府） out of preference, and sage because it considers competing beneath it.
 
