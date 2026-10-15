@@ -4266,29 +4266,39 @@
       "source": "链接",
       "kind": "markdown",
       "targets": {
-        "en_US": "Link",
-        "vi_VN": "Liên kết"
+        "en_US": "链接",
+        "ja_JP": "链接",
+        "ko_KR": "链接",
+        "vi_VN": "链接"
       },
-      "decision": "corrected"
+      "decision": "corrected",
+      "reason": "快速开始的产品表格按用户约定保留简体中文原表，不翻译表头或作者名称。"
     },
     {
       "file": "quick-start.md",
       "source": "语言",
       "kind": "markdown",
       "targets": {
-        "en_US": "Language",
-        "vi_VN": "Ngôn ngữ"
+        "en_US": "语言",
+        "ja_JP": "语言",
+        "ko_KR": "语言",
+        "vi_VN": "语言"
       },
-      "decision": "corrected"
+      "decision": "corrected",
+      "reason": "快速开始的产品表格按用户约定保留简体中文原表，不翻译表头或作者名称。"
     },
     {
       "file": "quick-start.md",
       "source": "作者",
       "kind": "markdown",
       "targets": {
-        "vi_VN": "Tác giả"
+        "en_US": "作者",
+        "ja_JP": "作者",
+        "ko_KR": "作者",
+        "vi_VN": "作者"
       },
-      "decision": "corrected"
+      "decision": "corrected",
+      "reason": "快速开始的产品表格按用户约定保留简体中文原表，不翻译表头或作者名称。"
     },
     {
       "file": "quick-start.md",
@@ -5385,6 +5395,32 @@
         "ko_KR": "해（亥）<code>인과 암합</code>（暗合寅）"
       },
       "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "名称",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "名称",
+        "ja_JP": "名称",
+        "ko_KR": "名称",
+        "vi_VN": "名称"
+      },
+      "decision": "corrected",
+      "reason": "快速开始的产品表格按用户约定保留简体中文原表，不翻译表头或作者名称。"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "[昊色居士](https://github.com/x-haose)",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "[昊色居士](https://github.com/x-haose)",
+        "ja_JP": "[昊色居士](https://github.com/x-haose)",
+        "ko_KR": "[昊色居士](https://github.com/x-haose)",
+        "vi_VN": "[昊色居士](https://github.com/x-haose)"
+      },
+      "decision": "corrected",
+      "reason": "快速开始的产品表格按用户约定保留简体中文原表，不翻译表头或作者名称。"
     }
   ]
 }

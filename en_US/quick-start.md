@@ -25,13 +25,13 @@ Welcome to the `iztro` developer documentation! This page explains how to integr
 
 ## Products   {#产品}
 
-|  | Name | Link | Language | Author |
-| --- | --- | --- | --- | --- |
-| <img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" /> | iztro | [GitHub](https://github.com/sylarlong/iztro)  ｜  [Gitee](https://gitee.com/sylarlong/iztro) | Typescript | [SylarLong](https://github.com/SylarLong) |
-| <img src="https://img.shields.io/github/stars/sylarlong/react-iztro.svg?style=social&label=Star" alt="react-iztro" /> | react-iztro | [GitHub](https://github.com/sylarlong/react-iztro)  ｜  [Gitee](https://gitee.com/sylarlong/react-iztro) | React | [SylarLong](https://github.com/SylarLong) |
-| <img src="https://img.shields.io/github/stars/sylarlong/iztro-hook.svg?style=social&label=Star" alt="iztro-hook" /> | iztro-hook | [GitHub](https://github.com/sylarlong/iztro-hook)  ｜  [Gitee](https://gitee.com/sylarlong/iztro-hook) | React | [SylarLong](https://github.com/SylarLong) |
-| <img src="https://img.shields.io/github/stars/x-haose/py-iztro.svg?style=social&label=Star" alt="py-iztro" /> | py-iztro | [GitHub](https://github.com/x-haose/py-iztro)  ｜  [Gitee](https://gitee.com/x-haose/py-iztro) | Python | [Haose Jushi](https://github.com/x-haose) |
-| <img src="https://img.shields.io/github/stars/EdwinXiang/dart_iztro.svg?style=social&label=Star" alt="py-iztro" /> | dart_iztro | [GitHub](https://github.com/EdwinXiang/dart_iztro)  ｜  [Gitee](https://gitee.com/EdwinXiang/dart_iztro) | Dart | [EdwinXiang](https://github.com/EdwinXiang) |
+|  | 名称 | 链接 | 语言 | 作者 |
+|--|--|--|--|--|
+|<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />|iztro|[GitHub](https://github.com/sylarlong/iztro) ｜ [Gitee](https://gitee.com/sylarlong/iztro) |Typescript| [SylarLong](https://github.com/SylarLong) |
+|<img src="https://img.shields.io/github/stars/sylarlong/react-iztro.svg?style=social&label=Star" alt="react-iztro" />|react-iztro|[GitHub](https://github.com/sylarlong/react-iztro) ｜ [Gitee](https://gitee.com/sylarlong/react-iztro)|React| [SylarLong](https://github.com/SylarLong) |
+|<img src="https://img.shields.io/github/stars/sylarlong/iztro-hook.svg?style=social&label=Star" alt="iztro-hook" />|iztro-hook|[GitHub](https://github.com/sylarlong/iztro-hook) ｜ [Gitee](https://gitee.com/sylarlong/iztro-hook) |React| [SylarLong](https://github.com/SylarLong) |
+|<img src="https://img.shields.io/github/stars/x-haose/py-iztro.svg?style=social&label=Star" alt="py-iztro" />|py-iztro|[GitHub](https://github.com/x-haose/py-iztro) ｜ [Gitee](https://gitee.com/x-haose/py-iztro)|Python| [昊色居士](https://github.com/x-haose) |
+|<img src="https://img.shields.io/github/stars/EdwinXiang/dart_iztro.svg?style=social&label=Star" alt="py-iztro" />|dart_iztro|[GitHub](https://github.com/EdwinXiang/dart_iztro) ｜ [Gitee](https://gitee.com/EdwinXiang/dart_iztro)|Dart| [EdwinXiang](https://github.com/EdwinXiang) |
 
 ## Installation   {#安装}
 

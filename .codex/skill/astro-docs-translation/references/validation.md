@@ -18,6 +18,7 @@
 | --- | --- |
 | `scripts/translation-context.mjs` | 从站点配置读取语言，统一筛选、古文排除、页面完整性和语言数据检查 |
 | `scripts/verify-locales.mjs` | 验证页面结构、标题层级、源锚点、代码示例、HTML/Vue、链接及部分韩语宫位语义 |
+| `scripts/verify-product-tables.mjs` | 单独检查所有配置语言（含繁体中文）的快速开始“产品”表格与简体中文原表完全一致；不受外语翻译检查筛选影响 |
 | `scripts/verify-translations.mjs` | 检查术语、行内代码值、表格、算术、格式、中文括注及格局表格不含附加中文注解 |
 | `scripts/verify-semantic-locales.mjs` | 比对已复核表格含义，检查语义记录、拼音残留和特定文化表达 |
 | `scripts/translation-terms.json` | 术语、普通词、显示值、上下文短语及 API 词表依据；不能把改善普通说明文案当成改动 API 值的理由 |

@@ -8,9 +8,9 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "docs:check-locales": "node scripts/verify-locales.mjs && node scripts/verify-translations.mjs && node scripts/verify-semantic-locales.mjs",
+    "docs:check-locales": "node scripts/verify-product-tables.mjs && node scripts/verify-locales.mjs && node scripts/verify-translations.mjs && node scripts/verify-semantic-locales.mjs",
     "docs:check-translations": "node scripts/verify-translations.mjs && node scripts/verify-semantic-locales.mjs",
-    "docs:test-locales": "node --test scripts/tests/translation-checks.test.mjs",
+    "docs:test-locales": "node --test scripts/tests/translation-checks.test.mjs scripts/tests/product-tables.test.mjs",
     "docs:test-seo": "node --test scripts/tests/seo.test.mjs"
   },
   "repository": {

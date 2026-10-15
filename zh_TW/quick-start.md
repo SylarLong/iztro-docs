@@ -27,7 +27,7 @@ description: "從安裝 iztro 開始，透過 JavaScript 與 TypeScript 範例�
 
 ## 產品
 
-| | 名稱 | 連結 | 語言 | 作者 |
+|  | 名称 | 链接 | 语言 | 作者 |
 |--|--|--|--|--|
 |<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />|iztro|[GitHub](https://github.com/sylarlong/iztro) ｜ [Gitee](https://gitee.com/sylarlong/iztro) |Typescript| [SylarLong](https://github.com/SylarLong) |
 |<img src="https://img.shields.io/github/stars/sylarlong/react-iztro.svg?style=social&label=Star" alt="react-iztro" />|react-iztro|[GitHub](https://github.com/sylarlong/react-iztro) ｜ [Gitee](https://gitee.com/sylarlong/react-iztro)|React| [SylarLong](https://github.com/SylarLong) |
