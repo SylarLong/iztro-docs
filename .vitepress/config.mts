@@ -11,6 +11,7 @@ const config = defineConfig({
   title: siteName,
   titleTemplate: `:title | ${siteName}`,
   lang: "zh-CN",
+  cleanUrls: true,
   description:
     "iztro 开源 JavaScript 排盘库文档与紫微斗数入门，涵盖星盘、宫位、星曜、四化和运限知识。",
   srcExclude: ["README.md", "AGENTS.md", ".codex/**"],

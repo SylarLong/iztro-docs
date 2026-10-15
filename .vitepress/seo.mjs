@@ -5,7 +5,7 @@ export const siteOrigin = 'https://iztro.com';
 export const siteName = '紫微研习社';
 const legacyPages = new Map([['en_US.md', 'en_US/index.md']]);
 
-export function pageUrl(file, cleanUrls = false) {
+export function pageUrl(file, cleanUrls = true) {
   const route = file.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, cleanUrls ? '' : '.html');
   return new URL(route, `${siteOrigin}/`).href;
 }
@@ -15,7 +15,7 @@ function localeFor(file, locales) {
     ?? ['root', locales.root];
 }
 
-export function alternatePages(file, pages, locales, cleanUrls = false) {
+export function alternatePages(file, pages, locales, cleanUrls = true) {
   const [locale] = localeFor(file, locales);
   const source = locale === 'root' ? file : file.slice(locale.length + 1);
   const available = new Set(pages);
@@ -109,7 +109,7 @@ export function transformSeoHead({ page, pageData }) {
 }
 
 export function transformSeoSitemap(items) {
-  return items.filter(item => !['en_US.html', 'en_US', '404.html'].includes(item.url.replace(/^\//, '')))
+  return items.filter(item => !['en_US.html', 'en_US', '404.html', '404'].includes(item.url.replace(/^\//, '')))
     .map(item => {
       const links = item.links?.filter(link => link.lang !== 'x-default');
       const fallback = links?.find(link => link.lang === 'zh-CN');

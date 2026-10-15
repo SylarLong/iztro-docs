@@ -8,7 +8,7 @@ description: "查閱 iztro 的 TypeScript 型別、國際化輸入值與星盤�
 
 ## 前言
 
-本頁介紹了 `iztro` 中的類型定義，除了 [國際化類型](./type-definition.html#國際化類型) 被定義在了 [i18n](https://github.com/SylarLong/iztro/blob/main/src/i18n/index.ts) 文件夾內，其他類型都定義在 [types](https://github.com/SylarLong/iztro/tree/main/src/data/types) 文件夾內。
+本頁介紹了 `iztro` 中的類型定義，除了 [國際化類型](./type-definition.md#國際化類型) 被定義在了 [i18n](https://github.com/SylarLong/iztro/blob/main/src/i18n/index.ts) 文件夾內，其他類型都定義在 [types](https://github.com/SylarLong/iztro/tree/main/src/data/types) 文件夾內。
 
 你可以使用如下代碼引入 `國際化類型`:
 
@@ -28,7 +28,7 @@ import { Palace } from "iztro/lib/data/types";
 
 ## 國際化類型
 
-`iztro` 為了支持國際化輸入輸出，對需要進行參數輸入輸出的數據進行了多語言定義，在輸入的時候，你可以輸入 **任意語言** 的值，比如在需要傳 [`HeavenlyStemName`](./type-definition.html#heavenlystemname) 的地方，你可以傳入 `甲`，也可以傳入 `갑` 或者 `jia`。
+`iztro` 為了支持國際化輸入輸出，對需要進行參數輸入輸出的數據進行了多語言定義，在輸入的時候，你可以輸入 **任意語言** 的值，比如在需要傳 [`HeavenlyStemName`](./type-definition.md#heavenlystemname) 的地方，你可以傳入 `甲`，也可以傳入 `갑` 或者 `jia`。
 
 比如在調用`getHoroscopeStar()`方法的時候，你可以以中文的干支作為參數：
 
@@ -1354,11 +1354,11 @@ export type Star = {
 
 | 屬性         | 解釋     | 類型                                             |
 | ------------ | -------- | ------------------------------------------------ |
-| `name`       | 星曜名字 | [`StarName`](./type-definition.html#starname)     |
-| `type`       | 星曜類型 | [`StarType`](./type-definition.html#startype)     |
-| `scope`      | 作用範圍 | [`Scope`](./type-definition.html#scope)           |
-| `brightness` | 星曜亮度 | [`Brightness`](./type-definition.html#brightness) |
-| `mutagen`    | 四化     | [`Mutagen`](./type-definition.html#mutagen)       |
+| `name`       | 星曜名字 | [`StarName`](./type-definition.md#starname)     |
+| `type`       | 星曜類型 | [`StarType`](./type-definition.md#startype)     |
+| `scope`      | 作用範圍 | [`Scope`](./type-definition.md#scope)           |
+| `brightness` | 星曜亮度 | [`Brightness`](./type-definition.md#brightness) |
+| `mutagen`    | 四化     | [`Mutagen`](./type-definition.md#mutagen)       |
 
 ## 宮位
 
@@ -1379,8 +1379,8 @@ export type SoulAndBody = {
 | --------------------- | -------- | -------------------------------------------------------------- |
 | `soulIndex`           | 命宮索引 | `number`                                                       |
 | `bodyIndex`           | 身宮索引 | `number`                                                       |
-| `heavenlyStemOfSoul`  | 命宮天干 | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
-| `earthlyBranchOfSoul` | 命宮地支 | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
+| `heavenlyStemOfSoul`  | 命宮天干 | [`HeavenlyStemName`](./type-definition.md#heavenlystemname)   |
+| `earthlyBranchOfSoul` | 命宮地支 | [`EarthlyBranchName`](./type-definition.md#earthlybranchname) |
 
 ---
 
@@ -1409,19 +1409,19 @@ export type Palace = {
 
 | 屬性               | 解釋           | 類型                                                           |
 | ------------------ | -------------- | -------------------------------------------------------------- |
-| `name`             | 宮位名稱       | [`PalaceName`](./type-definition.html#palacename)               |
+| `name`             | 宮位名稱       | [`PalaceName`](./type-definition.md#palacename)               |
 | `isBodyPalace`     | 是否身宮       | `boolean`                                                      |
 | `isOriginalPalace` | 是否來因宮     | `boolean`                                                      |
-| `heavenlyStem`     | 宮位天干       | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
-| `earthlyBranch`    | 宮位地支       | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
-| `majorStars`       | 主星           | [`Star[]`](./type-definition.html#star)                         |
-| `minorStars`       | 輔星           | [`Star[]`](./type-definition.html#star)                         |
-| `adjectiveStars`   | 雜曜           | [`Star[]`](./type-definition.html#star)                         |
-| `changsheng12`     | 長生 12 神     | [`StarName`](./type-definition.html#starname)                   |
-| `boshi12`          | 博士 12 神     | [`StarName`](./type-definition.html#starname)                   |
-| `jiangqian12`      | 流年將前 12 神 | [`StarName`](./type-definition.html#starname)                   |
-| `suiqian12`        | 流年歲前 12 神 | [`StarName`](./type-definition.html#starname)                   |
-| `decadal`          | 大限           | [`Decadal`](./type-definition.html#decadal)                     |
+| `heavenlyStem`     | 宮位天干       | [`HeavenlyStemName`](./type-definition.md#heavenlystemname)   |
+| `earthlyBranch`    | 宮位地支       | [`EarthlyBranchName`](./type-definition.md#earthlybranchname) |
+| `majorStars`       | 主星           | [`Star[]`](./type-definition.md#star)                         |
+| `minorStars`       | 輔星           | [`Star[]`](./type-definition.md#star)                         |
+| `adjectiveStars`   | 雜曜           | [`Star[]`](./type-definition.md#star)                         |
+| `changsheng12`     | 長生 12 神     | [`StarName`](./type-definition.md#starname)                   |
+| `boshi12`          | 博士 12 神     | [`StarName`](./type-definition.md#starname)                   |
+| `jiangqian12`      | 流年將前 12 神 | [`StarName`](./type-definition.md#starname)                   |
+| `suiqian12`        | 流年歲前 12 神 | [`StarName`](./type-definition.md#starname)                   |
+| `decadal`          | 大限           | [`Decadal`](./type-definition.md#decadal)                     |
 | `ages`             | 小限           | `number[]`                                                     |
 
 ---
@@ -1468,11 +1468,11 @@ export type HoroscopeItem = {
 | --------------- | -------------- | -------------------------------------------------------------- |
 | `index`         | 所在宮位的索引 | `number`                                                       |
 | `name` <Badge type="warning" text="^1.2.3" />        | 運限的名稱 | `string`                                                       |
-| `heavenlyStem`  | 運限天干       | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
-| `earthlyBranch` | 運限地支       | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
-| `palaceNames`   | 運限的十二宮   | [`PalaceName[]`](./type-definition.html#palacename)             |
-| `mutagen`       | 四化星         | [`StarName[]`](./type-definition.html#starname)                 |
-| `stars`         | 流曜           | [`Star[][]`](./type-definition.html#star)                       |
+| `heavenlyStem`  | 運限天干       | [`HeavenlyStemName`](./type-definition.md#heavenlystemname)   |
+| `earthlyBranch` | 運限地支       | [`EarthlyBranchName`](./type-definition.md#earthlybranchname) |
+| `palaceNames`   | 運限的十二宮   | [`PalaceName[]`](./type-definition.md#palacename)             |
+| `mutagen`       | 四化星         | [`StarName[]`](./type-definition.md#starname)                 |
+| `stars`         | 流曜           | [`Star[][]`](./type-definition.md#star)                       |
 
 ---
 
@@ -1486,13 +1486,13 @@ export type Decadal = {
 };
 ```
 
-定義了星盤的 `大限`，此類型主要用在 [Palace](./type-definition.html#palace) 內。
+定義了星盤的 `大限`，此類型主要用在 [Palace](./type-definition.md#palace) 內。
 
 | 屬性            | 解釋                                  | 類型                                                           |
 | --------------- | ------------------------------------- | -------------------------------------------------------------- |
 | `range`         | 大限起止年齡 [`起始年齡`, `截止年齡`] | `[number, number]`                                             |
-| `heavenlyStem`  | 大限天干                              | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
-| `earthlyBranch` | 大限地支                              | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
+| `heavenlyStem`  | 大限天干                              | [`HeavenlyStemName`](./type-definition.md#heavenlystemname)   |
+| `earthlyBranch` | 大限地支                              | [`EarthlyBranchName`](./type-definition.md#earthlybranchname) |
 
 ---
 
@@ -1510,11 +1510,11 @@ export type DecadalHoroscope = HoroscopeItem & {
 
 | 屬性 | 解釋 | 類型 |
 | --- | --- | --- |
-| `palaceName` | 大限所在的本命宮位 | [`PalaceName`](./type-definition.html#palacename) |
+| `palaceName` | 大限所在的本命宮位 | [`PalaceName`](./type-definition.md#palacename) |
 | `ageRange` | 大限起止虛歲 | `[number, number]` |
 | `yearRange` | 大限起止年份 | `[number, number]` |
 
-該類型同時包含 [`HoroscopeItem`](./type-definition.html#horoscopeitem) 的全部屬性。
+該類型同時包含 [`HoroscopeItem`](./type-definition.md#horoscopeitem) 的全部屬性。
 
 ---
 
@@ -1534,7 +1534,7 @@ export type YearlyHoroscope = HoroscopeItem & {
 | `age` | 流年對應的虛歲 | `number` |
 | `year` | 流年年份 | `number` |
 
-該類型同時包含 [`HoroscopeItem`](./type-definition.html#horoscopeitem) 的全部屬性。
+該類型同時包含 [`HoroscopeItem`](./type-definition.md#horoscopeitem) 的全部屬性。
 
 ---
 
@@ -1558,7 +1558,7 @@ export type MonthlyHoroscope = YearlyHoroscope & {
 | `part` | 普通月份、閏月前半段或閏月後半段 | `'normal'` \| `'first'` \| `'second'` |
 | `dayRange` | 該項對應的農曆日期範圍 | `[number, number]` |
 
-該類型同時包含 [`YearlyHoroscope`](./type-definition.html#yearlyhoroscope) 和 [`HoroscopeItem`](./type-definition.html#horoscopeitem) 的全部屬性。
+該類型同時包含 [`YearlyHoroscope`](./type-definition.md#yearlyhoroscope) 和 [`HoroscopeItem`](./type-definition.md#horoscopeitem) 的全部屬性。
 
 ---
 
@@ -1586,12 +1586,12 @@ export type Horoscope = {
 | ----------- | -------- | ------------------------------------------------------ |
 | `lunarDate` | 農曆日期 | `string`                                               |
 | `solarDate` | 陽曆日期 | `string`                                               |
-| `decadal`   | 大限     | [`HoroscopeItem`](./type-definition.html#horoscopeitem) |
+| `decadal`   | 大限     | [`HoroscopeItem`](./type-definition.md#horoscopeitem) |
 | `age`       | 小限     | { index: `number`, nominalAge: `number` }              |
-| `yearly`    | 流年     | [`HoroscopeItem`](./type-definition.html#horoscopeitem)  & { yearlyDecStar: { jiangqian12: [`StarName[]`](/zh_TW/type-definition.md#starname); suiqian12: [`StarName[]`](/zh_TW/type-definition.md#starname) } }|
-| `monthly`   | 流月     | [`HoroscopeItem`](./type-definition.html#horoscopeitem) |
-| `daily`     | 流日     | [`HoroscopeItem`](./type-definition.html#horoscopeitem) |
-| `hourly`    | 流時     | [`HoroscopeItem`](./type-definition.html#horoscopeitem) |
+| `yearly`    | 流年     | [`HoroscopeItem`](./type-definition.md#horoscopeitem)  & { yearlyDecStar: { jiangqian12: [`StarName[]`](/zh_TW/type-definition.md#starname); suiqian12: [`StarName[]`](/zh_TW/type-definition.md#starname) } }|
+| `monthly`   | 流月     | [`HoroscopeItem`](./type-definition.md#horoscopeitem) |
+| `daily`     | 流日     | [`HoroscopeItem`](./type-definition.md#horoscopeitem) |
+| `hourly`    | 流時     | [`HoroscopeItem`](./type-definition.md#horoscopeitem) |
 
 ## 星盤
 
@@ -1626,7 +1626,7 @@ export type Astrolabe = {
 
 | 屬性                        | 解釋                               | 類型                                                                        |
 | --------------------------- | ---------------------------------- | --------------------------------------------------------------------------- |
-| `gender`    | 性別 <Badge type="warning" text="^2.0.3" />     | [`GenderName`](./type-definition.html#gendername)                            |   
+| `gender`    | 性別 <Badge type="warning" text="^2.0.3" />     | [`GenderName`](./type-definition.md#gendername)                            |
 | `solarDate`                 | 陽曆日期                           | `string`                                                                    |
 | `lunarDate`                 | 農曆日期                           | `string`                                                                    |
 | `chineseDate`               | 干支紀年日期                       | `string`                                                                    |
@@ -1635,11 +1635,11 @@ export type Astrolabe = {
 | `timeRange`                 | 時辰對應的時間段                   | `string`                                                                    |
 | `sign`                      | 星座                               | `string`                                                                    |
 | `zodiac`                    | 生肖                               | `string`                                                                    |
-| `earthlyBranchOfSoulPalace` | 命宮地支                           | [`EarthlyBranchName`](./type-definition.html#earthlybranchname)              |
-| `earthlyBranchOfBodyPalace` | 身宮地支                           | [`EarthlyBranchName`](./type-definition.html#earthlybranchname)              |
-| `soul`                      | 命主                               | [`StarName`](./type-definition.html#starname)                                |
-| `body`                      | 身主                               | [`StarName`](./type-definition.html#starname)                                |
-| `fiveElementsClass`         | 五行局                             | [`FiveElementsClassName`](./type-definition.html#fiveelementsclassname)      |
+| `earthlyBranchOfSoulPalace` | 命宮地支                           | [`EarthlyBranchName`](./type-definition.md#earthlybranchname)              |
+| `earthlyBranchOfBodyPalace` | 身宮地支                           | [`EarthlyBranchName`](./type-definition.md#earthlybranchname)              |
+| `soul`                      | 命主                               | [`StarName`](./type-definition.md#starname)                                |
+| `body`                      | 身主                               | [`StarName`](./type-definition.md#starname)                                |
+| `fiveElementsClass`         | 五行局                             | [`FiveElementsClassName`](./type-definition.md#fiveelementsclassname)      |
 | `palaces`                   | 十二宮數據                         | [`IFunctionalPalace[]`](./posts/palace.md#functionalpalace)                 |
 
 ## 配置和插件 <Badge type="warning" text="^2.3.0" />

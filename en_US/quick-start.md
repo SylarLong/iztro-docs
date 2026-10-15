@@ -638,7 +638,7 @@ After calling the `astrolabe`.`horoscope()` method you will get the following da
 
   - return value
 
-    [`Horoscope`](./type-definition.html#horoscope)
+    [`Horoscope`](./type-definition.md#horoscope)
 
 ## Get transit stars（流曜）   {#获取流曜}
 
@@ -710,7 +710,7 @@ After calling the `star`.`getHoroscopeStar()` method you will get the following 
 
   - return value
 
-    [`Star[][]`](./type-definition.html#star)
+    [`Star[][]`](./type-definition.md#star)
 
 ## ☕ Summary   {#☕-总结}
 

@@ -638,7 +638,7 @@ astrolabe.horoscope(new Date());
 
   - 戻り値
 
-    [`Horoscope`](./type-definition.html#horoscope)
+    [`Horoscope`](./type-definition.md#horoscope)
 
 ## 流曜を取得する {#获取流曜}
 
@@ -710,7 +710,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 
   - 戻り値
 
-    [`Star[][]`](./type-definition.html#star)
+    [`Star[][]`](./type-definition.md#star)
 
 ## ☕ まとめ  {#☕-总结}
 

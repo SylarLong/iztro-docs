@@ -8,22 +8,23 @@ import { alternatePages, pageUrl, transformSeoPage, transformSeoHead, transformS
 
 const locales = { root: { lang: 'zh-CN' }, en_US: { lang: 'en-US' }, zh_TW: { lang: 'zh-TW' } };
 const pages = ['index.md', 'en_US/index.md', 'zh_TW/index.md', 'learn/basis.md', 'en_US/learn/basis.md', 'learn/ancientBook.md'];
-const context = { siteConfig: { site: { locales, cleanUrls: false, title: '紫微研习社', titleTemplate: ':title | 紫微研习社' }, pages } };
+const context = { siteConfig: { site: { locales, cleanUrls: true, title: '紫微研习社', titleTemplate: ':title | 紫微研习社' }, pages } };
 const page = (relativePath, overrides = {}) => ({
   relativePath, title: 'A page', description: 'An accurate page description.', frontmatter: {}, ...overrides,
 });
 
-test('canonical URLs match directory homepages and the configured HTML routes', () => {
+test('canonical URLs match directory homepages and extensionless routes', () => {
   assert.equal(pageUrl('index.md'), 'https://iztro.com/');
   assert.equal(pageUrl('en_US/index.md'), 'https://iztro.com/en_US/');
-  assert.equal(pageUrl('learn/basis.md'), 'https://iztro.com/learn/basis.html');
-  assert.equal(pageUrl('learn/basis.md', true), 'https://iztro.com/learn/basis');
+  assert.equal(pageUrl('learn/basis.md'), 'https://iztro.com/learn/basis');
+  assert.equal(pageUrl('learn/basis.md', false), 'https://iztro.com/learn/basis.html');
 });
 
 test('alternates are reciprocal and only include existing translations', () => {
   const root = alternatePages('learn/basis.md', pages, locales);
   assert.deepEqual(root, alternatePages('en_US/learn/basis.md', pages, locales));
   assert.deepEqual(root.map(value => value.lang), ['zh-CN', 'en-US', 'x-default']);
+  assert.ok(root.every(value => !value.url.includes('.html')));
   assert.deepEqual(alternatePages('learn/ancientBook.md', pages, locales).map(value => value.lang), ['zh-CN', 'x-default']);
 });
 
@@ -71,16 +72,19 @@ test('404 pages are excluded from indexing', () => {
 test('sitemap excludes the legacy URL and supplies matching x-default links', () => {
   const items = transformSeoSitemap([
     { url: 'en_US.html' },
+    { url: 'en_US' },
     { url: '404.html' },
-    { url: 'learn/basis.html', links: [{ lang: 'zh-CN', url: 'learn/basis.html' }, { lang: 'en-US', url: 'en_US/learn/basis.html' }] },
+    { url: '404' },
+    { url: 'learn/basis', links: [{ lang: 'zh-CN', url: 'learn/basis' }, { lang: 'en-US', url: 'en_US/learn/basis' }] },
   ]);
   assert.equal(items.length, 1);
-  assert.deepEqual(items[0].links.at(-1), { lang: 'x-default', url: 'learn/basis.html' });
+  assert.deepEqual(items[0].links.at(-1), { lang: 'x-default', url: 'learn/basis' });
 });
 
 test('every configured page has its own explicit metadata, including classical texts', async () => {
   const root = fileURLToPath(new URL('../../', import.meta.url));
   const config = await resolveConfig(root, 'build', 'production');
+  assert.equal(config.site.cleanUrls, true, 'Production URLs must match the extensionless hosting routes');
   const md = await createMarkdownRenderer(root);
   const seen = new Map();
   for (const file of config.pages) {
@@ -90,6 +94,13 @@ test('every configured page has its own explicit metadata, including classical t
     assert.ok(typeof title === 'string' && title.trim(), `${file}: missing title`);
     assert.ok(typeof description === 'string' && description.trim(), `${file}: missing description`);
     assert.ok(!/[<>`]|\{#/.test(title), `${file}: markup in search title`);
+    const data = page(file, { title, description, titleTemplate: env.frontmatter.titleTemplate, frontmatter: env.frontmatter });
+    transformSeoPage(data, { siteConfig: config });
+    for (const [tag, attrs] of data.frontmatter.head) {
+      if (tag === 'link' && ['canonical', 'alternate'].includes(attrs.rel)) {
+        assert.ok(!new URL(attrs.href).pathname.endsWith('.html'), `${file}: HTML suffix in ${attrs.rel}`);
+      }
+    }
     const locale = Object.keys(config.site.locales).find(key => file.startsWith(`${key}/`)) ?? 'root';
     for (const [field, value] of Object.entries({ title, description })) {
       const key = `${locale}:${field}:${value}`;

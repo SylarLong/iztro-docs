@@ -638,7 +638,7 @@ Sau khi gọi phương thức `astrolabe`.`horoscope()`, bạn sẽ nhận đư�
 
   - giá trị trả về
 
-    [`Horoscope`](./type-definition.html#horoscope)
+    [`Horoscope`](./type-definition.md#horoscope)
 
 ## Lấy dữ liệu lưu diệu（流曜） {#获取流曜}
 
@@ -710,7 +710,7 @@ Sau khi gọi phương thức `star`.`getHoroscopeStar()`, bạn sẽ nhận đ�
 
   - giá trị trả về
 
-    [`Star[][]`](./type-definition.html#star)
+    [`Star[][]`](./type-definition.md#star)
 
 ## ☕ Tóm tắt   {#☕-总结}
 

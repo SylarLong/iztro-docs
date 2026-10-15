@@ -5,7 +5,7 @@ document of iztro
 
 公开页面（包括古籍页）须在 frontmatter 中填写与正文对应的本语言 `title` 和 `description`，避免复制其他页面的摘要或堆叠关键词。正文 API 标识符和原有锚点保持不变。古籍页只维护元数据，不因此改写古籍正文。
 
-正式域名为 `https://iztro.com`，由 `.vitepress/seo.mjs` 统一生成 canonical、多语言 hreflang、Open Graph、Twitter 卡片和 JSON-LD；页面 URL 沿用现有 `.html` 规则，首页使用目录 URL。新增语言后仅为实际存在的译文生成语言链接。旧的 `/en_US.html` 页面保留访问能力，标记为不收录，并指向 `/en_US/`；README、AGENTS 和 skill 文件不生成公开页面。
+正式域名为 `https://iztro.com`，启用 `cleanUrls: true`，由 `.vitepress/seo.mjs` 统一生成不带 `.html` 的 canonical、多语言 hreflang、Open Graph、Twitter 卡片、JSON-LD 和 sitemap 地址；首页使用目录 URL，与线上托管的无后缀路由保持一致。文档内部链接使用 `.md` 源文件路径，由 VitePress 输出无后缀地址。新增语言后仅为实际存在的译文生成语言链接。旧英文入口标记为不收录，并指向 `/en_US/`；README、AGENTS 和 skill 文件不生成公开页面。
 
 `public/robots.txt`、`CNAME` 与 sitemap 须保持同一域名；`.vitepress/public/robots.txt` 是同步副本。构建完成后会将 `static/` 复制到输出目录，确保分享图片、图标和 Web Manifest 可访问。
 

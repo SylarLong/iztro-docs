@@ -644,7 +644,7 @@ astrolabe.horoscope(new Date());
 
   - 返回值
 
-    [`Horoscope`](./type-definition.html#horoscope)
+    [`Horoscope`](./type-definition.md#horoscope)
 
 ## 获取流曜
 
@@ -716,7 +716,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 
   - 返回值
 
-    [`Star[][]`](./type-definition.html#star)
+    [`Star[][]`](./type-definition.md#star)
 
 ## ☕ 总结
 

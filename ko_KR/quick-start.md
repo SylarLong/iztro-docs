@@ -638,7 +638,7 @@ astrolabe.horoscope(new Date());
 
   - 반환 값
 
-    [`Horoscope`](./type-definition.html#horoscope)
+    [`Horoscope`](./type-definition.md#horoscope)
 
 ## 유요（流曜） 데이터 가져오기 {#获取流曜}
 
@@ -710,7 +710,7 @@ var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 
   - 반환 값
 
-    [`Star[][]`](./type-definition.html#star)
+    [`Star[][]`](./type-definition.md#star)
 
 ## ☕ 요약 {#☕-总结}
 
