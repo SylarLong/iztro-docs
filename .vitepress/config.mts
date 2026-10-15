@@ -2,14 +2,21 @@ import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import abbr from "markdown-it-abbr";
 import { translatedLocales } from "./locales.mjs";
+import { siteOrigin, siteName, transformSeoPage, transformSeoHead, transformSeoSitemap, copyStaticAssets } from "./seo.mjs";
 
 const version = "v2.6.2";
 
 // https://vitepress.dev/reference/site-config
 const config = defineConfig({
-  title: "紫微研习社 iztro.com",
+  title: siteName,
+  titleTemplate: `:title | ${siteName}`,
+  lang: "zh-CN",
   description:
-    "iztro is a lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information.",
+    "iztro 开源 JavaScript 排盘库文档与紫微斗数入门，涵盖星盘、宫位、星曜、四化和运限知识。",
+  srcExclude: ["README.md", "AGENTS.md", ".codex/**"],
+  transformPageData: transformSeoPage,
+  transformHead: transformSeoHead,
+  buildEnd: copyStaticAssets,
   vite: {
     resolve: {
       alias: [{
@@ -39,7 +46,7 @@ const config = defineConfig({
   locales: {
     root: {
       label: "简体中文",
-      lang: "zh_CN",
+      lang: "zh-CN",
       themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
@@ -118,7 +125,7 @@ const config = defineConfig({
     },
     zh_TW: {
       label: "繁體中文",
-      lang: "zh_TW",
+      lang: "zh-TW",
       themeConfig: {
         // Traditional Chinese follows the separate script-conversion workflow.
         translationChecks: false,
@@ -204,14 +211,8 @@ const config = defineConfig({
     [
       "meta",
       {
-        keyword:
-          "紫微研习社,紫微斗数,ziweidoushu,iztro,紫微斗数排盘,紫微斗数学习,紫微斗数入门",
-      },
-    ],
-    [
-      "meta",
-      {
-        author: "SylarLong",
+        name: "author",
+        content: "SylarLong",
       },
     ],
     [
@@ -282,13 +283,14 @@ const config = defineConfig({
       "link",
       {
         rel: "icon",
-        type: "image/svg+xml",
+        type: "image/x-icon",
         href: "/static/favicon.ico",
       },
     ],
   ],
   sitemap: {
-    hostname: "https://iztro.com",
+    hostname: siteOrigin,
+    transformItems: transformSeoSitemap,
   },
 });
 

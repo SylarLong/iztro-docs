@@ -1,6 +1,7 @@
 ---
-title: 'iztro官方文檔'
-description: '紫微研习社，iztro官方文檔，iztro開發文檔，快速上手使用iztro獲取紫微斗數排盤數據。'
+title: "iztro 快速開始：安裝與紫微斗數排盤"
+description: "從安裝 iztro 開始，透過 JavaScript 與 TypeScript 範例建立紫微斗數星盤，取得宮位、星曜和運限資料，快速整合至自己的應用程式。"
+
 ---
 
 <div align="center">

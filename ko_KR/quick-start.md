@@ -1,5 +1,5 @@
 ---
-title: "iztro 공식 문서"
+title: "iztro 빠른 시작: 설치와 명반 생성"
 description: "iztro 설치부터 자미두수 명반 데이터 생성까지 코드 예제로 안내합니다."
 ---
 

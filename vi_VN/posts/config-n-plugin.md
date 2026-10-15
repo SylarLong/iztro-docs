@@ -1,4 +1,5 @@
 ---
+title: "Cấu hình và trình cắm của iztro"
 outline: deep
 description: "Tùy chỉnh cách tính của iztro và mở rộng chức năng lá số bằng trình cắm."
 ---

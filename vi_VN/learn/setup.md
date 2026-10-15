@@ -1,4 +1,5 @@
 ---
+title: "Quy tắc an sao trong Tử Vi Đẩu Số"
 outline: deep
 description: "Tìm hiểu quy tắc an sao để lập lá số Tử Vi Đẩu Số, từ vị trí các cung đến cách an sao và tính vận hạn."
 ---

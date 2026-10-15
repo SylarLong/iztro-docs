@@ -1,3 +1,8 @@
+---
+title: "자미두수 격국: 성립 조건과 해석"
+description: "자미두수의 주요 격국을 성요 조합, 성립 조건, 명반 도식과 함께 살펴보고 명반 전체의 맥락에서 해석하는 방법을 알아봅니다."
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

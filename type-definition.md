@@ -1,5 +1,7 @@
 ---
-description: "iztro类型定义，iztro的astro对象使用方法以及示例代码。紫微斗数信息国际化内容的输出定义。"
+title: "iztro TypeScript 类型与国际化定义"
+description: "查阅 iztro 的 TypeScript 类型、国际化输入值与星盘数据结构，了解星曜、宫位、运限和配置参数的定义。"
+
 ---
 
 # 类型定义

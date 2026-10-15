@@ -1,4 +1,5 @@
 ---
+title: "Hệ thống sao Tử Vi: phân loại, độ sáng và lưu diệu"
 outline: deep
 description: "Tổng quan về chính tinh, phụ tinh, tạp diệu, thần sát, lưu diệu, tứ hóa và độ sáng của sao trong Tử Vi Đẩu Số."
 ---

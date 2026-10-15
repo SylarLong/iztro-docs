@@ -1,3 +1,8 @@
+---
+title: "Zi Wei Dou Shu patterns: conditions and interpretation"
+description: "Understand the conditions behind common Zi Wei Dou Shu patterns, with star combinations, chart diagrams and guidance on interpreting them in context."
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

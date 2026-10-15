@@ -1,4 +1,5 @@
 ---
+title: "iztro の設定とプラグイン"
 outline: deep
 description: "iztroの計算設定を変更する方法と、プラグインで命盤の機能を拡張する方法を解説します。"
 ---

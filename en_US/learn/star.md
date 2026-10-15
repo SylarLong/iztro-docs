@@ -1,4 +1,5 @@
 ---
+title: "Zi Wei Dou Shu stars: categories and brightness"
 outline: deep
 description: "An overview of Zi Wei Dou Shu stars: major, auxiliary, miscellaneous, symbolic, and transit stars, the four transformations, and star brightness."
 ---

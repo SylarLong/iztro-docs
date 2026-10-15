@@ -1,3 +1,8 @@
+---
+title: "자미두수 48신살: 장생·박사·유년 신살"
+description: "자미두수의 48신살을 장생십이신, 박사십이신, 유년 장전십이신과 세전십이신으로 나누어 각 성요의 특성을 소개합니다."
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

@@ -1,3 +1,8 @@
+---
+title: "Iztro AI: Zi Wei and Qi Men models, API and SDKs"
+description: "Compare Iztro AI’s hosted Zi Wei and Qi Men models, including fast variants, and learn how to integrate them through iztro-chat-api or Python and TypeScript SDKs."
+
+---
 # Iztro AI {#iztro-ai}
 
 Alongside the open-source **iztro** charting library, we offer four publicly available hosted AI models for Zi Wei Dou Shu（紫微斗數） and Qi Men Dun Jia（奇門遁甲）:

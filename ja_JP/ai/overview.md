@@ -1,3 +1,8 @@
+---
+title: "Iztro AI：紫微・奇門モデルと API・SDK"
+description: "Iztro AI の紫微・奇門のホスト型モデルと fast 版を紹介し、iztro-chat-api や Python・TypeScript SDK を使った連携方法を説明します。"
+
+---
 # Iztro AI {#iztro-ai}
 
 オープンソースの命盤作成ライブラリ **iztro** に加え、紫微斗数と奇門遁甲のホスティング型AIモデルを4つ公開しています。

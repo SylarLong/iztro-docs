@@ -1,4 +1,5 @@
 ---
+title: "iztro horoscope API: time-cycle queries"
 outline: deep
 description: "Query time cycles in a Zi Wei Dou Shu chart with iztro’s horoscope API, with properties, methods, and examples."
 ---

@@ -1,6 +1,7 @@
 ---
+title: "iztro 設定與外掛：排盤規則與功能擴充"
+description: "自訂 iztro 的四化表、星曜亮度和時間分界規則，了解全域設定與單盤設定的差異，以及外掛的開發、註冊和使用方法。"
 outline: deep
-description: "說明如何調整 iztro 的排盤設定，以及透過外掛擴充星盤功能。"
 ---
 
 # 配置和插件 <Badge type="warning" text="^2.3.0" />

@@ -1,4 +1,5 @@
 ---
+title: "iztro palace API: palace queries and analysis"
 outline: deep
 description: "Query the twelve palaces in a Zi Wei Dou Shu chart with iztro’s palace API, with properties, methods, and examples."
 ---

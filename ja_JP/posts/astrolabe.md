@@ -1,4 +1,5 @@
 ---
+title: "iztro astro API：命盤の作成と分析"
 outline: deep
 description: "iztroのastro APIを使った命盤の作成・照会方法と、命盤のプロパティやメソッドをコード例で解説します。"
 ---

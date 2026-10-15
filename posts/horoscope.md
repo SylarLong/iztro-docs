@@ -1,6 +1,7 @@
 ---
+title: "iztro horoscope API：运限查询与分析"
+description: "使用 iztro 的 horoscope API 查询大限、小限、流年、流月、流日和流时，获取运限宫位、流曜与四化，并查看方法示例。"
 outline: deep
-description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫微斗数运限介绍，iztro的horoscope对象使用方法以及示例代码。"
 ---
 
 # 运限

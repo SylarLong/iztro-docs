@@ -1,4 +1,5 @@
 ---
+title: "iztro の TypeScript 型定義と多言語の値"
 description: "iztroの型定義、多言語の値、astro APIが返すデータ構造を解説します。"
 ---
 

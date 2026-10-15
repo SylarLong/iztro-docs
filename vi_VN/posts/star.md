@@ -1,4 +1,5 @@
 ---
+title: "API star của iztro: truy vấn và phân tích sao"
 outline: deep
 description: "Truy vấn các sao trên lá số bằng API star của iztro, kèm thuộc tính, phương thức và mã ví dụ."
 ---

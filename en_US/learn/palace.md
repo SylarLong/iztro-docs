@@ -1,4 +1,5 @@
 ---
+title: "The twelve palaces in Zi Wei Dou Shu"
 outline: deep
 description: "An introduction to the twelve palaces in a Zi Wei Dou Shu chart and the areas of life each palace represents."
 ---

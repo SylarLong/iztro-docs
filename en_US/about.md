@@ -1,5 +1,5 @@
 ---
-title: "About the author"
+title: "About SylarLong, the author of iztro"
 description: "About the author of iztro, the origins of the project, and ways to get in touch."
 ---
 

@@ -1,3 +1,8 @@
+---
+title: "Iztro AI: 자미·기문 모델과 API·SDK"
+description: "Iztro AI의 자미·기문 호스팅 모델과 fast 버전을 비교하고, iztro-chat-api 또는 Python·TypeScript SDK로 연동하는 방법을 알아봅니다."
+
+---
 # Iztro AI {#iztro-ai}
 
 오픈 소스 **iztro** 명반 작성 라이브러리 외에도, 자미두수（紫微斗數）와 기문둔갑（奇門遁甲）을 위한 공개된 호스팅 AI 모델 네 가지를 제공합니다:

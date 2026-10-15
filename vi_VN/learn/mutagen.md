@@ -1,4 +1,5 @@
 ---
+title: "Tứ hóa trong Tử Vi: Hóa Lộc, Quyền, Khoa và Kỵ"
 description: "Tìm hiểu tứ hóa trong Tử Vi Đẩu Số và cách tứ hóa thể hiện suy nghĩ, ý định, tạo nên phần động của lá số."
 ---
 

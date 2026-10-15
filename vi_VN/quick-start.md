@@ -1,5 +1,5 @@
 ---
-title: "Tài liệu chính thức của iztro"
+title: "Bắt đầu với iztro: cài đặt và lập lá số"
 description: "Hướng dẫn cài đặt iztro và tạo dữ liệu lá số Tử Vi Đẩu Số qua các ví dụ thực tế."
 ---
 

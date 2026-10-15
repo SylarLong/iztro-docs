@@ -1,4 +1,5 @@
 ---
+title: "iztro TypeScript types and localized values"
 description: "Reference for iztro types, localized values, and the data returned by the astro API."
 ---
 

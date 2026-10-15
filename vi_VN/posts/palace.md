@@ -1,4 +1,5 @@
 ---
+title: "API palace của iztro: truy vấn và phân tích cung"
 outline: deep
 description: "Truy vấn mười hai cung trên lá số bằng API palace của iztro, kèm thuộc tính, phương thức và mã ví dụ."
 ---

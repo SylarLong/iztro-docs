@@ -1,5 +1,5 @@
 ---
-title: "Lá số Tử Vi Đẩu Số"
+title: "Lá số Tử Vi Đẩu Số: cấu trúc và cách đọc"
 description: "Tìm hiểu các thông tin trên lá số Tử Vi Đẩu Số và cách đọc cấu trúc cơ bản của lá số."
 ---
 

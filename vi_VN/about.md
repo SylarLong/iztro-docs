@@ -1,5 +1,5 @@
 ---
-title: "Về tác giả"
+title: "Về SylarLong, tác giả iztro"
 description: "Giới thiệu tác giả iztro, lý do phát triển dự án và thông tin liên hệ."
 ---
 

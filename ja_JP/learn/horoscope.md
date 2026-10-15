@@ -1,3 +1,8 @@
+---
+title: "紫微斗数の運限：大限・小限・流年"
+description: "大限・小限・流年・流月・流日・流時の違いと役割を紹介し、本命盤に運限を重ねて段階的に読み解く方法を説明します。"
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

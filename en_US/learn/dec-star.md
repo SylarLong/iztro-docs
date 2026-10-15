@@ -1,3 +1,8 @@
+---
+title: "The forty-eight symbolic stars in Zi Wei Dou Shu"
+description: "Explore the forty-eight symbolic stars in Zi Wei Dou Shu: the growth-stage, Doctor-cycle, yearly General-front and yearly Year-front groups."
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

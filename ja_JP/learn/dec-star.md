@@ -1,3 +1,8 @@
+---
+title: "紫微斗数の四十八神煞：長生・博士・流年の星"
+description: "紫微斗数の四十八神煞を、長生十二神・博士十二神・流年の将前十二神と歳前十二神に分け、それぞれの性質を紹介します。"
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

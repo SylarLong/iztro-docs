@@ -1,6 +1,7 @@
 ---
+title: "iztro star API：星曜查询与分析"
+description: "查阅 iztro 的 star API，获取星曜所在宫位、对宫与三方四正，判断星曜亮度和四化状态。附参数、返回值及代码示例。"
 outline: deep
-description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫微斗数星曜介绍，iztro的star对象使用方法以及示例代码。"
 ---
 
 # 星曜

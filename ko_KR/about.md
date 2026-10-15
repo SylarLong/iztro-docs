@@ -1,5 +1,5 @@
 ---
-title: "작성자 소개"
+title: "iztro 개발자 SylarLong 소개"
 description: "iztro 개발자와 프로젝트를 시작한 계기, 연락 방법을 소개합니다."
 ---
 

@@ -1,3 +1,8 @@
+---
+title: "紫微斗數格局：組合條件與解讀"
+description: "查閱紫微斗數常見格局的星曜組合、成立條件與示意圖，從星曜特質理解格局，結合命盤整體進行解讀。"
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

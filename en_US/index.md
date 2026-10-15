@@ -1,6 +1,6 @@
 ---
 title: "紫微研习社"
-titleTemplate: "iztro.com"
+titleTemplate: "iztro docs and Zi Wei Dou Shu guides"
 description: "Learn and use Zi Wei Dou Shu with the lightweight, open-source iztro JavaScript charting library, developer documentation, and introductory guides."
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home

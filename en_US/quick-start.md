@@ -1,5 +1,5 @@
 ---
-title: "iztro documentation"
+title: "iztro quick start: install and create a chart"
 description: "Install iztro and start generating Zi Wei Dou Shu charts with practical examples."
 ---
 

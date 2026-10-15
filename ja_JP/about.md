@@ -1,5 +1,5 @@
 ---
-title: "作者について"
+title: "iztro の作者 SylarLong について"
 description: "iztroの作者、開発のきっかけ、連絡方法を紹介します。"
 ---
 

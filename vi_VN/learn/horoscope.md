@@ -1,3 +1,8 @@
+---
+title: "Vận hạn Tử Vi: đại hạn, tiểu hạn và lưu niên"
+description: "Phân biệt đại hạn, tiểu hạn, lưu niên, lưu nguyệt, lưu nhật và lưu thời; tìm hiểu cách kết hợp từng lớp vận hạn với lá số bản mệnh."
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

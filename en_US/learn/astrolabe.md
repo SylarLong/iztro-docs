@@ -1,5 +1,5 @@
 ---
-title: "Zi Wei Dou Shu chart"
+title: "Reading a Zi Wei Dou Shu chart"
 description: "Understand the information shown in a Zi Wei Dou Shu chart and learn how to read its basic structure."
 ---
 

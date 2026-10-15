@@ -1,3 +1,8 @@
+---
+title: "紫微斗数运限：大限、小限与流年"
+description: "区分紫微斗数大限、小限、流年、流月、流日与流时，了解运限的作用，以及结合本命盘逐层分析运限的方法。"
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

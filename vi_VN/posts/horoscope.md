@@ -1,4 +1,5 @@
 ---
+title: "API horoscope của iztro: truy vấn vận hạn"
 outline: deep
 description: "Truy vấn vận hạn trên lá số bằng API horoscope của iztro, kèm thuộc tính, phương thức và mã ví dụ."
 ---

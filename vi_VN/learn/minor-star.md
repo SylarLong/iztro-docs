@@ -1,4 +1,5 @@
 ---
+title: "Mười bốn phụ tinh trong Tử Vi Đẩu Số"
 outline: deep
 description: "Giới thiệu tính chất và vai trò của các phụ tinh trong Tử Vi Đẩu Số: lục cát tinh, lục sát tinh, Lộc Tồn và Thiên Mã."
 ---

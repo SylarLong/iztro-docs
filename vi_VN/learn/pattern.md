@@ -1,3 +1,8 @@
+---
+title: "Cách cục Tử Vi: điều kiện và cách luận giải"
+description: "Tra cứu cách cục Tử Vi thường gặp, tổ hợp sao, điều kiện thành cách và sơ đồ lá số; tìm hiểu cách luận giải trong bối cảnh toàn lá số."
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

@@ -1,6 +1,7 @@
 ---
+title: "iztro 配置和插件：排盘规则与功能扩展"
+description: "自定义 iztro 的四化表、星曜亮度和时间分界规则，了解全局配置与单盘配置的区别，以及插件的开发、注册和使用方法。"
 outline: deep
-description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫微斗数星曜介绍，iztro的star对象使用方法以及示例代码。"
 ---
 
 # 配置和插件 <Badge type="warning" text="^2.3.0" />

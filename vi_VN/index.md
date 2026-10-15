@@ -1,6 +1,6 @@
 ---
 title: "紫微研习社"
-titleTemplate: "iztro.com"
+titleTemplate: "Tài liệu iztro và nhập môn Tử Vi"
 description: "Học và ứng dụng Tử Vi Đẩu Số với iztro, thư viện JavaScript mã nguồn mở gọn nhẹ để lập lá số, cùng tài liệu lập trình và hướng dẫn nhập môn."
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home

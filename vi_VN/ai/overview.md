@@ -1,3 +1,8 @@
+---
+title: "Iztro AI: mô hình Tử Vi, Kỳ Môn, API và SDK"
+description: "Tìm hiểu các mô hình Tử Vi và Kỳ Môn do Iztro AI lưu trữ, gồm bản fast, cùng cách tích hợp qua iztro-chat-api hoặc SDK Python và TypeScript."
+
+---
 # Iztro AI {#iztro-ai}
 
 Bên cạnh thư viện lập lá số mã nguồn mở **iztro**, chúng tôi cung cấp bốn mô hình AI được lưu trữ và vận hành sẵn, dành cho Tử Vi Đẩu Số（紫微斗數） và Kỳ Môn Độn Giáp（奇門遁甲）:

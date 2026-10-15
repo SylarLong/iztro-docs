@@ -1,4 +1,5 @@
 ---
+title: "iztro 설정과 플러그인"
 outline: deep
 description: "iztro의 계산 설정을 변경하고 플러그인으로 명반 기능을 확장하는 방법을 설명합니다."
 ---

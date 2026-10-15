@@ -1,4 +1,5 @@
 ---
+title: "iztro horoscope API：運限の取得と分析"
 outline: deep
 description: "iztroのhoroscope APIを使って命盤の運限を調べる方法と、プロパティやメソッドをコード例で解説します。"
 ---

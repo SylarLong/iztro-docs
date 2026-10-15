@@ -1,4 +1,5 @@
 ---
+title: "iztro TypeScript 타입과 다국어 값 정의"
 description: "iztro의 타입 정의, 언어별 값, astro API가 반환하는 데이터 구조를 설명합니다."
 ---
 

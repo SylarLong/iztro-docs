@@ -1,4 +1,5 @@
 ---
+title: "iztro configuration and plugins"
 outline: deep
 description: "Customize iztro calculation settings and extend chart functionality with plugins."
 ---

@@ -1,6 +1,7 @@
 ---
-title: '關於作者'
-description: '紫微研习社，iztro官方文檔，iztro開發文檔，快速上手使用iztro獲取紫微斗數排盤數據。'
+title: "關於 iztro 作者 SylarLong"
+description: "了解 iztro 作者 SylarLong、專案的開發初衷與開源理念，查看聯絡方式、交流管道及支持專案的方式。"
+
 ---
 
 <h1 class="brand-name text-clip" style="line-height: 60px;">關於作者</h1>

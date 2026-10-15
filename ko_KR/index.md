@@ -1,6 +1,6 @@
 ---
 title: "紫微研习社"
-titleTemplate: "iztro.com"
+titleTemplate: "iztro 문서와 자미두수 입문"
 description: "자미두수 명반 데이터를 생성하는 경량 오픈 소스 JavaScript 라이브러리 iztro와 개발 문서, 입문 자료를 통해 자미두수를 배우고 활용할 수 있습니다."
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home

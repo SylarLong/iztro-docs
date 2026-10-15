@@ -1,3 +1,8 @@
+---
+title: "Zi Wei Dou Shu time cycles: decadal, age and yearly"
+description: "Learn how decadal, annual age, yearly, monthly, daily and hourly cycles relate to the natal chart, and how to analyze them step by step."
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

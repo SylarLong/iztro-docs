@@ -1,4 +1,5 @@
 ---
+title: "Nhập môn Tử Vi Đẩu Số: kiến thức và thuật ngữ"
 outline: deep
 description: "Giới thiệu Tử Vi Đẩu Số, các khái niệm cơ bản và thuật ngữ cần biết khi đọc lá số."
 ---

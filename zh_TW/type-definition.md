@@ -1,5 +1,7 @@
 ---
-description: "iztro類型定義，iztro的astro對象使用方法以及示例代碼。紫微斗數信息國際化內容的輸出定義。"
+title: "iztro TypeScript 型別與國際化定義"
+description: "查閱 iztro 的 TypeScript 型別、國際化輸入值與星盤資料結構，了解星曜、宮位、運限和設定參數的定義。"
+
 ---
 
 # 類型定義

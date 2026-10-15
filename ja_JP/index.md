@@ -1,6 +1,6 @@
 ---
 title: "紫微研习社"
-titleTemplate: "iztro.com"
+titleTemplate: "iztro ドキュメントと紫微斗数入門"
 description: "紫微斗数の命盤データを取得できる軽量なオープンソース JavaScript ライブラリ iztro と、その開発ドキュメントや入門ガイドを通じて、紫微斗数の学習と活用を支援します。"
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home

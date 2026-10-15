@@ -1,4 +1,5 @@
 ---
+title: "iztro astro API: chart creation and analysis"
 outline: deep
 description: "Create and query Zi Wei Dou Shu charts with iztro: the astro API, chart properties, methods, and examples."
 ---

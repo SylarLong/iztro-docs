@@ -1,3 +1,8 @@
+---
+title: "자미두수 운한: 대한·소한·유년"
+description: "대한·소한·유년·유월·유일·유시의 차이와 역할을 알아보고, 본명반에 운한을 겹쳐 단계적으로 해석하는 방법을 설명합니다."
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

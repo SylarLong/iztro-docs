@@ -1,4 +1,5 @@
 ---
+title: "The fourteen auxiliary stars in Zi Wei Dou Shu"
 outline: deep
 description: "An introduction to the auxiliary stars in Zi Wei Dou Shu: the six auspicious stars, six malefic stars, money, and horse."
 ---

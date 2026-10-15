@@ -1,4 +1,5 @@
 ---
+title: "iztro star API: star queries and analysis"
 outline: deep
 description: "Query stars in a Zi Wei Dou Shu chart with iztro’s star API, with properties, methods, and examples."
 ---

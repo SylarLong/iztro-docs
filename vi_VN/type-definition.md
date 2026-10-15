@@ -1,4 +1,5 @@
 ---
+title: "Kiểu TypeScript và giá trị đa ngôn ngữ trong iztro"
 description: "Tra cứu các kiểu dữ liệu của iztro, giá trị theo từng ngôn ngữ và cấu trúc dữ liệu do API astro trả về."
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: "Zi Wei Dou Shu basics and terminology"
 outline: deep
 description: "An introduction to Zi Wei Dou Shu, its basic concepts, and the terminology used to read a chart."
 ---

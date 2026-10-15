@@ -1,3 +1,8 @@
+---
+title: "紫微斗数の格局：成立条件と解釈"
+description: "紫微斗数の代表的な格局について、星曜の組み合わせや成立条件を配置図とともに紹介し、命盤全体から解釈する考え方を解説します。"
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

@@ -1,6 +1,16 @@
 # iztro-docs
 document of iztro
 
+## 页面 SEO 维护
+
+公开页面（包括古籍页）须在 frontmatter 中填写与正文对应的本语言 `title` 和 `description`，避免复制其他页面的摘要或堆叠关键词。正文 API 标识符和原有锚点保持不变。古籍页只维护元数据，不因此改写古籍正文。
+
+正式域名为 `https://iztro.com`，由 `.vitepress/seo.mjs` 统一生成 canonical、多语言 hreflang、Open Graph、Twitter 卡片和 JSON-LD；页面 URL 沿用现有 `.html` 规则，首页使用目录 URL。新增语言后仅为实际存在的译文生成语言链接。旧的 `/en_US.html` 页面保留访问能力，标记为不收录，并指向 `/en_US/`；README、AGENTS 和 skill 文件不生成公开页面。
+
+`public/robots.txt`、`CNAME` 与 sitemap 须保持同一域名；`.vitepress/public/robots.txt` 是同步副本。构建完成后会将 `static/` 复制到输出目录，确保分享图片、图标和 Web Manifest 可访问。
+
+修改后运行 `npm run docs:test-seo`、翻译检查和构建，并核对生成 HTML 的标题、摘要、canonical 与 hreflang，以及 sitemap 和资源路径。默认构建目录位于相邻仓库；需要隔离验证时使用临时副本，避免覆盖正式输出。
+
 
 ## 多语言文档维护
 

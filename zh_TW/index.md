@@ -1,7 +1,7 @@
 ---
 title: "紫微研习社"
-titleTemplate: "iztro.com"
-description: "一套輕量級獲取紫微斗數排盤信息的 Javascript 開源庫，加上紫微斗數學習和知識科普，打造一個適合大家的學習和使用紫微斗數的專業平臺。"
+description: "紫微研习社提供 iztro 開源 JavaScript 排盤函式庫文件，以及紫微斗數入門、星曜、宮位、四化和運限知識，協助開發者與學習者理解和使用紫微斗數。"
+titleTemplate: "iztro 文件與紫微斗數入門"
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 

@@ -1,4 +1,5 @@
 ---
+title: "The fourteen major stars in Zi Wei Dou Shu"
 description: "An introduction to the fourteen major stars in Zi Wei Dou Shu, their qualities, and symbolic meanings."
 ---
 

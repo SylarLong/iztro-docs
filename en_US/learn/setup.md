@@ -1,4 +1,5 @@
 ---
+title: "Zi Wei Dou Shu star placement rules"
 outline: deep
 description: "Learn the star placement rules used to calculate a Zi Wei Dou Shu chart, from palace positions to stars and time cycles."
 ---

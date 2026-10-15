@@ -1,4 +1,5 @@
 ---
+title: "iztro astro API: 명반 생성과 분석"
 outline: deep
 description: "iztro의 astro API로 명반을 생성하고 조회하는 방법과 명반의 속성·메서드를 코드 예제로 설명합니다."
 ---

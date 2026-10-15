@@ -1,4 +1,5 @@
 ---
+title: "iztro star API：星曜の取得と分析"
 outline: deep
 description: "iztroのstar APIを使って命盤の星曜を調べる方法と、プロパティやメソッドをコード例で解説します。"
 ---

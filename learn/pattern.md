@@ -1,3 +1,8 @@
+---
+title: "紫微斗数格局：组合条件与解读"
+description: "查阅紫微斗数常见格局的星曜组合、成立条件与示意图，从星曜特质理解格局，结合命盘整体进行解读。"
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>

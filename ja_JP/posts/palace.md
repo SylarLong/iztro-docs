@@ -1,4 +1,5 @@
 ---
+title: "iztro palace API：宮位の取得と分析"
 outline: deep
 description: "iztroのpalace APIを使って命盤の十二宮を調べる方法と、プロパティやメソッドをコード例で解説します。"
 ---

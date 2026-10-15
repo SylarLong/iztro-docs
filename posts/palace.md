@@ -1,6 +1,7 @@
 ---
+title: "iztro palace API：宫位查询与分析"
+description: "查阅 iztro 的 palace API，获取宫位与三方四正，判断星曜、四化和空宫，并使用飞化分析方法。附参数、返回值及代码示例。"
 outline: deep
-description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫微斗数宫位介绍，iztro的palace对象使用方法以及示例代码。"
 ---
 
 # 宫位

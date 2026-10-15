@@ -1,4 +1,5 @@
 ---
+title: "The thirty-seven miscellaneous stars in Zi Wei Dou Shu"
 description: "An introduction to the thirty-seven miscellaneous stars in Zi Wei Dou Shu and their symbolic meanings."
 ---
 

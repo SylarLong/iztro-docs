@@ -10,7 +10,8 @@
     "docs:preview": "vitepress preview",
     "docs:check-locales": "node scripts/verify-locales.mjs && node scripts/verify-translations.mjs && node scripts/verify-semantic-locales.mjs",
     "docs:check-translations": "node scripts/verify-translations.mjs && node scripts/verify-semantic-locales.mjs",
-    "docs:test-locales": "node --test scripts/tests/translation-checks.test.mjs"
+    "docs:test-locales": "node --test scripts/tests/translation-checks.test.mjs",
+    "docs:test-seo": "node --test scripts/tests/seo.test.mjs"
   },
   "repository": {
     "type": "git",

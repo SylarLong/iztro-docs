@@ -1,3 +1,8 @@
+---
+title: "Iztro AI：紫微與奇門模型、API 和 SDK"
+description: "了解 Iztro AI 的紫微與奇門託管模型、標準版與 fast 版，以及透過 iztro-chat-api 或 Python、TypeScript SDK 串接的方法。"
+
+---
 # Iztro AI
 
 除了開源的 **iztro** 排盤庫，我們還提供四個公開的託管紫微與奇門 AI 模型：

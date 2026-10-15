@@ -1,4 +1,6 @@
 ---
+title: "iztro documentation and Zi Wei Dou Shu guides"
+description: "Developer documentation for iztro and introductory guides to Zi Wei Dou Shu. Visit the current English homepage for the maintained documentation."
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 

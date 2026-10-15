@@ -1,4 +1,5 @@
 ---
+title: "iztro star API: 성요 조회와 분석"
 outline: deep
 description: "iztro의 star API로 명반의 성요를 조회하는 방법과 관련 속성·메서드를 코드 예제로 설명합니다."
 ---

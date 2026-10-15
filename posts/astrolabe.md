@@ -1,6 +1,7 @@
 ---
+title: "iztro astro API：星盘生成与分析"
+description: "学习使用 iztro 的 astro API 生成紫微斗数星盘，查阅 bySolar、byLunar、withOptions 及星盘分析方法的参数、返回值和代码示例。"
 outline: deep
-description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫微斗数星盘介绍，iztro的astro对象使用方法以及示例代码。"
 ---
 
 # 星盘

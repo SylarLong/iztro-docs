@@ -1,3 +1,8 @@
+---
+title: "紫微斗数四十八神煞：长生、博士与流年神煞"
+description: "认识紫微斗数四十八神煞，包括长生十二神、博士十二神、流年将前十二神与岁前十二神，了解各组星曜的特质。"
+
+---
 <script setup>
 import Donate from '/components/donate.vue'
 </script>
