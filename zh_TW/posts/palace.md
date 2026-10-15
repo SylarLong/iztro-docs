@@ -1,19 +1,19 @@
 ---
 outline: deep
-description: "紫微研習社，iztro官方文檔，iztro開發文檔，iztro紫微鬥數宮位介紹，iztro的palace對象使用方法以及示例代碼。"
+description: "紫微研习社，iztro官方文檔，iztro開發文檔，iztro紫微斗數宮位介紹，iztro的palace對象使用方法以及示例代碼。"
 ---
 
 # 宮位
 
 ## 前言
 
-紫微鬥數中一共有 `十二` 個宮位，叫做 `十二人事宮`，囊括了與人有關的其他人和事物，這十二宮按順序分別是 `命宮`、`兄弟宮`、`夫妻宮`、`子女宮`、`財帛宮`、`疾厄宮`、`遷移宮`、`仆役宮`、`官祿宮`、`田宅宮`、`福德宮`、`父母宮`。除了這展示在 [星盤](./astrolabe.md) 裏的十二宮以外，紫微鬥數還有三個隱藏宮位，它們分別是 `身宮`、`來因宮`、`暗合宮`。每一個宮位有著它特殊的意義，但本頁不詳細展開來敘述。如果你對紫微鬥數的宮位沒有概念，或者想深入研究，可以點擊 [宮位系統](../learn/palace.md) 查看詳細資料。與宮位地支順時針排列相反，宮位名稱是按逆時針排列的。如下面表格所示：
+紫微斗數中一共有 `十二` 個宮位，叫做 `十二人事宮`，囊括了與人有關的其他人和事物，這十二宮按順序分別是 `命宮`、`兄弟宮`、`夫妻宮`、`子女宮`、`財帛宮`、`疾厄宮`、`遷移宮`、`僕役宮`、`官祿宮`、`田宅宮`、`福德宮`、`父母宮`。除了展示在 [星盤](./astrolabe.md) 裏的十二宮以外，紫微斗數還有三個隱藏宮位，它們分別是 `身宮`、`來因宮`、`暗合宮`。每一個宮位有著它特殊的意義，但本頁不詳細展開來敘述。如果你對紫微斗數的宮位沒有概念，或者想深入研究，可以點擊 [宮位系統](../learn/palace.md) 查看詳細資料。與宮位地支順時針排列相反，宮位名稱是按逆時針排列的。如下面表格所示：
 
 <table class="astrolabe">
     <tr>
         <td>巳 <code>田宅</code></td>
         <td>午 <code>官祿</code></td>
-        <td>未 <code>仆役</code></td>
+        <td>未 <code>僕役</code></td>
         <td>申 <code>遷移</code></td>
     </tr>
     <tr>
@@ -27,7 +27,7 @@ description: "紫微研習社，iztro官方文檔，iztro開發文檔，iztro紫
     </tr>
     <tr>
         <td>寅 <code>命宮</code></td>
-        <td>醜 <code>兄弟</code></td>
+        <td>丑 <code>兄弟</code></td>
         <td>子 <code>夫妻</code></td>
         <td>亥 <code>子女</code></td>
     </tr>
@@ -35,12 +35,12 @@ description: "紫微研習社，iztro官方文檔，iztro開發文檔，iztro紫
 
 > 以上表格只是一個例子，`命宮` 的位置會根據你的 `出生日期` 和 `出生時間` 的不同而不同，它可能出現在上述任何一個宮位，但這個順序是不會變的。
 
-宮位其實是 `宮` 和 `位` 兩個概念組成的，通過 `出生日期` 和 `出生時間` 計算出來的，叫 `宮`，所以你星盤中的 `財帛宮` 位置在本命盤中是固定的，如果你不知道什麽叫 `本命盤`，我們強烈建議你點擊 [基礎知識掃盲](/learn/basis.md) 學習。`位` 則是一個 `相對` 位置，比如 `夫妻宮` 的 `財帛位` 是 `遷移宮`。這聽起來有些繞，好消息是，你不需要記憶這些燒腦的信息，只需要有這麽一個概念就可以了。
+宮位其實是 `宮` 和 `位` 兩個概念組成的，通過 `出生日期` 和 `出生時間` 計算出來的，叫 `宮`，所以你星盤中的 `財帛宮` 位置在本命盤中是固定的，如果你不知道什麽叫 `本命盤`，我們強烈建議你點擊 [基礎知識掃盲](/zh_TW/learn/basis.md) 學習。`位` 則是一個 `相對` 位置，比如 `夫妻宮` 的 `財帛位` 是 `遷移宮`。這聽起來有些繞，好消息是，你不需要記憶這些燒腦的信息，只需要有這麽一個概念就可以了。
 ## 功能類定義
 
 :::warning 開發建議
 
-因為宮位是基於星盤而存在的，所以我們並不推薦你手動 `new` 一個宮位對象，而是使用星盤靜態方法返回的對象使用。星盤的 `palaces` 屬性包含了十二宮的數據，為了和地支的順序保持一致，它是從 `寅宮` 開始按照地支順序順時針排列的。
+因為宮位是基於星盤而存在的，所以我們並不推薦你手動 `new` 一個宮位對象，而是從星盤靜態方法返回的對象中獲取宮位。星盤的 `palaces` 屬性包含了十二宮的數據，為了和地支的順序保持一致，它是從 `寅宮` 開始按照地支順序順時針排列的。
 
 :::
 
@@ -77,7 +77,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 ***
 
-<Badge type="tip" text="implements" /> `IFuncionalPalace` <Badge type="tip" text="extends" /> [`Palace`](../type-definition.md#palace)
+<Badge type="tip" text="implements" /> `IFunctionalPalace` <Badge type="tip" text="extends" /> [`Palace`](../type-definition.md#palace)
 
 該類所有屬性都是繼承自 [Palace](../type-definition.md#palace)，然後在接口內定義了一些方法用於對星曜進行分析。
 
@@ -197,7 +197,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果你想查看 `命宮` 是沒有 `地空星` 和 `地劫星`
+    如果你想查看 `命宮` 是否沒有 `地空星` 和 `地劫星`
     ```ts
     const palace = astrolabe.palace("命宮");
     const result = palace.notHave(["地空", "地劫"]);
@@ -463,7 +463,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     ```ts
     type selfMutagedOneOf = (
-      withMutagens: Mutagen | Mutagen[]
+      withMutagens?: Mutagen[]
     ) => boolean;
     ```
     
@@ -471,7 +471,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 參數        | 類型                                      | 是否必填 | 默認值 | 說明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true`   | -      | 四化（祿、權、科、忌）|
+    | withMutagens | [`Mutagen[]`](../type-definition.md#mutagen) | `false`   | -      | 四化（祿、權、科、忌）|
 
   - 返回值
 
@@ -480,13 +480,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判斷宮位是否有自化，如果傳入參數，則只判斷傳入的四化是否有自化，否則將會判斷所有四化
+    判斷宮位是否沒有自化。如果傳入參數，則只檢查指定的四化；否則檢查全部四化。只有所檢查的四化均未在本宮自化時，才返回真。
 
   - 定義
 
     ```ts
     type notSelfMutaged = (
-      withMutagens: Mutagen | Mutagen[]
+      withMutagens?: Mutagen | Mutagen[]
     ) => boolean;
     ```
     
@@ -494,7 +494,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 參數        | 類型                                      | 是否必填 | 默認值 | 說明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true`   | -      | 四化（祿、權、科、忌）|
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `false`   | -      | 四化（祿、權、科、忌）|
 
   - 返回值
 
@@ -503,7 +503,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    獲取當前宮位產生四化的4個宮位數組，下標分別對【祿，權，科，忌】
+    獲取當前宮位產生四化的4個宮位數組，下標分別對應【祿，權，科，忌】
 
   - 定義
 

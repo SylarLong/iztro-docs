@@ -1,54 +1,54 @@
 ---
 outline: deep
-description: "Zi Wei Academy, iztro official documentation, iztro development documentation, configuration and plugin usage."
+description: "Customize iztro calculation settings and extend chart functionality with plugins."
 ---
 
-# Configuration and Plugins <Badge type="warning" text="^2.3.0" />
+# Configuration and plugins <Badge type="warning" text="^2.3.0" />   {#配置和插件}
 
-Welcome to iztro's configuration and plugin features. Zi Wei Dou Shu (紫微斗數) has many lineages, whose Four Transformations (四化) and star brightness may differ slightly. To support those lineages and make the library extensible, iztro introduced global configuration and third-party plugins in `v2.3.0`.
+Welcome to iztro’s configuration and plugin features. Zi Wei Dou Shu（紫微斗數） has many schools, with slight differences in four transformations（四化） and star brightness（星曜亮度）. To accommodate these differences and support extensions, iztro introduced global configuration and third-party plugins in `v2.3.0`.
 
-:::tip
-If you publish an open-source third-party plugin based on iztro, please [contact the author](../about.md#how-to-contact-me) so it can be added to this documentation.
+:::tip Tips
+If you have developed an open-source plugin library for iztro, please [contact the author](../about.md#怎么联系我❓) so it can be listed in the documentation for others to use.
 :::
 
-## Configuration
+## Configuration   {#配置}
 
-For the configuration definition, see [Configuration Definition](../type-definition.md#config). Global configuration is straightforward: call `astro.config()` before calling a chart-calculation method.
+See the [configuration definition](../type-definition.md#config) for the available settings. To set global defaults, call `astro.config()` before calling a chart-generation method:
 
 ```ts
 import { astro } from 'iztro';
 
 astro.config({
-  mutagens: { 庚: ['太陽', '武曲', '天同', '天相'] },
+  mutagens: { 庚: ['太阳', '武曲', '天同', '天相'] },
   brightness: {
-    貪狼: ['旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺'],
+    贪狼: ['旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺'],
   },
 });
 ```
 
-After the preceding code runs, subsequent chart calculations merge the new settings with the defaults. In other words, you do not need to repeat values that are the same as the defaults. For the default Four Transformations table, see [the Ten Heavenly Stems Four Transformations table](../learn/mutagen.md#the-four-transformations-of-the-ten-heavenly-stems). For default star brightness, see [the Star Brightness table](../learn/star.md#star-brightness-table).
+When you generate a chart after running the code above, the supplied settings are merged with the defaults and applied. You only need to specify values that differ from the defaults. See the [four-transformations table for the ten Heavenly Stems（十天干四化表）](../learn/mutagen.md#十天干四化表) and the [star brightness table（星曜亮度表）](../learn/star.md#星曜亮度表) for the default values.
 
-Besides `mutagens` and `brightness`, the following options adjust calculation rules:
+Besides `mutagens` and `brightness`, the following options let you adjust chart-calculation rules:
 
-| Option | Values | Default | Description |
+| Configuration items | Allowed values | Default value | Description |
 | --- | --- | --- | --- |
-| `yearDivide` <Badge type="warning" text="^2.4.0" /> | `normal` \| `exact` | `normal` | Birth-year stem-branch boundary: `normal` uses Lunar New Year; `exact` uses Beginning of Spring (立春). |
-| `horoscopeDivide` <Badge type="warning" text="^2.4.3" /> | `normal` \| `exact` | `normal` | Year and month stem-branch boundary used for horoscope calculations. |
-| `ageDivide` <Badge type="warning" text="^2.4.5" /> | `normal` \| `birthday` | `normal` | Minor Cycle (小限) nominal-age boundary: `normal` considers the calendar year only; `birthday` uses the lunar birthday. |
-| `dayDivide` <Badge type="warning" text="^2.5.2" /> | `forward` \| `current` | `forward` | Late Rat hour (晚子時) date assignment: `forward` assigns the following day; `current` assigns the current day. |
-| `algorithm` <Badge type="warning" text="^2.5.0" /> | `default` \| `zhongzhou` | `default` | Star-placement lineage: `default` is the common approach; `zhongzhou` is the Zhongzhou school (中州派). |
+| `yearDivide`   <Badge type="warning" text="^2.4.0" /> | `normal`  \|  `exact` | `normal` | Year stem-and-branch boundary: `normal` uses the first day of the first lunar month; `exact` uses the Start of Spring solar term. |
+| `horoscopeDivide`   <Badge type="warning" text="^2.4.3" /> | `normal`  \|  `exact` | `normal` | Year and month stem-and-branch boundaries used for horoscope periods |
+| `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | Annual age-period nominal-age boundary: `normal` uses the calendar year; `birthday` uses the lunar birthday. |
+| `dayDivide`   <Badge type="warning" text="^2.5.2" /> | `forward`  \|  `current` | `forward` | Date assignment for the late Zi hour: `forward` assigns it to the following day; `current` to the same day. |
+| `algorithm`   <Badge type="warning" text="^2.5.0" /> | `default`  \|  `zhongzhou` | `default` | Star-placement rules: `default` uses the standard version; `zhongzhou` uses the Zhongzhou school version. |
 
-:::warning
-Since `v2.6.2`, `astro.config()` sets defaults only for future charts. `withOptions({ config })` overrides only the current chart and no longer changes global defaults. Existing charts retain their configuration and language for horoscope queries and transformation analysis. If older code relied on `withOptions({ config })` to change global defaults, call `astro.config()` explicitly.
+:::warning Note
+From `v2.6.2`, `astro.config()` sets defaults only for charts created afterward. `withOptions({ config })` overrides settings only for the chart being created and does not alter the global defaults. Existing charts and their horoscope periods and transformation analyses retain the settings and language used when they were created. If older code relied on one charting call changing global settings, call `astro.config()` explicitly instead.
 :::
 
-### getConfig() <Badge type="warning" text="^2.3.0" />
+### getConfig() <Badge type="warning" text="^2.3.0" /> {#getconfig}
 
 - Purpose
 
-  Gets the currently active global configuration. The returned `mutagens` and `brightness` use normalized internal keys, so this method is useful for debugging or confirming configuration state.
+  Get the currently effective global configuration. The returned `mutagens` and `brightness` use normalized key names within the library, suitable for debugging or confirming configuration status.
 
-  <Badge type="warning" text="^2.6.2" /> The returned configuration is a deep copy. Changing its fields or nested transformation and brightness arrays does not change library configuration.
+  <Badge type="warning" text="^2.6.2" /> The returned value is an independent deep copy. Modifying it or its transformation and brightness arrays does not change the library’s configuration.
 
 - Definition
 
@@ -64,13 +64,13 @@ Since `v2.6.2`, `astro.config()` sets defaults only for future charts. `withOpti
   };
   ```
 
-- Parameters
+- parameters
 
   None
 
-- Return value
+- return value
 
-  The currently active configuration object
+  The currently effective configuration object
 
 - Example
 
@@ -82,32 +82,32 @@ Since `v2.6.2`, `astro.config()` sets defaults only for future charts. `withOpti
   const currentConfig = astro.getConfig();
   ```
 
-### resetConfig() <Badge type="warning" text="^2.6.2" />
+### resetConfig() <Badge type="warning" text="^2.6.2" /> {#resetconfig}
 
-Restores factory defaults and clears all custom transformation and brightness tables. Existing charts are unaffected.
+Restores the default settings and clears all custom four-transformation（四化） and brightness tables. Existing charts are unaffected.
 
 ```ts
 type resetConfig = () => void;
 ```
 
-Defaults are `yearDivide: 'normal'`, `horoscopeDivide: 'normal'`, `ageDivide: 'normal'`, `dayDivide: 'forward'`, and `algorithm: 'default'`. This method takes no arguments, returns nothing, and does not remove loaded plugins.
+The default boundary rules are `yearDivide: 'normal'`, `horoscopeDivide: 'normal'`, `ageDivide: 'normal'`, and `dayDivide: 'forward'`; the default star-placement algorithm is `algorithm: 'default'`. This method takes no arguments and returns no value. It does not reset loaded plugins.
 
 ```ts
 const chart = astro.withOptions({
   dateStr: '2000-8-16',
   timeIndex: 3,
-  gender: 'male',
+  gender: '男',
   config: { ageDivide: 'birthday' },
 });
 astro.resetConfig();
-chart.horoscope('2026-3-1'); // Still uses the chart's saved birthday boundary.
+chart.horoscope('2026-3-1'); // 仍使用该星盘生成时的生日分界配置
 ```
 
-## Plugins
+## Plugins   {#插件}
 
-An iztro plugin is a function that is attached to an astrolabe object. You can extend it for your own needs. In a TypeScript environment, declare plugin methods in an interface that extends `FunctionalAstrolabe`.
+An iztro plugin is a function that attaches functionality to a chart（星盤） object. You can extend the chart to suit your needs. When developing in TypeScript, declare the plugin’s methods in an interface extending `FunctionalAstrolabe`.
 
-The interface declaration is as follows:
+The interface is declared as follows:
 
 ```ts
 export interface IAstrolabe extends FunctionalAstrolabe {
@@ -116,29 +116,29 @@ export interface IAstrolabe extends FunctionalAstrolabe {
 }
 ```
 
-You may define `myNewFunc` and `majorStar` as needed. The methods declared in this interface can be implemented in one plugin function or in several plugin functions, as shown below:
+Define `myNewFunc` and `majorStar` to suit your needs. The interface’s methods can be implemented in a single plugin function or across several plugin functions:
 
 ```ts
-// Create the first plugin function
+// 创建一个插件函数
 export function myTestPlugin(this: IAstrolabe): void {
-  // Implement plugin logic
+  // 实现插件应用逻辑
   this.myNewFunc = () => {
     return this.fiveElementsClass;
   };
 }
 
-// Create the second plugin function
+// 创建二个插件函数
 export function myTestPlugin2(this: IAstrolabe): void {
-  // Implement plugin logic
+  // 实现插件应用逻辑
   this.majorStar = () => {
-    let stars = this.palace('命宮')
-      ?.majorStars.filter((item) => item.type === 'major' && !['祿存', '天馬'].includes(item.name))
+    let stars = this.palace('命宫')
+      ?.majorStars.filter((item) => item.type === 'major' && !['禄存', '天马'].includes(item.name))
       .map((item) => item.name)
       .join(',');
 
     if (!stars) {
-      stars = this.palace('遷移')
-        ?.majorStars.filter((item) => item.type === 'major' && !['祿存', '天馬'].includes(item.name))
+      stars = this.palace('迁移')
+        ?.majorStars.filter((item) => item.type === 'major' && !['禄存', '天马'].includes(item.name))
         .map((item) => item.name)
         .join(',');
     }
@@ -148,20 +148,20 @@ export function myTestPlugin2(this: IAstrolabe): void {
 }
 ```
 
-Attaching a plugin is equally simple: after importing `astro`, call `loadPlugin()` or `loadPlugins()`. Plugins registered by either method are applied to **new astrolabe instances created afterwards**.
+To register plugins, import `astro` and call `loadPlugin()` or `loadPlugins()`. Plugins registered by either method apply to chart instances **created afterward**.
 
 ```ts
-import { astro } from 'iztro';
+import {astro} from iztro;
 
-// Attach several plugins at once
-astro.loadPlugins([myTestPlugin, myTestPlugin2]);
+// 批量挂载插件
+astro.loadPlugins([myTestPlugin， myTestPlugin2]);
 
-// Load plugins one at a time
+// 逐个加载插件
 astro.loadPlugin(myTestPlugin);
 astro.loadPlugin(myTestPlugin2);
 ```
 
-To apply a plugin only to an astrolabe that has already been created, call that astrolabe instance's `use()` method:
+To apply a plugin only to a particular existing chart（星盤）, call that chart instance’s `use()` method:
 
 ```ts
 const astrolabe = astro.bySolar<IAstrolabe>('2023-10-18', 4, 'female');
@@ -170,17 +170,18 @@ astrolabe.use(myTestPlugin);
 astrolabe.myNewFunc();
 ```
 
-:::tip
-When using plugins in TypeScript, specify the generic type so the compiler recognizes the added methods. To use the plugins above:
+:::tip Tips
+
+When using plugins in TypeScript, specify the generic type so the compiler recognizes the added methods. To use the plugin methods above, for example:
 
 ```ts
-const astrolabe = astro.bySolar<IAstrolabe>('2023-10-18', 4, 'female');
+ const astrolabe = astro.bySolar<IAstrolabe>('2023-10-18', 4, 'female');
 
-// Use the method declared by the plugin
-astrolabe.myNewFunc(); // Fire Six Bureau (火六局)
+ // 使用插件定义的方法
+ astrolabe.myNewFunc();   // 火六局
 
-// Use the method declared by the second plugin
-astrolabe.majorStar(); // Seven Killings (七殺)
+ // 使用第二个插件方法
+ astrolabe.majorStar();   // 七杀
 ```
 
 :::

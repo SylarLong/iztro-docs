@@ -98,7 +98,7 @@ var { astro } = require("iztro");
   | timeIndex    | `number`                                     | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
   | gender       | [`GenderName`](/type-definition.md#gendername)| `true`   | -       | 性别【男/女】                                                                     |
   | fixLeap      | `boolean`                                    | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 返回值
 
@@ -122,7 +122,7 @@ var { astro } = require("iztro");
 
 - 用途
 
-  通过农历日期获取星盘信息。我们强烈建议你优先使用 `astrolabeBySolarDate` 方法，因为该方法也是将农历日期转化为阳历以后调用 `astrolabeBySolarDate` 获得结果的。
+  通过农历日期获取星盘信息。我们强烈建议你优先使用 `bySolar` 方法，因为该方法也是将农历日期转化为阳历以后调用 `bySolar` 获得结果的。
 
 - 定义
 
@@ -146,7 +146,7 @@ var { astro } = require("iztro");
   | gender       | [`GenderName`](/type-definition.md#gendername)   | `true`   | -       | 性别【男/女】                                                                     |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 返回值
 
@@ -198,7 +198,7 @@ var { astro } = require("iztro");
   | gender       | [`GenderName`](/type-definition.md#gendername)   | `true`   | -       | 性别【男/女】                                                                     |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
   | config     | [`Config`](../type-definition.md#config) | `false`  | - | 仅覆盖当前星盘的亮度、四化和时间分界配置（^2.6.2） |
   | astroType <Badge type="warning" text="^2.5.0" /> | [`AstroType`](../type-definition.md#astrotype) | `false` | `heaven` | 星盘类型；仅在 `config.algorithm` 为 `zhongzhou` 时用于选择天盘、地盘或人盘 |
 
@@ -254,7 +254,7 @@ var { astro } = require("iztro");
   | solarDateStr | `string`                                     | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
   | timeIndex    | `number`                                     | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
   | fixLeap      | `boolean`                                    | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 示例
 
@@ -292,7 +292,7 @@ var { astro } = require("iztro");
   | timeIndex    | `number`   | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 示例
 
@@ -324,7 +324,7 @@ var { astro } = require("iztro");
   | 参数         | 类型                                         | 是否必填 | 默认值  | 说明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | solarDateStr | `string`                                     | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 示例
 
@@ -358,7 +358,7 @@ var { astro } = require("iztro");
   | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | lunarDateStr | `string`   | `true`   | -       | 农历日期【YYYY-M-D】，例如 `2000年七月十七` 则传入 `2000-7-17`                    |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 示例
 
@@ -388,7 +388,7 @@ var { astro } = require("iztro");
   | 参数         | 类型                                         | 是否必填 | 默认值  | 说明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | solarDateStr | `string`                                     | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 示例
 
@@ -417,7 +417,7 @@ var { astro } = require("iztro");
   | 参数         | 类型                                         | 是否必填 | 默认值  | 说明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | year | `number`                                     | `true`   | -       | 农历年份                                                             |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
   
 - 示例
 
@@ -441,7 +441,7 @@ var { astro } = require("iztro");
 
 <Badge type="tip" text="implements" /> `IFunctionalAstrolabe` <Badge type="tip" text="extends" /> [`Astrolabe`](../type-definition.md#astrolabe)
 
-该类所有属性都是继承自 [Astrolabe](../type-definition.md#astrolabe)，然后在接口内定义了一些方法用于对星盘的分析。[`astrolabeBySolarDate()`](./astrolabe.md#astrolabebysolardate) 和 [`astrolabeByLunarDate()`](./astrolabe.md#astrolabeByLunarDate) 方法会返回一个该类的实例。
+该类所有属性都是继承自 [Astrolabe](../type-definition.md#astrolabe)，然后在接口内定义了一些方法用于对星盘的分析。[`bySolar()`](./astrolabe.md#bysolar) 和 [`byLunar()`](./astrolabe.md#bylunar) 方法会返回一个该类的实例。
 
 - 接口定义
 
@@ -950,7 +950,7 @@ var { astro } = require("iztro");
 
   - 用途
 
-    判断指定宫位 `三方四正` 是否 `不含` 目标星曜，必须要全部都 `不在` 三方四正内含才会返回 `true`
+    判断指定宫位 `三方四正` 是否 `不含` 目标星曜，必须要全部都 `不在` 三方四正内才会返回 `true`
 
   - 定义
 

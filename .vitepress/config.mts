@@ -1,14 +1,23 @@
 import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 import abbr from "markdown-it-abbr";
+import { translatedLocales } from "./locales.mjs";
 
 const version = "v2.6.2";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+const config = defineConfig({
   title: "紫微研习社 iztro.com",
   description:
     "iztro is a lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information.",
+  vite: {
+    resolve: {
+      alias: [{
+        find: /^.*\/VPNavBarMenu\.vue$/,
+        replacement: new URL('./theme/OverflowNav.vue', import.meta.url).pathname,
+      }],
+    },
+  },
   outDir: "../astro/docs/",
   ignoreDeadLinks: true,
   markdown: {
@@ -46,7 +55,7 @@ export default defineConfig({
           },
           { text: "关于作者", link: "/about.md" },
           {
-            text: '<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />',
+            text: 'GitHub 星标',
             link: "https://github.com/SylarLong/iztro",
           },
           {
@@ -86,7 +95,7 @@ export default defineConfig({
                 items: [
                   { text: "14主星", link: "/learn/major-star.md" },
                   { text: "14辅星", link: "/learn/minor-star.md" },
-                  { text: "37杂耀", link: "/learn/adj-star.md" },
+                  { text: "37杂曜", link: "/learn/adj-star.md" },
                   { text: "48神煞", link: "/learn/dec-star.md" },
                 ],
               },
@@ -119,6 +128,8 @@ export default defineConfig({
       label: "繁體中文",
       lang: "zh_TW",
       themeConfig: {
+        // Traditional Chinese follows the separate script-conversion workflow.
+        translationChecks: false,
         // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: "主頁", link: "/zh_TW/" },
@@ -133,7 +144,7 @@ export default defineConfig({
           },
           { text: "關於作者", link: "/zh_TW/about.md" },
           {
-            text: '<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />',
+            text: 'GitHub 星標',
             link: "https://github.com/SylarLong/iztro",
           },
           {
@@ -173,7 +184,7 @@ export default defineConfig({
                 items: [
                   { text: "14主星", link: "/zh_TW/learn/major-star.md" },
                   { text: "14輔星", link: "/zh_TW/learn/minor-star.md" },
-                  { text: "37雜耀", link: "/zh_TW/learn/adj-star.md" },
+                  { text: "37雜曜", link: "/zh_TW/learn/adj-star.md" },
                   { text: "48神煞", link: "/zh_TW/learn/dec-star.md" },
                 ],
               },
@@ -202,62 +213,7 @@ export default defineConfig({
         outlineTitle: "頁內導航",
       },
     },
-    en_US: {
-      label: "English",
-      lang: "en_US",
 
-      themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
-        nav: [
-          { text: "Home", link: "/en_US/" },
-          { text: "Docs", link: "/en_US/quick-start.md" },
-          { text: "Astrolabe", link: "https://ziwei.pub" },
-          { text: "Decipher", link: "https://app.ziwei.pro/register?ref=TPgWxvwH" },
-          { text: "AI Models", link: "/en_US/ai/overview" },
-          {
-            text: "Discussions",
-            link: "https://github.com/SylarLong/iztro/discussions",
-          },
-          {
-            text: '<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />',
-            link: "https://github.com/SylarLong/iztro",
-          },
-          {
-            text: version,
-            items: [
-              {
-                text: "Changlog",
-                link: "https://github.com/SylarLong/iztro/blob/main/CHANGELOG.md",
-              },
-              {
-                text: "NPM Package",
-                link: "https://www.npmjs.com/package/iztro",
-              },
-            ],
-          },
-        ],
-
-        sidebar: [
-          {
-            text: "iztro",
-            items: [
-              { text: "Quick Start", link: "/en_US/quick-start.md" },
-              { text: "Astrolabes", link: "/en_US/posts/astrolabe.md" },
-              { text: "Palaces", link: "/en_US/posts/palace.md" },
-              { text: "Stars", link: "/en_US/posts/star.md" },
-              { text: "Horoscopes and Cycles", link: "/en_US/posts/horoscope.md" },
-              { text: "Configuration and Plugins", link: "/en_US/posts/config-n-plugin.md" },
-            ],
-          },
-        ],
-
-        socialLinks: [
-          { icon: "github", link: "https://github.com/SylarLong/iztro" },
-        ],
-
-        outlineTitle: "Jump to",
-      },
-    },
   },
 
   head: [
@@ -349,5 +305,13 @@ export default defineConfig({
   ],
   sitemap: {
     hostname: "https://iztro.com",
+  },
+});
+
+export default defineConfig({
+  ...config,
+  locales: {
+    ...config.locales,
+    ...translatedLocales(config.locales.root),
   },
 });

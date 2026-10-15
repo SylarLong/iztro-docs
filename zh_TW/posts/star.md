@@ -1,27 +1,27 @@
 ---
 outline: deep
-description: "iztro紫微鬥數星曜介紹，iztro的star對象使用方法以及示例代碼。"
+description: "iztro紫微斗數星曜介紹，iztro的star對象使用方法以及示例代碼。"
 ---
 
 # 星曜
 
 ## 前言
 
-星曜是紫微鬥數裏的重要組成部分，人的個性主要受到星曜的影響。不同的星曜組合形成了不同的個性，如果妳對星曜部分感興趣，我們強烈建議妳點擊 [傳送門](/learn/star.md) 進行相關知識學習。本篇主要關註的是開發層面。
+星曜是紫微斗數裏的重要組成部分，人的個性主要受到星曜的影響。不同的星曜組合形成了不同的個性，如果你對星曜部分感興趣，我們強烈建議你點擊 [紫微斗數星曜系統](/zh_TW/learn/star.md) 進行相關知識學習。本篇主要關注的是開發層面。
 
 :::tip 提示
-在 `iztro` 裏，`主星`、`輔星`、`雜曜` 都被統歸到星曜係統裏，但是 `48神煞` 沒有被歸類到星曜，如果妳還不知道 `48神煞` 是什麽，歡迎點擊 [傳送門](/learn/dec-star.md) 進行學習。
+在 `iztro` 裏，`主星`、`輔星`、`雜曜` 都被統歸到星曜系統裏，但是 `48神煞` 沒有被歸類到星曜，如果你還不知道 `48神煞` 是什麽，歡迎點擊 [紫微斗數48神煞](/zh_TW/learn/dec-star.md) 進行學習。
 :::
 
 ## 功能類定義
 
-與 [FunctionalAstrolabe](./astrolabe.md#functionalastrolabe) 和 [FunctionalPalace](./palace.md#functionalpalace) 壹樣，我們並不建議妳手動去創建壹個 `FunctionalStar` 對象，而是使用其他對象返回的實例。
+與 [FunctionalAstrolabe](./astrolabe.md#functionalastrolabe) 和 [FunctionalPalace](./palace.md#functionalpalace) 一樣，我們並不建議你手動去創建一個 `FunctionalStar` 對象，而是使用其他對象返回的實例。
 
 ### FunctionalStar <Badge type="warning" text="^1.2.0" />
 
 ---
 
-<Badge type="tip" text="implements" /> `IFunctionalStar` <Badge type="tip" text="extends" /> [`Star`](/type-definition.md#star)
+<Badge type="tip" text="implements" /> `IFunctionalStar` <Badge type="tip" text="extends" /> [`Star`](/zh_TW/type-definition.md#star)
 
 - 接口定義
 
@@ -40,7 +40,7 @@ description: "iztro紫微鬥數星曜介紹，iztro的star對象使用方法以�
 
 - 屬性
   
-  參考 [Star](/type-definition.md#star)
+  參考 [Star](/zh_TW/type-definition.md#star)
 
 - 方法
 
@@ -72,7 +72,7 @@ description: "iztro紫微鬥數星曜介紹，iztro的star對象使用方法以�
 
   ***
 
-  :::danger ❗️註意
+  :::danger ❗️注意
   為了使 `FunctionalStar` 類使用起來更順暢，所以引入了 `setPalace()` 和 `setAstrolabe()` 兩個方法，但實際使用過程中請不要手動去調用這兩個方法，以免造成數據錯誤。
   :::
 
@@ -182,7 +182,7 @@ description: "iztro紫微鬥數星曜介紹，iztro的star對象使用方法以�
 
   - 用途
 
-    判斷星曜是否是傳入的亮度，也可以傳入多個亮度，隻要匹配到壹個亮度就會返回 `true`
+    判斷星曜是否是傳入的亮度，也可以傳入多個亮度，只要匹配到一個亮度就會返回 `true`
 
   - 定義
 
@@ -195,7 +195,7 @@ description: "iztro紫微鬥數星曜介紹，iztro的star對象使用方法以�
   
    | 參數        | 類型                                      | 是否必填 | 默認值 | 說明                 |
    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-   | brightness |  [ `Brightness`](/type-definition.md#brightness) \| [`Brightness[]`]((/type-definition.md#brightness)) | `true`   | -      | 需要判斷的星曜亮度  |
+   | brightness |  [ `Brightness`](/zh_TW/type-definition.md#brightness) \| [`Brightness[]`](/zh_TW/type-definition.md#brightness) | `true`   | -      | 需要判斷的星曜亮度  |
 
   - 返回值
 
@@ -219,7 +219,7 @@ description: "iztro紫微鬥數星曜介紹，iztro的star對象使用方法以�
 
   - 用途
 
-    判斷星曜是否產生了四化，也可以傳入多個四化進行判斷，隻要匹配到壹個四化就會返回 `true`
+    判斷星曜是否產生了四化，也可以傳入多個四化進行判斷，只要匹配到一個四化就會返回 `true`
 
   - 定義
 
@@ -232,7 +232,7 @@ description: "iztro紫微鬥數星曜介紹，iztro的star對象使用方法以�
   
    | 參數        | 類型                                      | 是否必填 | 默認值 | 說明                 |
    | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-   | mutagen |  [ `Mutagen`](/type-definition.md#mutagen) \| [`Mutagen[]`]((/type-definition.md#mutagen)) | `true`   | -      | 四化【祿｜權｜科｜忌】  |
+   | mutagen |  [ `Mutagen`](/zh_TW/type-definition.md#mutagen) \| [`Mutagen[]`](/zh_TW/type-definition.md#mutagen) | `true`   | -      | 四化【祿｜權｜科｜忌】  |
 
   - 返回值
 

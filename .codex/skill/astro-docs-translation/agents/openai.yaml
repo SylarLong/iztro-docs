@@ -1,0 +1,4 @@
+interface:
+  display_name: "astro-docs 多语言翻译与复核"
+  short_description: "支持任意目标语言的接入、翻译、读者复核、界面校对及站点验证"
+  default_prompt: "使用 $astro-docs-translation 对照中文翻译或复核 astro-docs 的指定目标语言文档，支持新增语言接入，沿用既定术语、古文和品牌约定并完成验证。"

@@ -1,21 +1,22 @@
 ---
-title: 'About the Author'
-description: 'Ziwei Research Society, iztro official documentation, iztro development documentation, quickly get started using iztro to obtain Ziwei Dou Shu chart data.'
+title: "About the author"
+description: "About the author of iztro, the origins of the project, and ways to get in touch."
 ---
 
-<h1 class="brand-name text-clip" style="line-height: 60px;">About the Author</h1>
+<h1 class="brand-name text-clip" style="line-height: 60px;">About the author</h1>
 
-## Who Am I❓
+## Who am I❓   {#我是谁❓}
 
-I am a web developer who has been deeply involved in web development for many years and has a wide range of hobbies. I love coding and enjoy researching all sorts of unusual things. I have been studying Ziwei Dou Shu for several years. I have no mentor and do not belong to any school of thought.
+I’m a slightly quirky, cat-loving web developer with many years of experience and a wide range of interests. I enjoy coding and exploring unusual ideas, and I have studied Zi Wei Dou Shu（紫微斗數） for several years. I have not studied under a particular teacher and do not belong to any school.
 
-## Where Am I❓
 
-I am currently based in a city where once you come, you can't leave — Chengdu, Sichuan, China. If there are like-minded individuals in the same location, we can meet for tea and exchange ideas. I am someone who loves making friends and hopes to be friends with people from all over the world.
+## Where am I❓   {#我在哪❓}
 
-## What Am I Doing❓
+I now live in Chengdu, Sichuan, China—a city so appealing that you may never want to leave. If you live nearby, we can meet for tea and exchange ideas. I enjoy making friends with people from all over the world.
 
-I used to be a full-stack developer, but now I mainly focus on front-end development.
+## What am I doing❓   {#我在干什么❓}
+
+I used to work across the full stack; these days, I focus mainly on front-end development.
 
 <div class="my-tech-stack">
 <a href="https://github.com/topics/javascript" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></a>
@@ -41,23 +42,23 @@ I used to be a full-stack developer, but now I mainly focus on front-end develop
 <a href="https://github.com/topics/json" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/8be26d91eb231fec0b8856359979ac09f27173fd/topics/json/json.png"></a>
 </div>
 
-## Why Open Source❓
+## Why open source❓   {#为什么开源❓}
 
-Many years ago, based on my experience in reading charts and accumulated knowledge, I developed a web application for Ziwei Dou Shu charting (because the ones available on the market were not very user-friendly 😝). As I gradually improved it for my own use, it evolved into a relatively stable version. After finding it very convenient to use, I decided to open source it, providing it for free to enthusiasts of Ziwei Dou Shu or professional practitioners in the field of fortune-telling. On one hand, it is to contribute to the dissemination of traditional culture, and on the other hand, it is a summary and consolidation of what I have learned.
-
+Years ago, drawing on my experience interpreting charts and the knowledge I had gathered, I built a small web app for Zi Wei Dou Shu（紫微斗數） charting because the tools available did not quite suit my workflow 😝. I gradually refined it through my own use until it became stable and convenient. I then decided to release it as open source, free for enthusiasts and professional practitioners alike. I hoped both to help share this traditional culture and to organize and consolidate what I had learned.
 
 <div style="line-height: 40px">
-<p> if you find it useful, please give me some encouragement, so I can have the motivation to keep going.</p>
+
+<p>Of course, if you find it useful, please give me some encouragement so that I have the motivation to keep updating.</p>
 <p  style="display:flex; align-items: center;gap: 10px;">
 <span>
-You can star my repo on GitHub ⭐️
+You can give my open-source project a star on GitHub ⭐️
 </span>
 <a href="https://github.com/SylarLong/iztro" target="_blank">
 <img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" /></a>
 </p>
 <p style="display:flex; align-items: center;gap: 10px;">
 <span>
-Buy me a coffee ☕️
+You can also buy me a cup of coffee
 </span>
 <a href="https://PayPal.Me/sylarlong" target="_blank"><img src="https://img.shields.io/badge/Paypal_Me-8A2BE2?logo=paypal&link=https%3A%2F%2Fwww.paypal.com%2Fsylarlong" alt="paypal me" /></a></p>
 <p>
@@ -66,15 +67,15 @@ Buy me a coffee ☕️
 </p>
 </div>
 
-## How to Contact Me❓
+## How to contact me❓   {#怎么联系我❓}
 
 <div style="display:flex; align-items: center;gap: 10px;">
 <span>
-If you have any questions about Ziwei Dou Shu or its integration, you can contact me
+Feel free to contact me with questions about Zi Wei Dou Shu（紫微斗數） or integrating the library into your application.
 </span>
 <a href="mailto:sylarlong@gmail.com" target="_blank"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </div>
 
-Or you can add me on WeChat
+You can also add me on WeChat.
 
  <img src="https://github.com/SylarLong/SylarLong/assets/6510425/a2af4876-7d26-4900-a0fc-f5a2030f6205" alt="WeChat" width="350" />

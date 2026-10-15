@@ -1,0 +1,5390 @@
+{
+  "reference": "Chinese source table cells; ancientBook pages excluded",
+  "locales": [
+    "en_US",
+    "ja_JP",
+    "ko_KR",
+    "vi_VN"
+  ],
+  "cells": [
+    {
+      "source": "名称",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Name",
+        "ja_JP": "名称",
+        "vi_VN": "Tên"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "链接",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Link",
+        "ja_JP": "リンク",
+        "vi_VN": "Liên kết"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "语言",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Language",
+        "ja_JP": "言語",
+        "vi_VN": "Ngôn ngữ"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "作者",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Author",
+        "ja_JP": "著者",
+        "vi_VN": "Tác giả"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "[昊色居士](https://github.com/x-haose)",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "[Haose Jushi](https://github.com/x-haose)",
+        "ja_JP": "[昊色居士](https://github.com/x-haose)",
+        "vi_VN": "[Hạo Sắc Cư Sĩ](https://github.com/x-haose)"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "参数",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Parameter",
+        "ja_JP": "パラメータ",
+        "vi_VN": "Tham số"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "类型",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Type",
+        "ja_JP": "型",
+        "vi_VN": "Kiểu"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "是否必填",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Required?",
+        "ja_JP": "必須",
+        "vi_VN": "Bắt buộc?"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "默认值",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Default value",
+        "ja_JP": "デフォルト値",
+        "vi_VN": "Giá trị mặc định"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "说明",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Description",
+        "ja_JP": "説明",
+        "vi_VN": "Mô tả"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "阳历日期【YYYY-M-D】",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Gregorian date【YYYY-M-D】",
+        "ja_JP": "グレゴリオ暦の日付【YYYY-M-D】",
+        "vi_VN": "Ngày Gregorian \\[YYYY-M-D\\]"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Birth-hour index [0–12], from early Zi hour (0) to late Zi hour (12)",
+        "ja_JP": "出生時辰のインデックス [0–12]。早子時 (0) から晩子時 (12) に対応します。",
+        "vi_VN": "Chỉ số giờ sinh [0–12], từ giờ Tý sớm (0) đến giờ Tý muộn (12)"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "性别【男/女】",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Gender【Male/Female】",
+        "ja_JP": "性別【男性/女性】",
+        "vi_VN": "Giới tính\\[Nam/Nữ\\]"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Whether to adjust leap months. If `true`, the first half is assigned to the preceding month and the second half to the following month.",
+        "ja_JP": "閏月を調整するかどうか。`true` の場合、閏月の前半を前月、後半を翌月として扱います。",
+        "vi_VN": "Có điều chỉnh tháng nhuận hay không. Nếu là `true`, nửa đầu tháng nhuận được tính vào tháng trước, nửa sau vào tháng tiếp theo."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`.",
+        "ko_KR": "반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다.",
+        "ja_JP": "戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。",
+        "vi_VN": "Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "农历日期【YYYY-M-D】，例如`2000年七月十七`则传入`2000-7-17`",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Lunar date [YYYY-M-D]. For `lunar year 2000, month 7, day 17`, pass `2000-7-17`.",
+        "ja_JP": "旧暦の日付 [YYYY-M-D]。`旧暦2000年7月17日`なら `2000-7-17` を渡します。",
+        "vi_VN": "Ngày âm lịch [YYYY-M-D]. Với `năm 2000 âm lịch, tháng 7, ngày 17`, truyền `2000-7-17`."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "是否闰月，当实际月份没有闰月时该参数不生效",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Whether the supplied lunar month is a leap month; ignored if that month has no leap counterpart.",
+        "ja_JP": "指定した旧暦の月が閏月かどうか。その月に閏月がない場合、この引数は無効です。",
+        "vi_VN": "Tháng âm lịch được nhập có phải tháng nhuận hay không; tham số không có tác dụng nếu tháng đó không có tháng nhuận tương ứng."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "阳历日期字符串或日期对象，若时间字符串或日期对象中包含了小时的信息，`timeIndex`可以省略",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Gregorian date string or date object. If the time string or date object contains hour information, `timeIndex` can be omitted",
+        "ja_JP": "グレゴリオ暦の日付文字列または日付オブジェクト。時刻の情報が含まれていれば、`timeIndex`は省略できます。",
+        "vi_VN": "Chuỗi ngày dương lịch hoặc đối tượng ngày. Nếu đã có thông tin về giờ, có thể bỏ qua `timeIndex`."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "时辰序号，若不传该参数则会尝试从`date`里获取小时信息转化为时辰序号",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Time-slot index. If omitted, the hour is read from `date` and converted to an index.",
+        "ja_JP": "時辰のインデックス。省略した場合は `date` の時刻から算出します。",
+        "vi_VN": "Chỉ số giờ theo hệ mười hai thời thần. Nếu bỏ qua, chương trình lấy giờ từ `date` để tính chỉ số."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "天干",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Heavenly Stem（天干）",
+        "ja_JP": "天干",
+        "vi_VN": "thiên can（天干）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "地支",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Earthly Branch（地支）",
+        "ja_JP": "地支",
+        "vi_VN": "địa chi（地支）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "限定是大限还是流年的流曜，其中大限流曜会在星曜前面加上`运`，流年流曜会在星曜前面加上`流`，`年解`比较特殊，只会出现在流年的流曜里",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Selects decadal or annual transit stars（流曜）. Decadal stars use a `decadal prefix`, annual stars an `annual prefix`. `considery(Y)`（年解） appears only among annual transit stars.",
+        "ja_JP": "大限または流年の流曜を指定します。大限の流曜には `運`、流年の流曜には `流` の接頭辞が付きます。`年の解` は流年の流曜にだけ現れます。",
+        "vi_VN": "Chọn lưu diệu（流曜） của đại hạn hoặc lưu niên. Sao đại hạn mang `tiền tố đại hạn`, sao lưu niên mang `tiền tố lưu niên`. `Niên Giải`（年解） chỉ có trong lưu diệu của lưu niên."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "属性",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Attribute",
+        "ja_JP": "能力値",
+        "vi_VN": "Thuộc tính",
+        "ko_KR": "속성"
+      },
+      "decision": "corrected",
+      "file": "learn/palace.md"
+    },
+    {
+      "source": "解释",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Meaning",
+        "ja_JP": "意味",
+        "vi_VN": "Ý nghĩa"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "星曜名字",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Star name（星曜名稱）",
+        "ja_JP": "星曜の名前",
+        "vi_VN": "Tên sao（星曜名稱）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "星曜类型",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Star type（星曜類型）",
+        "ja_JP": "星曜の種類",
+        "vi_VN": "Loại sao（星曜類型）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "作用范围",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Scope",
+        "ja_JP": "範囲",
+        "vi_VN": "Phạm vi"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "星曜亮度",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Star brightness",
+        "ja_JP": "星の明るさ",
+        "vi_VN": "Độ sáng của sao"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "四化",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "four transformations（四化）",
+        "ja_JP": "四化",
+        "vi_VN": "tứ hóa（四化）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "命宫索引",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "soul（命宮） index",
+        "ja_JP": "命宮 インデックス",
+        "vi_VN": "Chỉ số Mệnh（命宮）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "身宫索引",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "body（身宮） index",
+        "ja_JP": "身宮 インデックス",
+        "vi_VN": "Chỉ số Thân（身宮）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "命宫天干",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Heavenly Stem of the soul palace（命宮天干）",
+        "ja_JP": "命宮の天干",
+        "vi_VN": "Thiên can của cung Mệnh（命宮天干）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "命宫地支",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Earthly Branch of the soul palace（命宮地支）",
+        "ja_JP": "命宮の地支",
+        "vi_VN": "Địa chi của cung Mệnh（命宮地支）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "宫位名称",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Palace name（宮位名稱）",
+        "ja_JP": "宮の名称",
+        "vi_VN": "Tên cung（宮位名稱）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "是否身宫",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Whether this is the body palace（身宮）",
+        "ja_JP": "身宮かどうか",
+        "vi_VN": "Có phải cung Thân（身宮） hay không"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "是否来因宫",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Whether this is the origin palace（來因宮）",
+        "ja_JP": "来因宮かどうか",
+        "vi_VN": "Có phải cung Lai Nhân（來因宮） hay không"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "宫位天干",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Palace Heavenly Stem（宮位天干）",
+        "ja_JP": "宮の天干",
+        "vi_VN": "Thiên can của cung（宮位天干）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "宫位地支",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Palace Earthly Branch（宮位地支）",
+        "ja_JP": "宮の地支",
+        "vi_VN": "Địa chi của cung（宮位地支）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "主星",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "major stars（主星）",
+        "ja_JP": "主星",
+        "vi_VN": "chính tinh（主星）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "辅星",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "auxiliary stars（輔星）",
+        "ja_JP": "補助星",
+        "vi_VN": "phụ tinh（輔星）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "杂曜",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "miscellaneous stars（雜曜）",
+        "ja_JP": "雑曜",
+        "vi_VN": "tạp diệu（雜曜）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "长生 12 神",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Twelve growth-stage stars",
+        "ja_JP": "長生十二神",
+        "vi_VN": "Mười hai sao vòng Tràng Sinh（長生十二神）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "博士 12 神",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Twelve Doctor-cycle stars（博士十二神）",
+        "ja_JP": "博士十二神",
+        "vi_VN": "Mười hai sao vòng Bác Sĩ（博士十二神）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "流年将前 12 神",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Twelve yearly General-front stars",
+        "ja_JP": "流年将前十二神",
+        "vi_VN": "Mười hai sao Tướng Tiền của lưu niên（流年將前十二神）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "流年岁前 12 神",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Twelve yearly Year-front stars",
+        "ja_JP": "流年歳前十二神",
+        "vi_VN": "Mười hai sao Tuế Tiền của lưu niên（流年歲前十二神）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "本宫",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "target palace",
+        "ja_JP": "対象の宮",
+        "vi_VN": "cung đang xét"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "对宫",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "opposite palace",
+        "ja_JP": "対宮",
+        "vi_VN": "đối cung"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "财帛位",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Wealth position（財帛位）",
+        "ja_JP": "財帛の位置",
+        "vi_VN": "Vị trí Tài Bạch（財帛位）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "官禄位",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Career position（官祿位）",
+        "ja_JP": "官禄の位置",
+        "vi_VN": "Vị trí Quan Lộc（官祿位）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "所在宫位的索引",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Index of the corresponding palace",
+        "ja_JP": "対応する宮のインデックス",
+        "vi_VN": "Chỉ số của cung tương ứng"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "运限的名称",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Horoscope-period name（運限名稱）",
+        "ja_JP": "運限の名称",
+        "vi_VN": "Tên vận hạn（運限名稱）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "运限天干",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Horoscope-period Heavenly Stem（運限天干）",
+        "ja_JP": "運限の天干",
+        "vi_VN": "Thiên can của vận hạn（運限天干）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "运限地支",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Horoscope-period Earthly Branch（運限地支）",
+        "ja_JP": "運限の地支",
+        "vi_VN": "Địa chi của vận hạn（運限地支）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "运限的十二宫",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Twelve palaces of the horoscope period（運限十二宮）",
+        "ja_JP": "運限の十二宮",
+        "vi_VN": "Mười hai cung của vận hạn（運限十二宮）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "四化星",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "four transformation stars（四化星）",
+        "ja_JP": "四化星",
+        "vi_VN": "sao tứ hóa（四化星）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "流曜",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "transit stars（流曜）",
+        "ja_JP": "流曜",
+        "vi_VN": "lưu diệu（流曜）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "大限起止年龄 [`起始年龄`, `截止年龄`]",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Decadal-period starting and ending ages [`starting age`, `ending age`]",
+        "ja_JP": "大限の開始年齢と終了年齢 [`開始年齢`, `終了年齢`]",
+        "vi_VN": "Tuổi bắt đầu và kết thúc đại hạn [`tuổi bắt đầu`, `tuổi kết thúc`]"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "大限天干",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Decadal-period Heavenly Stem（大限天干）",
+        "ja_JP": "大限の天干",
+        "vi_VN": "Thiên can của đại hạn（大限天干）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "大限地支",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Decadal-period Earthly Branch（大限地支）",
+        "ja_JP": "大限の地支",
+        "vi_VN": "Địa chi của đại hạn（大限地支）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "大限所在的本命宫位",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Natal palace occupied by the decadal period（大限所在本命宮位）",
+        "ja_JP": "大限が位置する本命の宮",
+        "vi_VN": "Cung trên lá số bản mệnh nơi đại hạn tọa lạc（大限所在本命宮位）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "大限起止虚岁",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Decadal-period starting and ending nominal ages（虛歲）",
+        "ja_JP": "大限の開始・終了時の数え年",
+        "vi_VN": "Tuổi mụ（虛歲） bắt đầu và kết thúc đại hạn"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "大限起止年份",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Decadal-period starting and ending years",
+        "ja_JP": "大限の開始年と終了年",
+        "vi_VN": "Năm bắt đầu và kết thúc đại hạn"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "流年对应的虚岁",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Nominal age corresponding to the annual period（流年虛歲）",
+        "ja_JP": "流年に対応する数え年",
+        "vi_VN": "Tuổi mụ tương ứng với lưu niên（流年虛歲）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "流年年份",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Year of the annual period（流年年份）",
+        "ja_JP": "流年の年",
+        "vi_VN": "Năm của lưu niên（流年年份）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "农历月份，正月为 `1`",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Lunar month, the first month is `1`",
+        "ja_JP": "旧暦の月。正月を`1`とします。",
+        "vi_VN": "Tháng âm lịch, tháng đầu tiên là `1`"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "是否为闰月",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Is it a leap month?",
+        "ja_JP": "閏月ですか？",
+        "vi_VN": "Có phải là tháng nhuận không?"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "普通月份、闰月前半段或闰月后半段",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Ordinary month, first half of leap month or second half of leap month",
+        "ja_JP": "通常月、閏月前半または閏月後半",
+        "vi_VN": "Tháng thường, nửa đầu tháng nhuận hoặc nửa sau tháng nhuận"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "该项对应的农历日期范围",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "The corresponding lunar date range for this item",
+        "ja_JP": "この項目に対応する旧暦の日付範囲",
+        "vi_VN": "Phạm vi ngày âm lịch tương ứng cho mục này"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "农历日期",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Lunar-calendar date",
+        "ja_JP": "旧暦の日付",
+        "vi_VN": "Ngày âm lịch"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "阳历日期",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Gregorian date",
+        "ja_JP": "グレゴリオ暦の日付",
+        "vi_VN": "Ngày dương lịch"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "性别 <Badge type=\"warning\" text=\"^2.0.3\" />",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "gender <Badge type=\"warning\" text=\"^2.0.3\" />",
+        "ja_JP": "性別<Badge type=\"warning\" text=\"^2.0.3\" />",
+        "vi_VN": "giới tính <Badge type=\"warning\" text=\"^2.0.3\" />"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "干支纪年日期",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Date expressed using Heavenly Stems and Earthly Branches（干支）",
+        "ja_JP": "干支で表した日付",
+        "vi_VN": "Ngày được biểu thị bằng can chi（干支）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "原始日期数据，用于今后内部方法使用",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Raw date data for future use by internal methods",
+        "ja_JP": "内部メソッドで将来使用するための生の日付データ",
+        "vi_VN": "Dữ liệu ngày gốc để các phương thức nội bộ sử dụng về sau"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "时辰",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Traditional double-hour（時辰）",
+        "ja_JP": "時辰",
+        "vi_VN": "Giờ theo hệ mười hai thời thần（時辰）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "时辰对应的时间段",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Clock-time range corresponding to the traditional double-hour",
+        "ja_JP": "時辰に対応する時刻の範囲",
+        "vi_VN": "Khoảng thời gian tương ứng với giờ truyền thống"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "星座",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Western zodiac sign（星座）",
+        "ja_JP": "西洋占星術の星座",
+        "vi_VN": "Cung hoàng đạo phương Tây（星座）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "生肖",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Chinese zodiac animal（生肖）",
+        "ja_JP": "十二支の動物",
+        "vi_VN": "Con giáp（生肖）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "身宫地支",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Earthly Branch of the body palace（身宮地支）",
+        "ja_JP": "身宮の地支",
+        "vi_VN": "Địa chi của cung Thân（身宮地支）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "命主",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Soul ruler star（命主）",
+        "ja_JP": "命主星",
+        "vi_VN": "Sao Mệnh chủ（命主）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "身主",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Body ruler star（身主）",
+        "ja_JP": "身主星",
+        "vi_VN": "Sao Thân chủ（身主）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "五行局",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Five Elements Class（五行局）",
+        "ja_JP": "五行局",
+        "vi_VN": "Cục ngũ hành（五行局）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "十二宫数据",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Data for the twelve palaces（十二宮）",
+        "ja_JP": "十二宮のデータ",
+        "vi_VN": "Dữ liệu của mười hai cung（十二宮）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "值",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "value",
+        "ja_JP": "値",
+        "vi_VN": "giá trị"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "天盘，默认值",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Natal chart（天盤）, the default",
+        "ja_JP": "天盤。既定値。",
+        "vi_VN": "Thiên bàn（天盤）, giá trị mặc định"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "地盘，以身宫干支起五行局，并以身宫为命宫",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Earth chart（地盤）: derive the Five Elements Class from the body palace's stem and branch, and use that palace as the soul palace.",
+        "ja_JP": "地盤。身宮の干支から五行局を求め、身宮を命宮として扱います。",
+        "vi_VN": "Địa bàn（地盤）: xác định cục ngũ hành từ can chi của cung Thân, rồi lấy cung Thân làm cung Mệnh."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "人盘，以福德宫干支起五行局，并以福德宫为命宫",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Human chart（人盤）: derive the Five Elements Class from the spirit palace's stem and branch, and use that palace as the soul palace.",
+        "ja_JP": "人盤。福徳宮の干支から五行局を求め、福徳宮を命宮として扱います。",
+        "vi_VN": "Nhân bàn（人盤）: xác định cục ngũ hành từ can chi của cung Phúc Đức, rồi lấy cung Phúc Đức làm cung Mệnh."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "农历日期【YYYY-M-D】，例如 `2000年七月十七` 则传入 `2000-7-17`",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Lunar date [YYYY-M-D]. For `lunar year 2000, month 7, day 17`, pass `2000-7-17`.",
+        "ja_JP": "旧暦の日付 [YYYY-M-D]。`旧暦2000年7月17日`なら `2000-7-17` を渡します。",
+        "vi_VN": "Ngày âm lịch [YYYY-M-D]. Với `năm 2000 âm lịch, tháng 7, ngày 17`, truyền `2000-7-17`."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "日期类型",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "date type",
+        "ja_JP": "日付型",
+        "vi_VN": "loại ngày"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "出生日期，格式为 YYYY-M-D",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Date of birth in YYYY-M-D format",
+        "ja_JP": "YYYY-M-D形式の生年月日",
+        "vi_VN": "Ngày sinh ở định dạng YYYY-M-D"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "仅覆盖当前星盘的亮度、四化和时间分界配置（^2.6.2）",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Overrides the brightness, four transformations and time-boundary settings only for the chart being created (^2.6.2).",
+        "ja_JP": "今回作成する命盤に限り、輝度・四化・時刻の区切り設定を上書きします (^2.6.2)。",
+        "vi_VN": "Chỉ ghi đè cấu hình độ sáng, tứ hóa và mốc phân chia thời gian cho lá số đang được tạo (^2.6.2)."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "星盘类型；仅在 `config.algorithm` 为 `zhongzhou` 时用于选择天盘、地盘或人盘",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Chart type. Used to select the natal, earth or human chart only when `config.algorithm` is `zhongzhou`.",
+        "ja_JP": "命盤の種類。`config.algorithm` が `zhongzhou` のときだけ、天盤・地盤・人盤の選択に使います。",
+        "vi_VN": "Loại lá số. Chỉ dùng để chọn thiên bàn, địa bàn hoặc nhân bàn khi `config.algorithm` là `zhongzhou`."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "农历年份",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Lunar-calendar year",
+        "ja_JP": "旧暦の年",
+        "vi_VN": "năm âm lịch"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "要应用到当前星盘的插件函数",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Plugin function to apply to the current chart",
+        "ja_JP": "現在の命盤に適用するプラグイン関数",
+        "vi_VN": "Hàm trình cắm áp dụng cho lá số hiện tại"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "时辰索引【0~12】",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Time-slot index [0–12]",
+        "ja_JP": "時辰のインデックス [0–12]",
+        "vi_VN": "Chỉ số giờ truyền thống [0–12]"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "大限序号（`0` 为第一个大限）或本命宫位名称",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Decadal-period index (`0` is the first period), or a natal-palace name",
+        "ja_JP": "大限のインデックス（`0`が最初の大限）、または本命盤の宮名",
+        "vi_VN": "Chỉ số đại hạn (`0` là đại hạn đầu tiên), hoặc tên cung trên lá số bản mệnh"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "流年年份，可直接使用 `yearlyList()` 返回项的 `year`",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Annual-period year; use the `yearlyList()` return item’s `year` field directly.",
+        "ja_JP": "流年の年。`yearlyList()` が返す項目の `year` をそのまま使えます。",
+        "vi_VN": "Năm lưu niên; với mỗi mục do `yearlyList()` trả về, có thể dùng trực tiếp trường `year`."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "是否将闰月前后半月分开计算",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Whether to calculate the first and second halves of a leap month separately",
+        "ja_JP": "閏月の前半と後半を分けて計算するかどうか",
+        "vi_VN": "Có tính riêng nửa đầu và nửa sau tháng nhuận hay không"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "星曜名称",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Star name",
+        "ja_JP": "スター名",
+        "vi_VN": "Tên ngôi sao"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "宫位索引或者宫位名称",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Palace index or name",
+        "ja_JP": "宮のインデックスまたは名称",
+        "vi_VN": "Chỉ số hoặc tên cung"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "星曜名称数组",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Array of star names",
+        "ja_JP": "星曜名の配列",
+        "vi_VN": "Mảng tên sao"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "巳 <code>3</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "si（巳）<code>3</code>",
+        "ja_JP": "巳<code>3</code>",
+        "vi_VN": "Tỵ（巳）<code>3</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "午 <code>4</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "woo（午）<code>4</code>",
+        "ja_JP": "午<code>4</code>",
+        "vi_VN": "Ngọ（午）<code>4</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "未 <code>5</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "wei（未）<code>5</code>",
+        "ja_JP": "未<code>5</code>",
+        "vi_VN": "Mùi（未）<code>5</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "申 <code>6</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "shen（申）<code>6</code>",
+        "ja_JP": "申<code>6</code>",
+        "vi_VN": "Thân（申）<code>6</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "辰 <code>2</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "chen（辰）<code>2</code>",
+        "ja_JP": "辰<code>2</code>",
+        "vi_VN": "Thìn（辰）<code>2</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "中宫",
+      "kind": "html",
+      "targets": {
+        "en_US": "central palace",
+        "ja_JP": "中宮",
+        "vi_VN": "Trung cung",
+        "ko_KR": "중궁"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "酉 <code>7</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "you（酉）<code>7</code>",
+        "ja_JP": "酉<code>7</code>",
+        "vi_VN": "Dậu（酉）<code>7</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "卯 <code>1</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "mao（卯）<code>1</code>",
+        "ja_JP": "卯<code>1</code>",
+        "vi_VN": "Mão（卯）<code>1</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "戌 <code>8</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "xu（戌）<code>8</code>",
+        "ja_JP": "戌<code>8</code>",
+        "vi_VN": "Tuất（戌）<code>8</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "寅 <code>0</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "yin（寅）<code>0</code>",
+        "ja_JP": "寅<code>0</code>",
+        "vi_VN": "Dần（寅）<code>0</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "丑 <code>11</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "chou（丑）<code>11</code>",
+        "ja_JP": "丑<code>11</code>",
+        "vi_VN": "Sửu（丑）<code>11</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "子 <code>10</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "zi（子）<code>10</code>",
+        "ja_JP": "子<code>10</code>",
+        "vi_VN": "Tý（子）<code>10</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "亥 <code>9</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "hai（亥）<code>9</code>",
+        "ja_JP": "亥<code>9</code>",
+        "vi_VN": "Hợi（亥）<code>9</code>"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "配置项",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Configuration items",
+        "ja_JP": "設定項目",
+        "vi_VN": "Các mục cấu hình"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "可选值",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Allowed values",
+        "ja_JP": "指定できる値",
+        "vi_VN": "Các giá trị được phép"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "年干支分界；`normal` 以农历正月初一为界，`exact` 以立春为界",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Year stem-and-branch boundary: `normal` uses the first day of the first lunar month; `exact` uses the Start of Spring solar term.",
+        "ja_JP": "年の干支の区切り。`normal` は旧暦正月初一、`exact` は節気の立春を境とします。",
+        "vi_VN": "Mốc phân chia can chi năm: `normal` lấy mồng một tháng Giêng âm lịch, `exact` lấy tiết Lập Xuân."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "运限使用的年、月干支分界",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Year and month stem-and-branch boundaries used for horoscope periods",
+        "ja_JP": "運限で使う年と月の干支の区切り",
+        "vi_VN": "Mốc phân chia can chi năm và tháng dùng cho vận hạn"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "小限虚岁分界；`normal` 只看自然年，`birthday` 以农历生日为界",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Annual age-period nominal-age boundary: `normal` uses the calendar year; `birthday` uses the lunar birthday.",
+        "ja_JP": "小限の数え年の区切り。`normal` は暦年、`birthday` は旧暦の誕生日を境とします。",
+        "vi_VN": "Mốc tính tuổi mụ cho tiểu hạn: `normal` dựa vào năm theo lịch, `birthday` lấy sinh nhật âm lịch làm mốc."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "晚子时归属；`forward` 归入次日，`current` 归入当日",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Date assignment for the late Zi hour: `forward` assigns it to the following day; `current` to the same day.",
+        "ja_JP": "晩子時をどの日に属させるか。`forward` は翌日、`current` は当日として扱います。",
+        "vi_VN": "Ngày được gán cho giờ Tý muộn: `forward` tính sang ngày hôm sau, `current` tính trong ngày hiện tại."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "安星规则；`default` 为通行版本，`zhongzhou` 为中州派版本",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Star-placement rules: `default` uses the standard version; `zhongzhou` uses the Zhongzhou school version.",
+        "ja_JP": "星曜の配置規則。`default` は一般的な方式、`zhongzhou` は中州派の方式です。",
+        "vi_VN": "Quy tắc an sao: `default` dùng cách thông dụng, `zhongzhou` dùng cách của phái Trung Châu."
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "运限名称",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Horoscope-period name（運限名稱）",
+        "ja_JP": "運限の名称",
+        "vi_VN": "Tên vận hạn（運限名稱）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "流曜数组",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Array of transit stars（流曜）",
+        "ja_JP": "流曜の配列",
+        "vi_VN": "Mảng lưu diệu（流曜）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "星曜名称，可以包含主星、辅星、杂曜",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Star name, can include main star, auxiliary star, miscellaneous star",
+        "ja_JP": "スター名。主星、補助星、その他の星を含めることができます",
+        "vi_VN": "Tên sao, có thể bao gồm sao chính, sao phụ, sao linh tinh"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "四化名称【禄｜权｜科｜忌】",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Transformation name: A（祿）, B（權）, C（科） or D（忌）",
+        "ja_JP": "四化の名称：祿・權・科・忌",
+        "vi_VN": "Tên tứ hóa: Lộc（祿）, Quyền（權）, Khoa（科） hoặc Kỵ（忌）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "目标宫位索引或名称",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Target-palace index or name",
+        "ja_JP": "対象の宮のインデックスまたは名称",
+        "vi_VN": "Chỉ số hoặc tên cung đích",
+        "ko_KR": "대상 궁의 인덱스 또는 이름"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "四化（禄、权、科、忌）",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Four transformations: A（祿）, B（權）, C（科）, D（忌）",
+        "ja_JP": "四化（祿・權・科・忌）",
+        "vi_VN": "Tứ hóa: Lộc（祿）, Quyền（權）, Khoa（科）, Kỵ（忌）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "巳 <code>田宅</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "si（巳）<code>property</code>（田宅）",
+        "ja_JP": "巳<code>田宅</code>",
+        "vi_VN": "Tỵ（巳）<code>Điền Trạch</code>（田宅）",
+        "ko_KR": "사（巳）<code>전택</code>（田宅）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "午 <code>官禄</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "woo（午）<code>career</code>（官祿）",
+        "ja_JP": "午<code>官祿</code>",
+        "vi_VN": "Ngọ（午）<code>Quan Lộc</code>（官祿）",
+        "ko_KR": "오（午）<code>관록</code>（官祿）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "未 <code>仆役</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "wei（未）<code>friends</code>（僕役）",
+        "ja_JP": "未<code>僕役</code>",
+        "vi_VN": "Mùi（未）<code>Nô Bộc</code>（僕役）",
+        "ko_KR": "미（未）<code>노복</code>（僕役）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "申 <code>迁移</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "shen（申）<code>surface</code>（遷移）",
+        "ja_JP": "申<code>遷移</code>",
+        "vi_VN": "Thân（申）<code>Thiên Di</code>（遷移）",
+        "ko_KR": "신（申）<code>천이</code>（遷移）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "辰 <code>福德</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "chen（辰）<code>spirit</code>（福德）",
+        "ja_JP": "辰<code>福德</code>",
+        "vi_VN": "Thìn（辰）<code>Phúc Đức</code>（福德）",
+        "ko_KR": "진（辰）<code>복덕</code>（福德）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "酉 <code>疾厄</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "you（酉）<code>health</code>（疾厄）",
+        "ja_JP": "酉<code>疾厄</code>",
+        "vi_VN": "Dậu（酉）<code>Tật Ách</code>（疾厄）",
+        "ko_KR": "유（酉）<code>질액</code>（疾厄）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "卯 <code>父母</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "mao（卯）<code>parents</code>（父母）",
+        "ja_JP": "卯<code>父母</code>",
+        "vi_VN": "Mão（卯）<code>Phụ Mẫu</code>（父母）",
+        "ko_KR": "묘（卯）<code>부모</code>（父母）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "戌 <code>财帛</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "xu（戌）<code>wealth</code>（財帛）",
+        "ja_JP": "戌<code>財帛</code>",
+        "vi_VN": "Tuất（戌）<code>Tài Bạch</code>（財帛）",
+        "ko_KR": "술（戌）<code>재백</code>（財帛）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "寅 <code>命宫</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "yin（寅）<code>soul</code>（命宮）",
+        "ja_JP": "寅<code>命宮</code>",
+        "vi_VN": "Dần（寅）<code>Mệnh</code>（命宮）",
+        "ko_KR": "인（寅）<code>명궁</code>（命宮）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "丑 <code>兄弟</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "chou（丑）<code>siblings</code>（兄弟）",
+        "ja_JP": "丑<code>兄弟</code>",
+        "vi_VN": "Sửu（丑）<code>Huynh Đệ</code>（兄弟）",
+        "ko_KR": "축（丑）<code>형제</code>（兄弟）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "子 <code>夫妻</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "zi（子）<code>spouse</code>（夫妻）",
+        "ja_JP": "子<code>夫妻</code>",
+        "vi_VN": "Tý（子）<code>Phu Thê</code>（夫妻）",
+        "ko_KR": "자（子）<code>부처</code>（夫妻）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "亥 <code>子女</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "hai（亥）<code>children</code>（子女）",
+        "ja_JP": "亥<code>子女</code>",
+        "vi_VN": "Hợi（亥）<code>Tử Nữ</code>（子女）",
+        "ko_KR": "해（亥）<code>자녀</code>（子女）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "需要判断的星曜亮度",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Star brightness to check",
+        "ja_JP": "判定する星曜の輝度",
+        "vi_VN": "Độ sáng của sao cần kiểm tra"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "四化【禄｜权｜科｜忌】",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Four transformations: A（祿）, B（權）, C（科）, D（忌）",
+        "ja_JP": "四化（祿・權・科・忌）",
+        "vi_VN": "Tứ hóa: Lộc（祿）, Quyền（權）, Khoa（科）, Kỵ（忌）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "中国大陆夏令时执行时间",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Daylight Saving Time in Mainland China",
+        "ja_JP": "中国本土の夏時間",
+        "vi_VN": "Thời gian áp dụng giờ mùa hè tại Trung Quốc đại lục"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "1986年5月4日至9月14日（1986年因是实行夏令时的第一年，从5月4日开始到9月14日结束）",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "May 4 to September 14, 1986 (because 1986 was the first year of daylight saving time, it started on May 4 and ended on September 14)",
+        "ja_JP": "1986年5月4日～9月14日（1986年は夏時間開始年のため、5月4日開始、9月14日終了）",
+        "vi_VN": "Từ ngày 4 tháng 5 đến ngày 14 tháng 9 năm 1986 (năm đầu áp dụng giờ mùa hè, nên bắt đầu từ ngày 4 tháng 5)"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "1987年4月12日至9月13日",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "April 12 to September 13, 1987",
+        "ja_JP": "1987年4月12日から9月13日まで",
+        "vi_VN": "12 tháng 4 đến 13 tháng 9 năm 1987"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "1988年4月10日至9月11日",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "April 10 to September 11, 1988",
+        "ja_JP": "1988年4月10日から9月11日まで",
+        "vi_VN": "10 tháng 4 đến 11 tháng 9 năm 1988"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "1989年4月16日至9月17日",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "April 16 to September 17, 1989",
+        "ja_JP": "1989年4月16日から9月17日まで",
+        "vi_VN": "16 tháng 4 đến 17 tháng 9 năm 1989"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "1990年4月15日至9月16日",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "April 15 to September 16, 1990",
+        "ja_JP": "1990年4月15日から9月16日まで",
+        "vi_VN": "15 tháng 4 đến 16 tháng 9 năm 1990"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "1991年4月14日至9月15日",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "April 14 to September 15, 1991",
+        "ja_JP": "1991年4月14日から9月15日まで",
+        "vi_VN": "14 tháng 4 đến 15 tháng 9 năm 1991"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "五行",
+      "kind": "html",
+      "targets": {
+        "en_US": "five elements（五行）",
+        "ja_JP": "五行",
+        "vi_VN": "ngũ hành（五行）",
+        "ko_KR": "오행（五行）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "阴阳",
+      "kind": "html",
+      "targets": {
+        "en_US": "Yin and Yang（陰陽）",
+        "ja_JP": "陰陽",
+        "vi_VN": "Âm dương（陰陽）",
+        "ko_KR": "음양（陰陽）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "🪵 木",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "🪵 Wood",
+        "ja_JP": "🪵 木",
+        "vi_VN": "🪵 Mộc"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "🌕 阳",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "🌕 Yang",
+        "ja_JP": "🌕 陽",
+        "vi_VN": "🌕 Dương"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "🌑 阴",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "🌑 Yin",
+        "ja_JP": "🌑 陰",
+        "vi_VN": "🌑 Âm"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "🔥 火",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "🔥 Fire",
+        "ja_JP": "🔥 火",
+        "vi_VN": "🔥 Hỏa"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "⛰️ 土",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "⛰️ Earth",
+        "ja_JP": "⛰️ 土",
+        "vi_VN": "⛰️ Thổ"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "🪙 金",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "🪙 Metal",
+        "ja_JP": "🪙 金",
+        "vi_VN": "🪙 Kim"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "🌊 水",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "🌊 Water",
+        "ja_JP": "🌊 水",
+        "vi_VN": "🌊 Thủy"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "时间段",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Time range",
+        "ja_JP": "時間帯",
+        "vi_VN": "Khung giờ"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "早子时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "early Zi hour",
+        "ja_JP": "早子時",
+        "vi_VN": "giờ Tý sớm"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "丑时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "chou hour",
+        "ja_JP": "丑時",
+        "vi_VN": "giờ Sửu"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "寅时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "yin hour",
+        "ja_JP": "寅時",
+        "vi_VN": "giờ Dần"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "卯时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "mao hour",
+        "ja_JP": "卯時",
+        "vi_VN": "giờ Mão"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "辰时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "chen hour",
+        "ja_JP": "辰時",
+        "vi_VN": "giờ Thìn"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "巳时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "si hour",
+        "ja_JP": "巳時",
+        "vi_VN": "giờ Tỵ"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "午时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "woo hour",
+        "ja_JP": "午時",
+        "vi_VN": "giờ Ngọ"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "未时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "wei hour",
+        "ja_JP": "未時",
+        "vi_VN": "giờ Mùi"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "申时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "shen hour",
+        "ja_JP": "申時",
+        "vi_VN": "giờ Thân"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "酉时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "you hour",
+        "ja_JP": "酉時",
+        "vi_VN": "giờ Dậu"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "戌时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "xu hour",
+        "ja_JP": "戌時",
+        "vi_VN": "giờ Tuất"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "亥时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "hai hour",
+        "ja_JP": "亥時",
+        "vi_VN": "giờ Hợi"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "晚子时",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "late Zi hour",
+        "ja_JP": "晩子時",
+        "vi_VN": "giờ Tý muộn"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "阴 🌑",
+      "kind": "html",
+      "targets": {
+        "en_US": "Yin 🌑",
+        "ja_JP": "陰 🌑",
+        "vi_VN": "Âm 🌑",
+        "ko_KR": "음 🌑"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "己土 ⛰️",
+      "kind": "html",
+      "targets": {
+        "en_US": "ji Earth（己土） ⛰️",
+        "ja_JP": "己土 ⛰️",
+        "vi_VN": "Kỷ Thổ（己土） ⛰️",
+        "ko_KR": "기토（己土） ⛰️"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "斗分",
+      "kind": "html",
+      "targets": {
+        "en_US": "Star group",
+        "ja_JP": "星系の区分",
+        "vi_VN": "Phân nhóm sao",
+        "ko_KR": "성계 구분"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "中天星系",
+      "kind": "html",
+      "targets": {
+        "en_US": "Central star system",
+        "ja_JP": "中天星系",
+        "vi_VN": "Hệ sao Trung Thiên",
+        "ko_KR": "중천 성계（中天星系）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "化气",
+      "kind": "html",
+      "targets": {
+        "en_US": "Symbolic nature",
+        "ja_JP": "象徴的な性質",
+        "vi_VN": "Tính chất biểu trưng",
+        "ko_KR": "상징적 성질"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "尊贵",
+      "kind": "html",
+      "targets": {
+        "en_US": "noble",
+        "ja_JP": "高貴さ",
+        "vi_VN": "cao quý",
+        "ko_KR": "존귀함"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "五行色",
+      "kind": "html",
+      "targets": {
+        "en_US": "Element color",
+        "ja_JP": "五行の色",
+        "vi_VN": "Màu ngũ hành",
+        "ko_KR": "오행의 색"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "黄色",
+      "kind": "html",
+      "targets": {
+        "en_US": "yellow",
+        "ja_JP": "黄色",
+        "vi_VN": "màu vàng",
+        "ko_KR": "노란색"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "能量色",
+      "kind": "html",
+      "targets": {
+        "en_US": "Energy color",
+        "ja_JP": "エネルギーの色",
+        "vi_VN": "Màu năng lượng",
+        "ko_KR": "에너지 색"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "紫光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Purple light",
+        "ja_JP": "紫色の光",
+        "vi_VN": "Ánh sáng tím",
+        "ko_KR": "보라색 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "主司",
+      "kind": "html",
+      "targets": {
+        "en_US": "Domain",
+        "ja_JP": "主な管轄",
+        "vi_VN": "Lĩnh vực chủ quản",
+        "ko_KR": "관장 영역"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "官禄主",
+      "kind": "html",
+      "targets": {
+        "en_US": "Ruler of career（官祿）",
+        "ja_JP": "官祿を司る",
+        "vi_VN": "Chủ về Quan Lộc（官祿）",
+        "ko_KR": "관록（官祿）을 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "职务",
+      "kind": "html",
+      "targets": {
+        "en_US": "Role",
+        "ja_JP": "役割",
+        "vi_VN": "Vai trò",
+        "ko_KR": "역할"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "众星枢纽，长五行，孕万物",
+      "kind": "html",
+      "targets": {
+        "en_US": "Pivot of the stars, governing the five elements and nurturing all things",
+        "ja_JP": "星々の要となり、五行を統べ、万物を育む",
+        "vi_VN": "Trung tâm của các sao, chủ quản ngũ hành và nuôi dưỡng vạn vật",
+        "ko_KR": "별들의 중심으로, 오행을 관장하고 만물을 길러낸다"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "别号",
+      "kind": "html",
+      "targets": {
+        "en_US": "Alias",
+        "ja_JP": "別名",
+        "vi_VN": "Tên gọi khác",
+        "ko_KR": "별칭"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "帝王星，老板星，俸禄星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Emperor star, employer star, official-salary star",
+        "ja_JP": "帝王の星、経営者の星、俸禄の星",
+        "vi_VN": "Sao đế vương, sao người lãnh đạo, sao bổng lộc",
+        "ko_KR": "제왕의 별, 경영자의 별, 봉록의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "乙木 🪵",
+      "kind": "html",
+      "targets": {
+        "en_US": "yi Wood（乙木） 🪵",
+        "ja_JP": "乙木 🪵",
+        "vi_VN": "Ất Mộc（乙木） 🪵",
+        "ko_KR": "을목（乙木） 🪵"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "南斗第三星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Third star of the Southern Dipper（南斗第三星）",
+        "ja_JP": "南斗の第三星",
+        "vi_VN": "Sao thứ ba của Nam Đẩu（南斗第三星）",
+        "ko_KR": "남두성의 세 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "善",
+      "kind": "html",
+      "targets": {
+        "en_US": "goodness（善）",
+        "ja_JP": "善",
+        "vi_VN": "thiện（善）",
+        "ko_KR": "선（善）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "青色",
+      "kind": "html",
+      "targets": {
+        "en_US": "cyan",
+        "ja_JP": "シアン",
+        "vi_VN": "lục lam",
+        "ko_KR": "청록색"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "蓝光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Blue light",
+        "ja_JP": "青い光",
+        "vi_VN": "Ánh sáng xanh lam",
+        "ko_KR": "푸른 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "兄弟主",
+      "kind": "html",
+      "targets": {
+        "en_US": "ruler of the siblings palace（兄弟主）",
+        "ja_JP": "兄弟宮を司る星",
+        "vi_VN": "sao chủ cung Huynh Đệ（兄弟主）",
+        "ko_KR": "형제궁의 주관자（兄弟主）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "掌管智慧，精神",
+      "kind": "html",
+      "targets": {
+        "en_US": "Controls wisdom and spirit",
+        "ja_JP": "知恵と精神を司る",
+        "vi_VN": "Kiểm soát trí tuệ và tinh thần",
+        "ko_KR": "지혜와 정신을 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "驿马星，宗教星，定轴星，智慧星，益寿星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Travel star, religion star, stabilizing-axis star, wisdom star, longevity star",
+        "ja_JP": "駅馬の星、宗教の星、中心軸を定める星、知恵の星、長寿の星",
+        "vi_VN": "Sao dịch mã, sao tôn giáo, sao giữ trục ổn định, sao trí tuệ, sao tăng tuổi thọ",
+        "ko_KR": "역마의 별, 종교의 별, 중심축을 잡는 별, 지혜의 별, 수명을 늘리는 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "阳 🌕",
+      "kind": "html",
+      "targets": {
+        "en_US": "Yang 🌕",
+        "ja_JP": "陽 🌕",
+        "vi_VN": "Dương 🌕",
+        "ko_KR": "양 🌕"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "丙火 🔥",
+      "kind": "html",
+      "targets": {
+        "en_US": "bing Fire（丙火） 🔥",
+        "ja_JP": "丙火 🔥",
+        "vi_VN": "Bính Hỏa（丙火） 🔥",
+        "ko_KR": "병화（丙火） 🔥"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "权贵",
+      "kind": "html",
+      "targets": {
+        "en_US": "power and status（權貴）",
+        "ja_JP": "権勢",
+        "vi_VN": "quyền thế và địa vị（權貴）",
+        "ko_KR": "권세와 지위（權貴）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "红色",
+      "kind": "html",
+      "targets": {
+        "en_US": "red",
+        "ja_JP": "赤",
+        "vi_VN": "màu đỏ",
+        "ko_KR": "빨간색"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "橘红光",
+      "kind": "html",
+      "targets": {
+        "en_US": "orange light",
+        "ja_JP": "オレンジ色の光",
+        "vi_VN": "ánh sáng màu cam",
+        "ko_KR": "주황색 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "执掌光明，博爱，付出",
+      "kind": "html",
+      "targets": {
+        "en_US": "Governs light, universal love, and giving",
+        "ja_JP": "光、博愛、他者への献身を司る",
+        "vi_VN": "Chủ quản ánh sáng, lòng bác ái và sự cho đi",
+        "ko_KR": "밝음, 박애, 베풂을 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "政治星，名誉星，驿马星，法律星，父星，夫星，子星，公关星，老板星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Politics star, reputation star, travel star, law star, father star, husband star, son star, public-relations star, employer star",
+        "ja_JP": "政治の星、名誉の星、駅馬の星、法律の星、父の星、夫の星、息子の星、対外関係の星、経営者の星",
+        "vi_VN": "Sao chính trị, sao danh dự, sao dịch mã, sao pháp luật, sao cha, sao chồng, sao con trai, sao quan hệ công chúng, sao người lãnh đạo",
+        "ko_KR": "정치의 별, 명예의 별, 역마의 별, 법률의 별, 아버지의 별, 남편의 별, 아들의 별, 대외 관계의 별, 경영자의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "辛金 🪙",
+      "kind": "html",
+      "targets": {
+        "en_US": "xin Metal（辛金） 🪙",
+        "ja_JP": "辛金 🪙",
+        "vi_VN": "Tân Kim（辛金） 🪙",
+        "ko_KR": "신금（辛金） 🪙"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "北斗第六星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Sixth star of the Northern Dipper",
+        "ja_JP": "北斗七星の六番目の星",
+        "vi_VN": "Ngôi sao thứ sáu của Bắc Đẩu",
+        "ko_KR": "북두칠성의 여섯 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "财富",
+      "kind": "html",
+      "targets": {
+        "en_US": "wealth",
+        "ja_JP": "富",
+        "vi_VN": "sự giàu có",
+        "ko_KR": "부"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "白色",
+      "kind": "html",
+      "targets": {
+        "en_US": "white",
+        "ja_JP": "白",
+        "vi_VN": "trắng",
+        "ko_KR": "흰색"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "乳白光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Opalescent light",
+        "ja_JP": "乳白色の光",
+        "vi_VN": "Ánh sáng trắng đục",
+        "ko_KR": "유백광"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "财帛主",
+      "kind": "html",
+      "targets": {
+        "en_US": "Ruler of wealth（財帛）",
+        "ja_JP": "財帛を司る",
+        "vi_VN": "Chủ về Tài Bạch（財帛）",
+        "ko_KR": "재백（財帛）을 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "执掌财富，勇武之将",
+      "kind": "html",
+      "targets": {
+        "en_US": "In charge of wealth, a brave general",
+        "ja_JP": "富を司る勇敢な将軍",
+        "vi_VN": "Đảm trách sự giàu có, một vị tướng dũng cảm",
+        "ko_KR": "부를 다스리는 용감한 장군"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "正财星，寡宿星，战争星，将星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Earned-income star, solitude star, war star, general star",
+        "ja_JP": "正財の星、孤独の星、戦争の星、将星",
+        "vi_VN": "Sao chính tài, sao cô độc, sao chiến tranh, sao tướng quân",
+        "ko_KR": "정당한 수입을 상징하는 별, 고독의 별, 전쟁의 별, 장군의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "壬水 🌊",
+      "kind": "html",
+      "targets": {
+        "en_US": "ren Water（壬水） 🌊",
+        "ja_JP": "壬水 🌊",
+        "vi_VN": "Nhâm Thủy（壬水） 🌊",
+        "ko_KR": "임수（壬水） 🌊"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "南斗第四星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Fourth star of the Southern Dipper（南斗第四星）",
+        "ja_JP": "南斗の第四星",
+        "vi_VN": "Sao thứ tư của Nam Đẩu（南斗第四星）",
+        "ko_KR": "남두성의 네 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "温和",
+      "kind": "html",
+      "targets": {
+        "en_US": "gentleness（溫和）",
+        "ja_JP": "温和",
+        "vi_VN": "ôn hòa（溫和）",
+        "ko_KR": "온화함（溫和）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "黑色",
+      "kind": "html",
+      "targets": {
+        "en_US": "black",
+        "ja_JP": "黒",
+        "vi_VN": "màu đen",
+        "ko_KR": "검정색"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "白光",
+      "kind": "html",
+      "targets": {
+        "en_US": "white light",
+        "ja_JP": "白い光",
+        "vi_VN": "ánh sáng trắng",
+        "ko_KR": "백색광"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "福德主",
+      "kind": "html",
+      "targets": {
+        "en_US": "Ruler of spirit（福德）",
+        "ja_JP": "福德を司る",
+        "vi_VN": "Chủ về Phúc Đức（福德）",
+        "ko_KR": "복덕（福德）을 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "享受",
+      "kind": "html",
+      "targets": {
+        "en_US": "Enjoyment",
+        "ja_JP": "享受・楽しみ",
+        "vi_VN": "Sự hưởng thụ",
+        "ko_KR": "즐거움과 향유"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "福星，寿星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Star of good fortune, star of longevity",
+        "ja_JP": "福の星、長寿の星",
+        "vi_VN": "Sao phúc, sao trường thọ",
+        "ko_KR": "복을 주는 별, 장수의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "丁火 🔥",
+      "kind": "html",
+      "targets": {
+        "en_US": "ding Fire（丁火） 🔥",
+        "ja_JP": "丁火 🔥",
+        "vi_VN": "Đinh Hỏa（丁火） 🔥",
+        "ko_KR": "정화（丁火） 🔥"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "北斗第五星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Fifth star of the Northern Dipper（北斗第五星）",
+        "ja_JP": "北斗の第五星",
+        "vi_VN": "Sao thứ năm của Bắc Đẩu（北斗第五星）",
+        "ko_KR": "북두의 다섯 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "囚",
+      "kind": "html",
+      "targets": {
+        "en_US": "confinement（囚）",
+        "ja_JP": "囚",
+        "vi_VN": "giam hãm（囚）",
+        "ko_KR": "구속（囚）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "赤光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Red light",
+        "ja_JP": "赤い光",
+        "vi_VN": "Ánh sáng đỏ",
+        "ko_KR": "붉은 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "官禄主(行政)",
+      "kind": "html",
+      "targets": {
+        "en_US": "Ruler of the career palace, especially administration（官祿主）",
+        "ja_JP": "官禄を司る（行政）",
+        "vi_VN": "Chủ về Quan Lộc（官祿主）, đặc biệt là hành chính",
+        "ko_KR": "관록궁（官祿宮）을 관장 — 행정"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "邪恶",
+      "kind": "html",
+      "targets": {
+        "en_US": "evil",
+        "ja_JP": "邪悪さ",
+        "vi_VN": "tà ác",
+        "ko_KR": "악"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "次桃花星（纠缠性），次财星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Secondary romance star (entangling relationships), secondary wealth star",
+        "ja_JP": "副次的な恋愛の星（関係がもつれやすい）、副次的な財の星",
+        "vi_VN": "Sao đào hoa thứ cấp (dễ dây dưa), sao tài lộc thứ cấp",
+        "ko_KR": "부차적인 연애 인연의 별(얽히기 쉬운 성질), 부차적인 재물의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "戊土 ⛰️",
+      "kind": "html",
+      "targets": {
+        "en_US": "wu Earth（戊土） ⛰️",
+        "ja_JP": "戊土 ⛰️",
+        "vi_VN": "Mậu Thổ（戊土） ⛰️",
+        "ko_KR": "무토（戊土） ⛰️"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "南斗主星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Principal star of the Southern Dipper（南斗主星）",
+        "ja_JP": "南斗の主星",
+        "vi_VN": "Chủ tinh của Nam Đẩu（南斗主星）",
+        "ko_KR": "남두의 주성"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "库",
+      "kind": "html",
+      "targets": {
+        "en_US": "Storehouse",
+        "ja_JP": "蔵・蓄え",
+        "vi_VN": "Kho tàng",
+        "ko_KR": "창고"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "黄绿光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Yellow-green light",
+        "ja_JP": "黄緑色の光",
+        "vi_VN": "Ánh sáng vàng xanh",
+        "ko_KR": "황록색 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "田宅主、财帛主",
+      "kind": "html",
+      "targets": {
+        "en_US": "Governs the property and wealth palaces（田宅主、財帛主）",
+        "ja_JP": "田宅宮と財帛宮を司る",
+        "vi_VN": "Chủ về cung Điền Trạch và Tài Bạch（田宅主、財帛主）",
+        "ko_KR": "전택궁（田宅宮）과 재백궁（財帛宮）을 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "贤能，包容，慈悲",
+      "kind": "html",
+      "targets": {
+        "en_US": "virtuous, tolerant, compassionate",
+        "ja_JP": "賢明さと有能さ、包容力、慈悲",
+        "vi_VN": "đức độ, bao dung, nhân hậu",
+        "ko_KR": "덕과 능력, 포용, 자비"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "令星，库星，藏星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Command star, treasury star, storage star",
+        "ja_JP": "命令を司る星、財庫の星、蓄えの星",
+        "vi_VN": "Sao chỉ huy, sao tài khố, sao tích trữ",
+        "ko_KR": "명령의 별, 창고의 별, 저장의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "癸水 🌊",
+      "kind": "html",
+      "targets": {
+        "en_US": "gui Water（癸水） 🌊",
+        "ja_JP": "癸水 🌊",
+        "vi_VN": "Quý Thủy（癸水） 🌊",
+        "ko_KR": "계수（癸水） 🌊"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "富",
+      "kind": "html",
+      "targets": {
+        "en_US": "wealth",
+        "ja_JP": "裕福さ",
+        "vi_VN": "giàu có",
+        "ko_KR": "부유함"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "绿白光",
+      "kind": "html",
+      "targets": {
+        "en_US": "green white light",
+        "ja_JP": "緑白色光",
+        "vi_VN": "ánh sáng trắng xanh",
+        "ko_KR": "녹백색 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "田宅主",
+      "kind": "html",
+      "targets": {
+        "en_US": "Ruler of property（田宅）",
+        "ja_JP": "田宅を司る",
+        "vi_VN": "Chủ về Điền Trạch（田宅）",
+        "ko_KR": "전택（田宅）을 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "干净，美丽",
+      "kind": "html",
+      "targets": {
+        "en_US": "clean and beautiful",
+        "ja_JP": "清潔で美しい",
+        "vi_VN": "sạch và đẹp",
+        "ko_KR": "청결함과 아름다움"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "母星，妻星，女星，审美星，艺术星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Mother star, wife star, female star, aesthetics star, art star",
+        "ja_JP": "母を表す星、妻を表す星、女性を表す星、美意識の星、芸術の星",
+        "vi_VN": "Sao mẹ, sao vợ, sao nữ giới, sao thẩm mỹ, sao nghệ thuật",
+        "ko_KR": "어머니의 별, 아내의 별, 여성의 별, 미적 감각의 별, 예술의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "甲木(气为水 🌊) 🪵",
+      "kind": "html",
+      "targets": {
+        "en_US": "jia Wood（甲木）(symbolic element: Water 🌊) 🪵",
+        "ja_JP": "甲木(気は水 🌊) 🪵",
+        "vi_VN": "Giáp Mộc（甲木）(khí thuộc Thủy 🌊) 🪵",
+        "ko_KR": "갑목（甲木）(기는 수 🌊) 🪵"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "北斗第一星",
+      "kind": "html",
+      "targets": {
+        "en_US": "First star of the Northern Dipper（北斗第一星）",
+        "ja_JP": "北斗の第一星",
+        "vi_VN": "Sao thứ nhất của Bắc Đẩu（北斗第一星）",
+        "ko_KR": "북두의 첫 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "桃花",
+      "kind": "html",
+      "targets": {
+        "en_US": "romantic attraction（桃花）",
+        "ja_JP": "恋愛の縁",
+        "vi_VN": "đào hoa（桃花）",
+        "ko_KR": "연애 인연（桃花）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "赤蓝光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Red-blue light",
+        "ja_JP": "赤青色の光",
+        "vi_VN": "Ánh sáng đỏ lam",
+        "ko_KR": "적청색 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "子女主",
+      "kind": "html",
+      "targets": {
+        "en_US": "Ruler of children（子女）",
+        "ja_JP": "子女を司る",
+        "vi_VN": "Chủ về Tử Nữ（子女）",
+        "ko_KR": "자녀（子女）를 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "欲望，物质",
+      "kind": "html",
+      "targets": {
+        "en_US": "Desire, material interests",
+        "ja_JP": "欲望、物質",
+        "vi_VN": "ham muốn, vật chất",
+        "ko_KR": "욕망, 물질"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "桃花星，交际星，标准星，才艺星，赌星（闹财星），武术星，宗教星，幻想星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Romance star, social star, standards star, performance star, gambling star (volatile wealth), martial-arts star, religious star, fantasy star",
+        "ja_JP": "恋愛の星、社交の星、基準の星、才芸の星、賭博の星（財の乱れ）、武術の星、宗教の星、空想の星",
+        "vi_VN": "Sao đào hoa, sao giao tiếp, sao chuẩn mực, sao tài nghệ, sao cờ bạc (tài lộc biến động), sao võ thuật, sao tôn giáo, sao tưởng tượng",
+        "ko_KR": "연애 인연의 별, 사교의 별, 기준의 별, 재능과 기예의 별, 도박의 별(재물을 둘러싼 소란), 무술의 별, 종교의 별, 환상의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "癸水 🌊 | 己土 ⛰️ (藏金 🪙、木 🪵) ",
+      "kind": "html",
+      "targets": {
+        "en_US": "gui Water（癸水） 🌊 | ji Earth（己土） ⛰️ (containing Metal 🪙, Wood 🪵) ",
+        "ja_JP": "癸水 🌊 | 己土 ⛰️ (金を含む 🪙・木 🪵) ",
+        "vi_VN": "Quý Thủy（癸水） 🌊 | Kỷ Thổ（己土） ⛰️ (chứa Kim 🪙, Mộc 🪵) ",
+        "ko_KR": "계수（癸水） 🌊 | 기토（己土） ⛰️ (금 🪙과 목 🪵을 품음)"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "北斗第二星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Second star of the Northern Dipper（北斗第二星）",
+        "ja_JP": "北斗の第二星",
+        "vi_VN": "Sao thứ hai của Bắc Đẩu（北斗第二星）",
+        "ko_KR": "북두의 두 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "暗",
+      "kind": "html",
+      "targets": {
+        "en_US": "darkness（暗）",
+        "ja_JP": "暗",
+        "vi_VN": "ám（暗）",
+        "ko_KR": "어둠（暗）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "褐色",
+      "kind": "html",
+      "targets": {
+        "en_US": "brown",
+        "ja_JP": "茶色",
+        "vi_VN": "nâu",
+        "ko_KR": "갈색"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "灰光（影子）",
+      "kind": "html",
+      "targets": {
+        "en_US": "Gray light (shadow)",
+        "ja_JP": "灰色の光（影）",
+        "vi_VN": "Ánh sáng xám (bóng)",
+        "ko_KR": "회색빛(그림자)"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "疾厄主",
+      "kind": "html",
+      "targets": {
+        "en_US": "Ruler of health（疾厄）",
+        "ja_JP": "疾厄を司る",
+        "vi_VN": "Chủ về Tật Ách（疾厄）",
+        "ko_KR": "질액（疾厄）을 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "是非，疑惑，挑剔，口舌",
+      "kind": "html",
+      "targets": {
+        "en_US": "Disputes, suspicion, fault-finding, verbal conflict",
+        "ja_JP": "争い、疑念、粗探し、口論",
+        "vi_VN": "Thị phi, nghi ngờ, xét nét, khẩu thiệt",
+        "ko_KR": "시비, 의심, 까다로움, 말다툼"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "口舌星，代沟星，中药星，挑剔星，谣言星，法律星，宗教星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Verbal-conflict star, generation-gap star, Chinese-medicine star, fault-finding star, rumor star, law star, religion star",
+        "ja_JP": "口論の星、世代間の隔たりの星、漢方の星、粗探しの星、噂の星、法律の星、宗教の星",
+        "vi_VN": "Sao khẩu thiệt, sao khoảng cách thế hệ, sao Đông y, sao xét nét, sao tin đồn, sao pháp luật, sao tôn giáo",
+        "ko_KR": "말다툼의 별, 세대 차이의 별, 한약의 별, 까다로움의 별, 소문의 별, 법률의 별, 종교의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "南斗第五星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Fifth star of the Southern Dipper（南斗第五星）",
+        "ja_JP": "南斗の第五星",
+        "vi_VN": "Sao thứ năm của Nam Đẩu（南斗第五星）",
+        "ko_KR": "남두성의 다섯 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "印",
+      "kind": "html",
+      "targets": {
+        "en_US": "Official seal（印）",
+        "ja_JP": "印章",
+        "vi_VN": "Ấn tín（印）",
+        "ko_KR": "인장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "辅佐，慈爱，服务，文凭",
+      "kind": "html",
+      "targets": {
+        "en_US": "Assistance, kindness, service, diploma",
+        "ja_JP": "援助、親切、サービス、卒業証書",
+        "vi_VN": "Hỗ trợ, lòng tốt, dịch vụ, bằng cấp",
+        "ko_KR": "보좌, 자애, 봉사, 학력 증서"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "印星，文凭星，马屁星，寿星（加禄存），辅星，衣食星，细姨星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Official-seal star, qualifications star, flattery star, longevity star (with money（祿存）), assistance star, livelihood star, concubine star",
+        "ja_JP": "印の星、資格の星、お世辞の星、長寿の星（祿存との組み合わせ）、補佐の星、衣食の星、側室の星",
+        "vi_VN": "Sao ấn tín, sao văn bằng, sao tâng bốc, sao trường thọ (khi gặp Lộc Tồn（祿存）), sao hỗ trợ, sao cơm áo, sao thứ thiếp",
+        "ko_KR": "인장의 별, 학력 증서의 별, 아첨의 별, 장수의 별(록존（祿存）과 함께 있을 때), 보좌의 별, 의식주의 별, 첩의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "南斗第二星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Second star of the Southern Dipper（南斗第二星）",
+        "ja_JP": "南斗の第二星",
+        "vi_VN": "Sao thứ hai của Nam Đẩu（南斗第二星）",
+        "ko_KR": "남두성의 두 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "荫",
+      "kind": "html",
+      "targets": {
+        "en_US": "Protection",
+        "ja_JP": "庇護",
+        "vi_VN": "Che chở",
+        "ko_KR": "보호（蔭）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "正黄光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Pure yellow light",
+        "ja_JP": "純粋な黄色の光",
+        "vi_VN": "Ánh sáng vàng thuần",
+        "ko_KR": "선명한 노란 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "父母主",
+      "kind": "html",
+      "targets": {
+        "en_US": "Ruler of parents（父母）",
+        "ja_JP": "父母を司る",
+        "vi_VN": "Chủ về Phụ Mẫu（父母）",
+        "ko_KR": "부모（父母）를 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "统帅、庇荫",
+      "kind": "html",
+      "targets": {
+        "en_US": "Leadership, protection",
+        "ja_JP": "統率、庇護",
+        "vi_VN": "Thống lĩnh, che chở",
+        "ko_KR": "통솔과 보호"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "荫星，长辈星，状元星（阳梁昌禄格），医药星，赌气星，吹牛星，寿星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Protective star, elder star, examination-success star (sun–sage–scholar–money pattern), medicine star, defiance star, boastful star, longevity star",
+        "ja_JP": "庇護の星、年長者の星、試験で首席を取る星（陽梁昌禄格）、医薬の星、意地の星、ほら吹きの星、長寿の星",
+        "vi_VN": "Sao che chở, sao trưởng bối, sao đỗ đầu (cách Dương Lương Xương Lộc（陽梁昌祿格）), sao y dược, sao hờn dỗi, sao khoác lác, sao trường thọ",
+        "ko_KR": "보호의 별, 윗사람의 별, 장원 급제의 별(양량창록격（陽梁昌祿格）), 의약의 별, 오기로 버티는 별, 허풍의 별, 장수의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "南斗第六星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Sixth star of the Southern Dipper（南斗第六星）",
+        "ja_JP": "南斗の第六星",
+        "vi_VN": "Sao thứ sáu của Nam Đẩu（南斗第六星）",
+        "ko_KR": "남두성의 여섯 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "肃杀",
+      "kind": "html",
+      "targets": {
+        "en_US": "Stern and destructive",
+        "ja_JP": "厳しく殺伐とした性質",
+        "vi_VN": "Nghiêm khắc, mang tính sát phạt",
+        "ko_KR": "엄하고 냉혹함"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "黑光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Black radiance",
+        "ja_JP": "黒い光",
+        "vi_VN": "Ánh sáng đen",
+        "ko_KR": "검은 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "迁移主",
+      "kind": "html",
+      "targets": {
+        "en_US": "Ruler of surface（遷移）",
+        "ja_JP": "遷移を司る",
+        "vi_VN": "Chủ về Thiên Di（遷移）",
+        "ko_KR": "천이（遷移）를 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "威猛，肃杀，变动",
+      "kind": "html",
+      "targets": {
+        "en_US": "Formidable, destructive, changeable",
+        "ja_JP": "威猛、殺伐、変動",
+        "vi_VN": "Uy mãnh, sát phạt, biến động",
+        "ko_KR": "위엄과 용맹, 냉혹함, 변화"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "死亡星，变动星，酷星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Death star, change star, aloof star",
+        "ja_JP": "死を象徴する星、変動の星、クールな星",
+        "vi_VN": "Sao tượng trưng cái chết, sao biến động, sao lạnh lùng",
+        "ko_KR": "죽음의 별, 변화의 별, 냉철한 인상의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "北斗第七星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Seventh star of the Northern Dipper",
+        "ja_JP": "北斗七星の七番目の星",
+        "vi_VN": "Ngôi sao thứ bảy của Bắc Đẩu",
+        "ko_KR": "북두칠성의 일곱 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "耗",
+      "kind": "html",
+      "targets": {
+        "en_US": "depletion（耗）",
+        "ja_JP": "耗",
+        "vi_VN": "hao（耗）",
+        "ko_KR": "소모（耗）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "破损消耗",
+      "kind": "html",
+      "targets": {
+        "en_US": "Damage and depletion",
+        "ja_JP": "損壊と消耗",
+        "vi_VN": "Hư hại và hao tổn",
+        "ko_KR": "파손과 소모"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "消耗星，垃圾星，远洋星，流氓星，先锋星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Depletion star, waste star, ocean-voyage star, unruly star, pioneer star",
+        "ja_JP": "消耗の星、不要物の星、遠洋の星、無頼の星、先駆者の星",
+        "vi_VN": "Sao hao tổn, sao phế thải, sao viễn dương, sao ngang tàng, sao tiên phong",
+        "ko_KR": "소모의 별, 쓰레기의 별, 원양 항해의 별, 무뢰한의 별, 선봉의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "助力",
+      "kind": "html",
+      "targets": {
+        "en_US": "Support",
+        "ja_JP": "助力",
+        "vi_VN": "Sự hỗ trợ",
+        "ko_KR": "지원"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "黄光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Yellow light",
+        "ja_JP": "黄色の光",
+        "vi_VN": "Ánh sáng vàng",
+        "ko_KR": "노란 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "行善令",
+      "kind": "html",
+      "targets": {
+        "en_US": "do good deeds",
+        "ja_JP": "善行をする",
+        "vi_VN": "làm việc tốt",
+        "ko_KR": "선을 행하도록 이끎"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "贵人星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Benefactor star（貴人星）",
+        "ja_JP": "助けとなる人を表す星",
+        "vi_VN": "Sao quý nhân（貴人星）",
+        "ko_KR": "도움을 주는 귀인의 별（貴人星）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "米黄光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Beige light",
+        "ja_JP": "ベージュ色の光",
+        "vi_VN": "Ánh sáng màu be",
+        "ko_KR": "베이지 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "司制令",
+      "kind": "html",
+      "targets": {
+        "en_US": "Authority to establish rules",
+        "ja_JP": "制度や規則を司る",
+        "vi_VN": "Chủ quản chế độ và quy tắc",
+        "ko_KR": "제도와 명령을 관장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "南斗助星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Supporting star of the Southern Dipper（南斗助星）",
+        "ja_JP": "南斗の補助星",
+        "vi_VN": "Sao phụ trợ của Nam Đẩu（南斗助星）",
+        "ko_KR": "남두의 보조성"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "贵人",
+      "kind": "html",
+      "targets": {
+        "en_US": "Benefactor（貴人）",
+        "ja_JP": "助けとなる人",
+        "vi_VN": "Quý nhân（貴人）",
+        "ko_KR": "도움을 주는 사람（貴人）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "助力，成就",
+      "kind": "html",
+      "targets": {
+        "en_US": "Support and achievement",
+        "ja_JP": "助力と達成",
+        "vi_VN": "Sự hỗ trợ và thành tựu",
+        "ko_KR": "도움, 성취"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "天乙贵人。文星，才星，科甲星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Tianyi benefactor（天乙貴人）; scholarship star, talent star, examination-success star",
+        "ja_JP": "天乙貴人。文の星、才能の星、科挙合格の星",
+        "vi_VN": "Thiên Ất Quý Nhân（天乙貴人）; sao văn học, sao tài năng, sao khoa cử",
+        "ko_KR": "천을귀인（天乙貴人）. 학문의 별, 재능의 별, 과거 급제의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "玉堂贵人。细姨星，手术星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Jade Hall benefactor; concubine star, surgery star",
+        "ja_JP": "玉堂貴人。側室の星、手術の星",
+        "vi_VN": "Ngọc Đường Quý Nhân（玉堂貴人）; sao thứ thiếp, sao phẫu thuật",
+        "ko_KR": "옥당귀인（玉堂貴人）. 첩의 별, 수술의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "庚金 🪙",
+      "kind": "html",
+      "targets": {
+        "en_US": "geng Metal（庚金） 🪙",
+        "ja_JP": "庚金 🪙",
+        "vi_VN": "Canh Kim（庚金） 🪙",
+        "ko_KR": "경금（庚金） 🪙"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "南斗之星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Star of the Southern Dipper（南斗之星）",
+        "ja_JP": "南斗に属する星",
+        "vi_VN": "Sao thuộc Nam Đẩu（南斗之星）",
+        "ko_KR": "남두에 속한 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "文贵",
+      "kind": "html",
+      "targets": {
+        "en_US": "Scholarly distinction（文貴）",
+        "ja_JP": "学問による栄達",
+        "vi_VN": "Văn quý（文貴）",
+        "ko_KR": "학문을 통한 명예（文貴）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "青白光",
+      "kind": "html",
+      "targets": {
+        "en_US": "blue-white light",
+        "ja_JP": "青白い光",
+        "vi_VN": "ánh sáng trắng xanh",
+        "ko_KR": "청백색 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "正途功名，科甲",
+      "kind": "html",
+      "targets": {
+        "en_US": "Achievement through formal qualifications and examinations",
+        "ja_JP": "正規の道による功名、科挙",
+        "vi_VN": "Công danh theo con đường chính quy, khoa cử",
+        "ko_KR": "정규 과거 시험을 통한 출세와 급제"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "科甲星，文书星，风流星，桃花星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Examination-success star, documents star, amorous star, romance star",
+        "ja_JP": "科挙の星、文書の星、風流の星、恋愛の星",
+        "vi_VN": "Sao khoa cử, sao văn thư, sao phong lưu, sao đào hoa",
+        "ko_KR": "과거 급제의 별, 문서의 별, 풍류의 별, 연애 인연의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "北斗第四星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Fourth star of the Northern Dipper（北斗第四星）",
+        "ja_JP": "北斗の第四星",
+        "vi_VN": "Sao thứ tư của Bắc Đẩu（北斗第四星）",
+        "ko_KR": "북두의 네 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "文华",
+      "kind": "html",
+      "targets": {
+        "en_US": "Literary and artistic brilliance（文華）",
+        "ja_JP": "文芸の華やかさ",
+        "vi_VN": "Văn hoa（文華）",
+        "ko_KR": "문학과 예술의 재능（文華）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "异途功名，优雅，口才，才华",
+      "kind": "html",
+      "targets": {
+        "en_US": "Achievement through alternative paths, elegance, eloquence, talent",
+        "ja_JP": "別の道による功名、優雅さ、弁舌、才能",
+        "vi_VN": "Công danh theo con đường khác, thanh nhã, tài ăn nói, tài hoa",
+        "ko_KR": "정규 과거 시험 이외의 길을 통한 출세, 우아함, 말솜씨, 재능"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "八卦星，才艺星，偏房星，才华星，艺术星，桃花星，浪漫星，细姨星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Gossip star, performance star, secondary-partner star, talent star, art star, romance star, romantic star, concubine star",
+        "ja_JP": "噂好きの星、才芸の星、側室の星、才能の星、芸術の星、恋愛の星、ロマンスの星、妾の星",
+        "vi_VN": "Sao chuyện phiếm, sao tài nghệ, sao phối ngẫu thứ, sao tài hoa, sao nghệ thuật, sao đào hoa, sao lãng mạn, sao thứ thiếp",
+        "ko_KR": "소문의 별, 기예의 별, 첩의 별, 재능의 별, 예술의 별, 연애 인연의 별, 낭만의 별, 첩의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "28星宿",
+      "kind": "html",
+      "targets": {
+        "en_US": "Twenty-eight lunar mansions（二十八星宿）",
+        "ja_JP": "二十八宿",
+        "vi_VN": "Nhị thập bát tú（二十八星宿）",
+        "ko_KR": "이십팔수（二十八宿）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "空亡之气",
+      "kind": "html",
+      "targets": {
+        "en_US": "Energy of emptiness（空亡）",
+        "ja_JP": "空亡の気",
+        "vi_VN": "Khí của Không Vong（空亡）",
+        "ko_KR": "공망의 기운（空亡之氣）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "破财星，中断星，归零星，宗教星，幻想星，创意星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Financial-loss star, interruption star, reset star, religious star, fantasy star, creativity star",
+        "ja_JP": "財を失う星、中断の星、ゼロに戻る星、宗教の星、空想の星、創造の星",
+        "vi_VN": "Sao hao tài, sao gián đoạn, sao trở về không, sao tôn giáo, sao tưởng tượng, sao sáng tạo",
+        "ko_KR": "재물 손실의 별, 중단의 별, 원점으로 돌아가는 별, 종교의 별, 환상의 별, 창의성의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "劫煞之气",
+      "kind": "html",
+      "targets": {
+        "en_US": "Disruptive energy（劫煞）",
+        "ja_JP": "劫煞の気",
+        "vi_VN": "Khí của Kiếp Sát（劫煞）",
+        "ko_KR": "겁살의 기운（劫煞之氣）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "破财星，谣言星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Financial-loss star, rumor star",
+        "ja_JP": "財を失う星、噂の星",
+        "vi_VN": "Sao hao tài, sao tin đồn",
+        "ko_KR": "재물 손실의 별, 소문의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "南斗浮星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Floating star of the Southern Dipper（南斗浮星）",
+        "ja_JP": "南斗浮星",
+        "vi_VN": "Phù tinh của Nam Đẩu（南斗浮星）",
+        "ko_KR": "남두의 부성（南斗浮星）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "暴烈之气",
+      "kind": "html",
+      "targets": {
+        "en_US": "Fierce, explosive energy",
+        "ja_JP": "激しい気性",
+        "vi_VN": "Khí chất dữ dội, bộc phát",
+        "ko_KR": "격렬한 기운"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "暴躁破坏",
+      "kind": "html",
+      "targets": {
+        "en_US": "Volatile temper and destructiveness",
+        "ja_JP": "激しい気性、破壊性",
+        "vi_VN": "Tính nóng nảy và xu hướng phá hoại",
+        "ko_KR": "격한 성미와 파괴"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "冲动星",
+      "kind": "html",
+      "targets": {
+        "en_US": "impulsive star",
+        "ja_JP": "衝動的な星",
+        "vi_VN": "ngôi sao bốc đồng",
+        "ko_KR": "충동의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "刚烈之气",
+      "kind": "html",
+      "targets": {
+        "en_US": "Firm, intense energy",
+        "ja_JP": "剛直で激しい気性",
+        "vi_VN": "Khí chất cứng cỏi, mãnh liệt",
+        "ko_KR": "굳세고 격렬한 기운"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "暗红光",
+      "kind": "html",
+      "targets": {
+        "en_US": "dark red light",
+        "ja_JP": "暗赤色の光",
+        "vi_VN": "ánh sáng đỏ sẫm",
+        "ko_KR": "어두운 붉은 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "刚强惊吓",
+      "kind": "html",
+      "targets": {
+        "en_US": "Forceful and startling",
+        "ja_JP": "剛強さ、驚かせる性質",
+        "vi_VN": "Cứng rắn, gây kinh sợ",
+        "ko_KR": "강경함과 놀라게 함"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "闷骚星，顽石星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Reserved but passionate star, unyielding star",
+        "ja_JP": "内に情熱を秘める星、頑固な星",
+        "vi_VN": "Sao kín đáo nhưng nhiều đam mê, sao cứng đầu",
+        "ko_KR": "겉은 조용하지만 속은 열정적인 별, 완고한 돌 같은 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "北斗浮星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Floating star of the Northern Dipper（北斗浮星）",
+        "ja_JP": "北斗浮星",
+        "vi_VN": "Phù tinh của Bắc Đẩu（北斗浮星）",
+        "ko_KR": "북두의 부성（北斗浮星）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "是非，残忍",
+      "kind": "html",
+      "targets": {
+        "en_US": "Disputes, cruelty",
+        "ja_JP": "争い、残忍さ",
+        "vi_VN": "Thị phi, tàn nhẫn",
+        "ko_KR": "시비와 잔인함"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "是非星，纠缠星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Dispute star, entanglement star",
+        "ja_JP": "争いの星、しつこく関わる星",
+        "vi_VN": "Sao thị phi, sao dây dưa",
+        "ko_KR": "시비의 별, 얽힘의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "庚金 🪙 | 丙火 🔥",
+      "kind": "html",
+      "targets": {
+        "en_US": "geng Metal（庚金） 🪙 | bing Fire（丙火） 🔥",
+        "ja_JP": "庚金 🪙 | 丙火 🔥",
+        "vi_VN": "Canh Kim（庚金） 🪙 | Bính Hỏa（丙火） 🔥",
+        "ko_KR": "경금（庚金） 🪙 | 병화（丙火） 🔥"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "刑",
+      "kind": "html",
+      "targets": {
+        "en_US": "punishment",
+        "ja_JP": "刑",
+        "vi_VN": "Hình",
+        "ko_KR": "형벌（刑）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "红白光",
+      "kind": "html",
+      "targets": {
+        "en_US": "red and white light",
+        "ja_JP": "赤と白の光",
+        "vi_VN": "ánh sáng đỏ và trắng",
+        "ko_KR": "빨간색과 흰색 빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "粗暴，残忍",
+      "kind": "html",
+      "targets": {
+        "en_US": "rough, cruel",
+        "ja_JP": "粗暴さ、残忍さ",
+        "vi_VN": "thô bạo, tàn nhẫn",
+        "ko_KR": "거침과 잔인함"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "加工星，叛逆星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Processing Star, Rebellious Star",
+        "ja_JP": "処理の星、反逆の星",
+        "vi_VN": "Sao gia công, sao phản nghịch",
+        "ko_KR": "가공의 별, 반항의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "驿马",
+      "kind": "html",
+      "targets": {
+        "en_US": "Travel and movement（驛馬）",
+        "ja_JP": "駅馬（移動）",
+        "vi_VN": "Dịch mã（驛馬）",
+        "ko_KR": "역마（驛馬）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "变动，变迁",
+      "kind": "html",
+      "targets": {
+        "en_US": "Movement and transition",
+        "ja_JP": "変動、移り変わり",
+        "vi_VN": "Biến động, chuyển dịch",
+        "ko_KR": "변화와 이동"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "驿马星，动星，财星，司禄之星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Travel star, movement star, wealth star, earnings star",
+        "ja_JP": "駅馬の星、移動の星、財の星、祿を司る星",
+        "vi_VN": "Sao dịch mã, sao chuyển động, sao tài lộc, sao chủ quản bổng lộc",
+        "ko_KR": "역마의 별, 움직임의 별, 재물의 별, 봉록을 관장하는 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "北斗第三星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Third star of the Northern Dipper（北斗第三星）",
+        "ja_JP": "北斗の第三星",
+        "vi_VN": "Sao thứ ba của Bắc Đẩu（北斗第三星）",
+        "ko_KR": "북두의 세 번째 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "绿光",
+      "kind": "html",
+      "targets": {
+        "en_US": "Green light",
+        "ja_JP": "緑色の光",
+        "vi_VN": "Ánh sáng xanh lục",
+        "ko_KR": "초록빛"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "人寿，贵爵",
+      "kind": "html",
+      "targets": {
+        "en_US": "Longevity and high rank",
+        "ja_JP": "長寿、高い爵位",
+        "vi_VN": "Trường thọ, tước vị cao",
+        "ko_KR": "수명과 높은 작위"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "财星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Wealth star",
+        "ja_JP": "財の星",
+        "vi_VN": "Sao tài lộc",
+        "ko_KR": "재물의 별"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "土 ⛰️",
+      "kind": "html",
+      "targets": {
+        "en_US": "Earth ⛰️",
+        "ja_JP": "土 ⛰️",
+        "vi_VN": "Thổ ⛰️",
+        "ko_KR": "토 ⛰️"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "意象",
+      "kind": "html",
+      "targets": {
+        "en_US": "Symbolic associations",
+        "ja_JP": "象意",
+        "vi_VN": "Ý tượng",
+        "ko_KR": "상징적 의미"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "开心、忙碌、增加、包容、多",
+      "kind": "html",
+      "targets": {
+        "en_US": "Joy, busyness, increase, acceptance, abundance",
+        "ja_JP": "喜び、忙しさ、増加、包容、多さ",
+        "vi_VN": "Niềm vui, bận rộn, gia tăng, bao dung, nhiều",
+        "ko_KR": "기쁨, 바쁨, 증가, 포용, 많음"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "木 🪵",
+      "kind": "html",
+      "targets": {
+        "en_US": "Wood 🪵",
+        "ja_JP": "木 🪵",
+        "vi_VN": "Mộc 🪵",
+        "ko_KR": "목 🪵"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "占有、责任、执行、权利、大",
+      "kind": "html",
+      "targets": {
+        "en_US": "Possession, responsibility, execution, rights, greatness",
+        "ja_JP": "所有、責任、実行、権利、偉大さ",
+        "vi_VN": "Sở hữu, trách nhiệm, thực thi, quyền lợi, sự vĩ đại"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "水 🌊",
+      "kind": "html",
+      "targets": {
+        "en_US": "Water 🌊",
+        "ja_JP": "水 🌊",
+        "vi_VN": "Thủy 🌊",
+        "ko_KR": "수 🌊"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "随和、面子、贵人、名声、适中",
+      "kind": "html",
+      "targets": {
+        "en_US": "Agreeableness, social standing, benefactors, reputation, moderation",
+        "ja_JP": "穏やかさ、面目、助けとなる人、名声、適度",
+        "vi_VN": "Hòa nhã, thể diện, quý nhân, danh tiếng, vừa phải",
+        "ko_KR": "원만함, 체면, 도움을 주는 사람, 명성, 적당함"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "纠结、关注、在乎、麻烦、少",
+      "kind": "html",
+      "targets": {
+        "en_US": "Inner conflict, attention, emotional concern, trouble, scarcity",
+        "ja_JP": "葛藤、注目、気にかけること、厄介さ、少なさ",
+        "vi_VN": "Giằng co trong lòng, chú ý, bận tâm, rắc rối, ít",
+        "ko_KR": "갈등과 고민, 관심, 신경 씀, 번거로움, 적음"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "初始值",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Initial value",
+        "ja_JP": "初期値",
+        "vi_VN": "Giá trị ban đầu",
+        "ko_KR": "초기값"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "力量",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Strength",
+        "ja_JP": "筋力",
+        "vi_VN": "Sức mạnh",
+        "ko_KR": "힘"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "敏捷",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Agility",
+        "ja_JP": "敏捷性",
+        "vi_VN": "Nhanh nhẹn",
+        "ko_KR": "민첩"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "智力",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Intellect",
+        "ja_JP": "知力",
+        "vi_VN": "Trí lực",
+        "ko_KR": "지능"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "巳 <code>暗合申</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "si（巳）<code>hidden partner: shen</code>（暗合申）",
+        "ja_JP": "巳<code>申と暗合</code>",
+        "vi_VN": "Tỵ（巳）<code>ám hợp với Thân</code>（暗合申）",
+        "ko_KR": "사（巳）<code>신과 암합</code>（暗合申）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "午 <code>暗合未</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "woo（午）<code>hidden partner: wei</code>（暗合未）",
+        "ja_JP": "午<code>未と暗合</code>",
+        "vi_VN": "Ngọ（午）<code>ám hợp với Mùi</code>（暗合未）",
+        "ko_KR": "오（午）<code>미와 암합</code>（暗合未）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "未 <code>暗合午</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "wei（未）<code>hidden partner: woo</code>（暗合午）",
+        "ja_JP": "未<code>午と暗合</code>",
+        "vi_VN": "Mùi（未）<code>ám hợp với Ngọ</code>（暗合午）",
+        "ko_KR": "미（未）<code>오와 암합</code>（暗合午）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "申 <code>暗合巳</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "shen（申）<code>hidden partner: si</code>（暗合巳）",
+        "ja_JP": "申<code>巳と暗合</code>",
+        "vi_VN": "Thân（申）<code>ám hợp với Tỵ</code>（暗合巳）",
+        "ko_KR": "신（申）<code>사와 암합</code>（暗合巳）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "辰 <code>暗合酉</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "chen（辰）<code>hidden partner: you</code>（暗合酉）",
+        "ja_JP": "辰<code>酉と暗合</code>",
+        "vi_VN": "Thìn（辰）<code>ám hợp với Dậu</code>（暗合酉）",
+        "ko_KR": "진（辰）<code>유와 암합</code>（暗合酉）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "酉 <code>暗合辰</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "you（酉）<code>hidden partner: chen</code>（暗合辰）",
+        "ja_JP": "酉<code>辰と暗合</code>",
+        "vi_VN": "Dậu（酉）<code>ám hợp với Thìn</code>（暗合辰）",
+        "ko_KR": "유（酉）<code>진과 암합</code>（暗合辰）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "卯 <code>暗合戌</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "mao（卯）<code>hidden partner: xu</code>（暗合戌）",
+        "ja_JP": "卯<code>戌と暗合</code>",
+        "vi_VN": "Mão（卯）<code>ám hợp với Tuất</code>（暗合戌）",
+        "ko_KR": "묘（卯）<code>술과 암합</code>（暗合戌）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "戌 <code>暗合卯</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "xu（戌）<code>hidden partner: mao</code>（暗合卯）",
+        "ja_JP": "戌<code>卯と暗合</code>",
+        "vi_VN": "Tuất（戌）<code>ám hợp với Mão</code>（暗合卯）",
+        "ko_KR": "술（戌）<code>묘와 암합</code>（暗合卯）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "寅 <code>暗合亥</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "yin（寅）<code>hidden partner: hai</code>（暗合亥）",
+        "ja_JP": "寅<code>亥と暗合</code>",
+        "vi_VN": "Dần（寅）<code>ám hợp với Hợi</code>（暗合亥）",
+        "ko_KR": "인（寅）<code>해와 암합</code>（暗合亥）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "丑 <code>暗合子</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "chou（丑）<code>hidden partner: zi</code>（暗合子）",
+        "ja_JP": "丑<code>子と暗合</code>",
+        "vi_VN": "Sửu（丑）<code>ám hợp với Tý</code>（暗合子）",
+        "ko_KR": "축（丑）<code>자와 암합</code>（暗合子）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "子 <code>暗合丑</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "zi（子）<code>hidden partner: chou</code>（暗合丑）",
+        "ja_JP": "子<code>丑と暗合</code>",
+        "vi_VN": "Tý（子）<code>ám hợp với Sửu</code>（暗合丑）",
+        "ko_KR": "자（子）<code>축과 암합</code>（暗合丑）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "亥 <code>暗合寅</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "hai（亥）<code>hidden partner: yin</code>（暗合寅）",
+        "ja_JP": "亥<code>寅と暗合</code>",
+        "vi_VN": "Hợi（亥）<code>ám hợp với Dần</code>（暗合寅）",
+        "ko_KR": "해（亥）<code>인과 암합</code>（暗合寅）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "巳 <code>四生地</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "si（巳）<code>four growth positions</code>（四生地）",
+        "ja_JP": "巳<code>四生地</code>",
+        "vi_VN": "Tỵ（巳）<code>tứ sinh địa</code>（四生地）",
+        "ko_KR": "사（巳）<code>사생지</code>（四生地）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "申 <code>四生地</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "shen（申）<code>four growth positions</code>（四生地）",
+        "ja_JP": "申<code>四生地</code>",
+        "vi_VN": "Thân（申）<code>tứ sinh địa</code>（四生地）",
+        "ko_KR": "신（申）<code>사생지</code>（四生地）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "寅 <code>四生地</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "yin（寅）<code>four growth positions</code>（四生地）",
+        "ja_JP": "寅<code>四生地</code>",
+        "vi_VN": "Dần（寅）<code>tứ sinh địa</code>（四生地）",
+        "ko_KR": "인（寅）<code>사생지</code>（四生地）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "亥 <code>四生地</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "hai（亥）<code>four growth positions</code>（四生地）",
+        "ja_JP": "亥<code>四生地</code>",
+        "vi_VN": "Hợi（亥）<code>tứ sinh địa</code>（四生地）",
+        "ko_KR": "해（亥）<code>사생지</code>（四生地）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "午 <code>四旺地</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "woo（午）<code>four thriving positions</code>（四旺地）",
+        "ja_JP": "午<code>四旺地</code>",
+        "vi_VN": "Ngọ（午）<code>tứ vượng địa</code>（四旺地）",
+        "ko_KR": "오（午）<code>사왕지</code>（四旺地）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "酉 <code>四旺地</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "you（酉）<code>four thriving positions</code>（四旺地）",
+        "ja_JP": "酉<code>四旺地</code>",
+        "vi_VN": "Dậu（酉）<code>tứ vượng địa</code>（四旺地）",
+        "ko_KR": "유（酉）<code>사왕지</code>（四旺地）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "卯 <code>四旺地</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "mao（卯）<code>four thriving positions</code>（四旺地）",
+        "ja_JP": "卯<code>四旺地</code>",
+        "vi_VN": "Mão（卯）<code>tứ vượng địa</code>（四旺地）",
+        "ko_KR": "묘（卯）<code>사왕지</code>（四旺地）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "子 <code>四旺地</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "zi（子）<code>four thriving positions</code>（四旺地）",
+        "ja_JP": "子<code>四旺地</code>",
+        "vi_VN": "Tý（子）<code>tứ vượng địa</code>（四旺地）",
+        "ko_KR": "자（子）<code>사왕지</code>（四旺地）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "未 <code>四墓库</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "wei（未）<code>four storage positions</code>（四墓庫）",
+        "ja_JP": "未<code>四墓庫</code>",
+        "vi_VN": "Mùi（未）<code>tứ mộ khố</code>（四墓庫）",
+        "ko_KR": "미（未）<code>사묘고</code>（四墓庫）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "辰 <code>四墓库</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "chen（辰）<code>four storage positions</code>（四墓庫）",
+        "ja_JP": "辰<code>四墓庫</code>",
+        "vi_VN": "Thìn（辰）<code>tứ mộ khố</code>（四墓庫）",
+        "ko_KR": "진（辰）<code>사묘고</code>（四墓庫）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "戌 <code>四墓库</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "xu（戌）<code>four storage positions</code>（四墓庫）",
+        "ja_JP": "戌<code>四墓庫</code>",
+        "vi_VN": "Tuất（戌）<code>tứ mộ khố</code>（四墓庫）",
+        "ko_KR": "술（戌）<code>사묘고</code>（四墓庫）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "丑 <code>四墓库</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "chou（丑）<code>four storage positions</code>（四墓庫）",
+        "ja_JP": "丑<code>四墓庫</code>",
+        "vi_VN": "Sửu（丑）<code>tứ mộ khố</code>（四墓庫）",
+        "ko_KR": "축（丑）<code>사묘고</code>（四墓庫）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "巳 <code>目标宫</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "si（巳）<code>target palace</code>",
+        "ja_JP": "巳<code>対象の宮</code>",
+        "vi_VN": "Tỵ（巳）<code>cung đang xét</code>",
+        "ko_KR": "사（巳）<code>대상 궁</code>"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "酉 <code>三合位</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "you（酉）<code>trine positions</code>",
+        "ja_JP": "酉<code>三合の位置</code>",
+        "vi_VN": "Dậu（酉）<code>vị trí tam hợp</code>",
+        "ko_KR": "유（酉）<code>삼합 위치</code>"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "丑 <code>三合位</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "chou（丑）<code>trine positions</code>",
+        "ja_JP": "丑<code>三合の位置</code>",
+        "vi_VN": "Sửu（丑）<code>vị trí tam hợp</code>",
+        "ko_KR": "축（丑）<code>삼합 위치</code>"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "亥 <code>四正位</code>",
+      "kind": "html",
+      "targets": {
+        "en_US": "hai（亥）<code>opposite position</code>",
+        "ja_JP": "亥<code>対宮の位置</code>",
+        "vi_VN": "Hợi（亥）<code>vị trí đối cung</code>",
+        "ko_KR": "해（亥）<code>대궁 위치</code>"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "君臣庆会",
+      "kind": "html",
+      "targets": {
+        "en_US": "Ruler and ministers gather（君臣慶會）",
+        "ja_JP": "君臣慶会",
+        "vi_VN": "Quân Thần Khánh Hội（君臣慶會）",
+        "ko_KR": "군신경회（君臣慶會）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "紫府同宫",
+      "kind": "html",
+      "targets": {
+        "en_US": "Emperor and empress in the same palace（紫府同宮）",
+        "ja_JP": "紫府同宮",
+        "vi_VN": "Tử Phủ Đồng Cung（紫府同宮）",
+        "ko_KR": "자부동궁（紫府同宮）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "金舆扶驾",
+      "kind": "html",
+      "targets": {
+        "en_US": "Golden carriage supports the ruler（金輿扶駕）",
+        "ja_JP": "金輿扶駕",
+        "vi_VN": "Kim Dư Phù Giá（金輿扶駕）",
+        "ko_KR": "금여부가（金輿扶駕）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "紫府夹命",
+      "kind": "html",
+      "targets": {
+        "en_US": "Emperor and empress flank the soul palace（紫府夾命）",
+        "ja_JP": "紫府夾命",
+        "vi_VN": "Tử Phủ Giáp Mệnh（紫府夾命）",
+        "ko_KR": "자부협명（紫府夾命）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "极向离明",
+      "kind": "html",
+      "targets": {
+        "en_US": "Emperor faces the southern light（極向離明）",
+        "ja_JP": "極向離明",
+        "vi_VN": "Cực Hướng Ly Minh（極向離明）",
+        "ko_KR": "극향리명（極向離明）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "极居卯酉",
+      "kind": "html",
+      "targets": {
+        "en_US": "Emperor in mao or you（極居卯酉）",
+        "ja_JP": "極居卯酉",
+        "vi_VN": "Cực Cư Mão Dậu（極居卯酉）",
+        "ko_KR": "극거묘유（極居卯酉）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "日月并明",
+      "kind": "html",
+      "targets": {
+        "en_US": "Sun and moon both shine brightly（日月並明）",
+        "ja_JP": "日月並明",
+        "vi_VN": "Nhật Nguyệt Tịnh Minh（日月並明）",
+        "ko_KR": "일월병명（日月並明）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "丹墀桂墀",
+      "kind": "html",
+      "targets": {
+        "en_US": "The vermilion and laurel palace steps（丹墀桂墀）",
+        "ja_JP": "丹墀桂墀",
+        "vi_VN": "Đan Trì Quế Trì（丹墀桂墀）",
+        "ko_KR": "단지계지（丹墀桂墀）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "日月反背",
+      "kind": "html",
+      "targets": {
+        "en_US": "Sun and moon in unfavorable positions（日月反背）",
+        "ja_JP": "日月反背",
+        "vi_VN": "Nhật Nguyệt Phản Bối（日月反背）",
+        "ko_KR": "일월반배（日月反背）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "日月照璧",
+      "kind": "html",
+      "targets": {
+        "en_US": "Sun and moon illuminate the jade wall（日月照璧）",
+        "ja_JP": "日月照璧",
+        "vi_VN": "Nhật Nguyệt Chiếu Bích（日月照璧）",
+        "ko_KR": "일월조벽（日月照璧）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "金灿光辉",
+      "kind": "html",
+      "targets": {
+        "en_US": "Brilliant golden radiance（金燦光輝）",
+        "ja_JP": "金燦光輝",
+        "vi_VN": "Kim Xán Quang Huy（金燦光輝）",
+        "ko_KR": "금찬광휘（金燦光輝）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "日月藏辉",
+      "kind": "html",
+      "targets": {
+        "en_US": "Hidden radiance of sun and moon（日月藏輝）",
+        "ja_JP": "日月蔵輝",
+        "vi_VN": "Nhật Nguyệt Tàng Huy（日月藏輝）",
+        "ko_KR": "일월장휘（日月藏輝）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "日月夹命",
+      "kind": "html",
+      "targets": {
+        "en_US": "Sun and moon flank the soul palace（日月夾命）",
+        "ja_JP": "日月夾命",
+        "vi_VN": "Nhật Nguyệt Giáp Mệnh（日月夾命）",
+        "ko_KR": "일월협명（日月夾命）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "月朗天门",
+      "kind": "html",
+      "targets": {
+        "en_US": "Bright moon at the Heavenly Gate（月朗天門）",
+        "ja_JP": "月朗天門",
+        "vi_VN": "Nguyệt Lãng Thiên Môn（月朗天門）",
+        "ko_KR": "월랑천문（月朗天門）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "水澄桂萼",
+      "kind": "html",
+      "targets": {
+        "en_US": "clear water reflects the moon（水澄桂萼）",
+        "ja_JP": "水澄桂萼",
+        "vi_VN": "Thủy Trừng Quế Ngạc（水澄桂萼）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "月生沧海",
+      "kind": "html",
+      "targets": {
+        "en_US": "Moon rises over the sea（月生滄海）",
+        "ja_JP": "月生滄海",
+        "vi_VN": "Nguyệt Sinh Thương Hải（月生滄海）",
+        "ko_KR": "월생창해（月生滄海）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "明珠出海",
+      "kind": "html",
+      "targets": {
+        "en_US": "Bright pearl emerges from the sea（明珠出海）",
+        "ja_JP": "明珠出海",
+        "vi_VN": "Minh Châu Xuất Hải（明珠出海）",
+        "ko_KR": "명주출해（明珠出海）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "武贪同行",
+      "kind": "html",
+      "targets": {
+        "en_US": "Warrior and wolf together（武貪同行）",
+        "ja_JP": "武貪同行",
+        "vi_VN": "Vũ Tham Đồng Hành（武貪同行）",
+        "ko_KR": "무탐동행（武貪同行）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "雄宿朝元",
+      "kind": "html",
+      "targets": {
+        "en_US": "Martial star attends the court（雄宿朝元）",
+        "ja_JP": "雄宿朝元",
+        "vi_VN": "Hùng Tú Triều Nguyên（雄宿朝元）",
+        "ko_KR": "웅숙조원（雄宿朝元）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "府相朝垣",
+      "kind": "html",
+      "targets": {
+        "en_US": "Empress and minister attend the soul palace（府相朝垣）",
+        "ja_JP": "府相朝垣",
+        "vi_VN": "Phủ Tướng Triều Viên（府相朝垣）",
+        "ko_KR": "부상조원（府相朝垣）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "石中隐玉",
+      "kind": "html",
+      "targets": {
+        "en_US": "Jade hidden in stone（石中隱玉）",
+        "ja_JP": "石中隠玉",
+        "vi_VN": "Thạch Trung Ẩn Ngọc（石中隱玉）",
+        "ko_KR": "석중은옥（石中隱玉）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "七杀朝斗",
+      "kind": "html",
+      "targets": {
+        "en_US": "Marshal faces the Dipper（七殺朝斗）",
+        "ja_JP": "七殺朝斗",
+        "vi_VN": "Thất Sát Triều Đẩu（七殺朝斗）",
+        "ko_KR": "칠살조두（七殺朝斗）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "英星入庙",
+      "kind": "html",
+      "targets": {
+        "en_US": "Martial star reaches exalted brightness（英星入廟）",
+        "ja_JP": "英星入廟",
+        "vi_VN": "Anh Tinh Nhập Miếu（英星入廟）",
+        "ko_KR": "영성입묘（英星入廟）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "众水朝东",
+      "kind": "html",
+      "targets": {
+        "en_US": "Many waters flow east（眾水朝東）",
+        "ja_JP": "衆水朝東",
+        "vi_VN": "Chúng Thủy Triều Đông（眾水朝東）",
+        "ko_KR": "중수조동（眾水朝東）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "星曜",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "stars（星曜）",
+        "ja_JP": "星曜",
+        "vi_VN": "sao（星曜）"
+      },
+      "decision": "retained"
+    },
+    {
+      "source": "午",
+      "kind": "html",
+      "targets": {
+        "en_US": "woo（午）",
+        "ko_KR": "오（午）",
+        "ja_JP": "午",
+        "vi_VN": "Ngọ（午）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "未",
+      "kind": "html",
+      "targets": {
+        "en_US": "wei（未）",
+        "ko_KR": "미（未）",
+        "ja_JP": "未",
+        "vi_VN": "Mùi（未）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "辰",
+      "kind": "html",
+      "targets": {
+        "en_US": "chen（辰）",
+        "ko_KR": "진（辰）",
+        "ja_JP": "辰",
+        "vi_VN": "Thìn（辰）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "酉",
+      "kind": "html",
+      "targets": {
+        "en_US": "you（酉）",
+        "ko_KR": "유（酉）",
+        "ja_JP": "酉",
+        "vi_VN": "Dậu（酉）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "卯",
+      "kind": "html",
+      "targets": {
+        "en_US": "mao（卯）",
+        "ko_KR": "묘（卯）",
+        "ja_JP": "卯",
+        "vi_VN": "Mão（卯）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "戌",
+      "kind": "html",
+      "targets": {
+        "en_US": "xu（戌）",
+        "ko_KR": "술（戌）",
+        "ja_JP": "戌",
+        "vi_VN": "Tuất（戌）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "丑",
+      "kind": "html",
+      "targets": {
+        "en_US": "chou（丑）",
+        "ko_KR": "축（丑）",
+        "ja_JP": "丑",
+        "vi_VN": "Sửu（丑）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "子",
+      "kind": "html",
+      "targets": {
+        "en_US": "zi（子）",
+        "ko_KR": "자（子）",
+        "ja_JP": "子",
+        "vi_VN": "Tý（子）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "巳",
+      "kind": "html",
+      "targets": {
+        "en_US": "si（巳）",
+        "ko_KR": "사（巳）",
+        "ja_JP": "巳",
+        "vi_VN": "Tỵ（巳）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "申",
+      "kind": "html",
+      "targets": {
+        "en_US": "shen（申）",
+        "ko_KR": "신（申）",
+        "ja_JP": "申",
+        "vi_VN": "Thân（申）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "寅",
+      "kind": "html",
+      "targets": {
+        "en_US": "yin（寅）",
+        "ko_KR": "인（寅）",
+        "ja_JP": "寅",
+        "vi_VN": "Dần（寅）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "亥",
+      "kind": "html",
+      "targets": {
+        "en_US": "hai（亥）",
+        "ko_KR": "해（亥）",
+        "ja_JP": "亥",
+        "vi_VN": "Hợi（亥）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "忌",
+      "kind": "html",
+      "targets": {
+        "ko_KR": "기（忌）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "占有、责任、执行、权力、大",
+      "kind": "html",
+      "targets": {
+        "ko_KR": "소유, 책임, 실행, 권력, 큼",
+        "en_US": "Possession, responsibility, execution, power, largeness",
+        "ja_JP": "所有、責任、実行、権力、大きさ",
+        "vi_VN": "Chiếm hữu, trách nhiệm, thực thi, quyền lực, lớn"
+      },
+      "decision": "corrected"
+    },
+    {
+      "source": "<div class=\"pattern\"><div></div><div><code>卯</code> <code>财帛</code></div></div>",
+      "kind": "html",
+      "targets": {
+        "en_US": "<div class=\"pattern\"><div></div><div><code>mao</code>（卯） <code>wealth</code>（財帛）</div></div>",
+        "ko_KR": "<div class=\"pattern\"><div></div><div><code>묘</code>（卯） <code>재백</code>（財帛）</div></div>",
+        "ja_JP": "<div class=\"pattern\"><div></div><div><code>卯</code> <code>財帛</code></div></div>",
+        "vi_VN": "<div class=\"pattern\"><div></div><div><code>Mão</code>（卯） <code>Tài Bạch</code>（財帛）</div></div>"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "链接",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Link",
+        "vi_VN": "Liên kết"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "语言",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Language",
+        "vi_VN": "Ngôn ngữ"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "作者",
+      "kind": "markdown",
+      "targets": {
+        "vi_VN": "Tác giả"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "参数",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Parameter",
+        "vi_VN": "Tham số"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "类型",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "型",
+        "ko_KR": "타입",
+        "vi_VN": "Kiểu"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "是否必填",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Required?",
+        "ja_JP": "必須",
+        "ko_KR": "필수 여부",
+        "vi_VN": "Bắt buộc?"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "阳历日期【YYYY-M-D】",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "グレゴリオ暦の日付【YYYY-M-D】"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "출생 시진 인덱스 [0–12]. 조자시(0)부터 만자시(12)까지에 대응합니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "윤달 조정 여부. `true`이면 윤달의 전반부는 이전 달, 후반부는 다음 달로 계산합니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "农历日期【YYYY-M-D】，例如`2000年七月十七`则传入`2000-7-17`",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "음력 날짜 [YYYY-M-D]. 예를 들어 `2000년 7월 17일`이면 `2000-7-17`을 전달합니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "是否闰月，当实际月份没有闰月时该参数不生效",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "입력한 음력 월이 윤달인지 여부. 해당 월에 윤달이 없으면 이 매개변수는 적용되지 않습니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "阳历日期字符串或日期对象，若时间字符串或日期对象中包含了小时的信息，`timeIndex`可以省略",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "グレゴリオ暦の日付文字列または日付オブジェクト。時刻の情報が含まれていれば、`timeIndex`は省略できます。",
+        "ko_KR": "양력 날짜 문자열 또는 날짜 객체. 시각 정보가 포함되어 있으면 `timeIndex`를 생략할 수 있습니다.",
+        "vi_VN": "Chuỗi ngày dương lịch hoặc đối tượng ngày. Nếu đã có thông tin về giờ, có thể bỏ qua `timeIndex`."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "quick-start.md",
+      "source": "时辰序号，若不传该参数则会尝试从`date`里获取小时信息转化为时辰序号",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Time-slot index. If omitted, the hour is read from `date` and converted to an index.",
+        "ko_KR": "시진 인덱스. 생략하면 `date`에서 시각을 읽어 시진 인덱스로 변환합니다.",
+        "vi_VN": "Chỉ số giờ theo hệ mười hai thời thần. Nếu bỏ qua, chương trình lấy giờ từ `date` để tính chỉ số."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "解释",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "설명"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "类型",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "型",
+        "ko_KR": "타입",
+        "vi_VN": "Kiểu"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "星曜名字",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "성요 이름"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "星曜类型",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "성요 타입"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "命宫索引",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "명궁 인덱스"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "身宫索引",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "신궁 인덱스"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "命宫天干",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "명궁의 천간"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "命宫地支",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "명궁의 지지"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "是否来因宫",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "래인궁 여부"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "长生 12 神",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Twelve growth-stage stars",
+        "ko_KR": "장생 십이신（長生十二神）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "博士 12 神",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "박사 십이신（博士十二神）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "流年将前 12 神",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Twelve yearly General-front stars",
+        "ko_KR": "유년 장전 십이신（流年將前十二神）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "流年岁前 12 神",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Twelve yearly Year-front stars",
+        "ko_KR": "유년 세전 십이신（流年歲前十二神）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "财帛位",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "재백 위치"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "官禄位",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "관록 위치"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "所在宫位的索引",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Index of the corresponding palace",
+        "ja_JP": "対応する宮のインデックス",
+        "ko_KR": "해당 궁의 인덱스",
+        "vi_VN": "Chỉ số của cung tương ứng"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "运限的名称",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "운한의 이름"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "运限天干",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "운한의 천간"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "运限地支",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "운한의 지지"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "运限的十二宫",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "운한의 십이궁"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "大限起止年龄 [`起始年龄`, `截止年龄`]",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "대한의 시작·종료 연령 [`시작 연령`, `종료 연령`]"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "大限天干",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "대한의 천간"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "大限地支",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "대한의 지지"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "大限所在的本命宫位",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "대한이 위치한 본명반의 궁"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "大限起止虚岁",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "대한 시작·종료 시점의 세는나이"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "大限起止年份",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "대한의 시작·종료 연도"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "流年对应的虚岁",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "유년에 해당하는 세는나이"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "流年年份",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "유년의 연도"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "农历月份，正月为 `1`",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "旧暦の月。正月を`1`とします。"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "普通月份、闰月前半段或闰月后半段",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "일반 월, 윤달 전반부 또는 윤달 후반부"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "该项对应的农历日期范围",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "この項目に対応する旧暦の日付範囲"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "阳历日期",
+      "kind": "markdown",
+      "targets": {
+        "vi_VN": "Ngày dương lịch"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "干支纪年日期",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "간지로 나타낸 날짜"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "原始日期数据，用于今后内部方法使用",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "이후 내부 메서드에서 사용할 원본 날짜 데이터",
+        "vi_VN": "Dữ liệu ngày gốc để các phương thức nội bộ sử dụng về sau"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "时辰",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "시진（時辰）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "时辰对应的时间段",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Clock-time range corresponding to the traditional double-hour",
+        "ja_JP": "時辰に対応する時刻の範囲",
+        "ko_KR": "시진에 대응하는 시각 범위",
+        "vi_VN": "Khoảng thời gian tương ứng với giờ truyền thống"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "生肖",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "띠"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "身宫地支",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "신궁의 지지"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "命主",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "명주성（命主星）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "身主",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "신주성（身主星）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "十二宫数据",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "십이궁 데이터"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "值",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "값"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "天盘，默认值",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "천반, 기본값"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "地盘，以身宫干支起五行局，并以身宫为命宫",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "지반: 신궁의 간지로 오행국을 정하고, 신궁을 명궁으로 삼습니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "type-definition.md",
+      "source": "人盘，以福德宫干支起五行局，并以福德宫为命宫",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "인반: 복덕궁의 간지로 오행국을 정하고, 복덕궁을 명궁으로 삼습니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "参数",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Parameter",
+        "vi_VN": "Tham số"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "类型",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "型",
+        "ko_KR": "타입",
+        "vi_VN": "Kiểu"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "是否必填",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Required?",
+        "ja_JP": "必須",
+        "ko_KR": "필수 여부",
+        "vi_VN": "Bắt buộc?"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "阳历日期【YYYY-M-D】",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "グレゴリオ暦の日付【YYYY-M-D】"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "출생 시진 인덱스 [0–12]. 조자시(0)부터 만자시(12)까지에 대응합니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "윤달 조정 여부. `true`이면 윤달의 전반부는 이전 달, 후반부는 다음 달로 계산합니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "农历日期【YYYY-M-D】，例如 `2000年七月十七` 则传入 `2000-7-17`",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "음력 날짜 [YYYY-M-D]. 예를 들어 `2000년 7월 17일`이면 `2000-7-17`을 전달합니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "是否闰月，当实际月份没有闰月时该参数不生效",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "입력한 음력 월이 윤달인지 여부. 해당 월에 윤달이 없으면 이 매개변수는 적용되지 않습니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "仅覆盖当前星盘的亮度、四化和时间分界配置（^2.6.2）",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Overrides the brightness, four transformations and time-boundary settings only for the chart being created (^2.6.2).",
+        "ja_JP": "今回作成する命盤に限り、輝度・四化・時刻の区切り設定を上書きします (^2.6.2)。",
+        "ko_KR": "이번에 생성하는 명반에만 밝기, 사화, 시간 경계 설정을 덮어씁니다 (^2.6.2).",
+        "vi_VN": "Chỉ ghi đè cấu hình độ sáng, tứ hóa và mốc phân chia thời gian cho lá số đang được tạo (^2.6.2)."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "星盘类型；仅在 `config.algorithm` 为 `zhongzhou` 时用于选择天盘、地盘或人盘",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "명반의 종류. `config.algorithm`이 `zhongzhou`일 때만 천반·지반·인반을 선택하는 데 사용합니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "农历年份",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Lunar-calendar year",
+        "ja_JP": "旧暦の年",
+        "ko_KR": "음력 연도"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "要应用到当前星盘的插件函数",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "現在の命盤に適用するプラグイン関数",
+        "ko_KR": "현재 명반에 적용할 플러그인 함수",
+        "vi_VN": "Hàm trình cắm áp dụng cho lá số hiện tại"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "时辰索引【0~12】",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Time-slot index [0–12]",
+        "ko_KR": "시진 인덱스 [0–12]",
+        "vi_VN": "Chỉ số giờ truyền thống [0–12]"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "大限序号（`0` 为第一个大限）或本命宫位名称",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "大限のインデックス（`0`が最初の大限）、または本命盤の宮名",
+        "ko_KR": "대한 인덱스(`0`은 첫 번째 대한) 또는 본명반의 궁 이름"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "流年年份，可直接使用 `yearlyList()` 返回项的 `year`",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "유년의 연도. `yearlyList()`가 반환한 항목의 `year` 값을 그대로 사용할 수 있습니다.",
+        "vi_VN": "Năm lưu niên; với mỗi mục do `yearlyList()` trả về, có thể dùng trực tiếp trường `year`."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "是否将闰月前后半月分开计算",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "윤달의 전반부와 후반부를 나누어 계산할지 여부"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "星曜名称数组",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "星曜名の配列"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/config-n-plugin.md",
+      "source": "配置项",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "설정 항목"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/config-n-plugin.md",
+      "source": "可选值",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Allowed values",
+        "ja_JP": "指定できる値",
+        "ko_KR": "허용되는 값",
+        "vi_VN": "Các giá trị được phép"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/config-n-plugin.md",
+      "source": "年干支分界；`normal` 以农历正月初一为界，`exact` 以立春为界",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "연도 간지의 경계. `normal`은 음력 정월 초하루, `exact`는 절기인 입춘을 기준으로 합니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/config-n-plugin.md",
+      "source": "运限使用的年、月干支分界",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "운한 계산에 사용하는 연·월 간지의 경계"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/config-n-plugin.md",
+      "source": "小限虚岁分界；`normal` 只看自然年，`birthday` 以农历生日为界",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "소한의 세는나이 경계. `normal`은 달력상의 연도, `birthday`는 음력 생일을 기준으로 합니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/config-n-plugin.md",
+      "source": "晚子时归属；`forward` 归入次日，`current` 归入当日",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "만자시를 어느 날짜에 포함할지 정합니다. `forward`는 다음 날, `current`는 당일로 계산합니다."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/horoscope.md",
+      "source": "参数",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Parameter",
+        "vi_VN": "Tham số"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/horoscope.md",
+      "source": "类型",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "型",
+        "ko_KR": "타입",
+        "vi_VN": "Kiểu"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/horoscope.md",
+      "source": "是否必填",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Required?",
+        "ja_JP": "必須",
+        "ko_KR": "필수 여부",
+        "vi_VN": "Bắt buộc?"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/horoscope.md",
+      "source": "运限名称",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "운한 이름"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/horoscope.md",
+      "source": "流曜数组",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "유요 배열"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/palace.md",
+      "source": "类型",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "타입"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/palace.md",
+      "source": "是否必填",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "필수 여부"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/palace.md",
+      "source": "星曜名称，可以包含主星、辅星、杂曜",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Star names; may include major stars, auxiliary stars, and miscellaneous stars"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/palace.md",
+      "source": "星曜名称数组",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "星曜名の配列"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/star.md",
+      "source": "参数",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Parameter",
+        "vi_VN": "Tham số"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/star.md",
+      "source": "类型",
+      "kind": "markdown",
+      "targets": {
+        "ja_JP": "型",
+        "ko_KR": "타입",
+        "vi_VN": "Kiểu"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/star.md",
+      "source": "是否必填",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Required?",
+        "ja_JP": "必須",
+        "ko_KR": "필수 여부",
+        "vi_VN": "Bắt buộc?"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/star.md",
+      "source": "需要判断的星曜亮度",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Star brightness to check",
+        "ja_JP": "判定する星曜の輝度",
+        "ko_KR": "확인할 성요의 밝기",
+        "vi_VN": "Độ sáng của sao cần kiểm tra"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/star.md",
+      "source": "四化【禄｜权｜科｜忌】",
+      "kind": "markdown",
+      "targets": {
+        "ko_KR": "사화: 록, 권, 과, 기"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/basis.md",
+      "source": "中国大陆夏令时执行时间",
+      "kind": "markdown",
+      "targets": {
+        "vi_VN": "Thời gian áp dụng giờ mùa hè tại Trung Quốc đại lục"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/basis.md",
+      "source": "1986年5月4日至9月14日（1986年因是实行夏令时的第一年，从5月4日开始到9月14日结束）",
+      "kind": "markdown",
+      "targets": {
+        "vi_VN": "Từ ngày 4 tháng 5 đến ngày 14 tháng 9 năm 1986 (năm đầu áp dụng giờ mùa hè, nên bắt đầu từ ngày 4 tháng 5)"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "尊贵",
+      "kind": "html",
+      "targets": {
+        "ja_JP": "高貴さ"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "北斗第六星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Sixth star of the Northern Dipper"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "邪恶",
+      "kind": "html",
+      "targets": {
+        "ja_JP": "邪悪さ"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "库",
+      "kind": "html",
+      "targets": {
+        "ko_KR": "창고"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "贤能，包容，慈悲",
+      "kind": "html",
+      "targets": {
+        "ja_JP": "賢明さと有能さ、包容力、慈悲"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "富",
+      "kind": "html",
+      "targets": {
+        "en_US": "wealth",
+        "ja_JP": "裕福さ",
+        "ko_KR": "부유함"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "欲望，物质",
+      "kind": "html",
+      "targets": {
+        "en_US": "Desire, material interests"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "褐色",
+      "kind": "html",
+      "targets": {
+        "ja_JP": "茶色"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "印",
+      "kind": "html",
+      "targets": {
+        "ko_KR": "인장"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "荫星，长辈星，状元星（阳梁昌禄格），医药星，赌气星，吹牛星，寿星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Protective star, elder star, examination-success star (sun–sage–scholar–money pattern), medicine star, defiance star, boastful star, longevity star"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/major-star.md",
+      "source": "北斗第七星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Seventh star of the Northern Dipper"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/minor-star.md",
+      "source": "米黄光",
+      "kind": "html",
+      "targets": {
+        "ja_JP": "ベージュ色の光"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/minor-star.md",
+      "source": "玉堂贵人。细姨星，手术星",
+      "kind": "html",
+      "targets": {
+        "en_US": "Jade Hall benefactor; concubine star, surgery star"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/minor-star.md",
+      "source": "暴躁破坏",
+      "kind": "html",
+      "targets": {
+        "en_US": "Volatile temper and destructiveness",
+        "ja_JP": "激しい気性、破壊性",
+        "vi_VN": "Tính nóng nảy và xu hướng phá hoại"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/minor-star.md",
+      "source": "粗暴，残忍",
+      "kind": "html",
+      "targets": {
+        "ja_JP": "粗暴さ、残忍さ"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/minor-star.md",
+      "source": "加工星，叛逆星",
+      "kind": "html",
+      "targets": {
+        "vi_VN": "Sao gia công, sao phản nghịch"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/palace.md",
+      "source": "巳 <code>暗合申</code>",
+      "kind": "html",
+      "targets": {
+        "ko_KR": "사（巳）<code>신과 암합</code>（暗合申）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/palace.md",
+      "source": "酉 <code>暗合辰</code>",
+      "kind": "html",
+      "targets": {
+        "ko_KR": "유（酉）<code>진과 암합</code>（暗合辰）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/palace.md",
+      "source": "卯 <code>暗合戌</code>",
+      "kind": "html",
+      "targets": {
+        "ko_KR": "묘（卯）<code>술과 암합</code>（暗合戌）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/palace.md",
+      "source": "子 <code>暗合丑</code>",
+      "kind": "html",
+      "targets": {
+        "ko_KR": "자（子）<code>축과 암합</code>（暗合丑）"
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "learn/palace.md",
+      "source": "亥 <code>暗合寅</code>",
+      "kind": "html",
+      "targets": {
+        "ko_KR": "해（亥）<code>인과 암합</code>（暗合寅）"
+      },
+      "decision": "corrected"
+    }
+  ]
+}

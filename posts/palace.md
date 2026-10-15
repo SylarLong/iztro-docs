@@ -7,7 +7,7 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
 
 ## 前言
 
-紫微斗数中一共有 `十二` 个宫位，叫做 `十二人事宫`，囊括了与人有关的其他人和事物，这十二宫按顺序分别是 `命宫`、`兄弟宫`、`夫妻宫`、`子女宫`、`财帛宫`、`疾厄宫`、`迁移宫`、`仆役宫`、`官禄宫`、`田宅宫`、`福德宫`、`父母宫`。除了这展示在 [星盘](./astrolabe.md) 里的十二宫以外，紫微斗数还有三个隐藏宫位，它们分别是 `身宫`、`来因宫`、`暗合宫`。每一个宫位有着它特殊的意义，但本页不详细展开来叙述。如果你对紫微斗数的宫位没有概念，或者想深入研究，可以点击 [宫位系统](../learn/palace.md) 查看详细资料。与宫位地支顺时针排列相反，宫位名称是按逆时针排列的。如下面表格所示：
+紫微斗数中一共有 `十二` 个宫位，叫做 `十二人事宫`，囊括了与人有关的其他人和事物，这十二宫按顺序分别是 `命宫`、`兄弟宫`、`夫妻宫`、`子女宫`、`财帛宫`、`疾厄宫`、`迁移宫`、`仆役宫`、`官禄宫`、`田宅宫`、`福德宫`、`父母宫`。除了展示在 [星盘](./astrolabe.md) 里的十二宫以外，紫微斗数还有三个隐藏宫位，它们分别是 `身宫`、`来因宫`、`暗合宫`。每一个宫位有着它特殊的意义，但本页不详细展开来叙述。如果你对紫微斗数的宫位没有概念，或者想深入研究，可以点击 [宫位系统](../learn/palace.md) 查看详细资料。与宫位地支顺时针排列相反，宫位名称是按逆时针排列的。如下面表格所示：
 
 <table class="astrolabe">
     <tr>
@@ -40,7 +40,7 @@ description: "紫微研习社，iztro官方文档，iztro开发文档，iztro紫
 
 :::warning 开发建议
 
-因为宫位是基于星盘而存在的，所以我们并不推荐你手动 `new` 一个宫位对象，而是使用星盘静态方法返回的对象使用。星盘的 `palaces` 属性包含了十二宫的数据，为了和地支的顺序保持一致，它是从 `寅宫` 开始按照地支顺序顺时针排列的。
+因为宫位是基于星盘而存在的，所以我们并不推荐你手动 `new` 一个宫位对象，而是从星盘静态方法返回的对象中获取宫位。星盘的 `palaces` 属性包含了十二宫的数据，为了和地支的顺序保持一致，它是从 `寅宫` 开始按照地支顺序顺时针排列的。
 
 :::
 
@@ -77,7 +77,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
 ***
 
-<Badge type="tip" text="implements" /> `IFuncionalPalace` <Badge type="tip" text="extends" /> [`Palace`](../type-definition.md#palace)
+<Badge type="tip" text="implements" /> `IFunctionalPalace` <Badge type="tip" text="extends" /> [`Palace`](../type-definition.md#palace)
 
 该类所有属性都是继承自 [Palace](../type-definition.md#palace)，然后在接口内定义了一些方法用于对星曜进行分析。
 
@@ -197,7 +197,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 示例
 
-    如果你想查看 `命宫` 是没有 `地空星` 和 `地劫星`
+    如果你想查看 `命宫` 是否没有 `地空星` 和 `地劫星`
     ```ts
     const palace = astrolabe.palace("命宫");
     const result = palace.notHave(["地空", "地劫"]);
@@ -463,7 +463,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     ```ts
     type selfMutagedOneOf = (
-      withMutagens: Mutagen | Mutagen[]
+      withMutagens?: Mutagen[]
     ) => boolean;
     ```
     
@@ -471,7 +471,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true`   | -      | 四化（禄、权、科、忌）|
+    | withMutagens | [`Mutagen[]`](../type-definition.md#mutagen) | `false`   | -      | 四化（禄、权、科、忌）|
 
   - 返回值
 
@@ -480,13 +480,13 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    判断宫位是否有自化，如果传入参数，则只判断传入的四化是否有自化，否则将会判断所有四化
+    判断宫位是否没有自化。如果传入参数，则只检查指定的四化；否则检查全部四化。只有所检查的四化均未在本宫自化时，才返回真。
 
   - 定义
 
     ```ts
     type notSelfMutaged = (
-      withMutagens: Mutagen | Mutagen[]
+      withMutagens?: Mutagen | Mutagen[]
     ) => boolean;
     ```
     
@@ -494,7 +494,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | 参数        | 类型                                      | 是否必填 | 默认值 | 说明                 |
     | ----------- | --------------------------------------- | -------- | ------ | -------------------- |
-    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true`   | -      | 四化（禄、权、科、忌）|
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `false`   | -      | 四化（禄、权、科、忌）|
 
   - 返回值
 
@@ -503,7 +503,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 用途
 
-    获取当前宫位产生四化的4个宫位数组，下标分别对【禄，权，科，忌】
+    获取当前宫位产生四化的4个宫位数组，下标分别对应【禄，权，科，忌】
 
   - 定义
 

@@ -1,37 +1,43 @@
+---
+title: "iztro documentation"
+description: "Install iztro and start generating Zi Wei Dou Shu charts with practical examples."
+---
+
 <div align="center">
 
 <h1 class="brand-name text-clip">IZTRO</h1>
 
-A lightweight Open-Source Javascript library of getting The Purple Star Astrology(Zi Wei Dou Shu) astrolabe information.
+A lightweight, open-source JavaScript library for obtaining Zi Wei Dou Shu（紫微斗數） chart data.
 
 </div>
 
-## Overview
+## Introduction   {#前言}
 
-Welcome to the `iztro` development documentation! This page will introduce you to how to integrate, how to retrieve data, and how to quickly obtain all the data on a natal chart in Zi Wei Dou Shu. If you are just a basic user, reading this document will be enough for your daily use.
-If you have mastered the content on this page, you can explore further on other pages.
+Welcome to the `iztro` developer documentation! This page explains how to integrate the library, retrieve data, and quickly obtain all the data for a Zi Wei Dou Shu（紫微斗數） chart（星盤）. For basic, everyday use, this guide should be enough to get you started. Once you are comfortable with it, explore the other pages for more detail. If you are interested in Zi Wei Dou Shu but have no background in it, start with [Basic concepts](/en_US/learn/basis.md).
 
-::: info You will obtain the following information:
+::: info You will get the following information:
 
-- How to install and integrate iztro into your code
-- How to retrieve a natal chart information
-- How to analyze palace positions based on the natal chart information
-- How to analyze star brilliance based on palace positions
+- How to install and integrate `iztro` into your code
+- How to obtain a chart（星盤）
+- How to analyze palaces（宮位） using a chart（星盤）
+- How to analyze stars（星曜） using palace（宮位） data
   :::
 
-## Products
+## Products   {#产品}
 
-| | Name | Link | Language | Author |
-|--|--|--|--|--|
-|<img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" />|iztro|[GitHub](https://github.com/sylarlong/iztro) ｜ [Gitee](https://gitee.com/sylarlong/iztro) |Typescript| [SylarLong](https://github.com/SylarLong) |
-|<img src="https://img.shields.io/github/stars/sylarlong/react-iztro.svg?style=social&label=Star" alt="react-iztro" />|react-iztro|[GitHub](https://github.com/sylarlong/react-iztro) ｜ [Gitee](https://gitee.com/sylarlong/react-iztro)|React| [SylarLong](https://github.com/SylarLong) |
-|<img src="https://img.shields.io/github/stars/sylarlong/iztro-hook.svg?style=social&label=Star" alt="iztro-hook" />|iztro-hook|[GitHub](https://github.com/sylarlong/iztro-hook) ｜ [Gitee](https://gitee.com/sylarlong/iztro-hook) |React| [SylarLong](https://github.com/SylarLong) |
-|<img src="https://img.shields.io/github/stars/x-haose/py-iztro.svg?style=social&label=Star" alt="py-iztro" />|py-iztro|[GitHub](https://github.com/x-haose/py-iztro) ｜ [Gitee](https://gitee.com/x-haose/py-iztro)|Python| [昊色居士](https://github.com/x-haose) |
-|<img src="https://img.shields.io/github/stars/EdwinXiang/dart_iztro.svg?style=social&label=Star" alt="py-iztro" />|dart_iztro|[GitHub](https://github.com/EdwinXiang/dart_iztro) ｜ [Gitee](https://gitee.com/EdwinXiang/dart_iztro)|Dart| [EdwinXiang](https://github.com/EdwinXiang) |
+|  | Name | Link | Language | Author |
+| --- | --- | --- | --- | --- |
+| <img src="https://img.shields.io/github/stars/sylarlong/iztro.svg?style=social&label=Star" alt="iztro" /> | iztro | [GitHub](https://github.com/sylarlong/iztro)  ｜  [Gitee](https://gitee.com/sylarlong/iztro) | Typescript | [SylarLong](https://github.com/SylarLong) |
+| <img src="https://img.shields.io/github/stars/sylarlong/react-iztro.svg?style=social&label=Star" alt="react-iztro" /> | react-iztro | [GitHub](https://github.com/sylarlong/react-iztro)  ｜  [Gitee](https://gitee.com/sylarlong/react-iztro) | React | [SylarLong](https://github.com/SylarLong) |
+| <img src="https://img.shields.io/github/stars/sylarlong/iztro-hook.svg?style=social&label=Star" alt="iztro-hook" /> | iztro-hook | [GitHub](https://github.com/sylarlong/iztro-hook)  ｜  [Gitee](https://gitee.com/sylarlong/iztro-hook) | React | [SylarLong](https://github.com/SylarLong) |
+| <img src="https://img.shields.io/github/stars/x-haose/py-iztro.svg?style=social&label=Star" alt="py-iztro" /> | py-iztro | [GitHub](https://github.com/x-haose/py-iztro)  ｜  [Gitee](https://gitee.com/x-haose/py-iztro) | Python | [Haose Jushi](https://github.com/x-haose) |
+| <img src="https://img.shields.io/github/stars/EdwinXiang/dart_iztro.svg?style=social&label=Star" alt="py-iztro" /> | dart_iztro | [GitHub](https://github.com/EdwinXiang/dart_iztro)  ｜  [Gitee](https://gitee.com/EdwinXiang/dart_iztro) | Dart | [EdwinXiang](https://github.com/EdwinXiang) |
 
-## Installation
+## Installation   {#安装}
 
-You can install `iztro` using any package management tool you are familiar with.
+### Install with a package manager {#使用包管理安装}
+
+You can use any package management tool you are familiar with to install it.
 
 :::tabs
 == npm
@@ -60,23 +66,25 @@ bun add -S iztro
 
 :::
 
-If the installation is successful, you will find `iztro` in the dependencies list of your `package.json`.
+After a successful installation, the dependency list in `package.json` will include `iztro`.
 
 ```json
 "dependencies": {
-  "iztro": "^1.0.0"
+  "iztro": "^1.1.0"
 }
 ```
 
-> The version might be different.
+> Version numbers may vary
 
-### Plain JavaScript bundle <Badge type="warning" text="^2.0.4" />
+### Pure JS library usage <Badge type="warning" text="^2.0.4" />   {#纯js库使用}
 
-The release archive `🗜️iztro-min-js.tar.gz` contains a minified UMD bundle and its sourcemap, so iztro can be loaded directly with a `<script>` tag.
+After version `v2.0.4`, a standalone JavaScript bundle in `umd` format is available. Download `🗜️iztro-min-js.tar.gz` from the [release assets](https://github.com/SylarLong/iztro/releases). The archive contains the minified JavaScript file and its source map.
 
-Since `v2.6.0`, each release includes both a versioned bundle such as `iztro-v2.6.0.min.js` and the backward-compatible `iztro.min.js`. Prefer the versioned bundle in production so the URL always resolves to the same code.
+Starting with `v2.6.0`, each release generates a versioned file (such as `iztro-v2.6.0.min.js`) as well as `iztro.min.js`, which remains compatible with existing references. Use a versioned file in production to prevent the same CDN URL from serving different content after a new release.
 
-- jsDelivr
+You can also load the library directly from a `CDN` using one of the URLs below. A URL without a version number serves the latest release.
+
+- jsdelivr
 
   - https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js
   - https://cdn.jsdelivr.net/npm/iztro@2.6.2/dist/iztro-v2.6.2.min.js
@@ -86,11 +94,17 @@ Since `v2.6.0`, each release includes both a versioned bundle such as `iztro-v2.
   - https://unpkg.com/iztro/dist/iztro.min.js
   - https://unpkg.com/iztro@2.6.2/dist/iztro-v2.6.2.min.js
 
-## Quick start
+You can also specify versions using the following rules:
 
-### Import code
+- `iztro@2`
+- `iztro@^2.6.2`
+- `iztro@2.6.2`
 
-You can import `iztro` into your code using the following methods.
+## Get started   {#开始使用}
+
+### Import the library {#引入代码}
+
+Import `iztro` as shown below:
 
 :::tabs
 == ES6 Module
@@ -108,24 +122,34 @@ var iztro = require("iztro");
 == HTML
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/iztro@2.6.2/dist/iztro-v2.6.2.min.js"></script>
-<script>
-  const astrolabe = iztro.astro.bySolar("2000-8-16", 2, "male", true, "en-US");
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>iztro-紫微斗数开源库</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/iztro@2.6.2/dist/iztro-v2.6.2.min.js"></script>
+    <script>
+      // 获取一张星盘数据
+      var astrolabe = iztro.astro.bySolar('2000-8-16', 2, '男', true, 'zh-CN');
+    </script>
+  </body>
+</html>
 ```
 
 :::
 
-### Get astrolabe data
+### Get chart data {#获取星盘数据}
 
-When retrieving a natal chart in Zi Wei Dou Shu, you can obtain it based on either the `lunar calendar` or the `solar calendar`. `iztro` provides both options, and you can choose according to your needs. However, we recommend using the `solar calendar` method. Rest assured, the data obtained internally by the program is consistent for both the `lunar` and `solar` calendars.
+You can create a Zi Wei Dou Shu（紫微斗數） chart（星盤） from either a `lunar calendar` date or a `Gregorian calendar` date. `iztro` supports both, but we recommend using the `Gregorian calendar` method. Both methods produce the same chart when given equivalent dates.
 
-::: info Using the `solar calendar` has the following advantages:
+::: info Using `阳历` has the following conveniences:
 
-- It can be easily found on a birth certificate.
-- You can use a calendar component for date selection.
-- Many people nowadays cannot remember lunar calendar dates.
-- It can avoid a series of issues caused by overlooking leap months.
+- Gregorian birth dates are easy to check against a birth certificate.
+- A calendar date picker makes entering the date straightforward.
+- Many people find it difficult to remember dates in the Chinese lunar calendar.
+- Using a Gregorian date avoids mistakes caused by overlooking a lunar leap month.
   :::
 
 :::tabs
@@ -134,11 +158,11 @@ When retrieving a natal chart in Zi Wei Dou Shu, you can obtain it based on eith
 ```ts
 import { astro } from "iztro";
 
-// Get astrolabe by solar calendar.
-const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "male");
+// 通过阳历获取星盘信息
+const astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
-// Get astrolabe by lunar calendar.
-const astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "male");
+// 通过农历获取星盘信息
+const astrolabe = astro.byLunar("2000-7-17", 2, "女");
 ```
 
 == CommonJS
@@ -146,18 +170,18 @@ const astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "male");
 ```js
 var { astro } = require("iztro");
 
-// Get astrolabe by solar calendar.
-var astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "male");
+// 通过阳历获取星盘信息
+var astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
-// Get astrolabe by lunar calendar.
-var astrolabe = astro.astrolabeByLunarDate("2000-7-17", 2, "male", false);
+// 通过农历获取星盘信息
+var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
 ```
 
 :::
 
-You will find that the return values of `astrolabeBySolarDate` and `astrolabeByLunarDate` above are the same. This is because the `astrolabeByLunarDate` method internally converts the date to the `solar calendar` and then calls the `astrolabeBySolarDate` method. Here is the execution result. Since the result is quite long, it is folded. If you want to check if your call result is the same as this, you can expand to view it.
+The `bySolar` and `byLunar` calls above return the same result. Internally, `byLunar` converts the date to the `Gregorian calendar` before calling `bySolar`. The output below is collapsed because it is long. Expand it to compare it with the result of your own call.
 
-::: details Result of `astro.astrolabeBySolarDate` and `astro.astrolabeByLunarDate`
+::: details `astro.bySolar()` and `astro.byLunar()` method execution results
 
 ```ts
 {
@@ -473,48 +497,48 @@ You will find that the return values of `astrolabeBySolarDate` and `astrolabeByL
 
 :::
 
-### function definition
+### Method signature {#方法定义}
 
-- Get astrolabe by solar calendar.
+- Get chart（星盤） data from a Gregorian date
 
-  `astro`.`astrolabeBySolarDate(solarDateStr, timeIndex, gender, fixLeap, language)`
+  `astro`.`bySolar(solarDateStr, timeIndex, gender, fixLeap, language)`
 
-  - Parameters
+  - parameters
 
-    | Name         | Type       | Required | Default | Description                                                                                                                                                   |
-    | ------------ | ---------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | solarDateStr | `string`   | `true`   | -       | solar date string【YYYY-M-D】                                                                                                                                 |
-    | timeIndex    | `number`   | `true`   | -       | chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）                                                                                 |
-    | gender       | `string`   | `true`   | -       | gender【male/female】                                                                                                                                         |
-    | fixLeap      | `boolean`  | `false`  | `true`  | whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month |
-    | language     | `Language` | `false`  | `zh-CN` | the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now                                        |
+    | Parameter | Type | Required? | Default value | Description |
+    | --- | --- | --- | --- | --- |
+    | solarDateStr | `string` | `true` | - | Gregorian date【YYYY-M-D】 |
+    | timeIndex | `number` | `true` | - | Birth-hour index [0–12], from early Zi hour (0) to late Zi hour (12) |
+    | gender | `string` | `true` | - | Gender【Male/Female】 |
+    | fixLeap | `boolean` | `false` | `true` | Whether to adjust leap months. If `true`, the first half is assigned to the preceding month and the second half to the following month. |
+    | language | `Language` | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
 
-  - Returns:
+  - return value
 
-    `FunctionalAstrolabe`
+    [`FunctionalAstrolabe`](./posts/astrolabe.md#functionalastrolabe)
 
-- Get astrolabe by lunar calendar.
+- Get chart（星盤） data from a Chinese lunar-calendar date
 
-  `astro`.`astrolabeByLunarDate(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
+  `astro`.`byLunar(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
 
-  - Parameters
+  - parameters
 
-    | Name         | Type       | Required | Default | Description                                                                                                                                                   |
-    | ------------ | ---------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | lunarDateStr | `string`   | `true`   | -       | lunar date【YYYY-M-D】. e.g. pass `2000-7-17` if it's `2000年七月十七`                                                                                        |
-    | timeIndex    | `number`   | `true`   | -       | chinse hour index【0~12】. from `early Rat hour`（0）to `late Rat hour`（12）                                                                                 |
-    | gender       | `string`   | `true`   | -       | gender【male/female】                                                                                                                                         |
-    | isLeapMonth  | `boolean`  | `false`  | `false` | whether the date is a leap month. This parameter does not take effect when there is no leap month in the actual month                                         |
-    | fixLeap      | `boolean`  | `false`  | `true`  | whether to fix the leap month. if `true`, the first half of the leap month is counted as the previous month, and the second half is counted as the next month |
-    | language     | `Language` | `false`  | `zh-CN` | the returns will be localized to the specific language. we support `zh-CN`,`zh-TW`,`en-US`,`ko-KR` and `ja-JP` for now                                        |
+    | Parameter | Type | Required? | Default value | Description |
+    | --- | --- | --- | --- | --- |
+    | lunarDateStr | `string` | `true` | - | Lunar date [YYYY-M-D]. For `lunar year 2000, month 7, day 17`, pass `2000-7-17`. |
+    | timeIndex | `number` | `true` | - | Birth-hour index [0–12], from early Zi hour (0) to late Zi hour (12) |
+    | gender | `string` | `true` | - | Gender【Male/Female】 |
+    | isLeapMonth | `boolean` | `false` | `false` | Whether the supplied lunar month is a leap month; ignored if that month has no leap counterpart. |
+    | fixLeap | `boolean` | `false` | `true` | Whether to adjust leap months. If `true`, the first half is assigned to the preceding month and the second half to the following month. |
+    | language | `Language` | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
 
-  - Returns:
+  - return value
 
-    `FunctionalAstrolabe`
+    [`FunctionalAstrolabe`](./posts/astrolabe.md#functionalastrolabe)
 
-## Get horoscope data
+## Get time-cycle data {#获取运限}
 
-The `horoscope` in Zi Wei Dou Shu is divided into "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`), "流时" (`Hourly horoscope`), "流分" (`Minute horoscope`), and "流秒" (`Second horoscope`). However, since `Minute horoscope` and `Second horoscope` are not commonly used, we do not currently provide them. "大限" (`Decadal horoscope`), "流年" (`Yearly horoscope`), "流月" (`Monthly horoscope`), "流日" (`Daily horoscope`) are already sufficient to meet the majority of needs and scenarios. By using `iztro` you can easily obtain this data.
+Zi Wei Dou Shu（紫微斗數） uses several time cycles: `decadal`（大限）, `yearly`（流年）, `monthly`（流月）, `daily`（流日）, `hourly`（流時）, `minute-level cycle`（流分）, and `second-level cycle`（流秒）. We do not currently provide `minute-level cycle`（流分） or `second-level cycle`（流秒） data because they are rarely needed. The `decadal`（大限）, `yearly`（流年）, `monthly`（流月）, `daily`（流日）, and `hourly`（流時） cycles cover most use cases, and `iztro` makes their data easy to retrieve.
 
 :::tabs
 == ES6 Module
@@ -522,10 +546,10 @@ The `horoscope` in Zi Wei Dou Shu is divided into "大限" (`Decadal horoscope`)
 ```ts
 import { astro } from "iztro";
 
-// Get astrolabe by solar calendar.
-const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "male");
+// 通过阳历获取星盘信息
+const astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
-// Get horoscope data of the `astrolabe` instance
+// 获取运限数据
 astrolabe.horoscope(new Date());
 ```
 
@@ -534,18 +558,18 @@ astrolabe.horoscope(new Date());
 ```js
 var { astro } = require("iztro");
 
-// Get astrolabe by solar calendar.
-var astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "male");
+// 通过阳历获取星盘信息
+var astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
-// Get horoscope data of the `astrolabe` instance
+// 获取运限数据
 astrolabe.horoscope(new Date());
 ```
 
 :::
 
-You'll get the result below by invoking `astrolabe`.`horoscope()`
+After calling the `astrolabe`.`horoscope()` method you will get the following data
 
-::: details Result of `horoscope()`
+::: details `horoscope()` method returns data
 
 ```ts
 {
@@ -597,28 +621,28 @@ You'll get the result below by invoking `astrolabe`.`horoscope()`
 
 :::
 
-> Tips: Only `Decadal horoscope` and `Yearly horoscope` include horosope stars. The values of the result above will be different by different parameters. But the data structure is fixed.
+> Tip: Your time-cycle data may differ from the example because of the date and time you pass in, but the data structure is the same.
 
-### function definition
+### Method signature {#方法定义-1}
 
-- Get horoscope data of the `astrolabe` instance
+- Get time-cycle data for the current chart（星盤）
 
   `astrolabe`.`horoscope(date, timeIndex)`
 
-  - Parameters
+  - parameters
 
-    | Name      | Type               | Required | Default      | Description                                                                                                  |
-    | --------- | ------------------ | -------- | ------------ | ------------------------------------------------------------------------------------------------------------ |
-    | date      | `string` \| `Date` | `false`  | `new Date()` | solar calendar string or a `Date` instance. `timeIndex` can be omit if the `hour` data is included in `date` |
-    | timeIndex | `number`           | `false`  | `0`          | chinese hour index【0 ～ 12】                                                                                |
+    | Parameter | Type | Required? | Default value | Description |
+    | --- | --- | --- | --- | --- |
+    | date | `string`  \|  `Date` | `false` | `new Date()` | Gregorian date string or date object. If the time string or date object contains hour information, `timeIndex` can be omitted |
+    | timeIndex | `number` | `false` | `0` | Time-slot index. If omitted, the hour is read from `date` and converted to an index. |
 
-  - Returns
+  - return value
 
-    `Horoscope`
+    [`Horoscope`](./type-definition.html#horoscope)
 
-## Get horoscope star
+## Get transit stars（流曜）   {#获取流曜}
 
-The `horoscope()` method above already includes the `horoscope star` of the `Decadal horoscope` and `Yearly horoscope`. So in general, there is no need to separately call a method to obtain the `horoscope star`. However, there are exceptional cases where you need to obtain the flow on your own, in which case you need to call the following methods to obtain it.
+The result of `horoscope()` already includes the transit stars（流曜） for `decadal`（大限） and `yearly`（流年） cycles. You usually do not need to retrieve them separately. If your use case does require a separate query, use the following method.
 
 :::tabs
 == ES6 Module
@@ -626,7 +650,7 @@ The `horoscope()` method above already includes the `horoscope star` of the `Dec
 ```ts
 import { star } from "iztro";
 
-// Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
+// 通过天干地支获取流曜
 const horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```
 
@@ -635,15 +659,15 @@ const horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```js
 var { star } = require("iztro");
 
-// Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
+// 通过天干地支获取流曜
 var horoscopeStars = star.getHoroscopeStar("庚", "辰", "decadal");
 ```
 
 :::
 
-You'll get the result below by invoking `star`.`getHoroscopeStar()`
+After calling the `star`.`getHoroscopeStar()` method you will get the following data
 
-::: details Result of `getHoroscopeStar()`
+::: details `getHoroscopeStar()` method returns data
 
 ```ts
 [
@@ -670,36 +694,36 @@ You'll get the result below by invoking `star`.`getHoroscopeStar()`
 
 :::
 
-### function definition
+### Method signature {#方法定义-2}
 
-- Get `Horoscope star` by `Heavenly Stem` and `Earthly Branch`
+- Get transit stars（流曜） from `Heavenly Stem`（天干） and `Earthly Branch`（地支）
 
   `star`.`getHoroscopeStar(heavenlyStem, earthlyBranch, scope)`
 
-  - Parameters
+  - parameters
 
-  | Name          | Type                      | Required | Default | Description                       |
-  | ------------- | ------------------------- | -------- | ------- | --------------------------------- |
-  | heavenlyStem  | `HeavenlyStemName`        | `true`   | -       | heavenly stem name                |
-  | earthlyBranch | `EarthlyBranchName`       | `true`   | -       | earthly branch name               |
-  | scope         | `'decadal'` \| `'yearly'` | `true`   | -       | to specific the scope of the horo |
+    | Parameter | Type | Required? | Default value | Description |
+    | --- | --- | --- | --- | --- |
+    | heavenlyStem | `HeavenlyStemName` | `true` | - | Heavenly Stem（天干） |
+    | earthlyBranch | `EarthlyBranchName` | `true` | - | Earthly Branch（地支） |
+    | scope | `'decadal'`  \|  `'yearly'` | `true` | - | Selects decadal or annual transit stars（流曜）. Decadal stars use a `decadal prefix`, annual stars an `annual prefix`. `considery(Y)`（年解） appears only among annual transit stars. |
 
-  - Returns
+  - return value
 
-    `Star[][]`
+    [`Star[][]`](./type-definition.html#star)
 
-## ☕ Summary
+## ☕ Summary   {#☕-总结}
 
-Buy me a coffee if it's useful for you. 👍 [Paypal Me](https://PayPal.Me/sylarlong)
+If you find this program useful, would you consider buying me a coffee? 👍 [PayPal Me](https://PayPal.Me/sylarlong)
 
-The above data can generate the following natal chart. The `palaces` data is used to fill the 12 palaces, while the other data is used to fill the central palace. Please keep in mind that the display of the flowing `Star names` in the image may differ from the actual returned data. This is because the image was generated from an earlier version. Please refer to the actual returned data for accuracy.
+The data above can be used to generate the chart（星盤） below. The `palaces` data populates all twelve palaces（宮位）, while the remaining data fills the central section of the chart. The transit stars（流曜） shown in the image differ from the current output because the image was generated with an older version. Use the actual returned data as your reference.
 
 ![demo](https://github.com/SylarLong/iztro/assets/6510425/d2108ed7-6794-418a-b0e5-872c71ba6e1d)
 
-## 📜 License
+## 📜 Copyright   {#📜-版权}
 
 MIT License
 
 Copyright &copy; 2023 Sylar Long
 
-Please use this open-source code responsibly and refrain from using it for illegal purposes.
+Please use this open source code reasonably, and it is prohibited to use it for illegal purposes.

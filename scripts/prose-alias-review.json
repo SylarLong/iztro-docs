@@ -1,0 +1,1315 @@
+{
+  "rules": [
+    {
+      "source": "中州派",
+      "aliases": [
+        "Zhongzhoupai",
+        "Zhongzhou School",
+        "中州学校",
+        "중저우 학교",
+        "Trường Trung Châu"
+      ],
+      "targets": {
+        "en_US": "Zhongzhou school",
+        "ko_KR": "중주파",
+        "ja_JP": "中州派",
+        "vi_VN": "phái Trung Châu"
+      },
+      "chinese": "中州派"
+    },
+    {
+      "source": "奇门",
+      "aliases": [
+        "Qimen"
+      ],
+      "targets": {
+        "en_US": "Qi Men Dun Jia",
+        "ko_KR": "기문둔갑",
+        "ja_JP": "奇門遁甲",
+        "vi_VN": "Kỳ Môn Độn Giáp"
+      },
+      "chinese": "奇門"
+    },
+    {
+      "source": "宫干",
+      "aliases": [
+        "Gongqian",
+        "Gonggan",
+        "公安"
+      ],
+      "targets": {
+        "en_US": "palace stem",
+        "ko_KR": "궁간",
+        "ja_JP": "宮干",
+        "vi_VN": "can của cung"
+      },
+      "chinese": "宮干"
+    },
+    {
+      "source": "紫府",
+      "aliases": [
+        "Zifu",
+        "ジフ",
+        "子夫"
+      ],
+      "targets": {
+        "en_US": "emperor and empress",
+        "ko_KR": "자미·천부",
+        "ja_JP": "紫微・天府",
+        "vi_VN": "Tử Vi – Thiên Phủ"
+      },
+      "chinese": "紫府"
+    },
+    {
+      "source": "机梁",
+      "aliases": [
+        "Ji Liang",
+        "忌 Liang",
+        "季良",
+        "機 Liang"
+      ],
+      "targets": {
+        "en_US": "advisor and blessing",
+        "ko_KR": "천기·천량",
+        "ja_JP": "天機・天梁",
+        "vi_VN": "Thiên Cơ – Thiên Lương"
+      },
+      "chinese": "機梁"
+    },
+    {
+      "source": "机阴",
+      "aliases": [
+        "Jiyin",
+        "ジイン"
+      ],
+      "targets": {
+        "en_US": "advisor and moon",
+        "ko_KR": "천기·태음",
+        "ja_JP": "天機・太陰",
+        "vi_VN": "Thiên Cơ – Thái Âm"
+      },
+      "chinese": "機陰"
+    },
+    {
+      "source": "廉府",
+      "aliases": [
+        "Lian Fu",
+        "Lianfu",
+        "リアン フー"
+      ],
+      "targets": {
+        "en_US": "judge and empress",
+        "ko_KR": "염정·천부",
+        "ja_JP": "廉貞・天府",
+        "vi_VN": "Liêm Trinh – Thiên Phủ"
+      },
+      "chinese": "廉府"
+    },
+    {
+      "source": "廉破",
+      "aliases": [
+        "Lian Po",
+        "Lianpo"
+      ],
+      "targets": {
+        "en_US": "judge and rebel",
+        "ko_KR": "염정·파군",
+        "ja_JP": "廉貞・破軍",
+        "vi_VN": "Liêm Trinh – Phá Quân"
+      },
+      "chinese": "廉破"
+    },
+    {
+      "source": "魁钺",
+      "aliases": [
+        "Kuiyue",
+        "クイユエ"
+      ],
+      "targets": {
+        "en_US": "assistant and aide",
+        "ko_KR": "천괴·천월",
+        "ja_JP": "天魁・天鉞",
+        "vi_VN": "Thiên Khôi – Thiên Việt"
+      },
+      "chinese": "魁鉞"
+    },
+    {
+      "source": "昌曲",
+      "aliases": [
+        "Changqu"
+      ],
+      "targets": {
+        "en_US": "literary stars",
+        "ko_KR": "문창·문곡",
+        "ja_JP": "文昌・文曲",
+        "vi_VN": "Văn Xương – Văn Khúc"
+      },
+      "chinese": "昌曲"
+    },
+    {
+      "source": "羊陀",
+      "aliases": [
+        "Yangtuo",
+        "陽沱"
+      ],
+      "targets": {
+        "en_US": "tough and hinder",
+        "ko_KR": "경양·타라",
+        "ja_JP": "擎羊・陀羅",
+        "vi_VN": "Kình Dương – Đà La"
+      },
+      "chinese": "羊陀"
+    },
+    {
+      "source": "囚星",
+      "aliases": [
+        "Qiu Xing"
+      ],
+      "targets": {
+        "en_US": "imprisonment star",
+        "ko_KR": "수성",
+        "ja_JP": "囚星",
+        "vi_VN": "sao Tù"
+      },
+      "chinese": "囚星"
+    },
+    {
+      "source": "库星",
+      "aliases": [
+        "Ku Xing"
+      ],
+      "targets": {
+        "en_US": "storehouse star",
+        "ko_KR": "고성",
+        "ja_JP": "庫星",
+        "vi_VN": "sao Kho"
+      },
+      "chinese": "庫星"
+    },
+    {
+      "source": "化权",
+      "aliases": [
+        "Quan Xing",
+        "權 Xing"
+      ],
+      "targets": {
+        "en_US": "power transformation",
+        "ko_KR": "화권",
+        "ja_JP": "化権",
+        "vi_VN": "Hóa Quyền"
+      },
+      "chinese": "化權"
+    },
+    {
+      "source": "紫府同宫",
+      "aliases": [
+        "Zifu Tonggong"
+      ],
+      "targets": {
+        "en_US": "emperor and empress in the same palace",
+        "ko_KR": "자부동궁",
+        "ja_JP": "紫府同宮",
+        "vi_VN": "Tử Phủ Đồng Cung"
+      },
+      "chinese": "紫府同宮"
+    },
+    {
+      "source": "极居卯酉",
+      "aliases": [
+        "Jiju Maoyou",
+        "Cực kỳ trong lưới Maoyou"
+      ],
+      "targets": {
+        "en_US": "emperor in mao or you",
+        "ko_KR": "극거묘유",
+        "ja_JP": "極居卯酉",
+        "vi_VN": "Cực Cư Mão Dậu"
+      },
+      "chinese": "極居卯酉"
+    },
+    {
+      "source": "机巨同临",
+      "aliases": [
+        "Jiju Tonglin"
+      ],
+      "targets": {
+        "en_US": "advisor and advocator in the same palace",
+        "ko_KR": "기거동림",
+        "ja_JP": "機巨同臨",
+        "vi_VN": "Cơ Cự Đồng Lâm"
+      },
+      "chinese": "機巨同臨"
+    },
+    {
+      "source": "日月藏辉",
+      "aliases": [
+        "Sun Moon Zang Whig",
+        "Sun và Moon Zang 휘그",
+        "Sun과 Moon Zang 휘그",
+        "Sun Moon Hidden Glory"
+      ],
+      "targets": {
+        "en_US": "hidden radiance of sun and moon",
+        "ko_KR": "일월장휘",
+        "ja_JP": "日月蔵輝",
+        "vi_VN": "Nhật Nguyệt Tàng Huy"
+      },
+      "chinese": "日月藏輝"
+    },
+    {
+      "source": "天罗地网",
+      "aliases": [
+        "Tianluo and Earth",
+        "Tianluo と Earth",
+        "Tianluo và Earth",
+        "Tianluo Earth"
+      ],
+      "targets": {
+        "en_US": "Heavenly Net and Earth Net",
+        "ko_KR": "천라지망",
+        "ja_JP": "天羅地網",
+        "vi_VN": "Thiên La Địa Võng"
+      },
+      "chinese": "天羅地網"
+    },
+    {
+      "source": "天罗",
+      "aliases": [
+        "Tianluo"
+      ],
+      "targets": {
+        "en_US": "Heavenly Net",
+        "ko_KR": "천라",
+        "ja_JP": "天羅",
+        "vi_VN": "Thiên La"
+      },
+      "chinese": "天羅"
+    },
+    {
+      "source": "地网",
+      "aliases": [
+        "Mạng Trái đất"
+      ],
+      "targets": {
+        "en_US": "Earth Net",
+        "ko_KR": "지망",
+        "ja_JP": "地網",
+        "vi_VN": "Địa Võng"
+      },
+      "chinese": "地網"
+    },
+    {
+      "source": "七杀朝斗",
+      "aliases": [
+        "칠살 Chao Dou Fighting",
+        "Chao Dou Fighting",
+        "칠살 Chao Du",
+        "Thất Sát Chao Đấu",
+        "Chao Đấu"
+      ],
+      "targets": {
+        "en_US": "marshal facing the Dipper",
+        "ko_KR": "칠살조두",
+        "ja_JP": "七殺朝斗",
+        "vi_VN": "Thất Sát Triều Đẩu"
+      },
+      "chinese": "七殺朝斗"
+    },
+    {
+      "source": "英星",
+      "aliases": [
+        "Yingxing"
+      ],
+      "targets": {
+        "en_US": "martial star",
+        "ko_KR": "영성",
+        "ja_JP": "英星",
+        "vi_VN": "Anh Tinh"
+      },
+      "chinese": "英星"
+    },
+    {
+      "source": "文贵文华",
+      "aliases": [
+        "Wengui Wenhua"
+      ],
+      "targets": {
+        "en_US": "literary distinction",
+        "ko_KR": "문귀문화",
+        "ja_JP": "文貴文華",
+        "vi_VN": "Văn Quý Văn Hoa"
+      },
+      "chinese": "文貴文華"
+    },
+    {
+      "source": "昌曲同度",
+      "aliases": [
+        "Changqu Tongdu"
+      ],
+      "targets": {
+        "en_US": "literary stars in the same palace",
+        "ko_KR": "창곡동도",
+        "ja_JP": "昌曲同度",
+        "vi_VN": "Xương Khúc Đồng Độ"
+      },
+      "chinese": "昌曲同度"
+    },
+    {
+      "source": "文星朝命",
+      "aliases": [
+        "Wen Xing Chao Ming"
+      ],
+      "targets": {
+        "en_US": "literary stars aspect the soul palace",
+        "ko_KR": "문성조명",
+        "ja_JP": "文星朝命",
+        "vi_VN": "Văn Tinh Triều Mệnh"
+      },
+      "chinese": "文星朝命"
+    },
+    {
+      "source": "文星拱命",
+      "aliases": [
+        "Wen Xing Gong Ming"
+      ],
+      "targets": {
+        "en_US": "literary stars support the soul palace",
+        "ko_KR": "문성공명",
+        "ja_JP": "文星拱命",
+        "vi_VN": "Văn Tinh Củng Mệnh"
+      },
+      "chinese": "文星拱命"
+    },
+    {
+      "source": "文星暗拱",
+      "aliases": [
+        "Wenxing dark arch",
+        "Vòm tối Wenxing",
+        "文興ダークアーチ"
+      ],
+      "targets": {
+        "en_US": "literary stars support from adjacent palaces",
+        "ko_KR": "문성암공",
+        "ja_JP": "文星暗拱",
+        "vi_VN": "Văn Tinh Ám Củng"
+      },
+      "chinese": "文星暗拱"
+    },
+    {
+      "source": "权禄生逢",
+      "aliases": [
+        "Quanlu Shengfeng"
+      ],
+      "targets": {
+        "en_US": "power and prosperity together",
+        "ko_KR": "권록생봉",
+        "ja_JP": "権禄生逢",
+        "vi_VN": "Quyền Lộc Sinh Phùng"
+      },
+      "chinese": "權祿生逢"
+    },
+    {
+      "source": "权禄",
+      "aliases": [
+        "Quan Lu",
+        "Quanlu",
+        "Quan Lữ"
+      ],
+      "targets": {
+        "en_US": "power and prosperity",
+        "ko_KR": "권록",
+        "ja_JP": "権禄",
+        "vi_VN": "Quyền Lộc"
+      },
+      "chinese": "權祿"
+    },
+    {
+      "source": "科明暗禄",
+      "aliases": [
+        "Keming Anlu",
+        "Ke Ming An Lu"
+      ],
+      "targets": {
+        "en_US": "visible recognition and hidden prosperity",
+        "ko_KR": "과명암록",
+        "ja_JP": "科明暗禄",
+        "vi_VN": "Khoa Minh Ám Lộc"
+      },
+      "chinese": "科明暗祿"
+    },
+    {
+      "source": "科明禄暗格",
+      "aliases": [
+        "Ke Ming Lu An Ge"
+      ],
+      "targets": {
+        "en_US": "visible recognition and hidden prosperity pattern",
+        "ko_KR": "과명록암격",
+        "ja_JP": "科明禄暗格",
+        "vi_VN": "Khoa Minh Lộc Ám Cách"
+      },
+      "chinese": "科明祿暗格"
+    },
+    {
+      "source": "暗禄",
+      "aliases": [
+        "Anlu",
+        "An Lu"
+      ],
+      "targets": {
+        "en_US": "unseen prosperity",
+        "ko_KR": "암록",
+        "ja_JP": "暗禄",
+        "vi_VN": "Ám Lộc"
+      },
+      "chinese": "暗祿"
+    },
+    {
+      "source": "明禄暗禄",
+      "aliases": [
+        "Ming Lu An Lu",
+        "Ming Lu và An Lu"
+      ],
+      "targets": {
+        "en_US": "visible and hidden prosperity",
+        "ko_KR": "명록암록",
+        "ja_JP": "明禄暗禄",
+        "vi_VN": "Minh Lộc Ám Lộc"
+      },
+      "chinese": "明祿暗祿"
+    },
+    {
+      "source": "明禄",
+      "aliases": [
+        "Ming Lu"
+      ],
+      "targets": {
+        "en_US": "visible prosperity",
+        "ko_KR": "명록",
+        "ja_JP": "明禄",
+        "vi_VN": "Minh Lộc"
+      },
+      "chinese": "明祿"
+    },
+    {
+      "source": "禄马交驰",
+      "aliases": [
+        "Lu Ma Jiao Chi"
+      ],
+      "targets": {
+        "en_US": "prosperity and mobility",
+        "ko_KR": "록마교치",
+        "ja_JP": "禄馬交馳",
+        "vi_VN": "Lộc Mã Giao Trì"
+      },
+      "chinese": "祿馬交馳"
+    },
+    {
+      "source": "禄马佩印",
+      "aliases": [
+        "Lu Ma Peiyin"
+      ],
+      "targets": {
+        "en_US": "prosperity and mobility with a seal",
+        "ko_KR": "록마패인",
+        "ja_JP": "禄馬佩印",
+        "vi_VN": "Lộc Mã Bội Ấn"
+      },
+      "chinese": "祿馬佩印"
+    },
+    {
+      "source": "坐贵向贵",
+      "aliases": [
+        "Siguixianggui"
+      ],
+      "targets": {
+        "en_US": "benefactors in the soul and opposite palaces",
+        "ko_KR": "좌귀향귀",
+        "ja_JP": "坐貴向貴",
+        "vi_VN": "Tọa Quý Hướng Quý"
+      },
+      "chinese": "坐貴向貴"
+    },
+    {
+      "source": "贵格",
+      "aliases": [
+        "Quaker",
+        "クエーカー教徒",
+        "퀘이커"
+      ],
+      "targets": {
+        "en_US": "pattern of high status",
+        "ko_KR": "귀격",
+        "ja_JP": "貴格",
+        "vi_VN": "quý cách"
+      },
+      "chinese": "貴格"
+    },
+    {
+      "source": "紫微斗数全书",
+      "aliases": [
+        "Zi Wei Dou Shu Complete Book",
+        "紫微斗数 Complete Book",
+        "Tử Vi Đẩu Số Complete Book"
+      ],
+      "targets": {
+        "en_US": "Complete Book of Zi Wei Dou Shu",
+        "ko_KR": "자미두수전서",
+        "ja_JP": "紫微斗数全書",
+        "vi_VN": "Tử Vi Đẩu Số Toàn Thư"
+      },
+      "chinese": "紫微斗數全書"
+    },
+    {
+      "source": "甲",
+      "aliases": [
+        "Jia"
+      ],
+      "targets": {
+        "en_US": "jia",
+        "ko_KR": "갑",
+        "ja_JP": "甲",
+        "vi_VN": "Giáp"
+      },
+      "chinese": "甲"
+    },
+    {
+      "source": "乙",
+      "aliases": [
+        "Yi"
+      ],
+      "targets": {
+        "en_US": "yi",
+        "ko_KR": "을",
+        "ja_JP": "乙",
+        "vi_VN": "Ất"
+      },
+      "chinese": "乙"
+    },
+    {
+      "source": "丙",
+      "aliases": [
+        "Bing"
+      ],
+      "targets": {
+        "en_US": "bing",
+        "ko_KR": "병",
+        "ja_JP": "丙",
+        "vi_VN": "Bính"
+      },
+      "chinese": "丙"
+    },
+    {
+      "source": "丁",
+      "aliases": [
+        "Ding"
+      ],
+      "targets": {
+        "en_US": "ding",
+        "ko_KR": "정",
+        "ja_JP": "丁",
+        "vi_VN": "Đinh"
+      },
+      "chinese": "丁"
+    },
+    {
+      "source": "己",
+      "aliases": [
+        "Ji"
+      ],
+      "targets": {
+        "en_US": "ji",
+        "ko_KR": "기",
+        "ja_JP": "己",
+        "vi_VN": "Kỷ"
+      },
+      "chinese": "己"
+    },
+    {
+      "source": "庚",
+      "aliases": [
+        "Geng"
+      ],
+      "targets": {
+        "en_US": "geng",
+        "ko_KR": "경",
+        "ja_JP": "庚",
+        "vi_VN": "Canh"
+      },
+      "chinese": "庚"
+    },
+    {
+      "source": "子",
+      "aliases": [
+        "Zi"
+      ],
+      "targets": {
+        "en_US": "zi",
+        "ko_KR": "자",
+        "ja_JP": "子",
+        "vi_VN": "Tý"
+      },
+      "chinese": "子"
+    },
+    {
+      "source": "丑",
+      "aliases": [
+        "Chou"
+      ],
+      "targets": {
+        "en_US": "chou",
+        "ko_KR": "축",
+        "ja_JP": "丑",
+        "vi_VN": "Sửu"
+      },
+      "chinese": "丑"
+    },
+    {
+      "source": "寅",
+      "aliases": [
+        "Yin"
+      ],
+      "targets": {
+        "en_US": "yin",
+        "ko_KR": "인",
+        "ja_JP": "寅",
+        "vi_VN": "Dần"
+      },
+      "chinese": "寅"
+    },
+    {
+      "source": "卯",
+      "aliases": [
+        "Mao"
+      ],
+      "targets": {
+        "en_US": "mao",
+        "ko_KR": "묘",
+        "ja_JP": "卯",
+        "vi_VN": "Mão"
+      },
+      "chinese": "卯"
+    },
+    {
+      "source": "辰",
+      "aliases": [
+        "Chen"
+      ],
+      "targets": {
+        "en_US": "chen",
+        "ko_KR": "진",
+        "ja_JP": "辰",
+        "vi_VN": "Thìn"
+      },
+      "chinese": "辰"
+    },
+    {
+      "source": "巳",
+      "aliases": [
+        "Si"
+      ],
+      "targets": {
+        "en_US": "si",
+        "ko_KR": "사",
+        "ja_JP": "巳",
+        "vi_VN": "Tỵ"
+      },
+      "chinese": "巳"
+    },
+    {
+      "source": "午",
+      "aliases": [
+        "Wu"
+      ],
+      "targets": {
+        "en_US": "woo",
+        "ko_KR": "오",
+        "ja_JP": "午",
+        "vi_VN": "Ngọ"
+      },
+      "chinese": "午"
+    },
+    {
+      "source": "未",
+      "aliases": [
+        "Wei"
+      ],
+      "targets": {
+        "en_US": "wei",
+        "ko_KR": "미",
+        "ja_JP": "未",
+        "vi_VN": "Mùi"
+      },
+      "chinese": "未"
+    },
+    {
+      "source": "申",
+      "aliases": [
+        "Shen"
+      ],
+      "targets": {
+        "en_US": "shen",
+        "ko_KR": "신",
+        "ja_JP": "申",
+        "vi_VN": "Thân"
+      },
+      "chinese": "申"
+    },
+    {
+      "source": "酉",
+      "aliases": [
+        "You"
+      ],
+      "targets": {
+        "en_US": "you",
+        "ko_KR": "유",
+        "ja_JP": "酉",
+        "vi_VN": "Dậu"
+      },
+      "chinese": "酉"
+    },
+    {
+      "source": "戌",
+      "aliases": [
+        "Xu"
+      ],
+      "targets": {
+        "en_US": "xu",
+        "ko_KR": "술",
+        "ja_JP": "戌",
+        "vi_VN": "Tuất"
+      },
+      "chinese": "戌"
+    },
+    {
+      "source": "亥",
+      "aliases": [
+        "Hai"
+      ],
+      "targets": {
+        "en_US": "hai",
+        "ko_KR": "해",
+        "ja_JP": "亥",
+        "vi_VN": "Hợi"
+      },
+      "chinese": "亥"
+    },
+    {
+      "source": "卯酉",
+      "aliases": [
+        "Maoyou"
+      ],
+      "targets": {
+        "en_US": "mao and you",
+        "ko_KR": "묘·유",
+        "ja_JP": "卯酉",
+        "vi_VN": "Mão Dậu"
+      },
+      "chinese": "卯酉"
+    },
+    {
+      "source": "子午",
+      "aliases": [
+        "Ziwu",
+        "子烏"
+      ],
+      "targets": {
+        "en_US": "zi and woo",
+        "ko_KR": "자·오",
+        "ja_JP": "子午",
+        "vi_VN": "Tý Ngọ"
+      },
+      "chinese": "子午"
+    },
+    {
+      "source": "寅申",
+      "aliases": [
+        "Yinshen",
+        "インシェン"
+      ],
+      "targets": {
+        "en_US": "yin and shen",
+        "ko_KR": "인·신",
+        "ja_JP": "寅申",
+        "vi_VN": "Dần Thân"
+      },
+      "chinese": "寅申"
+    },
+    {
+      "source": "巳酉丑",
+      "aliases": [
+        "Siyou Chou",
+        "Siyouchou"
+      ],
+      "targets": {
+        "en_US": "si, you and chou",
+        "ko_KR": "사·유·축",
+        "ja_JP": "巳酉丑",
+        "vi_VN": "Tỵ Dậu Sửu"
+      },
+      "chinese": "巳酉丑"
+    },
+    {
+      "source": "亥卯未",
+      "aliases": [
+        "Haimaowei",
+        "Haimao"
+      ],
+      "targets": {
+        "en_US": "hai, mao and wei",
+        "ko_KR": "해·묘·미",
+        "ja_JP": "亥卯未",
+        "vi_VN": "Hợi Mão Mùi"
+      },
+      "chinese": "亥卯未"
+    },
+    {
+      "source": "流月",
+      "aliases": [
+        "Liuyue"
+      ],
+      "targets": {
+        "en_US": "monthly cycle",
+        "ko_KR": "유월",
+        "ja_JP": "流月",
+        "vi_VN": "lưu nguyệt"
+      },
+      "chinese": "流月"
+    },
+    {
+      "source": "四旺地",
+      "aliases": [
+        "Siwangdi"
+      ],
+      "targets": {
+        "en_US": "four thriving positions",
+        "ko_KR": "사왕지",
+        "ja_JP": "四旺地",
+        "vi_VN": "tứ vượng địa"
+      },
+      "chinese": "四旺地"
+    },
+    {
+      "source": "四马地",
+      "aliases": [
+        "Sima Di"
+      ],
+      "targets": {
+        "en_US": "four horse positions",
+        "ko_KR": "사마지",
+        "ja_JP": "四馬地",
+        "vi_VN": "tứ mã địa"
+      },
+      "chinese": "四馬地"
+    },
+    {
+      "source": "三方四正",
+      "aliases": [
+        "Tripartite Four"
+      ],
+      "targets": {
+        "en_US": "trine and opposite palaces",
+        "ko_KR": "삼방사정",
+        "ja_JP": "三方四正",
+        "vi_VN": "tam phương tứ chính"
+      },
+      "chinese": "三方四正"
+    },
+    {
+      "source": "科甲",
+      "aliases": [
+        "Kejia"
+      ],
+      "targets": {
+        "en_US": "academic achievement",
+        "ko_KR": "과갑",
+        "ja_JP": "科甲",
+        "vi_VN": "khoa giáp"
+      },
+      "chinese": "科甲"
+    },
+    {
+      "source": "飞星",
+      "aliases": [
+        "Feixing"
+      ],
+      "targets": {
+        "en_US": "flying transformations",
+        "ko_KR": "비성",
+        "ja_JP": "飛星",
+        "vi_VN": "phi tinh"
+      },
+      "chinese": "飛星"
+    },
+    {
+      "source": "飞化",
+      "aliases": [
+        "Feihua"
+      ],
+      "targets": {
+        "en_US": "flying transformations",
+        "ko_KR": "비화",
+        "ja_JP": "飛化",
+        "vi_VN": "phi hóa"
+      },
+      "chinese": "飛化"
+    },
+    {
+      "source": "天干",
+      "aliases": [
+        "Tianqian",
+        "Tiangan"
+      ],
+      "targets": {
+        "en_US": "Heavenly Stem",
+        "ko_KR": "천간",
+        "ja_JP": "天干",
+        "vi_VN": "thiên can"
+      },
+      "chinese": "天干"
+    },
+    {
+      "source": "空曜",
+      "aliases": [
+        "Xingkong"
+      ],
+      "targets": {
+        "en_US": "void stars",
+        "ko_KR": "공요",
+        "ja_JP": "空曜",
+        "vi_VN": "không diệu"
+      },
+      "chinese": "空曜"
+    },
+    {
+      "source": "善荫朝纲",
+      "aliases": [
+        "Shanyin Chaogangge"
+      ],
+      "targets": {
+        "en_US": "advisor and blessing attend the court",
+        "ko_KR": "선음조강격",
+        "ja_JP": "善蔭朝綱",
+        "vi_VN": "Thiện Ấm Triều Cương"
+      },
+      "chinese": "善荫朝纲"
+    },
+    {
+      "source": "日照雷门",
+      "aliases": [
+        "Rizhao Leimen",
+        "Rizhao Thunder Gate",
+        "Sunrise Leimen"
+      ],
+      "targets": {
+        "en_US": "Sun Illuminating the Thunder Gate",
+        "ko_KR": "일조뇌문",
+        "ja_JP": "日照雷門",
+        "vi_VN": "Nhật Chiếu Lôi Môn"
+      },
+      "chinese": "日照雷門"
+    },
+    {
+      "source": "日月藏辉",
+      "aliases": [
+        "Riyue Zanghui"
+      ],
+      "targets": {
+        "en_US": "hidden radiance of sun and moon",
+        "ko_KR": "일월장휘",
+        "ja_JP": "日月蔵輝",
+        "vi_VN": "Nhật Nguyệt Tàng Huy"
+      },
+      "chinese": "日月藏輝"
+    },
+    {
+      "source": "月朗天门",
+      "aliases": [
+        "Yue Lang Tianmen",
+        "Yue Langtianmen"
+      ],
+      "targets": {
+        "en_US": "Bright moon at the Heavenly Gate",
+        "ko_KR": "월랑천문",
+        "ja_JP": "月朗天門",
+        "vi_VN": "Nguyệt Lãng Thiên Môn"
+      },
+      "chinese": "月朗天門"
+    },
+    {
+      "source": "水澄桂萼",
+      "aliases": [
+        "Shuichengguicalyx"
+      ],
+      "targets": {
+        "en_US": "clear water reflects the moon",
+        "ko_KR": "수징계악",
+        "ja_JP": "水澄桂萼",
+        "vi_VN": "Thủy Trừng Quế Ngạc"
+      },
+      "chinese": "水澄桂萼"
+    },
+    {
+      "source": "雄宿朝元",
+      "aliases": [
+        "Xiongsu Chaoyuan"
+      ],
+      "targets": {
+        "en_US": "martial star attends the court",
+        "ko_KR": "웅숙조원",
+        "ja_JP": "雄宿朝元",
+        "vi_VN": "Hùng Tú Triều Nguyên"
+      },
+      "chinese": "雄宿朝元"
+    },
+    {
+      "source": "阳梁昌禄",
+      "aliases": [
+        "Yangliang Changlu"
+      ],
+      "targets": {
+        "en_US": "sun and blessing meet literary talent and prosperity",
+        "ko_KR": "양량창록",
+        "ja_JP": "陽梁昌禄",
+        "vi_VN": "Dương Lương Xương Lộc"
+      },
+      "chinese": "陽梁昌祿"
+    },
+    {
+      "source": "三奇",
+      "aliases": [
+        "Sanqi"
+      ],
+      "targets": {
+        "en_US": "three auspicious transformations",
+        "ko_KR": "삼기",
+        "ja_JP": "三奇",
+        "vi_VN": "tam kỳ"
+      },
+      "chinese": "三奇"
+    },
+    {
+      "source": "三吉化",
+      "aliases": [
+        "Sanjihua"
+      ],
+      "targets": {
+        "en_US": "three auspicious transformations",
+        "ko_KR": "삼길화",
+        "ja_JP": "三吉化",
+        "vi_VN": "ba cát hóa"
+      },
+      "chinese": "三吉化"
+    },
+    {
+      "source": "杀破狼",
+      "aliases": [
+        "Sha Po Lang",
+        "Sha Po Wolf",
+        "Slaying the Wolf",
+        "Slaying Wolf",
+        "Slaying the wolf"
+      ],
+      "targets": {
+        "en_US": "marshal, rebel and wolf",
+        "ko_KR": "살파랑",
+        "ja_JP": "殺破狼",
+        "vi_VN": "Sát Phá Lang"
+      },
+      "chinese": "殺破狼"
+    },
+    {
+      "source": "空劫",
+      "aliases": [
+        "Kongjie"
+      ],
+      "targets": {
+        "en_US": "void and robber",
+        "ko_KR": "지공·지겁",
+        "ja_JP": "地空・地劫",
+        "vi_VN": "Địa Không – Địa Kiếp"
+      },
+      "chinese": "空劫"
+    },
+    {
+      "source": "巨日",
+      "aliases": [
+        "Juri"
+      ],
+      "targets": {
+        "en_US": "advocator and sun",
+        "ko_KR": "거문·태양",
+        "ja_JP": "巨門・太陽",
+        "vi_VN": "Cự Môn – Thái Dương"
+      },
+      "chinese": "巨日"
+    },
+    {
+      "source": "同梁",
+      "aliases": [
+        "Tongliang",
+        "Tong Liang"
+      ],
+      "targets": {
+        "en_US": "fortunate and blessing",
+        "ko_KR": "천동·천량",
+        "ja_JP": "天同・天梁",
+        "vi_VN": "Thiên Đồng – Thiên Lương"
+      },
+      "chinese": "同梁"
+    },
+    {
+      "source": "机月同梁",
+      "aliases": [
+        "Jiyue Tongliang",
+        "Jiyue and Tian Liang"
+      ],
+      "targets": {
+        "en_US": "advisor, moon, fortunate and blessing",
+        "ko_KR": "기월동량",
+        "ja_JP": "機月同梁",
+        "vi_VN": "Cơ Nguyệt Đồng Lương"
+      },
+      "chinese": "機月同梁"
+    },
+    {
+      "source": "武贪",
+      "aliases": [
+        "Wu Tan",
+        "WuTan",
+        "Wutan"
+      ],
+      "targets": {
+        "en_US": "warrior and wolf",
+        "ko_KR": "무곡·탐랑",
+        "ja_JP": "武曲・貪狼",
+        "vi_VN": "Vũ Khúc – Tham Lang"
+      },
+      "chinese": "武貪"
+    },
+    {
+      "source": "桃花星",
+      "aliases": [
+        "Peach Blossom Star",
+        "peach blossom star"
+      ],
+      "targets": {
+        "en_US": "romance star",
+        "ko_KR": "도화성",
+        "ja_JP": "桃花星",
+        "vi_VN": "sao đào hoa"
+      },
+      "chinese": "桃花星"
+    },
+    {
+      "source": "双桃花",
+      "aliases": [
+        "Double Peach Blossom Stars"
+      ],
+      "targets": {
+        "en_US": "two romance stars",
+        "ko_KR": "쌍도화",
+        "ja_JP": "双桃花",
+        "vi_VN": "hai sao đào hoa"
+      },
+      "chinese": "双桃花"
+    },
+    {
+      "source": "六亲宫",
+      "aliases": [
+        "Sixth Palace",
+        "sixth palace",
+        "여섯째궁",
+        "여섯 번째 궁"
+      ],
+      "targets": {
+        "en_US": "relationship palaces",
+        "ko_KR": "육친궁",
+        "ja_JP": "六親宮",
+        "vi_VN": "cung lục thân"
+      },
+      "chinese": "六亲宮"
+    },
+    {
+      "source": "化科",
+      "aliases": [
+        "化学科学",
+        "Khoa học hóa học"
+      ],
+      "targets": {
+        "en_US": "recognition transformation",
+        "ko_KR": "화과",
+        "ja_JP": "化科",
+        "vi_VN": "Hóa Khoa"
+      },
+      "chinese": "化科"
+    },
+    {
+      "source": "化忌",
+      "aliases": [
+        "Hehua"
+      ],
+      "targets": {
+        "en_US": "obstruction transformation",
+        "ko_KR": "화기",
+        "ja_JP": "化忌",
+        "vi_VN": "Hóa Kỵ"
+      },
+      "chinese": "化忌"
+    },
+    {
+      "source": "大限",
+      "aliases": [
+        "Dade",
+        "Dadian",
+        "Daha"
+      ],
+      "targets": {
+        "en_US": "decadal period",
+        "ko_KR": "대한",
+        "ja_JP": "大限",
+        "vi_VN": "đại hạn"
+      },
+      "chinese": "大限"
+    },
+    {
+      "source": "丑未宫",
+      "aliases": [
+        "Chouweigong"
+      ],
+      "targets": {
+        "en_US": "chou and wei palaces",
+        "ko_KR": "축·미궁",
+        "ja_JP": "丑・未の宮",
+        "vi_VN": "cung Sửu và Mùi"
+      },
+      "chinese": "丑未宮"
+    },
+    {
+      "source": "辛",
+      "aliases": [
+        "Xin"
+      ],
+      "targets": {
+        "en_US": "xin",
+        "ko_KR": "신",
+        "ja_JP": "辛",
+        "vi_VN": "Tân"
+      },
+      "chinese": "辛"
+    },
+    {
+      "source": "癸",
+      "aliases": [
+        "Gui"
+      ],
+      "targets": {
+        "en_US": "gui",
+        "ko_KR": "계",
+        "ja_JP": "癸",
+        "vi_VN": "Quý"
+      },
+      "chinese": "癸"
+    }
+  ]
+}

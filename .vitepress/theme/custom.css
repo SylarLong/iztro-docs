@@ -52,10 +52,6 @@ header .container a.title,
   max-width: unset !important;
 }
 
-table tr th:not(:last-child),
-table tr td:not(:last-child) {
-  white-space: nowrap;
-}
 
 .astrolabe tr,
 .astrolabe tr:nth-child(2n) {
@@ -81,7 +77,7 @@ table tr td:not(:last-child) {
   height: 100%;
 }
 
-.astrolabe .pattern :last-child {
+.astrolabe .pattern > :last-child {
   display: flex;
   justify-content: space-between;
 }
@@ -137,3 +133,48 @@ table tr td:not(:last-child) {
     grid-template-columns: 100px auto;
   }
 }
+
+/* Allow the navigation to share the space left by search and utility buttons. */
+.VPNavBar .content,
+.VPNavBar .content-body {
+  min-width: 0;
+}
+.VPNavBar .content-body > :not(.menu) {
+  flex-shrink: 0;
+}
+
+/* Keep long translated chart labels inside a larger, nearly square chart. */
+.vp-doc table.astrolabe:has(.pattern) {
+  --pattern-size: min(100%, 720px);
+  display: table;
+  width: var(--pattern-size);
+  height: min(100cqw, 720px);
+  aspect-ratio: 1;
+  table-layout: fixed;
+}
+.vp-doc table.astrolabe:has(.pattern) td {
+  width: 25%;
+  height: 25%;
+  padding: 8px;
+  overflow-wrap: anywhere;
+}
+.astrolabe .pattern > :last-child {
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.astrolabe .pattern code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 767px) {
+  .vp-doc table.astrolabe:has(.pattern) {
+    height: auto;
+  }
+  .vp-doc table.astrolabe:has(.pattern) td {
+    height: 120px;
+    padding: 4px;
+  }
+}
+
+.VPNavBar .VPNavBarSearch { flex-grow: 0; }
+.vp-doc :has(> table.astrolabe .pattern) { container-type: inline-size; }

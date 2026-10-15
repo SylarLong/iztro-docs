@@ -1,25 +1,27 @@
 ---
 outline: deep
-description: "Zi Wei Academy, iztro official documentation, FunctionalStar API and examples."
+description: "Query stars in a Zi Wei Dou Shu chart with iztro’s star API, with properties, methods, and examples."
 ---
 
-# Stars
+# Stars（星曜）   {#星曜}
 
-## Introduction
+## Introduction   {#前言}
 
-Stars are an important part of Zi Wei Dou Shu (紫微斗數); different star combinations form different character patterns. This page focuses on development usage. In `iztro`, major stars (主星), auxiliary stars (輔星), and miscellaneous stars (雜曜) are all grouped under the star system. The Forty-Eight Deities and Sha (四十八神煞) are not included.
+Stars（星曜） are central to Zi Wei Dou Shu（紫微斗數）: different combinations are used to describe different personality traits. For that background, see [the star system（星曜系統）](/en_US/learn/star.md). This chapter focuses on using stars in development.
 
-## Functional class definition
+:::tip Tips
+`iztro` groups `major stars`（主星）, `auxiliary stars`（輔星）, and `miscellaneous stars`（雜曜） into its star system, while `48 symbolic stars`（48神煞） are handled separately. If you are unfamiliar with `48 symbolic stars`（48神煞）, see [the 48 symbolic stars（48神煞）](/en_US/learn/dec-star.md).
+:::
 
-As with [FunctionalAstrolabe](./astrolabe.md#functionalastrolabe) and [FunctionalPalace](./palace.md#functionalpalace), do not create `FunctionalStar` manually. Use an instance returned by another object instead.
+## Classes and analysis methods {#功能类定义}
 
-### FunctionalStar <Badge type="warning" text="^1.2.0" />
+As with [FunctionalAstrolabe](./astrolabe.md#functionalastrolabe) and [FunctionalPalace](./palace.md#functionalpalace), use `FunctionalStar` instances returned by other objects rather than constructing them manually.
+
+### FunctionalStar <Badge type="warning" text="^1.2.0" /> {#functionalstar}
 
 ---
 
-<Badge type="tip" text="implements" /> `IFunctionalStar` <Badge type="tip" text="extends" /> [`Star`](../type-definition.md#star)
-
-All properties of this class are inherited from `Star`; the interface adds methods for analysis.
+<Badge type="tip" text="implements" /> `IFunctionalStar` <Badge type="tip" text="extends" /> [`Star`](/en_US/type-definition.md#star)
 
 - Interface definition
 
@@ -38,15 +40,15 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
 - Properties
 
-  See [`Star`](../type-definition.md#star).
+  Reference [Star](/en_US/type-definition.md#star)
 
 - Methods
 
-  ### toJSON() <Badge type="warning" text="^2.6.0" />
+  ### toJSON() <Badge type="warning" text="^2.6.0" /> {#tojson}
 
   - Purpose
 
-    Converts the functional star into a plain JSON object. Analysis methods and runtime palace or astrolabe references are excluded; circular references are safely omitted.
+    Converts the functional star to a plain JSON object. Analysis methods and runtime references to its palace and chart are excluded; circular references are safely ignored.
 
   - Definition
 
@@ -70,15 +72,15 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   ***
 
-  :::danger
-  `setPalace()` and `setAstrolabe()` were added to make `FunctionalStar` work smoothly. Do not call them manually, otherwise data may become inconsistent.
+  :::danger ❗️Attention
+  `FunctionalStar` includes `setPalace()` and `setAstrolabe()` to connect a star with its palace and chart. Do not call these methods manually during normal use, as doing so can cause data errors.
   :::
 
-  ### palace()
+  ### palace() {#palace}
 
   - Purpose
 
-    Gets the palace (宮位) containing this star.
+    Retrieves the palace containing the star.
 
   - Definition
 
@@ -88,7 +90,7 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   - Parameters
 
-    None
+    `none`
 
   - Return value
 
@@ -96,20 +98,23 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   - Example
 
+    Retrieves the palace containing `emperor`（紫微）.
+
     ```ts
     import { astro } from "iztro";
 
-    const astrolabe = astro.bySolar("2000-8-16", 2, "女", true, "zh-CN");
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
+
     const palace = astrolabe.star("紫微").palace();
     ```
 
   ***
 
-  ### surroundedPalaces()
+  ### surroundedPalaces() {#surroundedpalaces}
 
   - Purpose
 
-    Gets the Three Harmonies and Opposition (三方四正) palaces of this star.
+    Retrieves the star’s own palace, its two trine palaces, and its opposite palace（三方四正）.
 
   - Definition
 
@@ -119,7 +124,7 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   - Parameters
 
-    None
+    `none`
 
   - Return value
 
@@ -127,17 +132,23 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   - Example
 
+    Retrieves `emperor`（紫微）’s associated `trine and opposite palaces`（三方四正）.
+
     ```ts
+    import { astro } from "iztro";
+
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
+
     const palaces = astrolabe.star("紫微").surroundedPalaces();
     ```
 
   ***
 
-  ### oppositePalace()
+  ### oppositePalace() {#oppositepalace}
 
   - Purpose
 
-    Gets the opposite palace (對宮) of this star.
+    Retrieves the palace opposite the star’s palace.
 
   - Definition
 
@@ -147,7 +158,7 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   - Parameters
 
-    None
+    `none`
 
   - Return value
 
@@ -155,17 +166,23 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   - Example
 
+    Retrieves `emperor`（紫微）’s associated `opposite palace`（對宮）.
+
     ```ts
+    import { astro } from "iztro";
+
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
+
     const palace = astrolabe.star("紫微").oppositePalace();
     ```
 
   ***
 
-  ### withBrightness()
+  ### withBrightness() {#withbrightness}
 
   - Purpose
 
-    Tests whether the star has the supplied brightness. Multiple grades are allowed; the method returns `true` when any grade matches.
+    Checks whether the star has the specified brightness. If several brightness values are supplied, matching any one of them returns `true`.
 
   - Definition
 
@@ -175,9 +192,10 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   - Parameters
 
-    | Parameter | Type | Required | Default | Description |
-    | --- | --- | --- | --- | --- |
-    | brightness | [`Brightness`](../type-definition.md#brightness) \| [`Brightness[]`](../type-definition.md#brightness) | `true` | - | Star brightness to test |
+
+   | Parameter | Type | Required? | Default value | Description |
+   | --- | --- | --- | --- | --- |
+   | brightness | [`Brightness`](/en_US/type-definition.md#brightness)  \|  [`Brightness[]`](/en_US/type-definition.md#brightness) | `true` | - | Star brightness to check |
 
   - Return value
 
@@ -185,17 +203,23 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   - Example
 
+    Determine whether `emperor`（紫微） is in the state of `[+3]`（廟） or `[+2]`（旺）
+
     ```ts
-    const result = astrolabe.star("紫微").withBrightness(["廟", "旺"]);
+    import { astro } from "iztro";
+
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
+
+    const result = astrolabe.star("紫微").withBrightness(["庙", "旺"]);
     ```
 
   ***
 
-  ### withMutagen()
+  ### withMutagen() {#withmutagen}
 
   - Purpose
 
-    Tests whether the star has a Four Transformation (四化). Multiple transformations are allowed; the method returns `true` when any one matches.
+    Checks whether the star has a specified transformation（四化）. If several are supplied, matching any one returns `true`.
 
   - Definition
 
@@ -205,9 +229,10 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   - Parameters
 
-    | Parameter | Type | Required | Default | Description |
-    | --- | --- | --- | --- | --- |
-    | mutagen | [`Mutagen`](../type-definition.md#mutagen) \| [`Mutagen[]`](../type-definition.md#mutagen) | `true` | - | Four Transformation: Prosperity (祿), Authority (權), Academic Distinction (科), or Obstruction (忌) |
+
+   | Parameter | Type | Required? | Default value | Description |
+   | --- | --- | --- | --- | --- |
+   | mutagen | [`Mutagen`](/en_US/type-definition.md#mutagen)  \|  [`Mutagen[]`](/en_US/type-definition.md#mutagen) | `true` | - | Four transformations: A（祿）, B（權）, C（科）, D（忌） |
 
   - Return value
 
@@ -215,6 +240,12 @@ All properties of this class are inherited from `Star`; the interface adds metho
 
   - Example
 
+    Determine whether `emperor`（紫微） is in the state of `B`（化權） or `C`（化科）
+
     ```ts
-    const result = astrolabe.star("紫微").withMutagen(["權", "科"]);
+    import { astro } from "iztro";
+
+    const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN");
+
+    const result = astrolabe.star("紫微").withMutagen(["权", "科"]);
     ```

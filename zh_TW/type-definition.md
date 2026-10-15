@@ -1,5 +1,5 @@
 ---
-description: "iztro類型定義，iztro的astro對象使用方法以及示例代碼。紫微鬥數信息國際化內容的輸出定義。"
+description: "iztro類型定義，iztro的astro對象使用方法以及示例代碼。紫微斗數信息國際化內容的輸出定義。"
 ---
 
 # 類型定義
@@ -8,27 +8,27 @@ description: "iztro類型定義，iztro的astro對象使用方法以及示例代
 
 本頁介紹了 `iztro` 中的類型定義，除了 [國際化類型](./type-definition.html#國際化類型) 被定義在了 [i18n](https://github.com/SylarLong/iztro/blob/main/src/i18n/index.ts) 文件夾內，其他類型都定義在 [types](https://github.com/SylarLong/iztro/tree/main/src/data/types) 文件夾內。
 
-妳可以使用如下代碼引入 `國際化類型`:
+你可以使用如下代碼引入 `國際化類型`:
 
 ```ts
 import { HeavenlyStemName } from "iztro/lib/i18n";
 ```
 
-而當妳需要引入其他類型的時候，則需要：
+而當你需要引入其他類型的時候，則需要：
 
 ```ts
 import { Palace } from "iztro/lib/data/types";
 ```
 
 ::: tip 提示
-如果妳發現 `翻譯` 和 `類型定義` 中有不對或者不恰當的地方，可以在 [這裏](https://github.com/SylarLong/iztro/issues) 創建 Issue 指出，非常感謝。
+如果你發現 `翻譯` 和 `類型定義` 中有不對或者不恰當的地方，可以在 [這裏](https://github.com/SylarLong/iztro/issues) 創建 Issue 指出，非常感謝。
 :::
 
 ## 國際化類型
 
-`iztro` 為了支持國際化輸入輸出，對需要進行參數輸入輸出的數據進行了多語言定義，在輸入的時候，妳可以輸入 **任意語言** 的值，比如在需要傳 [`HeavenlyStemName`](./type-definition.html#heavenlystemname) 的地方，妳可以傳入 `甲`，也可以傳入 `갑` 或者 `jia`。
+`iztro` 為了支持國際化輸入輸出，對需要進行參數輸入輸出的數據進行了多語言定義，在輸入的時候，你可以輸入 **任意語言** 的值，比如在需要傳 [`HeavenlyStemName`](./type-definition.html#heavenlystemname) 的地方，你可以傳入 `甲`，也可以傳入 `갑` 或者 `jia`。
 
-比如在調用`getHoroscopeStar()`方法的時候，妳可以以中文的幹支作為參數：
+比如在調用`getHoroscopeStar()`方法的時候，你可以以中文的干支作為參數：
 
 ```ts
 import { getHoroscopeStar } from "iztro/lib/star";
@@ -44,7 +44,7 @@ import { getHoroscopeStar } from "iztro/lib/star";
 getHoroscopeStar("갑", "zi", "decadal");
 ```
 
-當然輸出的時候會統壹按照妳指定的語言進行輸出。妳可以在調用上述方法之前設置妳的輸出語言：
+當然輸出的時候會統一按照你指定的語言進行輸出。你可以在調用上述方法之前設置你的輸出語言：
 
 ```ts
 import { setLanguage } from "iztro/lib/i18n";
@@ -140,7 +140,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 定義了`十天干`
 
 :::tabs
-== 簡體中文
+== 简体中文
 `甲` | `乙` | `丙` | `丁` | `戊` | `己` | `庚` | `辛` | `壬` | `癸`
 == 繁體中文
 `甲` | `乙` | `丙` | `丁` | `戊` | `己` | `庚` | `辛` | `壬` | `癸`
@@ -150,16 +150,18 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 `갑` | `을` | `병` | `정` | `무` | `기` | `경` | `신` | `임` | `계`
 == 日本語
 `甲` | `乙` | `丙` | `丁` | `戊` | `己` | `庚` | `辛` | `壬` | `癸`
+== Tiếng Việt
+`Giáp` | `Ất` | `Bính` | `Đinh` | `Mậu` | `Kỷ` | `Canh` | `Tân` | `Nhâm` | `Quý`
 :::
 
 ---
 
 ### `EarthlyBranchName`
 
-定義了 `十二地支`，地支中的 `午` 英文和天干中的 `戊` 相同，為了解決國際化時的沖突，固將地支中的 `午` 翻譯成了 `woo`。
+定義了 `十二地支`，地支中的 `午` 英文和天干中的 `戊` 相同，為了解決國際化時的沖突，故將地支中的 `午` 翻譯成了 `woo`。
 
 :::tabs
-== 簡體中文
+== 简体中文
 `子` | `丑` | `寅` | `卯` | `辰` | `巳` | `午` | `未` | `申` | `酉` | `戌` | `亥`
 == 繁體中文
 `子` | `丑` | `寅` | `卯` | `辰` | `巳` | `午` | `未` | `申` | `酉` | `戌` | `亥`
@@ -169,25 +171,29 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 `자` | `축` | `인` | `묘` | `진` | `사` | `오` | `미` | `신` | `유` | `술` | `해`
 == 日本語
 `子` | `丑` | `寅` | `卯` | `辰` | `巳` | `午` | `未` | `申` | `酉` | `戌` | `亥`
+== Tiếng Việt
+`Tý` | `Sửu` | `Dần` | `Mão` | `Thìn` | `Tỵ` | `Ngọ` | `Mùi` | `Thân` | `Dậu` | `Tuất` | `Hợi`
 :::
 
 ---
 
 ### `PalaceName`
 
-定義了紫微鬥數宮位的 `名稱`。
+定義了紫微斗數宮位的 `名稱`。
 
 :::tabs
-== 簡體中文
-`命宮` | `身宮` | `兄弟` | `夫妻` | `子女` | `財帛` | `疾厄` | `遷移` | `仆役` | `官祿` | `田宅` | `福德` | `父母` | `來因`
+== 简体中文
+`命宫` | `身宫` | `兄弟` | `夫妻` | `子女` | `财帛` | `疾厄` | `迁移` | `僕役` | `官禄` | `田宅` | `福德` | `父母` | `来因`
 == 繁體中文
-`命宮` | `身宮` | `兄弟` | `夫妻` | `子女` | `財帛` | `疾厄` | `遷移` | `僕役` | `官祿` | `田宅` | `福德` | `父母` | `來因`
+`命宮` | `身宮` | `兄弟` | `夫妻` | `子女` | `財帛` | `疾厄` | `遷移` | `僕役` | `官祿` | `田宅` | `福德` | `父母` | `来因`
 == English
 `soul` | `body` | `siblings` | `spouse` | `children` | `wealth` | `health` | `surface` | `friends` | `career` | `property` | `spirit` | `parents` | `origin`
 == 한국어
-`명궁` | `신궁` | `형제` | `부처` | `자녀` | `재백` | `질액` | `천이` | `노복` | `관록` | `전택` | `복덕` | `부모` | `라인`
+`명궁` | `신궁` | `형제` | `부처` | `자녀` | `재백` | `질액` | `천이` | `노복` | `관록` | `전택` | `복덕` | `부모` | `래인`
 == 日本語
-`命宮` | `身宮` | `兄弟` | `夫妻` | `子女` | `財帛` | `疾厄` | `遷移` | `僕役` | `官祿` | `田宅` | `福德` | `父母` | `來因`
+`命宮` | `身宮` | `兄弟` | `夫妻` | `子女` | `財帛` | `疾厄` | `遷移` | `僕役` | `官祿` | `田宅` | `福德` | `父母` | `来因`
+== Tiếng Việt
+`Mệnh` | `Thân` | `Huynh Đệ` | `Phu Thê` | `Tử Nữ` | `Tài Bạch` | `Tật Ách` | `Thiên Di` | `Nô Bộc` | `Quan Lộc` | `Điền Trạch` | `Phúc Đức` | `Phụ Mẫu` | `Lai Nhân`
 :::
 
 ---
@@ -197,8 +203,8 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 定義了星曜的 `亮度`
 
 :::tabs
-== 簡體中文
-`""` | `廟` | `旺` | `得` | `利` | `平` | `不` | `陷`
+== 简体中文
+`""` | `庙` | `旺` | `得` | `利` | `平` | `不` | `陷`
 == 繁體中文
 `""` | `廟` | `旺` | `得` | `利` | `平` | `不` | `陷`
 == English
@@ -207,167 +213,203 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 `""` | `[+3]` | `[+2]` | `[+1]` | `[0]` | `[-1]` | `[-2]` | `[-3]`
 == 日本語
 `""` | `廟` | `旺` | `得` | `利` | `平` | `不` | `陷`
+== Tiếng Việt
+`""` | `Miếu` | `Vượng` | `Đắc` | `Lợi` | `Bình` | `Bất` | `Hạn`
 :::
 
 ---
 
 ### `Mutagen`
 
-定義了紫微鬥數中 `四化星` 的名稱
+定義了紫微斗數中 `四化星` 的名稱
 
 :::tabs
-== 簡體中文
-`祿` | `權` | `科` | `忌`
+== 简体中文
+`禄` | `权` | `科` | `忌`
 == 繁體中文
 `祿` | `權` | `科` | `忌`
 == English
-`addtional` | `forceful` | `easygoing` | `focused`
+`A` | `B` | `C` | `D`
 == 한국어
 `록` | `권` | `과` | `기`
 == 日本語
 `祿` | `權` | `科` | `忌`
+== Tiếng Việt
+`Lộc` | `Quyền` | `Khoa` | `Kỵ`
 :::
 
 ---
 
 ### `StarName`
 
-定義了紫微鬥數中 `星曜` 的名稱，包括 `流曜`
+定義了紫微斗數中 `星曜` 的名稱，包括 `流曜`
 
 <Badge type="warning" text="^2.6.1" /> 武曲和歲破的英文名分別為 `warrior` 和 `breaker`。
 
 :::tabs
-== 簡體中文
+== 简体中文
 `紫微`
-| `天機`
-| `太陽`
+| `天机`
+| `太阳`
 | `武曲`
 | `天同`
-| `廉貞`
+| `廉贞`
 | `天府`
-| `太陰`
-| `貪狼`
-| `巨門`
+| `太阴`
+| `贪狼`
+| `巨门`
 | `天相`
 | `天梁`
-| `七殺`
-| `破軍`
-| `左輔`
+| `七杀`
+| `破军`
+| `左辅`
 | `右弼`
 | `文昌`
 | `文曲`
-| `祿存`
-| `天馬`
+| `禄存`
+| `天马`
 | `擎羊`
-| `陀羅`
+| `陀罗`
 | `火星`
-| `鈴星`
+| `铃星`
 | `天魁`
-| `天鉞`
+| `天钺`
 | `地空`
 | `地劫`
+| `劫杀`
 | `天空`
 | `天刑`
 | `天姚`
 | `解神`
-| `陰煞`
+| `阴煞`
 | `天喜`
 | `天官`
 | `天福`
 | `天哭`
-| `天虛`
-| `龍池`
-| `鳳閣`
-| `紅鸞`
+| `天虚`
+| `龙池`
+| `凤阁`
+| `红鸾`
 | `孤辰`
 | `寡宿`
 | `蜚廉`
 | `破碎`
-| `臺輔`
-| `封誥`
+| `台辅`
+| `封诰`
 | `天巫`
 | `天月`
-| `三臺`
+| `三台`
 | `八座`
 | `恩光`
-| `天貴`
+| `天贵`
 | `天才`
-| `天壽`
+| `天寿`
 | `截空`
 | `旬中`
 | `旬空`
 | `空亡`
 | `截路`
 | `月德`
-| `天傷`
+| `天伤`
 | `天使`
-| `天廚`
-| `長生`
+| `天厨`
+| `长生`
 | `沐浴`
-| `冠帶`
-| `臨官`
+| `冠带`
+| `临官`
 | `帝旺`
 | `衰`
 | `病`
 | `死`
 | `墓`
-| `絕`
+| `绝`
 | `胎`
-| `養`
+| `养`
 | `博士`
 | `力士`
-| `青龍`
+| `青龙`
 | `小耗`
-| `將軍`
-| `奏書`
-| `飛廉`
+| `将军`
+| `奏书`
+| `飞廉`
 | `喜神`
 | `病符`
 | `大耗`
+| `岁破`
 | `伏兵`
 | `官府`
-| `歲建`
-| `晦氣`
-| `喪門`
-| `貫索`
+| `岁建`
+| `晦气`
+| `丧门`
+| `贯索`
 | `官符`
-| `龍德`
+| `龙德`
 | `白虎`
 | `天德`
 | `吊客`
-| `將星`
+| `将星`
 | `攀鞍`
-| `歲驛`
+| `岁驿`
 | `息神`
-| `華蓋`
+| `华盖`
 | `劫煞`
-| `災煞`
+| `灾煞`
 | `天煞`
 | `指背`
-| `鹹池`
+| `咸池`
 | `月煞`
 | `亡神`
-| `運魁`
-| `運鉞`
-| `運昌`
-| `運曲`
-| `運鸞`
-| `運喜`
-| `運祿`
-| `運羊`
-| `運陀`
-| `運馬`
+| `运魁`
+| `运钺`
+| `运昌`
+| `运曲`
+| `运鸾`
+| `运喜`
+| `运禄`
+| `运羊`
+| `运陀`
+| `运马`
 | `流魁`
-| `流鉞`
+| `流钺`
 | `流昌`
 | `流曲`
-| `流鸞`
+| `流鸾`
 | `流喜`
-| `流祿`
+| `流禄`
 | `流羊`
 | `流陀`
-| `流馬`
+| `流马`
 | `年解`
+| `月魁`
+| `月钺`
+| `月昌`
+| `月曲`
+| `月鸾`
+| `月喜`
+| `月禄`
+| `月羊`
+| `月陀`
+| `月马`
+| `日魁`
+| `日钺`
+| `日昌`
+| `日曲`
+| `日鸾`
+| `日喜`
+| `日禄`
+| `日羊`
+| `日陀`
+| `日马`
+| `时魁`
+| `时钺`
+| `时昌`
+| `时曲`
+| `时鸾`
+| `时喜`
+| `时禄`
+| `时羊`
+| `时陀`
+| `时马`
 == 繁體中文
 `紫微`
 | `天機`
@@ -397,6 +439,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `天鉞`
 | `地空`
 | `地劫`
+| `劫殺`
 | `天空`
 | `天刑`
 | `天姚`
@@ -414,11 +457,11 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `寡宿`
 | `蜚廉`
 | `破碎`
-| `臺輔`
+| `台輔`
 | `封誥`
 | `天巫`
 | `天月`
-| `三臺`
+| `三台`
 | `八座`
 | `恩光`
 | `天貴`
@@ -455,6 +498,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `喜神`
 | `病符`
 | `大耗`
+| `歲破`
 | `伏兵`
 | `官府`
 | `歲建`
@@ -475,7 +519,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `災煞`
 | `天煞`
 | `指背`
-| `鹹池`
+| `咸池`
 | `月煞`
 | `亡神`
 | `運魁`
@@ -499,6 +543,36 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `流陀`
 | `流馬`
 | `年解`
+| `月魁`
+| `月鉞`
+| `月昌`
+| `月曲`
+| `月鸞`
+| `月喜`
+| `月祿`
+| `月羊`
+| `月陀`
+| `月馬`
+| `日魁`
+| `日鉞`
+| `日昌`
+| `日曲`
+| `日鸞`
+| `日喜`
+| `日祿`
+| `日羊`
+| `日陀`
+| `日馬`
+| `時魁`
+| `時鉞`
+| `時昌`
+| `時曲`
+| `時鸞`
+| `時喜`
+| `時祿`
+| `時羊`
+| `時陀`
+| `時馬`
 == English
 `emperor`
 | `advisor`
@@ -520,14 +594,15 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `artist`
 | `money`
 | `horse`
-| `goat`
-| `dala`
-| `mars`
+| `driven`
+| `tangled`
+| `impulsive`
 | `spark`
 | `assistant`
 | `aide`
 | `ideologue`
-| `scatterbrain`
+| `fickle`
+| `murder`
 | `utopian`
 | `serious`
 | `social`
@@ -610,27 +685,57 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `passionate`
 | `hapless`
 | `perished`
-| `assistant(decadal)`
-| `aide(decadal)`
-| `scholar(decadal)`
-| `artist(decadal)`
-| `attractive(decadal)`
-| `cheerful(decadal)`
-| `money(decadal)`
-| `goat(decadal)`
-| `dala(decadal)`
-| `horse(decadal)`
-| `assistant(yearly)`
-| `aide(yearly)`
-| `scholar(yearly)`
-| `artist(yearly)`
-| `attractive(yearly)`
-| `cheerful(yearly)`
-| `money(yearly)`
-| `goat(yearly)`
-| `dala(yearly)`
-| `horse(yearly)`
-| `considery(yearly)`
+| `assistant(D)`
+| `aide(D)`
+| `scholar(D)`
+| `artist(D)`
+| `attractive(D)`
+| `cheerful(D)`
+| `money(D)`
+| `driven(D)`
+| `tangled(D)`
+| `horse(D)`
+| `assistant(Y)`
+| `aide(Y)`
+| `scholar(Y)`
+| `artist(Y)`
+| `attractive(Y)`
+| `cheerful(Y)`
+| `money(Y)`
+| `driven(Y)`
+| `tangled(Y)`
+| `horse(Y)`
+| `considery(Y)`
+| `assistant(M)`
+| `aide(M)`
+| `scholar(M)`
+| `artist(M)`
+| `attractive(M)`
+| `cheerful(M)`
+| `money(M)`
+| `driven(M)`
+| `tangled(M)`
+| `horse(M)`
+| `assistant(d)`
+| `aide(d)`
+| `scholar(d)`
+| `artist(d)`
+| `attractive(d)`
+| `cheerful(d)`
+| `money(d)`
+| `driven(d)`
+| `tangled(d)`
+| `horse(d)`
+| `assistant(H)`
+| `aide(H)`
+| `scholar(H)`
+| `artist(H)`
+| `attractive(H)`
+| `cheerful(H)`
+| `money(H)`
+| `driven(H)`
+| `tangled(H)`
+| `horse(H)`
 == 한국어
 `자미`
 | `천기`
@@ -660,6 +765,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `천월`
 | `지공`
 | `지겁`
+| `겁살`
 | `천공`
 | `천형`
 | `천요`
@@ -718,6 +824,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `희신`
 | `병부`
 | `대모`
+| `태파`
 | `복병`
 | `관부`
 | `태세`
@@ -762,6 +869,36 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `타라(년)`
 | `천마(년)`
 | `해신(년)`
+| `천괴(월)`
+| `천월(월)`
+| `문창(월)`
+| `문곡(월)`
+| `홍란(월)`
+| `천희(월)`
+| `록존(월)`
+| `경양(월)`
+| `타라(월)`
+| `천마(월)`
+| `천괴(일)`
+| `천월(일)`
+| `문창(일)`
+| `문곡(일)`
+| `홍란(일)`
+| `천희(일)`
+| `록존(일)`
+| `경양(일)`
+| `타라(일)`
+| `천마(일)`
+| `천괴(시)`
+| `천월(시)`
+| `문창(시)`
+| `문곡(시)`
+| `홍란(시)`
+| `천희(시)`
+| `록존(시)`
+| `경양(시)`
+| `타라(시)`
+| `천마(시)`
 == 日本語
 `紫微`
 | `天機`
@@ -791,6 +928,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `天鉞`
 | `地空`
 | `地劫`
+| `劫殺`
 | `天空`
 | `天刑`
 | `天姚`
@@ -808,11 +946,11 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `寡宿`
 | `蜚廉`
 | `破碎`
-| `臺輔`
+| `台輔`
 | `封誥`
 | `天巫`
 | `天月`
-| `三臺`
+| `三台`
 | `八座`
 | `恩光`
 | `天貴`
@@ -849,6 +987,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `喜神`
 | `病符`
 | `大耗`
+| `歲破`
 | `伏兵`
 | `官府`
 | `歲建`
@@ -869,30 +1008,223 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 | `災煞`
 | `天煞`
 | `指背`
-| `鹹池`
+| `咸池`
 | `月煞`
 | `亡神`
-| `運魁`
-| `運鉞`
-| `運昌`
-| `運曲`
-| `運鸞`
-| `運喜`
-| `運祿`
-| `運羊`
-| `運陀`
-| `運馬`
-| `流魁`
-| `流鉞`
-| `流昌`
-| `流曲`
-| `流鸞`
-| `流喜`
-| `流祿`
-| `流羊`
-| `流陀`
-| `流馬`
-| `年解`
+| `限の魁`
+| `限の钺`
+| `限の昌`
+| `限の曲`
+| `限の鸾`
+| `限の喜`
+| `限の祿`
+| `限の羊`
+| `限の陀`
+| `限の馬`
+| `年の魁`
+| `年の钺`
+| `年の昌`
+| `年の曲`
+| `年の鸾`
+| `年の喜`
+| `年の祿`
+| `年の羊`
+| `年の陀`
+| `年の馬`
+| `年の解`
+| `月の魁`
+| `月の钺`
+| `月の昌`
+| `月の曲`
+| `月の鸾`
+| `月の喜`
+| `月の祿`
+| `月の羊`
+| `月の陀`
+| `月の馬`
+| `日の魁`
+| `日の钺`
+| `日の昌`
+| `日の曲`
+| `日の鸾`
+| `日の喜`
+| `日の祿`
+| `日の羊`
+| `日の陀`
+| `日の馬`
+| `時の魁`
+| `時の钺`
+| `時の昌`
+| `時の曲`
+| `時の鸾`
+| `時の喜`
+| `時の祿`
+| `時の羊`
+| `時の陀`
+| `時の馬`
+== Tiếng Việt
+`Tử Vi`
+| `Thiên Cơ`
+| `Thái Dương`
+| `Vũ Khúc`
+| `Thiên Đồng`
+| `Liêm Trinh`
+| `Thiên Phủ`
+| `Thái Âm`
+| `Tham Lang`
+| `Cự Môn`
+| `Thiên Tướng`
+| `Thiên Lương`
+| `Thất Sát`
+| `Phá Quân`
+| `Tả Phù`
+| `Hữu Bật`
+| `Văn Xương`
+| `Văn Khúc`
+| `Lộc Tồn`
+| `Thiên Mã`
+| `Kình Dương`
+| `Đà La`
+| `Hỏa Tinh`
+| `Linh Tinh`
+| `Thiên Khôi`
+| `Thiên Việt`
+| `Địa Không`
+| `Địa Kiếp`
+| `Kiếp Sát`
+| `Thiên Không`
+| `Thiên Hình`
+| `Thiên Diêu`
+| `Giải Thần`
+| `Âm Sát`
+| `Thiên Hỷ`
+| `Thiên Quan`
+| `Thiên Phúc`
+| `Thiên Khốc`
+| `Thiên Hư`
+| `Long Trì`
+| `Phụng Các`
+| `Hồng Loan`
+| `Cô Thần`
+| `Quả Tú`
+| `Phi Liêm`
+| `Phá Toái`
+| `Đài Phụ`
+| `Phong Cáo`
+| `Thiên Vu`
+| `Thiên Nguyệt`
+| `Tam Thai`
+| `Bát Tọa`
+| `Ân Quang`
+| `Thiên Quý`
+| `Thiên Tài`
+| `Thiên Thọ`
+| `Triệt Không`
+| `Tuần Trung`
+| `Tuần Không`
+| `Không Vong`
+| `Triệt Lộ`
+| `Nguyệt Đức`
+| `Thiên Thương`
+| `Thiên Sứ`
+| `Thiên Trù`
+| `Trường Sinh`
+| `Mục Dục`
+| `Quan Đới`
+| `Lâm Quan`
+| `Đế Vượng`
+| `Suy`
+| `Bệnh`
+| `Tử`
+| `Mộ`
+| `Tuyệt`
+| `Thai`
+| `Dưỡng`
+| `Bác Sỹ`
+| `Lực Sỹ`
+| `Thanh Long`
+| `Tiểu Hao`
+| `Tướng Quân`
+| `Tấu Thư`
+| `Phi Liêm`
+| `Hỷ Thần`
+| `Bệnh Phù`
+| `Đại Hao`
+| `Tuế Phá`
+| `Phục Binh`
+| `Quan Phủ`
+| `Tuế Kiện`
+| `Hối Khí`
+| `Tang Môn`
+| `Quán Tác`
+| `Quan Phù`
+| `Long Đức`
+| `Bạch Hổ`
+| `Thiên Đức`
+| `Điếu Khách`
+| `Tướng Tinh`
+| `Phan Án`
+| `Tuế Dịch`
+| `Tức Thần`
+| `Hoa Cái`
+| `Kiếp Sát`
+| `Tai Sát`
+| `Thiên Sát`
+| `Chỉ Bối`
+| `Hàm Trì`
+| `Nguyệt Sát`
+| `Vong Thần`
+| `Vận Khôi`
+| `Vận Việt`
+| `Vận Xương`
+| `Vận Khúc`
+| `Vận Loan`
+| `Vận Hỷ`
+| `Vận Lộc`
+| `Vận Dương`
+| `Vận Đà`
+| `Vận Mã`
+| `Lưu Khôi`
+| `Lưu Việt`
+| `Lưu Xương`
+| `Lưu Khúc`
+| `Lưu Loan`
+| `Lưu Hỷ`
+| `Lưu Lộc`
+| `Lưu Dương`
+| `Lưu Đà`
+| `Lưu Mã`
+| `Niên Giải`
+| `Thiên Khôi(M)`
+| `Thiên Nguyệt(M)`
+| `Văn Xương(M)`
+| `Văn Khúc(M)`
+| `Hồng Loan(M)`
+| `Thiên Hỷ(M)`
+| `Lộc Tồn(M)`
+| `Kình Dương(M)`
+| `Đà La(M)`
+| `Thiên Mã(M)`
+| `Thiên Khôi(d)`
+| `Thiên Nguyệt(d)`
+| `Văn Xương(d)`
+| `Văn Khúc(d)`
+| `Hồng Loan(d)`
+| `Thiên Hỷ(d)`
+| `Lộc Tồn(d)`
+| `Kình Dương(d)`
+| `Đà La(d)`
+| `Thiên Mã(d)`
+| `Thiên Khôi(H)`
+| `Thiên Nguyệt(H)`
+| `Văn Xương(H)`
+| `Văn Khúc(H)`
+| `Hồng Loan(H)`
+| `Thiên Hỷ(H)`
+| `Lộc Tồn(H)`
+| `Kình Dương(H)`
+| `Đà La(H)`
+| `Thiên Mã(H)`
 :::
 
 :::tip 同名星曜別名 ^2.6.1
@@ -906,10 +1238,10 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 
 ### `FiveElementsClassName`
 
-定義了紫微鬥數中 `五行局` 的名稱
+定義了紫微斗數中 `五行局` 的名稱
 
 :::tabs
-== 簡體中文
+== 简体中文
 `水二局` | `木三局` | `金四局` | `土五局` | `火六局`
 == 繁體中文
 `水二局` | `木三局` | `金四局` | `土五局` | `火六局`
@@ -919,6 +1251,8 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 `수이국` | `목삼국` | `금사국` | `토오국` | `화육국`
 == 日本語
 `水の二局` | `木の三局` | `金の四局` | `土の五局` | `火の六局`
+== Tiếng Việt
+`Thủy Nhị Cục` | `Mộc Tam Cục` | `Kim Tứ Cục` | `Thổ Ngũ Cục` | `Hỏa Lục Cục`
 :::
 
 ---
@@ -928,7 +1262,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 定義 `性別` 的名稱
 
 :::tabs
-== 簡體中文
+== 简体中文
 `男` | `女`
 == 繁體中文
 `男` | `女`
@@ -938,6 +1272,8 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 `남성` | `여자`
 == 日本語
 `男` | `女`
+== Tiếng Việt
+`Nam` | `Nữ`
 :::
 
 ## 通用
@@ -945,7 +1281,7 @@ const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 ### `Language`
 
 ```ts
-export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
+export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP` | `vi-VN`;
 ```
 
 定義了支持的 `語言`，目前支持的語言有：
@@ -955,6 +1291,7 @@ export type Language = `zh-CN` | `zh-TW` | `en-US` | `ko-KR` | `ja-JP`;
 - `en-US`：English
 - `ko-KR`：한국어
 - `ja-JP`：日本語
+- `vi-VN`：Tiếng Việt
 
 ---
 
@@ -1128,7 +1465,7 @@ export type HoroscopeItem = {
 | 屬性            | 解釋           | 類型                                                           |
 | --------------- | -------------- | -------------------------------------------------------------- |
 | `index`         | 所在宮位的索引 | `number`                                                       |
-| `name` <Badge type="warning" text="^1.2.3" />        | 運限的名称 | `string`                                                       |
+| `name` <Badge type="warning" text="^1.2.3" />        | 運限的名稱 | `string`                                                       |
 | `heavenlyStem`  | 運限天干       | [`HeavenlyStemName`](./type-definition.html#heavenlystemname)   |
 | `earthlyBranch` | 運限地支       | [`EarthlyBranchName`](./type-definition.html#earthlybranchname) |
 | `palaceNames`   | 運限的十二宮   | [`PalaceName[]`](./type-definition.html#palacename)             |
@@ -1245,11 +1582,11 @@ export type Horoscope = {
 
 | 屬性        | 解釋     | 類型                                                   |
 | ----------- | -------- | ------------------------------------------------------ |
-| `lunarDate` | 農歷日期 | `string`                                               |
-| `solarDate` | 陽歷日期 | `string`                                               |
+| `lunarDate` | 農曆日期 | `string`                                               |
+| `solarDate` | 陽曆日期 | `string`                                               |
 | `decadal`   | 大限     | [`HoroscopeItem`](./type-definition.html#horoscopeitem) |
 | `age`       | 小限     | { index: `number`, nominalAge: `number` }              |
-| `yearly`    | 流年     | [`HoroscopeItem`](./type-definition.html#horoscopeitem) |
+| `yearly`    | 流年     | [`HoroscopeItem`](./type-definition.html#horoscopeitem)  & { yearlyDecStar: { jiangqian12: [`StarName[]`](/zh_TW/type-definition.md#starname); suiqian12: [`StarName[]`](/zh_TW/type-definition.md#starname) } }|
 | `monthly`   | 流月     | [`HoroscopeItem`](./type-definition.html#horoscopeitem) |
 | `daily`     | 流日     | [`HoroscopeItem`](./type-definition.html#horoscopeitem) |
 | `hourly`    | 流時     | [`HoroscopeItem`](./type-definition.html#horoscopeitem) |
@@ -1260,11 +1597,11 @@ export type Horoscope = {
 
 ```ts
 export type Astrolabe = {
-  /** 陽歷日期 */
+  /** 陽曆日期 */
   solarDate: string;
-  /** 農歷日期 */
+  /** 農曆日期 */
   lunarDate: string;
-  /** 幹支紀年日期 */
+  /** 干支紀年日期 */
   chineseDate: string;
   rawDates: {
     lunarDate: LunarDate;
@@ -1287,9 +1624,10 @@ export type Astrolabe = {
 
 | 屬性                        | 解釋                               | 類型                                                                        |
 | --------------------------- | ---------------------------------- | --------------------------------------------------------------------------- |
-| `solarDate`                 | 陽歷日期                           | `string`                                                                    |
-| `lunarDate`                 | 農歷日期                           | `string`                                                                    |
-| `chineseDate`               | 幹支紀年日期                       | `string`                                                                    |
+| `gender`    | 性別 <Badge type="warning" text="^2.0.3" />     | [`GenderName`](./type-definition.html#gendername)                            |   
+| `solarDate`                 | 陽曆日期                           | `string`                                                                    |
+| `lunarDate`                 | 農曆日期                           | `string`                                                                    |
+| `chineseDate`               | 干支紀年日期                       | `string`                                                                    |
 | `rawDates`                  | 原始日期數據，用於今後內部方法使用 | { lunarDate: `LunarDate`, chineseDate: `HeavenlyStemAndEarthlyBranchDate` } |
 | `time`                      | 時辰                               | `string`                                                                    |
 | `timeRange`                 | 時辰對應的時間段                   | `string`                                                                    |
@@ -1299,7 +1637,7 @@ export type Astrolabe = {
 | `earthlyBranchOfBodyPalace` | 身宮地支                           | [`EarthlyBranchName`](./type-definition.html#earthlybranchname)              |
 | `soul`                      | 命主                               | [`StarName`](./type-definition.html#starname)                                |
 | `body`                      | 身主                               | [`StarName`](./type-definition.html#starname)                                |
-| `fiveElementsClass`         | 五行局                             | [`FiveElementsClassName`](./type-definition.html#fiveelementsclassName)      |
+| `fiveElementsClass`         | 五行局                             | [`FiveElementsClassName`](./type-definition.html#fiveelementsclassname)      |
 | `palaces`                   | 十二宮數據                         | [`IFunctionalPalace[]`](./posts/palace.md#functionalpalace)                 |
 
 ## 配置和插件 <Badge type="warning" text="^2.3.0" />

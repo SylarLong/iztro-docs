@@ -1,20 +1,20 @@
 ---
 title: 'iztro官方文檔'
-description: '紫微研習社，iztro官方文檔，iztro開發文檔，快速上手使用iztro獲取紫微鬥數排盤數據。'
+description: '紫微研习社，iztro官方文檔，iztro開發文檔，快速上手使用iztro獲取紫微斗數排盤數據。'
 ---
 
 <div align="center">
 
 <h1 class="brand-name text-clip">IZTRO</h1>
 
-一套輕量級獲取紫微鬥數排盤信息的 Javascript 開源庫。
+一套輕量級獲取紫微斗數排盤信息的 Javascript 開源庫。
 
 </div>
 
 ## 前言
 
-歡迎使用 `iztro` 開發文檔！本頁將向你介紹如何集成、如何獲取數據、以及如何快速得到紫微鬥數裏一張星盤上的所有數據。如果你只是基礎使用者，閱讀完本篇文檔將足夠你日常使用。
-如果你已經掌握了本頁內容，可以到其他頁面進行更深入的探索。如果你對紫微鬥數感興趣，但是有沒有相關基礎，可以點擊 [基礎知識掃盲](/learn/basis.md) 進行掃盲學習。
+歡迎使用 `iztro` 開發文檔！本頁將向你介紹如何集成、如何獲取數據、以及如何快速得到紫微斗數裏一張星盤上的所有數據。如果你只是基礎使用者，閱讀完本篇文檔將足夠你日常使用。
+如果你已經掌握了本頁內容，可以到其他頁面進行更深入的探索。如果你對紫微斗數感興趣，但是又沒有相關基礎，可以點擊 [基礎知識掃盲](/zh_TW/learn/basis.md) 進行掃盲學習。
 
 ::: info 你將獲取到以下信息：
 
@@ -24,7 +24,7 @@ description: '紫微研習社，iztro官方文檔，iztro開發文檔，快速�
 - 如何基於宮位開始分析星曜
   :::
 
-## 产品
+## 產品
 
 | | 名稱 | 連結 | 語言 | 作者 |
 |--|--|--|--|--|
@@ -127,7 +127,7 @@ var iztro = require("iztro");
 <html>
   <head>
     <meta charset="utf-8">
-    <title>iztro-紫微鬥數開源庫</title>
+    <title>iztro-紫微斗數開源庫</title>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/iztro@2.6.2/dist/iztro-v2.6.2.min.js"></script>
@@ -143,14 +143,14 @@ var iztro = require("iztro");
 
 ### 獲取星盤數據
 
-在獲取紫微鬥數星盤的時候，可以根據`農歷`或者`陽歷`日期來獲取，`iztro`提供了這兩種獲取方式，你可以根據你的需求使用，但我們更推薦你使用`陽歷`的方式來使用。
-放心，陽歷和農歷在程序內部獲取到的數據是統一的。
+在獲取紫微斗數星盤的時候，可以根據`農曆`或者`陽曆`日期來獲取，`iztro`提供了這兩種獲取方式，你可以根據你的需求使用，但我們更推薦你使用`陽曆`的方式來使用。
+放心，陽曆和農曆在程序內部獲取到的數據是統一的。
 
-::: info 使用 `陽歷` 有如下便利性：
+::: info 使用 `陽曆` 有如下便利性：
 
 - 可以很方便的在出生證上查到
-- 可以使用日歷組件進行日期選擇
-- 現在很多人都無法記住農歷日期
+- 可以使用日曆組件進行日期選擇
+- 現在很多人都無法記住農曆日期
 - 可以避免因為忽略了閏月而帶來的一系列問題
   :::
 
@@ -160,10 +160,10 @@ var iztro = require("iztro");
 ```ts
 import { astro } from "iztro";
 
-// 通過陽歷獲取星盤信息
+// 通過陽曆獲取星盤信息
 const astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
-// 通過農歷獲取星盤信息
+// 通過農曆獲取星盤信息
 const astrolabe = astro.byLunar("2000-7-17", 2, "女");
 ```
 
@@ -172,26 +172,26 @@ const astrolabe = astro.byLunar("2000-7-17", 2, "女");
 ```js
 var { astro } = require("iztro");
 
-// 通過陽歷獲取星盤信息
+// 通過陽曆獲取星盤信息
 var astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
-// 通過農歷獲取星盤信息
+// 通過農曆獲取星盤信息
 var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
 ```
 
 :::
 
 你會發現以上`bySolar`和`byLunar`的返回值是一樣的，
-這是因為`byLunar`方法在內部處理的時候，也是將日期轉化為`陽歷`以後調用`bySolar`方法。
+這是因為`byLunar`方法在內部處理的時候，也是將日期轉化為`陽曆`以後調用`bySolar`方法。
 以下是執行結果，因為結果比較長，所以將之折疊起來，如果你想要查看你調用結果是否和這個一樣，可以展開查看：
 
 ::: details `astro.bySolar()` 和 `astro.byLunar()` 方法執行結果
 
 ```ts
 {
-  // 陽歷日期
+  // 陽曆日期
   solarDate: '2000-8-16',
-   // 農歷日期
+   // 農曆日期
   lunarDate: '二〇〇〇年七月十七',
   // 四柱
   chineseDate: '庚辰 甲申 丙午 庚寅',
@@ -397,13 +397,13 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
         { name: '擎羊', type: 'tough', scope: 'origin', brightness: '陷' },
       ],
       adjectiveStars: [
-        { name: '鹹池', type: 'flower', scope: 'origin' },
+        { name: '咸池', type: 'flower', scope: 'origin' },
         { name: '天貴', type: 'adjective', scope: 'origin' },
         { name: '月德', type: 'adjective', scope: 'origin' },
       ],
       changsheng12: '冠帶',
       boshi12: '官府',
-      jiangqian12: '鹹池',
+      jiangqian12: '咸池',
       suiqian12: '小耗',
       stage: { range: [94, 103], heavenlyStem: '乙' },
       ages: [2, 14, 26, 38, 50, 62, 74],
@@ -473,7 +473,7 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
       isBodyPalace: false,
       isOriginalPalace: false,
       heavenlyStem: '己',
-      earthlyBranch: '醜',
+      earthlyBranch: '丑',
       majorStars: [
         { name: '天同', type: 'major', scope: 'origin', brightness: '不' },
         { name: '巨門', type: 'major', scope: 'origin', brightness: '不' },
@@ -503,7 +503,7 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
 
 ### 方法定義
 
-- 通過陽歷日期獲取星盤信息
+- 通過陽曆日期獲取星盤信息
 
   `astro`.`bySolar(solarDateStr, timeIndex, gender, fixLeap, language)`
 
@@ -511,17 +511,17 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
 
     | 參數         | 類型       | 是否必填 | 默認值  | 說明                                                                              |
     | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
-    | solarDateStr | `string`   | `true`   | -       | 陽歷日期【YYYY-M-D】                                                              |
+    | solarDateStr | `string`   | `true`   | -       | 陽曆日期【YYYY-M-D】                                                              |
     | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）一直到晚子時（12）的序號                   |
     | gender       | `string`   | `true`   | -       | 性別【男/女】                                                                     |
     | fixLeap      | `boolean`  | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
-    | language     | `Language` | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+    | language     | `Language` | `false`  | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
   - 返回值
 
     [`FunctionalAstrolabe`](./posts/astrolabe.md#functionalastrolabe)
 
-- 通過農歷日期獲取星盤信息
+- 通過農曆日期獲取星盤信息
 
   `astro`.`byLunar(lunarDateStr, timeIndex, gender, isLeapMonth, fixLeap, language)`
 
@@ -529,12 +529,12 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
 
     | 參數         | 類型       | 是否必填 | 默認值  | 說明                                                                              |
     | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
-    | lunarDateStr | `string`   | `true`   | -       | 農歷日期【YYYY-M-D】，例如`2000年七月十七`則傳入`2000-7-17`                       |
+    | lunarDateStr | `string`   | `true`   | -       | 農曆日期【YYYY-M-D】，例如`2000年七月十七`則傳入`2000-7-17`                       |
     | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）一直到晚子時（12）的序號                   |
     | gender       | `string`   | `true`   | -       | 性別【男/女】                                                                     |
     | isLeapMonth  | `boolean`  | `false`  | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效                                        |
     | fixLeap      | `boolean`  | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
-    | language     | `Language` | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+    | language     | `Language` | `false`  | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
   - 返回值
 
@@ -542,7 +542,7 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
 
 ## 獲取運限
 
-紫微鬥數的運限分為 `大限`、`流年`、`流月`、`流日`、`流時`、`流分`、`流秒`，由於 `流分`、`流秒` 使用場景不多，所以我們暫時不提供。
+紫微斗數的運限分為 `大限`、`流年`、`流月`、`流日`、`流時`、`流分`、`流秒`，由於 `流分`、`流秒` 使用場景不多，所以我們暫時不提供。
 `大限`、`流年`、`流月`、`流日`、`流時` 已經能滿足絕大部分需求和使用場景了，使用 `iztro` 能夠很輕松的獲取到這些數據。
 
 :::tabs
@@ -551,7 +551,7 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
 ```ts
 import { astro } from "iztro";
 
-// 通過陽歷獲取星盤信息
+// 通過陽曆獲取星盤信息
 const astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
 // 獲取運限數據
@@ -563,7 +563,7 @@ astrolabe.horoscope(new Date());
 ```js
 var { astro } = require("iztro");
 
-// 通過陽歷獲取星盤信息
+// 通過陽曆獲取星盤信息
 var astrolabe = astro.bySolar("2000-8-16", 2, "女");
 
 // 獲取運限數據
@@ -638,7 +638,7 @@ astrolabe.horoscope(new Date());
 
     | 參數      | 類型               | 是否必填 | 默認值       | 說明                                                                                    |
     | --------- | ------------------ | -------- | ------------ | --------------------------------------------------------------------------------------- |
-    | date      | `string` \| `Date` | `false`  | `new Date()` | 陽歷日期字符串或日期對象，若時間字符串或日期對象中包含了小時的信息，`timeIndex`可以省略 |
+    | date      | `string` \| `Date` | `false`  | `new Date()` | 陽曆日期字符串或日期對象，若時間字符串或日期對象中包含了小時的信息，`timeIndex`可以省略 |
     | timeIndex | `number`           | `false`  | `0`          | 時辰序號，若不傳該參數則會嘗試從`date`裏獲取小時信息轉化為時辰序號                      |
 
   - 返回值
@@ -647,7 +647,7 @@ astrolabe.horoscope(new Date());
 
 ## 獲取流曜
 
-上面的`horoscope()`方法內已經包含了`大限`和`流年`的流曜，所以一般情況下無需在單獨調用獲取流曜的方法，但也有例外的情況需要自行獲取流曜，那就需要調用下列方法自行獲取。
+上面的`horoscope()`方法內已經包含了`大限`和`流年`的流曜，所以一般情況下無需再單獨調用獲取流曜的方法，但也有例外的情況需要自行獲取流曜，那就需要調用下列方法自行獲取。
 
 :::tabs
 == ES6 Module

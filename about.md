@@ -7,7 +7,7 @@ description: '紫微研习社，iztro官方文档，iztro开发文档，快速�
 
 ## 我是谁❓
 
-本人是一个一个深耕Web开发很多年的中二猫奴，爱好非常广泛。热爱扣码，热爱研究稀奇古怪的东西。研究紫微斗数已经有好几年时间了。
+本人是一个深耕Web开发很多年的中二猫奴，爱好非常广泛。热爱扣码，热爱研究稀奇古怪的东西。研究紫微斗数已经有好几年时间了。
 没有师从，也不属于任何流派。
 
 
@@ -76,7 +76,7 @@ description: '紫微研习社，iztro官方文档，iztro开发文档，快速�
 
 <div style="display:flex; align-items: center;gap: 10px;">
 <span>
-如果你有任何紫微斗数或者程集成上的问题，可以联系我
+如果你有任何紫微斗数或者程序集成上的问题，可以联系我
 </span>
 <a href="mailto:sylarlong@gmail.com" target="_blank"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </div>

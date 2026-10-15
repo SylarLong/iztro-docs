@@ -1,13 +1,13 @@
 ---
 title: '關於作者'
-description: '紫微研習社，iztro官方文檔，iztro開發文檔，快速上手使用iztro獲取紫微鬥數排盤數據。'
+description: '紫微研习社，iztro官方文檔，iztro開發文檔，快速上手使用iztro獲取紫微斗數排盤數據。'
 ---
 
 <h1 class="brand-name text-clip" style="line-height: 60px;">關於作者</h1>
 
 ## 我是誰❓
 
-本人是一個一個深耕Web開發很多年的中二貓奴，愛好非常廣泛。熱愛扣碼，熱愛研究稀奇古怪的東西。研究紫微鬥數已經有好幾年時間了。
+本人是一個深耕Web開發很多年的中二貓奴，愛好非常廣泛。熱愛扣碼，熱愛研究稀奇古怪的東西。研究紫微斗數已經有好幾年時間了。
 沒有師從，也不屬於任何流派。
 
 
@@ -46,9 +46,9 @@ description: '紫微研習社，iztro官方文檔，iztro開發文檔，快速�
 
 ## 為什麼開源❓
 
-多年以前憑著看盤經驗和總結的知識開發了一個紫微鬥數排盤的web小應用（因為市面上的用著都不太順手😝）
+多年以前憑著看盤經驗和總結的知識開發了一個紫微斗數排盤的web小應用（因為市面上的用著都不太順手😝）
 在自己的使用過程中逐步改進形成了一個比較穩定的版本。在自己覺得用起來非常順手以後決定將之開源出來，
-免費供各位紫微鬥數愛好者或者專業從事命理工作的老師使用。一方面是為傳播傳統文化做一點貢獻，
+免費供各位紫微斗數愛好者或者專業從事命理工作的老師使用。一方面是為傳播傳統文化做一點貢獻，
 另一方面是對自己所學做一個總結和歸納。
 
 <div style="line-height: 40px">
@@ -72,11 +72,11 @@ description: '紫微研習社，iztro官方文檔，iztro開發文檔，快速�
 </p>
 </div>
 
-## 怎麼聯系我❓
+## 怎麼聯繫我❓
 
 <div style="display:flex; align-items: center;gap: 10px;">
 <span>
-如果你有任何紫微鬥數或者程集成上的問題，可以聯系我
+如果你有任何紫微斗數或者程序集成上的問題，可以聯繫我
 </span>
 <a href="mailto:sylarlong@gmail.com" target="_blank"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </div>

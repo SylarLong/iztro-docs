@@ -1,0 +1,1086 @@
+{
+  "expressions": [
+    {
+      "source": "流分",
+      "targets": {
+        "en_US": "minute-level cycle",
+        "ko_KR": "분 단위 운한",
+        "ja_JP": "分単位の運限",
+        "vi_VN": "vận hạn theo phút"
+      },
+      "gloss": true
+    },
+    {
+      "source": "流秒",
+      "targets": {
+        "en_US": "second-level cycle",
+        "ko_KR": "초 단위 운한",
+        "ja_JP": "秒単位の運限",
+        "vi_VN": "vận hạn theo giây"
+      },
+      "gloss": true
+    },
+    {
+      "source": "韩文",
+      "targets": {
+        "en_US": "Korean",
+        "ko_KR": "한국어",
+        "ja_JP": "韓国語",
+        "vi_VN": "tiếng Hàn"
+      },
+      "gloss": false
+    },
+    {
+      "source": "流曜",
+      "targets": {
+        "en_US": "transit stars",
+        "ko_KR": "유요",
+        "ja_JP": "流曜",
+        "vi_VN": "lưu diệu"
+      },
+      "gloss": true
+    },
+    {
+      "source": "运限",
+      "targets": {
+        "en_US": "horoscope periods",
+        "ko_KR": "운한",
+        "ja_JP": "運限",
+        "vi_VN": "vận hạn"
+      },
+      "gloss": true
+    },
+    {
+      "source": "十二个宫位",
+      "targets": {
+        "en_US": "twelve palaces",
+        "ko_KR": "열두 궁",
+        "ja_JP": "十二の宮",
+        "vi_VN": "mười hai cung"
+      },
+      "gloss": false
+    },
+    {
+      "source": "正月建寅",
+      "targets": {
+        "en_US": "the first lunar month corresponds to yin",
+        "ko_KR": "음력 정월은 인에 대응한다",
+        "ja_JP": "旧暦正月は寅に対応する",
+        "vi_VN": "tháng Giêng âm lịch ứng với Dần"
+      },
+      "gloss": true
+    },
+    {
+      "source": "十二宫",
+      "targets": {
+        "en_US": "twelve palaces",
+        "ko_KR": "십이궁",
+        "ja_JP": "十二宮",
+        "vi_VN": "mười hai cung"
+      },
+      "gloss": true
+    },
+    {
+      "source": "财帛位",
+      "targets": {
+        "en_US": "wealth position",
+        "ko_KR": "재백 위치",
+        "ja_JP": "財帛の位置",
+        "vi_VN": "vị trí tài bạch"
+      },
+      "gloss": true
+    },
+    {
+      "source": "官禄位",
+      "targets": {
+        "en_US": "career position",
+        "ko_KR": "관록 위치",
+        "ja_JP": "官禄の位置",
+        "vi_VN": "vị trí quan lộc"
+      },
+      "gloss": true
+    },
+    {
+      "source": "宫",
+      "targets": {
+        "en_US": "palace",
+        "ko_KR": "궁",
+        "ja_JP": "宮",
+        "vi_VN": "cung"
+      },
+      "gloss": false
+    },
+    {
+      "source": "位",
+      "targets": {
+        "en_US": "position",
+        "ko_KR": "위치",
+        "ja_JP": "位置",
+        "vi_VN": "vị trí"
+      },
+      "gloss": false
+    },
+    {
+      "source": "不在",
+      "targets": {
+        "en_US": "absent",
+        "ko_KR": "없음",
+        "ja_JP": "存在しない",
+        "vi_VN": "không có mặt"
+      },
+      "gloss": false
+    },
+    {
+      "source": "流年夫妻宫",
+      "targets": {
+        "en_US": "annual spouse palace",
+        "ko_KR": "유년 부처궁",
+        "ja_JP": "流年夫妻宮",
+        "vi_VN": "cung Phu Thê lưu niên"
+      },
+      "gloss": true
+    },
+    {
+      "source": "十二人事宫",
+      "targets": {
+        "en_US": "twelve palaces of human affairs",
+        "ko_KR": "십이 인사궁",
+        "ja_JP": "十二人事宮",
+        "vi_VN": "mười hai cung nhân sự"
+      },
+      "gloss": true
+    },
+    {
+      "source": "所有",
+      "targets": {
+        "en_US": "all specified stars",
+        "ko_KR": "지정한 모든 별",
+        "ja_JP": "すべての指定星曜",
+        "vi_VN": "tất cả sao được chỉ định"
+      },
+      "gloss": false
+    },
+    {
+      "source": "都在",
+      "targets": {
+        "en_US": "present",
+        "ko_KR": "모두 존재함",
+        "ja_JP": "すべて存在する",
+        "vi_VN": "đều có mặt"
+      },
+      "gloss": false
+    },
+    {
+      "source": "都不在",
+      "targets": {
+        "en_US": "none of them present",
+        "ko_KR": "모두 없음",
+        "ja_JP": "すべて不在",
+        "vi_VN": "không có sao nào"
+      },
+      "gloss": false
+    },
+    {
+      "source": "命中一个",
+      "targets": {
+        "en_US": "at least one match",
+        "ko_KR": "하나 이상 일치",
+        "ja_JP": "一つでも一致する",
+        "vi_VN": "khớp ít nhất một sao"
+      },
+      "gloss": false
+    },
+    {
+      "source": "链式调用",
+      "targets": {
+        "en_US": "method chaining",
+        "ko_KR": "메서드 체이닝",
+        "ja_JP": "メソッドチェーン",
+        "vi_VN": "gọi phương thức nối tiếp"
+      },
+      "gloss": false
+    },
+    {
+      "source": "大限盘",
+      "targets": {
+        "en_US": "decadal chart",
+        "ko_KR": "대한반",
+        "ja_JP": "大限盤",
+        "vi_VN": "lá số đại hạn"
+      },
+      "gloss": true
+    },
+    {
+      "source": "流年盘",
+      "targets": {
+        "en_US": "annual chart",
+        "ko_KR": "유년반",
+        "ja_JP": "流年盤",
+        "vi_VN": "lá số lưu niên"
+      },
+      "gloss": true
+    },
+    {
+      "source": "解盘",
+      "targets": {
+        "en_US": "chart interpretation",
+        "ko_KR": "명반 해석",
+        "ja_JP": "命盤の解釈",
+        "vi_VN": "luận giải lá số"
+      },
+      "gloss": false
+    },
+    {
+      "source": "虚岁",
+      "targets": {
+        "en_US": "nominal age",
+        "ko_KR": "허세",
+        "ja_JP": "数え年",
+        "vi_VN": "tuổi mụ"
+      },
+      "gloss": true
+    },
+    {
+      "source": "宫名",
+      "targets": {
+        "en_US": "palace name",
+        "ko_KR": "궁 이름",
+        "ja_JP": "宮名",
+        "vi_VN": "tên cung"
+      },
+      "gloss": false
+    },
+    {
+      "source": "干支",
+      "targets": {
+        "en_US": "Heavenly Stems and Earthly Branches",
+        "ko_KR": "간지",
+        "ja_JP": "干支",
+        "vi_VN": "can chi"
+      },
+      "gloss": true
+    },
+    {
+      "source": "自化",
+      "targets": {
+        "en_US": "self-transformation",
+        "ko_KR": "자화",
+        "ja_JP": "自化",
+        "vi_VN": "tự hóa"
+      },
+      "gloss": true
+    },
+    {
+      "source": "空宫",
+      "targets": {
+        "en_US": "empty palace",
+        "ko_KR": "공궁",
+        "ja_JP": "空宮",
+        "vi_VN": "cung vô chính diệu"
+      },
+      "gloss": true
+    },
+    {
+      "source": "短板",
+      "targets": {
+        "en_US": "weakest point",
+        "ko_KR": "약점",
+        "ja_JP": "弱点",
+        "vi_VN": "điểm yếu"
+      },
+      "gloss": false
+    },
+    {
+      "source": "精神面",
+      "targets": {
+        "en_US": "psychological aspect",
+        "ko_KR": "심리적 측면",
+        "ja_JP": "精神面",
+        "vi_VN": "khía cạnh tinh thần"
+      },
+      "gloss": false
+    },
+    {
+      "source": "内心",
+      "targets": {
+        "en_US": "inner feelings",
+        "ko_KR": "속마음",
+        "ja_JP": "内面",
+        "vi_VN": "thế giới nội tâm"
+      },
+      "gloss": false
+    },
+    {
+      "source": "有面子",
+      "targets": {
+        "en_US": "feel respected",
+        "ko_KR": "체면이 서다",
+        "ja_JP": "面目が立つ",
+        "vi_VN": "cảm thấy được coi trọng"
+      },
+      "gloss": false
+    },
+    {
+      "source": "纠结",
+      "targets": {
+        "en_US": "feel torn",
+        "ko_KR": "고민에 빠지다",
+        "ja_JP": "思い悩む",
+        "vi_VN": "phân vân"
+      },
+      "gloss": false
+    },
+    {
+      "source": "谈论",
+      "targets": {
+        "en_US": "discuss",
+        "ko_KR": "이야기하다",
+        "ja_JP": "話し合う",
+        "vi_VN": "bàn luận"
+      },
+      "gloss": false
+    },
+    {
+      "source": "本命",
+      "targets": {
+        "en_US": "natal chart",
+        "ko_KR": "본명",
+        "ja_JP": "本命",
+        "vi_VN": "bản mệnh"
+      },
+      "gloss": true
+    },
+    {
+      "source": "套装属性",
+      "targets": {
+        "en_US": "set bonus",
+        "ko_KR": "세트 효과",
+        "ja_JP": "セット効果",
+        "vi_VN": "hiệu ứng bộ trang bị"
+      },
+      "gloss": false
+    },
+    {
+      "source": "天罡",
+      "targets": {
+        "en_US": "Heavenly Chief",
+        "ko_KR": "천강",
+        "ja_JP": "天罡",
+        "vi_VN": "Thiên Cương"
+      },
+      "gloss": true
+    },
+    {
+      "source": "河魁",
+      "targets": {
+        "en_US": "River Chief",
+        "ko_KR": "하괴",
+        "ja_JP": "河魁",
+        "vi_VN": "Hà Khôi"
+      },
+      "gloss": true
+    },
+    {
+      "source": "会",
+      "targets": {
+        "en_US": "meet in trine",
+        "ko_KR": "회조",
+        "ja_JP": "会照",
+        "vi_VN": "hội chiếu"
+      },
+      "gloss": true
+    },
+    {
+      "source": "照",
+      "targets": {
+        "en_US": "aspect",
+        "ko_KR": "조",
+        "ja_JP": "照",
+        "vi_VN": "chiếu"
+      },
+      "gloss": true
+    },
+    {
+      "source": "冲",
+      "targets": {
+        "en_US": "opposing aspect",
+        "ko_KR": "충",
+        "ja_JP": "冲",
+        "vi_VN": "xung chiếu"
+      },
+      "gloss": true
+    },
+    {
+      "source": "扶拱",
+      "targets": {
+        "en_US": "supporting aspect",
+        "ko_KR": "부공",
+        "ja_JP": "扶拱",
+        "vi_VN": "phù củng"
+      },
+      "gloss": true
+    },
+    {
+      "source": "干支纪年",
+      "targets": {
+        "en_US": "sexagenary year numbering",
+        "ko_KR": "간지 기년법",
+        "ja_JP": "干支紀年",
+        "vi_VN": "cách ghi năm theo can chi"
+      },
+      "gloss": true
+    },
+    {
+      "source": "身体",
+      "targets": {
+        "en_US": "body",
+        "ko_KR": "몸",
+        "ja_JP": "身体",
+        "vi_VN": "cơ thể"
+      },
+      "gloss": false
+    },
+    {
+      "source": "健康宫",
+      "targets": {
+        "en_US": "health palace",
+        "ko_KR": "건강궁",
+        "ja_JP": "健康宮",
+        "vi_VN": "cung sức khỏe"
+      },
+      "gloss": false
+    },
+    {
+      "source": "病患",
+      "targets": {
+        "en_US": "illness",
+        "ko_KR": "질병",
+        "ja_JP": "病気",
+        "vi_VN": "bệnh tật"
+      },
+      "gloss": false
+    },
+    {
+      "source": "苦难",
+      "targets": {
+        "en_US": "physical hardship",
+        "ko_KR": "신체적 고통과 부담",
+        "ja_JP": "身体的な負担",
+        "vi_VN": "gánh nặng thể chất"
+      },
+      "gloss": false
+    },
+    {
+      "source": "课业",
+      "targets": {
+        "en_US": "life task",
+        "ko_KR": "삶의 과제",
+        "ja_JP": "人生の課題",
+        "vi_VN": "bài học cuộc đời"
+      },
+      "gloss": false
+    },
+    {
+      "source": "为情所困",
+      "targets": {
+        "en_US": "become trapped by relationship worries",
+        "ko_KR": "사랑 때문에 괴로워하다",
+        "ja_JP": "情にとらわれる",
+        "vi_VN": "bị tình cảm trói buộc"
+      },
+      "gloss": false
+    },
+    {
+      "source": "PUA",
+      "targets": {
+        "en_US": "emotional manipulation",
+        "ko_KR": "정서적 조종",
+        "ja_JP": "心理的な操作",
+        "vi_VN": "thao túng tình cảm"
+      },
+      "gloss": false
+    },
+    {
+      "source": "保护",
+      "targets": {
+        "en_US": "self-protection",
+        "ko_KR": "자기 보호",
+        "ja_JP": "自己防衛",
+        "vi_VN": "tự bảo vệ"
+      },
+      "gloss": false
+    },
+    {
+      "source": "有情饮水饱",
+      "targets": {
+        "en_US": "feel content with love even when money is scarce",
+        "ko_KR": "사랑이 있으면 물질적 부족도 감수하다",
+        "ja_JP": "愛があれば物質的な不足も受け入れられる",
+        "vi_VN": "cảm thấy đủ đầy nhờ tình yêu dù thiếu thốn vật chất"
+      },
+      "gloss": false
+    },
+    {
+      "source": "财迷",
+      "targets": {
+        "en_US": "preoccupation with money",
+        "ko_KR": "돈에 대한 집착",
+        "ja_JP": "お金への執着",
+        "vi_VN": "quá coi trọng tiền bạc"
+      },
+      "gloss": false
+    },
+    {
+      "source": "地支六合",
+      "targets": {
+        "en_US": "six pairings of the Earthly Branches",
+        "ko_KR": "지지 육합",
+        "ja_JP": "地支六合",
+        "vi_VN": "địa chi lục hợp"
+      },
+      "gloss": true
+    },
+    {
+      "source": "暗合",
+      "targets": {
+        "en_US": "hidden pairing",
+        "ko_KR": "암합",
+        "ja_JP": "暗合",
+        "vi_VN": "ám hợp"
+      },
+      "gloss": true
+    },
+    {
+      "source": "台面下",
+      "targets": {
+        "en_US": "behind the scenes",
+        "ko_KR": "겉으로 드러나지 않는 곳",
+        "ja_JP": "表に出ないところ",
+        "vi_VN": "ở hậu trường"
+      },
+      "gloss": false
+    },
+    {
+      "source": "明科暗禄",
+      "targets": {
+        "en_US": "visible recognition and hidden prosperity",
+        "ko_KR": "명과암록",
+        "ja_JP": "明科暗禄",
+        "vi_VN": "Minh Khoa Ám Lộc"
+      },
+      "gloss": true
+    },
+    {
+      "source": "癸卯",
+      "targets": {
+        "en_US": "gui-mao",
+        "ko_KR": "계묘",
+        "ja_JP": "癸卯",
+        "vi_VN": "Quý Mão"
+      },
+      "gloss": true
+    },
+    {
+      "source": "癸亥",
+      "targets": {
+        "en_US": "gui-hai",
+        "ko_KR": "계해",
+        "ja_JP": "癸亥",
+        "vi_VN": "Quý Hợi"
+      },
+      "gloss": true
+    },
+    {
+      "source": "行动力",
+      "targets": {
+        "en_US": "ability to take action",
+        "ko_KR": "실행력",
+        "ja_JP": "行動力",
+        "vi_VN": "khả năng hành động"
+      },
+      "gloss": false
+    },
+    {
+      "source": "四败地",
+      "targets": {
+        "en_US": "four decline positions",
+        "ko_KR": "사패지",
+        "ja_JP": "四敗地",
+        "vi_VN": "tứ bại địa"
+      },
+      "gloss": true
+    },
+    {
+      "source": "控制欲",
+      "targets": {
+        "en_US": "desire for control",
+        "ko_KR": "통제 욕구",
+        "ja_JP": "支配欲",
+        "vi_VN": "ham muốn kiểm soát"
+      },
+      "gloss": false
+    },
+    {
+      "source": "禄存遇土不进",
+      "targets": {
+        "en_US": "money does not occupy the four Earth palaces",
+        "ko_KR": "록존은 네 토궁에 배치되지 않는다",
+        "ja_JP": "禄存は四つの土の宮に配置されない",
+        "vi_VN": "Lộc Tồn không an ở bốn cung thuộc Thổ"
+      },
+      "gloss": true
+    },
+    {
+      "source": "地支六冲",
+      "targets": {
+        "en_US": "six oppositions of the Earthly Branches",
+        "ko_KR": "지지 육충",
+        "ja_JP": "地支六冲",
+        "vi_VN": "địa chi lục xung"
+      },
+      "gloss": true
+    },
+    {
+      "source": "六冲",
+      "targets": {
+        "en_US": "six oppositions",
+        "ko_KR": "육충",
+        "ja_JP": "六冲",
+        "vi_VN": "lục xung"
+      },
+      "gloss": true
+    },
+    {
+      "source": "三合宫",
+      "targets": {
+        "en_US": "trine palaces",
+        "ko_KR": "삼합궁",
+        "ja_JP": "三合宮",
+        "vi_VN": "cung tam hợp"
+      },
+      "gloss": true
+    },
+    {
+      "source": "目标宫位",
+      "targets": {
+        "en_US": "target palace",
+        "ko_KR": "대상 궁",
+        "ja_JP": "対象の宮",
+        "vi_VN": "cung đang xét"
+      },
+      "gloss": false
+    },
+    {
+      "source": "地支三合局",
+      "targets": {
+        "en_US": "Earthly Branch trine groups",
+        "ko_KR": "지지 삼합국",
+        "ja_JP": "地支三合局",
+        "vi_VN": "địa chi tam hợp cục"
+      },
+      "gloss": true
+    },
+    {
+      "source": "材善经邦",
+      "targets": {
+        "en_US": "talent for governing a country",
+        "ko_KR": "나라를 다스리는 재능",
+        "ja_JP": "国を治める才",
+        "vi_VN": "tài trị nước"
+      },
+      "gloss": false
+    },
+    {
+      "source": "金舆",
+      "targets": {
+        "en_US": "golden carriage",
+        "ko_KR": "금여",
+        "ja_JP": "金輿",
+        "vi_VN": "Kim Dư"
+      },
+      "gloss": true
+    },
+    {
+      "source": "驾",
+      "targets": {
+        "en_US": "imperial carriage",
+        "ko_KR": "어가",
+        "ja_JP": "御車",
+        "vi_VN": "ngự giá"
+      },
+      "gloss": false
+    },
+    {
+      "source": "帝星守命前后有日月来夹是也",
+      "targets": {
+        "en_US": "the emperor guards the soul palace, flanked by the sun and moon",
+        "ko_KR": "자미가 명궁에 있고 태양과 태음이 양옆에서 협한다",
+        "ja_JP": "紫微が命宮を守り、太陽と太陰が両隣から挟む",
+        "vi_VN": "Tử Vi thủ Mệnh, Thái Dương và Thái Âm giáp hai bên"
+      },
+      "gloss": false
+    },
+    {
+      "source": "离卦",
+      "targets": {
+        "en_US": "Li trigram",
+        "ko_KR": "리괘",
+        "ja_JP": "離卦",
+        "vi_VN": "quẻ Ly"
+      },
+      "gloss": true
+    },
+    {
+      "source": "震卦",
+      "targets": {
+        "en_US": "Zhen trigram",
+        "ko_KR": "진괘",
+        "ja_JP": "震卦",
+        "vi_VN": "quẻ Chấn"
+      },
+      "gloss": true
+    },
+    {
+      "source": "兑卦",
+      "targets": {
+        "en_US": "Dui trigram",
+        "ko_KR": "태괘",
+        "ja_JP": "兌卦",
+        "vi_VN": "quẻ Đoài"
+      },
+      "gloss": true
+    },
+    {
+      "source": "日月同临",
+      "targets": {
+        "en_US": "sun and moon in the same palace",
+        "ko_KR": "일월동림",
+        "ja_JP": "日月同臨",
+        "vi_VN": "Nhật Nguyệt Đồng Lâm"
+      },
+      "gloss": true
+    },
+    {
+      "source": "明日驱暗",
+      "targets": {
+        "en_US": "the bright sun dispels darkness",
+        "ko_KR": "밝은 태양이 어둠을 몰아낸다",
+        "ja_JP": "明るい太陽が闇を払う",
+        "vi_VN": "mặt trời sáng xua tan bóng tối"
+      },
+      "gloss": true,
+      "reason": "Alias of the 巨日同宮 pattern, not ordinary emphasis; retain Traditional Chinese annotation outside Japanese."
+    },
+    {
+      "source": "巨日命立申宫亦妙",
+      "targets": {
+        "en_US": "giant gate and sun in the shen soul palace is also favorable",
+        "ko_KR": "거문과 태양이 신궁의 명궁에 있는 것도 좋다",
+        "ja_JP": "巨門と太陽が申の命宮にあるのもよい",
+        "vi_VN": "Cự Môn và Thái Dương thủ Mệnh tại Thân cũng tốt"
+      },
+      "gloss": false
+    },
+    {
+      "source": "日出扶桑",
+      "targets": {
+        "en_US": "sunrise in the east",
+        "ko_KR": "일출부상",
+        "ja_JP": "日出扶桑",
+        "vi_VN": "Nhật Xuất Phù Tang"
+      },
+      "gloss": true
+    },
+    {
+      "source": "扶桑",
+      "targets": {
+        "en_US": "Fusang, the mythical eastern tree",
+        "ko_KR": "부상",
+        "ja_JP": "扶桑",
+        "vi_VN": "Phù Tang"
+      },
+      "gloss": true
+    },
+    {
+      "source": "日月最嫌反背",
+      "targets": {
+        "en_US": "the sun and moon are least favorable in dim positions",
+        "ko_KR": "태양과 태음은 빛을 잃는 위치를 가장 꺼린다",
+        "ja_JP": "太陽と太陰は輝きを失う配置を最も嫌う",
+        "vi_VN": "Thái Dương và Thái Âm kỵ nhất vị trí mất sáng"
+      },
+      "gloss": false
+    },
+    {
+      "source": "丹墀",
+      "targets": {
+        "en_US": "red palace steps",
+        "ko_KR": "단지",
+        "ja_JP": "丹墀",
+        "vi_VN": "Đan Trì"
+      },
+      "gloss": true
+    },
+    {
+      "source": "桂墀",
+      "targets": {
+        "en_US": "moonlit palace steps",
+        "ko_KR": "계지",
+        "ja_JP": "桂墀",
+        "vi_VN": "Quế Trì"
+      },
+      "gloss": true
+    },
+    {
+      "source": "日月夹迁",
+      "targets": {
+        "en_US": "sun and moon flank the travel palace",
+        "ko_KR": "일월협천",
+        "ja_JP": "日月夾遷",
+        "vi_VN": "Nhật Nguyệt Giáp Di"
+      },
+      "gloss": true
+    },
+    {
+      "source": "月落亥宫",
+      "targets": {
+        "en_US": "moon in the hai palace",
+        "ko_KR": "태음이 해궁에 있다",
+        "ja_JP": "太陰が亥の宮にある",
+        "vi_VN": "Thái Âm ở cung Hợi"
+      },
+      "gloss": true,
+      "note": "Pattern alias introduced by 也叫, reviewed in the full paragraph; retain Traditional Chinese name in non-Japanese locales."
+    },
+    {
+      "source": "水澄桂萼",
+      "targets": {
+        "en_US": "clear water reflects the moon",
+        "ko_KR": "수징계악",
+        "ja_JP": "水澄桂萼",
+        "vi_VN": "Thủy Trừng Quế Ngạc"
+      },
+      "gloss": true
+    },
+    {
+      "source": "刑囚夹忌",
+      "targets": {
+        "en_US": "punishment and imprisonment flank obstruction",
+        "ko_KR": "형수협기",
+        "ja_JP": "刑囚夾忌",
+        "vi_VN": "Hình Tù Giáp Kỵ"
+      },
+      "gloss": true
+    },
+    {
+      "source": "刑忌夹印",
+      "targets": {
+        "en_US": "punishment and obstruction flank the seal",
+        "ko_KR": "형기협인",
+        "ja_JP": "刑忌夾印",
+        "vi_VN": "Hình Kỵ Giáp Ấn"
+      },
+      "gloss": true
+    },
+    {
+      "source": "雄宿",
+      "targets": {
+        "en_US": "martial star",
+        "ko_KR": "웅수",
+        "ja_JP": "雄宿",
+        "vi_VN": "Hùng Tú"
+      },
+      "gloss": true
+    },
+    {
+      "source": "搏一搏单车变摩托",
+      "targets": {
+        "en_US": "taking a chance could bring a big gain",
+        "ko_KR": "도전하면 큰 이익을 얻을 수도 있다",
+        "ja_JP": "挑戦すれば大きな利益を得られるかもしれない",
+        "vi_VN": "mạo hiểm có thể mang lại lợi lớn"
+      },
+      "gloss": false
+    },
+    {
+      "source": "搏一搏宝马变奥拓",
+      "targets": {
+        "en_US": "taking a chance could also cost you what you already have",
+        "ko_KR": "도전하다가 가진 것마저 잃을 수도 있다",
+        "ja_JP": "賭けに出て、今ある財産を失うこともある",
+        "vi_VN": "mạo hiểm cũng có thể khiến bạn mất những gì đang có"
+      },
+      "gloss": false
+    },
+    {
+      "source": "痴",
+      "targets": {
+        "en_US": "delusion",
+        "ko_KR": "어리석음",
+        "ja_JP": "無知",
+        "vi_VN": "Si"
+      },
+      "gloss": false
+    },
+    {
+      "source": "七杀仰斗",
+      "targets": {
+        "en_US": "marshal looks up to the Dipper",
+        "ko_KR": "칠살앙두",
+        "ja_JP": "七殺仰斗",
+        "vi_VN": "Thất Sát Ngưỡng Đẩu"
+      },
+      "gloss": true
+    },
+    {
+      "source": "子午",
+      "targets": {
+        "en_US": "zi and woo",
+        "ko_KR": "자·오",
+        "ja_JP": "子午",
+        "vi_VN": "Tý Ngọ"
+      },
+      "gloss": true
+    },
+    {
+      "source": "寅申",
+      "targets": {
+        "en_US": "yin and shen",
+        "ko_KR": "인·신",
+        "ja_JP": "寅申",
+        "vi_VN": "Dần Thân"
+      },
+      "gloss": true
+    },
+    {
+      "source": "大水朝东",
+      "targets": {
+        "en_US": "great waters flow east",
+        "ko_KR": "대수조동",
+        "ja_JP": "大水朝東",
+        "vi_VN": "Đại Thủy Triều Đông"
+      },
+      "gloss": true
+    },
+    {
+      "source": "文星",
+      "targets": {
+        "en_US": "literary stars",
+        "ko_KR": "문성",
+        "ja_JP": "文星",
+        "vi_VN": "văn tinh"
+      },
+      "gloss": true
+    },
+    {
+      "source": "明珠暗禄",
+      "targets": {
+        "en_US": "bright pearl and hidden prosperity",
+        "ko_KR": "명주암록",
+        "ja_JP": "明珠暗禄",
+        "vi_VN": "Minh Châu Ám Lộc"
+      },
+      "gloss": true
+    },
+    {
+      "source": "申子辰人寅戌扬",
+      "targets": {
+        "en_US": "for shen, zi or chen birth years, start fire bell at yin and xu respectively",
+        "ko_KR": "신·자·진년생은 화성과 영성을 각각 인·술에서 시작한다",
+        "ja_JP": "申・子・辰年生まれは火星と鈴星をそれぞれ寅・戌から起こす",
+        "vi_VN": "người sinh năm Thân, Tý, Thìn khởi Hỏa Tinh tại Dần và Linh Tinh tại Tuất"
+      },
+      "gloss": false
+    },
+    {
+      "source": "斗君",
+      "targets": {
+        "en_US": "first-month origin palace",
+        "ko_KR": "두군",
+        "ja_JP": "斗君",
+        "vi_VN": "Đẩu Quân"
+      },
+      "gloss": true
+    },
+    {
+      "source": "五虎遁",
+      "targets": {
+        "en_US": "Five Tigers stem calculation",
+        "ko_KR": "오호둔",
+        "ja_JP": "五虎遁",
+        "vi_VN": "Ngũ Hổ Độn"
+      },
+      "gloss": true
+    },
+    {
+      "source": "中州派",
+      "targets": {
+        "en_US": "Zhongzhou school",
+        "ko_KR": "중주파",
+        "ja_JP": "中州派",
+        "vi_VN": "phái Trung Châu"
+      },
+      "gloss": true
+    },
+    {
+      "source": "14主星",
+      "targets": {
+        "en_US": "14 major stars",
+        "ko_KR": "14 주성",
+        "ja_JP": "14主星",
+        "vi_VN": "14 chính tinh"
+      },
+      "gloss": false
+    },
+    {
+      "source": "37杂曜",
+      "targets": {
+        "en_US": "37 miscellaneous stars",
+        "ko_KR": "37 잡요",
+        "ja_JP": "37雑曜",
+        "vi_VN": "37 tạp diệu"
+      },
+      "gloss": false
+    },
+    {
+      "source": "定基调",
+      "targets": {
+        "en_US": "set the overall character",
+        "ko_KR": "전체 성향을 정하다",
+        "ja_JP": "全体の傾向を定める",
+        "vi_VN": "định hình tính chất chung"
+      },
+      "gloss": false
+    },
+    {
+      "source": "二助星",
+      "targets": {
+        "en_US": "two supporting stars",
+        "ko_KR": "두 조성",
+        "ja_JP": "二つの助星",
+        "vi_VN": "hai trợ tinh"
+      },
+      "gloss": true
+    },
+    {
+      "source": "南斗星系",
+      "targets": {
+        "en_US": "Southern Dipper star system",
+        "ko_KR": "남두 성계",
+        "ja_JP": "南斗星系",
+        "vi_VN": "hệ sao Nam Đẩu"
+      },
+      "gloss": true
+    },
+    {
+      "source": "北斗星系",
+      "targets": {
+        "en_US": "Northern Dipper star system",
+        "ko_KR": "북두 성계",
+        "ja_JP": "北斗星系",
+        "vi_VN": "hệ sao Bắc Đẩu"
+      },
+      "gloss": true
+    }
+  ]
+}

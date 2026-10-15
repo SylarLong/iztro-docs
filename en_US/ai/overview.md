@@ -1,25 +1,25 @@
-# Iztro AI
+# Iztro AI {#iztro-ai}
 
-Beyond the open-source **iztro** chart library, we offer four public hosted Ziwei and Qimen AI models:
+Alongside the open-source **iztro** charting library, we offer four publicly available hosted AI models for Zi Wei Dou Shu（紫微斗數） and Qi Men Dun Jia（奇門遁甲）:
 
-- `iztro-ziwei-v3`: natal, compatibility, and longer-term fortune-cycle analysis.
-- `iztro-qimen-v3`: decisions, development, and timing for one concrete current matter.
-- `iztro-ziwei-v3-fast`: faster Ziwei responses with lower token usage and lower per-request cost; its response shape and user-visible information match `iztro-ziwei-v3`.
-- `iztro-qimen-v3-fast`: faster Qimen responses with lower token usage and lower per-request cost; its response shape and user-visible information match `iztro-qimen-v3`.
+- `iztro-ziwei-v3`: natal-chart, relationship-compatibility and medium- to long-term horoscope analysis.
+- `iztro-qimen-v3`: decision-making for a specific current matter, how it may develop, and when an outcome may occur.
+- `iztro-ziwei-v3-fast`: faster Zi Wei Dou Shu（紫微斗數） responses, fewer tokens and lower API request costs; the response structure and user-visible information match `iztro-ziwei-v3`.
+- `iztro-qimen-v3-fast`: faster Qi Men Dun Jia（奇門） responses, fewer tokens and lower API request costs; the response structure and user-visible information match `iztro-qimen-v3`.
 
-There are two integration paths, and both let you select any public model above. Pick the one that matches what you are building.
+There are two integration methods, and both let you choose any of the models above. Choose the method that suits what you want to build.
 
-## iztro-chat-api — call our API
+## iztro-chat-api - call our API   {#iztro-chat-api-——-调用我们的-api}
 
-Send a message and get an answer. We host the agent, run the chart calculations, and keep conversation memory, so you write no astrology or AI code.
+Send a message and receive an answer directly. We host the agent, chart calculations, and conversation memory, so you do not need to write any astrology or AI code.
 
-- **Use it if** you want Ziwei or Qimen answers inside your app.
-- Base URL: `https://chat-api.iztro.com`
-- 👉 [Read the API documentation](https://platform.iztro.com/docs)
+-   **Suitable for**: users who simply want answers about Zi Wei Dou Shu（紫微斗數） or Qi Men Dun Jia（奇門遁甲） in their own applications.
+- API address: `https://chat-api.iztro.com`
+- 👉 [View the API documentation](https://platform.iztro.com/docs)
 
-## iztro-agents-sdk — build your own agent (Python / TypeScript)
+## iztro-agents-sdk - Build your own agents (Python/TypeScript)   {#iztro-agents-sdk-——-构建你自己的智能体-python-typescript}
 
-Build an agent on any public hosted Iztro model and add your own tools, MCP servers, and human-in-the-loop. It is a thin layer on the OpenAI Agents SDK.
+Build your own agent using any publicly available Iztro-hosted model, and add your own tools, MCP servers, and human confirmation steps. This SDK is a lightweight wrapper around the OpenAI Agents SDK.
 
 ```bash
 pip install openai-iztro-agents
@@ -32,13 +32,13 @@ from agents import Runner
 from iztro_agents import iztro_ziwei_fast_agent
 
 agent = iztro_ziwei_fast_agent(api_key=os.environ["ZIWEI_API_KEY"])
-result = await Runner.run(agent, "Read my 2028 career changes.")
+result = await Runner.run(agent, "看看我 2028 年的事业变化。")
 print(result.final_output)
 ```
 
-- **Use it if** you want to extend the agent with your own logic.
+-   **Suitable for**: users who want to extend an agent with their own logic.
 - 👉 [Python SDK](https://github.com/SylarLong/openai-iztro-agents-python) · [TypeScript / JavaScript SDK](https://github.com/SylarLong/openai-iztro-agents-js) · [PyPI](https://pypi.org/project/openai-iztro-agents/)
 
 ---
 
-> This is separate from the open-source `iztro` library documented elsewhere on this site: the **library calculates** charts, while **Iztro AI interprets and advises**.
+> This is separate from the open-source `iztro` library covered in the other chapters of this site: **the library calculates charts**, while **Iztro AI interprets them and provides assessments**.

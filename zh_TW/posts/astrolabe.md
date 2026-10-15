@@ -1,13 +1,13 @@
 ---
 outline: deep
-description: "iztro紫微鬥數星盤介紹，iztro的astro對象使用方法以及示例代碼。"
+description: "iztro紫微斗數星盤介紹，iztro的astro對象使用方法以及示例代碼。"
 ---
 
 # 星盤
 
 ## 前言
 
-紫微鬥數星盤又叫紫微鬥數命盤，是由 `十二個宮位` 和壹個 `中宮` 構成，宮位的 `地支` 是固定的，並且是由 `寅` 開始，而不是由 `子` 開始。這是因為農歷的正月是寅月，這就是所謂的 `正月建寅`。在 `iztro` 裏面，`寅宮` 的索引是 `0`，`卯宮` 的索引是 `1`，如此按照順時針的方向排列。如下面表格所示：
+紫微斗數星盤又叫紫微斗數命盤，是由 `十二個宮位` 和一個 `中宮` 構成，宮位的 `地支` 是固定的，並且是由 `寅` 開始，而不是由 `子` 開始。這是因為農曆的正月是寅月，這就是所謂的 `正月建寅`。在 `iztro` 裏面，`寅宮` 的索引是 `0`，`卯宮` 的索引是 `1`，如此按照順時針的方向排列。如下面表格所示：
 
 <table class="astrolabe">
     <tr>
@@ -33,13 +33,13 @@ description: "iztro紫微鬥數星盤介紹，iztro的astro對象使用方法以
     </tr>
 </table>
 
-`中宮` 通常可以用來展示任何妳想展示的信息，壹般不會對整個星盤產生影響。周圍的 `十二宮` 用於存放星曜，四化，運限，宮位名稱等信息。關於 `宮位` 的詳細信息，可以進入 [紫微鬥數宮位](./palace.md) 查看詳細介紹，本頁面主要關註星盤的信息。紫微鬥數星盤是由宮位和星曜組成的，如果妳還沒有建立起它們的概念，我們強烈推薦妳進入 [紫微鬥數基礎](/learn/basis.md) 開始學習有趣的紫微鬥數知識。
+`中宮` 通常可以用來展示任何你想展示的信息，一般不會對整個星盤產生影響。周圍的 `十二宮` 用於存放星曜，四化，運限，宮位名稱等信息。關於 `宮位` 的詳細信息，可以進入 [紫微斗數宮位](./palace.md) 查看詳細介紹，本頁面主要關注星盤的信息。紫微斗數星盤是由宮位和星曜組成的，如果你還沒有建立起它們的概念，我們強烈推薦你進入 [紫微斗數基礎](/zh_TW/learn/basis.md) 開始學習有趣的紫微斗數知識。
 
-在安裝好 `iztro` 依賴以後妳可以用如下代碼將 `星盤(astro)` 對象引入妳的代碼。如果妳還不知道如何安裝 `iztro`，請點擊 [傳送門](/quick-start.md#安裝) 跳轉到相關說明文檔。
+在安裝好 `iztro` 依賴以後你可以用如下代碼將 `星盤(astro)` 對象引入你的代碼。如果你還不知道如何安裝 `iztro`，請點擊 [傳送門](/zh_TW/quick-start.md#安裝) 跳轉到相關說明文檔。
 
 ## `astro` 的靜態方法
 
-要使用該對象的靜態方法，請先將該對象 `import` 到妳的代碼裏
+要使用該對象的靜態方法，請先將該對象 `import` 到你的代碼裏
 
 :::tabs
 == ES6 Module
@@ -68,16 +68,20 @@ var { astro } = require("iztro");
 
 配置作用範圍、`getConfig()` 的獨立副本及 `resetConfig()` 詳見[配置和插件](./config-n-plugin.md)。
 
-### astrolabeBySolarDate
+### astrolabeBySolarDate <Badge type="danger" text="deprecated" />
+
+本方法自 `v2.0.5` 起已棄用，請改用 [`bySolar`](#bysolar)，參數與返回值均不變。
+
+### bySolar <Badge type="warning" text="^2.0.5" />
 
 - 用途
 
-  通過陽歷獲取星盤信息
+  通過陽曆獲取星盤信息
 
 - 定義
 
   ```ts
-  export type astrolabeBySolarDate = (
+  export type bySolar = (
     solarDateStr: string,
     timeIndex: number,
     gender: GenderName,
@@ -90,11 +94,11 @@ var { astro } = require("iztro");
 
   | 參數         | 類型                                         | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
-  | solarDateStr | `string`                                     | `true`   | -       | 陽歷日期【YYYY-M-D】                                                              |
-  | timeIndex    | `number`                                     | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
-  | gender       | [`GenderName`](/type-definition.md#gendername)| `true`   | -       | 性別【男/女】                                                                     |
+  | solarDateStr | `string`                                     | `true`   | -       | 陽曆日期【YYYY-M-D】                                                              |
+  | timeIndex    | `number`                                     | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）一直到晚子時（12）的序號                   |
+  | gender       | [`GenderName`](/zh_TW/type-definition.md#gendername)| `true`   | -       | 性別【男/女】                                                                     |
   | fixLeap      | `boolean`                                    | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 返回值
 
@@ -110,16 +114,20 @@ var { astro } = require("iztro");
 
 ---
 
-### astrolabeByLunarDate
+### astrolabeByLunarDate <Badge type="danger" text="deprecated" />
+
+本方法自 `v2.0.5` 起已棄用，請改用 [`byLunar`](#bylunar)，參數與返回值均不變。
+
+### byLunar <Badge type="warning" text="^2.0.5" />
 
 - 用途
 
-  通過農歷日期獲取星盤信息。我們強烈建議妳優先使用 `astrolabeBySolarDate` 方法，因為該方法也是將農歷日期轉化為陽歷以後調用 `astrolabeBySolarDate` 獲得結果的。
+  通過農曆日期獲取星盤信息。我們強烈建議你優先使用 `bySolar` 方法，因為該方法也是將農曆日期轉化為陽曆以後調用 `bySolar` 獲得結果的。
 
 - 定義
 
   ```ts
-  export type astrolabeByLunarDate = (
+  export type byLunar = (
     lunarDateStr: string,
     timeIndex: number,
     gender: GenderName,
@@ -133,12 +141,12 @@ var { astro } = require("iztro");
 
   | 參數         | 類型       | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
-  | lunarDateStr | `string`   | `true`   | -       | 農歷日期【YYYY-M-D】，例如 `2000年七月十七` 則傳入 `2000-7-17`                    |
-  | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
-  | gender       | [`GenderName`](/type-definition.md#gendername)   | `true`   | -       | 性別【男/女】                                                                     |
+  | lunarDateStr | `string`   | `true`   | -       | 農曆日期【YYYY-M-D】，例如 `2000年七月十七` 則傳入 `2000-7-17`                    |
+  | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）一直到晚子時（12）的序號                   |
+  | gender       | [`GenderName`](/zh_TW/type-definition.md#gendername)   | `true`   | -       | 性別【男/女】                                                                     |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 返回值
 
@@ -149,7 +157,7 @@ var { astro } = require("iztro");
   ```ts
   import { astro } from "iztro";
 
-  const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", false, true, "zh-CN");
+  const astrolabe = astro.byLunar("2000-8-16", 2, "女", false, true, "zh-CN");
   ```
 
 ---
@@ -187,10 +195,10 @@ var { astro } = require("iztro");
   | type | `solar` \| `lunar` | `false` | `solar` | 日期類型
   | dateStr | `string` | `true` | - | 出生日期，格式為 YYYY-M-D
   | timeIndex | `number` | `true` | - | 出生時辰序號【0~12】，對應從早子時（0）一直到晚子時（12）的序號 | |
-  | gender | [`GenderName`](/type-definition.md#gendername) | `true` | - | 性別【男/女】 |
+  | gender | [`GenderName`](/zh_TW/type-definition.md#gendername) | `true` | - | 性別【男/女】 |
   | isLeapMonth | `boolean` | `false` | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效 |
   | fixLeap | `boolean` | `false` | `true` | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 傳回資料將會國際化為指定語言。目前支援 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
   | config | [`Config`](../type-definition.md#config) | `false` | - | 僅覆蓋當前星盤的亮度、四化及時間分界配置（^2.6.2） |
   | astroType <Badge type="warning" text="^2.5.0" /> | [`AstroType`](../type-definition.md#astrotype) | `false` | `heaven` | 星盤類型；僅在 `config.algorithm` 為 `zhongzhou` 時用於選擇天盤、地盤或人盤 |
 
@@ -226,7 +234,7 @@ var { astro } = require("iztro");
 
 - 用途
 
-  通過陽歷獲取命宮主星
+  通過陽曆獲取命宮主星
 
 - 定義
 
@@ -243,10 +251,10 @@ var { astro } = require("iztro");
 
   | 參數         | 類型                                         | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
-  | solarDateStr | `string`                                     | `true`   | -       | 陽歷日期【YYYY-M-D】                                                              |
-  | timeIndex    | `number`                                     | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
+  | solarDateStr | `string`                                     | `true`   | -       | 陽曆日期【YYYY-M-D】                                                              |
+  | timeIndex    | `number`                                     | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）一直到晚子時（12）的序號                   |
   | fixLeap      | `boolean`                                    | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 示例
 
@@ -262,7 +270,7 @@ var { astro } = require("iztro");
 
 - 用途
 
-  通過農歷獲取命宮主星
+  通過農曆獲取命宮主星
 
 - 定義
 
@@ -280,11 +288,11 @@ var { astro } = require("iztro");
 
   | 參數         | 類型       | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
-  | lunarDateStr | `string`   | `true`   | -       | 農歷日期【YYYY-M-D】，例如 `2000年七月十七` 則傳入 `2000-7-17`                    |
-  | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）壹直到晚子時（12）的序號                   |
+  | lunarDateStr | `string`   | `true`   | -       | 農曆日期【YYYY-M-D】，例如 `2000年七月十七` 則傳入 `2000-7-17`                    |
+  | timeIndex    | `number`   | `true`   | -       | 出生時辰序號【0~12】，對應從早子時（0）一直到晚子時（12）的序號                   |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否調整閏月，為`true`閏月的前半個月算上個月，後半個月算下個月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 示例
 
@@ -300,7 +308,7 @@ var { astro } = require("iztro");
 
 - 用途
 
-  通過陽歷獲取星座
+  通過陽曆獲取星座
 
 - 定義
 
@@ -315,8 +323,8 @@ var { astro } = require("iztro");
 
   | 參數         | 類型                                         | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
-  | solarDateStr | `string`                                     | `true`   | -       | 陽歷日期【YYYY-M-D】                                                              |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | solarDateStr | `string`                                     | `true`   | -       | 陽曆日期【YYYY-M-D】                                                              |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 示例
 
@@ -332,7 +340,7 @@ var { astro } = require("iztro");
 
 - 用途
 
-  通過農歷獲取星座
+  通過農曆獲取星座
 
 - 定義
 
@@ -348,9 +356,9 @@ var { astro } = require("iztro");
 
   | 參數         | 類型       | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
-  | lunarDateStr | `string`   | `true`   | -       | 農歷日期【YYYY-M-D】，例如 `2000年七月十七` 則傳入 `2000-7-17`                    |
+  | lunarDateStr | `string`   | `true`   | -       | 農曆日期【YYYY-M-D】，例如 `2000年七月十七` 則傳入 `2000-7-17`                    |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否閏月，當實際月份沒有閏月時該參數不生效                                        |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 示例
 
@@ -379,8 +387,8 @@ var { astro } = require("iztro");
 
   | 參數         | 類型                                         | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
-  | solarDateStr | `string`                                     | `true`   | -       | 陽歷日期【YYYY-M-D】                                                              |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | solarDateStr | `string`                                     | `true`   | -       | 陽曆日期【YYYY-M-D】                                                              |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
 - 示例
 
@@ -396,7 +404,7 @@ var { astro } = require("iztro");
 
 - 用途
 
-  通過農歷年份獲取十二生肖
+  通過農曆年份獲取十二生肖
 
 - 定義
 
@@ -408,8 +416,8 @@ var { astro } = require("iztro");
 
   | 參數         | 類型                                         | 是否必填 | 默認值  | 說明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
-  | year | `number`                                     | `true`   | -       | 農歷年份                                                             |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回數據將被國際化為指定語言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR`,`ja-JP` 和 `vi-VN` |
+  | year | `number`                                     | `true`   | -       | 農曆年份                                                             |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回資料使用指定語言。目前支援 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
   
 - 示例
 
@@ -424,7 +432,7 @@ var { astro } = require("iztro");
 ## 功能類定義
 
 ::: warning 開發建議
-我們推薦妳直接調用 [astro 的靜態方法](./astrolabe.md#astro-的靜態方法) 來獲取數據，而不是手動去創建壹個 `FunctionalAstrolabe` 類的實例。
+我們推薦你直接調用 [astro 的靜態方法](./astrolabe.md#astro-的靜態方法) 來獲取數據，而不是手動去創建一個 `FunctionalAstrolabe` 類的實例。
 :::
 
 ### FunctionalAstrolabe
@@ -433,7 +441,7 @@ var { astro } = require("iztro");
 
 <Badge type="tip" text="implements" /> `IFunctionalAstrolabe` <Badge type="tip" text="extends" /> [`Astrolabe`](../type-definition.md#astrolabe)
 
-該類所有屬性都是繼承自 [Astrolabe](../type-definition.md#astrolabe)，然後在接口內定義了壹些方法用於對星盤的分析。[`astrolabeBySolarDate()`](./astrolabe.md#astrolabebysolardate) 和 [`astrolabeByLunarDate()`](./astrolabe.md#astrolabeByLunarDate) 方法會返回壹個該類的實例。
+該類所有屬性都是繼承自 [Astrolabe](../type-definition.md#astrolabe)，然後在接口內定義了一些方法用於對星盤的分析。[`bySolar()`](./astrolabe.md#bysolar) 和 [`byLunar()`](./astrolabe.md#bylunar) 方法會返回一個該類的實例。
 
 - 接口定義
 
@@ -441,7 +449,7 @@ var { astro } = require("iztro");
   interface IFunctionalAstrolabe extends Astrolabe {
     toJSON: () => Astrolabe;
     use(plugin: Plugin): void;
-    horoscope: (date?: string | Date, timeIndex?: number) => Horoscope;
+    horoscope: (date?: string | Date, timeIndex?: number) => FunctionalHoroscope;
     decadalList: () => DecadalHoroscope[];
     yearlyList: (indexOrName: number | PalaceName) => YearlyHoroscope[];
     monthlyList: (year: number, fixLeap?: boolean) => MonthlyHoroscope[];
@@ -553,31 +561,33 @@ var { astro } = require("iztro");
 
   - 用途
 
-    獲取運限數據。如果隻是想獲取調用時的運限數據，可以不傳任何參數，該方法會獲取係統當前時間進行計算。
+    獲取運限數據。如果只是想獲取調用時的運限數據，可以不傳任何參數，該方法會獲取系統當前時間進行計算。
 
-    :::warning 註意
+    :::warning 注意
 
     - 當 `date` 為 `YYYY-M-D` 格式的字符串而沒有傳 `timeIndex` 參數時，會取 `date` 當日 `早子時` 的時間點作為 `流時` 的時間
-    - 當 `date` 為 `YYYY-M-D HH` 格式時間或是壹個 `Date` 實例而沒有傳 `timeIndex` 參數時，會將 `date` 裏的小時轉化為時辰作為 `流時` 的時間
+    - 當 `date` 為 `YYYY-M-D HH` 格式時間或是一個 `Date` 實例而沒有傳 `timeIndex` 參數時，會將 `date` 裏的小時轉化為時辰作為 `流時` 的時間
     - 當傳入 `timeIndex` 參數時，會優先使用該參數
       :::
 
   - 定義
 
     ```ts
-    type horoscope = (date?: string | Date, timeIndex?: number) => Horoscope;
+    type horoscope = (date?: string | Date, timeIndex?: number) => FunctionalHoroscope;
     ```
 
   - 參數
 
     | 參數      | 類型               | 是否必填 | 默認值       | 說明                 |
     | --------- | ------------------ | -------- | ------------ | -------------------- |
-    | date      | `string` \| `Date` | `false`  | `new Date()` | 陽歷日期【YYYY-M-D】 |
+    | date      | `string` \| `Date` | `false`  | `new Date()` | 陽曆日期【YYYY-M-D】 |
     | timeIndex | `number`           | `false`  | `0`          | 時辰索引【0~12】     |
 
   - 返回值
 
-    [`Horoscope`](../type-definition.md#horoscope)
+    [`FunctionalHoroscope`](./horoscope.md#functionalhoroscope)
+
+    返回值自 `v1.3.4` 起由 `Horoscope` 改為 `FunctionalHoroscope`，使用方式保持向後相容。
 
   - 示例
 
@@ -802,7 +812,7 @@ var { astro } = require("iztro");
 
   - 用途
 
-    獲取 `三方四正` 宮位，所謂三方四正就是傳入的 `目標宮`，以及其 `對宮`，`財帛位` 和 `官祿位`，總共四個宮位。`宮` 和 `位` 是兩個概念，如果妳對宮位和三方四正的概念不清楚，可以點擊 [宮位](./palace.md) 查看詳細信息。
+    獲取 `三方四正` 宮位，所謂三方四正就是傳入的 `目標宮`，以及其 `對宮`，`財帛位` 和 `官祿位`，總共四個宮位。`宮` 和 `位` 是兩個概念，如果你對宮位和三方四正的概念不清楚，可以點擊 [宮位](./palace.md) 查看詳細信息。
 
   - 定義
 
@@ -840,13 +850,13 @@ var { astro } = require("iztro");
 
   ### isSurrounded() <Badge type="warning" text="^1.0.0" /> <Badge type="danger" text="deprecated" />
 
-  :::danger 註意
+  :::danger 注意
   該方法已經在 `v1.2.0` 廢棄，請使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [have()](palace.md#have) 方法代替
   :::
 
   - 用途
 
-    判斷某壹個宮位 `三方四正` 是否包含目標 `星曜`，必須要**全部**包含才會返回 `true`
+    判斷某一個宮位 `三方四正` 是否包含目標 `星曜`，必須要**全部**包含才會返回 `true`
 
   - 定義
 
@@ -886,13 +896,13 @@ var { astro } = require("iztro");
 
   ### isSurroundedOneOf() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
 
-  :::danger 註意
+  :::danger 注意
   該方法已經在 `v1.2.0` 廢棄，請使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [haveOneOf()](palace.md#haveoneof) 方法代替
   :::
 
   - 用途
 
-    判斷指定宮位 `三方四正` 內是否有傳入星曜的 `其中壹個`，隻要命中 `壹個` 就會返回 `true`
+    判斷指定宮位 `三方四正` 內是否有傳入星曜的 `其中一個`，只要命中 `一個` 就會返回 `true`
 
   - 定義
 
@@ -932,13 +942,13 @@ var { astro } = require("iztro");
 
   ### notSurrounded() <Badge type="warning" text="^1.1.0" /> <Badge type="danger" text="deprecated" />
  
-  :::danger 註意
+  :::danger 注意
   該方法已經在 `v1.2.0` 廢棄，請使用 [FunctionalSurpalaces](palace.md#functionalsurpalaces) 的 [notHave()](palace.md#nothave-1) 方法代替
   :::
 
   - 用途
 
-    判斷指定宮位 `三方四正` 是否 `不含` 目標星曜，必須要全部都 `不在` 三方四正內含才會返回 `true`
+    判斷指定宮位 `三方四正` 是否 `不含` 目標星曜，必須要全部都 `不在` 三方四正內才會返回 `true`
 
   - 定義
 

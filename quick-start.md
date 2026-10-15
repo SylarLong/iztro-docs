@@ -14,7 +14,7 @@ description: '紫微研习社，iztro官方文档，iztro开发文档，快速�
 ## 前言
 
 欢迎使用 `iztro` 开发文档！本页将向你介绍如何集成、如何获取数据、以及如何快速得到紫微斗数里一张星盘上的所有数据。如果你只是基础使用者，阅读完本篇文档将足够你日常使用。
-如果你已经掌握了本页内容，可以到其他页面进行更深入的探索。如果你对紫微斗数感兴趣，但是有没有相关基础，可以点击 [基础知识扫盲](/learn/basis.md) 进行扫盲学习。
+如果你已经掌握了本页内容，可以到其他页面进行更深入的探索。如果你对紫微斗数感兴趣，但是又没有相关基础，可以点击 [基础知识扫盲](/learn/basis.md) 进行扫盲学习。
 
 ::: info 你将获取到以下信息：
 
@@ -515,7 +515,7 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
     | timeIndex    | `number`   | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
     | gender       | `string`   | `true`   | -       | 性别【男/女】                                                                     |
     | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-    | language     | `Language` | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+    | language     | `Language` | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
   - 返回值
 
@@ -534,7 +534,7 @@ var astrolabe = astro.byLunar("2000-7-17", 2, "女", false);
     | gender       | `string`   | `true`   | -       | 性别【男/女】                                                                     |
     | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
     | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-    | language     | `Language` | `false`  | `zh-CN` | 返回数据将被国际化为指定语言。目前支持 `zh-CN`,`zh-TW`,`en-US`,`ko-KR` 和 `ja-JP` |
+    | language     | `Language` | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
 
   - 返回值
 
@@ -647,7 +647,7 @@ astrolabe.horoscope(new Date());
 
 ## 获取流曜
 
-上面的`horoscope()`方法内已经包含了`大限`和`流年`的流曜，所以一般情况下无需在单独调用获取流曜的方法，但也有例外的情况需要自行获取流曜，那就需要调用下列方法自行获取。
+上面的`horoscope()`方法内已经包含了`大限`和`流年`的流曜，所以一般情况下无需再单独调用获取流曜的方法，但也有例外的情况需要自行获取流曜，那就需要调用下列方法自行获取。
 
 :::tabs
 == ES6 Module
