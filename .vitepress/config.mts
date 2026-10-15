@@ -49,15 +49,7 @@ const config = defineConfig({
           { text: "排盘", link: "https://ziwei.pub" },
           { text: "解盘", link: "https://app.ziwei.pro/register?ref=TPgWxvwH" },
           { text: "AI 模型", link: "/ai/overview" },
-          {
-            text: "讨论",
-            link: "https://github.com/SylarLong/iztro/discussions",
-          },
           { text: "关于作者", link: "/about.md" },
-          {
-            text: 'GitHub 星标',
-            link: "https://github.com/SylarLong/iztro",
-          },
           {
             text: version,
             items: [
@@ -138,15 +130,7 @@ const config = defineConfig({
           { text: "排盤", link: "https://ziwei.pub" },
           { text: "解盤", link: "https://app.ziwei.pro/register?ref=TPgWxvwH" },
           { text: "AI 模型", link: "/zh_TW/ai/overview" },
-          {
-            text: "討論",
-            link: "https://github.com/SylarLong/iztro/discussions",
-          },
           { text: "關於作者", link: "/zh_TW/about.md" },
-          {
-            text: 'GitHub 星標',
-            link: "https://github.com/SylarLong/iztro",
-          },
           {
             text: version,
             items: [

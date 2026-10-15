@@ -19,27 +19,27 @@ description: "iztroの作者、開発のきっかけ、連絡方法を紹介し�
 以前はフルスタック開発をしていましたが、現在は主にフロントエンド開発に携わっています。
 
 <div class="my-tech-stack">
-<a href="https://github.com/topics/javascript" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></a>
-<a href="https://github.com/topics/typescript" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></a>
-<a href="https://github.com/topics/nodejs" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></a>
-<a href="https://github.com/topics/react" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></a>
-<a href="https://github.com/topics/vscode" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/bbd48b997e8d0bef63f676eca4da5e1f76487b56/topics/visual-studio-code/visual-studio-code.png"></a>
-<a href="https://github.com/topics/chrome" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/002d791bc68a86506b1bb7a3332bb6ba8e1d1891/topics/chrome/chrome.png"></a>
-<a href="https://github.com/topics/css" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></a>
-<a href="https://github.com/topics/eslint" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/eslint/eslint.png"></a>
-<a href="https://github.com/topics/git" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></a>
-<a href="https://github.com/topics/html" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></a>
-<a href="https://github.com/topics/markdown" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/markdown/markdown.png"></a>
-<a href="https://github.com/topics/mysql" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></a>
-<a href="https://github.com/topics/npm" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png"></a>
-<a href="https://github.com/topics/sass" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"></a>
-<a href="https://github.com/topics/storybook" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/storybook/storybook.png"></a>
-<a href="https://github.com/topics/nextjs" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/28b02bbc9ad9f7a503c43775aebeb515dc2da5fc/topics/nextjs/nextjs.png"></a>
-<a href="https://github.com/topics/ajax" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/8be26d91eb231fec0b8856359979ac09f27173fd/topics/ajax/ajax.png"></a>
-<a href="https://github.com/topics/bootstrap" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/8be26d91eb231fec0b8856359979ac09f27173fd/topics/bootstrap/bootstrap.png"></a>
-<a href="https://github.com/topics/express" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/8be26d91eb231fec0b8856359979ac09f27173fd/topics/express/express.png"></a>
-<a href="https://github.com/topics/jquery" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/8be26d91eb231fec0b8856359979ac09f27173fd/topics/jquery/jquery.png"></a>
-<a href="https://github.com/topics/json" target="_blank"><img height="20" src="https://raw.githubusercontent.com/github/explore/8be26d91eb231fec0b8856359979ac09f27173fd/topics/json/json.png"></a>
+<span title="JavaScript"><img width="40" height="40" src="https://skillicons.dev/icons?i=js" alt="JavaScript" loading="lazy"></span>
+<span title="TypeScript"><img width="40" height="40" src="https://skillicons.dev/icons?i=ts" alt="TypeScript" loading="lazy"></span>
+<span title="Node.js"><img width="40" height="40" src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" loading="lazy"></span>
+<span title="React"><img width="40" height="40" src="https://skillicons.dev/icons?i=react" alt="React" loading="lazy"></span>
+<span title="VS Code"><img width="40" height="40" src="https://skillicons.dev/icons?i=vscode" alt="VS Code" loading="lazy"></span>
+<span class="tech-label tech-label-chrome" title="Chrome">Chrome</span>
+<span title="CSS"><img width="40" height="40" src="https://skillicons.dev/icons?i=css" alt="CSS" loading="lazy"></span>
+<span class="tech-label tech-label-eslint" title="ESLint">ESLint</span>
+<span title="Git"><img width="40" height="40" src="https://skillicons.dev/icons?i=git" alt="Git" loading="lazy"></span>
+<span title="HTML"><img width="40" height="40" src="https://skillicons.dev/icons?i=html" alt="HTML" loading="lazy"></span>
+<span title="Markdown"><img width="40" height="40" src="https://skillicons.dev/icons?i=md" alt="Markdown" loading="lazy"></span>
+<span title="MySQL"><img width="40" height="40" src="https://skillicons.dev/icons?i=mysql" alt="MySQL" loading="lazy"></span>
+<span title="npm"><img width="40" height="40" src="https://skillicons.dev/icons?i=npm" alt="npm" loading="lazy"></span>
+<span title="Sass"><img width="40" height="40" src="https://skillicons.dev/icons?i=sass" alt="Sass" loading="lazy"></span>
+<span class="tech-label tech-label-storybook" title="Storybook">Storybook</span>
+<span title="Next.js"><img width="40" height="40" src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" loading="lazy"></span>
+<span class="tech-label tech-label-ajax" title="AJAX">AJAX</span>
+<span title="Bootstrap"><img width="40" height="40" src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" loading="lazy"></span>
+<span title="Express"><img width="40" height="40" src="https://skillicons.dev/icons?i=express" alt="Express" loading="lazy"></span>
+<span title="jQuery"><img width="40" height="40" src="https://skillicons.dev/icons?i=jquery" alt="jQuery" loading="lazy"></span>
+<span class="tech-label tech-label-json" title="JSON">JSON</span>
 </div>
 
 ## なぜオープンソースなのか❓  {#为什么开源❓}

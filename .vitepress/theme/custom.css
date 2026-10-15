@@ -108,11 +108,46 @@ header .container a.title,
 
 .my-tech-stack {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 10px;
 }
 
 .my-tech-stack img {
-  width: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+.my-tech-stack .tech-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.my-tech-stack .tech-label-chrome {
+  background-color: #1a73e8;
+}
+
+.my-tech-stack .tech-label-eslint {
+  background-color: #4b32c3;
+}
+
+.my-tech-stack .tech-label-storybook {
+  background-color: #d62065;
+}
+
+.my-tech-stack .tech-label-ajax {
+  background-color: #0e7490;
+}
+
+.my-tech-stack .tech-label-json {
+  background-color: #f5c518;
+  color: #252525;
 }
 
 .curtain {
