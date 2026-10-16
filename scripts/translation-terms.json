@@ -233,12 +233,12 @@
         "category": "star"
       },
       "铃星": {
-        "value": "령성",
+        "value": "영성",
         "chinese": "鈴星",
         "category": "star"
       },
       "铃星星": {
-        "value": "령성",
+        "value": "영성",
         "chinese": "鈴星",
         "category": "star"
       },
@@ -563,12 +563,12 @@
         "category": "star"
       },
       "截空": {
-        "value": "절중",
+        "value": "절공",
         "chinese": "截空",
         "category": "star"
       },
       "截空星": {
-        "value": "절중",
+        "value": "절공",
         "chinese": "截空",
         "category": "star"
       },
@@ -838,12 +838,12 @@
         "category": "star"
       },
       "岁破": {
-        "value": "태파",
+        "value": "세파",
         "chinese": "歲破",
         "category": "star"
       },
       "岁破星": {
-        "value": "태파",
+        "value": "세파",
         "chinese": "歲破",
         "category": "star"
       },
@@ -938,12 +938,12 @@
         "category": "star"
       },
       "天德": {
-        "value": "복덕",
+        "value": "천덕",
         "chinese": "天德",
         "category": "star"
       },
       "天德星": {
-        "value": "복덕",
+        "value": "천덕",
         "chinese": "天德",
         "category": "star"
       },
@@ -2250,12 +2250,12 @@
         "category": "star"
       },
       "禄存": {
-        "value": "祿存",
+        "value": "禄存",
         "chinese": "祿存",
         "category": "star"
       },
       "禄存星": {
-        "value": "祿存",
+        "value": "禄存",
         "chinese": "祿存",
         "category": "star"
       },
@@ -2450,22 +2450,22 @@
         "category": "star"
       },
       "天虚": {
-        "value": "天虛",
+        "value": "天虚",
         "chinese": "天虛",
         "category": "star"
       },
       "天虚星": {
-        "value": "天虛",
+        "value": "天虚",
         "chinese": "天虛",
         "category": "star"
       },
       "龙池": {
-        "value": "龍池",
+        "value": "竜池",
         "chinese": "龍池",
         "category": "star"
       },
       "龙池星": {
-        "value": "龍池",
+        "value": "竜池",
         "chinese": "龍池",
         "category": "star"
       },
@@ -2620,12 +2620,12 @@
         "category": "star"
       },
       "天寿": {
-        "value": "天壽",
+        "value": "天寿",
         "chinese": "天壽",
         "category": "star"
       },
       "天寿星": {
-        "value": "天壽",
+        "value": "天寿",
         "chinese": "天壽",
         "category": "star"
       },
@@ -2680,12 +2680,12 @@
         "category": "star"
       },
       "月德": {
-        "value": "月德",
+        "value": "月徳",
         "chinese": "月德",
         "category": "star"
       },
       "月德星": {
-        "value": "月德",
+        "value": "月徳",
         "chinese": "月德",
         "category": "star"
       },
@@ -2710,12 +2710,12 @@
         "category": "star"
       },
       "天厨": {
-        "value": "天廚",
+        "value": "天厨",
         "chinese": "天廚",
         "category": "star"
       },
       "天厨星": {
-        "value": "天廚",
+        "value": "天厨",
         "chinese": "天廚",
         "category": "star"
       },
@@ -2740,12 +2740,12 @@
         "category": "star"
       },
       "冠带": {
-        "value": "冠帶",
+        "value": "冠帯",
         "chinese": "冠帶",
         "category": "star"
       },
       "冠带星": {
-        "value": "冠帶",
+        "value": "冠帯",
         "chinese": "冠帶",
         "category": "star"
       },
@@ -2790,7 +2790,7 @@
         "category": "star"
       },
       "绝": {
-        "value": "絕",
+        "value": "絶",
         "chinese": "絕",
         "category": "star"
       },
@@ -2825,12 +2825,12 @@
         "category": "star"
       },
       "青龙": {
-        "value": "青龍",
+        "value": "青竜",
         "chinese": "青龍",
         "category": "star"
       },
       "青龙星": {
-        "value": "青龍",
+        "value": "青竜",
         "chinese": "青龍",
         "category": "star"
       },
@@ -2845,12 +2845,12 @@
         "category": "star"
       },
       "将军": {
-        "value": "將軍",
+        "value": "将軍",
         "chinese": "將軍",
         "category": "star"
       },
       "将军星": {
-        "value": "將軍",
+        "value": "将軍",
         "chinese": "將軍",
         "category": "star"
       },
@@ -2905,12 +2905,12 @@
         "category": "star"
       },
       "岁破": {
-        "value": "歲破",
+        "value": "歳破",
         "chinese": "歲破",
         "category": "star"
       },
       "岁破星": {
-        "value": "歲破",
+        "value": "歳破",
         "chinese": "歲破",
         "category": "star"
       },
@@ -2935,22 +2935,22 @@
         "category": "star"
       },
       "岁建": {
-        "value": "歲建",
+        "value": "歳建",
         "chinese": "歲建",
         "category": "star"
       },
       "岁建星": {
-        "value": "歲建",
+        "value": "歳建",
         "chinese": "歲建",
         "category": "star"
       },
       "晦气": {
-        "value": "晦氣",
+        "value": "晦気",
         "chinese": "晦氣",
         "category": "star"
       },
       "晦气星": {
-        "value": "晦氣",
+        "value": "晦気",
         "chinese": "晦氣",
         "category": "star"
       },
@@ -2985,12 +2985,12 @@
         "category": "star"
       },
       "龙德": {
-        "value": "龍德",
+        "value": "竜徳",
         "chinese": "龍德",
         "category": "star"
       },
       "龙德星": {
-        "value": "龍德",
+        "value": "竜徳",
         "chinese": "龍德",
         "category": "star"
       },
@@ -3005,12 +3005,12 @@
         "category": "star"
       },
       "天德": {
-        "value": "天德",
+        "value": "天徳",
         "chinese": "天德",
         "category": "star"
       },
       "天德星": {
-        "value": "天德",
+        "value": "天徳",
         "chinese": "天德",
         "category": "star"
       },
@@ -3025,12 +3025,12 @@
         "category": "star"
       },
       "将星": {
-        "value": "將星",
+        "value": "将星",
         "chinese": "將星",
         "category": "star"
       },
       "将星星": {
-        "value": "將星",
+        "value": "将星",
         "chinese": "將星",
         "category": "star"
       },
@@ -3045,12 +3045,12 @@
         "category": "star"
       },
       "岁驿": {
-        "value": "歲驛",
+        "value": "歳駅",
         "chinese": "歲驛",
         "category": "star"
       },
       "岁驿星": {
-        "value": "歲驛",
+        "value": "歳駅",
         "chinese": "歲驛",
         "category": "star"
       },
@@ -3155,12 +3155,12 @@
         "category": "star"
       },
       "运钺": {
-        "value": "限の钺",
+        "value": "限の鉞",
         "chinese": "運鉞",
         "category": "star"
       },
       "运钺星": {
-        "value": "限の钺",
+        "value": "限の鉞",
         "chinese": "運鉞",
         "category": "star"
       },
@@ -3185,12 +3185,12 @@
         "category": "star"
       },
       "运鸾": {
-        "value": "限の鸾",
+        "value": "限の鸞",
         "chinese": "運鸞",
         "category": "star"
       },
       "运鸾星": {
-        "value": "限の鸾",
+        "value": "限の鸞",
         "chinese": "運鸞",
         "category": "star"
       },
@@ -3205,12 +3205,12 @@
         "category": "star"
       },
       "运禄": {
-        "value": "限の祿",
+        "value": "限の禄",
         "chinese": "運祿",
         "category": "star"
       },
       "运禄星": {
-        "value": "限の祿",
+        "value": "限の禄",
         "chinese": "運祿",
         "category": "star"
       },
@@ -3255,12 +3255,12 @@
         "category": "star"
       },
       "流钺": {
-        "value": "年の钺",
+        "value": "年の鉞",
         "chinese": "流鉞",
         "category": "star"
       },
       "流钺星": {
-        "value": "年の钺",
+        "value": "年の鉞",
         "chinese": "流鉞",
         "category": "star"
       },
@@ -3285,12 +3285,12 @@
         "category": "star"
       },
       "流鸾": {
-        "value": "年の鸾",
+        "value": "年の鸞",
         "chinese": "流鸞",
         "category": "star"
       },
       "流鸾星": {
-        "value": "年の鸾",
+        "value": "年の鸞",
         "chinese": "流鸞",
         "category": "star"
       },
@@ -3305,12 +3305,12 @@
         "category": "star"
       },
       "流禄": {
-        "value": "年の祿",
+        "value": "年の禄",
         "chinese": "流祿",
         "category": "star"
       },
       "流禄星": {
-        "value": "年の祿",
+        "value": "年の禄",
         "chinese": "流祿",
         "category": "star"
       },
@@ -3365,12 +3365,12 @@
         "category": "star"
       },
       "月钺": {
-        "value": "月の钺",
+        "value": "月の鉞",
         "chinese": "月鉞",
         "category": "star"
       },
       "月钺星": {
-        "value": "月の钺",
+        "value": "月の鉞",
         "chinese": "月鉞",
         "category": "star"
       },
@@ -3395,12 +3395,12 @@
         "category": "star"
       },
       "月鸾": {
-        "value": "月の鸾",
+        "value": "月の鸞",
         "chinese": "月鸞",
         "category": "star"
       },
       "月鸾星": {
-        "value": "月の鸾",
+        "value": "月の鸞",
         "chinese": "月鸞",
         "category": "star"
       },
@@ -3415,12 +3415,12 @@
         "category": "star"
       },
       "月禄": {
-        "value": "月の祿",
+        "value": "月の禄",
         "chinese": "月祿",
         "category": "star"
       },
       "月禄星": {
-        "value": "月の祿",
+        "value": "月の禄",
         "chinese": "月祿",
         "category": "star"
       },
@@ -3465,12 +3465,12 @@
         "category": "star"
       },
       "日钺": {
-        "value": "日の钺",
+        "value": "日の鉞",
         "chinese": "日鉞",
         "category": "star"
       },
       "日钺星": {
-        "value": "日の钺",
+        "value": "日の鉞",
         "chinese": "日鉞",
         "category": "star"
       },
@@ -3495,12 +3495,12 @@
         "category": "star"
       },
       "日鸾": {
-        "value": "日の鸾",
+        "value": "日の鸞",
         "chinese": "日鸞",
         "category": "star"
       },
       "日鸾星": {
-        "value": "日の鸾",
+        "value": "日の鸞",
         "chinese": "日鸞",
         "category": "star"
       },
@@ -3515,12 +3515,12 @@
         "category": "star"
       },
       "日禄": {
-        "value": "日の祿",
+        "value": "日の禄",
         "chinese": "日祿",
         "category": "star"
       },
       "日禄星": {
-        "value": "日の祿",
+        "value": "日の禄",
         "chinese": "日祿",
         "category": "star"
       },
@@ -3565,12 +3565,12 @@
         "category": "star"
       },
       "时钺": {
-        "value": "時の钺",
+        "value": "時の鉞",
         "chinese": "時鉞",
         "category": "star"
       },
       "时钺星": {
-        "value": "時の钺",
+        "value": "時の鉞",
         "chinese": "時鉞",
         "category": "star"
       },
@@ -3595,12 +3595,12 @@
         "category": "star"
       },
       "时鸾": {
-        "value": "時の鸾",
+        "value": "時の鸞",
         "chinese": "時鸞",
         "category": "star"
       },
       "时鸾星": {
-        "value": "時の鸾",
+        "value": "時の鸞",
         "chinese": "時鸞",
         "category": "star"
       },
@@ -3615,12 +3615,12 @@
         "category": "star"
       },
       "时禄": {
-        "value": "時の祿",
+        "value": "時の禄",
         "chinese": "時祿",
         "category": "star"
       },
       "时禄星": {
-        "value": "時の祿",
+        "value": "時の禄",
         "chinese": "時祿",
         "category": "star"
       },
@@ -3725,22 +3725,22 @@
         "category": "palace"
       },
       "仆役": {
-        "value": "僕役",
+        "value": "奴僕",
         "chinese": "僕役",
         "category": "palace"
       },
       "仆役宫": {
-        "value": "僕役",
+        "value": "奴僕",
         "chinese": "僕役",
         "category": "palace"
       },
       "官禄": {
-        "value": "官祿",
+        "value": "官禄",
         "chinese": "官祿",
         "category": "palace"
       },
       "官禄宫": {
-        "value": "官祿",
+        "value": "官禄",
         "chinese": "官祿",
         "category": "palace"
       },
@@ -3755,12 +3755,12 @@
         "category": "palace"
       },
       "福德": {
-        "value": "福德",
+        "value": "福徳",
         "chinese": "福德",
         "category": "palace"
       },
       "福德宫": {
-        "value": "福德",
+        "value": "福徳",
         "chinese": "福德",
         "category": "palace"
       },
@@ -3975,17 +3975,17 @@
         "category": "brightness"
       },
       "陷": {
-        "value": "陷",
+        "value": "陥",
         "chinese": "陷",
         "category": "brightness"
       },
       "禄": {
-        "value": "祿",
+        "value": "禄",
         "chinese": "祿",
         "category": "mutagen"
       },
       "权": {
-        "value": "權",
+        "value": "権",
         "chinese": "權",
         "category": "mutagen"
       },
@@ -4065,12 +4065,12 @@
         "category": "scope"
       },
       "化禄": {
-        "value": "祿",
+        "value": "禄",
         "chinese": "化祿",
         "category": "mutagen"
       },
       "化权": {
-        "value": "權",
+        "value": "権",
         "chinese": "化權",
         "category": "mutagen"
       },
@@ -4085,12 +4085,12 @@
         "category": "mutagen"
       },
       "化禄星": {
-        "value": "祿",
+        "value": "禄",
         "chinese": "化祿",
         "category": "mutagen"
       },
       "化权星": {
-        "value": "權",
+        "value": "権",
         "chinese": "化權",
         "category": "mutagen"
       },
@@ -4792,12 +4792,12 @@
         "category": "star"
       },
       "沐浴": {
-        "value": "Mục Dục",
+        "value": "Mộc Dục",
         "chinese": "沐浴",
         "category": "star"
       },
       "沐浴星": {
-        "value": "Mục Dục",
+        "value": "Mộc Dục",
         "chinese": "沐浴",
         "category": "star"
       },
@@ -5427,12 +5427,12 @@
         "category": "star"
       },
       "月钺": {
-        "value": "Thiên Nguyệt(M)",
+        "value": "Thiên Việt(M)",
         "chinese": "月鉞",
         "category": "star"
       },
       "月钺星": {
-        "value": "Thiên Nguyệt(M)",
+        "value": "Thiên Việt(M)",
         "chinese": "月鉞",
         "category": "star"
       },
@@ -5527,12 +5527,12 @@
         "category": "star"
       },
       "日钺": {
-        "value": "Thiên Nguyệt(d)",
+        "value": "Thiên Việt(d)",
         "chinese": "日鉞",
         "category": "star"
       },
       "日钺星": {
-        "value": "Thiên Nguyệt(d)",
+        "value": "Thiên Việt(d)",
         "chinese": "日鉞",
         "category": "star"
       },
@@ -5627,12 +5627,12 @@
         "category": "star"
       },
       "时钺": {
-        "value": "Thiên Nguyệt(H)",
+        "value": "Thiên Việt(H)",
         "chinese": "時鉞",
         "category": "star"
       },
       "时钺星": {
-        "value": "Thiên Nguyệt(H)",
+        "value": "Thiên Việt(H)",
         "chinese": "時鉞",
         "category": "star"
       },
@@ -6037,7 +6037,7 @@
         "category": "brightness"
       },
       "陷": {
-        "value": "Hạn",
+        "value": "Hãm",
         "chinese": "陷",
         "category": "brightness"
       },
@@ -9321,7 +9321,7 @@
       "父母位": "父母の位置",
       "田宅位": "田宅の位置",
       "夫妻位": "夫妻の位置",
-      "仆役位": "僕役の位置",
+      "仆役位": "奴僕の位置",
       "工作上的伙伴": "仕事上の仲間",
       "合盘": "相性を見る命盤の比較",
       "桃花": "恋愛の縁",
@@ -9342,10 +9342,10 @@
       "不修边幅": "身なりに無頓着",
       "亲和力": "親しみやすさ",
       "命迁线": "命宮・遷移宮のライン",
-      "兄友线": "兄弟宮・僕役宮のライン",
-      "官夫线": "官祿宮・夫妻宮のライン",
+      "兄友线": "兄弟宮・奴僕宮のライン",
+      "官夫线": "官禄宮・夫妻宮のライン",
       "子田线": "子女宮・田宅宮のライン",
-      "财福线": "財帛宮・福德宮のライン",
+      "财福线": "財帛宮・福徳宮のライン",
       "父疾线": "父母宮・疾厄宮のライン",
       "沟通线": "意思疎通のライン",
       "成就线": "達成のライン",
@@ -9387,9 +9387,9 @@
       "身宫在命宫": "身宮が命宮にある場合",
       "身宫在迁移宫": "身宮が遷移宮にある場合",
       "身宫在夫妻宫": "身宮が夫妻宮にある場合",
-      "身宫在官禄宫": "身宮が官祿宮にある場合",
+      "身宫在官禄宫": "身宮が官禄宮にある場合",
       "身宫在财帛宫": "身宮が財帛宮にある場合",
-      "身宫在福德宫": "身宮が福德宮にある場合",
+      "身宫在福德宫": "身宮が福徳宮にある場合",
       "为何而来": "この世に来た理由",
       "天地不做来因": "天地を来因としない",
       "四马地": "四馬地",
@@ -9465,7 +9465,7 @@
       "巨日同宫官封三代": "巨門と太陽の同宮は三代にわたる官位と栄誉を示す",
       "日月同临官居侯伯": "太陽と太陰の同宮は侯伯の地位を示す",
       "武贪不发少年人": "武曲・貪狼は若すぎる時期に成功しないほうがよい",
-      "福德宫主": "福德宮の宮主",
+      "福德宫主": "福徳宮の宮主",
       "温和": "温和",
       "梁马飘荡格": "梁馬飄蕩格",
       "机月同梁格": "機月同梁格",
@@ -10272,14 +10272,14 @@
       "父母位": "父母の位置",
       "田宅位": "田宅の位置",
       "夫妻位": "夫妻の位置",
-      "仆役位": "僕役の位置",
+      "仆役位": "奴僕の位置",
       "合盘": "相性を見る命盤の比較",
       "桃花": "恋愛の縁",
       "命迁线": "命宮・遷移宮のライン",
-      "兄友线": "兄弟宮・僕役宮のライン",
-      "官夫线": "官祿宮・夫妻宮のライン",
+      "兄友线": "兄弟宮・奴僕宮のライン",
+      "官夫线": "官禄宮・夫妻宮のライン",
       "子田线": "子女宮・田宅宮のライン",
-      "财福线": "財帛宮・福德宮のライン",
+      "财福线": "財帛宮・福徳宮のライン",
       "父疾线": "父母宮・疾厄宮のライン",
       "沟通线": "意思疎通のライン",
       "成就线": "達成のライン",
@@ -10292,9 +10292,9 @@
       "身宫在命宫": "身宮が命宮にある場合",
       "身宫在迁移宫": "身宮が遷移宮にある場合",
       "身宫在夫妻宫": "身宮が夫妻宮にある場合",
-      "身宫在官禄宫": "身宮が官祿宮にある場合",
+      "身宫在官禄宫": "身宮が官禄宮にある場合",
       "身宫在财帛宫": "身宮が財帛宮にある場合",
-      "身宫在福德宫": "身宮が福德宮にある場合",
+      "身宫在福德宫": "身宮が福徳宮にある場合",
       "天地不做来因": "天地を来因としない",
       "四马地": "四馬地",
       "桃花星": "桃花星",
@@ -10330,7 +10330,7 @@
       "日出扶桑格": "日出扶桑格",
       "日落西山格": "日落西山格",
       "巨日同宫格": "巨日同宮格",
-      "福德宫主": "福德宮の宮主",
+      "福德宫主": "福徳宮の宮主",
       "温和": "温和",
       "梁马飘荡格": "梁馬飄蕩格",
       "机月同梁格": "機月同梁格",

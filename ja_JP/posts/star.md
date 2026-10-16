@@ -233,7 +233,7 @@ description: "iztroのstar APIを使って命盤の星曜を調べる方法と�
 
    | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
    | --- | --- | --- | --- | --- |
-   | mutagen | [ `Mutagen`](/ja_JP/type-definition.md#mutagen) \| [`Mutagen[]`](/ja_JP/type-definition.md#mutagen) | `true` | - | 四化（祿・權・科・忌） |
+   | mutagen | [ `Mutagen`](/ja_JP/type-definition.md#mutagen) \| [`Mutagen[]`](/ja_JP/type-definition.md#mutagen) | `true` | - | 四化（禄・権・科・忌） |
 
   - 戻り値
 
@@ -241,7 +241,7 @@ description: "iztroのstar APIを使って命盤の星曜を調べる方法と�
 
   - 使用例
 
-    `紫微` が `權` または `科` の状態であるかどうかを確認します。
+    `紫微` が `権` または `科` の状態であるかどうかを確認します。
 
     ```ts
     import { astro } from "iztro";

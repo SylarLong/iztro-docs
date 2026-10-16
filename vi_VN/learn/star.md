@@ -121,11 +121,11 @@ Khái niệm độ sáng sao（星曜亮度） trong Tử Vi Đẩu Số（紫�
 
 Các trường phái Tử Vi Đẩu Số（紫微斗數） có cách xác định độ sáng hơi khác nhau.
 
-Một số trường phái chia độ sáng thành bốn mức: `Miếu`（廟）, `Vượng`（旺）, `Lợi`（利） và `Hạn`（陷）.
+Một số trường phái chia độ sáng thành bốn mức: `Miếu`（廟）, `Vượng`（旺）, `Lợi`（利） và `Hãm`（陷）.
 
-Các trường phái khác dùng bảy mức độ sáng: `Miếu`（廟）, `Vượng`（旺）, `Đắc`（得）, `Lợi`（利）, `Bình`（平）, `Bất`（不） và `Hạn`（陷）.
+Các trường phái khác dùng bảy mức độ sáng: `Miếu`（廟）, `Vượng`（旺）, `Đắc`（得）, `Lợi`（利）, `Bình`（平）, `Bất`（不） và `Hãm`（陷）.
 
-`Miếu`（廟） là mức sáng nhất, `Hạn`（陷） là mức tối nhất. Trong Tử Vi Đẩu Số（紫微斗數）, độ sáng có thể hiểu là mức độ sao muốn bộc lộ tính chất của mình. Sao càng sáng càng biểu hiện chủ động; sao tối biểu hiện dè dặt hơn. Chẳng hạn, Tham Lang（貪狼） miếu vượng chủ động theo đuổi mong muốn, còn Tham Lang hãm dễ giữ trong lòng hoặc cân nhắc nhiều hơn trước khi theo đuổi. Thái Dương（太陽） miếu vượng tìm quyền hạn tích cực và trực tiếp hơn; Thái Dương hãm thì ôn hòa hơn.
+`Miếu`（廟） là mức sáng nhất, `Hãm`（陷） là mức tối nhất. Trong Tử Vi Đẩu Số（紫微斗數）, độ sáng có thể hiểu là mức độ sao muốn bộc lộ tính chất của mình. Sao càng sáng càng biểu hiện chủ động; sao tối biểu hiện dè dặt hơn. Chẳng hạn, Tham Lang（貪狼） miếu vượng chủ động theo đuổi mong muốn, còn Tham Lang hãm dễ giữ trong lòng hoặc cân nhắc nhiều hơn trước khi theo đuổi. Thái Dương（太陽） miếu vượng tìm quyền hạn tích cực và trực tiếp hơn; Thái Dương hãm thì ôn hòa hơn.
 
 :::tip Mẹo
 Sự khác biệt tính cách trong Tử Vi Đẩu Số（紫微斗數） thể hiện rõ qua so sánh. Vũ Khúc（武曲） vốn cố chấp, nhưng khi cung Thân（身宮） ở cung Mệnh（命宮） thì tính ấy mạnh hơn. Nếu trong cấu hình đó Vũ Khúc còn Hóa Quyền（化權）, sự cố chấp càng tăng.
@@ -136,25 +136,25 @@ Sự khác biệt tính cách trong Tử Vi Đẩu Số（紫微斗數） thể 
 | sao（星曜） | Dần（寅） | Mão（卯） | Thìn（辰） | Tỵ（巳） | Ngọ（午） | Mùi（未） | Thân（申） | Dậu（酉） | Tuất（戌） | Hợi（亥） | Tý（子） | Sửu（丑） |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Tử Vi（紫微） | Vượng（旺） | Vượng（旺） | Đắc（得） | Vượng（旺） | Miếu（廟） | Miếu（廟） | Vượng（旺） | Vượng（旺） | Đắc（得） | Vượng（旺） | Bình（平） | Miếu（廟） |
-| Thiên Cơ（天機） | Đắc（得） | Vượng（旺） | Lợi（利） | Bình（平） | Miếu（廟） | Hạn（陷） | Đắc（得） | Vượng（旺） | Lợi（利） | Bình（平） | Miếu（廟） | Hạn（陷） |
-| Thái Dương（太陽） | Vượng（旺） | Miếu（廟） | Vượng（旺） | Vượng（旺） | Vượng（旺） | Đắc（得） | Đắc（得） | Bình（平） | Bất（不） | Hạn（陷） | Hạn（陷） | Bất（不） |
+| Thiên Cơ（天機） | Đắc（得） | Vượng（旺） | Lợi（利） | Bình（平） | Miếu（廟） | Hãm（陷） | Đắc（得） | Vượng（旺） | Lợi（利） | Bình（平） | Miếu（廟） | Hãm（陷） |
+| Thái Dương（太陽） | Vượng（旺） | Miếu（廟） | Vượng（旺） | Vượng（旺） | Vượng（旺） | Đắc（得） | Đắc（得） | Bình（平） | Bất（不） | Hãm（陷） | Hãm（陷） | Bất（不） |
 | Vũ Khúc（武曲） | Đắc（得） | Lợi（利） | Miếu（廟） | Bình（平） | Vượng（旺） | Miếu（廟） | Đắc（得） | Lợi（利） | Miếu（廟） | Bình（平） | Vượng（旺） | Miếu（廟） |
-| Thiên Đồng（天同） | Lợi（利） | Bình（平） | Bình（平） | Miếu（廟） | Hạn（陷） | Bất（不） | Vượng（旺） | Bình（平） | Bình（平） | Miếu（廟） | Vượng（旺） | Bất（不） |
-| Liêm Trinh（廉貞） | Miếu（廟） | Bình（平） | Lợi（利） | Hạn（陷） | Bình（平） | Lợi（利） | Miếu（廟） | Bình（平） | Lợi（利） | Hạn（陷） | Bình（平） | Lợi（利） |
+| Thiên Đồng（天同） | Lợi（利） | Bình（平） | Bình（平） | Miếu（廟） | Hãm（陷） | Bất（不） | Vượng（旺） | Bình（平） | Bình（平） | Miếu（廟） | Vượng（旺） | Bất（不） |
+| Liêm Trinh（廉貞） | Miếu（廟） | Bình（平） | Lợi（利） | Hãm（陷） | Bình（平） | Lợi（利） | Miếu（廟） | Bình（平） | Lợi（利） | Hãm（陷） | Bình（平） | Lợi（利） |
 | Thiên Phủ（天府） | Miếu（廟） | Đắc（得） | Miếu（廟） | Đắc（得） | Vượng（旺） | Miếu（廟） | Đắc（得） | Vượng（旺） | Miếu（廟） | Đắc（得） | Miếu（廟） | Miếu（廟） |
-| Thái Âm（太陰） | Vượng（旺） | Hạn（陷） | Hạn（陷） | Hạn（陷） | Bất（不） | Bất（不） | Lợi（利） | Vượng（旺） | Vượng（旺） | Miếu（廟） | Miếu（廟） | Miếu（廟） |
-| Tham Lang（貪狼） | Bình（平） | Lợi（利） | Miếu（廟） | Hạn（陷） | Vượng（旺） | Miếu（廟） | Bình（平） | Lợi（利） | Miếu（廟） | Hạn（陷） | Vượng（旺） | Miếu（廟） |
-| Cự Môn（巨門） | Miếu（廟） | Miếu（廟） | Hạn（陷） | Vượng（旺） | Vượng（旺） | Bất（不） | Miếu（廟） | Miếu（廟） | Hạn（陷） | Vượng（旺） | Vượng（旺） | Bất（不） |
-| Thiên Tướng（天相） | Miếu（廟） | Hạn（陷） | Đắc（得） | Đắc（得） | Miếu（廟） | Đắc（得） | Miếu（廟） | Hạn（陷） | Đắc（得） | Đắc（得） | Miếu（廟） | Miếu（廟） |
-| Thiên Lương（天梁） | Miếu（廟） | Miếu（廟） | Miếu（廟） | Hạn（陷） | Miếu（廟） | Vượng（旺） | Hạn（陷） | Đắc（得） | Miếu（廟） | Hạn（陷） | Miếu（廟） | Vượng（旺） |
+| Thái Âm（太陰） | Vượng（旺） | Hãm（陷） | Hãm（陷） | Hãm（陷） | Bất（不） | Bất（不） | Lợi（利） | Vượng（旺） | Vượng（旺） | Miếu（廟） | Miếu（廟） | Miếu（廟） |
+| Tham Lang（貪狼） | Bình（平） | Lợi（利） | Miếu（廟） | Hãm（陷） | Vượng（旺） | Miếu（廟） | Bình（平） | Lợi（利） | Miếu（廟） | Hãm（陷） | Vượng（旺） | Miếu（廟） |
+| Cự Môn（巨門） | Miếu（廟） | Miếu（廟） | Hãm（陷） | Vượng（旺） | Vượng（旺） | Bất（不） | Miếu（廟） | Miếu（廟） | Hãm（陷） | Vượng（旺） | Vượng（旺） | Bất（不） |
+| Thiên Tướng（天相） | Miếu（廟） | Hãm（陷） | Đắc（得） | Đắc（得） | Miếu（廟） | Đắc（得） | Miếu（廟） | Hãm（陷） | Đắc（得） | Đắc（得） | Miếu（廟） | Miếu（廟） |
+| Thiên Lương（天梁） | Miếu（廟） | Miếu（廟） | Miếu（廟） | Hãm（陷） | Miếu（廟） | Vượng（旺） | Hãm（陷） | Đắc（得） | Miếu（廟） | Hãm（陷） | Miếu（廟） | Vượng（旺） |
 | Thất Sát（七殺） | Miếu（廟） | Vượng（旺） | Miếu（廟） | Bình（平） | Vượng（旺） | Miếu（廟） | Miếu（廟） | Vượng（旺） | Miếu（廟） | Bình（平） | Vượng（旺） | Miếu（廟） |
-| Phá Quân（破軍） | Đắc（得） | Hạn（陷） | Vượng（旺） | Bình（平） | Miếu（廟） | Vượng（旺） | Đắc（得） | Hạn（陷） | Vượng（旺） | Bình（平） | Miếu（廟） | Vượng（旺） |
-| Văn Xương（文昌） | Hạn（陷） | Lợi（利） | Đắc（得） | Miếu（廟） | Hạn（陷） | Lợi（利） | Đắc（得） | Miếu（廟） | Hạn（陷） | Lợi（利） | Đắc（得） | Miếu（廟） |
-| Văn Khúc（文曲） | Bình（平） | Vượng（旺） | Đắc（得） | Miếu（廟） | Hạn（陷） | Vượng（旺） | Đắc（得） | Miếu（廟） | Hạn（陷） | Vượng（旺） | Đắc（得） | Miếu（廟） |
-| Hỏa Tinh（火星） | Miếu（廟） | Lợi（利） | Hạn（陷） | Đắc（得） | Miếu（廟） | Lợi（利） | Hạn（陷） | Đắc（得） | Miếu（廟） | Lợi（利） | Hạn（陷） | Đắc（得） |
-| Linh Tinh（鈴星） | Miếu（廟） | Lợi（利） | Hạn（陷） | Đắc（得） | Miếu（廟） | Lợi（利） | Hạn（陷） | Đắc（得） | Miếu（廟） | Lợi（利） | Hạn（陷） | Đắc（得） |
-| Kình Dương（擎羊） | - | Hạn（陷） | Miếu（廟） | - | Hạn（陷） | Miếu（廟） | - | Hạn（陷） | Miếu（廟） | - | Hạn（陷） | Miếu（廟） |
-| Đà La（陀羅） | Hạn（陷） | - | Miếu（廟） | Hạn（陷） | - | Miếu（廟） | Hạn（陷） | - | Miếu（廟） | Hạn（陷） | - | Miếu（廟） |
+| Phá Quân（破軍） | Đắc（得） | Hãm（陷） | Vượng（旺） | Bình（平） | Miếu（廟） | Vượng（旺） | Đắc（得） | Hãm（陷） | Vượng（旺） | Bình（平） | Miếu（廟） | Vượng（旺） |
+| Văn Xương（文昌） | Hãm（陷） | Lợi（利） | Đắc（得） | Miếu（廟） | Hãm（陷） | Lợi（利） | Đắc（得） | Miếu（廟） | Hãm（陷） | Lợi（利） | Đắc（得） | Miếu（廟） |
+| Văn Khúc（文曲） | Bình（平） | Vượng（旺） | Đắc（得） | Miếu（廟） | Hãm（陷） | Vượng（旺） | Đắc（得） | Miếu（廟） | Hãm（陷） | Vượng（旺） | Đắc（得） | Miếu（廟） |
+| Hỏa Tinh（火星） | Miếu（廟） | Lợi（利） | Hãm（陷） | Đắc（得） | Miếu（廟） | Lợi（利） | Hãm（陷） | Đắc（得） | Miếu（廟） | Lợi（利） | Hãm（陷） | Đắc（得） |
+| Linh Tinh（鈴星） | Miếu（廟） | Lợi（利） | Hãm（陷） | Đắc（得） | Miếu（廟） | Lợi（利） | Hãm（陷） | Đắc（得） | Miếu（廟） | Lợi（利） | Hãm（陷） | Đắc（得） |
+| Kình Dương（擎羊） | - | Hãm（陷） | Miếu（廟） | - | Hãm（陷） | Miếu（廟） | - | Hãm（陷） | Miếu（廟） | - | Hãm（陷） | Miếu（廟） |
+| Đà La（陀羅） | Hãm（陷） | - | Miếu（廟） | Hãm（陷） | - | Miếu（廟） | Hãm（陷） | - | Miếu（廟） | Hãm（陷） | - | Miếu（廟） |
 
 ## Lưu diệu（流曜）   {#流曜}
 

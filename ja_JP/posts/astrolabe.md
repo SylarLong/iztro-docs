@@ -226,7 +226,7 @@ var { astro } = require("iztro");
   ```
 
   :::tip ヒント
-  `astroType`には`heaven`、`earth`、`human`を指定できます。既定の`heaven`は天盤です。`earth`は身宮を命宮とし、`human`は福德宮を命宮とします。[`AstroType`](../type-definition.md#astrotype)をご覧ください。
+  `astroType`には`heaven`、`earth`、`human`を指定できます。既定の`heaven`は天盤です。`earth`は身宮を命宮とし、`human`は福徳宮を命宮とします。[`AstroType`](../type-definition.md#astrotype)をご覧ください。
   :::
 
 ---

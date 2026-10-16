@@ -39,11 +39,11 @@ Thông tin trong hình trên là:
 
 - `chính tinh`（主星）
 
-  `Liêm Trinh`（廉貞） và `Tham Lang`（貪狼） ở góc trên bên trái của hình ảnh là các [chính tinh（主星）](./major-star.md), còn nhãn `Hạn`（陷） bên cạnh biểu thị độ sáng của từng sao.
+  `Liêm Trinh`（廉貞） và `Tham Lang`（貪狼） ở góc trên bên trái của hình ảnh là các [chính tinh（主星）](./major-star.md), còn nhãn `Hãm`（陷） bên cạnh biểu thị độ sáng của từng sao.
 
 - `phụ tinh`（輔星）
 
-  `Địa Không`（地空）, `Địa Kiếp`（地劫） và `Đà La`（陀羅） ở phía trên, giữa hình là [phụ tinh（輔星）](./minor-star.md). Tương tự chính tinh, `Hạn`（陷） biểu thị độ sáng của sao tương ứng. Không phải sao nào cũng có nhãn `độ sáng`. Xem [Các sao trong Tử Vi Đẩu Số](./star.md) để tìm hiểu thêm về độ sáng.
+  `Địa Không`（地空）, `Địa Kiếp`（地劫） và `Đà La`（陀羅） ở phía trên, giữa hình là [phụ tinh（輔星）](./minor-star.md). Tương tự chính tinh, `Hãm`（陷） biểu thị độ sáng của sao tương ứng. Không phải sao nào cũng có nhãn `độ sáng`. Xem [Các sao trong Tử Vi Đẩu Số](./star.md) để tìm hiểu thêm về độ sáng.
 
 - `tạp diệu`（雜曜）
 

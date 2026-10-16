@@ -21,7 +21,7 @@ So với tạp diệu（雜曜）, thần sát（神煞） chủ yếu biểu th
 
 Tăng tò mò và tư duy đổi mới.
 
-### Mục Dục（沐浴）   {#沐浴}
+### Mộc Dục（沐浴）   {#沐浴}
 
 Thích môi trường sạch sẽ, dễ bồn chồn hoặc nóng ruột.
 

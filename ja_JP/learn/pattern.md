@@ -45,7 +45,7 @@ import Donate from '/components/donate.vue'
       <tr>
           <td><div class="pattern"><div>太陽</div><div><code>辰</code> <code>子女</code></div></div></td>
           <td class="center-palace" rowspan="2" colspan="2">君臣慶会</td>
-          <td><div class="pattern"><div>天府</div><div><code>酉</code> <code>福德</code></div></div></td>
+          <td><div class="pattern"><div>天府</div><div><code>酉</code> <code>福徳</code></div></div></td>
       </tr>
       <tr>
           <td><div class="pattern"><div>武曲 七殺</div><div><code>卯</code> <code>財帛</code></div></div></td>
@@ -54,8 +54,8 @@ import Donate from '/components/donate.vue'
       <tr>
           <td><div class="pattern"><div>天同 天梁</div><div><code>寅</code> <code>疾厄</code></div></div></td>
           <td><div class="pattern"><div>天相</div><div><code>丑</code> <code>遷移</code></div></div></td>
-          <td><div class="pattern"><div>巨門</div><div><code>子</code> <code>僕役</code></div></div></td>
-          <td><div class="pattern"><div>廉貞 貪狼</div><div><code>亥</code> <code>官祿</code></div></div></td>
+          <td><div class="pattern"><div>巨門</div><div><code>子</code> <code>奴僕</code></div></div></td>
+          <td><div class="pattern"><div>廉貞 貪狼</div><div><code>亥</code> <code>官禄</code></div></div></td>
       </tr>
     </table>
 
@@ -74,13 +74,13 @@ import Donate from '/components/donate.vue'
           <td><div class="pattern"><div>天機 巨門</div><div><code>酉</code> <code>兄弟</code></div></div></td>
       </tr>
       <tr>
-          <td><div class="pattern"><div></div><div><code>卯</code> <code>僕役</code></div></div></td>
+          <td><div class="pattern"><div></div><div><code>卯</code> <code>奴僕</code></div></div></td>
           <td><div class="pattern"><div>紫微 天相<br />文昌</div><div><code>戌</code> <code>命宮</code></div></div></td>
       </tr>
       <tr>
-          <td><div class="pattern"><div>廉貞</div><div><code>寅</code> <code>官祿</code></div></div></td>
+          <td><div class="pattern"><div>廉貞</div><div><code>寅</code> <code>官禄</code></div></div></td>
           <td><div class="pattern"><div></div><div><code>丑</code> <code>田宅</code></div></div></td>
-          <td><div class="pattern"><div>七殺</div><div><code>子</code> <code>福德</code></div></div></td>
+          <td><div class="pattern"><div>七殺</div><div><code>子</code> <code>福徳</code></div></div></td>
           <td><div class="pattern"><div>天梁</div><div><code>亥</code> <code>父母</code></div></div></td>
       </tr>
     </table>
@@ -95,17 +95,17 @@ import Donate from '/components/donate.vue'
           <td><div class="pattern"><div></div><div><code>申</code> <code>子女</code></div></div></td>
       </tr>
       <tr>
-          <td><div class="pattern"><div>天機 天梁</div><div><code>辰</code> <code>僕役</code></div></div></td>
+          <td><div class="pattern"><div>天機 天梁</div><div><code>辰</code> <code>奴僕</code></div></div></td>
           <td class="center-palace" rowspan="2" colspan="2">君臣慶会</td>
           <td><div class="pattern"><div>廉貞 破軍</div><div><code>酉</code> <code>夫妻</code></div></div></td>
       </tr>
       <tr>
-          <td><div class="pattern"><div>天相</div><div><code>卯</code> <code>官祿</code></div></div></td>
+          <td><div class="pattern"><div>天相</div><div><code>卯</code> <code>官禄</code></div></div></td>
           <td><div class="pattern"><div></div><div><code>戌</code> <code>兄弟</code></div></div></td>
       </tr>
       <tr>
           <td><div class="pattern"><div>太陽 巨門</div><div><code>寅</code> <code>田宅</code></div></div></td>
-          <td><div class="pattern"><div>武曲 貪狼</div><div><code>丑</code> <code>福德</code></div></div></td>
+          <td><div class="pattern"><div>武曲 貪狼</div><div><code>丑</code> <code>福徳</code></div></div></td>
           <td><div class="pattern"><div>天同 太陰</div><div><code>子</code> <code>父母</code></div></div></td>
           <td><div class="pattern"><div>天府</div><div><code>亥</code> <code>命宮</code></div></div></td>
       </tr>
@@ -132,12 +132,12 @@ import Donate from '/components/donate.vue'
 <table class="astrolabe">
   <tr>
       <td><div class="pattern"><div>巨門</div><div><code>巳</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>廉貞 天相</div><div><code>午</code> <code>官祿</code></div></div></td>
-      <td><div class="pattern"><div>天梁</div><div><code>未</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 天相</div><div><code>午</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>未</code> <code>奴僕</code></div></div></td>
       <td><div class="pattern"><div>七殺</div><div><code>申</code> <code>遷移</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>貪狼</div><div><code>辰</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>辰</code> <code>福徳</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">紫府同宮</td>
       <td><div class="pattern"><div>天同</div><div><code>酉</code> <code>疾厄</code></div></div></td>
   </tr>
@@ -179,7 +179,7 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div>天同</div><div><code>辰</code> <code>子女</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">金輿扶駕</td>
-      <td><div class="pattern"><div>紫微 貪狼</div><div><code>酉</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>紫微 貪狼</div><div><code>酉</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div></div><div><code>卯</code> <code>財帛</code></div></div></td>
@@ -188,8 +188,8 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div></div><div><code>寅</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>廉貞 七殺</div><div><code>丑</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>僕役</code></div></div></td>
-      <td><div class="pattern"><div>天相</div><div><code>亥</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>奴僕</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>亥</code> <code>官禄</code></div></div></td>
   </tr>
 </table>
 
@@ -208,12 +208,12 @@ import Donate from '/components/donate.vue'
 <table class="astrolabe">
   <tr>
       <td><div class="pattern"><div>天相</div><div><code>巳</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>天梁</div><div><code>午</code> <code>官祿</code></div></div></td>
-      <td><div class="pattern"><div>廉貞 七殺</div><div><code>未</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>午</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 七殺</div><div><code>未</code> <code>奴僕</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>申</code> <code>遷移</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>巨門</div><div><code>辰</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>巨門</div><div><code>辰</code> <code>福徳</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">紫府夾命</td>
       <td><div class="pattern"><div></div><div><code>酉</code> <code>疾厄</code></div></div></td>
   </tr>
@@ -246,7 +246,7 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>天機</div><div><code>巳</code> <code>兄弟</code></div></div></td>
       <td><div class="pattern"><div>紫微</div><div><code>午</code> <code>命宮</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>未</code> <code>父母</code></div></div></td>
-      <td><div class="pattern"><div>破軍</div><div><code>申</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>申</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>七殺</div><div><code>辰</code> <code>夫妻</code></div></div></td>
@@ -255,13 +255,13 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>太陽 天梁</div><div><code>卯</code> <code>子女</code></div></div></td>
-      <td><div class="pattern"><div>廉貞 天府</div><div><code>戌</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 天府</div><div><code>戌</code> <code>官禄</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>財帛</code></div></div></td>
       <td><div class="pattern"><div>天同 巨門</div><div><code>丑</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>貪狼</div><div><code>子</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>奴僕</code></div></div></td>
   </tr>
 </table>
 
@@ -280,10 +280,10 @@ import Donate from '/components/donate.vue'
 
 <table class="astrolabe">
   <tr>
-      <td><div class="pattern"><div>天相</div><div><code>巳</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>巳</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div>天梁</div><div><code>午</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>廉貞 七殺</div><div><code>未</code> <code>官祿</code></div></div></td>
-      <td><div class="pattern"><div></div><div><code>申</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 七殺</div><div><code>未</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>申</code> <code>奴僕</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>巨門</div><div><code>辰</code> <code>父母</code></div></div></td>
@@ -334,7 +334,7 @@ import Donate from '/components/donate.vue'
 
 ## 善蔭朝綱 {#善荫朝纲}
 
-善星は天機、蔭星は天梁を指します。この格局は、両星が同じ宮にある配置です。紫微斗数の多くの格局は吉星（左輔, 右弼, 文昌, 文曲, 天魁, 天鉞, 祿, 權, 科）を必要とし、煞星（火星, 鈴星, 擎羊, 陀羅, 地空, 地劫, 忌）を好みません。
+善星は天機、蔭星は天梁を指します。この格局は、両星が同じ宮にある配置です。紫微斗数の多くの格局は吉星（左輔, 右弼, 文昌, 文曲, 天魁, 天鉞, 禄, 権, 科）を必要とし、煞星（火星, 鈴星, 擎羊, 陀羅, 地空, 地劫, 忌）を好みません。
 
 『紫微斗数全書』には、善蔭朝綱格について次のようにあります。
 
@@ -424,8 +424,8 @@ import Donate from '/components/donate.vue'
 
 <table class="astrolabe">
   <tr>
-      <td><div class="pattern"><div>太陽</div><div><code>巳</code> <code>官祿</code></div></div></td>
-      <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>太陽</div><div><code>巳</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>奴僕</code></div></div></td>
       <td><div class="pattern"><div>天機</div><div><code>未</code> <code>遷移</code></div></div></td>
       <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>疾厄</code></div></div></td>
   </tr>
@@ -435,7 +435,7 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>太陰</div><div><code>酉</code> <code>財帛</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div>貪狼</div><div><code>戌</code> <code>子女</code></div></div></td>
   </tr>
   <tr>
@@ -452,17 +452,17 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div>太陽</div><div><code>巳</code> <code>命宮</code></div></div></td>
       <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>父母</code></div></div></td>
-      <td><div class="pattern"><div>天機</div><div><code>未</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天機</div><div><code>未</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>田宅</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>兄弟</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">丹墀桂墀</td>
-      <td><div class="pattern"><div>太陰</div><div><code>酉</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>太陰</div><div><code>酉</code> <code>官禄</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>夫妻</code></div></div></td>
-      <td><div class="pattern"><div>貪狼</div><div><code>戌</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>戌</code> <code>奴僕</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>七殺</div><div><code>寅</code> <code>子女</code></div></div></td>
@@ -474,13 +474,13 @@ import Donate from '/components/donate.vue'
 
 ## 日月反背 {#日月反背}
 
-太陽と太陰が両方とも陷なら日月反背格で、日月並明格の反対です。『紫微斗数全書』などには`日月最嫌反背`とありますが、理由は説明されていません。伝統的な考えでは苦労や奔走を悪く見て、生まれながら家産を継ぎ、何もかも人にしてもらう暮らしが理想とされました。
+太陽と太陰が両方とも陥なら日月反背格で、日月並明格の反対です。『紫微斗数全書』などには`日月最嫌反背`とありますが、理由は説明されていません。伝統的な考えでは苦労や奔走を悪く見て、生まれながら家産を継ぎ、何もかも人にしてもらう暮らしが理想とされました。
 
 この格局を極端に悪く評し、人格を傷つける言葉まで使う人もいますが、それは誤りです。日月反背格に苦労や奔走の意味があっても、努力が実れば良いことではないでしょうか。日月並明格の規則的な暮らしとは反対に、夜勤や夜明け前から日没後まで働く形になりがちです。
 
 日月反背格は日月並明格よりも控えめで内に秘めた性格です。自分を売り込むのが苦手で、上司の評価や昇進を得にくい場合があります。ただし心配りは細かく、自分を守る意識も強いものです。有名人にも多く、努力で最高の地位まで上った人もいます。
 
-日月並明格と同様に、命宮の三方四正を見ます。そこで太陽と太陰がともに陷なら日月反背格になります。
+日月並明格と同様に、命宮の三方四正を見ます。そこで太陽と太陰がともに陥なら日月反背格になります。
 
 <table class="astrolabe">
   <tr>
@@ -492,7 +492,7 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div>貪狼</div><div><code>辰</code> <code>子女</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">日月反背</td>
-      <td><div class="pattern"><div>天同</div><div><code>酉</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天同</div><div><code>酉</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>太陰</div><div><code>卯</code> <code>財帛</code></div></div></td>
@@ -501,8 +501,8 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div>紫微 天府</div><div><code>寅</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>天機</div><div><code>丑</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>破軍</div><div><code>子</code> <code>僕役</code></div></div></td>
-      <td><div class="pattern"><div>太陽</div><div><code>亥</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>子</code> <code>奴僕</code></div></div></td>
+      <td><div class="pattern"><div>太陽</div><div><code>亥</code> <code>官禄</code></div></div></td>
   </tr>
 </table>
 
@@ -531,20 +531,20 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div></div><div><code>酉</code> <code>兄弟</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>天機 巨門</div><div><code>卯</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>天機 巨門</div><div><code>卯</code> <code>奴僕</code></div></div></td>
       <td><div class="pattern"><div>破軍</div><div><code>戌</code> <code>命宮</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>貪狼</div><div><code>寅</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>寅</code> <code>官禄</code></div></div></td>
       <td><div class="pattern"><div>太陽 太陰</div><div><code>丑</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div>天同</div><div><code>亥</code> <code>父母</code></div></div></td>
   </tr>
 </table>
 
 ## 金燦光輝 {#金灿光辉}
 
-`日麗中天`とも呼ばれ、太陽が午宮にあり、吉星と三吉化（祿・權・科）の支えを受ける格局です。真昼の太陽が最も輝くように、力強い指導者の風格を示します。紫微斗数でよく知られる富貴の格局で、『紫微斗数全書』には次のようにあります。
+`日麗中天`とも呼ばれ、太陽が午宮にあり、吉星と三吉化（禄・権・科）の支えを受ける格局です。真昼の太陽が最も輝くように、力強い指導者の風格を示します。紫微斗数でよく知られる富貴の格局で、『紫微斗数全書』には次のようにあります。
 
 >太陽居午，謂之日麗中天，有專權之貴，敵國之富。  
 >金燦光輝 太陽單守，命在午宮是也。  
@@ -557,7 +557,7 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>武曲 破軍</div><div><code>巳</code> <code>兄弟</code></div></div></td>
       <td><div class="pattern"><div>太陽</div><div><code>午</code> <code>命宮</code></div></div></td>
       <td><div class="pattern"><div>天府</div><div><code>未</code> <code>父母</code></div></div></td>
-      <td><div class="pattern"><div>天機 太陰</div><div><code>申</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天機 太陰</div><div><code>申</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>天同</div><div><code>辰</code> <code>夫妻</code></div></div></td>
@@ -566,13 +566,13 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div></div><div><code>卯</code> <code>子女</code></div></div></td>
-      <td><div class="pattern"><div>巨門</div><div><code>戌</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>巨門</div><div><code>戌</code> <code>官禄</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div></div><div><code>寅</code> <code>財帛</code></div></div></td>
       <td><div class="pattern"><div>廉貞 七殺</div><div><code>丑</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>天相</div><div><code>亥</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>亥</code> <code>奴僕</code></div></div></td>
   </tr>
 </table>
 
@@ -600,17 +600,17 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>七殺</div><div><code>申</code> <code>子女</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>貪狼</div><div><code>辰</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>辰</code> <code>奴僕</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">日月蔵輝</td>
       <td><div class="pattern"><div>天同</div><div><code>酉</code> <code>夫妻</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>太陰</div><div><code>卯</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>太陰</div><div><code>卯</code> <code>官禄</code></div></div></td>
       <td><div class="pattern"><div>武曲</div><div><code>戌</code> <code>兄弟</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>紫微 天府</div><div><code>寅</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>天機</div><div><code>丑</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天機</div><div><code>丑</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div>破軍</div><div><code>子</code> <code>父母</code></div></div></td>
       <td><div class="pattern"><div>太陽</div><div><code>亥</code> <code>命宮</code></div></div></td>
   </tr>
@@ -641,8 +641,8 @@ import Donate from '/components/donate.vue'
 
 <table class="astrolabe">
   <tr>
-      <td><div class="pattern"><div>紫微 七殺</div><div><code>巳</code> <code>官祿</code></div></div></td>
-      <td><div class="pattern"><div></div><div><code>午</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>紫微 七殺</div><div><code>巳</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>午</code> <code>奴僕</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>未</code> <code>遷移</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>申</code> <code>疾厄</code></div></div></td>
   </tr>
@@ -652,7 +652,7 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>廉貞 破軍</div><div><code>酉</code> <code>財帛</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>天相</div><div><code>卯</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>卯</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>戌</code> <code>子女</code></div></div></td>
   </tr>
   <tr>
@@ -673,7 +673,7 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div>天同</div><div><code>辰</code> <code>子女</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">日月夾命</td>
-      <td><div class="pattern"><div>紫微 貪狼</div><div><code>酉</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>紫微 貪狼</div><div><code>酉</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div></div><div><code>卯</code> <code>財帛</code></div></div></td>
@@ -682,8 +682,8 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div></div><div><code>寅</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>廉貞 七殺</div><div><code>丑</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>僕役</code></div></div></td>
-      <td><div class="pattern"><div>天相</div><div><code>亥</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>天梁</div><div><code>子</code> <code>奴僕</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>亥</code> <code>官禄</code></div></div></td>
   </tr>
 </table>
 
@@ -723,17 +723,17 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>破軍</div><div><code>申</code> <code>子女</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>七殺</div><div><code>辰</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>七殺</div><div><code>辰</code> <code>奴僕</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">月朗天門</td>
       <td><div class="pattern"><div></div><div><code>酉</code> <code>夫妻</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>太陽 天梁</div><div><code>卯</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>太陽 天梁</div><div><code>卯</code> <code>官禄</code></div></div></td>
       <td><div class="pattern"><div>廉貞 天府</div><div><code>戌</code> <code>兄弟</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>天同 巨門</div><div><code>丑</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天同 巨門</div><div><code>丑</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div>貪狼</div><div><code>子</code> <code>父母</code></div></div></td>
       <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>命宮</code></div></div></td>
   </tr>
@@ -752,13 +752,13 @@ import Donate from '/components/donate.vue'
 
 <table class="astrolabe">
   <tr>
-      <td><div class="pattern"><div>紫微 七殺</div><div><code>巳</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>紫微 七殺</div><div><code>巳</code> <code>奴僕</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>午</code> <code>遷移</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>未</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>申</code> <code>財帛</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>天機 天梁</div><div><code>辰</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>天機 天梁</div><div><code>辰</code> <code>官禄</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">水澄桂萼</td>
       <td><div class="pattern"><div>廉貞 破軍</div><div><code>酉</code> <code>子女</code></div></div></td>
   </tr>
@@ -767,7 +767,7 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div></div><div><code>戌</code> <code>夫妻</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>太陽 巨門</div><div><code>寅</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>太陽 巨門</div><div><code>寅</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div>武曲 貪狼</div><div><code>丑</code> <code>父母</code></div></div></td>
       <td><div class="pattern"><div>天同 太陰</div><div><code>子</code> <code>命宮</code></div></div></td>
       <td><div class="pattern"><div>天府</div><div><code>亥</code> <code>兄弟</code></div></div></td>
@@ -791,17 +791,17 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div></div><div><code>戌</code> <code>父母</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>太陽 巨門</div><div><code>寅</code> <code>僕役</code></div></div></td>
-      <td><div class="pattern"><div>武曲 貪狼</div><div><code>丑</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>太陽 巨門</div><div><code>寅</code> <code>奴僕</code></div></div></td>
+      <td><div class="pattern"><div>武曲 貪狼</div><div><code>丑</code> <code>官禄</code></div></div></td>
       <td><div class="pattern"><div>天同 太陰</div><div><code>子</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>天府</div><div><code>亥</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>亥</code> <code>福徳</code></div></div></td>
   </tr>
 </table>
 
 ## 明珠出海 {#明珠出海}
 
 
-命宮が`未の宮`の`空宮`で、遷移宮に[天同](major-star.md#天同星)と[巨門](major-star.md#巨门星)がある格局です。この配置だけが、財帛宮の[太陽](major-star.md#太阳星)と官祿宮の[太陰](major-star.md#太阴星)をともに廟にするため、該当します。
+命宮が`未の宮`の`空宮`で、遷移宮に[天同](major-star.md#天同星)と[巨門](major-star.md#巨门星)がある格局です。この配置だけが、財帛宮の[太陽](major-star.md#太阳星)と官禄宮の[太陰](major-star.md#太阴星)をともに廟にするため、該当します。
 
 まず命宮が空宮です。前に述べたように、迷いや自分の軸の弱さを示す場合があります。親も強く出る傾向があり、幼少期の負担は大きくなります。性格は[天同・巨門](major-star.md#天同巨门)を参照してください。
 
@@ -821,7 +821,7 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div>七殺</div><div><code>辰</code> <code>子女</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">明珠出海</td>
-      <td><div class="pattern"><div></div><div><code>酉</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>酉</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>太陽 天梁</div><div><code>卯</code> <code>財帛</code></div></div></td>
@@ -830,8 +830,8 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>天同 巨門</div><div><code>丑</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>貪狼</div><div><code>子</code> <code>僕役</code></div></div></td>
-      <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>子</code> <code>奴僕</code></div></div></td>
+      <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>官禄</code></div></div></td>
   </tr>
 </table>
 
@@ -872,7 +872,7 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div></div><div><code>辰</code> <code>子女</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">武貪同行</td>
-      <td><div class="pattern"><div>天相</div><div><code>酉</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天相</div><div><code>酉</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>廉貞 破軍</div><div><code>卯</code> <code>財帛</code></div></div></td>
@@ -881,8 +881,8 @@ import Donate from '/components/donate.vue'
   <tr>
       <td><div class="pattern"><div></div><div><code>寅</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>丑</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div></div><div><code>子</code> <code>僕役</code></div></div></td>
-      <td><div class="pattern"><div>紫微 七殺</div><div><code>亥</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>子</code> <code>奴僕</code></div></div></td>
+      <td><div class="pattern"><div>紫微 七殺</div><div><code>亥</code> <code>官禄</code></div></div></td>
   </tr>
 </table>
 
@@ -945,19 +945,19 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>天機 巨門</div><div><code>卯</code> <code>疾厄</code></div></div></td>
-      <td><div class="pattern"><div>破軍</div><div><code>戌</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>戌</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>貪狼</div><div><code>寅</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>太陽 太陰</div><div><code>丑</code> <code>僕役</code></div></div></td>
-      <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>太陽 太陰</div><div><code>丑</code> <code>奴僕</code></div></div></td>
+      <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>官禄</code></div></div></td>
       <td><div class="pattern"><div>天同</div><div><code>亥</code> <code>田宅</code></div></div></td>
   </tr>
 </table>
 
 ## 府相朝垣 {#府相朝垣}
 
-[天府](major-star.md#天府星)が官祿宮、[天相](major-star.md)が財帛宮にあって命宮を会照する格局です。条件が広いため、複数の配置があります。ゲームの`補助`能力のように、伴う格局へ追加の効果を与えます。
+[天府](major-star.md#天府星)が官禄宮、[天相](major-star.md)が財帛宮にあって命宮を会照する格局です。条件が広いため、複数の配置があります。ゲームの`補助`能力のように、伴う格局へ追加の効果を与えます。
 
 >府相朝垣命必榮  
 >府相朝垣 命無主星，天府居官祿、天相居財帛  
@@ -968,14 +968,14 @@ import Donate from '/components/donate.vue'
 <table class="astrolabe">
   <tr>
       <td><div class="pattern"><div>太陽</div><div><code>巳</code> <code>父母</code></div></div></td>
-      <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div>天機</div><div><code>未</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>官禄</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>命宮</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">府相朝垣</td>
-      <td><div class="pattern"><div>太陰</div><div><code>酉</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>太陰</div><div><code>酉</code> <code>奴僕</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>兄弟</code></div></div></td>
@@ -1005,12 +1005,12 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>天機 巨門</div><div><code>卯</code> <code>疾厄</code></div></div></td>
-      <td><div class="pattern"><div>破軍</div><div><code>戌</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>戌</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>貪狼</div><div><code>寅</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>太陽 太陰</div><div><code>丑</code> <code>僕役</code></div></div></td>
-      <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>太陽 太陰</div><div><code>丑</code> <code>奴僕</code></div></div></td>
+      <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>官禄</code></div></div></td>
       <td><div class="pattern"><div>天同</div><div><code>亥</code> <code>田宅</code></div></div></td>
   </tr>
 </table>
@@ -1034,10 +1034,10 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>天同</div><div><code>戌</code> <code>父母</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>天機 太陰</div><div><code>寅</code> <code>僕役</code></div></div></td>
-      <td><div class="pattern"><div>天府</div><div><code>丑</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>天機 太陰</div><div><code>寅</code> <code>奴僕</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>丑</code> <code>官禄</code></div></div></td>
       <td><div class="pattern"><div>太陽</div><div><code>子</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>武曲 破軍</div><div><code>亥</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>武曲 破軍</div><div><code>亥</code> <code>福徳</code></div></div></td>
   </tr>
 </table>
 
@@ -1048,7 +1048,7 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>天機</div><div><code>巳</code> <code>兄弟</code></div></div></td>
       <td><div class="pattern"><div>紫微</div><div><code>午</code> <code>命宮</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>未</code> <code>父母</code></div></div></td>
-      <td><div class="pattern"><div>破軍</div><div><code>申</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>申</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>七殺</div><div><code>辰</code> <code>夫妻</code></div></div></td>
@@ -1057,13 +1057,13 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>太陽 天梁</div><div><code>卯</code> <code>子女</code></div></div></td>
-      <td><div class="pattern"><div>廉貞 天府</div><div><code>戌</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 天府</div><div><code>戌</code> <code>官禄</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>武曲 天相</div><div><code>寅</code> <code>財帛</code></div></div></td>
       <td><div class="pattern"><div>天同 巨門</div><div><code>丑</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>貪狼</div><div><code>子</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>太陰</div><div><code>亥</code> <code>奴僕</code></div></div></td>
   </tr>
 </table>
 
@@ -1099,13 +1099,13 @@ import Donate from '/components/donate.vue'
 
 <table class="astrolabe">
   <tr>
-      <td><div class="pattern"><div></div><div><code>巳</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div></div><div><code>巳</code> <code>奴僕</code></div></div></td>
       <td><div class="pattern"><div>天機</div><div><code>午</code> <code>遷移</code></div></div></td>
       <td><div class="pattern"><div>紫微 破軍</div><div><code>未</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>申</code> <code>財帛</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>太陽</div><div><code>辰</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>太陽</div><div><code>辰</code> <code>官禄</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">石中隠玉</td>
       <td><div class="pattern"><div>天府</div><div><code>酉</code> <code>子女</code></div></div></td>
   </tr>
@@ -1114,7 +1114,7 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>太陰</div><div><code>戌</code> <code>夫妻</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>天同 天梁</div><div><code>寅</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天同 天梁</div><div><code>寅</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div>天相</div><div><code>丑</code> <code>父母</code></div></div></td>
       <td><div class="pattern"><div>巨門</div><div><code>子</code> <code>命宮</code></div></div></td>
       <td><div class="pattern"><div>廉貞 貪狼</div><div><code>亥</code> <code>兄弟</code></div></div></td>
@@ -1137,12 +1137,12 @@ import Donate from '/components/donate.vue'
 
 ## 陽梁昌禄 {#阳梁昌禄}
 
-この格局は、[太陽](./major-star.md#太阳星)、[天梁](./major-star.md#天梁星)、[文昌](./minor-star.md#文昌星)、[祿存](./minor-star.md#禄存)が三方四正にそろう形です。伝統的には、科挙で首席に合格する「状元」の格局とされています。
+この格局は、[太陽](./major-star.md#太阳星)、[天梁](./major-star.md#天梁星)、[文昌](./minor-star.md#文昌星)、[禄存](./minor-star.md#禄存)が三方四正にそろう形です。伝統的には、科挙で首席に合格する「状元」の格局とされています。
 
 >天梁太陽昌祿會臚傳第一名  
 >天梁星宿壽星逢，機日文昌左右同，子午寅申為入廟，官資清顯至三公。  
 
-性格は、基本的に[太陽・天梁](./major-star.md#太阳天梁)の特徴を受け継ぎます。陽梁昌祿格の人は少なくありませんが、全員が優等生ではなく、勉強が苦手な人もいます。実際の強みは、興味を持った分野を深く追究する姿勢です。その関心が学問に向けば、才能と努力が合わさり、優秀な成績を収める可能性が高まるでしょう。
+性格は、基本的に[太陽・天梁](./major-star.md#太阳天梁)の特徴を受け継ぎます。陽梁昌禄格の人は少なくありませんが、全員が優等生ではなく、勉強が苦手な人もいます。実際の強みは、興味を持った分野を深く追究する姿勢です。その関心が学問に向けば、才能と努力が合わさり、優秀な成績を収める可能性が高まるでしょう。
 
 この格局だけを見て、優等生や高学歴の人だと決めつけず、興味や得意分野を見ましょう。優れた学者にも、優れた外科医にもなり得ます。一般に評判を大切にし、地位や権限のある役職を望むため、現場の下位の職に長くとどまらない傾向があります。
 
@@ -1186,12 +1186,12 @@ import Donate from '/components/donate.vue'
 <table class="astrolabe">
   <tr>
       <td><div class="pattern"><div>太陽</div><div><code>巳</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>官祿</code></div></div></td>
-      <td><div class="pattern"><div>天機</div><div><code>未</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>天機</div><div><code>未</code> <code>奴僕</code></div></div></td>
       <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>遷移</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>福徳</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">七殺朝斗</td>
       <td><div class="pattern"><div>太陰</div><div><code>酉</code> <code>疾厄</code></div></div></td>
   </tr>
@@ -1212,7 +1212,7 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>天梁</div><div><code>巳</code> <code>兄弟</code></div></div></td>
       <td><div class="pattern"><div>七殺</div><div><code>午</code> <code>命宮</code></div></div></td>
       <td><div class="pattern"><div></div><div><code>未</code> <code>父母</code></div></div></td>
-      <td><div class="pattern"><div>廉貞</div><div><code>申</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>廉貞</div><div><code>申</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>紫微 天相</div><div><code>辰</code> <code>夫妻</code></div></div></td>
@@ -1221,13 +1221,13 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>天機 巨門</div><div><code>卯</code> <code>子女</code></div></div></td>
-      <td><div class="pattern"><div>破軍</div><div><code>戌</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>破軍</div><div><code>戌</code> <code>官禄</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>貪狼</div><div><code>寅</code> <code>財帛</code></div></div></td>
       <td><div class="pattern"><div>太陽 太陰</div><div><code>丑</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>武曲 天府</div><div><code>子</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>天同</div><div><code>亥</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>天同</div><div><code>亥</code> <code>奴僕</code></div></div></td>
   </tr>
 </table>
 
@@ -1237,9 +1237,9 @@ import Donate from '/components/donate.vue'
 
 >祿衰馬困 限逢七殺祿馬空亡是也。
 
-この説明から、運限の中で作用する格局だと分かります。三方四正にある[祿存](./minor-star.md#禄存)と[天馬](./minor-star.md#天马)が、どちらも良くない状態にあります。[祿馬交馳](#禄马交驰)の反対の状態と考えてもよいでしょう。
+この説明から、運限の中で作用する格局だと分かります。三方四正にある[禄存](./minor-star.md#禄存)と[天馬](./minor-star.md#天马)が、どちらも良くない状態にあります。[禄馬交馳](#禄马交驰)の反対の状態と考えてもよいでしょう。
 
-通常は、三方四正で祿存が空曜の天空・地空・截空・旬空、または消耗を表す大耗・小耗・地劫と同宮し、同時に天馬も化忌・擎羊・陀羅・天刑・陰煞などの不利な要素と同宮します。祿存は財を生み出す元手を表し、元手を循環させることで機会が増えます。この格局は、資金と労力を投入しても、見合う成果が得られない状態を指します。
+通常は、三方四正で禄存が空曜の天空・地空・截空・旬空、または消耗を表す大耗・小耗・地劫と同宮し、同時に天馬も化忌・擎羊・陀羅・天刑・陰煞などの不利な要素と同宮します。禄存は財を生み出す元手を表し、元手を循環させることで機会が増えます。この格局は、資金と労力を投入しても、見合う成果が得られない状態を指します。
 
 財の星が空曜と同宮すると、お金を最優先にしなかったり、金銭面への感覚が弱かったりすることが多くなります。人生はお金を稼ぐことだけではなく、そのためだけに生きる必要もありません。運限でこの格局が現れたら、投資にはより慎重になり、うますぎる話ほど理由や条件をよく確かめましょう。
 
@@ -1265,7 +1265,7 @@ import Donate from '/components/donate.vue'
       <td><div class="pattern"><div>太陽</div><div><code>巳</code> <code>兄弟</code></div></div></td>
       <td><div class="pattern"><div>破軍</div><div><code>午</code> <code>命宮</code></div></div></td>
       <td><div class="pattern"><div>天機</div><div><code>未</code> <code>父母</code></div></div></td>
-      <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>紫微 天府</div><div><code>申</code> <code>福徳</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>武曲</div><div><code>辰</code> <code>夫妻</code></div></div></td>
@@ -1274,13 +1274,13 @@ import Donate from '/components/donate.vue'
   </tr>
   <tr>
       <td><div class="pattern"><div>天同</div><div><code>卯</code> <code>子女</code></div></div></td>
-      <td><div class="pattern"><div>貪狼</div><div><code>戌</code> <code>官祿</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>戌</code> <code>官禄</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div>七殺</div><div><code>寅</code> <code>財帛</code></div></div></td>
       <td><div class="pattern"><div>天梁</div><div><code>丑</code> <code>疾厄</code></div></div></td>
       <td><div class="pattern"><div>廉貞 天相</div><div><code>子</code> <code>遷移</code></div></div></td>
-      <td><div class="pattern"><div>巨門</div><div><code>亥</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>巨門</div><div><code>亥</code> <code>奴僕</code></div></div></td>
   </tr>
 </table>
 
@@ -1295,12 +1295,12 @@ import Donate from '/components/donate.vue'
 <table class="astrolabe">
   <tr>
       <td><div class="pattern"><div>太陰</div><div><code>巳</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>貪狼</div><div><code>午</code> <code>官祿</code></div></div></td>
-      <td><div class="pattern"><div>天同 巨門</div><div><code>未</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>貪狼</div><div><code>午</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>天同 巨門</div><div><code>未</code> <code>奴僕</code></div></div></td>
       <td><div class="pattern"><div>武曲 天相</div><div><code>申</code> <code>遷移</code></div></div></td>
   </tr>
   <tr>
-      <td><div class="pattern"><div>廉貞 天府</div><div><code>辰</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>廉貞 天府</div><div><code>辰</code> <code>福徳</code></div></div></td>
       <td class="center-palace" rowspan="2" colspan="2">衆水朝東</td>
       <td><div class="pattern"><div>太陽 天梁</div><div><code>酉</code> <code>疾厄</code></div></div></td>
   </tr>
@@ -1318,10 +1318,10 @@ import Donate from '/components/donate.vue'
 
 <table class="astrolabe">
   <tr>
-      <td><div class="pattern"><div>天府</div><div><code>巳</code> <code>福德</code></div></div></td>
+      <td><div class="pattern"><div>天府</div><div><code>巳</code> <code>福徳</code></div></div></td>
       <td><div class="pattern"><div>天同 太陰</div><div><code>午</code> <code>田宅</code></div></div></td>
-      <td><div class="pattern"><div>武曲 貪狼</div><div><code>未</code> <code>官祿</code></div></div></td>
-      <td><div class="pattern"><div>太陽 巨門</div><div><code>申</code> <code>僕役</code></div></div></td>
+      <td><div class="pattern"><div>武曲 貪狼</div><div><code>未</code> <code>官禄</code></div></div></td>
+      <td><div class="pattern"><div>太陽 巨門</div><div><code>申</code> <code>奴僕</code></div></div></td>
   </tr>
   <tr>
       <td><div class="pattern"><div></div><div><code>辰</code> <code>父母</code></div></div></td>
@@ -1340,35 +1340,35 @@ import Donate from '/components/donate.vue'
   </tr>
 </table>
 
-廉貞・破軍は気が短く、言動で人の気持ちを顧みないため、性格面で損をしやすい傾向があります。寅宮の構成は少し穏やかですが、より活動的です。どちらも[祿馬交馳格](#禄马交驰)と重なりやすく、商業で活躍する人が多くいます。廉貞・破軍は専門技術の仕事に、寅宮で破軍が独座する形は貿易や輸出入の事業に向かいやすい傾向があります。
+廉貞・破軍は気が短く、言動で人の気持ちを顧みないため、性格面で損をしやすい傾向があります。寅宮の構成は少し穏やかですが、より活動的です。どちらも[禄馬交馳格](#禄马交驰)と重なりやすく、商業で活躍する人が多くいます。廉貞・破軍は専門技術の仕事に、寅宮で破軍が独座する形は貿易や輸出入の事業に向かいやすい傾向があります。
 
 水が最後には海へ流れるというイメージからも、この格局は築いたものを守ることが大切です。無理をしすぎて、自分の努力の成果を他人に渡してしまわないようにしましょう。水難への注意を説く資料も多いのですが、交通、水や火の安全、健康はどの格局でも大切です。この格局があるだけで不安になる必要はありません。
 
 ## 三奇加会 {#三奇加会}
 
-三奇とは、`祿`・`權`・`科`の三つの吉化です。三奇加会は、この三つが命宮の三方四正にそろうことを指します。筆者は『紫微斗数全書』に説明を見つけられなかったため、後世の研究者がまとめた格局だと考えています。
+三奇とは、`禄`・`権`・`科`の三つの吉化です。三奇加会は、この三つが命宮の三方四正にそろうことを指します。筆者は『紫微斗数全書』に説明を見つけられなかったため、後世の研究者がまとめた格局だと考えています。
 
-組み合わせが多く、四化が付く星も異なるため、すべての例を挙げることはできません。三奇加会は具体的な配置に応じて分析する必要があります。特に好まれるのは、命宮に科、財帛宮に祿、官祿宮に權がある形です。その理由は想像できるでしょう。
+組み合わせが多く、四化が付く星も異なるため、すべての例を挙げることはできません。三奇加会は具体的な配置に応じて分析する必要があります。特に好まれるのは、命宮に科、財帛宮に禄、官禄宮に権がある形です。その理由は想像できるでしょう。
 
 日常では三奇加会がどのように現れるのでしょうか。主に機会が増えると考えますが、それをつかめるかどうかは本人次第です。たとえば、食事に誘われる回数が20%増える、採用の可能性が20%上がる、利益が20%増える、といったイメージです。この20%は説明のために適当に置いた数値であり、実測値でも判断基準でもありません。
 
 ## 禄馬交馳 {#禄马交驰}
 
-祿馬交馳は、代表的な財の格局です。祿存と天馬が同宮する場合を指します。三方四正で会うだけでも成立するとする資料もありますが、希夷先生の説明では同宮が必要です。祿存は有名な財の星ですが、それ自体は元手です。元手は循環させてこそ増える機会が生まれ、天馬はその循環を表します。
+禄馬交馳は、代表的な財の格局です。禄存と天馬が同宮する場合を指します。三方四正で会うだけでも成立するとする資料もありますが、希夷先生の説明では同宮が必要です。禄存は有名な財の星ですが、それ自体は元手です。元手は循環させてこそ増える機会が生まれ、天馬はその循環を表します。
 
 >武曲祿馬交馳發財遠郡  
 >祿馬最喜交馳 忌見殺羊火截路空亡，多主勞苦。  
 >天馬如與祿存同宮，謂之祿馬交馳，又曰折鞭馬。  
 
-同宮という条件を厳密に適用すると、祿馬交馳は[四馬地](./palace.md#四生地)でしか成立しません。その宮には、止まっていられず忙しく動く傾向が表れます。忙しさが成果につながるかは、他の星との組み合わせ次第です。筆者はこの配置には機会が多いと見ているので、良いタイミングをつかめば、努力をより大きな成果につなげられるでしょう。
+同宮という条件を厳密に適用すると、禄馬交馳は[四馬地](./palace.md#四生地)でしか成立しません。その宮には、止まっていられず忙しく動く傾向が表れます。忙しさが成果につながるかは、他の星との組み合わせ次第です。筆者はこの配置には機会が多いと見ているので、良いタイミングをつかめば、努力をより大きな成果につなげられるでしょう。
 
 ## 禄合鴛鴦 {#禄合鸳鸯}
 
-この格局は、`祿`と`祿存`が同宮するか、対宮から向かい合う場合です。意味はそのまま理解できます。祿存は元手、祿は増加ですから、合わせると元手が増えること、つまり利益を表します。そのため財に関係する格局です。『紫微斗数全書』には一文だけ説明があります。
+この格局は、`禄`と`禄存`が同宮するか、対宮から向かい合う場合です。意味はそのまま理解できます。禄存は元手、禄は増加ですから、合わせると元手が増えること、つまり利益を表します。そのため財に関係する格局です。『紫微斗数全書』には一文だけ説明があります。
 
 >合祿鴛鴦一世榮。
 
-ここから逆に考えると、祿合鴛鴦格の人は、お金の管理や経営への感覚と直感が鋭いのでしょうか。本命盤になくても、運限で現れることがあります。現れたら適切な機会を生かしつつ、他の星との組み合わせも見ましょう。決定の根拠そのものではなく、参考となる情報として扱ってください。
+ここから逆に考えると、禄合鴛鴦格の人は、お金の管理や経営への感覚と直感が鋭いのでしょうか。本命盤になくても、運限で現れることがあります。現れたら適切な機会を生かしつつ、他の星との組み合わせも見ましょう。決定の根拠そのものではなく、参考となる情報として扱ってください。
 
 ここで少し宣伝をさせてください。
 
@@ -1376,7 +1376,7 @@ import Donate from '/components/donate.vue'
 
 ## 明禄暗禄 {#明禄暗禄}
 
-ここでの「明」はその宮自体、「暗」はその宮の[暗合宮](./palace.md#暗合宫)を指します。二つの祿とは祿存と化祿です。祿合鴛鴦格の特殊な形で、そのうち一つが暗合宮に隠れていると考えるとよいでしょう。
+ここでの「明」はその宮自体、「暗」はその宮の[暗合宮](./palace.md#暗合宫)を指します。二つの禄とは禄存と化禄です。禄合鴛鴦格の特殊な形で、そのうち一つが暗合宮に隠れていると考えるとよいでしょう。
 
 >明祿暗祿錦上添花。  
 >明祿暗祿位至公卿。  
@@ -1386,16 +1386,16 @@ import Donate from '/components/donate.vue'
 
 ## 禄馬佩印 {#禄马佩印}
 
-これは[祿馬交馳格](#禄马交驰)の特殊な形で、[祿存](./minor-star.md#禄存)、[天馬](./minor-star.md#天马)、[天相](./major-star.md#天相星)が同宮する場合です。
+これは[禄馬交馳格](#禄马交驰)の特殊な形で、[禄存](./minor-star.md#禄存)、[天馬](./minor-star.md#天马)、[天相](./major-star.md#天相星)が同宮する場合です。
 
 >祿馬佩印 馬前有祿印星同宮是也。  
 >天相祿馬交馳，不落空亡，更坐生鄉，可為貴論。  
 
-祿馬交馳が財の格局なら、祿馬佩印は財に`権限`を加える配置です。そのため富と地位の両方に関係する、貴重な格局とされます。ただし、命盤に富貴の格局があることと、実際に富や地位を得ることは別です。
+禄馬交馳が財の格局なら、禄馬佩印は財に`権限`を加える配置です。そのため富と地位の両方に関係する、貴重な格局とされます。ただし、命盤に富貴の格局があることと、実際に富や地位を得ることは別です。
 
 ## 両重華蓋 {#两重华盖}
 
-これは[祿合鴛鴦格](#禄合鸳鸯)の特殊な形です。化祿と祿存が同宮し、さらに地空か地劫のどちらかと会う場合を指します。どの`空曜`でも成立するとする資料もあり、その見方にも理由はありますが、表れ方は多少異なるでしょう。
+これは[禄合鴛鴦格](#禄合鸳鸯)の特殊な形です。化禄と禄存が同宮し、さらに地空か地劫のどちらかと会う場合を指します。どの`空曜`でも成立するとする資料もあり、その見方にも理由はありますが、表れ方は多少異なるでしょう。
 
 >兩重華蓋 謂祿存化祿坐命遇空劫是也。  
 
@@ -1405,25 +1405,25 @@ import Donate from '/components/donate.vue'
 
 ## 風雲際会 {#风云际会}
 
-風雲際会は、本命盤に固定された組み合わせではなく、運限の格局です。本命の身宮または命宮が比較的弱く、大限と小限が同時に`祿存`・`祿`・`天馬`のある有利な位置へ進む場合に成立します。小限ではなく流年を用いる流派もあります。生まれつき地位が高いかではなく、制約のあった命盤が、資源と行動の機会がそろう時期に入ることが重要です。
+風雲際会は、本命盤に固定された組み合わせではなく、運限の格局です。本命の身宮または命宮が比較的弱く、大限と小限が同時に`禄存`・`禄`・`天馬`のある有利な位置へ進む場合に成立します。小限ではなく流年を用いる流派もあります。生まれつき地位が高いかではなく、制約のあった命盤が、資源と行動の機会がそろう時期に入ることが重要です。
 
 『紫微斗数全書』では雑格に分類されています。原文は次のとおりです。
 
 > 風雲際會，身命雖弱二限逢祿馬是也。
 
-風と雲が出会って変化を生む、という印象的な名前です。現代なら、出発点は平凡な人が、ある運限で移動の自由、資金、活動の場、外部の機会などを得ることと考えられます。それを足掛かりに成長できるかは、本命盤に機会を生かす力があるかによります。準備せず速さだけを求めれば、祿と天馬は単に忙しく走り回る生活をもたらすだけかもしれません。
+風と雲が出会って変化を生む、という印象的な名前です。現代なら、出発点は平凡な人が、ある運限で移動の自由、資金、活動の場、外部の機会などを得ることと考えられます。それを足掛かりに成長できるかは、本命盤に機会を生かす力があるかによります。準備せず速さだけを求めれば、禄と天馬は単に忙しく走り回る生活をもたらすだけかもしれません。
 
 ## 羊陀夾命 {#羊陀夹命}
 
-`擎羊`と`陀羅`が命宮のすぐ前後の宮に位置すると、羊陀夾命が成立します。この二星は必ず祿存を挟むため、挟まれた命宮には`祿存`もあります。擎羊と陀羅が命宮の中にあるという意味ではなく、三方で会うことを夾命と同じには扱えません。
+`擎羊`と`陀羅`が命宮のすぐ前後の宮に位置すると、羊陀夾命が成立します。この二星は必ず禄存を挟むため、挟まれた命宮には`禄存`もあります。擎羊と陀羅が命宮の中にあるという意味ではなく、三方で会うことを夾命と同じには扱えません。
 
-この組み合わせをすぐに凶格と決めるのは正確ではありません。祿存は資源、現実感、築いたものを守る姿勢を与え、擎羊・陀羅はその粘り強さを圧力、障害、譲らない態度へと変えます。命宮の主星の配置が良く、化忌や地空・地劫に損なわれなければ、圧力に耐え、成果を守り、危険を察知する力として表れます。化忌、空劫、強い煞星がさらに作用すると、繰り返す障害、緊張した関係、頑固さによる損失につながりやすくなります。
+この組み合わせをすぐに凶格と決めるのは正確ではありません。禄存は資源、現実感、築いたものを守る姿勢を与え、擎羊・陀羅はその粘り強さを圧力、障害、譲らない態度へと変えます。命宮の主星の配置が良く、化忌や地空・地劫に損なわれなければ、圧力に耐え、成果を守り、危険を察知する力として表れます。化忌、空劫、強い煞星がさらに作用すると、繰り返す障害、緊張した関係、頑固さによる損失につながりやすくなります。
 
 この格局があるからといって、自分を決めつける必要はありません。重要な決定には調整の余地を残すよう促すものと受け止めましょう。資源が少ないときほど、意地や腹立ちで無理を押し通さないことが大切です。
 
 ## 馬頭帯箭 {#马头带箭}
 
-馬頭帯箭は`馬頭帯剣`とも呼ばれます。厳密な条件は、命宮が`午の宮`にあり、`擎羊`が`天同・太陰`と同宮することです。命宮が空宮で、対宮の天同・太陰を借りて見て、午宮に擎羊がある場合も借星として解釈できます。丙年または戊年生まれで、天同か貪狼が化祿を得る組み合わせは、より良いとされます。午宮の貪狼化祿が擎羊と同宮する場合は、通常、派生の格局として扱います。ここでの馬は午宮を指し、天馬があるだけでは成立しません。
+馬頭帯箭は`馬頭帯剣`とも呼ばれます。厳密な条件は、命宮が`午の宮`にあり、`擎羊`が`天同・太陰`と同宮することです。命宮が空宮で、対宮の天同・太陰を借りて見て、午宮に擎羊がある場合も借星として解釈できます。丙年または戊年生まれで、天同か貪狼が化禄を得る組み合わせは、より良いとされます。午宮の貪狼化禄が擎羊と同宮する場合は、通常、派生の格局として扱います。ここでの馬は午宮を指し、天馬があるだけでは成立しません。
 
 『紫微斗数全書』の貴格を定める章には、次のように記されています。
 
@@ -1497,11 +1497,11 @@ import Donate from '/components/donate.vue'
 
 ## 禄逢両殺 {#禄逢两杀}
 
-祿逢兩殺は、祿存と煞星が二つあるだけでは成立しません。『紫微斗数全書』の定義では、`祿存`が命宮にあり、空亡の影響を受け、さらに地空・地劫などの空劫の煞星が冲会する必要があります。核心は、祿が空の作用に損なわれることです。一般の煞星と同宮するだけで、空亡や空劫の破壊がなければ、安易に当てはめるべきではありません。
+禄逢兩殺は、禄存と煞星が二つあるだけでは成立しません。『紫微斗数全書』の定義では、`禄存`が命宮にあり、空亡の影響を受け、さらに地空・地劫などの空劫の煞星が冲会する必要があります。核心は、禄が空の作用に損なわれることです。一般の煞星と同宮するだけで、空亡や空劫の破壊がなければ、安易に当てはめるべきではありません。
 
 > 祿逢兩殺，祿坐空亡又逢空劫殺星是也。
 
-祿存は蓄積できる資源、地空・地劫は不成立や消耗を表します。大切なのは、お金の有無より、収入、貯蓄、機会を実際に残せるかです。借入を大きく使う取引、口約束、不透明な協力関係は、さらに確かめましょう。帳簿、契約、撤退の手順を整えることが、現実的なリスク対策です。
+禄存は蓄積できる資源、地空・地劫は不成立や消耗を表します。大切なのは、お金の有無より、収入、貯蓄、機会を実際に残せるかです。借入を大きく使う取引、口約束、不透明な協力関係は、さらに確かめましょう。帳簿、契約、撤退の手順を整えることが、現実的なリスク対策です。
 
 ## 文貴文華 {#文贵文华}
 
@@ -1545,27 +1545,27 @@ import Donate from '/components/donate.vue'
 
 ## 権禄生逢 {#权禄生逢}
 
-權祿生逢は、`權`と`祿`がともに命宮にあり、四化が付く主星が廟・旺などの強い明るさにある場合です。主星が陷である、または權祿が命宮にはなく三方から会照するだけの場合は、この厳密な定義では成立しません。資源と、物事を進め管理する力が、同じ場所で働くことを表します。
+権禄生逢は、`権`と`禄`がともに命宮にあり、四化が付く主星が廟・旺などの強い明るさにある場合です。主星が陥である、または権禄が命宮にはなく三方から会照するだけの場合は、この厳密な定義では成立しません。資源と、物事を進め管理する力が、同じ場所で働くことを表します。
 
 『紫微斗数全書』の原文は次のとおりです。
 
 > 權祿生逢，二星守命廟旺是也，陷不是。
 
-現代なら、事業を大きくしたい意欲と、結果に責任を負う姿勢として表れます。目標意識と資源を配置する力が長所ですが、効率や利益を支配欲と強く結び付けすぎるのが弱点です。權祿が煞忌と会う場合は、権限と責任の曖昧さ、結果を急ぐ姿勢、短期の利益のために信用を損なうことに注意してください。
+現代なら、事業を大きくしたい意欲と、結果に責任を負う姿勢として表れます。目標意識と資源を配置する力が長所ですが、効率や利益を支配欲と強く結び付けすぎるのが弱点です。権禄が煞忌と会う場合は、権限と責任の曖昧さ、結果を急ぐ姿勢、短期の利益のために信用を損なうことに注意してください。
 
 ## 科明暗禄 {#科明暗禄}
 
-科明暗祿は`明珠暗禄`とも呼ばれます。厳密には、`科`が命宮にあり、六合で対になる暗合宮に`祿存`が必要です。暗合宮の化祿も認める流派があるため、どの定義を使うかを明示してください。科が三方から会照するだけ、または祿が暗合宮にない場合は成立しません。
+科明暗禄は`明珠暗禄`とも呼ばれます。厳密には、`科`が命宮にあり、六合で対になる暗合宮に`禄存`が必要です。暗合宮の化禄も認める流派があるため、どの定義を使うかを明示してください。科が三方から会照するだけ、または禄が暗合宮にない場合は成立しません。
 
 『紫微斗数全書』では、次のように定義されています。
 
 > 科明暗祿，科明祿暗格，即化科守命宮，命宮之暗合宮有祿存是也。
 
-化科は評判、専門性、目に見える評価を表し、暗祿は目立たない支援に近いものです。専門家としての信用で機会を得たり、見えにくい経路から助力を得たりする配置と解釈できます。秘密の臨時収入を保証するものではなく、どの利益にも正当な根拠と事実の確認が必要です。
+化科は評判、専門性、目に見える評価を表し、暗禄は目立たない支援に近いものです。専門家としての信用で機会を得たり、見えにくい経路から助力を得たりする配置と解釈できます。秘密の臨時収入を保証するものではなく、どの利益にも正当な根拠と事実の確認が必要です。
 
 ## 科権禄夾 {#科权禄夹}
 
-化祿・化權・化科のうち少なくとも二つが、命宮のすぐ前後の宮に分かれて挟むことを科權祿夾と呼びます。三つのうち、どの二つでも構いません。三つが隣の宮に集まっていても、両側から挟む形にならなければ成立しません。命宮の主星が廟・旺で、煞忌が少ないとき、良い作用が表れやすくなります。
+化禄・化権・化科のうち少なくとも二つが、命宮のすぐ前後の宮に分かれて挟むことを科権禄夾と呼びます。三つのうち、どの二つでも構いません。三つが隣の宮に集まっていても、両側から挟む形にならなければ成立しません。命宮の主星が廟・旺で、煞忌が少ないとき、良い作用が表れやすくなります。
 
 『紫微斗数全書』には、具体的な例があります。
 
@@ -1575,7 +1575,7 @@ import Donate from '/components/donate.vue'
 
 ## 甲第登庸 {#甲第登庸}
 
-甲第登庸は、`科`が命宮にあり、`權`が遷移宮または三方四正から命宮を支える配置です。化祿や祿存も会えば、伝統的にはより完全とされます。科か權が一つあるだけではなく、命宮の科に權の支援が加わり、能力、名声、実践する機会が組み合わさることが核心です。
+甲第登庸は、`科`が命宮にあり、`権`が遷移宮または三方四正から命宮を支える配置です。化禄や禄存も会えば、伝統的にはより完全とされます。科か権が一つあるだけではなく、命宮の科に権の支援が加わり、能力、名声、実践する機会が組み合わさることが核心です。
 
 『紫微斗数全書』には、次のようにあります。
 

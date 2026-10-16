@@ -364,7 +364,7 @@ const horoscope = astrolabe.horoscope('2023-10-26', 2);
 
   - 使用例
 
-    `流年夫妻宮`に`祿`があるか確認します。
+    `流年夫妻宮`に`禄`があるか確認します。
 
     ```ts
     import { astro } from "iztro";

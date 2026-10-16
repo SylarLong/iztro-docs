@@ -8,17 +8,17 @@ description: "iztroのpalace APIを使って命盤の十二宮を調べる方法
 
 ## はじめに  {#前言}
 
-紫微斗数には `12` 個の宮があり、まとめて `十二人事宮` と呼ばれます。一人の人間に関わる人々や生活のさまざまな側面を表し、順に `命宮`、`兄弟`、`夫妻`、`子女`、`財帛`、`疾厄`、`遷移`、`僕役`、`官祿`、`田宅`、`福德`、`父母` と並びます。[命盤](./astrolabe.md)に表示されるこの十二宮に加え、`身宮`、`来因`、`暗合宮` という三つの隠れた宮もあります。各宮の意味は、このAPIのページでは詳しく扱いません。基本的な概念や詳しい説明は[宮の体系](../learn/palace.md)を参照してください。地支が時計回りに並ぶのに対し、宮の名前は反時計回りに並びます。以下の表はその例です。
+紫微斗数には `12` 個の宮があり、まとめて `十二人事宮` と呼ばれます。一人の人間に関わる人々や生活のさまざまな側面を表し、順に `命宮`、`兄弟`、`夫妻`、`子女`、`財帛`、`疾厄`、`遷移`、`奴僕`、`官禄`、`田宅`、`福徳`、`父母` と並びます。[命盤](./astrolabe.md)に表示されるこの十二宮に加え、`身宮`、`来因`、`暗合宮` という三つの隠れた宮もあります。各宮の意味は、このAPIのページでは詳しく扱いません。基本的な概念や詳しい説明は[宮の体系](../learn/palace.md)を参照してください。地支が時計回りに並ぶのに対し、宮の名前は反時計回りに並びます。以下の表はその例です。
 
 <table class="astrolabe">
     <tr>
         <td>巳<code>田宅</code></td>
-        <td>午<code>官祿</code></td>
-        <td>未<code>僕役</code></td>
+        <td>午<code>官禄</code></td>
+        <td>未<code>奴僕</code></td>
         <td>申<code>遷移</code></td>
     </tr>
     <tr>
-        <td>辰<code>福德</code></td>
+        <td>辰<code>福徳</code></td>
         <td class="center-palace" rowspan="2" colspan="2">中宮</td>
         <td>酉<code>疾厄</code></td>
     </tr>
@@ -262,7 +262,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
     | --- | --- | --- | --- | --- |
-    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true` | - | 四化の名称：祿・權・科・忌 |
+    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true` | - | 四化の名称：禄・権・科・忌 |
 
   - 戻り値
 
@@ -270,7 +270,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 例
 
-    `命宮` に `祿` があるかどうかを確認したい場合
+    `命宮` に `禄` があるかどうかを確認したい場合
     ```ts
     const palace = astrolabe.palace("命宫");
     const result = palace.hasMutagen("禄");
@@ -298,7 +298,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
     | --- | --- | --- | --- | --- |
-    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true` | - | 四化の名称：祿・權・科・忌 |
+    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true` | - | 四化の名称：禄・権・科・忌 |
 
   - 戻り値
 
@@ -376,7 +376,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
     | --- | --- | --- | --- | --- |
     | to | `number` \| [`PalaceName`](../type-definition.md#palacename) | `true` | - | 対象の宮のインデックスまたは名称 |
-    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true` | - | 四化（祿・權・科・忌） |
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true` | - | 四化（禄・権・科・忌） |
 
   - 戻り値
 
@@ -401,7 +401,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
     | --- | --- | --- | --- | --- |
     | to | `number` \| [`PalaceName`](../type-definition.md#palacename) | `true` | - | 対象の宮のインデックスまたは名称 |
-    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true` | - | 四化（祿・權・科・忌） |
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true` | - | 四化（禄・権・科・忌） |
 
   - 戻り値
 
@@ -426,7 +426,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
     | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
     | --- | --- | --- | --- | --- |
     | to | `number` \| [`PalaceName`](../type-definition.md#palacename) | `true` | - | 対象の宮のインデックスまたは名称 |
-    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true` | - | 四化（祿・權・科・忌） |
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true` | - | 四化（禄・権・科・忌） |
 
   - 戻り値
 
@@ -449,7 +449,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
     | --- | --- | --- | --- | --- |
-    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true` | - | 四化（祿・權・科・忌） |
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `true` | - | 四化（禄・権・科・忌） |
 
   - 戻り値
 
@@ -472,7 +472,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
     | --- | --- | --- | --- | --- |
-    | withMutagens | [`Mutagen[]`](../type-definition.md#mutagen) | `false` | - | 四化（祿・權・科・忌） |
+    | withMutagens | [`Mutagen[]`](../type-definition.md#mutagen) | `false` | - | 四化（禄・権・科・忌） |
 
   - 戻り値
 
@@ -495,7 +495,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
     | --- | --- | --- | --- | --- |
-    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `false` | - | 四化（祿・權・科・忌） |
+    | withMutagens | [`Mutagen`](../type-definition.md#mutagen) \|[`Mutagen[]`](../type-definition.md#mutagen) | `false` | - | 四化（禄・権・科・忌） |
 
   - 戻り値
 
@@ -694,7 +694,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
     | --- | --- | --- | --- | --- |
-    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true` | - | 四化の名称：祿・權・科・忌 |
+    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true` | - | 四化の名称：禄・権・科・忌 |
 
   - 戻り値
 
@@ -702,7 +702,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
   - 例
 
-    `命宮` の三方四正に `祿` があるかを確認する場合：
+    `命宮` の三方四正に `禄` があるかを確認する場合：
     ```ts
     const palaces = astrolabe.surroundedPalaces("命宫");
     const result = palaces.haveMutagen("禄");
@@ -730,7 +730,7 @@ const astrolabe = astro.astrolabeBySolarDate("2000-8-16", 2, "女", true, "zh-CN
 
     | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
     | --- | --- | --- | --- | --- |
-    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true` | - | 四化の名称：祿・權・科・忌 |
+    | mutagen | [`Mutagen`](../type-definition.md#mutagen) | `true` | - | 四化の名称：禄・権・科・忌 |
 
   - 戻り値
 

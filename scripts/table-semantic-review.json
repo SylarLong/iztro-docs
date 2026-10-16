@@ -1246,7 +1246,7 @@
       "kind": "markdown",
       "targets": {
         "en_US": "Transformation name: A（祿）, B（權）, C（科） or D（忌）",
-        "ja_JP": "四化の名称：祿・權・科・忌",
+        "ja_JP": "四化の名称：禄・権・科・忌",
         "vi_VN": "Tên tứ hóa: Lộc（祿）, Quyền（權）, Khoa（科） hoặc Kỵ（忌）"
       },
       "decision": "corrected"
@@ -1267,7 +1267,7 @@
       "kind": "markdown",
       "targets": {
         "en_US": "Four transformations: A（祿）, B（權）, C（科）, D（忌）",
-        "ja_JP": "四化（祿・權・科・忌）",
+        "ja_JP": "四化（禄・権・科・忌）",
         "vi_VN": "Tứ hóa: Lộc（祿）, Quyền（權）, Khoa（科）, Kỵ（忌）"
       },
       "decision": "corrected"
@@ -1288,7 +1288,7 @@
       "kind": "html",
       "targets": {
         "en_US": "woo（午）<code>career</code>（官祿）",
-        "ja_JP": "午<code>官祿</code>",
+        "ja_JP": "午<code>官禄</code>",
         "vi_VN": "Ngọ（午）<code>Quan Lộc</code>（官祿）",
         "ko_KR": "오（午）<code>관록</code>（官祿）"
       },
@@ -1299,7 +1299,7 @@
       "kind": "html",
       "targets": {
         "en_US": "wei（未）<code>friends</code>（僕役）",
-        "ja_JP": "未<code>僕役</code>",
+        "ja_JP": "未<code>奴僕</code>",
         "vi_VN": "Mùi（未）<code>Nô Bộc</code>（僕役）",
         "ko_KR": "미（未）<code>노복</code>（僕役）"
       },
@@ -1321,7 +1321,7 @@
       "kind": "html",
       "targets": {
         "en_US": "chen（辰）<code>spirit</code>（福德）",
-        "ja_JP": "辰<code>福德</code>",
+        "ja_JP": "辰<code>福徳</code>",
         "vi_VN": "Thìn（辰）<code>Phúc Đức</code>（福德）",
         "ko_KR": "진（辰）<code>복덕</code>（福德）"
       },
@@ -1419,7 +1419,7 @@
       "kind": "markdown",
       "targets": {
         "en_US": "Four transformations: A（祿）, B（權）, C（科）, D（忌）",
-        "ja_JP": "四化（祿・權・科・忌）",
+        "ja_JP": "四化（禄・権・科・忌）",
         "vi_VN": "Tứ hóa: Lộc（祿）, Quyền（權）, Khoa（科）, Kỵ（忌）"
       },
       "decision": "corrected"
@@ -1852,7 +1852,7 @@
       "kind": "html",
       "targets": {
         "en_US": "Ruler of career（官祿）",
-        "ja_JP": "官祿を司る",
+        "ja_JP": "官禄を司る",
         "vi_VN": "Chủ về Quan Lộc（官祿）",
         "ko_KR": "관록（官祿）을 관장"
       },
@@ -2215,7 +2215,7 @@
       "kind": "html",
       "targets": {
         "en_US": "Ruler of spirit（福德）",
-        "ja_JP": "福德を司る",
+        "ja_JP": "福徳を司る",
         "vi_VN": "Chủ về Phúc Đức（福德）",
         "ko_KR": "복덕（福德）을 관장"
       },
@@ -2666,7 +2666,7 @@
       "kind": "html",
       "targets": {
         "en_US": "Official-seal star, qualifications star, flattery star, longevity star (with money（祿存）), assistance star, livelihood star, concubine star",
-        "ja_JP": "印の星、資格の星、お世辞の星、長寿の星（祿存との組み合わせ）、補佐の星、衣食の星、側室の星",
+        "ja_JP": "印の星、資格の星、お世辞の星、長寿の星（禄存との組み合わせ）、補佐の星、衣食の星、側室の星",
         "vi_VN": "Sao ấn tín, sao văn bằng, sao tâng bốc, sao trường thọ (khi gặp Lộc Tồn（祿存）), sao hỗ trợ, sao cơm áo, sao thứ thiếp",
         "ko_KR": "인장의 별, 학력 증서의 별, 아첨의 별, 장수의 별(록존（祿存）과 함께 있을 때), 보좌의 별, 의식주의 별, 첩의 별"
       },
@@ -3337,7 +3337,7 @@
       "kind": "html",
       "targets": {
         "en_US": "Travel star, movement star, wealth star, earnings star",
-        "ja_JP": "駅馬の星、移動の星、財の星、祿を司る星",
+        "ja_JP": "駅馬の星、移動の星、財の星、禄を司る星",
         "vi_VN": "Sao dịch mã, sao chuyển động, sao tài lộc, sao chủ quản bổng lộc",
         "ko_KR": "역마의 별, 움직임의 별, 재물의 별, 봉록을 관장하는 별"
       },
