@@ -1692,7 +1692,7 @@ Với `yearDivide` và `horoscopeDivide`, giá trị `normal` lấy mồng một
 
 `dayDivide` chỉ quyết định giờ Tý muộn（晚子時）(`timeIndex` bằng `12`) được tính vào ngày nào: `forward` tính vào ngày hôm sau, còn `current` tính vào ngày hiện tại.
 
-Từ bản vá tiếp theo, quy tắc đổi ngày cho giờ Tý muộn（晚子時） sẽ được áp dụng thống nhất. Với `dayDivide: 'forward'`, toàn bộ lá số（星盤） và dữ liệu vận hạn（運限） về sau được tính theo giờ Tý sớm（早子時） của ngày kế tiếp; tháng âm lịch, năm và trạng thái tháng nhuận cũng được cập nhật cùng lúc. Với `current`, phép tính dùng giờ Tý sớm（早子時） của ngày hiện tại.
+Từ `v2.6.4`, quy tắc đổi ngày cho giờ Tý muộn（晚子時） được áp dụng thống nhất. Với `dayDivide: 'forward'`, toàn bộ lá số（星盤） và dữ liệu vận hạn（運限） về sau được tính theo giờ Tý sớm（早子時） của ngày kế tiếp; tháng âm lịch, năm và trạng thái tháng nhuận cũng được cập nhật cùng lúc. Với `current`, phép tính dùng giờ Tý sớm（早子時） của ngày hiện tại.
 
 `solarDate`, `time`, `timeRange` và `sign` giữ nguyên ngày sinh dương lịch, khoảng giờ sinh và cung hoàng đạo ban đầu. `lunarDate`, `chineseDate` và `rawDates` phản ánh ngày dùng để tính lá số（星盤）. Trong kết quả vận hạn（運限）, `solarDate` cũng giữ nguyên ngày được truy vấn.
 

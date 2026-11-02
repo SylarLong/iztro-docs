@@ -142,7 +142,7 @@ var iztro = require("iztro");
 
 ### Kiểm tra phiên bản {#读取版本号}
 
-Dùng `version` để lấy phiên bản iztro đang được tải và so sánh trước và sau khi cập nhật. Giá trị được lấy từ `package.json` của gói. Phần đầu tệp UMD độc lập cũng chứa phiên bản và thông tin giấy phép MIT. API này sẽ có trong bản phát hành tiếp theo.
+Dùng `version` để lấy phiên bản iztro đang được tải và so sánh trước và sau khi cập nhật. Giá trị được lấy từ `package.json` của gói. Phần đầu tệp UMD độc lập cũng chứa phiên bản và thông tin giấy phép MIT. API này có từ `v2.6.4`.
 
 :::tabs
 == ES6 Module

@@ -39,7 +39,7 @@ astro.config({
 | `dayDivide` <Badge type="warning" text="^2.5.2" /> | `forward` \| `current` | `forward` | 晩子時をどの日に属させるか。`forward` は翌日、`current` は当日として扱います。 |
 | `algorithm` <Badge type="warning" text="^2.5.0" /> | `default` \| `zhongzhou` | `default` | 星曜の配置規則。`default` は一般的な方式、`zhongzhou` は中州派の方式です。 |
 
-次の修正リリースから、晩子時の日付切り替えを統一します。`dayDivide: 'forward'` では、命盤全体とその後の運限を翌日の早子時として計算し、旧暦の月・年・閏月の状態もまとめて更新します。`current` では、当日の早子時として計算します。
+`v2.6.4` 以降、晩子時の日付切り替えを統一して処理します。`dayDivide: 'forward'` では、命盤全体とその後の運限を翌日の早子時として計算し、旧暦の月・年・閏月の状態もまとめて更新します。`current` では、当日の早子時として計算します。
 
 `solarDate`、`time`、`timeRange`、`sign` には、入力したグレゴリオ暦の生年月日、出生時間帯、星座を保持します。`lunarDate`、`chineseDate`、`rawDates` には、命盤の計算に使用した日付を反映します。運限の結果でも、`solarDate` には問い合わせた日付を保持します。
 

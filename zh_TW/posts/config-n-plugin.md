@@ -39,7 +39,7 @@ astro.config({
 | `dayDivide` <Badge type="warning" text="^2.5.2" /> | `forward` \| `current` | `forward` | 晚子時歸屬；`forward` 歸入次日，`current` 歸入當日 |
 | `algorithm` <Badge type="warning" text="^2.5.0" /> | `default` \| `zhongzhou` | `default` | 安星規則；`default` 為通行版本，`zhongzhou` 為中州派版本 |
 
-下一修復版本將統一處理晚子時換日：`dayDivide: 'forward'` 時，整張命盤與後續運限按次日早子時計算，農曆月份、年份和閏月狀態會一併更新；`current` 時按當日早子時計算。
+自 `v2.6.4` 起，統一處理晚子時換日：`dayDivide: 'forward'` 時，整張命盤與後續運限按次日早子時計算，農曆月份、年份和閏月狀態會一併更新；`current` 時按當日早子時計算。
 
 `solarDate`、`time`、`timeRange` 和 `sign` 保留原始公曆生日、出生時段及星座；`lunarDate`、`chineseDate` 和 `rawDates` 反映用於排盤的日期。運限結果的 `solarDate` 也保留查詢日期。
 

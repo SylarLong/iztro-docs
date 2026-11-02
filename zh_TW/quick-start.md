@@ -144,7 +144,7 @@ var iztro = require("iztro");
 
 ### 讀取版本號
 
-透過 `version` 可以讀取目前載入的 iztro 版本，方便在更新前後比對。版本來自套件內的 `package.json`，獨立 UMD 檔案開頭也保留版本號和 MIT 授權資訊。此 API 將從下一版本開始提供。
+透過 `version` 可以讀取目前載入的 iztro 版本，方便在更新前後比對。版本來自套件內的 `package.json`，獨立 UMD 檔案開頭也保留版本號和 MIT 授權資訊。此 API 自 `v2.6.4` 起提供。
 
 :::tabs
 == ES6 Module

@@ -1690,7 +1690,7 @@ type Config = {
 
 `dayDivide` 僅影響晚子時（`timeIndex` 為 `12`）的日期歸屬：`forward` 將其歸入次日，`current` 將其歸入當日。
 
-下一修復版本將統一處理晚子時換日：`dayDivide: 'forward'` 時，整張命盤與後續運限按次日早子時計算，農曆月份、年份和閏月狀態會一併更新；`current` 時按當日早子時計算。
+自 `v2.6.4` 起，統一處理晚子時換日：`dayDivide: 'forward'` 時，整張命盤與後續運限按次日早子時計算，農曆月份、年份和閏月狀態會一併更新；`current` 時按當日早子時計算。
 
 `solarDate`、`time`、`timeRange` 和 `sign` 保留原始公曆生日、出生時段及星座；`lunarDate`、`chineseDate` 和 `rawDates` 反映用於排盤的日期。運限結果的 `solarDate` 也保留查詢日期。
 

@@ -142,7 +142,7 @@ var iztro = require("iztro");
 
 ### Read the version {#读取版本号}
 
-Use `version` to read the version of iztro currently loaded and compare it before and after an update. The value comes from the package’s `package.json`. Standalone UMD files also retain the version and MIT license information in their header. This API will be available in the next release.
+Use `version` to read the version of iztro currently loaded and compare it before and after an update. The value comes from the package’s `package.json`. Standalone UMD files also retain the version and MIT license information in their header. This API is available from `v2.6.4`.
 
 :::tabs
 == ES6 Module

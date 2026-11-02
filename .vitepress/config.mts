@@ -4,7 +4,7 @@ import abbr from "markdown-it-abbr";
 import { translatedLocales } from "./locales.mjs";
 import { siteOrigin, siteName, transformSeoPage, transformSeoHead, transformSeoSitemap, copyStaticAssets } from "./seo.mjs";
 
-const version = "v2.6.2";
+const version = "v2.6.4";
 
 // https://vitepress.dev/reference/site-config
 const config = defineConfig({

@@ -39,7 +39,7 @@ Besides `mutagens` and `brightness`, the following options let you adjust chart-
 | `dayDivide`   <Badge type="warning" text="^2.5.2" /> | `forward`  \|  `current` | `forward` | Date assignment for the late Zi hour: `forward` assigns it to the following day; `current` to the same day. |
 | `algorithm`   <Badge type="warning" text="^2.5.0" /> | `default`  \|  `zhongzhou` | `default` | Star-placement rules: `default` uses the standard version; `zhongzhou` uses the Zhongzhou school version. |
 
-Starting with the next fix release, `dayDivide: 'forward'` will calculate the entire chart and subsequent time-cycle data using the following day's early Zi hour（早子時）, updating the lunar month, year and leap-month status together. `current` will use the current day's early Zi hour（早子時）.
+From `v2.6.4`, `dayDivide: 'forward'` calculates the entire chart and subsequent time-cycle data using the following day's early Zi hour（早子時）, updating the lunar month, year and leap-month status together. `current` uses the current day's early Zi hour（早子時）.
 
 `solarDate`, `time`, `timeRange` and `sign` retain the original Gregorian birth date, birth time range and zodiac sign. `lunarDate`, `chineseDate` and `rawDates` reflect the date used to calculate the chart. In time-cycle results, `solarDate` also retains the requested date.
 
