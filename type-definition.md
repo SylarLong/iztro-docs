@@ -1693,6 +1693,10 @@ type Config = {
 
 `dayDivide` 仅影响晚子时（`timeIndex` 为 `12`）的日期归属：`forward` 将其归入次日，`current` 将其归入当日。
 
+下一修复版本将统一处理晚子时换日：`dayDivide: 'forward'` 时，整张盘与后续运限按次日早子时计算，农历月份、年份和闰月状态会一并更新；`current` 时按当日早子时计算。
+
+`solarDate`、`time`、`timeRange` 和 `sign` 保留原始公历生日、出生时段及星座；`lunarDate`、`chineseDate` 和 `rawDates` 反映用于排盘的日期。运限结果的 `solarDate` 也保留查询日期。
+
 ### `AstroType` <Badge type="warning" text="^2.5.0" />
 
 定义中州派星盘类型。

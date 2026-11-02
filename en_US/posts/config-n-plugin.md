@@ -39,6 +39,18 @@ Besides `mutagens` and `brightness`, the following options let you adjust chart-
 | `dayDivide`   <Badge type="warning" text="^2.5.2" /> | `forward`  \|  `current` | `forward` | Date assignment for the late Zi hour: `forward` assigns it to the following day; `current` to the same day. |
 | `algorithm`   <Badge type="warning" text="^2.5.0" /> | `default`  \|  `zhongzhou` | `default` | Star-placement rules: `default` uses the standard version; `zhongzhou` uses the Zhongzhou school version. |
 
+Starting with the next fix release, `dayDivide: 'forward'` will calculate the entire chart and subsequent time-cycle data using the following day's early Zi hour（早子時）, updating the lunar month, year and leap-month status together. `current` will use the current day's early Zi hour（早子時）.
+
+`solarDate`, `time`, `timeRange` and `sign` retain the original Gregorian birth date, birth time range and zodiac sign. `lunarDate`, `chineseDate` and `rawDates` reflect the date used to calculate the chart. In time-cycle results, `solarDate` also retains the requested date.
+
+```ts
+astro.config({ dayDivide: 'forward' });
+const late = astro.bySolar('1996-8-13', 12, 'female');
+const early = astro.bySolar('1996-8-14', 0, 'female');
+console.log(late.lunarDate === early.lunarDate); // true
+console.log(late.fiveElementsClass === early.fiveElementsClass); // true
+```
+
 :::warning Note
 From `v2.6.2`, `astro.config()` sets defaults only for charts created afterward. `withOptions({ config })` overrides settings only for the chart being created and does not alter the global defaults. Existing charts and their horoscope periods and transformation analyses retain the settings and language used when they were created. If older code relied on one charting call changing global settings, call `astro.config()` explicitly instead.
 :::

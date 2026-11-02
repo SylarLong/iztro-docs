@@ -39,6 +39,18 @@ astro.config({
 | `dayDivide` <Badge type="warning" text="^2.5.2" /> | `forward` \| `current` | `forward` | 晩子時をどの日に属させるか。`forward` は翌日、`current` は当日として扱います。 |
 | `algorithm` <Badge type="warning" text="^2.5.0" /> | `default` \| `zhongzhou` | `default` | 星曜の配置規則。`default` は一般的な方式、`zhongzhou` は中州派の方式です。 |
 
+次の修正リリースから、晩子時の日付切り替えを統一します。`dayDivide: 'forward'` では、命盤全体とその後の運限を翌日の早子時として計算し、旧暦の月・年・閏月の状態もまとめて更新します。`current` では、当日の早子時として計算します。
+
+`solarDate`、`time`、`timeRange`、`sign` には、入力したグレゴリオ暦の生年月日、出生時間帯、星座を保持します。`lunarDate`、`chineseDate`、`rawDates` には、命盤の計算に使用した日付を反映します。運限の結果でも、`solarDate` には問い合わせた日付を保持します。
+
+```ts
+astro.config({ dayDivide: 'forward' });
+const late = astro.bySolar('1996-8-13', 12, 'female');
+const early = astro.bySolar('1996-8-14', 0, 'female');
+console.log(late.lunarDate === early.lunarDate); // true
+console.log(late.fiveElementsClass === early.fiveElementsClass); // true
+```
+
 :::warning 注記
 `v2.6.2` 以降、`astro.config()` が設定するのは、その後に作成する命盤の既定値だけです。`withOptions({ config })` は今回作成する命盤の設定だけを上書きし、グローバルな既定値を変更しません。既存の命盤とその運限・四化分析は、作成時の設定と言語を保持します。単発の命盤作成でグローバル設定を変更する古いコードは、`astro.config()` の明示的な呼び出しに変更してください。
 :::

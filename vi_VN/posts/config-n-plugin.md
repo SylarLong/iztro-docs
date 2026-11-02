@@ -39,6 +39,18 @@ Ngoài `mutagens` và `brightness`, các tùy chọn sau cho phép điều chỉ
 | `dayDivide`   <Badge type="warning" text="^2.5.2" /> | `forward`  \|  `current` | `forward` | Ngày được gán cho giờ Tý muộn: `forward` tính sang ngày hôm sau, `current` tính trong ngày hiện tại. |
 | `algorithm`   <Badge type="warning" text="^2.5.0" /> | `default`  \|  `zhongzhou` | `default` | Quy tắc an sao: `default` dùng cách thông dụng, `zhongzhou` dùng cách của phái Trung Châu. |
 
+Từ bản vá tiếp theo, quy tắc đổi ngày cho giờ Tý muộn（晚子時） sẽ được áp dụng thống nhất. Với `dayDivide: 'forward'`, toàn bộ lá số（星盤） và dữ liệu vận hạn（運限） về sau được tính theo giờ Tý sớm（早子時） của ngày kế tiếp; tháng âm lịch, năm và trạng thái tháng nhuận cũng được cập nhật cùng lúc. Với `current`, phép tính dùng giờ Tý sớm（早子時） của ngày hiện tại.
+
+`solarDate`, `time`, `timeRange` và `sign` giữ nguyên ngày sinh dương lịch, khoảng giờ sinh và cung hoàng đạo ban đầu. `lunarDate`, `chineseDate` và `rawDates` phản ánh ngày dùng để tính lá số（星盤）. Trong kết quả vận hạn（運限）, `solarDate` cũng giữ nguyên ngày được truy vấn.
+
+```ts
+astro.config({ dayDivide: 'forward' });
+const late = astro.bySolar('1996-8-13', 12, 'female');
+const early = astro.bySolar('1996-8-14', 0, 'female');
+console.log(late.lunarDate === early.lunarDate); // true
+console.log(late.fiveElementsClass === early.fiveElementsClass); // true
+```
+
 :::warning Lưu ý
 Từ `v2.6.2`, `astro.config()` chỉ đặt cấu hình mặc định cho các lá số tạo sau đó. `withOptions({ config })` chỉ ghi đè cấu hình cho lá số đang được tạo, không thay đổi cấu hình mặc định toàn cục. Lá số đã có và phần phân tích vận hạn, tứ hóa giữ cấu hình và ngôn ngữ lúc tạo. Nếu mã cũ dựa vào một lần lập lá số để đổi cấu hình toàn cục, hãy gọi `astro.config()` một cách tường minh.
 :::

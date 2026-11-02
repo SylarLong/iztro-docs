@@ -1692,6 +1692,10 @@ For `yearDivide` and `horoscopeDivide`, `normal` uses the first day of the first
 
 `dayDivide` only controls which calendar day the late Zi hour（晚子時） belongs to (`timeIndex` is `12`): `forward` assigns it to the following day, and `current` assigns it to the current day.
 
+Starting with the next fix release, `dayDivide: 'forward'` will calculate the entire chart and subsequent time-cycle data using the following day's early Zi hour（早子時）, updating the lunar month, year and leap-month status together. `current` will use the current day's early Zi hour（早子時）.
+
+`solarDate`, `time`, `timeRange` and `sign` retain the original Gregorian birth date, birth time range and zodiac sign. `lunarDate`, `chineseDate` and `rawDates` reflect the date used to calculate the chart. In time-cycle results, `solarDate` also retains the requested date.
+
 ### `AstroType` <Badge type="warning" text="^2.5.0" /> {#astrotype}
 
 Defines the chart type used by the Zhongzhou school（中州派）.

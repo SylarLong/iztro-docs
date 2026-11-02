@@ -1692,6 +1692,10 @@ type Config = {
 
 `dayDivide`는 만자시（晚子時）(`timeIndex`가 `12`인 경우)를 어느 날짜에 포함할지만 결정합니다. `forward`는 다음 날에, `current`는 당일에 포함합니다.
 
+다음 수정 릴리스부터 만자시（晚子時）의 날짜 전환을 일관되게 처리합니다. `dayDivide: 'forward'`이면 명반（星盤） 전체와 이후 운한（運限）을 다음 날 조자시（早子時）로 계산하며 음력 월, 연도, 윤달 여부도 함께 갱신합니다. `current`이면 당일 조자시（早子時）로 계산합니다.
+
+`solarDate`, `time`, `timeRange`, `sign`은 입력한 그레고리력 생년월일, 출생 시간대, 별자리를 유지합니다. `lunarDate`, `chineseDate`, `rawDates`에는 명반（星盤） 계산에 사용한 날짜가 반영됩니다. 운한（運限） 결과의 `solarDate`도 조회한 날짜를 유지합니다.
+
 ### `AstroType` <Badge type="warning" text="^2.5.0" /> {#astrotype}
 
 중주파（中州派） 명반의 타입을 정의합니다.

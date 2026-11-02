@@ -1692,6 +1692,10 @@ type Config = {
 
 `dayDivide` は、晩子時（`timeIndex` が `12` の場合）をどの日付に含めるかだけに影響します。`forward` は翌日、`current` は当日に含めます。
 
+次の修正リリースから、晩子時の日付切り替えを統一します。`dayDivide: 'forward'` では、命盤全体とその後の運限を翌日の早子時として計算し、旧暦の月・年・閏月の状態もまとめて更新します。`current` では、当日の早子時として計算します。
+
+`solarDate`、`time`、`timeRange`、`sign` には、入力したグレゴリオ暦の生年月日、出生時間帯、星座を保持します。`lunarDate`、`chineseDate`、`rawDates` には、命盤の計算に使用した日付を反映します。運限の結果でも、`solarDate` には問い合わせた日付を保持します。
+
 ### `AstroType` <Badge type="warning" text="^2.5.0" /> {#astrotype}
 
 中州派の命盤の型を定義します。

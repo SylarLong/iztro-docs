@@ -39,6 +39,18 @@ astro.config({
 | `dayDivide` <Badge type="warning" text="^2.5.2" /> | `forward` \| `current` | `forward` | 晚子时归属；`forward` 归入次日，`current` 归入当日 |
 | `algorithm` <Badge type="warning" text="^2.5.0" /> | `default` \| `zhongzhou` | `default` | 安星规则；`default` 为通行版本，`zhongzhou` 为中州派版本 |
 
+下一修复版本将统一处理晚子时换日：`dayDivide: 'forward'` 时，整张盘与后续运限按次日早子时计算，农历月份、年份和闰月状态会一并更新；`current` 时按当日早子时计算。
+
+`solarDate`、`time`、`timeRange` 和 `sign` 保留原始公历生日、出生时段及星座；`lunarDate`、`chineseDate` 和 `rawDates` 反映用于排盘的日期。运限结果的 `solarDate` 也保留查询日期。
+
+```ts
+astro.config({ dayDivide: 'forward' });
+const late = astro.bySolar('1996-8-13', 12, 'female');
+const early = astro.bySolar('1996-8-14', 0, 'female');
+console.log(late.lunarDate === early.lunarDate); // true
+console.log(late.fiveElementsClass === early.fiveElementsClass); // true
+```
+
 :::warning 注意
 从 `v2.6.2` 开始，`astro.config()` 仅设置后续新建星盘的默认配置；`withOptions({ config })` 仅覆盖当前星盘，不再写入全局默认配置。已有星盘及其运限、四化分析保留生成时的配置和语言。旧代码若依赖单次排盘修改全局配置，请改为显式调用 `astro.config()`。
 :::
