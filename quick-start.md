@@ -142,6 +142,36 @@ var iztro = require("iztro");
 
 :::
 
+### 读取版本号
+
+通过 `version` 可以读取当前加载的 iztro 版本，便于更新前后比对。版本来自包内的 `package.json`，独立 UMD 文件头也保留版本号和 MIT 许可证信息。此 API 将从下一版本开始提供。
+
+:::tabs
+== ES6 Module
+
+```ts
+import { version } from "iztro";
+console.log(version);
+```
+
+== CommonJS
+
+```js
+var iztro = require("iztro");
+console.log(iztro.version);
+```
+
+== HTML
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js"></script>
+<script>
+  console.log(iztro.version);
+</script>
+```
+
+:::
+
 ### 获取星盘数据
 
 在获取紫微斗数星盘的时候，可以根据`农历`或者`阳历`日期来获取，`iztro`提供了这两种获取方式，你可以根据你的需求使用，但我们更推荐你使用`阳历`的方式来使用。

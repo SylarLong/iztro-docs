@@ -140,6 +140,36 @@ var iztro = require("iztro");
 
 :::
 
+### Read the version {#读取版本号}
+
+Use `version` to read the version of iztro currently loaded and compare it before and after an update. The value comes from the package’s `package.json`. Standalone UMD files also retain the version and MIT license information in their header. This API will be available in the next release.
+
+:::tabs
+== ES6 Module
+
+```ts
+import { version } from "iztro";
+console.log(version);
+```
+
+== CommonJS
+
+```js
+var iztro = require("iztro");
+console.log(iztro.version);
+```
+
+== HTML
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js"></script>
+<script>
+  console.log(iztro.version);
+</script>
+```
+
+:::
+
 ### Get chart data {#获取星盘数据}
 
 You can create a Zi Wei Dou Shu（紫微斗數） chart（星盤） from either a `lunar calendar` date or a `Gregorian calendar` date. `iztro` supports both, but we recommend using the `Gregorian calendar` method. Both methods produce the same chart when given equivalent dates.

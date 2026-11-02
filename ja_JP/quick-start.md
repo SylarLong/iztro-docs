@@ -140,6 +140,36 @@ var iztro = require("iztro");
 
 :::
 
+### バージョンを確認する {#读取版本号}
+
+`version` で現在読み込まれている iztro のバージョンを取得し、更新前後で比較できます。値はパッケージ内の `package.json` に基づきます。単体の UMD ファイルの先頭にも、バージョンと MIT ライセンス情報が記載されます。この API は次のリリースから利用できます。
+
+:::tabs
+== ES6 Module
+
+```ts
+import { version } from "iztro";
+console.log(version);
+```
+
+== CommonJS
+
+```js
+var iztro = require("iztro");
+console.log(iztro.version);
+```
+
+== HTML
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js"></script>
+<script>
+  console.log(iztro.version);
+</script>
+```
+
+:::
+
 ### 命盤データを取得する {#获取星盘数据}
 
 紫微斗数の命盤は、`旧暦`または`グレゴリオ暦`の日付から作成できます。`iztro`は両方に対応していますが、`グレゴリオ暦`での指定をお勧めします。同じ日を指定すれば、どちらの方法でも同じ命盤データが得られます。

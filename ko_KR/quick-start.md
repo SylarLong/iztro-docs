@@ -140,6 +140,36 @@ var iztro = require("iztro");
 
 :::
 
+### 버전 확인하기 {#读取版本号}
+
+`version`으로 현재 로드된 iztro의 버전을 확인하고 업데이트 전후를 비교할 수 있습니다. 값은 패키지의 `package.json`에서 가져옵니다. 독립형 UMD 파일의 맨 앞에도 버전과 MIT 라이선스 정보가 표시됩니다. 이 API는 다음 릴리스부터 사용할 수 있습니다.
+
+:::tabs
+== ES6 Module
+
+```ts
+import { version } from "iztro";
+console.log(version);
+```
+
+== CommonJS
+
+```js
+var iztro = require("iztro");
+console.log(iztro.version);
+```
+
+== HTML
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js"></script>
+<script>
+  console.log(iztro.version);
+</script>
+```
+
+:::
+
 ### 명반 데이터 가져오기 {#获取星盘数据}
 
 자미두수（紫微斗數） 명반（星盤）은 `음력` 또는 `그레고리력` 날짜로 만들 수 있습니다. `iztro`는 두 방식을 모두 지원하지만, `그레고리력` 방식을 권장합니다. 같은 날짜를 입력하면 두 방식 모두 같은 명반 데이터를 반환합니다.

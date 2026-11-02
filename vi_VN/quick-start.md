@@ -140,6 +140,36 @@ var iztro = require("iztro");
 
 :::
 
+### Kiểm tra phiên bản {#读取版本号}
+
+Dùng `version` để lấy phiên bản iztro đang được tải và so sánh trước và sau khi cập nhật. Giá trị được lấy từ `package.json` của gói. Phần đầu tệp UMD độc lập cũng chứa phiên bản và thông tin giấy phép MIT. API này sẽ có trong bản phát hành tiếp theo.
+
+:::tabs
+== ES6 Module
+
+```ts
+import { version } from "iztro";
+console.log(version);
+```
+
+== CommonJS
+
+```js
+var iztro = require("iztro");
+console.log(iztro.version);
+```
+
+== HTML
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/iztro/dist/iztro.min.js"></script>
+<script>
+  console.log(iztro.version);
+</script>
+```
+
+:::
+
 ### Lấy dữ liệu lá số {#获取星盘数据}
 
 Bạn có thể lập lá số Tử Vi Đẩu Số（紫微斗數） từ ngày `âm lịch` hoặc `lịch Gregory`. `iztro` hỗ trợ cả hai cách, nhưng chúng tôi khuyên dùng `lịch Gregory`. Khi nhập hai ngày tương ứng với nhau, cả hai cách đều trả về cùng dữ liệu lá số.
