@@ -1706,6 +1706,8 @@ type AstroType = 'heaven' | 'earth' | 'human';
 | `earth` | Earth chart（地盤）: derive the Five Elements Class from the body palace's stem and branch, and use that palace as the soul palace. |
 | `human` | Human chart（人盤）: derive the Five Elements Class from the spirit palace's stem and branch, and use that palace as the soul palace. |
 
+All three chart types place the body palace（身宮） using the birth lunar month and birth hour, with the same leap-month and late Zi-hour settings. When the earth or human chart reassigns the soul palace（命宮）, the body palace keeps its Earthly Branch; its palace name is determined by the rearranged twelve palaces. `earthlyBranchOfBodyPalace`, `isBodyPalace`, and the result of `palace('身宫')` remain consistent.
+
 ### `Plugin` {#plugin}
 
 Defines the plugin type. A plugin is simply a function.

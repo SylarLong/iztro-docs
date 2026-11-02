@@ -1706,6 +1706,8 @@ type AstroType = 'heaven' | 'earth' | 'human';
 | `earth` | Địa bàn（地盤）: xác định cục ngũ hành từ can chi của cung Thân, rồi lấy cung Thân làm cung Mệnh. |
 | `human` | Nhân bàn（人盤）: xác định cục ngũ hành từ can chi của cung Phúc Đức, rồi lấy cung Phúc Đức làm cung Mệnh. |
 
+Cả thiên bàn（天盤）, địa bàn（地盤） và nhân bàn（人盤） đều an cung Thân（身宮） theo tháng âm lịch và giờ sinh, với cùng thiết lập về tháng nhuận và giờ Tý muộn（晚子時）. Khi địa bàn hoặc nhân bàn xác định lại cung Mệnh（命宮）, địa chi của cung Thân không dịch chuyển theo; tên cung tại vị trí đó được xác định theo mười hai cung sau khi sắp xếp lại. `earthlyBranchOfBodyPalace`, `isBodyPalace` và kết quả truy vấn `palace('身宫')` luôn nhất quán.
+
 ### `Plugin` {#plugin}
 
 Định nghĩa kiểu trình cắm. Thực chất, một trình cắm là một hàm.
