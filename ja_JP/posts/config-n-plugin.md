@@ -55,6 +55,34 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 `v2.6.2` 以降、`astro.config()` が設定するのは、その後に作成する命盤の既定値だけです。`withOptions({ config })` は今回作成する命盤の設定だけを上書きし、グローバルな既定値を変更しません。既存の命盤とその運限・四化分析は、作成時の設定と言語を保持します。単発の命盤作成でグローバル設定を変更する古いコードは、`astro.config()` の明示的な呼び出しに変更してください。
 :::
 
+### setLanguage() {#setlanguage}
+
+単独で呼び出すユーティリティ関数のグローバルな出力言語を設定します。初期値は `zh-CN` です。例えば、`astro.setLanguage('en-US')` を呼び出すと、単独で呼び出す `util.getMutagensByHeavenlyStem()` は英語の星曜名を返します。`zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR`、`vi-VN` に対応しています。無効な言語を指定するとエラーが発生し、元の設定は維持されます。
+
+```ts
+type setLanguage = (language: Language) => void;
+```
+
+作成済みの命盤や、その後の照会に使われる言語は変わりません。命盤作成と日付補助メソッドはそれぞれの `language` 引数を使い、省略時は `zh-CN` になります。`astro.resetConfig()` はグローバル言語をリセットしません。初期値に戻すには `astro.setLanguage('zh-CN')` を呼び出してください。
+
+```ts
+import { astro, util } from 'iztro';
+
+astro.setLanguage('en-US');
+console.log(astro.getLanguage()); // en-US
+console.log(util.getMutagensByHeavenlyStem('geng'));
+// ['sun', 'warrior', 'moon', 'fortunate']
+astro.setLanguage('zh-CN');
+```
+
+### getLanguage() {#getlanguage}
+
+現在有効な言語を取得します。命盤のメソッドやプラグイン内では、その命盤を作成したときの言語を返します。計算のコンテキスト外では、グローバル言語を返します。
+
+```ts
+type getLanguage = () => Language;
+```
+
 ### getConfig() <Badge type="warning" text="^2.3.0" /> {#getconfig}
 
 - 目的

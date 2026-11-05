@@ -55,6 +55,34 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 `v2.6.2`부터 `astro.config()`는 이후 새로 생성하는 명반의 기본값만 설정합니다. `withOptions({ config })`는 이번에 생성하는 명반의 설정만 덮어쓰며 전역 기본값을 바꾸지 않습니다. 이미 생성한 명반과 그 운한·사화 분석은 생성 당시의 설정과 언어를 유지합니다. 기존 코드가 명반 생성 호출로 전역 설정을 바꾸는 방식에 의존했다면 `astro.config()`를 명시적으로 호출하세요.
 :::
 
+### setLanguage() {#setlanguage}
+
+독립적으로 호출하는 유틸리티 함수의 전역 출력 언어를 설정합니다. 초기값은 `zh-CN`입니다. 예를 들어 `astro.setLanguage('en-US')`를 호출하면 독립적으로 호출하는 `util.getMutagensByHeavenlyStem()`은 영어 성요（星曜） 이름을 반환합니다. `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, `vi-VN`을 지원합니다. 잘못된 언어를 지정하면 오류가 발생하며 기존 설정은 유지됩니다.
+
+```ts
+type setLanguage = (language: Language) => void;
+```
+
+이 설정은 이미 생성된 명반이나 이후 조회에 쓰이는 언어를 바꾸지 않습니다. 명반 생성 및 날짜 보조 메서드는 각각의 `language` 인수를 사용하며, 생략하면 `zh-CN`을 사용합니다. `astro.resetConfig()`는 전역 언어를 초기화하지 않습니다. 초기값으로 복원하려면 `astro.setLanguage('zh-CN')`를 호출하세요.
+
+```ts
+import { astro, util } from 'iztro';
+
+astro.setLanguage('en-US');
+console.log(astro.getLanguage()); // en-US
+console.log(util.getMutagensByHeavenlyStem('geng'));
+// ['sun', 'warrior', 'moon', 'fortunate']
+astro.setLanguage('zh-CN');
+```
+
+### getLanguage() {#getlanguage}
+
+현재 적용되는 언어를 가져옵니다. 명반 메서드나 플러그인 내부에서는 해당 명반을 생성할 때 사용한 언어를 반환하고, 계산 컨텍스트 밖에서는 전역 언어를 반환합니다.
+
+```ts
+type getLanguage = () => Language;
+```
+
 ### getConfig() <Badge type="warning" text="^2.3.0" /> {#getconfig}
 
 - 목적

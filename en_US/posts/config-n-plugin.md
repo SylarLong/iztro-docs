@@ -55,6 +55,34 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 From `v2.6.2`, `astro.config()` sets defaults only for charts created afterward. `withOptions({ config })` overrides settings only for the chart being created and does not alter the global defaults. Existing charts and their horoscope periods and transformation analyses retain the settings and language used when they were created. If older code relied on one charting call changing global settings, call `astro.config()` explicitly instead.
 :::
 
+### setLanguage() {#setlanguage}
+
+Set the global output language for standalone utilities. The initial value is `zh-CN`. For example, after calling `astro.setLanguage('en-US')`, a standalone call to `util.getMutagensByHeavenlyStem()` returns English star names. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, and `vi-VN`. An invalid language throws an error and leaves the previous setting unchanged.
+
+```ts
+type setLanguage = (language: Language) => void;
+```
+
+This setting does not change the language of existing charts or their subsequent queries. Chart and date helper methods still use their own `language` parameter and default to `zh-CN` when it is omitted. `astro.resetConfig()` does not reset the global language; call `astro.setLanguage('zh-CN')` to restore it.
+
+```ts
+import { astro, util } from 'iztro';
+
+astro.setLanguage('en-US');
+console.log(astro.getLanguage()); // en-US
+console.log(util.getMutagensByHeavenlyStem('geng'));
+// ['sun', 'warrior', 'moon', 'fortunate']
+astro.setLanguage('zh-CN');
+```
+
+### getLanguage() {#getlanguage}
+
+Get the currently effective language. Inside chart methods or plugins, this returns the language used to create that chart. Outside a calculation context, it returns the global language.
+
+```ts
+type getLanguage = () => Language;
+```
+
 ### getConfig() <Badge type="warning" text="^2.3.0" /> {#getconfig}
 
 - Purpose

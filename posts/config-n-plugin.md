@@ -55,6 +55,34 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 从 `v2.6.2` 开始，`astro.config()` 仅设置后续新建星盘的默认配置；`withOptions({ config })` 仅覆盖当前星盘，不再写入全局默认配置。已有星盘及其运限、四化分析保留生成时的配置和语言。旧代码若依赖单次排盘修改全局配置，请改为显式调用 `astro.config()`。
 :::
 
+### setLanguage() {#setlanguage}
+
+设置独立工具函数的全局输出语言，初始为 `zh-CN`。例如，调用 `astro.setLanguage('en-US')` 后，独立调用 `util.getMutagensByHeavenlyStem()` 将返回英文星名。支持 `zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR` 和 `vi-VN`；非法语言会抛出错误并保留原设置。
+
+```ts
+type setLanguage = (language: Language) => void;
+```
+
+此设置不会改变已有星盘及其后续查询的语言。排盘和日期辅助方法仍使用自己的 `language` 参数，省略时默认为 `zh-CN`。`astro.resetConfig()` 不重置全局语言；需要恢复时请调用 `astro.setLanguage('zh-CN')`。
+
+```ts
+import { astro, util } from 'iztro';
+
+astro.setLanguage('en-US');
+console.log(astro.getLanguage()); // en-US
+console.log(util.getMutagensByHeavenlyStem('geng'));
+// ['sun', 'warrior', 'moon', 'fortunate']
+astro.setLanguage('zh-CN');
+```
+
+### getLanguage() {#getlanguage}
+
+获取当前生效的语言：在星盘方法或插件内返回该星盘生成时的语言，在计算上下文之外返回全局语言。
+
+```ts
+type getLanguage = () => Language;
+```
+
 ### getConfig() <Badge type="warning" text="^2.3.0" />
 
 - 用途

@@ -55,6 +55,34 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 Từ `v2.6.2`, `astro.config()` chỉ đặt cấu hình mặc định cho các lá số tạo sau đó. `withOptions({ config })` chỉ ghi đè cấu hình cho lá số đang được tạo, không thay đổi cấu hình mặc định toàn cục. Lá số đã có và phần phân tích vận hạn, tứ hóa giữ cấu hình và ngôn ngữ lúc tạo. Nếu mã cũ dựa vào một lần lập lá số để đổi cấu hình toàn cục, hãy gọi `astro.config()` một cách tường minh.
 :::
 
+### setLanguage() {#setlanguage}
+
+Đặt ngôn ngữ đầu ra toàn cục cho các hàm tiện ích được gọi độc lập. Giá trị ban đầu là `zh-CN`. Ví dụ, sau khi gọi `astro.setLanguage('en-US')`, lời gọi độc lập tới `util.getMutagensByHeavenlyStem()` sẽ trả về tên sao bằng tiếng Anh. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR` và `vi-VN`. Ngôn ngữ không hợp lệ sẽ gây lỗi và giữ nguyên thiết lập trước đó.
+
+```ts
+type setLanguage = (language: Language) => void;
+```
+
+Thiết lập này không thay đổi ngôn ngữ của các lá số đã tạo hoặc các lần truy vấn tiếp theo của chúng. Các phương thức tạo lá số và hỗ trợ ngày vẫn dùng tham số `language` riêng, mặc định là `zh-CN` khi bỏ qua. `astro.resetConfig()` không đặt lại ngôn ngữ toàn cục; hãy gọi `astro.setLanguage('zh-CN')` để khôi phục giá trị ban đầu.
+
+```ts
+import { astro, util } from 'iztro';
+
+astro.setLanguage('en-US');
+console.log(astro.getLanguage()); // en-US
+console.log(util.getMutagensByHeavenlyStem('geng'));
+// ['sun', 'warrior', 'moon', 'fortunate']
+astro.setLanguage('zh-CN');
+```
+
+### getLanguage() {#getlanguage}
+
+Lấy ngôn ngữ hiện đang có hiệu lực. Bên trong phương thức hoặc trình cắm của lá số, hàm trả về ngôn ngữ được dùng khi tạo lá số đó. Bên ngoài ngữ cảnh tính toán, hàm trả về ngôn ngữ toàn cục.
+
+```ts
+type getLanguage = () => Language;
+```
+
 ### getConfig() <Badge type="warning" text="^2.3.0" /> {#getconfig}
 
 - Mục đích
