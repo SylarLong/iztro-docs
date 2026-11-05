@@ -1678,7 +1678,7 @@ type Config = {
  yearDivide?: 'normal' | 'exact';
  // 運限分割點配置（^v2.4.3）
  horoscopeDivide?: 'normal' | 'exact';
- // 小限分割點配置，normal為以自然年分界，birthday為生日分界（^v2.4.5）
+ // 虛歲分界（影響大限與小限），normal 以農曆正月初一為界，birthday 比較農曆生日（^v2.4.5）
  // 預設為 normal
  ageDivide?: 'normal' | 'birthday';
  // 晚子時配置，current 時晚子時算當日，forward 時晚子時算次日（^v2.5.2）

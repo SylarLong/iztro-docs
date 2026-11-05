@@ -37,9 +37,11 @@ astro.config({
 | `language` <Badge type="warning" text="^2.6.5" /> | [`Language`](../type-definition.md#language) | `zh-CN` | 既定の出力言語。明示的な `language` 引数が優先 |
 | `yearDivide` <Badge type="warning" text="^2.4.0" /> | `normal` \| `exact` | `normal` | 年の干支の区切り。`normal` は旧暦正月初一、`exact` は節気の立春を境とします。 |
 | `horoscopeDivide` <Badge type="warning" text="^2.4.3" /> | `normal` \| `exact` | `normal` | 運限で使う年と月の干支の区切り |
-| `ageDivide` <Badge type="warning" text="^2.4.5" /> | `normal` \| `birthday` | `normal` | 小限の数え年の区切り。`normal` は暦年、`birthday` は旧暦の誕生日を境とします。 |
+| `ageDivide` <Badge type="warning" text="^2.4.5" /> | `normal` \| `birthday` | `normal` | 大限と小限に使う数え年の区切り。`normal` は旧暦の元日を境とし、`birthday` は旧暦の誕生日と比較します。 |
 | `dayDivide` <Badge type="warning" text="^2.5.2" /> | `forward` \| `current` | `forward` | 晩子時をどの日に属させるか。`forward` は翌日、`current` は当日として扱います。 |
 | `algorithm` <Badge type="warning" text="^2.5.0" /> | `default` \| `zhongzhou` | `default` | 星曜の配置規則。`default` は一般的な方式、`zhongzhou` は中州派の方式です。 |
+
+年齢の計算式、旧暦の誕生日による区切り、大限の宮のインデックスの例は、[数え年と宮のインデックス](./horoscope.md#虚岁与宫位索引)を参照してください。
 
 `v2.6.4` 以降、晩子時の日付切り替えを統一して処理します。`dayDivide: 'forward'` では、命盤全体とその後の運限を翌日の早子時として計算し、旧暦の月・年・閏月の状態もまとめて更新します。`current` では、当日の早子時として計算します。
 

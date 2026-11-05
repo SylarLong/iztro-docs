@@ -13,8 +13,38 @@ description: "Truy vấn vận hạn trên lá số bằng API horoscope của i
 Vận hạn（運限） trong Tử Vi Đẩu Số（紫微斗數） gồm `Đại Hạn`（大限）, `Tiểu Hạn`（小限）, `Lưu Niên`（流年）, `Lưu Nguyệt`（流月）, `Lưu Nhật`（流日）, `Lưu Thì`（流時）, `vận hạn theo phút`（流分）, `vận hạn theo giây`（流秒） và các chu kỳ khác. Về khái niệm và cách dùng, xem [vận hạn](/vi_VN/learn/horoscope.md). `iztro` hỗ trợ `Đại Hạn`（大限）, `Tiểu Hạn`（小限）, `Lưu Niên`（流年）, `Lưu Nguyệt`（流月）, `Lưu Nhật`（流日） và `Lưu Thì`（流時）. Trong đó, `Đại Hạn`（大限）, `Lưu Niên`（流年）, `Lưu Nguyệt`（流月）, `Lưu Nhật`（流日）, `Lưu Thì`（流時） cung cấp `lưu diệu`（流曜） và `tứ hóa`（四化）. Lưu diệu cho `Lưu Nguyệt`（流月）, `Lưu Nhật`（流日）, `Lưu Thì`（流時） có từ `v2.4.4`. `Tiểu Hạn`（小限） không có lưu diệu độc lập; tứ hóa của `Tiểu Hạn`（小限） được tính theo `can của cung`（宮干） của cung ấy.
 
 :::tip Mẹo
-Ranh giới đổi can chi năm, tháng của vận hạn（運限） theo cấu hình [`horoscopeDivide`](./config-n-plugin.md#配置) đã lưu trong lá số; ranh giới tuổi mụ（虛歲） cho tiểu hạn（小限） do `ageDivide` quy định.
+Ranh giới đổi can chi năm, tháng của vận hạn（運限） theo cấu hình [`horoscopeDivide`](./config-n-plugin.md#配置) đã lưu trong lá số. `ageDivide` quy định cách tính tuổi mụ（虛歲）, ảnh hưởng đến cả đại hạn（大限） và tiểu hạn（小限）.
 :::
+
+### Tuổi mụ và chỉ số cung {#虚岁与宫位索引}
+
+Mặc định `ageDivide: 'normal'` dùng tuổi mụ（虛歲） truyền thống: lúc sinh được tính là một tuổi và mỗi dịp Tết Nguyên đán lại thêm một tuổi. Công thức là “năm âm lịch của ngày tra cứu − năm âm lịch của ngày sinh + 1”, khác với số năm dương lịch đã sống. `horoscopeDivide` không thay đổi công thức tính tuổi này.
+
+`ageDivide: 'birthday'` dùng mốc khác: so sánh tháng và ngày âm lịch, lấy hiệu hai năm âm lịch nếu ngày tra cứu trước hoặc đúng sinh nhật âm lịch, và chỉ cộng thêm một sau ngày sinh nhật đó. Đây cũng không phải cách tính tuổi theo ngày sinh dương lịch.
+
+Ví dụ, ngày sinh dương lịch `1980-02-14` tương ứng âm lịch `1979-12-28`, còn ngày tra cứu dương lịch `1990-02-14` tương ứng âm lịch `1990-01-19`. Tuổi mụ truyền thống là `1990 - 1979 + 1 = 12`:
+
+```ts
+import { astro } from 'iztro';
+
+astro.resetConfig();
+astro.config({
+  yearDivide: 'normal',
+  horoscopeDivide: 'normal',
+  ageDivide: 'normal',
+  language: 'en-US',
+});
+
+const chart = astro.bySolar('1980-02-14', 0, 'male', true);
+const horoscope = chart.horoscope('1990-02-14', 0);
+console.log(horoscope.age.nominalAge); // 12
+console.log(horoscope.decadal.index); // 10
+console.log(horoscope.decadal.palaceNames[0]); // 'spirit'
+```
+
+Lá số này thuộc Thủy Nhị Cục（水二局）: đại hạn（大限） đầu tiên tính từ 2–11 tuổi mụ, đại hạn thứ hai từ 12–21 tuổi mụ. Vì vậy, ngày tra cứu đã thuộc đại hạn thứ hai. `decadal.index` là chỉ số cung bản mệnh mà đại hạn hiện tại đóng tại đó. Còn `decadal.palaceNames[i]` là tên cung vận hạn ở chỉ số cố định `i`; không thể coi `palaceNames[0]` là tên cung bản mệnh mà đại hạn hiện tại đóng tại đó. Trong ví dụ này, đại hạn thứ hai đóng tại cung Huynh Đệ（兄弟） bản mệnh, còn tên cung vận hạn ở chỉ số 0 là `spirit`（福德）. Kết quả của phiên bản mới phù hợp với quy tắc tuổi mụ truyền thống.
+
+`v2.4.3` tính tuổi là 11 và trả về `parents` trong ví dụ này. Nếu chọn `ageDivide: 'birthday'` ở phiên bản hiện tại, ví dụ này cũng cho tuổi 11 và `parents`. Tùy chọn này vẫn áp dụng các bản sửa cách tính tuổi về sau, nên không bảo đảm mọi kết quả đều giống `v2.4.3`.
 
 
 ## Lớp và phương thức phân tích {#功能类定义}

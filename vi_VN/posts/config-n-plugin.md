@@ -37,9 +37,11 @@ Ngoài `mutagens` và `brightness`, các tùy chọn sau cho phép điều chỉ
 | `language` <Badge type="warning" text="^2.6.5" /> | [`Language`](../type-definition.md#language) | `zh-CN` | Ngôn ngữ đầu ra mặc định; tham số `language` được truyền tường minh có độ ưu tiên cao hơn |
 | `yearDivide`   <Badge type="warning" text="^2.4.0" /> | `normal`  \|  `exact` | `normal` | Mốc phân chia can chi năm: `normal` lấy mồng một tháng Giêng âm lịch, `exact` lấy tiết Lập Xuân. |
 | `horoscopeDivide`   <Badge type="warning" text="^2.4.3" /> | `normal`  \|  `exact` | `normal` | Mốc phân chia can chi năm và tháng dùng cho vận hạn |
-| `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | Mốc tính tuổi mụ cho tiểu hạn: `normal` dựa vào năm theo lịch, `birthday` lấy sinh nhật âm lịch làm mốc. |
+| `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | Mốc tính tuổi mụ, ảnh hưởng đến đại hạn và tiểu hạn: `normal` lấy Tết Nguyên đán làm mốc; `birthday` so sánh với sinh nhật âm lịch. |
 | `dayDivide`   <Badge type="warning" text="^2.5.2" /> | `forward`  \|  `current` | `forward` | Ngày được gán cho giờ Tý muộn: `forward` tính sang ngày hôm sau, `current` tính trong ngày hiện tại. |
 | `algorithm`   <Badge type="warning" text="^2.5.0" /> | `default`  \|  `zhongzhou` | `default` | Quy tắc an sao: `default` dùng cách thông dụng, `zhongzhou` dùng cách của phái Trung Châu. |
+
+Xem [tuổi mụ và chỉ số cung](./horoscope.md#虚岁与宫位索引) để biết công thức tính tuổi, mốc sinh nhật âm lịch và ví dụ về chỉ số cung đại hạn.
 
 Từ `v2.6.4`, quy tắc đổi ngày cho giờ Tý muộn（晚子時） được áp dụng thống nhất. Với `dayDivide: 'forward'`, toàn bộ lá số（星盤） và dữ liệu vận hạn（運限） về sau được tính theo giờ Tý sớm（早子時） của ngày kế tiếp; tháng âm lịch, năm và trạng thái tháng nhuận cũng được cập nhật cùng lúc. Với `current`, phép tính dùng giờ Tý sớm（早子時） của ngày hiện tại.
 

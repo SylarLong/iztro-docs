@@ -37,9 +37,11 @@ astro.config({
 | `language` <Badge type="warning" text="^2.6.5" /> | [`Language`](../type-definition.md#language) | `zh-CN` | 기본 출력 언어. 명시적으로 전달한 `language` 인수가 우선 |
 | `yearDivide`   <Badge type="warning" text="^2.4.0" /> | `normal`  \|  `exact` | `normal` | 연도 간지의 경계. `normal`은 음력 정월 초하루, `exact`는 절기인 입춘을 기준으로 합니다. |
 | `horoscopeDivide`   <Badge type="warning" text="^2.4.3" /> | `normal`  \|  `exact` | `normal` | 운한 계산에 사용하는 연·월 간지의 경계 |
-| `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | 소한의 세는나이 경계. `normal`은 달력상의 연도, `birthday`는 음력 생일을 기준으로 합니다. |
+| `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | 대한과 소한에 사용하는 세는나이의 경계. `normal`은 음력 설을 기준으로 하며, `birthday`는 음력 생일과 비교합니다. |
 | `dayDivide`   <Badge type="warning" text="^2.5.2" /> | `forward`  \|  `current` | `forward` | 만자시를 어느 날짜에 포함할지 정합니다. `forward`는 다음 날, `current`는 당일로 계산합니다. |
 | `algorithm`   <Badge type="warning" text="^2.5.0" /> | `default`  \|  `zhongzhou` | `default` | 안성 규칙（安星規則）; `default`는 일반적인 배치법이고, `zhongzhou`는 중주파（中州派）의 배치법입니다 |
+
+나이 계산식, 음력 생일 경계, 대한의 궁 인덱스 예시는 [세는나이와 궁 인덱스](./horoscope.md#虚岁与宫位索引)를 참고하세요.
 
 `v2.6.4`부터 만자시（晚子時）의 날짜 전환을 일관되게 처리합니다. `dayDivide: 'forward'`이면 명반（星盤） 전체와 이후 운한（運限）을 다음 날 조자시（早子時）로 계산하며 음력 월, 연도, 윤달 여부도 함께 갱신합니다. `current`이면 당일 조자시（早子時）로 계산합니다.
 

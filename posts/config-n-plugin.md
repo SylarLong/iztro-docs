@@ -37,9 +37,11 @@ astro.config({
 | `language` <Badge type="warning" text="^2.6.5" /> | [`Language`](../type-definition.md#language) | `zh-CN` | 默认输出语言；显式 `language` 参数优先 |
 | `yearDivide` <Badge type="warning" text="^2.4.0" /> | `normal` \| `exact` | `normal` | 年干支分界；`normal` 以农历正月初一为界，`exact` 以立春为界 |
 | `horoscopeDivide` <Badge type="warning" text="^2.4.3" /> | `normal` \| `exact` | `normal` | 运限使用的年、月干支分界 |
-| `ageDivide` <Badge type="warning" text="^2.4.5" /> | `normal` \| `birthday` | `normal` | 小限虚岁分界；`normal` 只看自然年，`birthday` 以农历生日为界 |
+| `ageDivide` <Badge type="warning" text="^2.4.5" /> | `normal` \| `birthday` | `normal` | 虚岁分界，影响大限与小限；`normal` 以农历正月初一为界，`birthday` 按农历生日判断 |
 | `dayDivide` <Badge type="warning" text="^2.5.2" /> | `forward` \| `current` | `forward` | 晚子时归属；`forward` 归入次日，`current` 归入当日 |
 | `algorithm` <Badge type="warning" text="^2.5.0" /> | `default` \| `zhongzhou` | `default` | 安星规则；`default` 为通行版本，`zhongzhou` 为中州派版本 |
+
+虚岁的计算公式、农历生日分界及大限宫位索引示例见 [虚岁与宫位索引](./horoscope.md#虚岁与宫位索引)。
 
 自 `v2.6.4` 起，统一处理晚子时换日：`dayDivide: 'forward'` 时，整张盘与后续运限按次日早子时计算，农历月份、年份和闰月状态会一并更新；`current` 时按当日早子时计算。
 

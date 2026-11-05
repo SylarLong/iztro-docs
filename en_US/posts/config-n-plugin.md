@@ -37,9 +37,11 @@ Besides `mutagens` and `brightness`, the following options let you adjust chart-
 | `language` <Badge type="warning" text="^2.6.5" /> | [`Language`](../type-definition.md#language) | `zh-CN` | Default output language; an explicit `language` parameter takes precedence |
 | `yearDivide`   <Badge type="warning" text="^2.4.0" /> | `normal`  \|  `exact` | `normal` | Year stem-and-branch boundary: `normal` uses the first day of the first lunar month; `exact` uses the Start of Spring solar term. |
 | `horoscopeDivide`   <Badge type="warning" text="^2.4.3" /> | `normal`  \|  `exact` | `normal` | Year and month stem-and-branch boundaries used for horoscope periods |
-| `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | Annual age-period nominal-age boundary: `normal` uses the calendar year; `birthday` uses the lunar birthday. |
+| `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | Nominal-age boundary, affecting decadal and annual age periods: `normal` uses Lunar New Year; `birthday` compares the lunar birthday. |
 | `dayDivide`   <Badge type="warning" text="^2.5.2" /> | `forward`  \|  `current` | `forward` | Date assignment for the late Zi hour: `forward` assigns it to the following day; `current` to the same day. |
 | `algorithm`   <Badge type="warning" text="^2.5.0" /> | `default`  \|  `zhongzhou` | `default` | Star-placement rules: `default` uses the standard version; `zhongzhou` uses the Zhongzhou school version. |
+
+For the age formula, lunar-birthday boundary and a decadal palace-index example, see [nominal age and palace indices](./horoscope.md#虚岁与宫位索引).
 
 From `v2.6.4`, `dayDivide: 'forward'` calculates the entire chart and subsequent time-cycle data using the following day's early Zi hour（早子時）, updating the lunar month, year and leap-month status together. `current` uses the current day's early Zi hour（早子時）.
 

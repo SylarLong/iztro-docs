@@ -1182,12 +1182,12 @@
       "decision": "corrected"
     },
     {
-      "source": "小限虚岁分界；`normal` 只看自然年，`birthday` 以农历生日为界",
+      "source": "虚岁分界，影响大限与小限；`normal` 以农历正月初一为界，`birthday` 按农历生日判断",
       "kind": "markdown",
       "targets": {
-        "en_US": "Annual age-period nominal-age boundary: `normal` uses the calendar year; `birthday` uses the lunar birthday.",
-        "ja_JP": "小限の数え年の区切り。`normal` は暦年、`birthday` は旧暦の誕生日を境とします。",
-        "vi_VN": "Mốc tính tuổi mụ cho tiểu hạn: `normal` dựa vào năm theo lịch, `birthday` lấy sinh nhật âm lịch làm mốc."
+        "en_US": "Nominal-age boundary, affecting decadal and annual age periods: `normal` uses Lunar New Year; `birthday` compares the lunar birthday.",
+        "ja_JP": "大限と小限に使う数え年の区切り。`normal` は旧暦の元日を境とし、`birthday` は旧暦の誕生日と比較します。",
+        "vi_VN": "Mốc tính tuổi mụ, ảnh hưởng đến đại hạn và tiểu hạn: `normal` lấy Tết Nguyên đán làm mốc; `birthday` so sánh với sinh nhật âm lịch."
       },
       "decision": "corrected"
     },
@@ -5028,10 +5028,10 @@
     },
     {
       "file": "posts/config-n-plugin.md",
-      "source": "小限虚岁分界；`normal` 只看自然年，`birthday` 以农历生日为界",
+      "source": "虚岁分界，影响大限与小限；`normal` 以农历正月初一为界，`birthday` 按农历生日判断",
       "kind": "markdown",
       "targets": {
-        "ko_KR": "소한의 세는나이 경계. `normal`은 달력상의 연도, `birthday`는 음력 생일을 기준으로 합니다."
+        "ko_KR": "대한과 소한에 사용하는 세는나이의 경계. `normal`은 음력 설을 기준으로 하며, `birthday`는 음력 생일과 비교합니다."
       },
       "decision": "corrected"
     },

@@ -13,8 +13,38 @@ description: "Query time cycles in a Zi Wei Dou Shu chart with iztro’s horosco
 Fortune periods（運限） in Zi Wei Dou Shu（紫微斗數） include `decadal`（大限）, `age`（小限）, `yearly`（流年）, `monthly`（流月）, `daily`（流日）, `hourly`（流時）, `minute-level cycle`（流分）, `second-level cycle`（流秒）, and other cycles. For the concepts and their uses, see [fortune periods（運限）](/en_US/learn/horoscope.md). `iztro` supports `decadal`（大限）, `age`（小限）, `yearly`（流年）, `monthly`（流月）, `daily`（流日）, and `hourly`（流時）. Of these, `decadal`（大限）, `yearly`（流年）, `monthly`（流月）, `daily`（流日）, and `hourly`（流時） provide `transit stars`（流曜） and `four transformations`（四化）. Transit stars for `monthly`（流月）, `daily`（流日）, and `hourly`（流時） have been available since `v2.4.4`. `age`（小限） has no independent transit stars; the transformations of `age`（小限） are calculated from its `palace stem`（宮干）.
 
 :::tip Tips
-Year and month boundaries for fortune-period stem-and-branch calculations follow the chart’s saved [`horoscopeDivide`](./config-n-plugin.md#配置) configuration; the nominal-age boundary for the annual age period（小限） follows `ageDivide`.
+Year and month boundaries for fortune-period stem-and-branch calculations follow the chart’s saved [`horoscopeDivide`](./config-n-plugin.md#配置) configuration. `ageDivide` controls nominal age and affects both decadal（大限） and annual age periods（小限）.
 :::
+
+### Nominal age and palace indices {#虚岁与宫位索引}
+
+The default `ageDivide: 'normal'` uses traditional nominal age（虛歲）: a person is one at birth and gains a year at each Lunar New Year. The formula is “target lunar year − birth lunar year + 1”, rather than elapsed Gregorian years. `horoscopeDivide` does not change this age formula.
+
+`ageDivide: 'birthday'` uses a different boundary: it compares lunar months and days, returning the lunar-year difference on or before the lunar birthday and adding one only after that birthday. This is also different from Western chronological age.
+
+For example, a Gregorian birth date of `1980-02-14` is lunar `1979-12-28`, while the target Gregorian date `1990-02-14` is lunar `1990-01-19`. Traditional nominal age is `1990 - 1979 + 1 = 12`:
+
+```ts
+import { astro } from 'iztro';
+
+astro.resetConfig();
+astro.config({
+  yearDivide: 'normal',
+  horoscopeDivide: 'normal',
+  ageDivide: 'normal',
+  language: 'en-US',
+});
+
+const chart = astro.bySolar('1980-02-14', 0, 'male', true);
+const horoscope = chart.horoscope('1990-02-14', 0);
+console.log(horoscope.age.nominalAge); // 12
+console.log(horoscope.decadal.index); // 10
+console.log(horoscope.decadal.palaceNames[0]); // 'spirit'
+```
+
+This is a water 2nd（水二局） chart. Its first decadal period（大限） covers nominal ages 2–11 and the second covers 12–21, so the second period has begun. `decadal.index` identifies the natal palace occupied by the active period. `decadal.palaceNames[i]` is the fortune-period palace name at the fixed index `i`; `palaceNames[0]` is not the name of the natal palace occupied by the active period. Here, the second period occupies the natal siblings palace（兄弟）, and the fortune-period name at index 0 is `spirit`（福德）. The newer result follows traditional nominal age correctly.
+
+`v2.4.3` calculated age 11 and returned `parents` in this example. Choosing `ageDivide: 'birthday'` in the current version also produces age 11 and `parents` here. This option includes later age-calculation fixes; it is not a compatibility switch guaranteeing every `v2.4.3` result.
 
 
 ## Classes and analysis methods {#功能类定义}

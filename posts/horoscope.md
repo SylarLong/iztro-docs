@@ -13,8 +13,38 @@ outline: deep
 紫微斗数的运限分为 `大限`、`小限`、`流年`、`流月`、`流日`、`流时`、`流分`、`流秒` 等等，如果你还不知道运限的概念或不知道能为你做什么，请阅读 [紫微斗数运限](/learn/horoscope.md)。在 `iztro` 中，仅提供 `大限`、`小限`、`流年`、`流月`、`流日`、`流时`。其中，`大限`、`流年`、`流月`、`流日` 和 `流时` 都会提供 `流曜` 与 `四化`；`流月`、`流日`、`流时` 的流曜从 `v2.4.4` 起提供。`小限` 比较特殊，它没有独立的流曜，`小限` 的四化是以该宫位的 `宫干` 来起四化的。
 
 :::tip 提示
-运限的年、月干支分界由星盘生成时保存的配置项 [`horoscopeDivide`](./config-n-plugin.md#配置) 控制；小限虚岁分界由 `ageDivide` 控制。
+运限的年、月干支分界由星盘生成时保存的配置项 [`horoscopeDivide`](./config-n-plugin.md#配置) 控制；`ageDivide` 控制虚岁计算，影响大限与小限。
 :::
+
+### 虚岁与宫位索引 {#虚岁与宫位索引}
+
+默认的 `ageDivide: 'normal'` 使用传统虚岁：出生记为一岁，每逢农历正月初一加一岁。计算公式为“查询日期的农历年 − 出生日期的农历年 + 1”，并非公历周岁；`horoscopeDivide` 不改变这个虚岁公式。
+
+`ageDivide: 'birthday'` 使用另一种分界规则：比较农历月、日，查询日在农历生日当天或之前时取农历年差，生日之后才再加一。这不是公历周岁的计算方法。
+
+例如，公历 `1980-02-14` 出生对应农历 `1979-12-28`，查询公历 `1990-02-14` 对应农历 `1990-01-19`，传统虚岁为 `1990 - 1979 + 1 = 12`：
+
+```ts
+import { astro } from 'iztro';
+
+astro.resetConfig();
+astro.config({
+  yearDivide: 'normal',
+  horoscopeDivide: 'normal',
+  ageDivide: 'normal',
+  language: 'en-US',
+});
+
+const chart = astro.bySolar('1980-02-14', 0, 'male', true);
+const horoscope = chart.horoscope('1990-02-14', 0);
+console.log(horoscope.age.nominalAge); // 12
+console.log(horoscope.decadal.index); // 10
+console.log(horoscope.decadal.palaceNames[0]); // 'spirit'
+```
+
+该盘为水二局，首个大限为 2–11 虚岁，第二个大限为 12–21 虚岁，因此已进入第二个大限。`decadal.index` 是当前大限所在的本命宫位索引；`decadal.palaceNames[i]` 则是固定索引 `i` 上的运限宫名，不能把 `palaceNames[0]` 当成当前大限所在的本命宫名。本例第二个大限位于本命兄弟宫，固定第 0 宫的运限宫名为 `spirit`（福德），新版结果符合传统虚岁规则。
+
+`v2.4.3` 在此例计算为 11 岁并返回 `parents`。当前版本若选择 `ageDivide: 'birthday'`，此例也会得到 11 岁和 `parents`；该选项包含后续版本的年龄修复，并不是保证所有结果与 `v2.4.3` 一致的兼容开关。
 
 
 ## 功能类定义
