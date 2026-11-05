@@ -63,7 +63,7 @@ var { astro } = require("iztro");
 
 `bySolar`、`byLunar`、`withOptions`が返す命盤は、生成時の設定と言語を保存します。グローバルの既定値を変更したり、別の言語で命盤を作ったりしても、既存の命盤の運限や四化の分析結果は変わりません。
 
-`withOptions`の`type`は省略でき、既定では陽暦を使います。`config`はその命盤の設定だけを上書きします。命盤の生成や日付補助メソッドで`language`を省略すると`zh-CN`となり、言語を指定しても他の呼び出しには影響しません。対応する値は`zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR`、`vi-VN`です。
+`withOptions`の`type`は省略でき、既定では陽暦を使います。`config`はその命盤の設定だけを上書きします。`astro.config({ language: 'en-US' })` で、以後の命盤作成、日付補助メソッド、単独で呼び出すユーティリティ関数の既定の出力言語を設定します。初期値は `zh-CN` です。`withOptions({ config: { language } })` はその命盤の言語だけを上書きし、明示的な `language` 引数が優先されます。個別の呼び出しでグローバルな既定値は変わらず、作成済みの命盤は作成時の言語を維持します。 対応する値は`zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR`、`vi-VN`です。
 
 年は1～9999で、陽暦または旧暦に実在する日付が必要です。日付文字列はハイフン、スラッシュ、ピリオドで区切れ、` HH:mm`または` HH:mm:ss`を付けられます。過去の陽暦の日付は、基盤となる暦のユリウス暦・グレゴリオ暦の切り替え規則に従います。時刻インデックスは0～12の整数です。未対応の性別、言語、日付の種類、命盤の種類や、真偽値でない閏月オプションはエラーになります。旧暦の日付は実際の月の日数で検証し、閏月のない月では`isLeapMonth: true`を無視します。
 
@@ -87,7 +87,7 @@ var { astro } = require("iztro");
     timeIndex: number,
     gender: GenderName,
     fixLeap: boolean = true,
-    language: Language = "zh-CN"
+    language?: Language
   ) => FunctionalAstrolabe;
   ```
 
@@ -99,7 +99,7 @@ var { astro } = require("iztro");
   | timeIndex | `number` | `true` | - | 出生時辰のインデックス [0–12]。早子時 (0) から晩子時 (12) に対応します。 |
   | gender | [`GenderName`](/ja_JP/type-definition.md#gendername) | `true` | - | 性別【男性/女性】 |
   | fixLeap | `boolean` | `false` | `true` | 閏月を調整するかどうか。`true` の場合、閏月の前半を前月、後半を翌月として扱います。 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 省略時は現在の設定の言語を使います。初期値は `zh-CN` です。 |
 
 - 戻り値
 
@@ -147,7 +147,7 @@ var { astro } = require("iztro");
   | gender | [`GenderName`](/ja_JP/type-definition.md#gendername) | `true` | - | 性別【男性/女性】 |
   | isLeapMonth | `boolean` | `false` | `false` | 指定した旧暦の月が閏月かどうか。その月に閏月がない場合、この引数は無効です。 |
   | fixLeap | `boolean` | `false` | `true` | 閏月を調整するかどうか。`true` の場合、閏月の前半を前月、後半を翌月として扱います。 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 省略時は現在の設定の言語を使います。初期値は `zh-CN` です。 |
 
 - 戻り値
 
@@ -199,7 +199,7 @@ var { astro } = require("iztro");
   | gender | [`GenderName`](/ja_JP/type-definition.md#gendername) | `true` | - | 性別【男性/女性】 |
   | isLeapMonth | `boolean` | `false` | `false` | 指定した旧暦の月が閏月かどうか。その月に閏月がない場合、この引数は無効です。 |
   | fixLeap | `boolean` | `false` | `true` | 閏月を調整するかどうか。`true` の場合、閏月の前半を前月、後半を翌月として扱います。 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 省略時は現在の設定の言語を使います。初期値は `zh-CN` です。 |
   | config | [`Config`](../type-definition.md#config) | `false` | - | 今回作成する命盤に限り、輝度・四化・時刻の区切り設定を上書きします (^2.6.2)。 |
   | astroType <Badge type="warning" text="^2.5.0" /> | [`AstroType`](../type-definition.md#astrotype) | `false` | `heaven` | 命盤の種類。`config.algorithm` が `zhongzhou` のときだけ、天盤・地盤・人盤の選択に使います。 |
 
@@ -255,7 +255,7 @@ var { astro } = require("iztro");
   | solarDateStr | `string` | `true` | - | グレゴリオ暦の日付【YYYY-M-D】 |
   | timeIndex | `number` | `true` | - | 出生時辰のインデックス [0–12]。早子時 (0) から晩子時 (12) に対応します。 |
   | fixLeap | `boolean` | `false` | `true` | 閏月を調整するかどうか。`true` の場合、閏月の前半を前月、後半を翌月として扱います。 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 省略時は現在の設定の言語を使います。初期値は `zh-CN` です。 |
 
 - 使用例
 
@@ -293,7 +293,7 @@ var { astro } = require("iztro");
   | timeIndex | `number` | `true` | - | 出生時辰のインデックス [0–12]。早子時 (0) から晩子時 (12) に対応します。 |
   | isLeapMonth | `boolean` | `false` | `false` | 指定した旧暦の月が閏月かどうか。その月に閏月がない場合、この引数は無効です。 |
   | fixLeap | `boolean` | `false` | `true` | 閏月を調整するかどうか。`true` の場合、閏月の前半を前月、後半を翌月として扱います。 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 省略時は現在の設定の言語を使います。初期値は `zh-CN` です。 |
 
 - 使用例
 
@@ -325,7 +325,7 @@ var { astro } = require("iztro");
   | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
   | --- | --- | --- | --- | --- |
   | solarDateStr | `string` | `true` | - | グレゴリオ暦の日付【YYYY-M-D】 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 省略時は現在の設定の言語を使います。初期値は `zh-CN` です。 |
 
 - 使用例
 
@@ -359,7 +359,7 @@ var { astro } = require("iztro");
   | --- | --- | --- | --- | --- |
   | lunarDateStr | `string` | `true` | - | 旧暦の日付 [YYYY-M-D]。`旧暦2000年7月17日`なら `2000-7-17` を渡します。 |
   | isLeapMonth | `boolean` | `false` | `false` | 指定した旧暦の月が閏月かどうか。その月に閏月がない場合、この引数は無効です。 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 省略時は現在の設定の言語を使います。初期値は `zh-CN` です。 |
 
 - 使用例
 
@@ -389,7 +389,7 @@ var { astro } = require("iztro");
   | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
   | --- | --- | --- | --- | --- |
   | solarDateStr | `string` | `true` | - | グレゴリオ暦の日付【YYYY-M-D】 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 省略時は現在の設定の言語を使います。初期値は `zh-CN` です。 |
 
 - 使用例
 
@@ -418,7 +418,7 @@ var { astro } = require("iztro");
   | パラメータ | 型 | 必須 | デフォルト値 | 説明 |
   | --- | --- | --- | --- | --- |
   | year | `number` | `true` | - | 旧暦の年 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 省略時は現在の設定の言語を使います。初期値は `zh-CN` です。 |
 
 - 使用例
 

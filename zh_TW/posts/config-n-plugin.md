@@ -20,6 +20,7 @@ outline: deep
 import { astro } from 'iztro';
 
 astro.config({
+  language: 'en-US',
   mutagens: { 庚: ['太陽', '武曲', '天同', '天相'] },
   brightness: {
     貪狼: ['旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺'],
@@ -33,6 +34,7 @@ astro.config({
 
 | 配置項 | 可選值 | 預設值 | 說明 |
 | --- | --- | --- | --- |
+| `language` | [`Language`](../type-definition.md#language) | `zh-CN` | 預設輸出語言；明確傳入的 `language` 參數優先 |
 | `yearDivide` <Badge type="warning" text="^2.4.0" /> | `normal` \| `exact` | `normal` | 年干支分界；`normal` 以農曆正月初一為界，`exact` 以立春為界 |
 | `horoscopeDivide` <Badge type="warning" text="^2.4.3" /> | `normal` \| `exact` | `normal` | 運限使用的年、月干支分界 |
 | `ageDivide` <Badge type="warning" text="^2.4.5" /> | `normal` \| `birthday` | `normal` | 小限虛歲分界；`normal` 只看自然年，`birthday` 以農曆生日為界 |
@@ -57,22 +59,25 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 
 ### setLanguage() {#setlanguage}
 
-設定獨立工具函式的全域輸出語言，初始為 `zh-CN`。例如，呼叫 `astro.setLanguage('en-US')` 後，獨立呼叫 `util.getMutagensByHeavenlyStem()` 將回傳英文星名。支援 `zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR` 和 `vi-VN`；無效的語言會擲出錯誤並保留原設定。
+使用 `astro.config({ language: 'en-US' })` 設定後續排盤、日期輔助方法及獨立工具函式的預設輸出語言，初始為 `zh-CN`。`withOptions({ config: { language } })` 僅覆蓋當前星盤；明確傳入的 `language` 參數優先。單次呼叫不改變全域預設值，既有星盤保留產生時的語言。
+
+`astro.setLanguage(language)` 與 `astro.config({ language })` 設定同一份全域語言，保留此入口以相容既有呼叫。支援 `zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR` 和 `vi-VN`；無效的語言會擲出錯誤並保留原設定。
 
 ```ts
 type setLanguage = (language: Language) => void;
 ```
 
-此設定不會改變既有星盤及其後續查詢的語言。排盤及日期輔助方法仍使用各自的 `language` 參數，省略時預設為 `zh-CN`。`astro.resetConfig()` 不重設全域語言；需要恢復時請呼叫 `astro.setLanguage('zh-CN')`。
+`astro.getConfig().language` 回傳目前配置的語言；`astro.resetConfig()` 會將全域語言恢復為 `zh-CN`，既有星盤及後續查詢不受影響。
 
 ```ts
 import { astro, util } from 'iztro';
 
-astro.setLanguage('en-US');
+astro.config({ language: 'en-US' });
+console.log(astro.getConfig().language); // en-US
 console.log(astro.getLanguage()); // en-US
 console.log(util.getMutagensByHeavenlyStem('geng'));
 // ['sun', 'warrior', 'moon', 'fortunate']
-astro.setLanguage('zh-CN');
+astro.resetConfig();
 ```
 
 ### getLanguage() {#getlanguage}
@@ -95,6 +100,7 @@ type getLanguage = () => Language;
 
   ```ts
   type getConfig = () => {
+    language: Language;
     mutagens: Partial<Record<HeavenlyStemKey, StarKey[]>>;
     brightness: Partial<Record<StarKey, BrightnessKey[]>>;
     yearDivide: 'normal' | 'exact';
@@ -126,6 +132,8 @@ type getLanguage = () => Language;
 ### resetConfig() <Badge type="warning" text="^2.6.2" />
 
 恢復預設配置並清除所有自訂四化、亮度表；既有星盤不受影響。
+
+`astro.getConfig().language` 回傳目前配置的語言；`astro.resetConfig()` 會將全域語言恢復為 `zh-CN`，既有星盤及後續查詢不受影響。
 
 ```ts
 type resetConfig = () => void;

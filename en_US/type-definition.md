@@ -48,9 +48,9 @@ getHoroscopeStar("갑", "zi", "decadal");
 The output uses the language you select, regardless of the languages used in the input. Set the output language before calling the method:
 
 ```ts
-import { setLanguage } from "iztro/lib/i18n";
+import { astro } from "iztro";
 
-setLanguage("ko-KR");
+astro.config({ language: "ko-KR" });
 
 const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 ```
@@ -1666,8 +1666,12 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 
 Defines chart-calculation settings. Use `astro.config()` to set defaults for subsequently generated charts, or `withOptions({ config })` to override the settings for just the chart being generated. Existing charts retain the settings used at their creation (^2.6.2).
 
+Use `astro.config({ language: 'en-US' })` to set the default output language for future charts, date helpers and standalone utilities. The initial value is `zh-CN`. `withOptions({ config: { language } })` overrides the language for that chart only; an explicit `language` parameter takes precedence. Individual calls do not change global defaults, and existing charts retain the language used to create them. `astro.getConfig().language` returns the currently configured language. `astro.resetConfig()` restores the global language to `zh-CN` without changing existing charts or their subsequent queries.
+
 ```ts
 type Config = {
+  // 默认输出语言，初始为 zh-CN；显式 language 参数优先
+  language?: Language;
   // 星曜四化配置
   mutagens?: ConfigMutagens;
   // 星曜亮度配置

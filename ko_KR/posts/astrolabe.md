@@ -63,7 +63,7 @@ var { astro } = require("iztro");
 
 `bySolar`, `byLunar`, `withOptions`가 반환하는 명반은 생성 당시의 설정과 언어를 저장합니다. 전역 기본 설정을 바꾸거나 다른 언어의 명반을 만들어도 기존 명반의 운한（運限）과 사화（四化） 분석은 바뀌지 않습니다.
 
-`withOptions`의 `type`은 생략할 수 있으며 기본값은 양력입니다. `config`는 해당 명반의 설정만 덮어씁니다. 명반 생성과 날짜 보조 메서드에서 `language`를 생략하면 `zh-CN`을 사용하고, 특정 언어를 지정해도 다른 호출의 언어에는 영향을 주지 않습니다. 지원 값은 `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, `vi-VN`입니다.
+`withOptions`의 `type`은 생략할 수 있으며 기본값은 양력입니다. `config`는 해당 명반의 설정만 덮어씁니다. `astro.config({ language: 'en-US' })`로 이후 생성하는 명반, 날짜 보조 메서드, 독립적으로 호출하는 유틸리티 함수의 기본 출력 언어를 설정합니다. 초기값은 `zh-CN`입니다. `withOptions({ config: { language } })`는 해당 명반의 언어만 덮어쓰며, 명시적으로 전달한 `language` 인수가 우선합니다. 개별 호출은 전역 기본값을 바꾸지 않고, 이미 생성된 명반은 생성 당시의 언어를 유지합니다. 지원 값은 `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, `vi-VN`입니다.
 
 연도는 1~9999여야 하며 양력이나 음력에 실제로 존재하는 날짜여야 합니다. 날짜 문자열은 하이픈, 슬래시, 마침표로 구분할 수 있고 ` HH:mm` 또는 ` HH:mm:ss`를 덧붙일 수 있습니다. 과거 양력 날짜는 기반 달력의 율리우스력·그레고리력 전환 규칙을 따릅니다. 시각 인덱스는 0~12의 정수여야 합니다. 알 수 없는 성별·언어·날짜 유형·명반 유형이나 불리언이 아닌 윤달 옵션은 오류를 발생시킵니다. 음력 날짜는 실제 월별 일수로 검증하고, 윤달이 없는 달에는 `isLeapMonth: true`를 무시합니다.
 
@@ -87,7 +87,7 @@ var { astro } = require("iztro");
     timeIndex: number,
     gender: GenderName,
     fixLeap: boolean = true,
-    language: Language = "zh-CN"
+    language?: Language
   ) => FunctionalAstrolabe;
   ```
 
@@ -99,7 +99,7 @@ var { astro } = require("iztro");
   | timeIndex | `number` | `true` | - | 출생 시진 인덱스 [0–12]. 조자시(0)부터 만자시(12)까지에 대응합니다. |
   | gender | [`GenderName`](/ko_KR/type-definition.md#gendername) | `true` | - | 성별【남성/여성】 |
   | fixLeap | `boolean` | `false` | `true` | 윤달 조정 여부. `true`이면 윤달의 전반부는 이전 달, 후반부는 다음 달로 계산합니다. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. 생략하면 현재 설정의 언어를 사용하며, 초기값은 `zh-CN`입니다. |
 
 - 반환 값
 
@@ -147,7 +147,7 @@ var { astro } = require("iztro");
   | gender | [`GenderName`](/ko_KR/type-definition.md#gendername) | `true` | - | 성별【남성/여성】 |
   | isLeapMonth | `boolean` | `false` | `false` | 입력한 음력 월이 윤달인지 여부. 해당 월에 윤달이 없으면 이 매개변수는 적용되지 않습니다. |
   | fixLeap | `boolean` | `false` | `true` | 윤달 조정 여부. `true`이면 윤달의 전반부는 이전 달, 후반부는 다음 달로 계산합니다. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. 생략하면 현재 설정의 언어를 사용하며, 초기값은 `zh-CN`입니다. |
 
 - 반환 값
 
@@ -199,7 +199,7 @@ var { astro } = require("iztro");
   | gender | [`GenderName`](/ko_KR/type-definition.md#gendername) | `true` | - | 성별【남성/여성】 |
   | isLeapMonth | `boolean` | `false` | `false` | 입력한 음력 월이 윤달인지 여부. 해당 월에 윤달이 없으면 이 매개변수는 적용되지 않습니다. |
   | fixLeap | `boolean` | `false` | `true` | 윤달 조정 여부. `true`이면 윤달의 전반부는 이전 달, 후반부는 다음 달로 계산합니다. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. 생략하면 현재 설정의 언어를 사용하며, 초기값은 `zh-CN`입니다. |
   | config | [`Config`](../type-definition.md#config) | `false` | - | 이번에 생성하는 명반에만 밝기, 사화, 시간 경계 설정을 덮어씁니다 (^2.6.2). |
   | astroType  <Badge type="warning" text="^2.5.0" /> | [`AstroType`](../type-definition.md#astrotype) | `false` | `heaven` | 명반의 종류. `config.algorithm`이 `zhongzhou`일 때만 천반·지반·인반을 선택하는 데 사용합니다. |
 
@@ -255,7 +255,7 @@ var { astro } = require("iztro");
   | solarDateStr | `string` | `true` | - | 그레고리력 날짜【YYYY-M-D】 |
   | timeIndex | `number` | `true` | - | 출생 시진 인덱스 [0–12]. 조자시(0)부터 만자시(12)까지에 대응합니다. |
   | fixLeap | `boolean` | `false` | `true` | 윤달 조정 여부. `true`이면 윤달의 전반부는 이전 달, 후반부는 다음 달로 계산합니다. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. 생략하면 현재 설정의 언어를 사용하며, 초기값은 `zh-CN`입니다. |
 
 - 예제
 
@@ -293,7 +293,7 @@ var { astro } = require("iztro");
   | timeIndex | `number` | `true` | - | 출생 시진 인덱스 [0–12]. 조자시(0)부터 만자시(12)까지에 대응합니다. |
   | isLeapMonth | `boolean` | `false` | `false` | 입력한 음력 월이 윤달인지 여부. 해당 월에 윤달이 없으면 이 매개변수는 적용되지 않습니다. |
   | fixLeap | `boolean` | `false` | `true` | 윤달 조정 여부. `true`이면 윤달의 전반부는 이전 달, 후반부는 다음 달로 계산합니다. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. 생략하면 현재 설정의 언어를 사용하며, 초기값은 `zh-CN`입니다. |
 
 - 예제
 
@@ -325,7 +325,7 @@ var { astro } = require("iztro");
   | 매개변수 | 타입 | 필수 여부 | 기본값 | 설명 |
   | --- | --- | --- | --- | --- |
   | solarDateStr | `string` | `true` | - | 그레고리력 날짜【YYYY-M-D】 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. 생략하면 현재 설정의 언어를 사용하며, 초기값은 `zh-CN`입니다. |
 
 - 예제
 
@@ -359,7 +359,7 @@ var { astro } = require("iztro");
   | --- | --- | --- | --- | --- |
   | lunarDateStr | `string` | `true` | - | 음력 날짜 [YYYY-M-D]. 예를 들어 `2000년 7월 17일`이면 `2000-7-17`을 전달합니다. |
   | isLeapMonth | `boolean` | `false` | `false` | 입력한 음력 월이 윤달인지 여부. 해당 월에 윤달이 없으면 이 매개변수는 적용되지 않습니다. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. 생략하면 현재 설정의 언어를 사용하며, 초기값은 `zh-CN`입니다. |
 
 - 예제
 
@@ -389,7 +389,7 @@ var { astro } = require("iztro");
   | 매개변수 | 타입 | 필수 여부 | 기본값 | 설명 |
   | --- | --- | --- | --- | --- |
   | solarDateStr | `string` | `true` | - | 그레고리력 날짜【YYYY-M-D】 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. 생략하면 현재 설정의 언어를 사용하며, 초기값은 `zh-CN`입니다. |
 
 - 예제
 
@@ -418,7 +418,7 @@ var { astro } = require("iztro");
   | 매개변수 | 타입 | 필수 여부 | 기본값 | 설명 |
   | --- | --- | --- | --- | --- |
   | year | `number` | `true` | - | 음력 연도 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | 반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. 생략하면 현재 설정의 언어를 사용하며, 초기값은 `zh-CN`입니다. |
 
 - 예제
 

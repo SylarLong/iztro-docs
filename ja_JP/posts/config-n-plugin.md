@@ -20,6 +20,7 @@ iztro向けのオープンソースのプラグインライブラリを開発し
 import { astro } from 'iztro';
 
 astro.config({
+  language: 'en-US',
   mutagens: { 庚: ['太阳', '武曲', '天同', '天相'] },
   brightness: {
     贪狼: ['旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺'],
@@ -33,6 +34,7 @@ astro.config({
 
 | 設定項目 | 指定できる値 | デフォルト値 | 説明 |
 | --- | --- | --- | --- |
+| `language` | [`Language`](../type-definition.md#language) | `zh-CN` | 既定の出力言語。明示的な `language` 引数が優先 |
 | `yearDivide` <Badge type="warning" text="^2.4.0" /> | `normal` \| `exact` | `normal` | 年の干支の区切り。`normal` は旧暦正月初一、`exact` は節気の立春を境とします。 |
 | `horoscopeDivide` <Badge type="warning" text="^2.4.3" /> | `normal` \| `exact` | `normal` | 運限で使う年と月の干支の区切り |
 | `ageDivide` <Badge type="warning" text="^2.4.5" /> | `normal` \| `birthday` | `normal` | 小限の数え年の区切り。`normal` は暦年、`birthday` は旧暦の誕生日を境とします。 |
@@ -57,22 +59,25 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 
 ### setLanguage() {#setlanguage}
 
-単独で呼び出すユーティリティ関数のグローバルな出力言語を設定します。初期値は `zh-CN` です。例えば、`astro.setLanguage('en-US')` を呼び出すと、単独で呼び出す `util.getMutagensByHeavenlyStem()` は英語の星曜名を返します。`zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR`、`vi-VN` に対応しています。無効な言語を指定するとエラーが発生し、元の設定は維持されます。
+`astro.config({ language: 'en-US' })` で、以後の命盤作成、日付補助メソッド、単独で呼び出すユーティリティ関数の既定の出力言語を設定します。初期値は `zh-CN` です。`withOptions({ config: { language } })` はその命盤の言語だけを上書きし、明示的な `language` 引数が優先されます。個別の呼び出しでグローバルな既定値は変わらず、作成済みの命盤は作成時の言語を維持します。
+
+`astro.setLanguage(language)` と `astro.config({ language })` は、同じグローバル言語を更新します。既存の呼び出しとの互換性のため、このメソッドも引き続き利用できます。`zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR`、`vi-VN` に対応しています。無効な言語を指定するとエラーが発生し、元の設定は維持されます。
 
 ```ts
 type setLanguage = (language: Language) => void;
 ```
 
-作成済みの命盤や、その後の照会に使われる言語は変わりません。命盤作成と日付補助メソッドはそれぞれの `language` 引数を使い、省略時は `zh-CN` になります。`astro.resetConfig()` はグローバル言語をリセットしません。初期値に戻すには `astro.setLanguage('zh-CN')` を呼び出してください。
+`astro.getConfig().language` は現在の設定の言語を返します。`astro.resetConfig()` はグローバル言語を `zh-CN` に戻します。作成済みの命盤や、その後の照会には影響しません。
 
 ```ts
 import { astro, util } from 'iztro';
 
-astro.setLanguage('en-US');
+astro.config({ language: 'en-US' });
+console.log(astro.getConfig().language); // en-US
 console.log(astro.getLanguage()); // en-US
 console.log(util.getMutagensByHeavenlyStem('geng'));
 // ['sun', 'warrior', 'moon', 'fortunate']
-astro.setLanguage('zh-CN');
+astro.resetConfig();
 ```
 
 ### getLanguage() {#getlanguage}
@@ -95,6 +100,7 @@ type getLanguage = () => Language;
 
   ```ts
   type getConfig = () => {
+    language: Language;
     mutagens: Partial<Record<HeavenlyStemKey, StarKey[]>>;
     brightness: Partial<Record<StarKey, BrightnessKey[]>>;
     yearDivide: 'normal' | 'exact';
@@ -126,6 +132,8 @@ type getLanguage = () => Language;
 ### resetConfig() <Badge type="warning" text="^2.6.2" /> {#resetconfig}
 
 既定の設定に戻し、独自に設定した四化表と輝度表をすべて消去します。作成済みの命盤には影響しません。
+
+`astro.getConfig().language` は現在の設定の言語を返します。`astro.resetConfig()` はグローバル言語を `zh-CN` に戻します。作成済みの命盤や、その後の照会には影響しません。
 
 ```ts
 type resetConfig = () => void;

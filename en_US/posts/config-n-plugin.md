@@ -20,6 +20,7 @@ See the [configuration definition](../type-definition.md#config) for the availab
 import { astro } from 'iztro';
 
 astro.config({
+  language: 'en-US',
   mutagens: { 庚: ['太阳', '武曲', '天同', '天相'] },
   brightness: {
     贪狼: ['旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺'],
@@ -33,6 +34,7 @@ Besides `mutagens` and `brightness`, the following options let you adjust chart-
 
 | Configuration items | Allowed values | Default value | Description |
 | --- | --- | --- | --- |
+| `language` | [`Language`](../type-definition.md#language) | `zh-CN` | Default output language; an explicit `language` parameter takes precedence |
 | `yearDivide`   <Badge type="warning" text="^2.4.0" /> | `normal`  \|  `exact` | `normal` | Year stem-and-branch boundary: `normal` uses the first day of the first lunar month; `exact` uses the Start of Spring solar term. |
 | `horoscopeDivide`   <Badge type="warning" text="^2.4.3" /> | `normal`  \|  `exact` | `normal` | Year and month stem-and-branch boundaries used for horoscope periods |
 | `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | Annual age-period nominal-age boundary: `normal` uses the calendar year; `birthday` uses the lunar birthday. |
@@ -57,22 +59,25 @@ From `v2.6.2`, `astro.config()` sets defaults only for charts created afterward.
 
 ### setLanguage() {#setlanguage}
 
-Set the global output language for standalone utilities. The initial value is `zh-CN`. For example, after calling `astro.setLanguage('en-US')`, a standalone call to `util.getMutagensByHeavenlyStem()` returns English star names. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, and `vi-VN`. An invalid language throws an error and leaves the previous setting unchanged.
+Use `astro.config({ language: 'en-US' })` to set the default output language for future charts, date helpers and standalone utilities. The initial value is `zh-CN`. `withOptions({ config: { language } })` overrides the language for that chart only; an explicit `language` parameter takes precedence. Individual calls do not change global defaults, and existing charts retain the language used to create them.
+
+`astro.setLanguage(language)` and `astro.config({ language })` update the same global language. This entry point remains available for existing callers. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, and `vi-VN`. An invalid language throws an error and leaves the previous setting unchanged.
 
 ```ts
 type setLanguage = (language: Language) => void;
 ```
 
-This setting does not change the language of existing charts or their subsequent queries. Chart and date helper methods still use their own `language` parameter and default to `zh-CN` when it is omitted. `astro.resetConfig()` does not reset the global language; call `astro.setLanguage('zh-CN')` to restore it.
+`astro.getConfig().language` returns the currently configured language. `astro.resetConfig()` restores the global language to `zh-CN` without changing existing charts or their subsequent queries.
 
 ```ts
 import { astro, util } from 'iztro';
 
-astro.setLanguage('en-US');
+astro.config({ language: 'en-US' });
+console.log(astro.getConfig().language); // en-US
 console.log(astro.getLanguage()); // en-US
 console.log(util.getMutagensByHeavenlyStem('geng'));
 // ['sun', 'warrior', 'moon', 'fortunate']
-astro.setLanguage('zh-CN');
+astro.resetConfig();
 ```
 
 ### getLanguage() {#getlanguage}
@@ -95,6 +100,7 @@ type getLanguage = () => Language;
 
   ```ts
   type getConfig = () => {
+    language: Language;
     mutagens: Partial<Record<HeavenlyStemKey, StarKey[]>>;
     brightness: Partial<Record<StarKey, BrightnessKey[]>>;
     yearDivide: 'normal' | 'exact';
@@ -126,6 +132,8 @@ type getLanguage = () => Language;
 ### resetConfig() <Badge type="warning" text="^2.6.2" /> {#resetconfig}
 
 Restores the default settings and clears all custom four-transformation（四化） and brightness tables. Existing charts are unaffected.
+
+`astro.getConfig().language` returns the currently configured language. `astro.resetConfig()` restores the global language to `zh-CN` without changing existing charts or their subsequent queries.
 
 ```ts
 type resetConfig = () => void;

@@ -48,9 +48,9 @@ getHoroscopeStar("갑", "zi", "decadal");
 Dù đầu vào dùng ngôn ngữ nào, kết quả vẫn được xuất thống nhất bằng ngôn ngữ bạn chọn. Hãy đặt ngôn ngữ đầu ra trước khi gọi phương thức:
 
 ```ts
-import { setLanguage } from "iztro/lib/i18n";
+import { astro } from "iztro";
 
-setLanguage("ko-KR");
+astro.config({ language: "ko-KR" });
 
 const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 ```
@@ -1666,8 +1666,12 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 
 Định nghĩa đối tượng cấu hình tính toán lá số. Dùng `astro.config()` để đặt giá trị mặc định cho các lá số được tạo sau đó, hoặc `withOptions({ config })` để chỉ ghi đè cấu hình của lá số đang tạo. Các lá số đã tạo vẫn giữ cấu hình tại thời điểm tạo (^2.6.2).
 
+Dùng `astro.config({ language: 'en-US' })` để đặt ngôn ngữ đầu ra mặc định cho các lá số tạo sau đó, phương thức hỗ trợ ngày và hàm tiện ích được gọi độc lập. Giá trị ban đầu là `zh-CN`. `withOptions({ config: { language } })` chỉ ghi đè ngôn ngữ cho lá số đó; tham số `language` được truyền tường minh có độ ưu tiên cao hơn. Các lần gọi riêng lẻ không thay đổi giá trị mặc định toàn cục, và các lá số đã tạo giữ nguyên ngôn ngữ lúc tạo. `astro.getConfig().language` trả về ngôn ngữ trong cấu hình hiện tại. `astro.resetConfig()` khôi phục ngôn ngữ toàn cục về `zh-CN` mà không thay đổi các lá số đã tạo hoặc các lần truy vấn tiếp theo của chúng.
+
 ```ts
 type Config = {
+  // 默认输出语言，初始为 zh-CN；显式 language 参数优先
+  language?: Language;
   // 星曜四化配置
   mutagens?: ConfigMutagens;
   // 星曜亮度配置

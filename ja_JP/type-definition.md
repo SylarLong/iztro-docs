@@ -48,9 +48,9 @@ getHoroscopeStar("갑", "zi", "decadal");
 入力にどの言語を使っても、出力は指定した言語に統一されます。メソッドを呼び出す前に、出力言語を設定してください。
 
 ```ts
-import { setLanguage } from "iztro/lib/i18n";
+import { astro } from "iztro";
 
-setLanguage("ko-KR");
+astro.config({ language: "ko-KR" });
 
 const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 ```
@@ -1666,8 +1666,12 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 
 命盤計算の設定オブジェクトを定義します。`astro.config()` で以後作成する命盤の既定値を設定でき、`withOptions({ config })` で今回作成する命盤だけの設定を上書きできます。作成済みの命盤は作成時の設定を保持します（^2.6.2）。
 
+`astro.config({ language: 'en-US' })` で、以後の命盤作成、日付補助メソッド、単独で呼び出すユーティリティ関数の既定の出力言語を設定します。初期値は `zh-CN` です。`withOptions({ config: { language } })` はその命盤の言語だけを上書きし、明示的な `language` 引数が優先されます。個別の呼び出しでグローバルな既定値は変わらず、作成済みの命盤は作成時の言語を維持します。 `astro.getConfig().language` は現在の設定の言語を返します。`astro.resetConfig()` はグローバル言語を `zh-CN` に戻します。作成済みの命盤や、その後の照会には影響しません。
+
 ```ts
 type Config = {
+  // 默认输出语言，初始为 zh-CN；显式 language 参数优先
+  language?: Language;
   // 星曜四化配置
   mutagens?: ConfigMutagens;
   // 星曜亮度配置

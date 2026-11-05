@@ -63,7 +63,7 @@ var { astro } = require("iztro");
 
 Charts returned by `bySolar`, `byLunar`, and `withOptions` retain the configuration and language used at creation. Changing global defaults or creating charts in other languages does not change an existing chart’s fortune-period（運限） or four-transformation（四化） analysis.
 
-In `withOptions`, `type` is optional and defaults to the solar calendar; `config` overrides settings for that chart only. Chart-generation and date-helper methods default `language` to `zh-CN` when omitted, and choosing a language does not affect other calls. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, and `vi-VN`.
+In `withOptions`, `type` is optional and defaults to the solar calendar; `config` overrides settings for that chart only. Use `astro.config({ language: 'en-US' })` to set the default output language for future charts, date helpers and standalone utilities. The initial value is `zh-CN`. `withOptions({ config: { language } })` overrides the language for that chart only; an explicit `language` parameter takes precedence. Individual calls do not change global defaults, and existing charts retain the language used to create them. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, and `vi-VN`.
 
 The year must be from 1 to 9999, and the date must exist in the solar or lunar calendar. Date strings accept hyphens, slashes, or dots as separators and may include ` HH:mm` or ` HH:mm:ss`. Historical solar dates follow the underlying calendar’s Julian/Gregorian transition rules. Time indices must be integers from 0 to 12. Unknown gender, language, date type, or chart type, and non-boolean leap-month options, throw errors. Lunar dates are validated against the actual month length; `isLeapMonth: true` is ignored for a month with no leap counterpart.
 
@@ -87,7 +87,7 @@ This method was deprecated in `v2.0.5`. Use [`bySolar`](#bysolar) instead; param
     timeIndex: number,
     gender: GenderName,
     fixLeap: boolean = true,
-    language: Language = "zh-CN"
+    language?: Language
   ) => FunctionalAstrolabe;
   ```
 
@@ -99,7 +99,7 @@ This method was deprecated in `v2.0.5`. Use [`bySolar`](#bysolar) instead; param
   | timeIndex | `number` | `true` | - | Birth-hour index [0–12], from early Zi hour (0) to late Zi hour (12) |
   | gender | [`GenderName`](/en_US/type-definition.md#gendername) | `true` | - | Gender【Male/Female】 |
   | fixLeap | `boolean` | `false` | `true` | Whether to adjust leap months. If `true`, the first half is assigned to the preceding month and the second half to the following month. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. When omitted, uses the currently configured language, initially `zh-CN`. |
 
 - Return value
 
@@ -147,7 +147,7 @@ This method was deprecated in `v2.0.5`. Use [`byLunar`](#bylunar) instead; param
   | gender | [`GenderName`](/en_US/type-definition.md#gendername) | `true` | - | Gender【Male/Female】 |
   | isLeapMonth | `boolean` | `false` | `false` | Whether the supplied lunar month is a leap month; ignored if that month has no leap counterpart. |
   | fixLeap | `boolean` | `false` | `true` | Whether to adjust leap months. If `true`, the first half is assigned to the preceding month and the second half to the following month. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. When omitted, uses the currently configured language, initially `zh-CN`. |
 
 - Return value
 
@@ -199,7 +199,7 @@ This method was deprecated in `v2.0.5`. Use [`byLunar`](#bylunar) instead; param
   | gender | [`GenderName`](/en_US/type-definition.md#gendername) | `true` | - | Gender【Male/Female】 |
   | isLeapMonth | `boolean` | `false` | `false` | Whether the supplied lunar month is a leap month; ignored if that month has no leap counterpart. |
   | fixLeap | `boolean` | `false` | `true` | Whether to adjust leap months. If `true`, the first half is assigned to the preceding month and the second half to the following month. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. When omitted, uses the currently configured language, initially `zh-CN`. |
   | config | [`Config`](../type-definition.md#config) | `false` | - | Overrides the brightness, four transformations and time-boundary settings only for the chart being created (^2.6.2). |
   | astroType  <Badge type="warning" text="^2.5.0" /> | [`AstroType`](../type-definition.md#astrotype) | `false` | `heaven` | Chart type. Used to select the natal, earth or human chart only when `config.algorithm` is `zhongzhou`. |
 
@@ -255,7 +255,7 @@ This method was deprecated in `v2.0.5`. Use [`byLunar`](#bylunar) instead; param
   | solarDateStr | `string` | `true` | - | Gregorian date【YYYY-M-D】 |
   | timeIndex | `number` | `true` | - | Birth-hour index [0–12], from early Zi hour (0) to late Zi hour (12) |
   | fixLeap | `boolean` | `false` | `true` | Whether to adjust leap months. If `true`, the first half is assigned to the preceding month and the second half to the following month. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. When omitted, uses the currently configured language, initially `zh-CN`. |
 
 - Example
 
@@ -293,7 +293,7 @@ This method was deprecated in `v2.0.5`. Use [`byLunar`](#bylunar) instead; param
   | timeIndex | `number` | `true` | - | Birth-hour index [0–12], from early Zi hour (0) to late Zi hour (12) |
   | isLeapMonth | `boolean` | `false` | `false` | Whether the supplied lunar month is a leap month; ignored if that month has no leap counterpart. |
   | fixLeap | `boolean` | `false` | `true` | Whether to adjust leap months. If `true`, the first half is assigned to the preceding month and the second half to the following month. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. When omitted, uses the currently configured language, initially `zh-CN`. |
 
 - Example
 
@@ -325,7 +325,7 @@ This method was deprecated in `v2.0.5`. Use [`byLunar`](#bylunar) instead; param
   | Parameter | Type | Required? | Default value | Description |
   | --- | --- | --- | --- | --- |
   | solarDateStr | `string` | `true` | - | Gregorian date【YYYY-M-D】 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. When omitted, uses the currently configured language, initially `zh-CN`. |
 
 - Example
 
@@ -359,7 +359,7 @@ This method was deprecated in `v2.0.5`. Use [`byLunar`](#bylunar) instead; param
   | --- | --- | --- | --- | --- |
   | lunarDateStr | `string` | `true` | - | Lunar date [YYYY-M-D]. For `lunar year 2000, month 7, day 17`, pass `2000-7-17`. |
   | isLeapMonth | `boolean` | `false` | `false` | Whether the supplied lunar month is a leap month; ignored if that month has no leap counterpart. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. When omitted, uses the currently configured language, initially `zh-CN`. |
 
 - Example
 
@@ -389,7 +389,7 @@ This method was deprecated in `v2.0.5`. Use [`byLunar`](#bylunar) instead; param
   | Parameter | Type | Required? | Default value | Description |
   | --- | --- | --- | --- | --- |
   | solarDateStr | `string` | `true` | - | Gregorian date【YYYY-M-D】 |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. When omitted, uses the currently configured language, initially `zh-CN`. |
 
 - Example
 
@@ -418,7 +418,7 @@ This method was deprecated in `v2.0.5`. Use [`byLunar`](#bylunar) instead; param
   | Parameter | Type | Required? | Default value | Description |
   | --- | --- | --- | --- | --- |
   | year | `number` | `true` | - | Lunar-calendar year |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. When omitted, uses the currently configured language, initially `zh-CN`. |
 
 - Example
 

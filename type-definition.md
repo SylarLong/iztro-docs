@@ -49,9 +49,9 @@ getHoroscopeStar("갑", "zi", "decadal");
 当然输出的时候会统一按照你指定的语言进行输出。你可以在调用上述方法之前设置你的输出语言：
 
 ```ts
-import { setLanguage } from "iztro/lib/i18n";
+import { astro } from "iztro";
 
-setLanguage("ko-KR");
+astro.config({ language: "ko-KR" });
 
 const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 ```
@@ -1667,8 +1667,12 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 
 定义排盘配置对象，可通过 `astro.config()` 设置后续排盘的默认值，也可通过 `withOptions({ config })` 仅覆盖当前星盘；已有星盘保留生成时的配置（^2.6.2）。
 
+使用 `astro.config({ language: 'en-US' })` 设置后续排盘、日期辅助方法及独立工具函数的默认输出语言，初始为 `zh-CN`。`withOptions({ config: { language } })` 仅覆盖当前星盘；显式 `language` 参数优先。单次调用不修改全局默认值，已有星盘保留生成时的语言。 `astro.getConfig().language` 返回当前配置的语言；`astro.resetConfig()` 会将全局语言恢复为 `zh-CN`，已有星盘及后续查询不受影响。
+
 ```ts
 type Config = {
+  // 默认输出语言，初始为 zh-CN；显式 language 参数优先
+  language?: Language;
   // 星曜四化配置
   mutagens?: ConfigMutagens;
   // 星曜亮度配置

@@ -20,6 +20,7 @@ Xem [Định nghĩa cấu hình](../type-definition.md#config) để biết các
 import { astro } from 'iztro';
 
 astro.config({
+  language: 'en-US',
   mutagens: { 庚: ['太阳', '武曲', '天同', '天相'] },
   brightness: {
     贪狼: ['旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺'],
@@ -33,6 +34,7 @@ Ngoài `mutagens` và `brightness`, các tùy chọn sau cho phép điều chỉ
 
 | Các mục cấu hình | Các giá trị được phép | Giá trị mặc định | Mô tả |
 | --- | --- | --- | --- |
+| `language` | [`Language`](../type-definition.md#language) | `zh-CN` | Ngôn ngữ đầu ra mặc định; tham số `language` được truyền tường minh có độ ưu tiên cao hơn |
 | `yearDivide`   <Badge type="warning" text="^2.4.0" /> | `normal`  \|  `exact` | `normal` | Mốc phân chia can chi năm: `normal` lấy mồng một tháng Giêng âm lịch, `exact` lấy tiết Lập Xuân. |
 | `horoscopeDivide`   <Badge type="warning" text="^2.4.3" /> | `normal`  \|  `exact` | `normal` | Mốc phân chia can chi năm và tháng dùng cho vận hạn |
 | `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | Mốc tính tuổi mụ cho tiểu hạn: `normal` dựa vào năm theo lịch, `birthday` lấy sinh nhật âm lịch làm mốc. |
@@ -57,22 +59,25 @@ Từ `v2.6.2`, `astro.config()` chỉ đặt cấu hình mặc định cho các 
 
 ### setLanguage() {#setlanguage}
 
-Đặt ngôn ngữ đầu ra toàn cục cho các hàm tiện ích được gọi độc lập. Giá trị ban đầu là `zh-CN`. Ví dụ, sau khi gọi `astro.setLanguage('en-US')`, lời gọi độc lập tới `util.getMutagensByHeavenlyStem()` sẽ trả về tên sao bằng tiếng Anh. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR` và `vi-VN`. Ngôn ngữ không hợp lệ sẽ gây lỗi và giữ nguyên thiết lập trước đó.
+Dùng `astro.config({ language: 'en-US' })` để đặt ngôn ngữ đầu ra mặc định cho các lá số tạo sau đó, phương thức hỗ trợ ngày và hàm tiện ích được gọi độc lập. Giá trị ban đầu là `zh-CN`. `withOptions({ config: { language } })` chỉ ghi đè ngôn ngữ cho lá số đó; tham số `language` được truyền tường minh có độ ưu tiên cao hơn. Các lần gọi riêng lẻ không thay đổi giá trị mặc định toàn cục, và các lá số đã tạo giữ nguyên ngôn ngữ lúc tạo.
+
+`astro.setLanguage(language)` và `astro.config({ language })` cập nhật cùng một thiết lập ngôn ngữ toàn cục. Phương thức này vẫn được giữ để tương thích với các lời gọi hiện có. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR` và `vi-VN`. Ngôn ngữ không hợp lệ sẽ gây lỗi và giữ nguyên thiết lập trước đó.
 
 ```ts
 type setLanguage = (language: Language) => void;
 ```
 
-Thiết lập này không thay đổi ngôn ngữ của các lá số đã tạo hoặc các lần truy vấn tiếp theo của chúng. Các phương thức tạo lá số và hỗ trợ ngày vẫn dùng tham số `language` riêng, mặc định là `zh-CN` khi bỏ qua. `astro.resetConfig()` không đặt lại ngôn ngữ toàn cục; hãy gọi `astro.setLanguage('zh-CN')` để khôi phục giá trị ban đầu.
+`astro.getConfig().language` trả về ngôn ngữ trong cấu hình hiện tại. `astro.resetConfig()` khôi phục ngôn ngữ toàn cục về `zh-CN` mà không thay đổi các lá số đã tạo hoặc các lần truy vấn tiếp theo của chúng.
 
 ```ts
 import { astro, util } from 'iztro';
 
-astro.setLanguage('en-US');
+astro.config({ language: 'en-US' });
+console.log(astro.getConfig().language); // en-US
 console.log(astro.getLanguage()); // en-US
 console.log(util.getMutagensByHeavenlyStem('geng'));
 // ['sun', 'warrior', 'moon', 'fortunate']
-astro.setLanguage('zh-CN');
+astro.resetConfig();
 ```
 
 ### getLanguage() {#getlanguage}
@@ -95,6 +100,7 @@ type getLanguage = () => Language;
 
   ```ts
   type getConfig = () => {
+    language: Language;
     mutagens: Partial<Record<HeavenlyStemKey, StarKey[]>>;
     brightness: Partial<Record<StarKey, BrightnessKey[]>>;
     yearDivide: 'normal' | 'exact';
@@ -126,6 +132,8 @@ type getLanguage = () => Language;
 ### resetConfig() <Badge type="warning" text="^2.6.2" /> {#resetconfig}
 
 Khôi phục cấu hình mặc định và xóa mọi bảng tứ hóa（四化） và độ sáng tùy chỉnh. Các lá số đã tạo không bị ảnh hưởng.
+
+`astro.getConfig().language` trả về ngôn ngữ trong cấu hình hiện tại. `astro.resetConfig()` khôi phục ngôn ngữ toàn cục về `zh-CN` mà không thay đổi các lá số đã tạo hoặc các lần truy vấn tiếp theo của chúng.
 
 ```ts
 type resetConfig = () => void;

@@ -5421,6 +5421,30 @@
       },
       "decision": "corrected",
       "reason": "快速开始的产品表格按用户约定保留简体中文原表，不翻译表头或作者名称。"
+    },
+    {
+      "file": "posts/astrolabe.md",
+      "source": "返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 省略时使用当前配置的语言，初始为 `zh-CN`。",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "The returned data uses the specified language. Supported values are `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, and `vi-VN`. When omitted, uses the currently configured language, initially `zh-CN`.",
+        "ja_JP": "戻り値に使用する言語です。`zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP`、`vi-VN`に対応しています。 省略時は現在の設定の言語を使います。初期値は `zh-CN` です。",
+        "ko_KR": "반환 데이터에 사용할 언어입니다. `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP`, `vi-VN`을 지원합니다. 생략하면 현재 설정의 언어를 사용하며, 초기값은 `zh-CN`입니다.",
+        "vi_VN": "Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. Khi bỏ qua, dùng ngôn ngữ trong cấu hình hiện tại, ban đầu là `zh-CN`."
+      },
+      "decision": "corrected"
+    },
+    {
+      "file": "posts/config-n-plugin.md",
+      "source": "默认输出语言；显式 `language` 参数优先",
+      "kind": "markdown",
+      "targets": {
+        "en_US": "Default output language; an explicit `language` parameter takes precedence",
+        "ja_JP": "既定の出力言語。明示的な `language` 引数が優先",
+        "ko_KR": "기본 출력 언어. 명시적으로 전달한 `language` 인수가 우선",
+        "vi_VN": "Ngôn ngữ đầu ra mặc định; tham số `language` được truyền tường minh có độ ưu tiên cao hơn"
+      },
+      "decision": "corrected"
     }
   ]
 }

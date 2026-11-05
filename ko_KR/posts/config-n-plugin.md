@@ -20,6 +20,7 @@ iztro를 기반으로 오픈 소스 플러그인 라이브러리를 개발했다
 import { astro } from 'iztro';
 
 astro.config({
+  language: 'en-US',
   mutagens: { 庚: ['太阳', '武曲', '天同', '天相'] },
   brightness: {
     贪狼: ['旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺', '旺'],
@@ -33,6 +34,7 @@ astro.config({
 
 | 설정 항목 | 허용되는 값 | 기본값 | 설명 |
 | --- | --- | --- | --- |
+| `language` | [`Language`](../type-definition.md#language) | `zh-CN` | 기본 출력 언어. 명시적으로 전달한 `language` 인수가 우선 |
 | `yearDivide`   <Badge type="warning" text="^2.4.0" /> | `normal`  \|  `exact` | `normal` | 연도 간지의 경계. `normal`은 음력 정월 초하루, `exact`는 절기인 입춘을 기준으로 합니다. |
 | `horoscopeDivide`   <Badge type="warning" text="^2.4.3" /> | `normal`  \|  `exact` | `normal` | 운한 계산에 사용하는 연·월 간지의 경계 |
 | `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | 소한의 세는나이 경계. `normal`은 달력상의 연도, `birthday`는 음력 생일을 기준으로 합니다. |
@@ -57,22 +59,25 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 
 ### setLanguage() {#setlanguage}
 
-독립적으로 호출하는 유틸리티 함수의 전역 출력 언어를 설정합니다. 초기값은 `zh-CN`입니다. 예를 들어 `astro.setLanguage('en-US')`를 호출하면 독립적으로 호출하는 `util.getMutagensByHeavenlyStem()`은 영어 성요（星曜） 이름을 반환합니다. `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, `vi-VN`을 지원합니다. 잘못된 언어를 지정하면 오류가 발생하며 기존 설정은 유지됩니다.
+`astro.config({ language: 'en-US' })`로 이후 생성하는 명반, 날짜 보조 메서드, 독립적으로 호출하는 유틸리티 함수의 기본 출력 언어를 설정합니다. 초기값은 `zh-CN`입니다. `withOptions({ config: { language } })`는 해당 명반의 언어만 덮어쓰며, 명시적으로 전달한 `language` 인수가 우선합니다. 개별 호출은 전역 기본값을 바꾸지 않고, 이미 생성된 명반은 생성 당시의 언어를 유지합니다.
+
+`astro.setLanguage(language)`와 `astro.config({ language })`는 동일한 전역 언어를 설정합니다. 기존 호출과의 호환성을 위해 이 메서드도 계속 사용할 수 있습니다. `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR`, `vi-VN`을 지원합니다. 잘못된 언어를 지정하면 오류가 발생하며 기존 설정은 유지됩니다.
 
 ```ts
 type setLanguage = (language: Language) => void;
 ```
 
-이 설정은 이미 생성된 명반이나 이후 조회에 쓰이는 언어를 바꾸지 않습니다. 명반 생성 및 날짜 보조 메서드는 각각의 `language` 인수를 사용하며, 생략하면 `zh-CN`을 사용합니다. `astro.resetConfig()`는 전역 언어를 초기화하지 않습니다. 초기값으로 복원하려면 `astro.setLanguage('zh-CN')`를 호출하세요.
+`astro.getConfig().language`는 현재 설정의 언어를 반환합니다. `astro.resetConfig()`는 전역 언어를 `zh-CN`으로 복원하며, 이미 생성된 명반과 이후 조회에는 영향을 주지 않습니다.
 
 ```ts
 import { astro, util } from 'iztro';
 
-astro.setLanguage('en-US');
+astro.config({ language: 'en-US' });
+console.log(astro.getConfig().language); // en-US
 console.log(astro.getLanguage()); // en-US
 console.log(util.getMutagensByHeavenlyStem('geng'));
 // ['sun', 'warrior', 'moon', 'fortunate']
-astro.setLanguage('zh-CN');
+astro.resetConfig();
 ```
 
 ### getLanguage() {#getlanguage}
@@ -95,6 +100,7 @@ type getLanguage = () => Language;
 
   ```ts
   type getConfig = () => {
+    language: Language;
     mutagens: Partial<Record<HeavenlyStemKey, StarKey[]>>;
     brightness: Partial<Record<StarKey, BrightnessKey[]>>;
     yearDivide: 'normal' | 'exact';
@@ -126,6 +132,8 @@ type getLanguage = () => Language;
 ### resetConfig() <Badge type="warning" text="^2.6.2" /> {#resetconfig}
 
 기본 설정을 복원하고, 사용자 지정 사화（四化）표와 밝기표를 모두 지웁니다. 이미 생성된 명반에는 영향을 주지 않습니다.
+
+`astro.getConfig().language`는 현재 설정의 언어를 반환합니다. `astro.resetConfig()`는 전역 언어를 `zh-CN`으로 복원하며, 이미 생성된 명반과 이후 조회에는 영향을 주지 않습니다.
 
 ```ts
 type resetConfig = () => void;

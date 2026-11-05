@@ -63,7 +63,7 @@ var { astro } = require("iztro");
 
 Lá số do `bySolar`, `byLunar` và `withOptions` trả về giữ cấu hình, ngôn ngữ lúc tạo. Đổi mặc định toàn cục hay tạo lá số bằng ngôn ngữ khác không làm thay đổi phân tích vận hạn（運限） và tứ hóa（四化） của lá số hiện có.
 
-Trong `withOptions`, `type` có thể bỏ qua và mặc định là dương lịch; `config` chỉ ghi đè cấu hình cho lá số đó. Phương thức tạo lá số và hỗ trợ ngày mặc định `language` là `zh-CN` nếu bỏ qua; chọn ngôn ngữ không ảnh hưởng các lần gọi khác. Hỗ trợ `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR` và `vi-VN`.
+Trong `withOptions`, `type` có thể bỏ qua và mặc định là dương lịch; `config` chỉ ghi đè cấu hình cho lá số đó. Dùng `astro.config({ language: 'en-US' })` để đặt ngôn ngữ đầu ra mặc định cho các lá số tạo sau đó, phương thức hỗ trợ ngày và hàm tiện ích được gọi độc lập. Giá trị ban đầu là `zh-CN`. `withOptions({ config: { language } })` chỉ ghi đè ngôn ngữ cho lá số đó; tham số `language` được truyền tường minh có độ ưu tiên cao hơn. Các lần gọi riêng lẻ không thay đổi giá trị mặc định toàn cục, và các lá số đã tạo giữ nguyên ngôn ngữ lúc tạo. Hỗ trợ `zh-CN`, `zh-TW`, `en-US`, `ja-JP`, `ko-KR` và `vi-VN`.
 
 Năm phải từ 1 đến 9999, và ngày phải thật sự tồn tại trong dương lịch hoặc âm lịch. Chuỗi ngày nhận dấu gạch ngang, gạch chéo, chấm và có thể thêm ` HH:mm` hoặc ` HH:mm:ss`. Ngày dương lịch trong quá khứ theo quy tắc chuyển Julian/Gregorian của thư viện lịch nền. Chỉ số giờ phải là số nguyên 0–12. Giới tính, ngôn ngữ, loại ngày, loại lá số không được hỗ trợ hoặc tùy chọn tháng nhuận không phải giá trị luận lý đều gây lỗi. Ngày âm lịch được kiểm tra theo số ngày thực của tháng; `isLeapMonth: true` bị bỏ qua nếu tháng ấy không có tháng nhuận tương ứng.
 
@@ -87,7 +87,7 @@ Phương thức này không còn được khuyến nghị từ `v2.0.5`. Hãy d�
     timeIndex: number,
     gender: GenderName,
     fixLeap: boolean = true,
-    language: Language = "zh-CN"
+    language?: Language
   ) => FunctionalAstrolabe;
   ```
 
@@ -99,7 +99,7 @@ Phương thức này không còn được khuyến nghị từ `v2.0.5`. Hãy d�
   | timeIndex | `number` | `true` | - | Chỉ số giờ sinh [0–12], từ giờ Tý sớm (0) đến giờ Tý muộn (12) |
   | gender | [`GenderName`](/vi_VN/type-definition.md#gendername) | `true` | - | Giới tính\[Nam/Nữ\] |
   | fixLeap | `boolean` | `false` | `true` | Có điều chỉnh tháng nhuận hay không. Nếu là `true`, nửa đầu tháng nhuận được tính vào tháng trước, nửa sau vào tháng tiếp theo. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. Khi bỏ qua, dùng ngôn ngữ trong cấu hình hiện tại, ban đầu là `zh-CN`. |
 
 - Giá trị trả về
 
@@ -147,7 +147,7 @@ Phương thức này không còn được khuyến nghị từ `v2.0.5`. Hãy d�
   | gender | [`GenderName`](/vi_VN/type-definition.md#gendername) | `true` | - | Giới tính\[Nam/Nữ\] |
   | isLeapMonth | `boolean` | `false` | `false` | Tháng âm lịch được nhập có phải tháng nhuận hay không; tham số không có tác dụng nếu tháng đó không có tháng nhuận tương ứng. |
   | fixLeap | `boolean` | `false` | `true` | Có điều chỉnh tháng nhuận hay không. Nếu là `true`, nửa đầu tháng nhuận được tính vào tháng trước, nửa sau vào tháng tiếp theo. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. Khi bỏ qua, dùng ngôn ngữ trong cấu hình hiện tại, ban đầu là `zh-CN`. |
 
 - Giá trị trả về
 
@@ -199,7 +199,7 @@ Phương thức này không còn được khuyến nghị từ `v2.0.5`. Hãy d�
   | gender | [`GenderName`](/vi_VN/type-definition.md#gendername) | `true` | - | Giới tính\[Nam/Nữ\] |
   | isLeapMonth | `boolean` | `false` | `false` | Tháng âm lịch được nhập có phải tháng nhuận hay không; tham số không có tác dụng nếu tháng đó không có tháng nhuận tương ứng. |
   | fixLeap | `boolean` | `false` | `true` | Có điều chỉnh tháng nhuận hay không. Nếu là `true`, nửa đầu tháng nhuận được tính vào tháng trước, nửa sau vào tháng tiếp theo. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. Khi bỏ qua, dùng ngôn ngữ trong cấu hình hiện tại, ban đầu là `zh-CN`. |
   | config | [`Config`](../type-definition.md#config) | `false` | - | Chỉ ghi đè cấu hình độ sáng, tứ hóa và mốc phân chia thời gian cho lá số đang được tạo (^2.6.2). |
   | astroType  <Badge type="warning" text="^2.5.0" /> | [`AstroType`](../type-definition.md#astrotype) | `false` | `heaven` | Loại lá số. Chỉ dùng để chọn thiên bàn, địa bàn hoặc nhân bàn khi `config.algorithm` là `zhongzhou`. |
 
@@ -255,7 +255,7 @@ Phương thức này không còn được khuyến nghị từ `v2.0.5`. Hãy d�
   | solarDateStr | `string` | `true` | - | Ngày Gregorian \[YYYY-M-D\] |
   | timeIndex | `number` | `true` | - | Chỉ số giờ sinh [0–12], từ giờ Tý sớm (0) đến giờ Tý muộn (12) |
   | fixLeap | `boolean` | `false` | `true` | Có điều chỉnh tháng nhuận hay không. Nếu là `true`, nửa đầu tháng nhuận được tính vào tháng trước, nửa sau vào tháng tiếp theo. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. Khi bỏ qua, dùng ngôn ngữ trong cấu hình hiện tại, ban đầu là `zh-CN`. |
 
 - Ví dụ
 
@@ -293,7 +293,7 @@ Phương thức này không còn được khuyến nghị từ `v2.0.5`. Hãy d�
   | timeIndex | `number` | `true` | - | Chỉ số giờ sinh [0–12], từ giờ Tý sớm (0) đến giờ Tý muộn (12) |
   | isLeapMonth | `boolean` | `false` | `false` | Tháng âm lịch được nhập có phải tháng nhuận hay không; tham số không có tác dụng nếu tháng đó không có tháng nhuận tương ứng. |
   | fixLeap | `boolean` | `false` | `true` | Có điều chỉnh tháng nhuận hay không. Nếu là `true`, nửa đầu tháng nhuận được tính vào tháng trước, nửa sau vào tháng tiếp theo. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. Khi bỏ qua, dùng ngôn ngữ trong cấu hình hiện tại, ban đầu là `zh-CN`. |
 
 - Ví dụ
 
@@ -325,7 +325,7 @@ Phương thức này không còn được khuyến nghị từ `v2.0.5`. Hãy d�
   | Tham số | Kiểu | Bắt buộc? | Giá trị mặc định | Mô tả |
   | --- | --- | --- | --- | --- |
   | solarDateStr | `string` | `true` | - | Ngày Gregorian \[YYYY-M-D\] |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. Khi bỏ qua, dùng ngôn ngữ trong cấu hình hiện tại, ban đầu là `zh-CN`. |
 
 - Ví dụ
 
@@ -359,7 +359,7 @@ Phương thức này không còn được khuyến nghị từ `v2.0.5`. Hãy d�
   | --- | --- | --- | --- | --- |
   | lunarDateStr | `string` | `true` | - | Ngày âm lịch [YYYY-M-D]. Với `năm 2000 âm lịch, tháng 7, ngày 17`, truyền `2000-7-17`. |
   | isLeapMonth | `boolean` | `false` | `false` | Tháng âm lịch được nhập có phải tháng nhuận hay không; tham số không có tác dụng nếu tháng đó không có tháng nhuận tương ứng. |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. Khi bỏ qua, dùng ngôn ngữ trong cấu hình hiện tại, ban đầu là `zh-CN`. |
 
 - Ví dụ
 
@@ -389,7 +389,7 @@ Phương thức này không còn được khuyến nghị từ `v2.0.5`. Hãy d�
   | Tham số | Kiểu | Bắt buộc? | Giá trị mặc định | Mô tả |
   | --- | --- | --- | --- | --- |
   | solarDateStr | `string` | `true` | - | Ngày Gregorian \[YYYY-M-D\] |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. Khi bỏ qua, dùng ngôn ngữ trong cấu hình hiện tại, ban đầu là `zh-CN`. |
 
 - Ví dụ
 
@@ -418,7 +418,7 @@ Phương thức này không còn được khuyến nghị từ `v2.0.5`. Hãy d�
   | Tham số | Kiểu | Bắt buộc? | Giá trị mặc định | Mô tả |
   | --- | --- | --- | --- | --- |
   | year | `number` | `true` | - | năm âm lịch |
-  | language | [`Language`](../type-definition.md#language) | `false` | `zh-CN` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. |
+  | language | [`Language`](../type-definition.md#language) | `false` | `astro.getConfig().language` | Dữ liệu trả về sử dụng ngôn ngữ được chỉ định. Các giá trị được hỗ trợ là `zh-CN`, `zh-TW`, `en-US`, `ko-KR`, `ja-JP` và `vi-VN`. Khi bỏ qua, dùng ngôn ngữ trong cấu hình hiện tại, ban đầu là `zh-CN`. |
 
 - Ví dụ
 

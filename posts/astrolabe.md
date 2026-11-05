@@ -63,7 +63,7 @@ var { astro } = require("iztro");
 
 `bySolar`、`byLunar` 和 `withOptions` 返回的星盘保存生成时的配置与语言。后续修改全局默认配置或创建其他语言的星盘，不会改变已有星盘的运限和四化分析结果。
 
-`withOptions` 的 `type` 可省略，默认使用阳历；`config` 仅覆盖当前星盘。排盘及日期辅助方法省略 `language` 时默认为 `zh-CN`，指定语言不会修改其他调用的语言。支持 `zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR`、`vi-VN`。
+`withOptions` 的 `type` 可省略，默认使用阳历；`config` 仅覆盖当前星盘。使用 `astro.config({ language: 'en-US' })` 设置后续排盘、日期辅助方法及独立工具函数的默认输出语言，初始为 `zh-CN`。`withOptions({ config: { language } })` 仅覆盖当前星盘；显式 `language` 参数优先。单次调用不修改全局默认值，已有星盘保留生成时的语言。 支持 `zh-CN`、`zh-TW`、`en-US`、`ja-JP`、`ko-KR`、`vi-VN`。
 
 日期年份范围为 1～9999，必须是实际存在的阳历或农历日期。日期字符串支持连字符、斜线或点号分隔，可附加 ` HH:mm` 或 ` HH:mm:ss`；历史阳历日期沿用底层历法的儒略历/格里历切换规则。时辰必须为 0～12 的整数，未知性别、语言、日期类型或星盘类型，以及非布尔的闰月选项会抛出错误。农历日期按实际月份天数校验，非闰月时仍忽略 `isLeapMonth: true`。
 
@@ -87,7 +87,7 @@ var { astro } = require("iztro");
     timeIndex: number,
     gender: GenderName,
     fixLeap: boolean = true,
-    language: Language = "zh-CN"
+    language?: Language
   ) => FunctionalAstrolabe;
   ```
 
@@ -99,7 +99,7 @@ var { astro } = require("iztro");
   | timeIndex    | `number`                                     | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
   | gender       | [`GenderName`](/type-definition.md#gendername)| `true`   | -       | 性别【男/女】                                                                     |
   | fixLeap      | `boolean`                                    | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `astro.getConfig().language` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 省略时使用当前配置的语言，初始为 `zh-CN`。 |
 
 - 返回值
 
@@ -147,7 +147,7 @@ var { astro } = require("iztro");
   | gender       | [`GenderName`](/type-definition.md#gendername)   | `true`   | -       | 性别【男/女】                                                                     |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `astro.getConfig().language` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 省略时使用当前配置的语言，初始为 `zh-CN`。 |
 
 - 返回值
 
@@ -199,7 +199,7 @@ var { astro } = require("iztro");
   | gender       | [`GenderName`](/type-definition.md#gendername)   | `true`   | -       | 性别【男/女】                                                                     |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `astro.getConfig().language` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 省略时使用当前配置的语言，初始为 `zh-CN`。 |
   | config     | [`Config`](../type-definition.md#config) | `false`  | - | 仅覆盖当前星盘的亮度、四化和时间分界配置（^2.6.2） |
   | astroType <Badge type="warning" text="^2.5.0" /> | [`AstroType`](../type-definition.md#astrotype) | `false` | `heaven` | 星盘类型；仅在 `config.algorithm` 为 `zhongzhou` 时用于选择天盘、地盘或人盘 |
 
@@ -255,7 +255,7 @@ var { astro } = require("iztro");
   | solarDateStr | `string`                                     | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
   | timeIndex    | `number`                                     | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
   | fixLeap      | `boolean`                                    | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `astro.getConfig().language` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 省略时使用当前配置的语言，初始为 `zh-CN`。 |
 
 - 示例
 
@@ -293,7 +293,7 @@ var { astro } = require("iztro");
   | timeIndex    | `number`   | `true`   | -       | 出生时辰序号【0~12】，对应从早子时（0）一直到晚子时（12）的序号                   |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
   | fixLeap      | `boolean`  | `false`  | `true`  | 是否调整闰月，为`true`闰月的前半个月算上个月，后半个月算下个月                    |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `astro.getConfig().language` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 省略时使用当前配置的语言，初始为 `zh-CN`。 |
 
 - 示例
 
@@ -325,7 +325,7 @@ var { astro } = require("iztro");
   | 参数         | 类型                                         | 是否必填 | 默认值  | 说明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | solarDateStr | `string`                                     | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `astro.getConfig().language` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 省略时使用当前配置的语言，初始为 `zh-CN`。 |
 
 - 示例
 
@@ -359,7 +359,7 @@ var { astro } = require("iztro");
   | ------------ | ---------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | lunarDateStr | `string`   | `true`   | -       | 农历日期【YYYY-M-D】，例如 `2000年七月十七` 则传入 `2000-7-17`                    |
   | isLeapMonth  | `boolean`  | `false`  | `false` | 是否闰月，当实际月份没有闰月时该参数不生效                                        |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `astro.getConfig().language` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 省略时使用当前配置的语言，初始为 `zh-CN`。 |
 
 - 示例
 
@@ -389,7 +389,7 @@ var { astro } = require("iztro");
   | 参数         | 类型                                         | 是否必填 | 默认值  | 说明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | solarDateStr | `string`                                     | `true`   | -       | 阳历日期【YYYY-M-D】                                                              |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `astro.getConfig().language` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 省略时使用当前配置的语言，初始为 `zh-CN`。 |
 
 - 示例
 
@@ -418,7 +418,7 @@ var { astro } = require("iztro");
   | 参数         | 类型                                         | 是否必填 | 默认值  | 说明                                                                              |
   | ------------ | -------------------------------------------- | -------- | ------- | --------------------------------------------------------------------------------- |
   | year | `number`                                     | `true`   | -       | 农历年份                                                             |
-  | language     | [`Language`](../type-definition.md#language) | `false`  | `zh-CN` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 |
+  | language     | [`Language`](../type-definition.md#language) | `false`  | `astro.getConfig().language` | 返回数据使用指定语言。目前支持 `zh-CN`、`zh-TW`、`en-US`、`ko-KR`、`ja-JP` 和 `vi-VN`。 省略时使用当前配置的语言，初始为 `zh-CN`。 |
   
 - 示例
 

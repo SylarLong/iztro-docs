@@ -48,9 +48,9 @@ getHoroscopeStar("갑", "zi", "decadal");
 입력에 어떤 언어를 사용하든 출력은 지정한 언어로 통일됩니다. 메서드를 호출하기 전에 출력 언어를 설정하세요:
 
 ```ts
-import { setLanguage } from "iztro/lib/i18n";
+import { astro } from "iztro";
 
-setLanguage("ko-KR");
+astro.config({ language: "ko-KR" });
 
 const horoscopeStar = getHoroscopeStar("甲", "zi", "decadal");
 ```
@@ -1666,8 +1666,12 @@ type ConfigBrightness = Partial<Record<StarName, Brightness[]>>;
 
 명반 계산 설정 객체를 정의합니다. `astro.config()`로 이후 생성할 명반의 기본값을 설정하거나, `withOptions({ config })`로 지금 생성하는 명반에만 다른 설정을 적용할 수 있습니다. 이미 생성된 명반은 생성 당시의 설정을 유지합니다(^2.6.2).
 
+`astro.config({ language: 'en-US' })`로 이후 생성하는 명반, 날짜 보조 메서드, 독립적으로 호출하는 유틸리티 함수의 기본 출력 언어를 설정합니다. 초기값은 `zh-CN`입니다. `withOptions({ config: { language } })`는 해당 명반의 언어만 덮어쓰며, 명시적으로 전달한 `language` 인수가 우선합니다. 개별 호출은 전역 기본값을 바꾸지 않고, 이미 생성된 명반은 생성 당시의 언어를 유지합니다. `astro.getConfig().language`는 현재 설정의 언어를 반환합니다. `astro.resetConfig()`는 전역 언어를 `zh-CN`으로 복원하며, 이미 생성된 명반과 이후 조회에는 영향을 주지 않습니다.
+
 ```ts
 type Config = {
+  // 默认输出语言，初始为 zh-CN；显式 language 参数优先
+  language?: Language;
   // 星曜四化配置
   mutagens?: ConfigMutagens;
   // 星曜亮度配置
