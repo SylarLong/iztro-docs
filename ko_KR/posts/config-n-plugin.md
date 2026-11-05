@@ -34,7 +34,7 @@ astro.config({
 
 | 설정 항목 | 허용되는 값 | 기본값 | 설명 |
 | --- | --- | --- | --- |
-| `language` | [`Language`](../type-definition.md#language) | `zh-CN` | 기본 출력 언어. 명시적으로 전달한 `language` 인수가 우선 |
+| `language` <Badge type="warning" text="^2.6.5" /> | [`Language`](../type-definition.md#language) | `zh-CN` | 기본 출력 언어. 명시적으로 전달한 `language` 인수가 우선 |
 | `yearDivide`   <Badge type="warning" text="^2.4.0" /> | `normal`  \|  `exact` | `normal` | 연도 간지의 경계. `normal`은 음력 정월 초하루, `exact`는 절기인 입춘을 기준으로 합니다. |
 | `horoscopeDivide`   <Badge type="warning" text="^2.4.3" /> | `normal`  \|  `exact` | `normal` | 운한 계산에 사용하는 연·월 간지의 경계 |
 | `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | 소한의 세는나이 경계. `normal`은 달력상의 연도, `birthday`는 음력 생일을 기준으로 합니다. |
@@ -57,7 +57,7 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 `v2.6.2`부터 `astro.config()`는 이후 새로 생성하는 명반의 기본값만 설정합니다. `withOptions({ config })`는 이번에 생성하는 명반의 설정만 덮어쓰며 전역 기본값을 바꾸지 않습니다. 이미 생성한 명반과 그 운한·사화 분석은 생성 당시의 설정과 언어를 유지합니다. 기존 코드가 명반 생성 호출로 전역 설정을 바꾸는 방식에 의존했다면 `astro.config()`를 명시적으로 호출하세요.
 :::
 
-### setLanguage() {#setlanguage}
+### setLanguage() <Badge type="warning" text="^2.6.5" /> {#setlanguage}
 
 `astro.config({ language: 'en-US' })`로 이후 생성하는 명반, 날짜 보조 메서드, 독립적으로 호출하는 유틸리티 함수의 기본 출력 언어를 설정합니다. 초기값은 `zh-CN`입니다. `withOptions({ config: { language } })`는 해당 명반의 언어만 덮어쓰며, 명시적으로 전달한 `language` 인수가 우선합니다. 개별 호출은 전역 기본값을 바꾸지 않고, 이미 생성된 명반은 생성 당시의 언어를 유지합니다.
 
@@ -80,7 +80,7 @@ console.log(util.getMutagensByHeavenlyStem('geng'));
 astro.resetConfig();
 ```
 
-### getLanguage() {#getlanguage}
+### getLanguage() <Badge type="warning" text="^2.6.5" /> {#getlanguage}
 
 현재 적용되는 언어를 가져옵니다. 명반 메서드나 플러그인 내부에서는 해당 명반을 생성할 때 사용한 언어를 반환하고, 계산 컨텍스트 밖에서는 전역 언어를 반환합니다.
 

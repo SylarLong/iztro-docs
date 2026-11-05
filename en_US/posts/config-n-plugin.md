@@ -34,7 +34,7 @@ Besides `mutagens` and `brightness`, the following options let you adjust chart-
 
 | Configuration items | Allowed values | Default value | Description |
 | --- | --- | --- | --- |
-| `language` | [`Language`](../type-definition.md#language) | `zh-CN` | Default output language; an explicit `language` parameter takes precedence |
+| `language` <Badge type="warning" text="^2.6.5" /> | [`Language`](../type-definition.md#language) | `zh-CN` | Default output language; an explicit `language` parameter takes precedence |
 | `yearDivide`   <Badge type="warning" text="^2.4.0" /> | `normal`  \|  `exact` | `normal` | Year stem-and-branch boundary: `normal` uses the first day of the first lunar month; `exact` uses the Start of Spring solar term. |
 | `horoscopeDivide`   <Badge type="warning" text="^2.4.3" /> | `normal`  \|  `exact` | `normal` | Year and month stem-and-branch boundaries used for horoscope periods |
 | `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | Annual age-period nominal-age boundary: `normal` uses the calendar year; `birthday` uses the lunar birthday. |
@@ -57,7 +57,7 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 From `v2.6.2`, `astro.config()` sets defaults only for charts created afterward. `withOptions({ config })` overrides settings only for the chart being created and does not alter the global defaults. Existing charts and their horoscope periods and transformation analyses retain the settings and language used when they were created. If older code relied on one charting call changing global settings, call `astro.config()` explicitly instead.
 :::
 
-### setLanguage() {#setlanguage}
+### setLanguage() <Badge type="warning" text="^2.6.5" /> {#setlanguage}
 
 Use `astro.config({ language: 'en-US' })` to set the default output language for future charts, date helpers and standalone utilities. The initial value is `zh-CN`. `withOptions({ config: { language } })` overrides the language for that chart only; an explicit `language` parameter takes precedence. Individual calls do not change global defaults, and existing charts retain the language used to create them.
 
@@ -80,7 +80,7 @@ console.log(util.getMutagensByHeavenlyStem('geng'));
 astro.resetConfig();
 ```
 
-### getLanguage() {#getlanguage}
+### getLanguage() <Badge type="warning" text="^2.6.5" /> {#getlanguage}
 
 Get the currently effective language. Inside chart methods or plugins, this returns the language used to create that chart. Outside a calculation context, it returns the global language.
 

@@ -34,7 +34,7 @@ astro.config({
 
 | 設定項目 | 指定できる値 | デフォルト値 | 説明 |
 | --- | --- | --- | --- |
-| `language` | [`Language`](../type-definition.md#language) | `zh-CN` | 既定の出力言語。明示的な `language` 引数が優先 |
+| `language` <Badge type="warning" text="^2.6.5" /> | [`Language`](../type-definition.md#language) | `zh-CN` | 既定の出力言語。明示的な `language` 引数が優先 |
 | `yearDivide` <Badge type="warning" text="^2.4.0" /> | `normal` \| `exact` | `normal` | 年の干支の区切り。`normal` は旧暦正月初一、`exact` は節気の立春を境とします。 |
 | `horoscopeDivide` <Badge type="warning" text="^2.4.3" /> | `normal` \| `exact` | `normal` | 運限で使う年と月の干支の区切り |
 | `ageDivide` <Badge type="warning" text="^2.4.5" /> | `normal` \| `birthday` | `normal` | 小限の数え年の区切り。`normal` は暦年、`birthday` は旧暦の誕生日を境とします。 |
@@ -57,7 +57,7 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 `v2.6.2` 以降、`astro.config()` が設定するのは、その後に作成する命盤の既定値だけです。`withOptions({ config })` は今回作成する命盤の設定だけを上書きし、グローバルな既定値を変更しません。既存の命盤とその運限・四化分析は、作成時の設定と言語を保持します。単発の命盤作成でグローバル設定を変更する古いコードは、`astro.config()` の明示的な呼び出しに変更してください。
 :::
 
-### setLanguage() {#setlanguage}
+### setLanguage() <Badge type="warning" text="^2.6.5" /> {#setlanguage}
 
 `astro.config({ language: 'en-US' })` で、以後の命盤作成、日付補助メソッド、単独で呼び出すユーティリティ関数の既定の出力言語を設定します。初期値は `zh-CN` です。`withOptions({ config: { language } })` はその命盤の言語だけを上書きし、明示的な `language` 引数が優先されます。個別の呼び出しでグローバルな既定値は変わらず、作成済みの命盤は作成時の言語を維持します。
 
@@ -80,7 +80,7 @@ console.log(util.getMutagensByHeavenlyStem('geng'));
 astro.resetConfig();
 ```
 
-### getLanguage() {#getlanguage}
+### getLanguage() <Badge type="warning" text="^2.6.5" /> {#getlanguage}
 
 現在有効な言語を取得します。命盤のメソッドやプラグイン内では、その命盤を作成したときの言語を返します。計算のコンテキスト外では、グローバル言語を返します。
 

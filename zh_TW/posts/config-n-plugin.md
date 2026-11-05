@@ -34,7 +34,7 @@ astro.config({
 
 | 配置項 | 可選值 | 預設值 | 說明 |
 | --- | --- | --- | --- |
-| `language` | [`Language`](../type-definition.md#language) | `zh-CN` | 預設輸出語言；明確傳入的 `language` 參數優先 |
+| `language` <Badge type="warning" text="^2.6.5" /> | [`Language`](../type-definition.md#language) | `zh-CN` | 預設輸出語言；明確傳入的 `language` 參數優先 |
 | `yearDivide` <Badge type="warning" text="^2.4.0" /> | `normal` \| `exact` | `normal` | 年干支分界；`normal` 以農曆正月初一為界，`exact` 以立春為界 |
 | `horoscopeDivide` <Badge type="warning" text="^2.4.3" /> | `normal` \| `exact` | `normal` | 運限使用的年、月干支分界 |
 | `ageDivide` <Badge type="warning" text="^2.4.5" /> | `normal` \| `birthday` | `normal` | 小限虛歲分界；`normal` 只看自然年，`birthday` 以農曆生日為界 |
@@ -57,7 +57,7 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 從 `v2.6.2` 開始，`astro.config()` 僅設定後續新建星盤的預設配置；`withOptions({ config })` 僅覆蓋當前星盤，不再寫入全局預設配置。既有星盤及其運限、四化分析保留產生時的配置和語言。若舊程式依賴單次排盤修改全局配置，請改為明確呼叫 `astro.config()`。
 :::
 
-### setLanguage() {#setlanguage}
+### setLanguage() <Badge type="warning" text="^2.6.5" /> {#setlanguage}
 
 使用 `astro.config({ language: 'en-US' })` 設定後續排盤、日期輔助方法及獨立工具函式的預設輸出語言，初始為 `zh-CN`。`withOptions({ config: { language } })` 僅覆蓋當前星盤；明確傳入的 `language` 參數優先。單次呼叫不改變全域預設值，既有星盤保留產生時的語言。
 
@@ -80,7 +80,7 @@ console.log(util.getMutagensByHeavenlyStem('geng'));
 astro.resetConfig();
 ```
 
-### getLanguage() {#getlanguage}
+### getLanguage() <Badge type="warning" text="^2.6.5" /> {#getlanguage}
 
 取得目前生效的語言：在星盤方法或插件內回傳該星盤產生時的語言，在計算情境之外回傳全域語言。
 

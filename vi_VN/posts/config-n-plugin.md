@@ -34,7 +34,7 @@ Ngoài `mutagens` và `brightness`, các tùy chọn sau cho phép điều chỉ
 
 | Các mục cấu hình | Các giá trị được phép | Giá trị mặc định | Mô tả |
 | --- | --- | --- | --- |
-| `language` | [`Language`](../type-definition.md#language) | `zh-CN` | Ngôn ngữ đầu ra mặc định; tham số `language` được truyền tường minh có độ ưu tiên cao hơn |
+| `language` <Badge type="warning" text="^2.6.5" /> | [`Language`](../type-definition.md#language) | `zh-CN` | Ngôn ngữ đầu ra mặc định; tham số `language` được truyền tường minh có độ ưu tiên cao hơn |
 | `yearDivide`   <Badge type="warning" text="^2.4.0" /> | `normal`  \|  `exact` | `normal` | Mốc phân chia can chi năm: `normal` lấy mồng một tháng Giêng âm lịch, `exact` lấy tiết Lập Xuân. |
 | `horoscopeDivide`   <Badge type="warning" text="^2.4.3" /> | `normal`  \|  `exact` | `normal` | Mốc phân chia can chi năm và tháng dùng cho vận hạn |
 | `ageDivide`   <Badge type="warning" text="^2.4.5" /> | `normal`  \|  `birthday` | `normal` | Mốc tính tuổi mụ cho tiểu hạn: `normal` dựa vào năm theo lịch, `birthday` lấy sinh nhật âm lịch làm mốc. |
@@ -57,7 +57,7 @@ console.log(late.fiveElementsClass === early.fiveElementsClass); // true
 Từ `v2.6.2`, `astro.config()` chỉ đặt cấu hình mặc định cho các lá số tạo sau đó. `withOptions({ config })` chỉ ghi đè cấu hình cho lá số đang được tạo, không thay đổi cấu hình mặc định toàn cục. Lá số đã có và phần phân tích vận hạn, tứ hóa giữ cấu hình và ngôn ngữ lúc tạo. Nếu mã cũ dựa vào một lần lập lá số để đổi cấu hình toàn cục, hãy gọi `astro.config()` một cách tường minh.
 :::
 
-### setLanguage() {#setlanguage}
+### setLanguage() <Badge type="warning" text="^2.6.5" /> {#setlanguage}
 
 Dùng `astro.config({ language: 'en-US' })` để đặt ngôn ngữ đầu ra mặc định cho các lá số tạo sau đó, phương thức hỗ trợ ngày và hàm tiện ích được gọi độc lập. Giá trị ban đầu là `zh-CN`. `withOptions({ config: { language } })` chỉ ghi đè ngôn ngữ cho lá số đó; tham số `language` được truyền tường minh có độ ưu tiên cao hơn. Các lần gọi riêng lẻ không thay đổi giá trị mặc định toàn cục, và các lá số đã tạo giữ nguyên ngôn ngữ lúc tạo.
 
@@ -80,7 +80,7 @@ console.log(util.getMutagensByHeavenlyStem('geng'));
 astro.resetConfig();
 ```
 
-### getLanguage() {#getlanguage}
+### getLanguage() <Badge type="warning" text="^2.6.5" /> {#getlanguage}
 
 Lấy ngôn ngữ hiện đang có hiệu lực. Bên trong phương thức hoặc trình cắm của lá số, hàm trả về ngôn ngữ được dùng khi tạo lá số đó. Bên ngoài ngữ cảnh tính toán, hàm trả về ngôn ngữ toàn cục.
 
